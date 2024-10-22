@@ -144,7 +144,7 @@ const rows = [
     "#999",
     "/images/users/user6.jpg",
     "Olivia Clark",
-    "olivia@trezo.com",
+    "olivia@pro.io.vn",
     [
       {
         stars: "ri-star-fill",
@@ -171,7 +171,7 @@ const rows = [
     "#1000",
     "/images/users/user7.jpg",
     "Zephyr Zing",
-    "zephyr@trezo.com",
+    "zephyr@pro.io.vn",
     [
       {
         stars: "ri-star-fill",
@@ -198,7 +198,7 @@ const rows = [
     "#1001",
     "/images/users/user8.jpg",
     "Nova Nectar",
-    "nova@trezo.com",
+    "nova@pro.io.vn",
     [
       {
         stars: "ri-star-fill",
@@ -225,7 +225,7 @@ const rows = [
     "#1002",
     "/images/users/user9.jpg",
     "Isabella Chang",
-    "isabella@trezo.com",
+    "isabella@pro.io.vn",
     [
       {
         stars: "ri-star-fill",
@@ -252,7 +252,7 @@ const rows = [
     "#1003",
     "/images/users/user9.jpg",
     "Isabella Chang",
-    "isabella@trezo.com",
+    "isabella@pro.io.vn",
     [
       {
         stars: "ri-star-fill",
@@ -279,7 +279,7 @@ const rows = [
     "#1004",
     "/images/users/user6.jpg",
     "Olivia Clark",
-    "olivia@trezo.com",
+    "olivia@pro.io.vn",
     [
       {
         stars: "ri-star-fill",
@@ -306,7 +306,7 @@ const rows = [
     "#1005",
     "/images/users/user7.jpg",
     "Zephyr Zing",
-    "zephyr@trezo.com",
+    "zephyr@pro.io.vn",
     [
       {
         stars: "ri-star-fill",
@@ -333,7 +333,7 @@ const rows = [
     "#1006",
     "/images/users/user8.jpg",
     "Nova Nectar",
-    "nova@trezo.com",
+    "nova@pro.io.vn",
     [
       {
         stars: "ri-star-fill",
@@ -360,7 +360,7 @@ const rows = [
     "#1007",
     "/images/users/user9.jpg",
     "Isabella Chang",
-    "isabella@trezo.com",
+    "isabella@pro.io.vn",
     [
       {
         stars: "ri-star-fill",
@@ -387,7 +387,7 @@ const rows = [
     "#1008",
     "/images/users/user9.jpg",
     "Isabella Chang",
-    "isabella@trezo.com",
+    "isabella@pro.io.vn",
     [
       {
         stars: "ri-star-fill",
@@ -707,7 +707,7 @@ const ReviewsTable: React.FC = () => {
                     }}
                     className="border-bottom"
                   >
-                    <div className={`trezo-badge ${row.status}`}>
+                    <div className={`pro.io-badge ${row.status}`}>
                       {row.status}
                     </div>
                   </TableCell>

@@ -703,7 +703,7 @@ const AllTickets: React.FC = () => {
                     className="border-bottom"
                   >
                     <div
-                      className={`trezo-badge ${row.status}`}
+                      className={`pro.io-badge ${row.status}`}
                       style={{ textTransform: "capitalize" }}
                     >
                       {row.status}

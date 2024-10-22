@@ -18,7 +18,7 @@ const SplineAreaChart: React.FC = () => {
 
   const series = [
     {
-      name: "Trezo",
+      name: "pro.io",
       data: [31, 40, 28, 51, 42, 109, 100],
     },
     {

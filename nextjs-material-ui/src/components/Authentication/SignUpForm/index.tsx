@@ -94,7 +94,7 @@ const SignUpForm: React.FC = () => {
                       fontWeight: "600",
                     }}
                   >
-                    Sign up to Trezo Dashboard
+                    Sign up to pro.io Dashboard
                   </Typography>
 
                   <Typography sx={{ fontWeight: "500", fontSize: "16px" }}>
@@ -218,7 +218,7 @@ const SignUpForm: React.FC = () => {
                       </Typography>
 
                       <TextField
-                        label="example&#64;trezo.com"
+                        label="example&#64;pro.io.vn"
                         variant="filled"
                         id="email"
                         name="email"

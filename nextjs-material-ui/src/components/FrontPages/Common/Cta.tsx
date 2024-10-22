@@ -29,9 +29,9 @@ const Cta: React.FC = () => {
           }}
         >
           <div className="fp-cta-content text-center">
-            <h2>Unlock a world of possibilities with Trezo Dashboard.</h2>
+            <h2>Unlock a world of possibilities with pro.io Dashboard.</h2>
             <p>
-              Experience the difference with Trezo Dashboard. Sign up for a free
+              Experience the difference with pro.io Dashboard. Sign up for a free
               trial today and see how our intuitive platform can revolutionize
               your data analysis process.
             </p>

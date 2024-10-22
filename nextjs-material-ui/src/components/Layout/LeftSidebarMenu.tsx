@@ -74,7 +74,7 @@ const LeftSidebarMenu: React.FC<LeftSidebarProps> = ({ toggleActive }) => {
                 width={26}
                 height={26}
               />
-              <span>Trezo</span>
+              <span>pro.io</span>
             </Link>
           </div>
 
@@ -109,7 +109,7 @@ const LeftSidebarMenu: React.FC<LeftSidebarProps> = ({ toggleActive }) => {
                 >
                   <i className="material-symbols-outlined">dashboard</i>
                   <span className="title">Dashboard</span>
-                  <span className="trezo-badge">5</span>
+                  <span className="pro.io-badge">5</span>
                 </AccordionSummary>
 
                 <AccordionDetails className="mat-details">
@@ -133,7 +133,7 @@ const LeftSidebarMenu: React.FC<LeftSidebarProps> = ({ toggleActive }) => {
                         }`}
                       >
                         CRM
-                        <span className="trezo-badge">Hot</span>
+                        <span className="pro.io-badge">Hot</span>
                       </Link>
                     </li>
 
@@ -169,7 +169,7 @@ const LeftSidebarMenu: React.FC<LeftSidebarProps> = ({ toggleActive }) => {
                         }`}
                       >
                         HelpDesk
-                        <span className="trezo-badge style-two">Top</span>
+                        <span className="pro.io-badge style-two">Top</span>
                       </Link>
                     </li>
                   </ul>
@@ -315,7 +315,7 @@ const LeftSidebarMenu: React.FC<LeftSidebarProps> = ({ toggleActive }) => {
                 >
                   <i className="material-symbols-outlined">mail</i>
                   <span className="title">Email</span>
-                  <span className="trezo-badge style-two">3</span>
+                  <span className="pro.io-badge style-two">3</span>
                 </AccordionSummary>
 
                 <AccordionDetails className="mat-details">
@@ -378,7 +378,7 @@ const LeftSidebarMenu: React.FC<LeftSidebarProps> = ({ toggleActive }) => {
                 >
                   <i className="material-symbols-outlined">folder_open</i>
                   <span className="title">File Manager</span>
-                  <span className="trezo-badge style-three">7</span>
+                  <span className="pro.io-badge style-three">7</span>
                 </AccordionSummary>
 
                 <AccordionDetails className="mat-details">

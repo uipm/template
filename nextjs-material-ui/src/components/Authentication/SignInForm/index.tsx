@@ -94,7 +94,7 @@ const SignInForm: React.FC = () => {
                       fontWeight: "600",
                     }}
                   >
-                    Welcome back to Trezo!
+                    Welcome back to pro.io!
                   </Typography>
 
                   <Typography sx={{ fontWeight: "500", fontSize: "16px" }}>
@@ -181,7 +181,7 @@ const SignInForm: React.FC = () => {
                       </Typography>
 
                       <TextField
-                        label="example&#64;trezo.com"
+                        label="example&#64;pro.io.vn"
                         variant="filled"
                         id="email"
                         name="email"

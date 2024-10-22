@@ -19,7 +19,7 @@ import theme from "@/theme";
 import LayoutProvider from "@/providers/LayoutProvider";
 
 export const metadata = {
-  title: "Trezo - React Nextjs 14+ Material Design Admin Dashboard Template",
+  title: "pro.io.vn - React Nextjs 14+ Material Design Admin Dashboard Template",
   description: "React Nextjs 14+ Material Design Admin Dashboard Template",
 };
 

@@ -208,7 +208,7 @@ const EditInvoice: React.FC = () => {
                   </Typography>
 
                   <Typography mt="5px !important">
-                    olivia&#64;trezo.com
+                    olivia&#64;pro.io.vn
                   </Typography>
 
                   <Typography mt="5px !important">

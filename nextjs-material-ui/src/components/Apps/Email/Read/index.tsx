@@ -299,7 +299,7 @@ const Read: React.FC = () => {
                 >
                   Sarah Smith
                 </Typography>
-                <Typography fontSize="12px">sarah&#64;trezo.com</Typography>
+                <Typography fontSize="12px">sarah&#64;pro.io.vn</Typography>
               </Box>
             </Box>
 

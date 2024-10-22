@@ -18,7 +18,7 @@ const BasicRadarChart: React.FC = () => {
 
   const series = [
     {
-      name: "Trezo",
+      name: "pro.io",
       data: [80, 50, 30, 40, 100, 20],
     },
   ];

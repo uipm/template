@@ -479,7 +479,7 @@ const ToDoList: React.FC = () => {
                     </TableCell>
 
                     <TableCell className="border-bottom">
-                      <div className={`trezo-badge ${row.status}`}>
+                      <div className={`pro.io-badge ${row.status}`}>
                         {row.status}
                       </div>
                     </TableCell>

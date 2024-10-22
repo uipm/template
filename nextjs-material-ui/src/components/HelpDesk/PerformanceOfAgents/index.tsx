@@ -696,7 +696,7 @@ const PerformanceOfAgents: React.FC = () => {
                       className="border-bottom"
                     >
                       <Box
-                        className={`trezo-badge ${row.availability}`}
+                        className={`pro.io-badge ${row.availability}`}
                         sx={{ textTransform: "capitalize" }}
                       >
                         {row.availability}

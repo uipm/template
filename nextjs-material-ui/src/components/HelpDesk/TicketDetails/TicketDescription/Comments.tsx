@@ -59,7 +59,7 @@ const Comments: React.FC = () => {
               <Typography>a day ago</Typography>
 
               <Typography
-                className="trezo-badge bg-primary text-white"
+                className="pro.io-badge bg-primary text-white"
                 sx={{ mt: { xs: "5px !important", sm: "0 !important" } }}
               >
                 #BD0JL0G6
@@ -135,7 +135,7 @@ const Comments: React.FC = () => {
               <Typography className="d-block">18 hours ago</Typography>
 
               <Typography
-                className="trezo-badge bg-secondary text-white"
+                className="pro.io-badge bg-secondary text-white"
                 sx={{ mt: { xs: "5px !important", sm: "0 !important" } }}
               >
                 Support Staff
@@ -267,7 +267,7 @@ const Comments: React.FC = () => {
 
               <Typography className="d-block">05 hours ago</Typography>
               <Typography
-                className="trezo-badge bg-secondary text-white"
+                className="pro.io-badge bg-secondary text-white"
                 sx={{ mt: { xs: "5px !important", sm: "0 !important" } }}
               >
                 Support Staff

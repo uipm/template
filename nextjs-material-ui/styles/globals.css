@@ -18,7 +18,9 @@
   --purpleColor: #AD63F6;
   --orangeColor: #FD5812;
 }
-
+::-webkit-scrollbar {
+  display: none;
+}
 .text-start {
   text-align: start !important;
 }
@@ -324,7 +326,7 @@
   text-decoration: line-through !important;
 }
 
-.trezo-badge {
+.pro.io-badge {
   background-color: #ECF0FF;
   color: var(--primaryColor);
   display: inline-block;
@@ -333,23 +335,23 @@
   font-weight: 500;
   font-size: 12px;
 }
-.trezo-badge.pending, .trezo-badge.Pending {
+.pro.io-badge.pending, .pro.io-badge.Pending {
   background-color: rgba(255, 193, 7, 0.15);
   color: var(--warningColor);
 }
-.trezo-badge.rejected, .trezo-badge.Rejected, .trezo-badge.NotAvailable, .trezo-badge.notAvailable .trezo-badge.Not.Available, .trezo-badge.not.available, .trezo-badge.Not, .trezo-badge.not, .trezo-badge.past, .trezo-badge.Past {
+.pro.io-badge.rejected, .pro.io-badge.Rejected, .pro.io-badge.NotAvailable, .pro.io-badge.notAvailable .pro.io-badge.Not.Available, .pro.io-badge.not.available, .pro.io-badge.Not, .pro.io-badge.not, .pro.io-badge.past, .pro.io-badge.Past {
   background-color: #FFE1DD;
   color: var(--dangerColor);
 }
-.trezo-badge.pInProgress, .trezo-badge.cancelled, .trezo-badge.Cancelled, .trezo-badge.draft, .trezo-badge.Draft, .trezo-badge.deactive, .trezo-badge.Deactive, .trezo-badge.Deactivate, .trezo-badge.deactivate, .trezo-badge.Unread, .trezo-badge.unread {
+.pro.io-badge.pInProgress, .pro.io-badge.cancelled, .pro.io-badge.Cancelled, .pro.io-badge.draft, .pro.io-badge.Draft, .pro.io-badge.deactive, .pro.io-badge.Deactive, .pro.io-badge.Deactivate, .pro.io-badge.deactivate, .pro.io-badge.Unread, .pro.io-badge.unread {
   background-color: #FFE8D4;
   color: #EE3E08;
 }
-.trezo-badge.inProgress, .trezo-badge.in.Progress, .trezo-badge.In.Progress, .trezo-badge.finished, .trezo-badge .Finished, .trezo-badge.shipped, .trezo-badge.Shipped, .trezo-badge.pFinished {
+.pro.io-badge.inProgress, .pro.io-badge.in.Progress, .pro.io-badge.In.Progress, .pro.io-badge.finished, .pro.io-badge .Finished, .pro.io-badge.shipped, .pro.io-badge.Shipped, .pro.io-badge.pFinished {
   background-color: #D8FFC8;
   color: var(--successColor);
 }
-.trezo-badge.pPending {
+.pro.io-badge.pPending {
   background-color: #F3E8FF;
   color: #7C24CC;
 }
