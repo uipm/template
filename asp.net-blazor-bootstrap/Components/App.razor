@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <base href="/" />
+    <link href="css/sidebar-menu.css" rel="stylesheet" asp-append-version="true" />
+    <link href="css/simplebar.css" rel="stylesheet" asp-append-version="true" />
+    <link href="css/apexcharts.css" rel="stylesheet" asp-append-version="true" />
+    <link href="css/prism.css" rel="stylesheet" asp-append-version="true" />
+    <link href="css/rangeslider.css" rel="stylesheet" asp-append-version="true" />
+    <link href="css/sweetalert.min.css" rel="stylesheet" asp-append-version="true" />
+    <link href="css/quill.snow.css" rel="stylesheet" asp-append-version="true" />
+    <link href="css/google-icon.css" rel="stylesheet" asp-append-version="true" />
+    <link href="css/remixicon.css" rel="stylesheet" asp-append-version="true" />
+    <link href="css/swiper-bundle.min.css" rel="stylesheet" asp-append-version="true" />
+    <link href="css/fullcalendar.main.css" rel="stylesheet" asp-append-version="true" />
+    <link href="css/style.css" rel="stylesheet" asp-append-version="true" />
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+    <title>Trezo - ASP.net c# & Bootstrap 5 Admin Dashboard Template</title>
+    <HeadOutlet />
+</head>
+
+<body>
+    <Routes />
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/sidebar-menu.js"></script>
+    <script src="js/dragdrop.js"></script>
+    <script src="js/rangeslider.min.js"></script>
+    <script src="js/sweetalert.js"></script>
+    <script src="js/quill.min.js"></script>
+    <script src="js/data-table.js"></script>
+    <script src="js/prism.js"></script>
+    <script src="js/clipboard.min.js"></script>
+    <script src="js/feather.min.js"></script>
+    <script src="js/simplebar.min.js"></script>
+    <script src="js/apexcharts.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/fullcalendar.main.js"></script>
+    <script src="js/custom/apexcharts.js"></script>
+    <script src="js/custom/custom.js"></script>
+    <script src="_framework/blazor.web.js"></script>
+
+    <script>
+        document.addEventListener('click', function (event) {
+            var target = event.target;
+
+            while (target && target.tagName !== 'A') {
+                target = target.parentElement;
+            }
+
+            if (target && target.href) {
+                event.preventDefault();
+                window.location.href = target.href;
+            }
+        });
+    </script>
+</body>
+
+</html>
