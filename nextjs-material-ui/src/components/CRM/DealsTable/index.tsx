@@ -184,7 +184,7 @@ const rows = [
     "#854",
     "Tech Solutions",
     "Shawn Kennedy",
-    "oliver@pro.io.vn",
+    "oliver@trezo.com",
     "$25,000.00",
     80,
     "15 Nov 2024",
@@ -272,7 +272,7 @@ const rows = [
   ),
   createData(
     "#845",
-    "pro.io Admin",
+    "Trezo Admin",
     "David Warner",
     "$12,421.00",
     "Discovery",
@@ -282,7 +282,7 @@ const rows = [
   ),
   createData(
     "#845",
-    "pro.io Admin",
+    "Trezo Admin",
     "David Warner",
     "$12,421.00",
     "Discovery",
@@ -304,7 +304,7 @@ const rows = [
     "#843",
     "Tech Solutions",
     "Shawn Kennedy",
-    "oliver@pro.io.vn",
+    "oliver@trezo.com",
     "$25,000.00",
     80,
     "15 Nov 2024",
@@ -392,7 +392,7 @@ const rows = [
   ),
   createData(
     "#834",
-    "pro.io Admin",
+    "Trezo Admin",
     "David Warner",
     "$12,421.00",
     "Discovery",
@@ -402,7 +402,7 @@ const rows = [
   ),
   createData(
     "#833",
-    "pro.io Admin",
+    "Trezo Admin",
     "David Warner",
     "$12,421.00",
     "Discovery",

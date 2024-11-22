@@ -7,7 +7,7 @@
         background-color: $dark-body-bg !important;
         color: $dark-body-color !important; 
     }
-    p, span, i, .material-symbols, .apexcharts-text, td, th, a, label  {
+    p, span, i, .apexcharts-text, td, th, a, label  {
         color: $dark-body-color;
     }
     .apexcharts-text {
@@ -79,6 +79,10 @@
     .border-start {
         border-color: $dark-border !important;
     }
+    .border-border-color {
+        border-color: $dark-border !important;
+    }
+ 
     .settings-btn {
         color: $white;
         span {
@@ -94,7 +98,7 @@
                 .notifications {
                     &.dropdown {
                         .btn-secondary {
-                            .material-symbols {
+                            i, span {
                                 color: $dark-body-color;
                             }
                         }
@@ -116,7 +120,7 @@
                     }
                 }
                 .header-burger-menu {
-                    .material-symbols {
+                    i, span {
                         color: $dark-body-color;
                     }
                 }
@@ -128,7 +132,7 @@
             .notifications {
                 &.dropdown {
                     .btn-secondary {
-                        .material-symbols {
+                        i, span {
                             color: $dark-body-color;
                         }
                     }
@@ -149,7 +153,7 @@
                             }
                         }
                         .dropdown-item {
-                            .material-symbols {
+                            i, span {
                                 background-color: #373a40;
                             }
                             span {
@@ -184,7 +188,7 @@
 
                         li {
                             .dropdown-item {
-                                .material-symbols {
+                                i, span {
                                     color: $dark-body-color;
                                 }
                             }
@@ -193,7 +197,7 @@
                 }
             }
             .theme-settings-btn {
-                .material-symbols {
+                i, span {
                     color: $dark-body-color;
                 }
             }
@@ -249,11 +253,11 @@
                         &:hover {
                             background-color: #15203c;
 
-                            .material-symbols {
+                            i, span {
                                 color: #fff;
                             }
                         }
-                        .material-symbols {
+                        i, span {
                             color: $dark-body-color; 
                         }
                         .title {
@@ -271,7 +275,7 @@
             .menu-link {
                 color: $secondary;
 
-                .material-symbols {
+                i, span {
                     color: $dark-body-color; 
                 }
                 .title {
@@ -316,7 +320,7 @@
                 .title {
                     color: $white;
                 }
-                .material-symbols {
+                i, span {
                     color: $white;
                 }
                 &:hover {
@@ -406,6 +410,23 @@
         }
         .showing-wrap {
             border-color: $dark-border;
+        }
+
+        &.agents-performance-overview {
+            &.style-three {
+                .table-responsive {
+                    .table {
+                        tbody {
+                            tr {
+                                td {
+                                    border-top: 10px solid $dark-card-bg;
+                                    background-color: $dark-input-bg;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
     .pagination {
@@ -930,6 +951,59 @@
     .bg-body {
         background-color: $dark-input-bg !important; 
     }
+
+    .date-time-picker-demo {
+        .react-datetime-picker__wrapper {
+            border: 1px solid $dark-body-bg; 
+            background: $dark-body-bg; 
+    
+            .react-datetime-picker__button {
+                svg {
+                    stroke: $dark-body-color; 
+                }
+            }
+        }
+        .react-calendar {
+            border: 1px solid #333; 
+        }
+    }
+
+    .custom-modal {
+        background-color: rgba(0, 0, 0, .2);
+
+        .close-link {
+            color: #fff;
+        }
+        .custom-modal-header  {
+            background-color: $dark-body-bg; 
+        }
+        .custom-modal-content  {
+            background-color: $dark-body-bg;
+        }
+    }
+    .custom-radio {
+        input[type=radio]:checked + .radio-content {
+            background: #000000;
+        }
+    }
+    .bg-border-color {
+        background-color: #000 !important;
+    }
+    .for-dark-card {
+        background-color: #0C1427 !important;
+    }
+    .recent-property-slide {
+        .bg-white {
+            background-color: $dark-body-bg !important;
+        }
+    }
+
+
+    // call-center
+    .bg-ecf0ff, .bg-faf5ff, .bg-fff5ed {
+        background-color: $dark-body-bg;
+    }
+
 }
 
 // dark-top-navbar
@@ -953,7 +1027,7 @@
                 .notifications {
                     &.dropdown {
                         .btn-secondary {
-                            .material-symbols {
+                            i, span {
                                 color: $dark-body-color;
                             }
                         }
@@ -975,7 +1049,7 @@
                     }
                 }
                 .header-burger-menu {
-                    .material-symbols {
+                    i, span {
                         color: $dark-body-color;
                     }
                 }
@@ -990,7 +1064,7 @@
             .notifications {
                 &.dropdown {
                     .btn-secondary {
-                        .material-symbols {
+                        i, span {
                             color: $dark-body-color;
                         }
                     }
@@ -1011,7 +1085,7 @@
                             }
                         }
                         .dropdown-item {
-                            .material-symbols {
+                            i, span {
                                 background-color: #373a40;
                             }
                             span {
@@ -1050,7 +1124,7 @@
 
                         li {
                             .dropdown-item {
-                                .material-symbols {
+                                i, span {
                                     color: $dark-body-color;
                                 }
                             }
@@ -1059,7 +1133,7 @@
                 }
             }
             .theme-settings-btn {
-                .material-symbols {
+                i, span {
                     color: $dark-body-color;
                 }
             }
@@ -1114,11 +1188,11 @@
                         &:hover {
                             background-color: #15203c;
 
-                            .material-symbols {
+                            i, span {
                                 color: #fff;
                             }
                         }
-                        .material-symbols {
+                        i, span {
                             color: $dark-body-color; 
                         }
                         .title {
@@ -1136,7 +1210,7 @@
             .menu-link {
                 color: $secondary;
 
-                .material-symbols {
+                i, span {
                     color: $dark-body-color; 
                 }
                 .title {
@@ -1175,4 +1249,5 @@
             }
         }
     }
+ 
 }

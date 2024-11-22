@@ -1,8 +1,7 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import Card from "react-bootstrap/Card"; 
-import Form from "react-bootstrap/Form";
+import { Card, Form } from "react-bootstrap";
 
 const TotalSales = () => {
   const [Chart, setChart] = useState();
@@ -125,7 +124,7 @@ const TotalSales = () => {
         colors: "#64748B",
       },
       markers: {
-        shape: "square", // circle, square, line, plus, cross
+        shape: 'diamond',
         radius: 2,
         offsetX: -2,
         offsetY: -0.5,
@@ -150,11 +149,11 @@ const TotalSales = () => {
               className="month-select form-control"
               aria-label="Default select example"
             >
-              <option value="0">Select</option>
-              <option value="1">Today</option>
-              <option value="2">Weekly</option>
-              <option value="3">Monthly</option>
-              <option value="4">Yearly</option>
+              <option defaultValue="0">Select</option>
+              <option defaultValue="1">Today</option>
+              <option defaultValue="2">Weekly</option>
+              <option defaultValue="3">Monthly</option>
+              <option defaultValue="4">Yearly</option>
             </Form.Select>
           </div>
 

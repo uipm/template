@@ -1,7 +1,6 @@
 "use client";
 
-import React from "react";
-import Card from "react-bootstrap/Card";
+import { Card } from "react-bootstrap";
 
 const SingleFileUpload = () => {
   return (
@@ -13,7 +12,7 @@ const SingleFileUpload = () => {
           <div className="form-group mb-4"> 
             <div className="form-control h-100 text-center position-relative p-4 p-lg-5">
               <div className="product-upload">
-                <label for="file-upload" className="file-upload mb-0">
+                <label htmlFor="file-upload" className="file-upload mb-0">
                   <i className="ri-folder-image-line bg-primary bg-opacity-10 p-2 rounded-1 text-primary"></i>
 
                   <span className="d-block text-body fs-14">

@@ -35,7 +35,7 @@
         <apexchart
           v-if="isClient"
           type="pie"
-          height="420"
+          height="388"
           :options="supportOverview"
           :series="overview"
         ></apexchart>
@@ -54,7 +54,7 @@ export default defineComponent({
     const overview = ref([55, 44, 30, 12]);
     const supportOverview = ref({
       chart: {
-        height: 420,
+        height: 388,
         type: "pie",
       },
       labels: ["Solved", "In Progress", "Pending", "Unassigned"],
@@ -90,6 +90,7 @@ export default defineComponent({
           height: 9,
           offsetX: -2,
           offsetY: -0.1,
+          shape: "diamond",
         },
       },
     });

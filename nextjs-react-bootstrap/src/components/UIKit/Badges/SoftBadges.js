@@ -1,10 +1,6 @@
 "use client";
 
-import React from "react";
-import "react-material-symbols/rounded";
-import Card from "react-bootstrap/Card";
-import Badge from "react-bootstrap/Badge";
-import Stack from "react-bootstrap/Stack";
+import { Card, Badge, Stack } from "react-bootstrap";
 
 const SoftBadges = () => {
   return (

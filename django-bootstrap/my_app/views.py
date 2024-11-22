@@ -40,6 +40,18 @@ def lms(request):
 def help_desk(request):
     return render(request, 'help-desk.html', {})
 
+def analytics(request):
+    return render(request, 'analytics.html', {})
+
+def crypto(request):
+    return render(request, 'crypto.html', {})
+
+def sales(request):
+    return render(request, 'sales.html', {})
+
+def hospital(request):
+    return render(request, 'hospital.html', {})
+
 def calendar(request):
     return render(request, 'calendar.html', {})
 

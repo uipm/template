@@ -22,7 +22,7 @@ import {
   Switch,
 } from "@mui/material";
 import { alpha } from "@mui/material/styles";
-import { visuallyHidden } from "@mui/utils";
+// import { visuallyHidden } from "@mui/utils";
 import DeleteIcon from "@mui/icons-material/Delete";
 import FilterListIcon from "@mui/icons-material/FilterList";
 
@@ -206,7 +206,7 @@ function EnhancedTableHead(props: EnhancedTableProps) {
             >
               {headCell.label}
               {orderBy === headCell.id ? (
-                <Box component="span" sx={visuallyHidden}>
+                <Box component="span">
                   {order === "desc" ? "sorted descending" : "sorted ascending"}
                 </Box>
               ) : null}

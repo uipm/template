@@ -22,7 +22,7 @@ export class CustomerSatisfactionService {
                 const options = {
                     series: [50, 15, 75, 50],
                     chart: {
-                        height: 245,
+                        height: 201,
                         type: "donut"
                     },
                     labels: [

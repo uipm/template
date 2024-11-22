@@ -1,6 +1,5 @@
 "use client";
 
-import React from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
@@ -14,7 +13,9 @@ const Nav = () => {
           <Link
             href="/settings/account-settings/"
             className={`btn border border-primary text-primary py-2 px-3 fw-semibold ${
-              pathname === "/settings/account-settings/" ? "btn-primary text-white" : "bg-transparent"
+              pathname === "/settings/account-settings/"
+                ? "btn-primary text-white"
+                : "bg-transparent"
             }`}
           >
             Account Settings
@@ -25,7 +26,9 @@ const Nav = () => {
           <Link
             href="/settings/change-password/"
             className={`btn border border-primary text-primary py-2 px-3 fw-semibold ${
-              pathname === "/settings/change-password/" ? "btn-primary text-white" : "bg-transparent"
+              pathname === "/settings/change-password/"
+                ? "btn-primary text-white"
+                : "bg-transparent"
             }`}
           >
             Change Password
@@ -36,7 +39,9 @@ const Nav = () => {
           <Link
             href="/settings/connections/"
             className={`btn border border-primary text-primary py-2 px-3 fw-semibold ${
-              pathname === "/settings/connections/" ? "btn-primary text-white" : "bg-transparent"
+              pathname === "/settings/connections/"
+                ? "btn-primary text-white"
+                : "bg-transparent"
             }`}
           >
             Connections
@@ -47,7 +52,9 @@ const Nav = () => {
           <Link
             href="/settings/privacy-policy/"
             className={`btn border border-primary text-primary py-2 px-3 fw-semibold ${
-              pathname === "/settings/privacy-policy/" ? "btn-primary text-white" : "bg-transparent"
+              pathname === "/settings/privacy-policy/"
+                ? "btn-primary text-white"
+                : "bg-transparent"
             }`}
           >
             Privacy Policy
@@ -58,7 +65,9 @@ const Nav = () => {
           <Link
             href="/settings/terms-conditions/"
             className={`btn border border-primary text-primary py-2 px-3 fw-semibold ${
-              pathname === "/settings/terms-conditions/" ? "btn-primary text-white" : "bg-transparent"
+              pathname === "/settings/terms-conditions/"
+                ? "btn-primary text-white"
+                : "bg-transparent"
             }`}
           >
             Terms & Conditions

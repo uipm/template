@@ -35,7 +35,7 @@
             </tr>
           </thead>
           <tbody>
-            <tr v-for="item in filteredItems" :key="item.id">
+            <tr v-for="item in filteredItems" :key="item.userID">
               <td>
                 {{ item.userID }}
               </td>

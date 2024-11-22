@@ -20,7 +20,7 @@
     }
 }
 .welcome-status-item {
-    i, .material-symbols {
+    i, span {
         width: 42px;
         height: 42px;
         line-height: 42px;
@@ -38,7 +38,7 @@
         }
     }
     &.style-two {
-        i, .material-symbols {
+        i, span {
             background-color: #FFC8C0;
             color: #EE3E08;
 

@@ -10,7 +10,7 @@ import styles from "@/components/Dashboard/HelpDesk/Congratulations/Congratulati
 const Congratulations: React.FC = () => {
   return (
     <>
-      <div className={styles.congratulationsCard}>
+      <div className={`bg-white ${styles.congratulationsCard}`}>
         <div className={styles.content}>
           <Typography variant="h5" fontWeight={600} fontSize="18px">
             Congratulations, <span className="text-primary">Olivia!</span>

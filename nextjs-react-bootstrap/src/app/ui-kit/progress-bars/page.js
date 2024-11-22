@@ -1,9 +1,6 @@
 "use client";
    
-import React from "react";
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import Breadcrumb from 'react-bootstrap/Breadcrumb';  
+import { Row, Col, Breadcrumb } from "react-bootstrap"; 
 import BasicProgressBars from "@/components/UIKit/ProgressBars/BasicProgressBars";
 import ProgressWithLabel from "@/components/UIKit/ProgressBars/ProgressWithLabel";
 import ProgressScreenreaderLabel from "@/components/UIKit/ProgressBars/ProgressScreenreaderLabel";

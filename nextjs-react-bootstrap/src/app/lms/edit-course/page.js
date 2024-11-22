@@ -1,7 +1,7 @@
 "use client";
- 
-import EditCourse from '@/components/Lms/EditCourse';
-import Breadcrumb from 'react-bootstrap/Breadcrumb';
+
+import { Breadcrumb } from "react-bootstrap";
+import EditCourse from '@/components/Lms/EditCourse'; 
 
 export default function Page() {
   return (

@@ -138,12 +138,14 @@ export default {
           align-items: center;
           justify-content: center;
 
+          & {
+            font: {
+              size: 16px;
+              weight: 500;
+            }
+          }
           i {
             margin-right: 5px;
-          }
-          font: {
-            size: 16px;
-            weight: 500;
           }
         }
         .info {

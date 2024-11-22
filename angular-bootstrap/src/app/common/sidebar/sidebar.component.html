@@ -11,7 +11,7 @@
 >
     <div class="logo bg-white">
         <a routerLink="/dashboard" class="d-flex align-items-center position-relative">
-            <img src="images/logo-icon.svg" alt="logo-icon">
+            <img src="images/logo-icon.svg" class="transition position-relative" alt="logo-icon">
             <span class="fw-bold text-black position-relative">
                 Trezo
             </span>
@@ -38,12 +38,12 @@
                             type="button"
                             (click)="toggleSection(0)"
                             [ngClass]="{ 'open': isSectionOpen(0) }"
-                            class="accordion-button d-block text-start shadow-none fw-medium border-0 transition border-radius"
+                            class="accordion-button text-start shadow-none fw-medium border-0 transition border-radius"
                         >
                             <i class="material-symbols-outlined">
                                 dashboard
                             </i>
-                            <span class="title">
+                            <span class="title lh-1">
                                 Dashboard
                             </span>
                             <span class="trezo-badge rounded-circle fw-medium d-inline-block text-center">
@@ -125,12 +125,12 @@
                             type="button"
                             (click)="toggleSection(1)"
                             [ngClass]="{ 'open': isSectionOpen(1) }"
-                            class="accordion-button d-block text-start shadow-none fw-medium border-0 transition border-radius"
+                            class="accordion-button text-start shadow-none fw-medium border-0 transition border-radius"
                         >
                             <i class="material-symbols-outlined">
                                 note_stack
                             </i>
-                            <span class="title">
+                            <span class="title lh-1">
                                 Front Pages
                             </span>
                         </button>
@@ -170,41 +170,41 @@
                         APPS
                     </span>
                     <div class="accordion-item border-radius border-0">
-                        <a routerLink="/dashboard/apps" class="sidebar-menu-link d-block w-100 position-relative border-radius fw-medium transition" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                        <a routerLink="/dashboard/apps" class="sidebar-menu-link w-100 position-relative border-radius fw-medium transition" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
                             <i class="material-symbols-outlined">
                                 format_list_bulleted
                             </i>
-                            <span class="title">
+                            <span class="title lh-1">
                                 To Do List
                             </span>
                         </a>
                     </div>
                     <div class="accordion-item border-radius border-0">
-                        <a routerLink="/dashboard/apps/calendar" class="sidebar-menu-link d-block w-100 position-relative border-radius fw-medium transition" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                        <a routerLink="/dashboard/apps/calendar" class="sidebar-menu-link w-100 position-relative border-radius fw-medium transition" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
                             <i class="material-symbols-outlined">
                                 date_range
                             </i>
-                            <span class="title">
+                            <span class="title lh-1">
                                 Calendar
                             </span>
                         </a>
                     </div>
                     <div class="accordion-item border-radius border-0">
-                        <a routerLink="/dashboard/apps/contacts" class="sidebar-menu-link d-block w-100 position-relative border-radius fw-medium transition" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                        <a routerLink="/dashboard/apps/contacts" class="sidebar-menu-link w-100 position-relative border-radius fw-medium transition" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
                             <i class="material-symbols-outlined">
                                 contact_page
                             </i>
-                            <span class="title">
+                            <span class="title lh-1">
                                 Contacts
                             </span>
                         </a>
                     </div>
                     <div class="accordion-item border-radius border-0">
-                        <a routerLink="/dashboard/apps/chat" class="sidebar-menu-link d-block w-100 position-relative border-radius fw-medium transition" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                        <a routerLink="/dashboard/apps/chat" class="sidebar-menu-link w-100 position-relative border-radius fw-medium transition" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
                             <i class="material-symbols-outlined">
                                 chat
                             </i>
-                            <span class="title">
+                            <span class="title lh-1">
                                 Chat
                             </span>
                         </a>
@@ -214,12 +214,12 @@
                             type="button"
                             (click)="toggleSection(2)"
                             [ngClass]="{ 'open': isSectionOpen(2) }"
-                            class="accordion-button d-block text-start shadow-none fw-medium border-0 transition border-radius"
+                            class="accordion-button text-start shadow-none fw-medium border-0 transition border-radius"
                         >
                             <i class="material-symbols-outlined">
                                 mail
                             </i>
-                            <span class="title">
+                            <span class="title lh-1">
                                 Email
                             </span>
                             <span class="trezo-badge rounded-circle fw-medium d-inline-block text-center style-two">
@@ -249,11 +249,11 @@
                         </div>
                     </div>
                     <div class="accordion-item border-radius border-0">
-                        <a routerLink="/dashboard/apps/kanban-board" class="sidebar-menu-link d-block w-100 position-relative border-radius fw-medium transition" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                        <a routerLink="/dashboard/apps/kanban-board" class="sidebar-menu-link w-100 position-relative border-radius fw-medium transition" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
                             <i class="material-symbols-outlined">
                                 team_dashboard
                             </i>
-                            <span class="title">
+                            <span class="title lh-1">
                                 Kanban Board
                             </span>
                         </a>
@@ -263,12 +263,12 @@
                             type="button"
                             (click)="toggleSection(3)"
                             [ngClass]="{ 'open': isSectionOpen(3) }"
-                            class="accordion-button d-block text-start shadow-none fw-medium border-0 transition border-radius"
+                            class="accordion-button text-start shadow-none fw-medium border-0 transition border-radius"
                         >
                             <i class="material-symbols-outlined">
                                 folder_open
                             </i>
-                            <span class="title">
+                            <span class="title lh-1">
                                 File Manager
                             </span>
                             <span class="trezo-badge rounded-circle fw-medium d-inline-block text-center style-three">
@@ -325,12 +325,12 @@
                             type="button"
                             (click)="toggleSection(4)"
                             [ngClass]="{ 'open': isSectionOpen(4) }"
-                            class="accordion-button d-block text-start shadow-none fw-medium border-0 transition border-radius"
+                            class="accordion-button text-start shadow-none fw-medium border-0 transition border-radius"
                         >
                             <i class="material-symbols-outlined">
                                 shopping_cart
                             </i>
-                            <span class="title">
+                            <span class="title lh-1">
                                 eCommerce
                             </span>
                         </button>
@@ -441,12 +441,12 @@
                             type="button"
                             (click)="toggleSection(5)"
                             [ngClass]="{ 'open': isSectionOpen(5) }"
-                            class="accordion-button d-block text-start shadow-none fw-medium border-0 transition border-radius"
+                            class="accordion-button text-start shadow-none fw-medium border-0 transition border-radius"
                         >
                             <i class="material-symbols-outlined">
                                 handshake
                             </i>
-                            <span class="title">
+                            <span class="title lh-1">
                                 CRM
                             </span>
                         </button>
@@ -482,12 +482,12 @@
                             type="button"
                             (click)="toggleSection(6)"
                             [ngClass]="{ 'open': isSectionOpen(6) }"
-                            class="accordion-button d-block text-start shadow-none fw-medium border-0 transition border-radius"
+                            class="accordion-button text-start shadow-none fw-medium border-0 transition border-radius"
                         >
                             <i class="material-symbols-outlined">
                                 description
                             </i>
-                            <span class="title">
+                            <span class="title lh-1">
                                 Project Management
                             </span>
                         </button>
@@ -538,12 +538,12 @@
                             type="button"
                             (click)="toggleSection(7)"
                             [ngClass]="{ 'open': isSectionOpen(7) }"
-                            class="accordion-button d-block text-start shadow-none fw-medium border-0 transition border-radius"
+                            class="accordion-button text-start shadow-none fw-medium border-0 transition border-radius"
                         >
                             <i class="material-symbols-outlined">
                                 auto_stories
                             </i>
-                            <span class="title">
+                            <span class="title lh-1">
                                 LMS
                             </span>
                         </button>
@@ -589,12 +589,12 @@
                             type="button"
                             (click)="toggleSection(8)"
                             [ngClass]="{ 'open': isSectionOpen(8) }"
-                            class="accordion-button d-block text-start shadow-none fw-medium border-0 transition border-radius"
+                            class="accordion-button text-start shadow-none fw-medium border-0 transition border-radius"
                         >
                             <i class="material-symbols-outlined">
                                 support
                             </i>
-                            <span class="title">
+                            <span class="title lh-1">
                                 HelpDesk
                             </span>
                         </button>
@@ -630,12 +630,12 @@
                             type="button"
                             (click)="toggleSection(9)"
                             [ngClass]="{ 'open': isSectionOpen(9) }"
-                            class="accordion-button d-block text-start shadow-none fw-medium border-0 transition border-radius"
+                            class="accordion-button text-start shadow-none fw-medium border-0 transition border-radius"
                         >
                             <i class="material-symbols-outlined">
                                 local_activity
                             </i>
-                            <span class="title">
+                            <span class="title lh-1">
                                 Events
                             </span>
                         </button>
@@ -676,12 +676,12 @@
                             type="button"
                             (click)="toggleSection(10)"
                             [ngClass]="{ 'open': isSectionOpen(10) }"
-                            class="accordion-button d-block text-start shadow-none fw-medium border-0 transition border-radius"
+                            class="accordion-button text-start shadow-none fw-medium border-0 transition border-radius"
                         >
                             <i class="material-symbols-outlined">
                                 share
                             </i>
-                            <span class="title">
+                            <span class="title lh-1">
                                 Social
                             </span>
                         </button>
@@ -707,12 +707,12 @@
                             type="button"
                             (click)="toggleSection(11)"
                             [ngClass]="{ 'open': isSectionOpen(11) }"
-                            class="accordion-button d-block text-start shadow-none fw-medium border-0 transition border-radius"
+                            class="accordion-button text-start shadow-none fw-medium border-0 transition border-radius"
                         >
                             <i class="material-symbols-outlined">
                                 content_paste
                             </i>
-                            <span class="title">
+                            <span class="title lh-1">
                                 Invoices
                             </span>
                         </button>
@@ -748,12 +748,12 @@
                             type="button"
                             (click)="toggleSection(12)"
                             [ngClass]="{ 'open': isSectionOpen(12) }"
-                            class="accordion-button d-block text-start shadow-none fw-medium border-0 transition border-radius"
+                            class="accordion-button text-start shadow-none fw-medium border-0 transition border-radius"
                         >
                             <i class="material-symbols-outlined">
                                 person
                             </i>
-                            <span class="title">
+                            <span class="title lh-1">
                                 Users
                             </span>
                         </button>
@@ -784,12 +784,12 @@
                             type="button"
                             (click)="toggleSection(13)"
                             [ngClass]="{ 'open': isSectionOpen(13) }"
-                            class="accordion-button d-block text-start shadow-none fw-medium border-0 transition border-radius"
+                            class="accordion-button text-start shadow-none fw-medium border-0 transition border-radius"
                         >
                             <i class="material-symbols-outlined">
                                 account_box
                             </i>
-                            <span class="title">
+                            <span class="title lh-1">
                                 Profile
                             </span>
                         </button>
@@ -816,11 +816,11 @@
                         </div>
                     </div>
                     <div class="accordion-item border-radius border-0">
-                        <a routerLink="/dashboard/starter" class="sidebar-menu-link d-block w-100 position-relative border-radius fw-medium transition" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                        <a routerLink="/dashboard/starter" class="sidebar-menu-link w-100 position-relative border-radius fw-medium transition" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
                             <i class="material-symbols-outlined">
                                 star_border
                             </i>
-                            <span class="title">
+                            <span class="title lh-1">
                                 Starter
                             </span>
                         </a>
@@ -833,12 +833,12 @@
                             type="button"
                             (click)="toggleSection(14)"
                             [ngClass]="{ 'open': isSectionOpen(14) }"
-                            class="accordion-button d-block text-start shadow-none fw-medium border-0 transition border-radius"
+                            class="accordion-button text-start shadow-none fw-medium border-0 transition border-radius"
                         >
                             <i class="material-symbols-outlined">
                                 emoji_emotions
                             </i>
-                            <span class="title">
+                            <span class="title lh-1">
                                 Icons
                             </span>
                         </button>
@@ -864,12 +864,12 @@
                             type="button"
                             (click)="toggleSection(15)"
                             [ngClass]="{ 'open': isSectionOpen(15) }"
-                            class="accordion-button d-block text-start shadow-none fw-medium border-0 transition border-radius"
+                            class="accordion-button text-start shadow-none fw-medium border-0 transition border-radius"
                         >
                             <i class="material-symbols-outlined">
                                 qr_code_scanner
                             </i>
-                            <span class="title">
+                            <span class="title lh-1">
                                 UI Elements
                             </span>
                         </button>
@@ -1046,11 +1046,11 @@
                         </div>
                     </div>
                     <div class="accordion-item border-radius border-0">
-                        <a routerLink="/dashboard/tables" class="sidebar-menu-link d-block w-100 position-relative border-radius fw-medium transition" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                        <a routerLink="/dashboard/tables" class="sidebar-menu-link w-100 position-relative border-radius fw-medium transition" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
                             <i class="material-symbols-outlined">
                                 table_chart
                             </i>
-                            <span class="title">
+                            <span class="title lh-1">
                                 Tables
                             </span>
                         </a>
@@ -1060,12 +1060,12 @@
                             type="button"
                             (click)="toggleSection(16)"
                             [ngClass]="{ 'open': isSectionOpen(16) }"
-                            class="accordion-button d-block text-start shadow-none fw-medium border-0 transition border-radius"
+                            class="accordion-button text-start shadow-none fw-medium border-0 transition border-radius"
                         >
                             <i class="material-symbols-outlined">
                                 forum
                             </i>
-                            <span class="title">
+                            <span class="title lh-1">
                                 Forms
                             </span>
                         </button>
@@ -1131,12 +1131,12 @@
                             type="button"
                             (click)="toggleSection(17)"
                             [ngClass]="{ 'open': isSectionOpen(17) }"
-                            class="accordion-button d-block text-start shadow-none fw-medium border-0 transition border-radius"
+                            class="accordion-button text-start shadow-none fw-medium border-0 transition border-radius"
                         >
                             <i class="material-symbols-outlined">
                                 pie_chart
                             </i>
-                            <span class="title">
+                            <span class="title lh-1">
                                 Charts
                             </span>
                         </button>
@@ -1197,12 +1197,12 @@
                             type="button"
                             (click)="toggleSection(18)"
                             [ngClass]="{ 'open': isSectionOpen(18) }"
-                            class="accordion-button d-block text-start shadow-none fw-medium border-0 transition border-radius"
+                            class="accordion-button text-start shadow-none fw-medium border-0 transition border-radius"
                         >
                             <i class="material-symbols-outlined">
                                 lock_open
                             </i>
-                            <span class="title">
+                            <span class="title lh-1">
                                 Authentication
                             </span>
                         </button>
@@ -1253,12 +1253,12 @@
                             type="button"
                             (click)="toggleSection(19)"
                             [ngClass]="{ 'open': isSectionOpen(19) }"
-                            class="accordion-button d-block text-start shadow-none fw-medium border-0 transition border-radius"
+                            class="accordion-button text-start shadow-none fw-medium border-0 transition border-radius"
                         >
                             <i class="material-symbols-outlined">
                                 content_copy
                             </i>
-                            <span class="title">
+                            <span class="title lh-1">
                                 Extra Pages
                             </span>
                         </button>
@@ -1314,12 +1314,12 @@
                             type="button"
                             (click)="toggleSection(20)"
                             [ngClass]="{ 'open': isSectionOpen(20) }"
-                            class="accordion-button d-block text-start shadow-none fw-medium border-0 transition border-radius"
+                            class="accordion-button text-start shadow-none fw-medium border-0 transition border-radius"
                         >
                             <i class="material-symbols-outlined">
                                 error
                             </i>
-                            <span class="title">
+                            <span class="title lh-1">
                                 Errors
                             </span>
                         </button>
@@ -1341,41 +1341,41 @@
                         </div>
                     </div>
                     <div class="accordion-item border-radius border-0">
-                        <a routerLink="/dashboard/widgets" class="sidebar-menu-link d-block w-100 position-relative border-radius fw-medium transition" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                        <a routerLink="/dashboard/widgets" class="sidebar-menu-link w-100 position-relative border-radius fw-medium transition" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
                             <i class="material-symbols-outlined">
                                 widgets
                             </i>
-                            <span class="title">
+                            <span class="title lh-1">
                                 Widgets
                             </span>
                         </a>
                     </div>
                     <div class="accordion-item border-radius border-0">
-                        <a routerLink="/dashboard/maps" class="sidebar-menu-link d-block w-100 position-relative border-radius fw-medium transition" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                        <a routerLink="/dashboard/maps" class="sidebar-menu-link w-100 position-relative border-radius fw-medium transition" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
                             <i class="material-symbols-outlined">
                                 map
                             </i>
-                            <span class="title">
+                            <span class="title lh-1">
                                 Maps
                             </span>
                         </a>
                     </div>
                     <div class="accordion-item border-radius border-0">
-                        <a routerLink="/dashboard/notifications" class="sidebar-menu-link d-block w-100 position-relative border-radius fw-medium transition" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                        <a routerLink="/dashboard/notifications" class="sidebar-menu-link w-100 position-relative border-radius fw-medium transition" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
                             <i class="material-symbols-outlined">
                                 notifications
                             </i>
-                            <span class="title">
+                            <span class="title lh-1">
                                 Notifications
                             </span>
                         </a>
                     </div>
                     <div class="accordion-item border-radius border-0">
-                        <a routerLink="/dashboard/members" class="sidebar-menu-link d-block w-100 position-relative border-radius fw-medium transition" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                        <a routerLink="/dashboard/members" class="sidebar-menu-link w-100 position-relative border-radius fw-medium transition" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
                             <i class="material-symbols-outlined">
                                 people
                             </i>
-                            <span class="title">
+                            <span class="title lh-1">
                                 Members
                             </span>
                         </a>
@@ -1384,11 +1384,11 @@
                         OTHERS
                     </span>
                     <div class="accordion-item border-radius border-0">
-                        <a routerLink="/dashboard/my-profile" class="sidebar-menu-link d-block w-100 position-relative border-radius fw-medium transition" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                        <a routerLink="/dashboard/my-profile" class="sidebar-menu-link w-100 position-relative border-radius fw-medium transition" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
                             <i class="material-symbols-outlined">
                                 account_circle
                             </i>
-                            <span class="title">
+                            <span class="title lh-1">
                                 My Profile
                             </span>
                         </a>
@@ -1398,12 +1398,12 @@
                             type="button"
                             (click)="toggleSection(21)"
                             [ngClass]="{ 'open': isSectionOpen(21) }"
-                            class="accordion-button d-block text-start shadow-none fw-medium border-0 transition border-radius"
+                            class="accordion-button text-start shadow-none fw-medium border-0 transition border-radius"
                         >
                             <i class="material-symbols-outlined">
                                 settings
                             </i>
-                            <span class="title">
+                            <span class="title lh-1">
                                 Settings
                             </span>
                         </button>
@@ -1444,12 +1444,12 @@
                             type="button"
                             (click)="toggleSection(22)"
                             [ngClass]="{ 'open': isSectionOpen(22) }"
-                            class="accordion-button d-block text-start shadow-none fw-medium border-0 transition border-radius"
+                            class="accordion-button text-start shadow-none fw-medium border-0 transition border-radius"
                         >
                             <i class="material-symbols-outlined">
                                 unfold_more
                             </i>
-                            <span class="title">
+                            <span class="title lh-1">
                                 Multi Level Menu
                             </span>
                         </button>
@@ -1466,7 +1466,7 @@
                                             type="button"
                                             (click)="toggleSection2(0)"
                                             [ngClass]="{ 'open': isSectionOpen2(0) }"
-                                            class="accordion-button d-block text-start shadow-none fw-medium border-0 transition border-radius"
+                                            class="accordion-button text-start shadow-none fw-medium border-0 transition border-radius"
                                         >
                                             Second
                                             <span class="trezo-badge rounded-circle fw-medium d-inline-block text-center">
@@ -1486,7 +1486,7 @@
                                                             type="button"
                                                             (click)="toggleSection3(0)"
                                                             [ngClass]="{ 'open': isSectionOpen3(0) }"
-                                                            class="accordion-button d-block text-start shadow-none fw-medium border-0 transition border-radius"
+                                                            class="accordion-button text-start shadow-none fw-medium border-0 transition border-radius"
                                                         >
                                                             Second 2
                                                         </button>
@@ -1516,11 +1516,11 @@
                         </div>
                     </div>
                     <div class="accordion-item border-radius border-0">
-                        <a routerLink="/authentication/logout" class="sidebar-menu-link d-block w-100 position-relative border-radius fw-medium transition" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                        <a routerLink="/authentication/logout" class="sidebar-menu-link w-100 position-relative border-radius fw-medium transition" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
                             <i class="material-symbols-outlined">
                                 logout
                             </i>
-                            <span class="title">
+                            <span class="title lh-1">
                                 Logout
                             </span>
                         </a>

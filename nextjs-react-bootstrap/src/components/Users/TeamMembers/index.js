@@ -1,15 +1,8 @@
 "use client";
 
-import React from "react";
+import { Row, Col, Dropdown, Card, Form } from "react-bootstrap";
 import Link from "next/link";
 import Image from "next/image";
-import { MaterialSymbol } from "react-material-symbols";
-import "react-material-symbols/rounded";
-import Card from "react-bootstrap/Card";
-import Form from "react-bootstrap/Form";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-import Dropdown from "react-bootstrap/Dropdown";
 
 const TeamMembers = () => {
   return (
@@ -23,10 +16,9 @@ const TeamMembers = () => {
                 className="form-control"
                 placeholder="Search here"
               />
-              <MaterialSymbol
-                icon="search"
-                className="position-absolute top-50 start-0 translate-middle-y"
-              />
+              <span className="material-symbols-outlined position-absolute top-50 start-0 translate-middle-y">
+                search
+              </span>
             </Form>
 
             <Link
@@ -58,9 +50,7 @@ const TeamMembers = () => {
                     />
                   </div>
                   <div className="flex-grow-1 ms-3">
-                    <div 
-                      className="text-decoration-none text-secondary fw-medium fs-16"
-                    >
+                    <div className="text-decoration-none text-secondary fw-medium fs-16">
                       Ava Turner
                     </div>
                     <span className="d-block">Business Analyst</span>
@@ -73,22 +63,24 @@ const TeamMembers = () => {
                     id="dropdown-basic"
                     className="bg-transparent p-0"
                   >
-                    <MaterialSymbol icon="more_horiz" />
+                    <span className="material-symbols-outlined">
+                      more_horiz
+                    </span>
                   </Dropdown.Toggle>
 
                   <Dropdown.Menu className="bg-white border box-shadow">
                     <Dropdown.Item href="#">
-                      <MaterialSymbol icon="visibility" />
+                      <i className="material-symbols-outlined">visibility</i>
                       View
                     </Dropdown.Item>
 
                     <Dropdown.Item href="#">
-                      <MaterialSymbol icon="edit" />
+                      <span className="material-symbols-outlined">edit</span>
                       Edit
                     </Dropdown.Item>
 
                     <Dropdown.Item href="#">
-                      <MaterialSymbol icon="delete" />
+                      <i className="material-symbols-outlined">delete</i>
                       Delete
                     </Dropdown.Item>
                   </Dropdown.Menu>
@@ -176,9 +168,7 @@ const TeamMembers = () => {
                     />
                   </div>
                   <div className="flex-grow-1 ms-3">
-                    <div 
-                      className="text-decoration-none text-secondary fw-medium fs-16"
-                    >
+                    <div className="text-decoration-none text-secondary fw-medium fs-16">
                       Ethan Parker
                     </div>
                     <span className="d-block">Project Manager</span>
@@ -191,22 +181,24 @@ const TeamMembers = () => {
                     id="dropdown-basic"
                     className="bg-transparent p-0"
                   >
-                    <MaterialSymbol icon="more_horiz" />
+                    <span className="material-symbols-outlined">
+                      more_horiz
+                    </span>
                   </Dropdown.Toggle>
 
                   <Dropdown.Menu className="bg-white border box-shadow">
                     <Dropdown.Item href="#">
-                      <MaterialSymbol icon="visibility" />
+                      <i className="material-symbols-outlined">visibility</i>
                       View
                     </Dropdown.Item>
 
                     <Dropdown.Item href="#">
-                      <MaterialSymbol icon="edit" />
+                      <span className="material-symbols-outlined">edit</span>
                       Edit
                     </Dropdown.Item>
 
                     <Dropdown.Item href="#">
-                      <MaterialSymbol icon="delete" />
+                      <i className="material-symbols-outlined">delete</i>
                       Delete
                     </Dropdown.Item>
                   </Dropdown.Menu>
@@ -294,9 +286,7 @@ const TeamMembers = () => {
                     />
                   </div>
                   <div className="flex-grow-1 ms-3">
-                    <div 
-                      className="text-decoration-none text-secondary fw-medium fs-16"
-                    >
+                    <div className="text-decoration-none text-secondary fw-medium fs-16">
                       Isabella Lee
                     </div>
                     <span className="d-block">Team Leader</span>
@@ -309,22 +299,24 @@ const TeamMembers = () => {
                     id="dropdown-basic"
                     className="bg-transparent p-0"
                   >
-                    <MaterialSymbol icon="more_horiz" />
+                    <span className="material-symbols-outlined">
+                      more_horiz
+                    </span>
                   </Dropdown.Toggle>
 
                   <Dropdown.Menu className="bg-white border box-shadow">
                     <Dropdown.Item href="#">
-                      <MaterialSymbol icon="visibility" />
+                      <i className="material-symbols-outlined">visibility</i>
                       View
                     </Dropdown.Item>
 
                     <Dropdown.Item href="#">
-                      <MaterialSymbol icon="edit" />
+                      <span className="material-symbols-outlined">edit</span>
                       Edit
                     </Dropdown.Item>
 
                     <Dropdown.Item href="#">
-                      <MaterialSymbol icon="delete" />
+                      <i className="material-symbols-outlined">delete</i>
                       Delete
                     </Dropdown.Item>
                   </Dropdown.Menu>
@@ -409,9 +401,7 @@ const TeamMembers = () => {
                     />
                   </div>
                   <div className="flex-grow-1 ms-3">
-                    <div
-                      className="text-decoration-none text-secondary fw-medium fs-16"
-                    >
+                    <div className="text-decoration-none text-secondary fw-medium fs-16">
                       Thompson Torres
                     </div>
                     <span className="d-block">Designer</span>
@@ -424,22 +414,24 @@ const TeamMembers = () => {
                     id="dropdown-basic"
                     className="bg-transparent p-0"
                   >
-                    <MaterialSymbol icon="more_horiz" />
+                    <span className="material-symbols-outlined">
+                      more_horiz
+                    </span>
                   </Dropdown.Toggle>
 
                   <Dropdown.Menu className="bg-white border box-shadow">
                     <Dropdown.Item href="#">
-                      <MaterialSymbol icon="visibility" />
+                      <i className="material-symbols-outlined">visibility</i>
                       View
                     </Dropdown.Item>
 
                     <Dropdown.Item href="#">
-                      <MaterialSymbol icon="edit" />
+                      <span className="material-symbols-outlined">edit</span>
                       Edit
                     </Dropdown.Item>
 
                     <Dropdown.Item href="#">
-                      <MaterialSymbol icon="delete" />
+                      <i className="material-symbols-outlined">delete</i>
                       Delete
                     </Dropdown.Item>
                   </Dropdown.Menu>
@@ -524,9 +516,7 @@ const TeamMembers = () => {
                     />
                   </div>
                   <div className="flex-grow-1 ms-3">
-                    <div
-                      className="text-decoration-none text-secondary fw-medium fs-16"
-                    >
+                    <div className="text-decoration-none text-secondary fw-medium fs-16">
                       Lucas Lyon
                     </div>
                     <span className="d-block">Technical Writer</span>
@@ -539,22 +529,24 @@ const TeamMembers = () => {
                     id="dropdown-basic"
                     className="bg-transparent p-0"
                   >
-                    <MaterialSymbol icon="more_horiz" />
+                    <span className="material-symbols-outlined">
+                      more_horiz
+                    </span>
                   </Dropdown.Toggle>
 
                   <Dropdown.Menu className="bg-white border box-shadow">
                     <Dropdown.Item href="#">
-                      <MaterialSymbol icon="visibility" />
+                      <i className="material-symbols-outlined">visibility</i>
                       View
                     </Dropdown.Item>
 
                     <Dropdown.Item href="#">
-                      <MaterialSymbol icon="edit" />
+                      <span className="material-symbols-outlined">edit</span>
                       Edit
                     </Dropdown.Item>
 
                     <Dropdown.Item href="#">
-                      <MaterialSymbol icon="delete" />
+                      <i className="material-symbols-outlined">delete</i>
                       Delete
                     </Dropdown.Item>
                   </Dropdown.Menu>
@@ -639,9 +631,7 @@ const TeamMembers = () => {
                     />
                   </div>
                   <div className="flex-grow-1 ms-3">
-                    <div
-                      className="text-decoration-none text-secondary fw-medium fs-16"
-                    >
+                    <div className="text-decoration-none text-secondary fw-medium fs-16">
                       Morgan Sturges
                     </div>
                     <span className="d-block">Data Analyst</span>
@@ -654,22 +644,24 @@ const TeamMembers = () => {
                     id="dropdown-basic"
                     className="bg-transparent p-0"
                   >
-                    <MaterialSymbol icon="more_horiz" />
+                    <span className="material-symbols-outlined">
+                      more_horiz
+                    </span>
                   </Dropdown.Toggle>
 
                   <Dropdown.Menu className="bg-white border box-shadow">
                     <Dropdown.Item href="#">
-                      <MaterialSymbol icon="visibility" />
+                      <i className="material-symbols-outlined">visibility</i>
                       View
                     </Dropdown.Item>
 
                     <Dropdown.Item href="#">
-                      <MaterialSymbol icon="edit" />
+                      <span className="material-symbols-outlined">edit</span>
                       Edit
                     </Dropdown.Item>
 
                     <Dropdown.Item href="#">
-                      <MaterialSymbol icon="delete" />
+                      <i className="material-symbols-outlined">delete</i>
                       Delete
                     </Dropdown.Item>
                   </Dropdown.Menu>
@@ -754,9 +746,7 @@ const TeamMembers = () => {
                     />
                   </div>
                   <div className="flex-grow-1 ms-3">
-                    <div
-                      className="text-decoration-none text-secondary fw-medium fs-16"
-                    >
+                    <div className="text-decoration-none text-secondary fw-medium fs-16">
                       Sophia McNeel
                     </div>
                     <span className="d-block">Sales Representative</span>
@@ -769,22 +759,24 @@ const TeamMembers = () => {
                     id="dropdown-basic"
                     className="bg-transparent p-0"
                   >
-                    <MaterialSymbol icon="more_horiz" />
+                    <span className="material-symbols-outlined">
+                      more_horiz
+                    </span>
                   </Dropdown.Toggle>
 
                   <Dropdown.Menu className="bg-white border box-shadow">
                     <Dropdown.Item href="#">
-                      <MaterialSymbol icon="visibility" />
+                      <i className="material-symbols-outlined">visibility</i>
                       View
                     </Dropdown.Item>
 
                     <Dropdown.Item href="#">
-                      <MaterialSymbol icon="edit" />
+                      <span className="material-symbols-outlined">edit</span>
                       Edit
                     </Dropdown.Item>
 
                     <Dropdown.Item href="#">
-                      <MaterialSymbol icon="delete" />
+                      <i className="material-symbols-outlined">delete</i>
                       Delete
                     </Dropdown.Item>
                   </Dropdown.Menu>
@@ -869,9 +861,7 @@ const TeamMembers = () => {
                     />
                   </div>
                   <div className="flex-grow-1 ms-3">
-                    <div
-                      className="text-decoration-none text-secondary fw-medium fs-16"
-                    >
+                    <div className="text-decoration-none text-secondary fw-medium fs-16">
                       Rodriguez Meade
                     </div>
                     <span className="d-block">Manager</span>
@@ -884,22 +874,24 @@ const TeamMembers = () => {
                     id="dropdown-basic"
                     className="bg-transparent p-0"
                   >
-                    <MaterialSymbol icon="more_horiz" />
+                    <span className="material-symbols-outlined">
+                      more_horiz
+                    </span>
                   </Dropdown.Toggle>
 
                   <Dropdown.Menu className="bg-white border box-shadow">
                     <Dropdown.Item href="#">
-                      <MaterialSymbol icon="visibility" />
+                      <i className="material-symbols-outlined">visibility</i>
                       View
                     </Dropdown.Item>
 
                     <Dropdown.Item href="#">
-                      <MaterialSymbol icon="edit" />
+                      <span className="material-symbols-outlined">edit</span>
                       Edit
                     </Dropdown.Item>
 
                     <Dropdown.Item href="#">
-                      <MaterialSymbol icon="delete" />
+                      <i className="material-symbols-outlined">delete</i>
                       Delete
                     </Dropdown.Item>
                   </Dropdown.Menu>
@@ -984,9 +976,7 @@ const TeamMembers = () => {
                     />
                   </div>
                   <div className="flex-grow-1 ms-3">
-                    <div
-                      className="text-decoration-none text-secondary fw-medium fs-16"
-                    >
+                    <div className="text-decoration-none text-secondary fw-medium fs-16">
                       Michael Mackenzie
                     </div>
                     <span className="d-block">Web Developer</span>
@@ -999,22 +989,24 @@ const TeamMembers = () => {
                     id="dropdown-basic"
                     className="bg-transparent p-0"
                   >
-                    <MaterialSymbol icon="more_horiz" />
+                    <span className="material-symbols-outlined">
+                      more_horiz
+                    </span>
                   </Dropdown.Toggle>
 
                   <Dropdown.Menu className="bg-white border box-shadow">
                     <Dropdown.Item href="#">
-                      <MaterialSymbol icon="visibility" />
+                      <i className="material-symbols-outlined">visibility</i>
                       View
                     </Dropdown.Item>
 
                     <Dropdown.Item href="#">
-                      <MaterialSymbol icon="edit" />
+                      <span className="material-symbols-outlined">edit</span>
                       Edit
                     </Dropdown.Item>
 
                     <Dropdown.Item href="#">
-                      <MaterialSymbol icon="delete" />
+                      <i className="material-symbols-outlined">delete</i>
                       Delete
                     </Dropdown.Item>
                   </Dropdown.Menu>
@@ -1099,9 +1091,7 @@ const TeamMembers = () => {
                     />
                   </div>
                   <div className="flex-grow-1 ms-3">
-                    <div
-                      className="text-decoration-none text-secondary fw-medium fs-16"
-                    >
+                    <div className="text-decoration-none text-secondary fw-medium fs-16">
                       Charles Tharp
                     </div>
                     <span className="d-block">Accountant</span>
@@ -1114,22 +1104,24 @@ const TeamMembers = () => {
                     id="dropdown-basic"
                     className="bg-transparent p-0"
                   >
-                    <MaterialSymbol icon="more_horiz" />
+                    <span className="material-symbols-outlined">
+                      more_horiz
+                    </span>
                   </Dropdown.Toggle>
 
                   <Dropdown.Menu className="bg-white border box-shadow">
                     <Dropdown.Item href="#">
-                      <MaterialSymbol icon="visibility" />
+                      <i className="material-symbols-outlined">visibility</i>
                       View
                     </Dropdown.Item>
 
                     <Dropdown.Item href="#">
-                      <MaterialSymbol icon="edit" />
+                      <span className="material-symbols-outlined">edit</span>
                       Edit
                     </Dropdown.Item>
 
                     <Dropdown.Item href="#">
-                      <MaterialSymbol icon="delete" />
+                      <i className="material-symbols-outlined">delete</i>
                       Delete
                     </Dropdown.Item>
                   </Dropdown.Menu>
@@ -1214,9 +1206,7 @@ const TeamMembers = () => {
                     />
                   </div>
                   <div className="flex-grow-1 ms-3">
-                    <div
-                      className="text-decoration-none text-secondary fw-medium fs-16"
-                    >
+                    <div className="text-decoration-none text-secondary fw-medium fs-16">
                       Tina Bell
                     </div>
                     <span className="d-block">Executive Assistant</span>
@@ -1229,22 +1219,24 @@ const TeamMembers = () => {
                     id="dropdown-basic"
                     className="bg-transparent p-0"
                   >
-                    <MaterialSymbol icon="more_horiz" />
+                    <span className="material-symbols-outlined">
+                      more_horiz
+                    </span>
                   </Dropdown.Toggle>
 
                   <Dropdown.Menu className="bg-white border box-shadow">
                     <Dropdown.Item href="#">
-                      <MaterialSymbol icon="visibility" />
+                      <i className="material-symbols-outlined">visibility</i>
                       View
                     </Dropdown.Item>
 
                     <Dropdown.Item href="#">
-                      <MaterialSymbol icon="edit" />
+                      <span className="material-symbols-outlined">edit</span>
                       Edit
                     </Dropdown.Item>
 
                     <Dropdown.Item href="#">
-                      <MaterialSymbol icon="delete" />
+                      <i className="material-symbols-outlined">delete</i>
                       Delete
                     </Dropdown.Item>
                   </Dropdown.Menu>
@@ -1329,11 +1321,9 @@ const TeamMembers = () => {
                     />
                   </div>
                   <div className="flex-grow-1 ms-3">
-                    <didiv
-                      className="text-decoration-none text-secondary fw-medium fs-16"
-                    >
+                    <div className="text-decoration-none text-secondary fw-medium fs-16">
                       Melvin Larocque
-                    </didiv>
+                    </div>
                     <span className="d-block">Business Analyst</span>
                   </div>
                 </div>
@@ -1344,22 +1334,24 @@ const TeamMembers = () => {
                     id="dropdown-basic"
                     className="bg-transparent p-0"
                   >
-                    <MaterialSymbol icon="more_horiz" />
+                    <span className="material-symbols-outlined">
+                      more_horiz
+                    </span>
                   </Dropdown.Toggle>
 
                   <Dropdown.Menu className="bg-white border box-shadow">
                     <Dropdown.Item href="#">
-                      <MaterialSymbol icon="visibility" />
+                      <i className="material-symbols-outlined">visibility</i>
                       View
                     </Dropdown.Item>
 
                     <Dropdown.Item href="#">
-                      <MaterialSymbol icon="edit" />
+                      <span className="material-symbols-outlined">edit</span>
                       Edit
                     </Dropdown.Item>
 
                     <Dropdown.Item href="#">
-                      <MaterialSymbol icon="delete" />
+                      <i className="material-symbols-outlined">delete</i>
                       Delete
                     </Dropdown.Item>
                   </Dropdown.Menu>

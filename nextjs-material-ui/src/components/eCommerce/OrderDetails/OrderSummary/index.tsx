@@ -13,6 +13,7 @@ import {
   Paper,
   TableHead,
 } from "@mui/material";
+import Image from "next/image";
 
 const OrderSummary: React.FC = () => {
   return (
@@ -267,7 +268,12 @@ const OrderSummary: React.FC = () => {
               }}
             >
               <Box>
-                <img src="/images/master-card.png" alt="master-card" />
+                <Image
+                  src="/images/master-card.png"
+                  alt="master-card"
+                  width={50}
+                  height={32}
+                />
               </Box>
 
               <Box>

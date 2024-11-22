@@ -33,7 +33,6 @@ This files table contents are outlined below>>>>>
   --darkColor: #212529;
   --purpleColor: #ad63f6;
   --orangeColor: #fd5812;
-  --orangeColor: #fd5812;
 }
 *,
 ::after,
@@ -964,6 +963,61 @@ button {
                       width: 350px;
                     }
                   }
+                  .speaker-info {
+                    .img {
+                      width: 40px;
+                      border-radius: 7px;
+
+                      img {
+                        border-radius: 7px;
+                        margin-bottom: -5px;
+                      }
+                    }
+                    span {
+                      margin-left: 12px;
+                    }
+                  }
+                  .impressions {
+                    padding-left: 28px;
+
+                    i {
+                      left: 0;
+                      top: 50%;
+                      font-size: 20px;
+                      position: absolute;
+                      color: var(--successColor);
+                      transform: translateY(-50%);
+
+                      &.down {
+                        color: var(--dangerColor);
+                      }
+                    }
+                  }
+                  .clicks {
+                    padding-left: 28px;
+
+                    i {
+                      left: 0;
+                      top: 50%;
+                      font-size: 20px;
+                      position: absolute;
+                      color: var(--successColor);
+                      transform: translateY(-50%);
+
+                      &.down {
+                        color: var(--dangerColor);
+                      }
+                    }
+                  }
+                  .change_24h,
+                  .change_7d {
+                    &.up {
+                      color: #1e8308;
+                    }
+                    &.down {
+                      color: #ee3e08;
+                    }
+                  }
                   &:first-child {
                     border-left: 1px solid var(--borderColor);
                   }
@@ -1103,6 +1157,32 @@ table {
 }
 .v-progress-linear {
   border-radius: 100px;
+}
+.analytics-overview-card {
+  .analytics-overview-card-content {
+    .content li {
+      .v-progress-linear {
+        margin-top: 11px;
+
+        &.new-users-progressbar .v-progress-linear__determinate {
+          background-color: #605dff !important;
+          color: #ffffff !important;
+        }
+        &.page-views-progressbar .v-progress-linear__determinate {
+          background-color: #ad63f6 !important;
+          color: #ffffff !important;
+        }
+        &.page-sessions-progressbar .v-progress-linear__determinate {
+          background-color: #3584fc !important;
+          color: #ffffff !important;
+        }
+        &.bounce-rate-progressbar .v-progress-linear__determinate {
+          background-color: #fd5812 !important;
+          color: #ffffff !important;
+        }
+      }
+    }
+  }
 }
 .product-development-card {
   .development-card-content {
@@ -1510,6 +1590,28 @@ table {
           padding: 4px 8px;
         }
       }
+    }
+  }
+}
+
+.cryptocurrency-controller {
+  .controller-icon {
+    border: 1px solid var(--borderColor);
+    background-color: transparent;
+    color: var(--bodyColor);
+    line-height: 29px;
+    font-size: 22px;
+    margin: 0 2px;
+    height: 31px;
+    width: 31px;
+    padding: 0;
+    border-radius: 4px;
+    text-align: center;
+    cursor: pointer;
+    &:hover {
+      background-color: var(--primaryColor);
+      border-color: var(--primaryColor);
+      color: var(--whiteColor);
     }
   }
 }

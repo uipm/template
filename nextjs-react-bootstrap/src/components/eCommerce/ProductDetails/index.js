@@ -1,8 +1,6 @@
 "use client";
 
-import React from "react";
-import Link from "next/link";
-import Image from "next/image";
+import { Card } from "react-bootstrap";
 import ProductImage from "./ProductImage";
 import CapacitySelector from "./CapacitySelector";
 import StyleSelector from "./StyleSelector";
@@ -12,8 +10,8 @@ import ProductQuantity from "./ProductQuantity";
 const ProductDetails = () => {
   return (
     <>
-      <div className="card bg-white border-0 rounded-3 mb-4">
-        <div className="card-body p-4">
+      <Card className="bg-white border-0 rounded-3 mb-4">
+        <Card.Body className="p-4">
           <div className="row">
             <div className="col-lg-6">
               <ProductImage />
@@ -159,8 +157,8 @@ const ProductDetails = () => {
               </div>
             </div>
           </div>
-        </div>
-      </div>
+        </Card.Body>
+      </Card>
     </>
   );
 };

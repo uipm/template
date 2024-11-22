@@ -47,8 +47,7 @@ const TasksOverview: React.FC = () => {
         colors: "#64748B",
       },
       markers: {
-        shape: "square", // circle, square, line, plus, cross
-        radius: 2,
+        shape: 'diamond',
         offsetX: -2,
         offsetY: -0.1,
       },
@@ -92,7 +91,7 @@ const TasksOverview: React.FC = () => {
               options={options}
               series={series}
               type="pie"
-              height={425}
+              height={395}
               width={"100%"}
             />
           )}

@@ -1,9 +1,6 @@
 "use client";
 
-import React from 'react';
-import Card from 'react-bootstrap/Card';
-import ListGroup from 'react-bootstrap/ListGroup';
-import Badge from 'react-bootstrap/Badge';
+import { Card, Badge, ListGroup } from "react-bootstrap";
 
 const ListGroupWithBadge = () => {
   return (

@@ -1,18 +1,14 @@
 "use client";
 
-import React from "react";
-import Row from "react-bootstrap/Row"; 
-import Col from "react-bootstrap/Col"; 
-import { MaterialSymbol } from "react-material-symbols";
-import "react-material-symbols/rounded";
+import { Row, Col, Card } from "react-bootstrap";
 import TicketDescription from "./TicketDescription";
 import Attachments from "./Attachments";
 
 const TicketDetails = () => {
   return (
     <>
-      <div className="card bg-white border-0 rounded-3 mb-4">
-        <div className="card-body py-4 px-0">
+      <Card className="bg-white border-0 rounded-3 mb-4">
+        <Card.Body className="py-4 px-0">
           <div className="default-table-area style-two all-projects">
             <div className="table-responsive">
               <table className="table align-middle">
@@ -34,9 +30,7 @@ const TicketDetails = () => {
                     <td className="text-body">#854</td>
 
                     <td>
-                      <div className="fw-medium">
-                        Network Infrastructure
-                      </div>
+                      <div className="fw-medium">Network Infrastructure</div>
                     </td>
 
                     <td className="text-secondary">Walter Frazier</td>
@@ -58,8 +52,10 @@ const TicketDetails = () => {
                     <td>
                       <div className="d-flex align-items-center gap-3">
                         <button className="ps-0 border-0 bg-transparent lh-1 position-relative top-2">
-                          <MaterialSymbol icon="edit" size={16} className="text-body" />
-                        </button> 
+                          <span className="material-symbols-outlined fs-16 text-body">
+                            edit
+                          </span>
+                        </button>
                       </div>
                     </td>
                   </tr>
@@ -67,9 +63,9 @@ const TicketDetails = () => {
               </table>
             </div>
           </div>
-        </div>
-      </div>
- 
+        </Card.Body>
+      </Card>
+
       <Row>
         <Col lg={7} xxl={8}>
           <TicketDescription />
@@ -78,7 +74,7 @@ const TicketDetails = () => {
         <Col lg={5} xxl={4}>
           <Attachments />
         </Col>
-      </Row> 
+      </Row>
     </>
   );
 };

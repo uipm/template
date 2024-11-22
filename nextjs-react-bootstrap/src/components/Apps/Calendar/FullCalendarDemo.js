@@ -1,14 +1,13 @@
 "use client";
 
-import React from "react";
-import Card from "react-bootstrap/Card"; 
+import { Card } from "react-bootstrap";
 import FullCalendar from '@fullcalendar/react';
 import dayGridPlugin from '@fullcalendar/daygrid';
 
 const FullCalendarDemo = () => {
   return (
     <>
-      <Card className="card bg-white border-0 rounded-3 mb-4">
+      <Card className="bg-white border-0 rounded-3 mb-4 z-0">
         <Card.Body className="p-4">
           <div className='full-calendar-box'>
             <FullCalendar

@@ -1,12 +1,10 @@
 /* Pagination Area Style
 ============================================*/
 .pagination {
-    --bs-pagination-font-size: $font-size-base;
-    
     .page-item {
         margin-right: 7px;
         .page-link {
-            padding: 6px 12px;
+            //padding: 6px 12px;
             border-radius: 4px;
             border: 1px solid $border-color;
             background: $white;

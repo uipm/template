@@ -68,11 +68,7 @@
     left: 215px;
 }
 
-/* dark-theme style */
-.dark-theme .ticketsStatusContent::before {
-    background: var(--darkBorder);
-}
-
+ 
 /* Max width 767px */
 @media only screen and (max-width: 767px) {
     .ticketsStatusContent {

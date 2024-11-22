@@ -54,6 +54,7 @@ const LeadsBySource: React.FC = () => {
         colors: "#64748B",
       },
       markers: {
+        shape: 'diamond',
         offsetX: -2,
         offsetY: -0.5,
       },
@@ -142,6 +143,7 @@ const LeadsBySource: React.FC = () => {
         <Box
           sx={{
             marginTop: "-15px",
+            marginBottom: "-15px",
           }}
         >
           {isChartLoaded && (
@@ -149,7 +151,7 @@ const LeadsBySource: React.FC = () => {
               options={options}
               series={series}
               type="donut"
-              height={310}
+              height={282}
               width={"100%"}
             />
           )}

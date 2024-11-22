@@ -11,7 +11,6 @@ This files table contents are outlined below>>>>>
 
 // Fonts
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap');
 
 // Required
 @import "../../node_modules/bootstrap/scss/functions";
@@ -26,6 +25,11 @@ This files table contents are outlined below>>>>>
 // Create your own map
 $custom-colors: (
     "primary-div": $primary-div,
+    "primary-div-50": $primary-div-50,
+    "primary-50": $primary-50,
+    "danger-50": $danger-50,
+    "success-50": $success-50,
+    "success-60": $success-60,
     "body-bg": $body-bg,
     "danger-div": $danger-div,
     "rating-color": $rating-color,
@@ -82,7 +86,7 @@ $utilities: (
 @import "./components/calendar";
 @import "./components/chat";
 @import "./components/timeline";
-@import "./components/priceing";
+@import "./components/pricing";
 @import "./components/products";
 @import "./components/rtl";
 @import "./components/dark-mode";
@@ -93,3 +97,6 @@ $utilities: (
 @import "./components/card-bg-style";
 @import "./components/fluid-boxed-style";
 @import "./components/landing-page";
+@import "./components/analytics";
+@import "./components/nft";
+@import "./components/marketing";

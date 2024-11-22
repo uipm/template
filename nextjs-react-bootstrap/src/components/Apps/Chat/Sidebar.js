@@ -1,12 +1,7 @@
 "use client";
 
-import React from "react"; 
-import Image from "next/image";
-import Form from 'react-bootstrap/Form';
-import Card from "react-bootstrap/Card";
-import { MaterialSymbol } from "react-material-symbols";
-import Tab from 'react-bootstrap/Tab';
-import Tabs from 'react-bootstrap/Tabs';
+import { Card, Form, Tab, Tabs} from "react-bootstrap";
+import Image from "next/image"; 
 
 const Sidebar = () => {
   return (
@@ -22,7 +17,9 @@ const Sidebar = () => {
                 className="rounded-1"
                 placeholder="Search here"
               />
-              <MaterialSymbol icon="search" size={18} className='position-absolute top-50 start-0 translate-middle-y' />
+              <span className="material-symbols-outlined fs-18 position-absolute top-50 start-0 translate-middle-y">
+                search
+              </span>
             </Form>
           </div>
  

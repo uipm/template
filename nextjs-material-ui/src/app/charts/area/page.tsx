@@ -5,8 +5,7 @@ import BasicAreaChart from "@/components/Charts/Area/BasicAreaChart";
 import SplineAreaChart from "@/components/Charts/Area/SplineAreaChart";
 import NegativeValuesAreaChart from "@/components/Charts/Area/NegativeValuesAreaChart";
 import MissingNullValuesAreaChart from "@/components/Charts/Area/MissingNullValuesAreaChart";
-import StackedAreaChart from "@/components/Charts/Area/StackedAreaChart";
-import GitHubStyleAreaChart from "@/components/Charts/Area/GitHubStyleAreaChart";
+import StackedAreaChart from "@/components/Charts/Area/StackedAreaChart"; 
 
 export default function Page() {
   return (
@@ -31,14 +30,12 @@ export default function Page() {
         <Grid item xs={12} md={12} lg={12} xl={6}>
           <BasicAreaChart />
 
-          <StackedAreaChart />
+          <StackedAreaChart /> 
 
-          <GitHubStyleAreaChart />
+          <SplineAreaChart />
         </Grid>
 
-        <Grid item xs={12} md={12} lg={12} xl={6}>
-          <SplineAreaChart />
-
+        <Grid item xs={12} md={12} lg={12} xl={6}> 
           <NegativeValuesAreaChart />
 
           <MissingNullValuesAreaChart />

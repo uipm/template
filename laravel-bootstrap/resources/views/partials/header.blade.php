@@ -696,7 +696,7 @@
                                 <div class="flex-shrink-0">
                                     <img
                                         class="rounded-circle wh-40 administrator"
-                                        src="assets/images/administrator.jpg"
+                                        src="/assets/images/administrator.jpg"
                                         alt="admin"
                                     />
                                 </div>
@@ -726,7 +726,7 @@
                                     <div class="flex-shrink-0">
                                         <img
                                             class="rounded-circle wh-30 administrator"
-                                            src="assets/images/administrator.jpg"
+                                            src="/assets/images/administrator.jpg"
                                             alt="admin"
                                         />
                                     </div>
@@ -734,7 +734,7 @@
                                         class="flex-grow-1 ms-2"
                                     >
                                         <h3 class="fw-medium">
-                                            William John
+                                            Olivia John
                                         </h3>
                                         <span class="fs-12"
                                             >Marketing

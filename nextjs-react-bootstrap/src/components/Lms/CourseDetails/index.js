@@ -1,15 +1,13 @@
 "use client";
 
-import React from "react"; 
+import { Card } from "react-bootstrap";
 import Image from "next/image";
-import { MaterialSymbol } from "react-material-symbols";
-import "react-material-symbols/rounded";
 
 const CourseDetails = () => {
   return (
     <>
-      <div className="card bg-white border-0 rounded-3 mb-4">
-        <div className="card-body p-0">
+      <Card className="bg-white border-0 rounded-3 mb-4">
+        <Card.Body className="p-0">
           <div className="p-4">
             <h3 className="mb-0">Courses</h3>
           </div>
@@ -35,16 +33,12 @@ const CourseDetails = () => {
                   <tr>
                     <td className="text-body">#854</td>
 
-                    <td>
-                      Cybersecurity Awareness
-                    </td>
+                    <td>Cybersecurity Awareness</td>
 
                     <td>Technology</td>
 
                     <td>
-                      <div 
-                        className="d-flex align-items-center"
-                      >
+                      <div className="d-flex align-items-center">
                         <div className="flex-shrink-0">
                           <Image
                             src="/images/user-42.jpg"
@@ -70,16 +64,18 @@ const CourseDetails = () => {
 
                     <td>
                       <button className="ps-0 border-0 bg-transparent lh-1 position-relative top-2">
-                        <MaterialSymbol icon="edit" size={16} className="text-body" />
-                      </button> 
+                        <span className="material-symbols-outlined fs-16 text-body">
+                          edit
+                        </span>
+                      </button>
                     </td>
                   </tr>
                 </tbody>
               </table>
             </div>
           </div>
-        </div>
-      </div>
+        </Card.Body>
+      </Card>
     </>
   );
 };

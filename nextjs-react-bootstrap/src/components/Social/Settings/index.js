@@ -1,22 +1,14 @@
 "use client";
 
-import React from "react";
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import Card from 'react-bootstrap/Card';
-import Form from 'react-bootstrap/Form';
-import Link from "next/link";
-import Image from "next/image";
-import { MaterialSymbol } from "react-material-symbols";
-import "react-material-symbols/rounded";
+import { Row, Col, Card, Form } from "react-bootstrap";
 
 const Settings = () => {
   return (
     <>
       <Row>
         <Col lg={8}>
-          <div className="card bg-white border-0 rounded-3 mb-4">
-            <div className="card-body p-4">
+          <Card className="bg-white border-0 rounded-3 mb-4">
+            <Card.Body className="p-4">
               <h3 className="mb-lg-4 mb-3">Profile Settings</h3>
 
               <Form>
@@ -31,7 +23,7 @@ const Settings = () => {
                       />
                     </Form.Group>
                   </Col>
-                  
+
                   <Col sm={6} lg={6}>
                     <Form.Group className="mb-4">
                       <label className="label text-secondary">Last Name</label>
@@ -161,7 +153,7 @@ const Settings = () => {
                           name="group2"
                           type="radio"
                           id="inline-radio-3"
-                        /> 
+                        />
                       </div>
                     </Form.Group>
                   </Col>
@@ -277,7 +269,10 @@ const Settings = () => {
                       </label>
                       <div className="form-control h-100 text-center position-relative p-4 p-lg-5">
                         <div className="product-upload">
-                          <label htmlFor="file-upload" className="file-upload mb-0">
+                          <label
+                            htmlFor="file-upload"
+                            className="file-upload mb-0"
+                          >
                             <i className="ri-folder-image-line bg-primary bg-opacity-10 p-2 rounded-1 text-primary"></i>
                             <span className="d-block text-body fs-14">
                               Drag and drop an image or{" "}
@@ -299,7 +294,10 @@ const Settings = () => {
                       </label>
                       <div className="form-control h-100 text-center position-relative p-4 p-lg-5">
                         <div className="product-upload">
-                          <label htmlFor="file-upload" className="file-upload mb-0">
+                          <label
+                            htmlFor="file-upload"
+                            className="file-upload mb-0"
+                          >
                             <i className="ri-file-line bg-primary bg-opacity-10 p-2 rounded-1 text-primary"></i>
                             <span className="d-block text-body fs-14">
                               Drag and drop a file or{" "}
@@ -328,8 +326,8 @@ const Settings = () => {
                   </Col>
                 </Row>
               </Form>
-            </div>
-          </div>
+            </Card.Body>
+          </Card>
         </Col>
 
         <Col lg={4}>
@@ -345,7 +343,10 @@ const Settings = () => {
                     defaultValue=""
                     id="flexCheckDefault"
                   />
-                  <label className="form-check-label" htmlFor="flexCheckDefault">
+                  <label
+                    className="form-check-label"
+                    htmlFor="flexCheckDefault"
+                  >
                     Allow users to show your email
                   </label>
                 </div>
@@ -357,7 +358,10 @@ const Settings = () => {
                     defaultValue=""
                     id="flexCheckChecked2"
                   />
-                  <label className="form-check-label" htmlFor="flexCheckChecked2">
+                  <label
+                    className="form-check-label"
+                    htmlFor="flexCheckChecked2"
+                  >
                     Allow users to show your experiences
                   </label>
                 </div>
@@ -369,7 +373,10 @@ const Settings = () => {
                     defaultValue=""
                     id="flexCheckChecked3"
                   />
-                  <label className="form-check-label" htmlFor="flexCheckChecked3">
+                  <label
+                    className="form-check-label"
+                    htmlFor="flexCheckChecked3"
+                  >
                     Allow users to show your followers
                   </label>
                 </div>
@@ -392,7 +399,7 @@ const Settings = () => {
                     name="group3"
                     type="radio"
                     id="inline-radio-5"
-                  /> 
+                  />
                 </div>
               </div>
 

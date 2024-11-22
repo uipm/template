@@ -1,7 +1,7 @@
 "use client";
-     
-import CreateAnEvent from '@/components/Events/CreateAnEvent';
-import Breadcrumb from 'react-bootstrap/Breadcrumb';
+
+import { Breadcrumb } from "react-bootstrap";
+import CreateAnEvent from '@/components/Events/CreateAnEvent'; 
 
 export default function Page() {
   return (

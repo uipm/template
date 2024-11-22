@@ -1,7 +1,7 @@
 "use client";
 
+import { Breadcrumb } from "react-bootstrap";
 import Editors from '@/components/Forms/Editors';
-import Breadcrumb from 'react-bootstrap/Breadcrumb'; 
 
 export default function Page() {
   return (

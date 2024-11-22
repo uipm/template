@@ -19,11 +19,6 @@
     position: absolute;
 }
  
-/* dark-theme style */
-.dark-theme .congratulationsCard {
-    background-color: var(--darkCardBg);
-}
-
 /* RTL Style */
 [dir="rtl"] .congratulationsCard .content img {
     right: auto;

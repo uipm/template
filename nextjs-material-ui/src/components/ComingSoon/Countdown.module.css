@@ -73,19 +73,19 @@
   display: none;
 }
 
-.pro.io-form.component-rtl-enabled .comingSoonTimer {
+.trezo-form.component-rtl-enabled .comingSoonTimer {
   margin-right: 0;
   margin-left: -25px;
 }
-.pro.io-form.component-rtl-enabled .comingSoonTimer .countdownContainer .countdownItem::before {
+.trezo-form.component-rtl-enabled .comingSoonTimer .countdownContainer .countdownItem::before {
   left: -33px;
   right: auto;
 }
-.pro.io-form.component-rtl-enabled .comingSoonTimer .countdownContainer .countdownItem:first-child {
+.trezo-form.component-rtl-enabled .comingSoonTimer .countdownContainer .countdownItem:first-child {
   margin-left: 30px;
   margin-right: 0;
 }
-.pro.io-form.component-rtl-enabled .comingSoonTimer .countdownContainer .countdownItem:last-child {
+.trezo-form.component-rtl-enabled .comingSoonTimer .countdownContainer .countdownItem:last-child {
   margin-right: 30px;
   margin-left: 0;
 }
@@ -156,7 +156,7 @@
     letter-spacing: 2.5px;
  }
 
-  .pro.io-form.component-rtl-enabled .comingSoonTimer {
+  .trezo-form.component-rtl-enabled .comingSoonTimer {
     margin-left: 0;
  }
 

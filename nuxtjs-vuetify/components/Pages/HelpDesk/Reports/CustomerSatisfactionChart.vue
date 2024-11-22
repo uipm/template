@@ -124,7 +124,7 @@ export default defineComponent({
       tooltip: {
         enabled: true,
         y: {
-          formatter: function (val) {
+          formatter: function (val: string) {
             return val + "%";
           },
         },

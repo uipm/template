@@ -1,8 +1,6 @@
 "use client";
    
-import Breadcrumb from 'react-bootstrap/Breadcrumb'; 
-import Row from 'react-bootstrap/Row'; 
-import Col from 'react-bootstrap/Col';
+import { Row, Col, Breadcrumb } from "react-bootstrap";
 import BasicRadialBarChart from '@/components/Charts/RadialBarCharts/BasicRadialBarChart';
 import MultipleRadialBarChart from '@/components/Charts/RadialBarCharts/MultipleRadialBarChart';
 import CustomAngleCircleRadialBarChart from '@/components/Charts/RadialBarCharts/CustomAngleCircleRadialBarChart';

@@ -1,62 +1,57 @@
 "use client";
 
-import React from "react";
+import { Dropdown, Card, Table } from "react-bootstrap";
 import Image from "next/image";
-import Card from "react-bootstrap/Card";
-import Table from "react-bootstrap/Table";
-import Dropdown from "react-bootstrap/Dropdown";
-import { MaterialSymbol } from "react-material-symbols";
-import "react-material-symbols/rounded";
 import Pagination from "./Pagination";
 
 const enrolledStudentsData = [
   {
-    id: '#A-1217',
-    img: '/images/user-13.jpg',
-    name: 'Olivia Clark',
-    email: 'olivia@trezo.com'
+    id: "#A-1217",
+    img: "/images/user-13.jpg",
+    name: "Olivia Clark",
+    email: "olivia@trezo.com",
   },
   {
-    id: '#A1364',
-    img: '/images/user-16.jpg',
-    name: 'Ava Turner',
-    email: 'ava@trezo.com'
+    id: "#A1364",
+    img: "/images/user-16.jpg",
+    name: "Ava Turner",
+    email: "ava@trezo.com",
   },
   {
-    id: '#A-2951',
-    img: '/images/user-17.jpg',
-    name: 'Lucas Morgan',
-    email: 'lucas@trezo.com'
+    id: "#A-2951",
+    img: "/images/user-17.jpg",
+    name: "Lucas Morgan",
+    email: "lucas@trezo.com",
   },
   {
-    id: '#A-7342',
-    img: '/images/user-18.jpg',
-    name: 'Isabella Cooper',
-    email: 'isabella@trezo.com'
+    id: "#A-7342",
+    img: "/images/user-18.jpg",
+    name: "Isabella Cooper",
+    email: "isabella@trezo.com",
   },
   {
-    id: '#A-1217',
-    img: '/images/user-13.jpg',
-    name: 'Olivia Clark',
-    email: 'olivia@trezo.com'
+    id: "#A-1217",
+    img: "/images/user-13.jpg",
+    name: "Olivia Clark",
+    email: "olivia@trezo.com",
   },
   {
-    id: '#A1364',
-    img: '/images/user-16.jpg',
-    name: 'Ava Turner',
-    email: 'ava@trezo.com'
+    id: "#A1364",
+    img: "/images/user-16.jpg",
+    name: "Ava Turner",
+    email: "ava@trezo.com",
   },
   {
-    id: '#A-2951',
-    img: '/images/user-17.jpg',
-    name: 'Lucas Morgan',
-    email: 'lucas@trezo.com'
+    id: "#A-2951",
+    img: "/images/user-17.jpg",
+    name: "Lucas Morgan",
+    email: "lucas@trezo.com",
   },
   {
-    id: '#A-7342',
-    img: '/images/user-18.jpg',
-    name: 'Isabella Cooper',
-    email: 'isabella@trezo.com'
+    id: "#A-7342",
+    img: "/images/user-18.jpg",
+    name: "Isabella Cooper",
+    email: "isabella@trezo.com",
   },
 ];
 
@@ -75,42 +70,44 @@ const EnrolledStudents = () => {
                   id="dropdown-basic"
                   className="bg-transparent p-0"
                 >
-                  <MaterialSymbol icon="more_horiz" />
+                  <span className="material-symbols-outlined">more_horiz</span>
                 </Dropdown.Toggle>
 
                 <Dropdown.Menu className="bg-white border box-shadow">
                   <Dropdown.Item href="#">
-                    <MaterialSymbol icon="schedule" />
+                    <span className="material-symbols-outlined">schedule</span>
                     Today
                   </Dropdown.Item>
 
                   <Dropdown.Item href="#">
-                    <MaterialSymbol icon="pie_chart" />
+                    <span className="material-symbols-outlined">pie_chart</span>
                     Last 7 Days
                   </Dropdown.Item>
 
                   <Dropdown.Item href="#">
-                    <MaterialSymbol icon="refresh" />
+                    <i className="material-symbols-outlined">refresh</i>
                     Last Month
                   </Dropdown.Item>
 
                   <Dropdown.Item href="#">
-                    <MaterialSymbol icon="calendar_today" />
+                    <span className="material-symbols-outlined">
+                      calendar_today
+                    </span>
                     Last 1 Year
                   </Dropdown.Item>
 
                   <Dropdown.Item href="#">
-                    <MaterialSymbol icon="bar_chart" />
+                    <span className="material-symbols-outlined">bar_chart</span>
                     All Time
                   </Dropdown.Item>
 
                   <Dropdown.Item href="#">
-                    <MaterialSymbol icon="visibility" />
+                    <i className="material-symbols-outlined">visibility</i>
                     View
                   </Dropdown.Item>
 
                   <Dropdown.Item href="#">
-                    <MaterialSymbol icon="delete" />
+                    <i className="material-symbols-outlined">delete</i>
                     Delete
                   </Dropdown.Item>
                 </Dropdown.Menu>
@@ -133,7 +130,7 @@ const EnrolledStudents = () => {
                     enrolledStudentsData.slice(0, 4).map((value, i) => (
                       <tr key={i}>
                         <td>{value.id}</td>
-                        
+
                         <td>
                           <div className="d-flex align-items-center">
                             <div className="flex-shrink-0">
@@ -148,14 +145,12 @@ const EnrolledStudents = () => {
                             <div className="flex-grow-1 ms-2 position-relative top-2">
                               <h6 className="mb-0 fs-14 fw-medium">
                                 {value.name}
-                              </h6> 
+                              </h6>
                             </div>
                           </div>
                         </td>
- 
-                        <td>
-                          {value.email}
-                        </td>
+
+                        <td>{value.email}</td>
                       </tr>
                     ))}
                 </tbody>

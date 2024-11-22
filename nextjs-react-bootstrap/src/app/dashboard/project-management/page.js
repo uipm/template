@@ -1,5 +1,4 @@
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
+import { Row, Col } from "react-bootstrap";
 import ProjectsOverview from "@/components/Dashboard/ProjectManagement/ProjectsOverview";
 import ProjectsRoadmap from "@/components/Dashboard/ProjectManagement/ProjectsRoadmap";
 import ProjectsProgress from "@/components/Dashboard/ProjectManagement/ProjectsProgress";

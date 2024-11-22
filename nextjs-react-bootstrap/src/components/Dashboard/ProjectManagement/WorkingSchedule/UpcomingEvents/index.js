@@ -1,15 +1,14 @@
 "use client";
 
-import * as React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
 
 const UpcomingEvents = () => {
   return (
     <>
-      <div className="upcoming-events mt-4">
+      <div className="upcoming-events mt-4 position-relative">
         <div className="d-flex justify-content-between align-items-center mt-3 mt-sm-0 mb-3">
-          <span className="fw-medium">Upcoming Events:</span> 
+          <span className="fw-medium">Upcoming Events:</span>
         </div>
 
         <Swiper
@@ -18,7 +17,7 @@ const UpcomingEvents = () => {
             clickable: true,
           }}
           modules={[Pagination]}
-          className="upcoming-events-slide"
+          className="upcoming-events-slide z-0"
         >
           <SwiperSlide>
             <div className="position-relative d-flex">

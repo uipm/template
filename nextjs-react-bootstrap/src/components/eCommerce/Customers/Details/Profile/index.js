@@ -1,16 +1,13 @@
 "use client";
 
-import React from "react";
+import { Dropdown, Card } from "react-bootstrap";
 import Image from "next/image";
-import { MaterialSymbol } from "react-material-symbols";
-import "react-material-symbols/rounded";
-import Dropdown from 'react-bootstrap/Dropdown';
 
 const Profile = () => {
   return (
     <>
-      <div className="card bg-white border-0 rounded-3 mb-4">
-        <div className="card-body p-4">
+      <Card className="bg-white border-0 rounded-3 mb-4">
+        <Card.Body className="p-4">
           <div className="d-flex justify-content-between align-items-center mb-3 mb-lg-4">
             <div className="d-flex align-items-center">
               <div className="flex-shrink-0">
@@ -31,35 +28,35 @@ const Profile = () => {
 
             <Dropdown className="action-opt">
               <Dropdown.Toggle
-                variant="secondary" 
+                variant="secondary"
                 id="dropdown-basic"
                 className="bg-transparent p-0"
-              > 
-                <MaterialSymbol icon="more_horiz" />
+              >
+                <span className="material-symbols-outlined">more_horiz</span>
               </Dropdown.Toggle>
 
               <Dropdown.Menu className="bg-white border box-shadow">
-                <Dropdown.Item href="#"> 
-                  <MaterialSymbol icon="visibility" />
+                <Dropdown.Item href="#">
+                  <i className="material-symbols-outlined">visibility</i>
                   View
                 </Dropdown.Item>
 
-                <Dropdown.Item href="#"> 
-                  <MaterialSymbol icon="edit" />
+                <Dropdown.Item href="#">
+                  <span className="material-symbols-outlined">edit</span>
                   Edit
                 </Dropdown.Item>
-  
-                <Dropdown.Item href="#"> 
-                  <MaterialSymbol icon="delete" />
+
+                <Dropdown.Item href="#">
+                  <i className="material-symbols-outlined">delete</i>
                   Delete
                 </Dropdown.Item>
 
-                <Dropdown.Item href="#"> 
-                  <MaterialSymbol icon="lock" />
+                <Dropdown.Item href="#">
+                  <i className="material-symbols-outlined">lock</i>
                   Block
                 </Dropdown.Item>
               </Dropdown.Menu>
-            </Dropdown> 
+            </Dropdown>
           </div>
 
           <div className="mb-3">
@@ -96,8 +93,8 @@ const Profile = () => {
               #JAN-121
             </span>
           </div>
-        </div>
-      </div>
+        </Card.Body>
+      </Card>
     </>
   );
 };

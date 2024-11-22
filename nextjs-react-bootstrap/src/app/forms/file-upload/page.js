@@ -1,8 +1,8 @@
 "use client";
  
+import { Breadcrumb } from "react-bootstrap";
 import MultiFileUpload from '@/components/Forms/FileUpload/MultiFileUpload';
 import SingleFileUpload from '@/components/Forms/FileUpload/SingleFileUpload';
-import Breadcrumb from 'react-bootstrap/Breadcrumb'; 
 
 export default function Page() {
   return (

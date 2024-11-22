@@ -59,7 +59,7 @@ const ProfileInformation: React.FC = () => {
             >
               Email:
             </Typography>{" "}
-            olivia&#64;pro.io.vn
+            olivia&#64;trezo.com
           </Box>
 
           <Box className="text-black" sx={{ fontWeight: "500", mt: "10px" }}>

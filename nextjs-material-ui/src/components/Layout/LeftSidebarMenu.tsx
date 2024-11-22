@@ -74,7 +74,7 @@ const LeftSidebarMenu: React.FC<LeftSidebarProps> = ({ toggleActive }) => {
                 width={26}
                 height={26}
               />
-              <span>pro.io</span>
+              <span>Trezo</span>
             </Link>
           </div>
 
@@ -109,7 +109,7 @@ const LeftSidebarMenu: React.FC<LeftSidebarProps> = ({ toggleActive }) => {
                 >
                   <i className="material-symbols-outlined">dashboard</i>
                   <span className="title">Dashboard</span>
-                  <span className="pro.io-badge">5</span>
+                  <span className="trezo-badge">9</span>
                 </AccordionSummary>
 
                 <AccordionDetails className="mat-details">
@@ -133,7 +133,7 @@ const LeftSidebarMenu: React.FC<LeftSidebarProps> = ({ toggleActive }) => {
                         }`}
                       >
                         CRM
-                        <span className="pro.io-badge">Hot</span>
+                        <span className="trezo-badge style-two">Hot</span>
                       </Link>
                     </li>
 
@@ -157,7 +157,7 @@ const LeftSidebarMenu: React.FC<LeftSidebarProps> = ({ toggleActive }) => {
                           pathname === "/dashboard/lms/" ? "active" : ""
                         }`}
                       >
-                        LMS
+                        LMS <span className="trezo-badge style-two">Top</span>
                       </Link>
                     </li>
 
@@ -169,7 +169,54 @@ const LeftSidebarMenu: React.FC<LeftSidebarProps> = ({ toggleActive }) => {
                         }`}
                       >
                         HelpDesk
-                        <span className="pro.io-badge style-two">Top</span>
+                      </Link>
+                    </li>
+
+                    <li className="sidemenu-item">
+                      <Link
+                        href="/dashboard/analytics/"
+                        className={`sidemenu-link ${
+                          pathname === "/dashboard/analytics/" ? "active" : ""
+                        }`}
+                      >
+                        Analytics
+                        <span className="trezo-badge">New</span>
+                      </Link>
+                    </li>
+
+                    <li className="sidemenu-item">
+                      <Link
+                        href="/dashboard/crypto/"
+                        className={`sidemenu-link ${
+                          pathname === "/dashboard/crypto/" ? "active" : ""
+                        }`}
+                      >
+                        Crypto
+                        <span className="trezo-badge">New</span>
+                      </Link>
+                    </li>
+
+                    <li className="sidemenu-item">
+                      <Link
+                        href="/dashboard/sales/"
+                        className={`sidemenu-link ${
+                          pathname === "/dashboard/sales/" ? "active" : ""
+                        }`}
+                      >
+                        Sales
+                        <span className="trezo-badge">New</span>
+                      </Link>
+                    </li>
+
+                    <li className="sidemenu-item">
+                      <Link
+                        href="/dashboard/hospital/"
+                        className={`sidemenu-link ${
+                          pathname === "/dashboard/hospital/" ? "active" : ""
+                        }`}
+                      >
+                        Hospital
+                        <span className="trezo-badge">New</span>
                       </Link>
                     </li>
                   </ul>
@@ -315,7 +362,7 @@ const LeftSidebarMenu: React.FC<LeftSidebarProps> = ({ toggleActive }) => {
                 >
                   <i className="material-symbols-outlined">mail</i>
                   <span className="title">Email</span>
-                  <span className="pro.io-badge style-two">3</span>
+                  <span className="trezo-badge style-two">3</span>
                 </AccordionSummary>
 
                 <AccordionDetails className="mat-details">
@@ -378,7 +425,7 @@ const LeftSidebarMenu: React.FC<LeftSidebarProps> = ({ toggleActive }) => {
                 >
                   <i className="material-symbols-outlined">folder_open</i>
                   <span className="title">File Manager</span>
-                  <span className="pro.io-badge style-three">7</span>
+                  <span className="trezo-badge style-three">7</span>
                 </AccordionSummary>
 
                 <AccordionDetails className="mat-details">
@@ -1343,7 +1390,12 @@ const LeftSidebarMenu: React.FC<LeftSidebarProps> = ({ toggleActive }) => {
                 </AccordionDetails>
               </Accordion>
 
-              <Link href="/starter/" className="sidebar-menu-link">
+              <Link 
+                href="/starter/"  
+                className={`sidebar-menu-link ${
+                  pathname === "/starter/" ? "active" : ""
+                }`}
+              >
                 <i className="material-symbols-outlined">star_border</i>
                 <span className="title">Starter</span>
               </Link>
@@ -2313,7 +2365,12 @@ const LeftSidebarMenu: React.FC<LeftSidebarProps> = ({ toggleActive }) => {
                 OTHERS
               </Typography>
 
-              <Link href="/my-profile" className="sidebar-menu-link">
+              <Link 
+                href="/my-profile/" 
+                className={`sidebar-menu-link ${
+                  pathname === "/my-profile/" ? "active" : ""
+                }`}
+              >
                 <i className="material-symbols-outlined">account_circle</i>
                 <span className="title">My Profile</span>
               </Link>

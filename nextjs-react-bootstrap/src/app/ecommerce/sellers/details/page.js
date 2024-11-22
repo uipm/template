@@ -1,9 +1,7 @@
 "use client";
- 
+
+import { Row, Col, Breadcrumb } from "react-bootstrap";
 import SellerOverview from '@/components/eCommerce/Sellers/Details/SellerOverview';
-import Breadcrumb from 'react-bootstrap/Breadcrumb';  
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
 import Profile from '@/components/eCommerce/Sellers/Details/Profile';
 import Revenue from '@/components/eCommerce/Sellers/Details/Revenue';
 import ProductsList from '@/components/eCommerce/ProductsList';

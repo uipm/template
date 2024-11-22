@@ -629,11 +629,15 @@
         background-color: $dark-input-bg !important;
     }
     .modal-content {
-        background-color: $dark-input-bg;
+        background-color: $dark-card-bg;
+        
     }
     .modal-header {
         border-color: $dark-border;
         background-color: $dark-card-bg;
+        .btn-close {
+            filter: invert(1);
+        }
     }
     .modal-footer {
         border-color: $dark-border;
@@ -811,5 +815,214 @@
     .team-controller .controller-icon {
         background-color: #15203c;
         color: $white;
+    }
+
+    /* Dark After Demos Add CSS */
+    .without-card {
+        background-color: $dark-card-bg !important;
+    }
+    .exchange-for-dark {
+        background-color: $dark-body-bg !important;
+        .d-flex.flex-wrap.gap-2 {
+            border-color: $dark-border !important;
+        }
+    }
+    .realtime-for-dark {
+        p {
+            color: $white !important;
+        }
+    }
+    .analytics-tabs {
+        border-color: $dark-border;
+        li {
+            button {
+                border-color: $dark-border !important;
+                &.active {
+                    background-color: $dark-body-bg;
+                    border-color: $dark-border;
+                    color: $white;
+                }
+                &:hover {
+                    background-color: $dark-body-bg;
+                    border-color: $dark-border;
+                    color: $white;
+                }
+            }
+        }
+    }
+    .cryptocurrency-controller {
+        .controller-icon {
+            border-color: $dark-border;
+            color: $white;
+        }
+    }
+    .for-dark-border {
+        border-color: $dark-border !important;
+    }
+    .for-dark {
+        h3 {
+            color: $secondary;
+        }
+    }
+
+    .for-dark-card {
+        background-color: $dark-card-bg !important;
+    }
+    .for-dark-read {
+        background-color: #15203c  !important;
+        color: $white !important;
+        &:hover {
+            background-color: $primary !important;
+        }
+    }
+    .campaigns-close {
+        filter: invert(1);
+    }
+
+    .sales_by_locations {
+        li {
+            .progress {
+                background-color: #202a43;
+            }
+        }
+    }
+    .recent-property-slide {
+        .bg-white {
+            background-color: $dark-body-bg !important;
+        }
+    }
+    .avatar-upload {
+        .avatar-preview {
+            border-color: $dark-border;
+        }
+        .avatar-edit input + label {
+            background-color: $dark-body-bg;
+            &::after {
+                color: $white;
+            }
+        }
+    }
+    .tab-content-wrap {
+        .tab-contents {
+            &.back-none {
+                &::before {
+                    background-color: $dark-card-bg;
+                }
+            }
+            &.continue-none {
+                &::before {
+                    background-color: $dark-card-bg;
+                }
+            }
+            .action-opt .btn {
+                background-color: $dark-body-bg !important;
+                color: $white;
+            }
+        }
+    }
+    .irs--flat .irs-line {
+        background-color: #202a43;
+    }
+    .custom-radio {
+        input[type=radio]:checked + .radio-content {
+            background-color: #202a43;
+        }
+        .radio-content {
+            border: 2px dashed #212c47;
+        }
+        input[type=radio] {
+            background: #202a43;
+            border-color: #202a43;
+            &:checked + .radio-content:after {
+                border-color: #202a43;
+            }
+        }
+    }
+    .only-file-upload {
+        .bg-border-color {
+            background-color: $dark-card-bg !important;
+        }
+        .form__files-container {
+            background-color: #15203c;
+        }
+        .form__text {
+            color: $white;
+        }
+    }
+    .border-end {
+        border-color: $dark-border !important;
+    }
+    .border-border-color {
+        border-color: $dark-border !important;
+    }
+    .default-table-area {
+        &.agents-performance-overview {
+            &.style-three {
+                .table-responsive {
+                    .table {
+                        tbody {
+                            tr {
+                                td {
+                                    background-color: $dark-body-bg;
+                                    &.bg-white {
+                                        background-color: $dark-card-bg !important;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .progress, .progress-stacked {
+        background-color: #202a43;
+    }
+    .for-dark-digital-date {
+        background-color: #15203c !important;
+        border-color: #15203c !important;
+        color: #fff !important;
+    }
+    .calendar-container {
+        .calendar-table {
+            td {
+                border-color: $dark-card-bg;
+            }
+            td {
+                color: $white;
+                &::after {
+                    background-color: $dark-body-bg;
+                }
+                &.prev-month {
+                    background-color: $dark-body-bg;
+                    opacity: 0.6;
+                    &::after {
+                        border-color: $dark-border;
+                    }
+                }
+                &.next-month {
+                    background-color: $dark-body-bg;
+                    opacity: 0.6;
+                    &::after {
+                        border-color: $dark-border;
+                    }
+                }
+            }
+        }
+    }
+    .all-inline-border-for-dark {
+        border-color: $dark-body-color !important;
+    }
+    .schedule-for-dark {
+        background-color: $dark-body-bg !important;
+        .btn {
+            background-color: #15203c !important;
+            &:hover {
+                background-color: $primary !important;
+            }
+        }
+        .bg-white {
+            background-color: #15203c !important;
+        }
     }
 }

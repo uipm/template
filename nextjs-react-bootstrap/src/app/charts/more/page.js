@@ -1,8 +1,6 @@
 "use client";
    
-import Breadcrumb from 'react-bootstrap/Breadcrumb'; 
-import Row from 'react-bootstrap/Row'; 
-import Col from 'react-bootstrap/Col';  
+import { Row, Col, Breadcrumb } from "react-bootstrap";
 import BasicRangeAreaChart from '@/components/Charts/MoreCharts/BasicRangeAreaChart';
 import BasicTimelineChart from '@/components/Charts/MoreCharts/BasicTimelineChart';
 import BasicCandlestickChart from '@/components/Charts/MoreCharts/BasicCandlestickChart';

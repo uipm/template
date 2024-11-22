@@ -1,7 +1,6 @@
 "use client";
 
-import React from 'react';
-import Card from 'react-bootstrap/Card';
+import { Card, ProgressBar } from "react-bootstrap";
 
 const VideoRounded = () => {
   return (

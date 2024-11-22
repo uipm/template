@@ -1,10 +1,6 @@
 "use client";
 
-import React from "react";
-import ProgressBar from 'react-bootstrap/ProgressBar';
-import Card from 'react-bootstrap/Card';
-import { MaterialSymbol } from "react-material-symbols";
-import "react-material-symbols/rounded";
+import { Card, ProgressBar } from "react-bootstrap";
 
 const ProductDevelopment = () => {
   return (
@@ -16,42 +12,46 @@ const ProductDevelopment = () => {
             <div className="d-flex justify-content-between flex-wrap gap-3">
               <div className="d-flex align-items-center">
                 <div className="flex-shrink-0">
-                  <MaterialSymbol 
-                    icon="for_you" 
-                    size={25}
-                    className="wh-45 lh-45 text-white text-center rounded-circle" 
-                    style={{ backgroundColor: '#4936F5' }}
-                  />
+                  <span
+                    className="material-symbols-outlined fs-25 wh-45 lh-45 text-white text-center rounded-circle"
+                    style={{ backgroundColor: "#4936F5" }}
+                  >
+                    for_you
+                  </span>
                 </div>
                 <div className="flex-grow-1 ms-2 position-relative">
-                  <span className="fw-medium text-white d-block mb-1">Client</span>
+                  <span className="fw-medium text-white d-block mb-1">
+                    Client
+                  </span>
                   <h4 className="fs-16 text-white mb-0">Innovatech</h4>
                 </div>
               </div>
 
               <div className="d-flex align-items-center">
                 <div className="flex-shrink-0">
-                  <MaterialSymbol 
-                    icon="attach_money" 
-                    size={25}
-                    className="wh-45 lh-45 text-white text-center rounded-circle" 
-                    style={{ backgroundColor: '#4936F5' }}
-                  />
+                  <span
+                    className="material-symbols-outlined fs-25 wh-45 lh-45 text-white text-center rounded-circle"
+                    style={{ backgroundColor: "#4936F5" }}
+                  >
+                    attach_money
+                  </span>
                 </div>
                 <div className="flex-grow-1 ms-2 position-relative">
-                  <span className="fw-medium text-white d-block mb-1">Budget</span>
+                  <span className="fw-medium text-white d-block mb-1">
+                    Budget
+                  </span>
                   <h4 className="fs-16 text-white mb-0">$25,500</h4>
                 </div>
               </div>
 
               <div className="d-flex align-items-center">
                 <div className="flex-shrink-0">
-                  <MaterialSymbol 
-                    icon="timer" 
-                    size={25}
-                    className="wh-45 lh-45 text-white text-center rounded-circle" 
-                    style={{ backgroundColor: '#4936F5' }}
-                  />
+                  <span
+                    className="material-symbols-outlined fs-25 wh-45 lh-45 text-white text-center rounded-circle"
+                    style={{ backgroundColor: "#4936F5" }}
+                  >
+                    timer
+                  </span>
                 </div>
                 <div className="flex-grow-1 ms-2 position-relative">
                   <span className="fw-medium text-white d-block mb-1">
@@ -63,14 +63,14 @@ const ProductDevelopment = () => {
             </div>
 
             <div className="mt-4">
-              <ProgressBar 
-                variant="danger" 
-                now={65} 
+              <ProgressBar
+                variant="danger"
+                now={65}
                 style={{
-                  height: '7px'
+                  height: "7px",
                 }}
               />
-  
+
               <div className="d-flex justify-content-between mt-2">
                 <span className="fw-medium d-block text-body-bg">Progress</span>
                 <span className="fw-medium d-block text-body-bg">65%</span>

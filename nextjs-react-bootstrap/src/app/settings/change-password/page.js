@@ -1,17 +1,15 @@
 "use client";
-    
+
+import { Card, Breadcrumb } from "react-bootstrap";
 import ChangePassword from "@/components/Settings/ChangePassword";
 import Nav from "@/components/Settings/Nav";
-import React from "react";
-import Breadcrumb from 'react-bootstrap/Breadcrumb';
-import Card from 'react-bootstrap/Card';
 
 export default function Page() {
   return (
     <>
       <div className="d-flex justify-content-between align-items-center flex-wrap gap-2 mb-4">
         <h3 className="mb-0">Change Password</h3>
- 
+
         <Breadcrumb className="breadcrumb-page-list align-items-center mb-0 lh-1">
           <Breadcrumb.Item href="/dashboard/ecommerce/">
             <div className="d-flex align-items-center text-decoration-none">
@@ -19,7 +17,7 @@ export default function Page() {
               <span className="text-secondary fw-medium hover">Dashboard</span>
             </div>
           </Breadcrumb.Item>
- 
+
           <Breadcrumb.Item>
             <span className="fw-medium">Settings</span>
           </Breadcrumb.Item>

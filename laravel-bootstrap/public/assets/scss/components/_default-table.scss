@@ -87,6 +87,20 @@
                 }
             }
         }
+        /* Sales Dashboard CSS */
+        &.recent-style-two {
+            .table-responsive {
+                .table {
+                    tbody {
+                        tr {
+                            td {
+                                padding: 14.2px 15px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
     &.recent-leads {
         &.style-two {
@@ -261,6 +275,256 @@
             }
         }
     }
+    /* Analytics Dashboard CSS */
+    &.browser-leads {
+        &.style-two {
+            .table-responsive {
+                .table {
+                    width: 866px;
+                    thead {
+                        tr {
+                            th {
+                                &:first-child {
+                                    padding-left: 0 !important;
+                                }
+                                &:last-child {
+                                    padding-right: 0 !important;
+                                }
+                            }
+                        }
+                    }
+                    tbody {
+                        tr {
+                            td {
+                                padding-top: 8px;
+                                padding-bottom: 8px;
+                                &:first-child {
+                                    padding-left: 0 !important;
+                                }
+                                &:last-child {
+                                    padding-right: 0 !important;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    /* Crypto Dashboard CSS */
+    &.transaction-table {
+        &.style-two {
+            .table-responsive {
+                .table {
+                    width: 866px;
+                    thead {
+                        tr {
+                            th {
+                                &:first-child {
+                                    padding-left: 0 !important;
+                                }
+                                &:last-child {
+                                    padding-right: 0 !important;
+                                }
+                            }
+                        }
+                    }
+                    tbody {
+                        tr {
+                            td {
+                                padding-top: 8px;
+                                padding-bottom: 8px;
+                                &:first-child {
+                                    padding-left: 0 !important;
+                                }
+                                &:last-child {
+                                    padding-right: 0 !important;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &.portfolio-table {
+        &.style-two {
+            .table-responsive {
+                .table {
+                    thead {
+                        tr {
+                            border-color: #757DFF !important;
+                            th {
+                                &:first-child {
+                                    padding-left: 0 !important;
+                                }
+                                &:last-child {
+                                    padding-right: 0 !important;
+                                }
+                            }
+                        }
+                    }
+                    tbody {
+                        tr {
+                            td {
+                                border-color: #757DFF;
+                                padding-top: 11px;
+                                padding-bottom: 11px;
+                                &:first-child {
+                                    padding-left: 0 !important;
+                                }
+                                &:last-child {
+                                    padding-right: 0 !important;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &.rankings-table {
+        &.style-two {
+            .table-responsive {
+                .table {
+                    width: 1536px;
+                    thead {
+                        tr {
+                            th {
+                                &:first-child {
+                                    padding-left: 0 !important;
+                                }
+                                &:last-child {   
+                                    padding-right: 0 !important;
+                                }
+                            }
+                        }
+                    }
+                    tbody {
+                        tr {
+                            td {
+                                padding-top: 11px;
+                                padding-bottom: 11px;
+                                &:first-child {
+                                    padding-left: 0 !important;
+                                }
+                                &:last-child {
+                                    padding-right: 0 !important;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    /* Sales Dashboard CSS */
+    &.sales-locations-table {
+        &.style-two {
+            .table-responsive {
+                .table {
+                    thead {
+                        tr {
+                            th {
+                                &:first-child {
+                                    padding-left: 0 !important;
+                                }
+                                &:last-child {
+                                    padding-right: 0 !important;
+                                }
+                            }
+                        }
+                    }
+                    tbody {
+                        tr {
+                            td {
+                                padding-top: 11px;
+                                padding-bottom: 11px;
+                                &:first-child {
+                                    padding-left: 0 !important;
+                                }
+                                &:last-child {
+                                    padding-right: 0 !important;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    /* Hospital Dashboard CSS */
+    &.patient-table {
+        &.style-two {
+            .table-responsive {
+                .table {
+                    width: 1000px;
+                    thead {
+                        tr {
+                            th {
+                                &:first-child {
+                                    padding-left: 0 !important;
+                                }
+                                &:last-child {
+                                    padding-right: 0 !important;
+                                }
+                            }
+                        }
+                    }
+                    tbody {
+                        tr {
+                            td {
+                                padding-top: 8px;
+                                padding-bottom: 8px;
+                                &:first-child {
+                                    padding-left: 0 !important;
+                                }
+                                &:last-child {
+                                    padding-right: 0 !important;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    /* Marketing Dashboard CSS */
+    &.campaigns-table {
+        &.style-two {
+            .table-responsive {
+                .table {
+                    width: 1000px;
+                    thead {
+                        tr {
+                            th {
+                                &:first-child {
+                                    padding-left: 0 !important;
+                                }
+                                &:last-child {
+                                    padding-right: 0 !important;
+                                }
+                            }
+                        }
+                    }
+                    tbody {
+                        tr {
+                            td {
+                                padding-top: 10px;
+                                padding-bottom: 10px;
+                                &:first-child {
+                                    padding-left: 0 !important;
+                                }
+                                &:last-child {
+                                    padding-right: 0 !important;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 .table-src-form {
     margin-right: 20px;
@@ -297,6 +561,18 @@
                 width: 1100px;
             }
         }
+        /* Analytics Dashboard CSS */
+        &.browser-leads {
+            &.style-two {
+                .table-responsive {
+                    .table {
+                        &.for-mobile-width {
+                            width: 713px !important;
+                        }
+                    }
+                }
+            }
+        }
     }
     
 }
@@ -307,6 +583,16 @@
         &.team-members {
             .table {
                 width: 357.33px;
+            }
+        }
+        /* Crypto Dashboard CSS */
+        &.portfolio-table {
+            &.style-two {
+                .table-responsive {
+                    .table {
+                        width: 357.33px;
+                    }
+                }
             }
         }
     }
@@ -521,13 +807,6 @@
             }
         }
     }
-
-}
-
-/* Min width 1400px to Max width 1799px */
-@media only screen and (min-width : 1400px) and (max-width : 1799px) {
-
-   
 
 }
 

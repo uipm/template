@@ -1,12 +1,7 @@
 "use client";
 
-import React from "react";
+import { Card, Table } from "react-bootstrap";
 import Link from "next/link";
-import Card from "react-bootstrap/Card";
-import Form from "react-bootstrap/Form";
-import Table from "react-bootstrap/Table";
-import { MaterialSymbol } from "react-material-symbols";
-import "react-material-symbols/rounded";
 import Image from "next/image";
 import Pagination from "./Pagination";
 
@@ -204,7 +199,7 @@ const projectsData = [
     budget: "$2,500",
     startDate: "15 Mar 2024",
     endDate: "15 Apr 2024",
-    status: 'pending',
+    status: "pending",
   },
   {
     id: "#846",
@@ -231,7 +226,7 @@ const projectsData = [
     budget: "$7,500",
     startDate: "10 Mar 2024",
     endDate: "10 Apr 2024",
-    status: 'inProgress',
+    status: "inProgress",
   },
   {
     id: "#845",
@@ -255,7 +250,7 @@ const projectsData = [
     budget: "$3,400",
     startDate: "05 Mar 2024",
     endDate: "05 Apr 2024",
-    status: 'finished',
+    status: "finished",
   },
 ];
 
@@ -268,8 +263,8 @@ const AllProjects = () => {
             <div className="d-flex justify-content-between align-items-center flex-wrap gap-3">
               <h3 className="mb-0">All Projects</h3>
 
-              <Link 
-                href="/project-management/create-project/" 
+              <Link
+                href="/project-management/create-project/"
                 className="btn btn-outline-primary py-1 px-2 px-sm-4 fs-14 fw-medium rounded-3 hover-bg"
               >
                 <span className="py-sm-1 d-block">
@@ -350,28 +345,22 @@ const AllProjects = () => {
                           <div className="d-flex align-items-center gap-1">
                             <Link href={value.viewLink}>
                               <button className="ps-0 border-0 bg-transparent lh-1 position-relative top-2">
-                                <MaterialSymbol
-                                  icon="visibility"
-                                  size={16}
-                                  className="text-primary"
-                                />
+                                <span className="material-symbols-outlined fs-16 text-primary">
+                                  visibility
+                                </span>
                               </button>
                             </Link>
 
                             <button className="ps-0 border-0 bg-transparent lh-1 position-relative top-2">
-                              <MaterialSymbol
-                                icon="edit"
-                                size={16}
-                                className="text-body"
-                              />
+                              <span className="material-symbols-outlined fs-16 text-body">
+                                edit
+                              </span>
                             </button>
 
                             <button className="ps-0 border-0 bg-transparent lh-1 position-relative top-2">
-                              <MaterialSymbol
-                                icon="delete"
-                                size={16}
-                                className="text-danger"
-                              />
+                              <span className="material-symbols-outlined fs-16 text-danger">
+                                delete
+                              </span>
                             </button>
                           </div>
                         </td>

@@ -1,7 +1,7 @@
 "use client";
-   
-import EventsGrid from '@/components/Events/EventsGrid';
-import Breadcrumb from 'react-bootstrap/Breadcrumb';
+  
+import { Breadcrumb } from "react-bootstrap";
+import EventsGrid from '@/components/Events/EventsGrid'; 
 
 export default function Page() {
   return (

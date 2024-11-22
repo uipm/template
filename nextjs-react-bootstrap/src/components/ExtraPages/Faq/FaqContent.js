@@ -1,13 +1,11 @@
 "use client";
 
-import React from "react";
-import Card from "react-bootstrap/Card"; 
-import Accordion from 'react-bootstrap/Accordion';
+import { Card, Accordion } from "react-bootstrap";
 
 const FaqContent = () => {
   return (
     <>
-      <Card className="card bg-white border-0 rounded-3 py-5 mb-4">
+      <Card className="bg-white border-0 rounded-3 py-5 mb-4">
         <Card.Body className="p-4" style={{ maxWidth: '800px', margin: 'auto' }}>
           <div className="mb-3 mb-lg-4 text-center" style={{ maxWidth: '500px', margin: 'auto' }}>
             <h3 className="mb-2">Frequently Asked Questions</h3>

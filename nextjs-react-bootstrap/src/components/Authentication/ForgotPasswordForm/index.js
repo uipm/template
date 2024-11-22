@@ -1,13 +1,8 @@
 "use client";
 
-import React from "react";
+import { Row, Col, Form } from "react-bootstrap";
 import Link from "next/link";
 import Image from "next/image";
-import { MaterialSymbol } from "react-material-symbols";
-import "react-material-symbols/rounded";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-import Form from "react-bootstrap/Form";
 
 const ForgotPasswordForm = () => {
   return (
@@ -45,9 +40,10 @@ const ForgotPasswordForm = () => {
 
               <h3 className="fs-28 mb-2">Forgot your password?</h3>
               <p className="fw-medium fs-16 mb-4">
-                Enter the email address you used when you joined and we’ll send you instructions to reset your password.
+                Enter the email address you used when you joined and we’ll send
+                you instructions to reset your password.
               </p>
- 
+
               <Form>
                 <Form.Group className="mb-4">
                   <label className="label text-secondary">Email Address</label>
@@ -57,18 +53,16 @@ const ForgotPasswordForm = () => {
                     placeholder="example@trezo.com"
                   />
                 </Form.Group>
- 
+
                 <Form.Group className="mb-4">
                   <button
                     type="submit"
                     className="btn btn-primary fw-medium py-2 px-3 w-100"
                   >
                     <div className="d-flex align-items-center justify-content-center py-1">
-                      <MaterialSymbol
-                        icon="autorenew"
-                        size={20}
-                        className="text-white me-2"
-                      />
+                      <span className="material-symbols-outlined fs-20 text-white me-2">
+                        autorenew
+                      </span>
                       <span>Send</span>
                     </div>
                   </button>

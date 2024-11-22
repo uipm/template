@@ -41,7 +41,7 @@ const DeliveryDetails: React.FC = () => {
           </Box>
 
           <Box mt="8px">
-            <span className="text-black">Email:</span> example@pro.io.vn
+            <span className="text-black">Email:</span> example@trezo.com
           </Box>
         </Box>
       </Card>

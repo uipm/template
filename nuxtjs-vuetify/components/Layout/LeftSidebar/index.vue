@@ -30,7 +30,7 @@
                 <div class="title-header">
                   <span class="material-symbols-outlined">dashboard</span>
                   <span class="title">Dashboard</span>
-                  <span class="badge rounded-circle">5</span>
+                  <span class="badge rounded-circle">9</span>
                   <i class="arrow-right ri-arrow-right-s-line"></i>
                 </div>
               </template>
@@ -46,7 +46,7 @@
                     <NuxtLink to="/dashboard/crm" class="sidemenu-link">
                       CRM
                       <span
-                        class="trezo-badge d-inline-block position-relative"
+                        class="trezo-badge d-inline-block position-relative style-two"
                       >
                         Hot
                       </span>
@@ -63,15 +63,55 @@
                   <li class="sidemenu-item">
                     <NuxtLink to="/dashboard/lms" class="sidemenu-link">
                       LMS
+                      <span
+                        class="trezo-badge d-inline-block position-relative style-two"
+                      >
+                        Top
+                      </span>
                     </NuxtLink>
                   </li>
                   <li class="sidemenu-item">
                     <NuxtLink to="/dashboard/help-desk" class="sidemenu-link">
                       HelpDesk
+                    </NuxtLink>
+                  </li>
+                  <li class="sidemenu-item">
+                    <NuxtLink to="/dashboard/analytics" class="sidemenu-link">
+                      Analytics
                       <span
-                        class="trezo-badge d-inline-block position-relative style-two"
+                        class="trezo-badge d-inline-block position-relative"
                       >
-                        Top
+                        New
+                      </span>
+                    </NuxtLink>
+                  </li>
+                  <li class="sidemenu-item">
+                    <NuxtLink to="/dashboard/crypto" class="sidemenu-link">
+                      Crypto
+                      <span
+                        class="trezo-badge d-inline-block position-relative"
+                      >
+                        New
+                      </span>
+                    </NuxtLink>
+                  </li>
+                  <li class="sidemenu-item">
+                    <NuxtLink to="/dashboard/sales" class="sidemenu-link">
+                      Sales
+                      <span
+                        class="trezo-badge d-inline-block position-relative"
+                      >
+                        New
+                      </span>
+                    </NuxtLink>
+                  </li>
+                  <li class="sidemenu-item">
+                    <NuxtLink to="/dashboard/hospital" class="sidemenu-link">
+                      Hospital
+                      <span
+                        class="trezo-badge d-inline-block position-relative"
+                      >
+                        New
                       </span>
                     </NuxtLink>
                   </li>

@@ -1,12 +1,7 @@
 "use client";
 
-import React from "react";
+import { Card, Form, Table } from "react-bootstrap";
 import Link from "next/link";
-import Card from "react-bootstrap/Card";
-import Form from "react-bootstrap/Form";
-import Table from "react-bootstrap/Table";
-import { MaterialSymbol } from "react-material-symbols";
-import "react-material-symbols/rounded";
 import Image from "next/image";
 import Pagination from "./Pagination";
 
@@ -200,9 +195,9 @@ const AllProjects = () => {
                 className="month-select form-control p-0 h-auto border-0"
                 aria-label="Default select example"
               >
-                <option value="0">This Week</option>
-                <option value="1">This Month</option>
-                <option value="2">This Year</option>
+                <option defaultValue="0">This Week</option>
+                <option defaultValue="1">This Month</option>
+                <option defaultValue="2">This Year</option>
               </Form.Select>
             </div>
           </div>
@@ -277,28 +272,22 @@ const AllProjects = () => {
                           <div className="d-flex align-items-center gap-1">
                             <Link href={value.viewLink}>
                               <button className="ps-0 border-0 bg-transparent lh-1 position-relative top-2">
-                                <MaterialSymbol
-                                  icon="visibility"
-                                  size={16}
-                                  className="text-primary"
-                                />
+                                <span className="material-symbols-outlined fs-16 text-primary">
+                                  visibility
+                                </span>
                               </button>
                             </Link>
 
                             <button className="ps-0 border-0 bg-transparent lh-1 position-relative top-2">
-                              <MaterialSymbol
-                                icon="edit"
-                                size={16}
-                                className="text-body"
-                              />
+                              <span className="material-symbols-outlined fs-16 text-body">
+                                edit
+                              </span>
                             </button>
 
                             <button className="ps-0 border-0 bg-transparent lh-1 position-relative top-2">
-                              <MaterialSymbol
-                                icon="delete"
-                                size={16}
-                                className="text-danger"
-                              />
+                              <span className="material-symbols-outlined fs-16 text-danger">
+                                delete
+                              </span>
                             </button>
                           </div>
                         </td>

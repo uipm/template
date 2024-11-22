@@ -148,6 +148,7 @@ const BasicBoxplotChart: React.FC = () => {
         colors: "#64748B",
       },
       markers: {
+        shape: 'diamond',
         offsetX: -2,
         offsetY: -0.5,
       },

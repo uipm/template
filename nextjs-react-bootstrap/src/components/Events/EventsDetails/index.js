@@ -1,13 +1,8 @@
 "use client";
 
-import React from "react";
+import { Row, Col, Card } from "react-bootstrap";
 import Image from "next/image";
 import EventInfo from "./EventInfo";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-import Card from "react-bootstrap/Card";
-import { MaterialSymbol } from "react-material-symbols";
-import "react-material-symbols/rounded";
 import AboutThisEvent from "./AboutThisEvent";
 import Speakers from "./Speakers";
 
@@ -48,11 +43,9 @@ const EventsDetails = () => {
                 <Col sm={6} md={4} lg={6} xxl={4}>
                   <div className="d-flex align-items-center mb-4">
                     <div className="flex-shrink-0">
-                      <MaterialSymbol
-                        icon="schedule"
-                        size={35}
-                        className="d-inline-block wh-70 lh-70 text-center text-primary bg-gary-light rounded-circle bg-for-dark-mode"
-                      />
+                      <span className="material-symbols-outlined fs-35 d-inline-block wh-70 lh-70 text-center text-primary bg-gary-light rounded-circle bg-for-dark-mode">
+                        schedule
+                      </span>
                     </div>
                     <div className="flex-grow-1 ms-3">
                       <h4 className="fs-14 fw-semibold mb-1">Time</h4>
@@ -64,11 +57,9 @@ const EventsDetails = () => {
                 <Col sm={6} md={4} lg={6} xxl={4}>
                   <div className="d-flex align-items-center mb-4">
                     <div className="flex-shrink-0">
-                      <MaterialSymbol
-                        icon="place"
-                        size={35}
-                        className="d-inline-block wh-70 lh-70 text-center text-info bg-gary-light rounded-circle bg-for-dark-mode"
-                      />
+                      <span className="material-symbols-outlined fs-35 d-inline-block wh-70 lh-70 text-center text-info bg-gary-light rounded-circle bg-for-dark-mode">
+                        place
+                      </span>
                     </div>
                     <div className="flex-grow-1 ms-3">
                       <h4 className="fs-14 fw-semibold mb-1">Location</h4>
@@ -80,11 +71,9 @@ const EventsDetails = () => {
                 <Col sm={6} md={4} lg={6} xxl={4}>
                   <div className="d-flex align-items-center mb-4">
                     <div className="flex-shrink-0">
-                      <MaterialSymbol
-                        icon="event_seat"
-                        size={35}
-                        className="d-inline-block wh-70 lh-70 text-center text-primary-div bg-gary-light rounded-circle bg-for-dark-mode"
-                      />
+                      <span className="material-symbols-outlined fs-35 d-inline-block wh-70 lh-70 text-center text-primary-div bg-gary-light rounded-circle bg-for-dark-mode">
+                        event_seat
+                      </span>
                     </div>
                     <div className="flex-grow-1 ms-3">
                       <h4 className="fs-14 fw-semibold mb-1">TiEvent Seatme</h4>
@@ -97,44 +86,38 @@ const EventsDetails = () => {
               <div className="d-flex align-items-center flex-wrap gap-2 border-top pt-4">
                 <button className="btn btn-primary fs-15 fw-medium py-2 px-4">
                   <div className="d-flex align-items-center py-1">
-                    <MaterialSymbol
-                      icon="local_activity"
-                      size={25}
-                      className="me-2 text-white"
-                    />
+                    <span className="material-symbols-outlined fs-25 me-2 text-white">
+                      local_activity
+                    </span>
+
                     <span>Get Ticket</span>
                   </div>
                 </button>
 
                 <button className="btn btn-primary bg-transparent border fs-15 fw-medium py-2 px-4 text-body hover-bg">
                   <div className="d-flex align-items-center py-1">
-                    <MaterialSymbol
-                      icon="event"
-                      size={25}
-                      className="me-2 text-body"
-                    />
+                    <span className="material-symbols-outlined fs-25 me-2 text-white">
+                      event
+                    </span>
+
                     <span>Add To Calendar</span>
                   </div>
                 </button>
 
                 <button className="btn btn-primary bg-transparent border fs-15 fw-medium py-2 px-4 text-body hover-bg">
                   <div className="d-flex align-items-center py-1">
-                    <MaterialSymbol
-                      icon="favorite_border"
-                      size={25}
-                      className="me-2 text-body"
-                    />
+                    <span className="material-symbols-outlined fs-25 me-2 text-white">
+                      favorite_border
+                    </span>
                     <span>5937</span>
                   </div>
                 </button>
 
                 <button className="btn btn-primary bg-transparent border fs-15 fw-medium py-2 px-4 text-body hover-bg">
                   <div className="d-flex align-items-center py-1">
-                    <MaterialSymbol
-                      icon="share"
-                      size={25}
-                      className="me-2 text-body"
-                    />
+                    <span className="material-symbols-outlined fs-25 me-2 text-white">
+                      share
+                    </span>
                     <span>2582</span>
                   </div>
                 </button>

@@ -12,7 +12,7 @@
 		<title>Trezo - Admin Dashboard Template</title>
     </head>
     <body class="boxed-size">
-        
+
         <!-- Start Preloader Area -->
         <div class="preloader" id="preloader">
             <div class="preloader">
@@ -47,7 +47,7 @@
         </button>
 
         <!-- Start Theme Setting Area -->
-        <div class="offcanvas offcanvas-end bg-white" data-bs-scroll="true" data-bs-backdrop="true" tabindex="-1" id="offcanvasScrolling">
+        <div class="offcanvas offcanvas-end bg-white" data-bs-scroll="true" data-bs-backdrop="true" tabindex="-1" id="offcanvasScrolling" style="box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
             <div class="offcanvas-header bg-body-bg py-3 px-4">
                 <h5 class="offcanvas-title fs-18" id="offcanvasScrollingLabel">Theme Settings</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -55,9 +55,12 @@
             <div class="offcanvas-body p-4">
                 <div class="mb-4 pb-2">
                     <h4 class="fs-15 fw-semibold border-bottom pb-2 mb-3">RTL / LTR</h4>
-                    <button class="ltr-rtl settings-btn ltr-rtl-btn" id="ltr-rtl">
-                        Click To <span class="fluid">RTL</span> <span class="boxed">LTR</span>
-                    </button>
+                    <div class="settings-btn rtl-btn">
+                        <label id="switch" class="switch">
+                            <input type="checkbox" onchange="toggleTheme()" id="slider">
+                            <span class="sliders round"></span>
+                        </label>
+                    </div>
                 </div>
                 <div class="mb-4 pb-2">
                     <h4 class="fs-15 fw-semibold border-bottom pb-2 mb-3">Container Style Fluid / Boxed</h4>
@@ -103,12 +106,17 @@
             <span class="dark"><i class="material-symbols-outlined">light_mode</i></span> 
             <span class="light"><i class="material-symbols-outlined">dark_mode</i></span>
         </button>
-
+     
         <!-- Link of JS Files -->
         <script type="module" src="assets/js/main.js"></script>
         <script src="assets/js/clipboard.min.js"></script>
         <script src="assets/js/dragdrop.js"></script>
         <script src="assets/js/swiper-bundle.min.js"></script>
+        <script src="assets/js/data-table.js"></script>
         <script src="assets/js/fullcalendar.main.js"></script>
+        <script src="assets/js/moment.min.js"></script>
+        <script src="assets/js/lightpick.js"></script>
+        <script src="assets/js/jsvectormap.min.js"></script>
+        <script src="assets/js/world-merc.js"></script>
     </body>
 </html>

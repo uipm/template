@@ -59,6 +59,7 @@ const CustomerSatisfaction: React.FC = () => {
         colors: "#64748B",
       },
       markers: {
+        shape: 'diamond',
         offsetX: -2,
         offsetY: -0.5,
       },
@@ -182,7 +183,7 @@ const CustomerSatisfaction: React.FC = () => {
                 options={options}
                 series={series}
                 type="donut"
-                height={175}
+                height={132}
                 width={"100%"}
               />
             )}

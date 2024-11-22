@@ -1,13 +1,8 @@
 "use client";
 
-import React from "react";
+import { Card, Form, Table } from "react-bootstrap";
 import Image from "next/image";
-import Card from "react-bootstrap/Card";
-import Form from "react-bootstrap/Form";
-import Table from "react-bootstrap/Table";
 import Pagination from "./Pagination";
-import { MaterialSymbol } from "react-material-symbols";
-import "react-material-symbols/rounded";
 
 const recentLeadsData = [
   {
@@ -73,11 +68,11 @@ const RecentLeads = () => {
               className="month-select form-control p-0 h-auto border-0"
               aria-label="Default select example"
             >
-              <option value="0">Select</option>
-              <option value="1">Today</option>
-              <option value="2">Last Weekly</option>
-              <option value="3">Last Monthly</option>
-              <option value="4">Last Yearly</option>
+              <option defaultValue="0">Select</option>
+              <option defaultValue="1">Today</option>
+              <option defaultValue="2">Last Weekly</option>
+              <option defaultValue="3">Last Monthly</option>
+              <option defaultValue="4">Last Yearly</option>
             </Form.Select>
           </div>
 
@@ -91,7 +86,7 @@ const RecentLeads = () => {
                         <Form.Check
                           type="checkbox"
                           id="default-checkbox"
-                          label=''
+                          label=""
                         />
                       </Form>
                     </th>
@@ -150,27 +145,21 @@ const RecentLeads = () => {
                         <td>
                           <div className="d-flex align-items-center gap-1">
                             <button className="ps-0 border-0 bg-transparent lh-1 position-relative top-2">
-                              <MaterialSymbol
-                                icon="visibility"
-                                size={16}
-                                className="text-primary"
-                              />
+                              <span className="material-symbols-outlined fs-16 text-primary">
+                                visibility
+                              </span>
                             </button>
 
                             <button className="ps-0 border-0 bg-transparent lh-1 position-relative top-2">
-                              <MaterialSymbol
-                                icon="edit"
-                                size={16}
-                                className="text-body"
-                              />
+                              <span className="material-symbols-outlined fs-16 text-body">
+                                edit
+                              </span>
                             </button>
 
                             <button className="ps-0 border-0 bg-transparent lh-1 position-relative top-2">
-                              <MaterialSymbol
-                                icon="delete"
-                                size={16}
-                                className="text-danger"
-                              />
+                              <span className="material-symbols-outlined fs-16 text-danger">
+                                delete
+                              </span>
                             </button>
                           </div>
                         </td>

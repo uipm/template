@@ -1,12 +1,7 @@
 "use client";
 
-import React, { useState } from "react";
+import { Card, Form, Table } from "react-bootstrap";
 import Pagination from "./Pagination";
-import Table from "react-bootstrap/Table";
-import Card from "react-bootstrap/Card";
-import { MaterialSymbol } from "react-material-symbols";
-import "react-material-symbols/rounded";
-import Form from "react-bootstrap/Form";
 
 const mediaFilesData = [
   {
@@ -103,11 +98,11 @@ const Media = () => {
               className="month-select form-control"
               aria-label="Default select example"
             >
-              <option value="0">Select</option>
-              <option value="1">Today</option>
-              <option value="2">Weekly</option>
-              <option value="3">Monthly</option>
-              <option value="4">Yearly</option>
+              <option defaultValue="0">Select</option>
+              <option defaultValue="1">Today</option>
+              <option defaultValue="2">Weekly</option>
+              <option defaultValue="3">Monthly</option>
+              <option defaultValue="4">Yearly</option>
             </Form.Select>
           </div>
 
@@ -128,57 +123,49 @@ const Media = () => {
 
                 <tbody>
                   {mediaFilesData &&
-                    mediaFilesData.slice(0, 8).map((value, i) => (
+                    mediaFilesData.slice(0, 8).map((defaultValue, i) => (
                       <tr key={i}>
                         <td className="text-body">
-                          <div className="d-flex align-items-center"> 
-                            <MaterialSymbol
-                              icon="folder"
-                              size={28}
-                              className="text-warning"
-                            />
+                          <div className="d-flex align-items-center">
+                            <span className="material-symbols-outlined fs-28 text-warning">
+                              folder
+                            </span>
                             <div className="ms-2">
-                              <h6 className="fw-medium fs-14 position-relative top-1 m-0">{value.fileName}</h6>
+                              <h6 className="fw-medium fs-14 position-relative top-1 m-0">
+                                {defaultValue.fileName}
+                              </h6>
                             </div>
                           </div>
                         </td>
 
-                        <td className="text-body">{value.owner}</td>
+                        <td className="text-body">{defaultValue.owner}</td>
 
-                        <td>{value.listedDate}</td>
+                        <td>{defaultValue.listedDate}</td>
 
-                        <td className="text-body">{value.fileType}</td>
+                        <td className="text-body">{defaultValue.fileType}</td>
 
-                        <td className="text-body">{value.fileSize}</td>
+                        <td className="text-body">{defaultValue.fileSize}</td>
 
-                        <td>
-                          {value.fileItems} 
-                        </td>
+                        <td>{defaultValue.fileItems}</td>
 
                         <td>
                           <div className="d-flex align-items-center gap-1">
                             <button className="ps-0 border-0 bg-transparent lh-1 position-relative top-2">
-                              <MaterialSymbol
-                                icon="visibility"
-                                size={16}
-                                className="text-primary"
-                              />
+                              <span className="material-symbols-outlined fs-16 text-primary">
+                                visibility
+                              </span>
                             </button>
 
                             <button className="ps-0 border-0 bg-transparent lh-1 position-relative top-2">
-                              <MaterialSymbol
-                                icon="edit"
-                                size={16}
-                                className="text-body"
-                              />
+                              <span className="material-symbols-outlined fs-16 text-body">
+                                edit
+                              </span>
                             </button>
 
                             <button className="ps-0 border-0 bg-transparent lh-1 position-relative top-2">
-                              <MaterialSymbol
-                                icon="delete"
-                                size={16}
-                                className="text-danger"
-                              />
+                              <span className="material-symbols-outlined fs-16 text-danger">
+                                delete
+                              </span>
                             </button>
                           </div>
                         </td>

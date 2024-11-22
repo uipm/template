@@ -1,9 +1,6 @@
 "use client";
 
-import React from "react";
-import Card from "react-bootstrap/Card";  
-import Form from "react-bootstrap/Form";
-import Table from "react-bootstrap/Table";
+import { Card, Form, Table } from "react-bootstrap";
 import Pagination from "./Pagination";
 
 const transactionsHistoryData = [
@@ -91,11 +88,11 @@ const TransactionsHistory = () => {
               className="month-select form-control border-0"
               aria-label="Default select example"
             >
-              <option value="0">Select</option>
-              <option value="1">Last Day</option>
-              <option value="2">Last Week</option>
-              <option value="3">Last Month</option>
-              <option value="4">Last Year</option>
+              <option defaultValue="0">Select</option>
+              <option defaultValue="1">Last Day</option>
+              <option defaultValue="2">Last Week</option>
+              <option defaultValue="3">Last Month</option>
+              <option defaultValue="4">Last Year</option>
             </Form.Select>
           </div>
 
@@ -113,21 +110,21 @@ const TransactionsHistory = () => {
                 </thead>
                 <tbody>
                   {transactionsHistoryData &&
-                    transactionsHistoryData.slice(0, 10).map((value, i) => (
+                    transactionsHistoryData.slice(0, 10).map((defaultValue, i) => (
                       <tr key={i}>
                         <td>
-                          {value.id}
+                          {defaultValue.id}
                         </td>
                         <td>
                           <span 
-                            className={`badge p-2 fs-12 fw-normal text-capitalize ${value.status}`}
+                            className={`badge p-2 fs-12 fw-normal text-capitalize ${defaultValue.status}`}
                           >
-                            {value.status}
+                            {defaultValue.status}
                           </span>
                         </td>
-                        <td>{value.amount}</td>
-                        <td>{value.rewards}</td>
-                        <td>{value.date}</td>
+                        <td>{defaultValue.amount}</td>
+                        <td>{defaultValue.rewards}</td>
+                        <td>{defaultValue.date}</td>
                       </tr>
                     ))}
                 </tbody>

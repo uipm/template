@@ -1,7 +1,6 @@
 "use client";
    
-import React from "react";
-import Breadcrumb from 'react-bootstrap/Breadcrumb'; 
+import { Breadcrumb } from "react-bootstrap"; 
 import Cards from "@/components/UIKit/Cards";
 
 export default function Page() {

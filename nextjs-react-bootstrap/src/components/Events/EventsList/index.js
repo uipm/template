@@ -1,14 +1,10 @@
 "use client";
 
-import React from "react";
+import { Card, Table } from "react-bootstrap";
 import SearchForm from "./SearchForm";
 import Pagination from "./Pagination";
-import Link from 'next/link';
+import Link from "next/link";
 import Image from "next/image";
-import Table from "react-bootstrap/Table";
-import Card from "react-bootstrap/Card";
-import { MaterialSymbol } from "react-material-symbols";
-import "react-material-symbols/rounded"; 
 
 const eventsListData = [
   {
@@ -132,7 +128,7 @@ const EventsList = () => {
               </Link>
             </div>
           </div>
-        
+
           <div className="default-table-area all-products">
             <div className="table-responsive">
               <Table className="align-middle">
@@ -152,21 +148,24 @@ const EventsList = () => {
                   {eventsListData &&
                     eventsListData.slice(0, 10).map((value, i) => (
                       <tr key={i}>
-                        <td className="text-body">
-                          {value.eventID}
-                        </td>
+                        <td className="text-body">{value.eventID}</td>
 
                         <td>
-                          <Link href={value.detailsLink} className="d-flex align-items-center">
-                            <Image 
+                          <Link
+                            href={value.detailsLink}
+                            className="d-flex align-items-center"
+                          >
+                            <Image
                               src={value.image}
-                              className="rounded-3" 
-                              alt="event-1" 
+                              className="rounded-3"
+                              alt="event-1"
                               width={40}
                               height={40}
                             />
                             <div className="ms-2 ps-1">
-                              <h6 className="fw-medium fs-14 mb-0">{value.title}</h6>
+                              <h6 className="fw-medium fs-14 mb-0">
+                                {value.title}
+                              </h6>
                             </div>
                           </Link>
                         </td>
@@ -176,7 +175,7 @@ const EventsList = () => {
                         <td>{value.location}</td>
 
                         <td className="text-body">{value.organizer}</td>
-  
+
                         <td>
                           <span
                             className={`badge bg-opacity-10 p-2 fs-12 fw-normal text-capitalize ${value.status}`}
@@ -189,28 +188,22 @@ const EventsList = () => {
                           <div className="d-flex align-items-center gap-1">
                             <Link href={value.detailsLink}>
                               <button className="ps-0 border-0 bg-transparent lh-1 position-relative top-2">
-                                <MaterialSymbol
-                                  icon="visibility"
-                                  size={16}
-                                  className="text-primary"
-                                />
+                                <span className="material-symbols-outlined fs-16 text-primary">
+                                  visibility
+                                </span>
                               </button>
                             </Link>
 
                             <button className="ps-0 border-0 bg-transparent lh-1 position-relative top-2">
-                              <MaterialSymbol
-                                icon="edit"
-                                size={16}
-                                className="text-body"
-                              />
+                              <span className="material-symbols-outlined fs-16 text-body">
+                                edit
+                              </span>
                             </button>
 
                             <button className="ps-0 border-0 bg-transparent lh-1 position-relative top-2">
-                              <MaterialSymbol
-                                icon="delete"
-                                size={16}
-                                className="text-danger"
-                              />
+                              <span className="material-symbols-outlined fs-16 text-danger">
+                                delete
+                              </span>
                             </button>
                           </div>
                         </td>

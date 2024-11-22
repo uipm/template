@@ -19,6 +19,9 @@
         a {
             transition: unset;
             
+            img {
+                left: 0;
+            }
             span {
                 margin-left: 8px;
                 font-size: 24px;
@@ -72,6 +75,7 @@
                 font-size: 12px;
                 color: #8695AA;
                 margin-bottom: 8px;
+                position: relative;
 
                 &:not(:first-child) {
                     margin-top: 22px;
@@ -81,41 +85,40 @@
                 .accordion-item {
                     background-color: transparent;
                     color: var(--blackColor);
+                    white-space: nowrap;
                     margin-bottom: 5px;
 
                     .accordion-button {
+                        display: flex;
+                        align-items: center;
                         color: var(--blackColor);
                         font-size: var(--fontSize);
                         background-color: transparent;
                         padding: {
-                            bottom: 10px;
+                            bottom: 9px;
                             right: 30px;
-                            left: 41px;
+                            left: 14px;
                             top: 9px;
                         };
                         i {
                             transition: var(--transition);
-                            transform: translateY(-50%);
                             color: var(--bodyColor);
-                            position: absolute;
+                            margin-right: 7px;
                             font-size: 22px;
                             line-height: 1;
-                            left: 12px;
-                            top: 50%;
                         }
                         .trezo-badge {
-                            top: 50%;
                             padding: 0;
-                            right: 34px;
                             width: 20px;
                             height: 20px;
                             font-size: 11px;
                             line-height: 20px;
-                            position: absolute;
                             color: var(--orangeColor);
-                            transform: translateY(-50%);
                             background-color: #FFF5ED;
-                            
+                            margin: {
+                                left: auto;
+                                right: 4px;
+                            };
                             &.style-two {
                                 color: #00b69b;
                                 background: rgba(0, 182, 155, 0.07);
@@ -316,21 +319,20 @@
                 .sidebar-menu-link {
                     font-size: var(--fontSize);
                     color: var(--blackColor);
+                    align-items: center;
+                    display: flex;
                     padding: {
-                        bottom: 9.5px;
+                        bottom: 9px;
                         right: 30px;
-                        top: 9.5px;
-                        left: 40px;
+                        left: 14px;
+                        top: 9px;
                     };
                     i {
                         transition: var(--transition);
-                        transform: translateY(-50%);
                         color: var(--bodyColor);
-                        position: absolute;
+                        margin-right: 6px;
                         font-size: 22px;
                         line-height: 1;
-                        left: 12px;
-                        top: 50%;
                     }
                     &:hover, &.active {
                         color: var(--primaryColor);
@@ -505,12 +507,17 @@
         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px !important;
     }
     &.component-rtl-enabled {
-        text-align: end;
+        text-align: start;
+        direction: rtl;
         left: auto;
         right: 0;
 
         .logo {
             a {
+                img {
+                    left: auto;
+                    right: 0;
+                }
                 span {
                     margin: {
                         left: 0;
@@ -524,22 +531,28 @@
             left: 25px;
         }
         .sidebar-inner {
+            text-align: start;
+            direction: rtl;
+
             .sidebar-menu {
                 .accordion {
                     .accordion-item {
                         .accordion-button {
-                            text-align: end !important;
                             padding: {
-                                right: 41px;
+                                right: 14px;
                                 left: 30px;
                             };
                             i {
-                                left: auto;
-                                right: 12px;
+                                margin: {
+                                    right: 0;
+                                    left: 7px;
+                                };
                             }
                             .trezo-badge {
-                                right: auto;
-                                left: 34px;
+                                margin: {
+                                    left: 4px;
+                                    right: auto;
+                                };
                             }
                             &::before {
                                 content: "\ea64";
@@ -605,12 +618,14 @@
                     }
                     .sidebar-menu-link {
                         padding: {
+                            right: 14px;
                             left: 30px;
-                            right: 40px;
                         };
                         i {
-                            left: auto;
-                            right: 12px;
+                            margin: {
+                                right: 0;
+                                left: 6px;
+                            };
                         }
                     }
                 }
@@ -630,10 +645,18 @@
             .ng-scroll-content {
                 padding-right: 0 !important;
             }
+            scrollbar-x {
+                display: none !important;
+            }
         }
         &.component-rtl-enabled {
             .ng-scrollbar {
+                width: 100% !important;
+
                 .ng-scroll-content {
+                    padding: 0;
+                    width: 100% !important;
+
                     .ng-scrollbar-sticky {
                         right: auto;
                         left: 0;
@@ -678,15 +701,12 @@
                             padding: {
                                 bottom: 8px;
                                 right: 25px;
-                                left: 37px;
                                 top: 8px;
                             };
                             i {
                                 font-size: 18px;
-                                left: 12px;
                             }
                             .trezo-badge {
-                                right: 28px;
                                 width: 18px;
                                 height: 18px;
                                 font-size: 11px;
@@ -746,12 +766,10 @@
                         padding: {
                             bottom: 8px;
                             right: 25px;
-                            left: 37px;
                             top: 8px;
                         };
                         i {
                             font-size: 18px;
-                            left: 12px;
                         }
                     }
                 }
@@ -782,16 +800,8 @@
                             .accordion-button {
                                 padding: {
                                     left: 25px;
-                                    right: 37px;
+                                    right: 14px;
                                 };
-                                i {
-                                    left: auto;
-                                    right: 12px;
-                                }
-                                .trezo-badge {
-                                    right: auto;
-                                    left: 28px;
-                                }
                                 &::before {
                                     right: auto;
                                     left: 8px;
@@ -841,12 +851,8 @@
                         .sidebar-menu-link {
                             padding: {
                                 left: 25px;
-                                right: 37px;
+                                right: 14px;
                             };
-                            i {
-                                left: auto;
-                                right: 12px;
-                            }
                         }
                     }
                 }
@@ -953,18 +959,15 @@
     
     .sidebar-area {
         &.active, &.hide-sidebar {
-            width: 60px;
+            width: 100px;
 
             .logo {
-                padding: {
-                    left: 12px;
-                    right: 12px;
-                };
                 a {
-                    left: 5px;
-
+                    img {
+                        left: 11px;
+                    }
                     span {
-                        display: none;
+                        opacity: 0;
                     }
                 }
             }
@@ -973,28 +976,30 @@
                 visibility: hidden;
             }
             .sidebar-inner {
-                padding: {
-                    left: 12px;
-                    right: 12px;
-                };
                 .sidebar-menu {
                     .sub-title {
-                        display: none !important;
+                        font-size: 0;
+                        height: 18px;
+
+                        &::before {
+                            top: 50%;
+                            width: 50px;
+                            content: '';
+                            height: 1px;
+                            position: absolute;
+                            transform: translateY(-50%);
+                            background: var(--borderColor);
+                        }
                     }
                     .accordion {
                         .accordion-item {
                             .accordion-button {
-                                padding: 0;
-                                width: 36px;
-                                height: 36px;
+                                padding: 9px 6px 9px 14px;
 
-                                i {
-                                    text-align: center;
-                                    right: 0;
-                                    left: 0;
-                                }
                                 .title {
-                                    display: none;
+                                    transition: var(--transition);
+                                    opacity: 0;
+                                    width: 0;
                                 }
                                 .trezo-badge {
                                     display: none !important;
@@ -1010,17 +1015,12 @@
                             }
                         }
                         .sidebar-menu-link {
-                            padding: 0;
-                            width: 36px;
-                            height: 36px;
-        
-                            i {
-                                left: 0;
-                                right: 0;
-                                text-align: center;
-                            }
+                            padding: 9px 6px 9px 14px;
+    
                             .title {
-                                display: none;
+                                transition: var(--transition);
+                                opacity: 0;
+                                width: 0;
                             }
                         }
                     }
@@ -1030,15 +1030,12 @@
                 width: 260px;
 
                 .logo {
-                    padding: {
-                        left: 25px;
-                        right: 25px;
-                    };
                     a {
-                        left: 0;
-
+                        img {
+                            left: 0;
+                        }
                         span {
-                            display: inline-block;
+                            opacity: 1;
                         }
                     }
                 }
@@ -1047,31 +1044,24 @@
                     visibility: visible;
                 }
                 .sidebar-inner {
-                    padding: {
-                        left: 25px;
-                        right: 25px;
-                    };
                     .sidebar-menu {
                         .sub-title {
-                            display: block !important;
+                            font-size: 12px;
+
+                            &::before {
+                                display: none;
+                            }
                         }
                         .accordion {
                             .accordion-item {
                                 .accordion-button {
-                                    height: auto;
-                                    width: 100%;
                                     padding: {
-                                        bottom: 10px;
                                         right: 30px;
-                                        left: 41px;
-                                        top: 9px;
+                                        left: 14px;
                                     };
-                                    i {
-                                        right: auto;
-                                        left: 12px;
-                                    }
                                     .title {
-                                        display: block;
+                                        opacity: 1;
+                                        width: auto;
                                     }
                                     .trezo-badge {
                                         display: inline-block !important;
@@ -1087,20 +1077,13 @@
                                 }
                             }
                             .sidebar-menu-link {
-                                height: auto;
-                                width: 100%;
                                 padding: {
-                                    bottom: 9.5px;
                                     right: 30px;
-                                    top: 9.5px;
-                                    left: 40px;
+                                    left: 14px;
                                 };
-                                i {
-                                    right: auto;
-                                    left: 12px;
-                                }
                                 .title {
-                                    display: block;
+                                    opacity: 1;
+                                    width: auto;
                                 }
                             }
                         }
@@ -1117,15 +1100,39 @@
             &.active, &.hide-sidebar {
                 .logo {
                     a {
-                        left: auto;
-                        right: 5px;
+                        img {
+                            left: auto;
+                            right: 11px;
+                        }
+                    }
+                }
+                .sidebar-inner {
+                    .sidebar-menu {
+                        .accordion {
+                            .accordion-item {
+                                .accordion-button {
+                                    padding: {
+                                        left: 6px;
+                                        right: 14px;
+                                    };
+                                }
+                            }
+                            .sidebar-menu-link {
+                                padding: {
+                                    left: 6px;
+                                    right: 14px;
+                                };
+                            }
+                        }
                     }
                 }
                 &:hover {
                     .logo {
                         a {
-                            left: auto;
-                            right: 0;
+                            img {
+                                left: auto;
+                                right: 0;
+                            }
                         }
                     }
                     .sidebar-inner {
@@ -1134,24 +1141,16 @@
                                 .accordion-item {
                                     .accordion-button {
                                         padding: {
-                                            right: 41px;
+                                            right: 14px;
                                             left: 30px;
                                         };
-                                        i {
-                                            right: 12px;
-                                            left: auto;
-                                        }
                                     }
                                 }
                                 .sidebar-menu-link {
                                     padding: {
-                                        right: 40px;
+                                        right: 14px;
                                         left: 30px;
                                     };
-                                    i {
-                                        right: 12px;
-                                        left: auto;
-                                    }
                                 }
                             }
                         }
@@ -1170,7 +1169,7 @@
         width: 240px;
 
         &.active, &.hide-sidebar {
-            width: 60px;
+            width: 100px;
 
             &:hover {
                 width: 240px;

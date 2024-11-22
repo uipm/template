@@ -1,12 +1,7 @@
 "use client";
 
-import React from "react";
-import Link from "next/link"; 
-import Card from "react-bootstrap/Card";
-import Form from "react-bootstrap/Form";
-import { MaterialSymbol } from "react-material-symbols";
-import "react-material-symbols/rounded";
-import ProgressBar from 'react-bootstrap/ProgressBar';
+import { Card, Form, ProgressBar } from "react-bootstrap";
+import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 const Sidebar = () => {
@@ -22,31 +17,29 @@ const Sidebar = () => {
               className="rounded-1"
               placeholder="Search"
             />
- 
-            <MaterialSymbol 
-              icon="search" 
-              size={18} 
-              className='position-absolute start-0 translate-middle-y' 
+
+            <span
+              className="material-symbols-outlined fs-18 position-absolute start-0 translate-middle-y"
               style={{
-                top: '20px'
+                top: "20px",
               }}
-            />
+            >
+              search
+            </span>
           </Form>
 
           <ul className="fm-sidebar-nav ps-0 mb-0 list-unstyled">
             <li className="mb-4">
               <Link
-                href="/apps/file-manager/" 
+                href="/apps/file-manager/"
                 className={`d-flex align-items-center text-decoration-none justify-content-between ${
                   pathname === "/apps/file-manager/" ? "active" : ""
                 }`}
               >
                 <div className="d-flex align-items-center">
-                  <MaterialSymbol 
-                    icon="inbox" 
-                    size={18} 
-                    className='position-relative top-1 me-2' 
-                  />
+                  <span className="material-symbols-outlined fs-18 position-relative top-1 me-2">
+                    inbox
+                  </span>
                   <span className="fw-semibold">My Drive</span>
                 </div>
                 <span>6</span>
@@ -54,8 +47,8 @@ const Sidebar = () => {
 
               <ul className="mb-0 list-unstyled file-subdown">
                 <li>
-                  <Link 
-                    href="/apps/file-manager/assets/"  
+                  <Link
+                    href="/apps/file-manager/assets/"
                     className={`text-decoration-none ${
                       pathname === "/apps/file-manager/assets/" ? "active" : ""
                     }`}
@@ -64,30 +57,36 @@ const Sidebar = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link 
-                    href="/apps/file-manager/projects/" 
+                  <Link
+                    href="/apps/file-manager/projects/"
                     className={`text-decoration-none ${
-                      pathname === "/apps/file-manager/projects/" ? "active" : ""
+                      pathname === "/apps/file-manager/projects/"
+                        ? "active"
+                        : ""
                     }`}
                   >
                     Projects
                   </Link>
                 </li>
                 <li>
-                  <Link 
-                    href="/apps/file-manager/personal/" 
+                  <Link
+                    href="/apps/file-manager/personal/"
                     className={`text-decoration-none ${
-                      pathname === "/apps/file-manager/personal/" ? "active" : ""
+                      pathname === "/apps/file-manager/personal/"
+                        ? "active"
+                        : ""
                     }`}
                   >
                     Personal
                   </Link>
                 </li>
                 <li>
-                  <Link 
-                    href="/apps/file-manager/applications/" 
+                  <Link
+                    href="/apps/file-manager/applications/"
                     className={`text-decoration-none ${
-                      pathname === "/apps/file-manager/applications/" ? "active" : ""
+                      pathname === "/apps/file-manager/applications/"
+                        ? "active"
+                        : ""
                     }`}
                   >
                     Applications
@@ -103,11 +102,9 @@ const Sidebar = () => {
                   pathname === "/apps/file-manager/documents/" ? "active" : ""
                 }`}
               >
-                <MaterialSymbol 
-                  icon="description" 
-                  size={18} 
-                  className='position-relative top-1 me-2 text-success' 
-                />
+                <span className="material-symbols-outlined fs-18 position-relative top-1 me-2 text-success">
+                  description
+                </span>
                 <span className="fw-medium">Documents</span>
               </Link>
             </li>
@@ -119,11 +116,9 @@ const Sidebar = () => {
                   pathname === "/apps/file-manager/media/" ? "active" : ""
                 }`}
               >
-                <MaterialSymbol 
-                  icon="perm_media" 
-                  size={18} 
-                  className='position-relative top-1 me-2 text-info' 
-                />
+                <span className="material-symbols-outlined fs-18 position-relative top-1 me-2 text-info">
+                  perm_media
+                </span>
                 <span className="fw-medium">Media</span>
               </Link>
             </li>
@@ -135,11 +130,9 @@ const Sidebar = () => {
                   pathname === "/apps/file-manager/recents/" ? "active" : ""
                 }`}
               >
-                <MaterialSymbol 
-                  icon="schedule" 
-                  size={18} 
-                  className='position-relative top-1 me-2 text-primary-div' 
-                />
+                <span className="material-symbols-outlined fs-18 position-relative top-1 me-2 text-primary-div">
+                  schedule
+                </span>
                 <span className="fw-medium">Recents</span>
               </Link>
             </li>
@@ -151,11 +144,9 @@ const Sidebar = () => {
                   pathname === "/apps/file-manager/important/" ? "active" : ""
                 }`}
               >
-                <MaterialSymbol 
-                  icon="grade" 
-                  size={18} 
-                  className='position-relative top-1 me-2 text-warning' 
-                />
+                <span className="material-symbols-outlined fs-18 position-relative top-1 me-2 text-warning">
+                  grade
+                </span>
                 <span className="fw-medium">Important</span>
               </Link>
             </li>
@@ -168,11 +159,9 @@ const Sidebar = () => {
                 }`}
               >
                 <div className="d-flex align-items-center">
-                  <MaterialSymbol 
-                    icon="report_gmailerrorred" 
-                    size={18} 
-                    className='position-relative top-1 me-2 text-primary' 
-                  />
+                  <span className="material-symbols-outlined fs-18 position-relative top-1 me-2 text-primary">
+                    report_gmailerrorred
+                  </span>
                   <span className="fw-medium">Spam</span>
                 </div>
                 <span>10</span>
@@ -187,11 +176,9 @@ const Sidebar = () => {
                 }`}
               >
                 <div className="d-flex align-items-center">
-                  <MaterialSymbol 
-                    icon="delete" 
-                    size={18} 
-                    className='position-relative top-1 me-2 text-danger' 
-                  />
+                  <span className="material-symbols-outlined fs-18 position-relative top-1 me-2 text-danger">
+                    delete
+                  </span>
                   <span className="fw-medium">Trash</span>
                 </div>
                 <span>15</span>
@@ -205,14 +192,14 @@ const Sidebar = () => {
         <Card.Body className="p-4">
           <h4 className="fs-15">Storage Status</h4>
           <span className="fs-13 d-block mb-2">% 50 GB used of 100 GB</span>
-          
-          <ProgressBar 
-            variant="primary" 
-            now={50} 
+
+          <ProgressBar
+            variant="primary"
+            now={50}
             style={{
-              height: '4px'
+              height: "4px",
             }}
-          /> 
+          />
         </Card.Body>
       </Card>
     </>

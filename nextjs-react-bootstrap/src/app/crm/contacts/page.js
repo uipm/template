@@ -1,7 +1,7 @@
 "use client";
 
 import Contacts from '@/components/Crm/Contacts';
-import Breadcrumb from 'react-bootstrap/Breadcrumb'; 
+import { Breadcrumb } from "react-bootstrap";
 
 export default function Page() {
   return (

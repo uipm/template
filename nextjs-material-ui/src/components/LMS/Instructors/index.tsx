@@ -201,7 +201,7 @@ const rows = [
     "Big Data",
     55,
     "$6,855.00",
-    "olivia@pro.io.vn",
+    "olivia@trezo.com",
     [
       {
         star: "ri-star-fill",
@@ -228,7 +228,7 @@ const rows = [
     "UX/UI",
     120,
     "$258.00",
-    "ava@pro.io.vn",
+    "ava@trezo.com",
     [
       {
         star: "ri-star-fill",
@@ -255,7 +255,7 @@ const rows = [
     "Developer",
     86,
     "$3890.00",
-    "lucas@pro.io.vn",
+    "lucas@trezo.com",
     [
       {
         star: "ri-star-fill",
@@ -282,7 +282,7 @@ const rows = [
     "Designer",
     75,
     "$2500.00",
-    "isabella@pro.io.vn",
+    "isabella@trezo.com",
     [
       {
         star: "ri-star-fill",
@@ -309,7 +309,7 @@ const rows = [
     "Big Data",
     55,
     "$6,855.00",
-    "olivia@pro.io.vn",
+    "olivia@trezo.com",
     [
       {
         star: "ri-star-fill",
@@ -336,7 +336,7 @@ const rows = [
     "UX/UI",
     120,
     "$258.00",
-    "ava@pro.io.vn",
+    "ava@trezo.com",
     [
       {
         star: "ri-star-fill",
@@ -363,7 +363,7 @@ const rows = [
     "Developer",
     86,
     "$3890.00",
-    "lucas@pro.io.vn",
+    "lucas@trezo.com",
     [
       {
         star: "ri-star-fill",
@@ -390,7 +390,7 @@ const rows = [
     "Big Data",
     55,
     "$6,855.00",
-    "olivia@pro.io.vn",
+    "olivia@trezo.com",
     [
       {
         star: "ri-star-fill",
@@ -417,7 +417,7 @@ const rows = [
     "UX/UI",
     120,
     "$258.00",
-    "ava@pro.io.vn",
+    "ava@trezo.com",
     [
       {
         star: "ri-star-fill",
@@ -444,7 +444,7 @@ const rows = [
     "Developer",
     86,
     "$3890.00",
-    "lucas@pro.io.vn",
+    "lucas@trezo.com",
     [
       {
         star: "ri-star-fill",
@@ -471,7 +471,7 @@ const rows = [
     "Designer",
     75,
     "$2500.00",
-    "isabella@pro.io.vn",
+    "isabella@trezo.com",
     [
       {
         star: "ri-star-fill",
@@ -498,7 +498,7 @@ const rows = [
     "Big Data",
     55,
     "$6,855.00",
-    "olivia@pro.io.vn",
+    "olivia@trezo.com",
     [
       {
         star: "ri-star-fill",
@@ -525,7 +525,7 @@ const rows = [
     "UX/UI",
     120,
     "$258.00",
-    "ava@pro.io.vn",
+    "ava@trezo.com",
     [
       {
         star: "ri-star-fill",
@@ -552,7 +552,7 @@ const rows = [
     "Developer",
     86,
     "$3890.00",
-    "lucas@pro.io.vn",
+    "lucas@trezo.com",
     [
       {
         star: "ri-star-fill",
@@ -911,7 +911,7 @@ const Instructors: React.FC = () => {
                       className="text-black border-bottom"
                     >
                       <div
-                        className={`pro.io-badge ${row.status}`}
+                        className={`trezo-badge ${row.status}`}
                         style={{ textTransform: "capitalize" }}
                       >
                         {row.status}

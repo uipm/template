@@ -1,10 +1,7 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import Card from "react-bootstrap/Card";
-import Form from "react-bootstrap/Form";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
+import { Row, Col, Card, Form } from "react-bootstrap";
 
 const TicketsStatus = () => {
   const [Chart, setChart] = useState();
@@ -115,6 +112,7 @@ const TicketsStatus = () => {
         colors: "#64748B",
       },
       markers: {
+        shape: 'diamond',
         width: 9,
         height: 9,
         offsetX: -2,
@@ -145,11 +143,11 @@ const TicketsStatus = () => {
                   className="month-select form-control p-0 h-auto border-0 w-90 d-sm-none"
                   aria-label="Default select example"
                 >
-                  <option value="0">Select</option>
-                  <option value="1">This Day</option>
-                  <option value="2">This Week</option>
-                  <option value="3">This Month</option>
-                  <option value="4">This Year</option>
+                  <option defaultValue="0">Select</option>
+                  <option defaultValue="1">This Day</option>
+                  <option defaultValue="2">This Week</option>
+                  <option defaultValue="3">This Month</option>
+                  <option defaultValue="4">This Year</option>
                 </Form.Select>
               </div>
 
@@ -189,11 +187,11 @@ const TicketsStatus = () => {
                   className="month-select form-control p-0 h-auto border-0 w-90"
                   aria-label="Default select example"
                 >
-                  <option value="0">Select</option>
-                  <option value="1">This Day</option>
-                  <option value="2">This Week</option>
-                  <option value="3">This Month</option>
-                  <option value="4">This Year</option>
+                  <option defaultValue="0">Select</option>
+                  <option defaultValue="1">This Day</option>
+                  <option defaultValue="2">This Week</option>
+                  <option defaultValue="3">This Month</option>
+                  <option defaultValue="4">This Year</option>
                 </Form.Select>
               </div>
 

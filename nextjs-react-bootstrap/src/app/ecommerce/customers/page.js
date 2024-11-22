@@ -1,7 +1,7 @@
 "use client";
 
 import Customers from '@/components/eCommerce/Customers';
-import Breadcrumb from 'react-bootstrap/Breadcrumb'; 
+import { Breadcrumb } from "react-bootstrap";
 
 export default function Page() {
   return (

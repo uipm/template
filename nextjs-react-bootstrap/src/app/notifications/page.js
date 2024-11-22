@@ -1,7 +1,7 @@
 "use client";
- 
-import Notifications from '@/components/Notifications';
-import Breadcrumb from 'react-bootstrap/Breadcrumb'; 
+
+import { Breadcrumb } from "react-bootstrap";
+import Notifications from '@/components/Notifications'; 
 
 export default function Page() {
   return (

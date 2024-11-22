@@ -1,8 +1,6 @@
 "use client";
    
-import Breadcrumb from 'react-bootstrap/Breadcrumb'; 
-import Row from 'react-bootstrap/Row'; 
-import Col from 'react-bootstrap/Col';
+import { Row, Col, Breadcrumb } from "react-bootstrap";
 import BasicPieChart from '@/components/Charts/PieCharts/BasicPieChart'; 
 import PieDonutChart from '@/components/Charts/PieCharts/PieDonutChart'; 
 import PieMonochromeChart from '@/components/Charts/PieCharts/PieMonochromeChart';

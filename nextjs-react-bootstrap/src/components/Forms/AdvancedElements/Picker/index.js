@@ -1,9 +1,6 @@
 "use client";
 
-import React from 'react';
-import Card from 'react-bootstrap/Card';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col'; 
+import { Row, Col, Card } from "react-bootstrap";
 import DatePicker from './DatePicker';
 import TimePicker from './TimePicker';
 

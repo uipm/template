@@ -135,7 +135,7 @@
                                     </div>
 
                                     <div style="margin-top: -10px; margin-bottom: 10px;">
-                                        <div id="leads_by_sourc"></div> 
+                                        <div id="leads_by_source"></div> 
                                     </div>
 
                                     <div class="row justify-content-center">
@@ -204,7 +204,7 @@
                                         <li class="d-flex align-items-center justify-content-between border-bottom pb-3 mb-3">
                                             <div class="d-flex align-items-center">
                                                 <div class="flex-shrink-0">
-                                                    <img src="assets/images/user-6.jpg" class="wh-44 rounded-circle" alt="user">
+                                                    <img src="/assets/images/user-6.jpg" class="wh-44 rounded-circle" alt="user">
                                                 </div>
                                                 <div class="flex-grow-1 ms-2 position-relative top-2">
                                                     <h6 class="mb-0 fw-medium">Alex Davis</h6>
@@ -218,7 +218,7 @@
                                         <li class="d-flex align-items-center justify-content-between border-bottom pb-3 mb-3">
                                             <div class="d-flex align-items-center">
                                                 <div class="flex-shrink-0">
-                                                    <img src="assets/images/user-7.jpg" class="wh-44 rounded-circle" alt="user">
+                                                    <img src="/assets/images/user-7.jpg" class="wh-44 rounded-circle" alt="user">
                                                 </div>
                                                 <div class="flex-grow-1 ms-2 position-relative top-2">
                                                     <h6 class="mb-0 fw-medium">Alex Davis</h6>
@@ -232,7 +232,7 @@
                                         <li class="d-flex align-items-center justify-content-between border-bottom pb-3 mb-3">
                                             <div class="d-flex align-items-center">
                                                 <div class="flex-shrink-0">
-                                                    <img src="assets/images/user-8.jpg" class="wh-44 rounded-circle" alt="user">
+                                                    <img src="/assets/images/user-8.jpg" class="wh-44 rounded-circle" alt="user">
                                                 </div>
                                                 <div class="flex-grow-1 ms-2 position-relative top-2">
                                                     <h6 class="mb-0 fw-medium">Alex Davis</h6>
@@ -246,7 +246,7 @@
                                         <li class="d-flex align-items-center justify-content-between border-bottom pb-3 mb-3">
                                             <div class="d-flex align-items-center">
                                                 <div class="flex-shrink-0">
-                                                    <img src="assets/images/user-9.jpg" class="wh-44 rounded-circle" alt="user">
+                                                    <img src="/assets/images/user-9.jpg" class="wh-44 rounded-circle" alt="user">
                                                 </div>
                                                 <div class="flex-grow-1 ms-2 position-relative top-2">
                                                     <h6 class="mb-0 fw-medium">Alex Davis</h6>
@@ -260,7 +260,7 @@
                                         <li class="d-flex align-items-center justify-content-between border-bottom pb-3 mb-3">
                                             <div class="d-flex align-items-center">
                                                 <div class="flex-shrink-0">
-                                                    <img src="assets/images/user-10.jpg" class="wh-44 rounded-circle" alt="user">
+                                                    <img src="/assets/images/user-10.jpg" class="wh-44 rounded-circle" alt="user">
                                                 </div>
                                                 <div class="flex-grow-1 ms-2 position-relative top-2">
                                                     <h6 class="mb-0 fw-medium">Alex Davis</h6>
@@ -335,7 +335,7 @@
                                                         </td>
                                                         <td>
                                                             <a href="my-profile" class="d-flex align-items-center">
-                                                                <img src="assets/images/user-11.jpg" class="wh-44 rounded-circle" alt="user">
+                                                                <img src="/assets/images/user-11.jpg" class="wh-44 rounded-circle" alt="user">
                                                                 <div class="ms-2">
                                                                     <h6 class="fw-medium fs-14">David Brown</h6>
                                                                 </div>
@@ -368,7 +368,7 @@
                                                         </td>
                                                         <td>
                                                             <a href="my-profile" class="d-flex align-items-center">
-                                                                <img src="assets/images/user-12.jpg" class="wh-44 rounded-circle" alt="user">
+                                                                <img src="/assets/images/user-12.jpg" class="wh-44 rounded-circle" alt="user">
                                                                 <div class="ms-2">
                                                                     <h6 class="fw-medium fs-14">Sarah Miller</h6>
                                                                 </div>
@@ -401,7 +401,7 @@
                                                         </td>
                                                         <td>
                                                             <a href="my-profile" class="d-flex align-items-center">
-                                                                <img src="assets/images/user-13.jpg" class="wh-44 rounded-circle" alt="user">
+                                                                <img src="/assets/images/user-13.jpg" class="wh-44 rounded-circle" alt="user">
                                                                 <div class="ms-2">
                                                                     <h6 class="fw-medium fs-14">Michael Wilson</h6>
                                                                 </div>
@@ -434,7 +434,7 @@
                                                         </td>
                                                         <td>
                                                             <a href="my-profile" class="d-flex align-items-center">
-                                                                <img src="assets/images/user-14.jpg" class="wh-44 rounded-circle" alt="user">
+                                                                <img src="/assets/images/user-14.jpg" class="wh-44 rounded-circle" alt="user">
                                                                 <div class="ms-2">
                                                                     <h6 class="fw-medium fs-14">Amanda Clark</h6>
                                                                 </div>
@@ -467,7 +467,7 @@
                                                         </td>
                                                         <td>
                                                             <a href="my-profile" class="d-flex align-items-center">
-                                                                <img src="assets/images/user-15.jpg" class="wh-44 rounded-circle" alt="user">
+                                                                <img src="/assets/images/user-15.jpg" class="wh-44 rounded-circle" alt="user">
                                                                 <div class="ms-2">
                                                                     <h6 class="fw-medium fs-14">David Brown</h6>
                                                                 </div>

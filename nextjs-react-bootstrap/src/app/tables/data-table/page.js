@@ -1,9 +1,6 @@
 "use client";
    
-import React from "react";
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import Breadcrumb from 'react-bootstrap/Breadcrumb';  
+import { Row, Col, Breadcrumb } from "react-bootstrap";
 import TopSellingProducts from "@/components/Tables/DataTable/TopSellingProducts";
 import RecentOrders from "@/components/Tables/DataTable/RecentOrders";
 import TopPerformer from "@/components/Tables/DataTable/TopPerformer";

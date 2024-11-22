@@ -250,7 +250,7 @@
 }
 
 // Badge
-.pro.io-badge {
+.trezo-badge {
 	background-color: #ECF0FF;
 	color: var(--primaryColor);
 	display: inline-block;
@@ -280,6 +280,10 @@
 	&.pPending {
 		background-color: #F3E8FF;
 		color: #7C24CC;
+	}
+	&.rescheduled, &.Rescheduled {
+    color: #c52b09;
+    background-color: #ffe8d4;
 	}
 }
 

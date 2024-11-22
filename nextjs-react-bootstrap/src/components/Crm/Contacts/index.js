@@ -1,14 +1,9 @@
 "use client";
 
 import React, { useState } from "react";
+import { Card, Form, Table, Button } from "react-bootstrap";
 import SearchForm from "./SearchForm";
 import Pagination from "./Pagination";
-import Table from "react-bootstrap/Table";
-import { MaterialSymbol } from "react-material-symbols";
-import "react-material-symbols/rounded";
-import Offcanvas from "react-bootstrap/Offcanvas";
-import Button from "react-bootstrap/Button";
-import Form from "react-bootstrap/Form";
 import Image from "next/image";
 
 const contactsData = [
@@ -125,15 +120,16 @@ const contactsData = [
 ];
 
 const Contacts = () => {
-  const [show, setShow] = useState(false);
-
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
+  // Modal
+  const [isShowModal, setShowModal] = useState("false");
+  const handleToggleShowModal = () => {
+    setShowModal(!isShowModal);
+  };
 
   return (
     <>
-      <div className="card bg-white border-0 rounded-3 mb-4">
-        <div className="card-body p-0">
+      <Card className="bg-white border-0 rounded-3 mb-4">
+        <Card.Body className="p-0">
           <div className="p-4">
             <div className="d-flex justify-content-between align-items-center flex-wrap gap-3">
               <SearchForm />
@@ -141,7 +137,7 @@ const Contacts = () => {
               <div className="text-end">
                 <button
                   className="btn btn-outline-primary py-1 px-2 px-sm-4 fs-14 fw-medium rounded-3 hover-bg"
-                  onClick={handleShow}
+                  onClick={handleToggleShowModal}
                 >
                   <span className="py-sm-1 d-block">
                     <i className="ri-add-line"></i>
@@ -179,14 +175,14 @@ const Contacts = () => {
 
                 <tbody>
                   {contactsData &&
-                    contactsData.slice(0, 10).map((value, i) => (
+                    contactsData.slice(0, 10).map((defaultValue, i) => (
                       <tr key={i}>
                         <td className="text-body">
                           <Form>
                             <Form.Check
                               type="checkbox"
-                              id={value.id}
-                              label={value.id}
+                              id={defaultValue.id}
+                              label={defaultValue.id}
                             />
                           </Form>
                         </td>
@@ -195,7 +191,7 @@ const Contacts = () => {
                           <div href="#" className="d-flex align-items-center">
                             <div className="flex-shrink-0">
                               <Image
-                                src={value.userImg}
+                                src={defaultValue.userImg}
                                 className="wh-34 rounded-circle"
                                 alt="user"
                                 width={34}
@@ -204,54 +200,50 @@ const Contacts = () => {
                             </div>
                             <div className="flex-grow-1 ms-2 position-relative top-1">
                               <h6 className="mb-0 fs-14 fw-medium">
-                                {value.userName}
+                                {defaultValue.userName}
                               </h6>
                             </div>
                           </div>
                         </td>
 
-                        <td className="text-body">{value.email}</td>
+                        <td className="text-body">{defaultValue.email}</td>
 
-                        <td>{value.phone}</td>
+                        <td>{defaultValue.phone}</td>
 
-                        <td className="text-body">{value.lastContacted}</td>
+                        <td className="text-body">
+                          {defaultValue.lastContacted}
+                        </td>
 
-                        <td className="text-body">{value.company}</td>
+                        <td className="text-body">{defaultValue.company}</td>
 
-                        <td className="text-body">{value.leadScore}</td>
+                        <td className="text-body">{defaultValue.leadScore}</td>
 
                         <td>
                           <span
-                            className={`badge bg-opacity-10 p-2 fs-12 fw-normal text-capitalize ${value.status}`}
+                            className={`badge bg-opacity-10 p-2 fs-12 fw-normal text-capitalize ${defaultValue.status}`}
                           >
-                            {value.status}
+                            {defaultValue.status}
                           </span>
                         </td>
 
                         <td>
                           <div className="d-flex align-items-center gap-1">
                             <button className="ps-0 border-0 bg-transparent lh-1 position-relative top-2">
-                              <MaterialSymbol
-                                icon="visibility"
-                                size={16}
-                                className="text-primary"
-                              />
+                              <span className="material-symbols-outlined fs-16 text-primary">
+                                visibility
+                              </span>
                             </button>
 
                             <button className="ps-0 border-0 bg-transparent lh-1 position-relative top-2">
-                              <MaterialSymbol
-                                icon="edit"
-                                size={16}
-                                className="text-body"
-                              />
+                              <span className="material-symbols-outlined fs-16 text-body">
+                                edit
+                              </span>
                             </button>
 
                             <button className="ps-0 border-0 bg-transparent lh-1 position-relative top-2">
-                              <MaterialSymbol
-                                icon="delete"
-                                size={16}
-                                className="text-danger"
-                              />
+                              <span className="material-symbols-outlined fs-16 text-danger">
+                                delete
+                              </span>
                             </button>
                           </div>
                         </td>
@@ -264,103 +256,111 @@ const Contacts = () => {
               <Pagination />
             </div>
           </div>
+        </Card.Body>
+      </Card>
+
+      {/* Modal */}
+      <div className={`custom-modal right ${isShowModal ? "" : "show"}`}>
+        <div className="custom-modal-content position-relative z-3">
+          <div className="border-bottom py-3 px-4 d-flex align-items-center justify-content-between">
+            <h3 className="fs-18 mb-0">Add New Contact</h3>
+
+            <div className="close-link" onClick={handleToggleShowModal}>
+              <span className="material-symbols-outlined">close</span>
+            </div>
+          </div>
+
+          <div className="p-4">
+            <Form>
+              <Form.Group className="mb-4">
+                <Form.Label className="label">ID No</Form.Label>
+                <Form.Control
+                  type="text"
+                  className="text-dark"
+                  placeholder="ID No"
+                />
+              </Form.Group>
+
+              <Form.Group className="mb-4">
+                <Form.Label className="label">User Name</Form.Label>
+                <Form.Control
+                  type="text"
+                  className="text-dark"
+                  placeholder="User Name"
+                />
+              </Form.Group>
+
+              <Form.Group className="mb-4">
+                <Form.Label className="label">Email</Form.Label>
+                <Form.Control
+                  type="email"
+                  className="text-dark"
+                  placeholder="Email"
+                />
+              </Form.Group>
+
+              <Form.Group className="mb-4">
+                <Form.Label className="label">Phone</Form.Label>
+                <Form.Control
+                  type="text"
+                  className="text-dark"
+                  placeholder="Phone"
+                />
+              </Form.Group>
+
+              <Form.Group className="mb-4">
+                <Form.Label className="label">Last Contacted</Form.Label>
+                <Form.Control type="date" className="text-dark" />
+              </Form.Group>
+
+              <Form.Group className="mb-4">
+                <Form.Label className="label">Company</Form.Label>
+                <Form.Control
+                  type="text"
+                  className="text-dark"
+                  placeholder="Company"
+                />
+              </Form.Group>
+
+              <Form.Group className="mb-4">
+                <Form.Label className="label">Lead Score</Form.Label>
+                <Form.Control
+                  type="text"
+                  className="text-dark"
+                  placeholder="Lead Score"
+                />
+              </Form.Group>
+
+              <Form.Group className="mb-4">
+                <Form.Label className="label">Status</Form.Label>
+                <Form.Select
+                  className="form-control text-dark"
+                  aria-label="Default select example"
+                >
+                  <option>Select</option>
+                  <option defaultValue="0">Active</option>
+                  <option defaultValue="1">Deactive</option>
+                </Form.Select>
+              </Form.Group>
+
+              <Form.Group className="d-flex gap-3">
+                <Button
+                  variant="primary"
+                  type="submit"
+                  className="text-white fw-semibold py-2 px-2 px-sm-3"
+                >
+                  <span className="py-sm-1 d-block">
+                    <i className="ri-add-line text-white"></i>{" "}
+                    <span>Create New Contact</span>
+                  </span>
+                </Button>
+              </Form.Group>
+            </Form>
+          </div>
         </div>
+
+        <div className="close-outside" onClick={handleToggleShowModal}></div>
       </div>
-
-      {/* Offcanvas */}
-      <Offcanvas show={show} onHide={handleClose} placement="end">
-        <Offcanvas.Header className="border-bottom p-4" closeButton>
-          <Offcanvas.Title className="fs-18 mb-0">Add New Contact</Offcanvas.Title>
-        </Offcanvas.Header>
-
-        <Offcanvas.Body className="p-4">
-          <Form>
-            <Form.Group className="mb-4">
-              <Form.Label className="label">ID No</Form.Label>
-              <Form.Control
-                type="text"
-                className="text-dark"
-                placeholder="ID No"
-              />
-            </Form.Group>
-
-            <Form.Group className="mb-4">
-              <Form.Label className="label">User Name</Form.Label>
-              <Form.Control
-                type="text"
-                className="text-dark"
-                placeholder="User Name"
-              />
-            </Form.Group>
-
-            <Form.Group className="mb-4">
-              <Form.Label className="label">Email</Form.Label>
-              <Form.Control
-                type="email"
-                className="text-dark"
-                placeholder="Email"
-              />
-            </Form.Group>
-
-            <Form.Group className="mb-4">
-              <Form.Label className="label">Phone</Form.Label>
-              <Form.Control
-                type="text"
-                className="text-dark"
-                placeholder="Phone"
-              />
-            </Form.Group>
-
-            <Form.Group className="mb-4">
-              <Form.Label className="label">Last Contacted</Form.Label>
-              <Form.Control type="date" className="text-dark" />
-            </Form.Group>
-            
-            <Form.Group className="mb-4">
-              <Form.Label className="label">Company</Form.Label>
-              <Form.Control
-                type="text"
-                className="text-dark"
-                placeholder="Company"
-              />
-            </Form.Group>
-
-            <Form.Group className="mb-4">
-              <Form.Label className="label">Lead Score</Form.Label>
-              <Form.Control
-                type="text"
-                className="text-dark"
-                placeholder="Lead Score"
-              />
-            </Form.Group>
-        
-            <Form.Group className="mb-4">
-              <Form.Label className="label">Status</Form.Label>
-              <Form.Select
-                className="form-control text-dark"
-                aria-label="Default select example"
-              >
-                <option>Select</option>
-                <option value="0">Active</option>
-                <option value="1">Deactive</option>
-              </Form.Select>
-            </Form.Group>
-
-            <Form.Group className="d-flex gap-3">
-              <Button
-                variant="primary"
-                type="submit"
-                className="text-white fw-semibold py-2 px-2 px-sm-3"
-              >
-                <span className="py-sm-1 d-block">
-                  <i className="ri-add-line text-white"></i>{" "}
-                  <span>Create New Contact</span>
-                </span>
-              </Button>
-            </Form.Group>
-          </Form>
-        </Offcanvas.Body>
-      </Offcanvas>
     </>
   );
 };

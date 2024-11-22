@@ -1,9 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import Card from "react-bootstrap/Card";
-import Button from "react-bootstrap/Button";
-import Modal from "react-bootstrap/Modal";
+import { Card, Button, Modal } from "react-bootstrap";
 
 const StaticBackdrop = () => {
   const [show, setShow] = useState(false);

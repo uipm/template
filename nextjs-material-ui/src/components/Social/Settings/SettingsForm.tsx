@@ -19,11 +19,7 @@ import {
   RadioGroup,
   Radio,
 } from "@mui/material";
-
-import dynamic from "next/dynamic";
-const RichTextEditor = dynamic(() => import("@mantine/rte"), {
-  ssr: false,
-});
+import CustomEditor from "./CustomEditor";
 
 const SettingsForm: React.FC = () => {
   const [country, setCountry] = useState<string>("");
@@ -180,7 +176,7 @@ const SettingsForm: React.FC = () => {
 
                       <TextField
                         label="Enter email address"
-                        defaultValue="johnson@pro.io.vn"
+                        defaultValue="johnson@trezo.com"
                         variant="filled"
                         id="email"
                         name="email"
@@ -430,18 +426,7 @@ const SettingsForm: React.FC = () => {
                       Add Your Bio
                     </Typography>
 
-                    <RichTextEditor
-                      id="rte"
-                      controls={[
-                        ["bold", "italic", "underline", "link", "image"],
-                        ["unorderedList", "h1", "h2", "h3"],
-                        ["sup", "sub"],
-                        ["alignLeft", "alignCenter", "alignRight"],
-                      ]}
-                      style={{
-                        minHeight: "200px",
-                      }}
-                    />
+                    <CustomEditor />
                   </Box>
                 </Grid>
 
@@ -583,7 +568,7 @@ const SettingsForm: React.FC = () => {
 
                       <TextField
                         label="Enter company name"
-                        defaultValue="pro.io Admin"
+                        defaultValue="Trezo Admin"
                         variant="filled"
                         id="companyName"
                         name="companyName"

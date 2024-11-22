@@ -1,12 +1,9 @@
 "use client";
     
-import React from 'react';
-import Breadcrumb from 'react-bootstrap/Breadcrumb';  
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';    
+import { Row, Col, Breadcrumb } from "react-bootstrap";   
 import BasicNav from '@/components/UIKit/Navs/BasicNav';
 import Alignment from '@/components/UIKit/Navs/Alignment';
-import Tabs from '@/components/UIKit/Navs/Tabs';
+import TabsDemo from '@/components/UIKit/Navs/TabsDemo';
 import TabsPills from '@/components/UIKit/Navs/TabsPills';
 
 export default function Page() {
@@ -37,7 +34,7 @@ export default function Page() {
         <Col xxl={6}>
           <BasicNav />
 
-          <Tabs />
+          <TabsDemo />
         </Col>
 
         <Col xxl={6}>

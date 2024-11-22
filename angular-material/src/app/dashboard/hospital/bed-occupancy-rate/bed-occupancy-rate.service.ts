@@ -22,7 +22,7 @@ export class BedOccupancyRateService {
                 const options = {
                     series: [1275, 825, 450],
                     chart: {
-                        height: 186,
+                        height: 141,
                         type: "donut"
                     },
                     labels: [

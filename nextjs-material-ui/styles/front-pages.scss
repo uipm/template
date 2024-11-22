@@ -54,7 +54,7 @@
 
     &:hover {
         background-color: var(--fpPurpleColor);
-        color: #fff;
+        color: #fff !important;
 
         &::before {
             border-color: var(--fpPurpleColor);

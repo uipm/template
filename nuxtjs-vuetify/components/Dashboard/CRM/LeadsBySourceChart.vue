@@ -32,7 +32,7 @@
         <apexchart
           v-if="isClient"
           type="donut"
-          height="285"
+          height="260"
           :options="leadsBySource"
           :series="source"
         ></apexchart>
@@ -95,7 +95,7 @@ export default defineComponent({
     const source = ref([320, 60, 30, 160, 279, 19]);
     const leadsBySource = ref({
       chart: {
-        height: 285,
+        height: 260,
         type: "donut",
       },
       labels: ["Organic", "Paid", "Direct", "Social", "Referrals", "Others"],
@@ -129,6 +129,7 @@ export default defineComponent({
           height: 9,
           offsetX: -2,
           offsetY: -0.5,
+          shape: "diamond",
         },
       },
       plotOptions: {

@@ -27,11 +27,7 @@ import AddPhotoAlternateIcon from "@mui/icons-material/AddPhotoAlternate";
 import EditIcon from "@mui/icons-material/Edit";
 import MoreVertIcon from "@mui/icons-material/MoreVert";
 import DeleteIcon from "@mui/icons-material/Delete";
-
-import dynamic from "next/dynamic";
-const RichTextEditor = dynamic(() => import("@mantine/rte"), {
-  ssr: false,
-});
+import CustomEditor from "./CustomEditor";
 
 const ITEM_HEIGHT = 48;
 const ITEM_PADDING_TOP = 8;
@@ -45,12 +41,12 @@ const MenuProps = {
 };
 
 const names = [
-  "james@pro.io.vn",
-  "andy@pro.io.vn",
-  "mateo@pro.io.vn",
-  "luca@pro.io.vn",
-  "smith@pro.io.vn",
-  "tomato@pro.io.vn",
+  "james@trezo.com",
+  "andy@trezo.com",
+  "mateo@trezo.com",
+  "luca@trezo.com",
+  "smith@trezo.com",
+  "tomato@trezo.com",
 ];
 
 const Compose: React.FC = () => {
@@ -272,18 +268,7 @@ const Compose: React.FC = () => {
                   Your Message
                 </Typography>
 
-                <RichTextEditor
-                  id="rte"
-                  controls={[
-                    ["bold", "italic", "underline", "link", "image"],
-                    ["unorderedList", "h1", "h2", "h3"],
-                    ["sup", "sub"],
-                    ["alignLeft", "alignCenter", "alignRight"],
-                  ]}
-                  style={{
-                    minHeight: "270px",
-                  }}
-                />
+                <CustomEditor />
               </Box>
             </Grid>
 

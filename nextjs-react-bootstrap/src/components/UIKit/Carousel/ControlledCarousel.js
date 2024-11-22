@@ -1,9 +1,8 @@
 "use client";
 
 import { useState } from 'react';
+import { Card, Carousel } from "react-bootstrap";
 import Image from "next/image";
-import Card from "react-bootstrap/Card";
-import Carousel from "react-bootstrap/Carousel";
 
 const ControlledCarousel = () => {
 

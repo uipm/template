@@ -1,20 +1,14 @@
 "use client";
 
-import React from "react";
-import Card from "react-bootstrap/Card";
-import Form from "react-bootstrap/Form";
-import { MaterialSymbol } from "react-material-symbols";
-import "react-material-symbols/rounded";
-import Dropdown from "react-bootstrap/Dropdown";
-import OverlayTrigger from "react-bootstrap/OverlayTrigger";
-import Tooltip from "react-bootstrap/Tooltip";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-
-import dynamic from 'next/dynamic'
-const RichTextEditor = dynamic(() => import('@mantine/rte'), {
-  ssr: false,
-})
+import {
+  Row,
+  Col,
+  Dropdown,
+  Card,
+  Form,
+  OverlayTrigger,
+  Tooltip,
+} from "react-bootstrap";
 
 const Compose = () => {
   return (
@@ -30,11 +24,9 @@ const Compose = () => {
                 overlay={<Tooltip id="tooltip-top">Archive</Tooltip>}
               >
                 <button className="pe-0 border-0 bg-transparent ps-2">
-                  <MaterialSymbol
-                    icon="archive"
-                    size={20}
-                    className="text-body hover"
-                  />
+                  <span className="material-symbols-outlined fs-20 text-body hover">
+                    archive
+                  </span>
                 </button>
               </OverlayTrigger>
 
@@ -43,11 +35,9 @@ const Compose = () => {
                 overlay={<Tooltip id="tooltip-top">Help</Tooltip>}
               >
                 <button className="pe-0 border-0 bg-transparent ms-2">
-                  <MaterialSymbol
-                    icon="help_clinic"
-                    size={20}
-                    className="text-body hover"
-                  />
+                  <span className="material-symbols-outlined fs-20 text-body hover">
+                    help_clinic
+                  </span>
                 </button>
               </OverlayTrigger>
 
@@ -56,11 +46,9 @@ const Compose = () => {
                 overlay={<Tooltip id="tooltip-top">Tresh</Tooltip>}
               >
                 <button className="pe-0 border-0 bg-transparent ms-2">
-                  <MaterialSymbol
-                    icon="delete"
-                    size={20}
-                    className="text-body hover"
-                  />
+                  <span className="material-symbols-outlined fs-20 text-body hover">
+                    delete
+                  </span>
                 </button>
               </OverlayTrigger>
 
@@ -74,22 +62,22 @@ const Compose = () => {
                     id="dropdown-basic"
                     className="p-0 border-0 bg-transparent"
                   >
-                    <MaterialSymbol icon="more_vert" />
+                    <i className="material-symbols-outlined">more_vert</i>
                   </Dropdown.Toggle>
 
                   <Dropdown.Menu className="bg-white border box-shadow">
                     <Dropdown.Item href="#">
-                      <MaterialSymbol icon="visibility" />
+                      <i className="material-symbols-outlined">visibility</i>
                       View Profile
                     </Dropdown.Item>
 
                     <Dropdown.Item href="#">
-                      <MaterialSymbol icon="delete" />
+                      <i className="material-symbols-outlined">delete</i>
                       Delete Chat
                     </Dropdown.Item>
 
                     <Dropdown.Item href="#">
-                      <MaterialSymbol icon="lock" />
+                      <i className="material-symbols-outlined">lock</i>
                       Block
                     </Dropdown.Item>
                   </Dropdown.Menu>
@@ -103,61 +91,69 @@ const Compose = () => {
             <Row>
               <Col lg={6}>
                 <Form.Group className="mb-4">
-                  <Form.Label className="label text-secondary fs-14">To</Form.Label>
+                  <Form.Label className="label text-secondary fs-14">
+                    To
+                  </Form.Label>
                   <Form.Select
                     className="form-control h-55"
                     aria-label="Default select example"
                   >
-                    <option value="0">Select</option>
-                    <option value="1">james@trezo.com</option>
-                    <option value="2">andy@trezo.com</option>
-                    <option value="3">mateo@trezo.com</option>
-                    <option value="4">luca@trezo.com</option>
-                    <option value="5">luca@trezo.com</option>
-                    <option value="6">tomato@trezo.com</option>
+                    <option defaultValue="0">Select</option>
+                    <option defaultValue="1">james@trezo.com</option>
+                    <option defaultValue="2">andy@trezo.com</option>
+                    <option defaultValue="3">mateo@trezo.com</option>
+                    <option defaultValue="4">luca@trezo.com</option>
+                    <option defaultValue="5">luca@trezo.com</option>
+                    <option defaultValue="6">tomato@trezo.com</option>
                   </Form.Select>
                 </Form.Group>
               </Col>
 
               <Col lg={6}>
                 <Form.Group className="mb-4">
-                  <Form.Label className="label text-secondary fs-14">Cc</Form.Label>
+                  <Form.Label className="label text-secondary fs-14">
+                    Cc
+                  </Form.Label>
                   <Form.Select
                     className="form-control h-55"
                     aria-label="Default select example"
                   >
-                    <option value="0">Select</option>
-                    <option value="1">james@trezo.com</option>
-                    <option value="2">andy@trezo.com</option>
-                    <option value="3">mateo@trezo.com</option>
-                    <option value="4">luca@trezo.com</option>
-                    <option value="5">luca@trezo.com</option>
-                    <option value="6">tomato@trezo.com</option>
+                    <option defaultValue="0">Select</option>
+                    <option defaultValue="1">james@trezo.com</option>
+                    <option defaultValue="2">andy@trezo.com</option>
+                    <option defaultValue="3">mateo@trezo.com</option>
+                    <option defaultValue="4">luca@trezo.com</option>
+                    <option defaultValue="5">luca@trezo.com</option>
+                    <option defaultValue="6">tomato@trezo.com</option>
                   </Form.Select>
                 </Form.Group>
               </Col>
 
               <Col lg={6}>
                 <Form.Group className="mb-4">
-                  <Form.Label className="label text-secondary fs-14">Bcc</Form.Label>
+                  <Form.Label className="label text-secondary fs-14">
+                    Bcc
+                  </Form.Label>
                   <Form.Select
                     className="form-control h-55"
                     aria-label="Default select example"
                   >
-                    <option value="0">Select</option>
-                    <option value="1">james@trezo.com</option>
-                    <option value="2">andy@trezo.com</option>
-                    <option value="3">mateo@trezo.com</option>
-                    <option value="4">luca@trezo.com</option>
-                    <option value="5">luca@trezo.com</option>
-                    <option value="6">tomato@trezo.com</option>
+                    <option defaultValue="0">Select</option>
+                    <option defaultValue="1">james@trezo.com</option>
+                    <option defaultValue="2">andy@trezo.com</option>
+                    <option defaultValue="3">mateo@trezo.com</option>
+                    <option defaultValue="4">luca@trezo.com</option>
+                    <option defaultValue="5">luca@trezo.com</option>
+                    <option defaultValue="6">tomato@trezo.com</option>
                   </Form.Select>
                 </Form.Group>
               </Col>
 
               <Col lg={6}>
                 <Form.Group className="mb-4">
-                  <Form.Label className="label text-secondary fs-14">Subject</Form.Label>
+                  <Form.Label className="label text-secondary fs-14">
+                    Subject
+                  </Form.Label>
                   <input
                     type="text"
                     className="form-control h-55"
@@ -168,20 +164,11 @@ const Compose = () => {
 
               <Col lg={12}>
                 <Form.Group className="mb-4">
-                  <Form.Label className="label text-secondary fs-14">Description</Form.Label>
-
-                  <RichTextEditor
-                    id="rte"
-                    controls={[
-                      ['bold', 'italic', 'underline', 'link', 'image'],
-                      ['unorderedList', 'h1', 'h2', 'h3'],
-                      ['sup', 'sub'],
-                      ['alignLeft', 'alignCenter', 'alignRight'],
-                    ]}
-                    style={{
-                      minHeight: '285px'
-                    }}
-                  />
+                  <Form.Label className="label text-secondary fs-14">
+                    Description
+                  </Form.Label>
+ 
+                  <Form.Control as="textarea" rows={8} placeholder="Type description here..." /> 
                 </Form.Group>
               </Col>
 
@@ -199,14 +186,10 @@ const Compose = () => {
                       placement="top"
                       overlay={<Tooltip id="tooltip-top">Text</Tooltip>}
                     >
-                      <button
-                        className="p-0 border-0 bg-transparent"
-                      >
-                        <MaterialSymbol
-                          icon="text_fields_alt"
-                          size={20}
-                          className="text-body hover"
-                        />
+                      <button className="p-0 border-0 bg-transparent">
+                        <span className="material-symbols-outlined fs-20 text-body hover">
+                          text_fields_alt
+                        </span>
                       </button>
                     </OverlayTrigger>
 
@@ -214,14 +197,10 @@ const Compose = () => {
                       placement="top"
                       overlay={<Tooltip id="tooltip-top">File</Tooltip>}
                     >
-                      <button
-                        className="p-0 border-0 bg-transparent ms-3"
-                      >
-                        <MaterialSymbol
-                          icon="attach_file"
-                          size={20}
-                          className="text-body hover"
-                        />
+                      <button className="p-0 border-0 bg-transparent ms-3">
+                        <span className="material-symbols-outlined fs-20 text-body hover">
+                          attach_file
+                        </span>
                       </button>
                     </OverlayTrigger>
 
@@ -229,14 +208,10 @@ const Compose = () => {
                       placement="top"
                       overlay={<Tooltip id="tooltip-top">Link</Tooltip>}
                     >
-                      <button
-                        className="p-0 border-0 bg-transparent ms-3"
-                      >
-                        <MaterialSymbol
-                          icon="link"
-                          size={20}
-                          className="text-body hover"
-                        />
+                      <button className="p-0 border-0 bg-transparent ms-3">
+                        <span className="material-symbols-outlined fs-20 text-body hover">
+                          link
+                        </span>
                       </button>
                     </OverlayTrigger>
 
@@ -244,14 +219,10 @@ const Compose = () => {
                       placement="top"
                       overlay={<Tooltip id="tooltip-top">Mood</Tooltip>}
                     >
-                      <button
-                        className="p-0 border-0 bg-transparent ms-3"
-                      >
-                        <MaterialSymbol
-                          icon="mood"
-                          size={20}
-                          className="text-body hover"
-                        />
+                      <button className="p-0 border-0 bg-transparent ms-3">
+                        <span className="material-symbols-outlined fs-20 text-body hover">
+                          mood
+                        </span>
                       </button>
                     </OverlayTrigger>
 
@@ -261,11 +232,9 @@ const Compose = () => {
                       data-bs-placement="top"
                       data-bs-title="Drive"
                     >
-                      <MaterialSymbol
-                        icon="add_to_drive"
-                        size={20}
-                        className="text-body hover"
-                      />
+                      <span className="material-symbols-outlined fs-20 text-body hover">
+                        add_to_drive
+                      </span>
                     </button>
 
                     <button
@@ -274,11 +243,9 @@ const Compose = () => {
                       data-bs-placement="top"
                       data-bs-title="Pen"
                     >
-                      <MaterialSymbol
-                        icon="ink_pen"
-                        size={20}
-                        className="text-body hover"
-                      />
+                      <span className="material-symbols-outlined fs-20 text-body hover">
+                        ink_pen
+                      </span>
                     </button>
 
                     <OverlayTrigger
@@ -291,27 +258,29 @@ const Compose = () => {
                           id="dropdown-basic"
                           className="p-0 border-0 bg-transparent"
                         >
-                          <MaterialSymbol icon="more_vert" />
+                          <i className="material-symbols-outlined">more_vert</i>
                         </Dropdown.Toggle>
 
                         <Dropdown.Menu className="bg-white border box-shadow">
                           <Dropdown.Item href="#">
-                            <MaterialSymbol icon="visibility" />
+                            <i className="material-symbols-outlined">
+                              visibility
+                            </i>
                             View Profile
                           </Dropdown.Item>
 
                           <Dropdown.Item href="#">
-                            <MaterialSymbol icon="delete" />
+                            <i className="material-symbols-outlined">delete</i>
                             Delete Chat
                           </Dropdown.Item>
 
                           <Dropdown.Item href="#">
-                            <MaterialSymbol icon="lock" />
+                            <i className="material-symbols-outlined">lock</i>
                             Block
                           </Dropdown.Item>
                         </Dropdown.Menu>
                       </Dropdown>
-                    </OverlayTrigger> 
+                    </OverlayTrigger>
                   </div>
                 </div>
               </Col>

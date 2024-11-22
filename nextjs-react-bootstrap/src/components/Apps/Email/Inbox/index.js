@@ -1,16 +1,15 @@
 "use client";
 
-import React from "react";
+import {
+  Dropdown,
+  Card,
+  Form,
+  OverlayTrigger,
+  Tooltip,
+  Tab,
+  Tabs,
+} from "react-bootstrap";
 import Link from "next/link";
-import Card from "react-bootstrap/Card";
-import Form from "react-bootstrap/Form";
-import { MaterialSymbol } from "react-material-symbols";
-import "react-material-symbols/rounded";
-import Dropdown from "react-bootstrap/Dropdown";
-import OverlayTrigger from "react-bootstrap/OverlayTrigger";
-import Tooltip from "react-bootstrap/Tooltip";
-import Tab from "react-bootstrap/Tab";
-import Tabs from "react-bootstrap/Tabs";
 
 const Inbox = () => {
   return (
@@ -30,11 +29,9 @@ const Inbox = () => {
                     id="dropdown-basic"
                     className="dropdown-toggle p-0 border-0 ps-0 bg-transparent"
                   >
-                    <MaterialSymbol
-                      icon="arrow_drop_down"
-                      size={22}
-                      className="text-body"
-                    />
+                    <span className="material-symbols-outlined fs-22 text-body">
+                      arrow_drop_down
+                    </span>
                   </Dropdown.Toggle>
 
                   <Dropdown.Menu className="bg-white border box-shadow">
@@ -58,11 +55,9 @@ const Inbox = () => {
                 overlay={<Tooltip id="tooltip-top">Archive</Tooltip>}
               >
                 <button className="pe-0 border-0 bg-transparent ps-2">
-                  <MaterialSymbol
-                    icon="archive"
-                    size={20}
-                    className="text-body hover"
-                  />
+                  <span className="material-symbols-outlined fs-20 text-body hover">
+                    archive
+                  </span>
                 </button>
               </OverlayTrigger>
 
@@ -71,11 +66,9 @@ const Inbox = () => {
                 overlay={<Tooltip id="tooltip-top">Help</Tooltip>}
               >
                 <button className="pe-0 border-0 bg-transparent ms-2">
-                  <MaterialSymbol
-                    icon="help_clinic"
-                    size={20}
-                    className="text-body hover"
-                  />
+                  <span className="material-symbols-outlined fs-20 text-body hover">
+                    help_clinic
+                  </span>
                 </button>
               </OverlayTrigger>
 
@@ -84,11 +77,9 @@ const Inbox = () => {
                 overlay={<Tooltip id="tooltip-top">Tresh</Tooltip>}
               >
                 <button className="pe-0 border-0 bg-transparent ms-2">
-                  <MaterialSymbol
-                    icon="delete"
-                    size={20}
-                    className="text-body hover"
-                  />
+                  <span className="material-symbols-outlined fs-20 text-body hover">
+                    delete
+                  </span>
                 </button>
               </OverlayTrigger>
 
@@ -102,22 +93,22 @@ const Inbox = () => {
                     id="dropdown-basic"
                     className="p-0 border-0 bg-transparent"
                   >
-                    <MaterialSymbol icon="more_vert" />
+                    <i className="material-symbols-outlined">more_vert</i>
                   </Dropdown.Toggle>
 
                   <Dropdown.Menu className="bg-white border box-shadow">
                     <Dropdown.Item href="#">
-                      <MaterialSymbol icon="visibility" />
+                      <i className="material-symbols-outlined">visibility</i>
                       View Profile
                     </Dropdown.Item>
 
                     <Dropdown.Item href="#">
-                      <MaterialSymbol icon="delete" />
+                      <i className="material-symbols-outlined">delete</i>
                       Delete Chat
                     </Dropdown.Item>
 
                     <Dropdown.Item href="#">
-                      <MaterialSymbol icon="lock" />
+                      <i className="material-symbols-outlined">lock</i>
                       Block
                     </Dropdown.Item>
                   </Dropdown.Menu>
@@ -133,12 +124,16 @@ const Inbox = () => {
                   <ul className="pagination mb-0 justify-content-center">
                     <li className="page-item">
                       <button className="page-link icon" aria-label="Previous">
-                        <MaterialSymbol icon="keyboard_arrow_left" />
+                        <span className="material-symbols-outlined">
+                          keyboard_arrow_left
+                        </span>
                       </button>
                     </li>
                     <li className="page-item">
                       <button className="page-link icon" aria-label="Next">
-                        <MaterialSymbol icon="keyboard_arrow_right" />
+                        <span className="material-symbols-outlined">
+                          keyboard_arrow_right
+                        </span>
                       </button>
                     </li>
                   </ul>
@@ -146,7 +141,7 @@ const Inbox = () => {
               </div>
 
               <div className="d-flex align-items-center ms-3">
-                <MaterialSymbol icon="menu" size={20} />
+                <span className="material-symbols-outlined fs-20">menu</span>
 
                 <Dropdown className="action-opt position-relative top-3">
                   <Dropdown.Toggle
@@ -154,7 +149,9 @@ const Inbox = () => {
                     id="dropdown-basic"
                     className="p-0 border-0 bg-transparent"
                   >
-                    <MaterialSymbol icon="arrow_drop_down" />
+                    <span className="material-symbols-outlined">
+                      arrow_drop_down
+                    </span>
                   </Dropdown.Toggle>
 
                   <Dropdown.Menu className="bg-white border box-shadow">
@@ -192,15 +189,13 @@ const Inbox = () => {
                               <input
                                 className="form-check-input wh-20"
                                 type="checkbox"
-                                value=""
+                                defaultValue=""
                                 id="flexCheckDefault2"
                               />
                             </div>
-                            <MaterialSymbol
-                              icon="star_rate"
-                              size={22}
-                              className="text-body position-relative top-1"
-                            />
+                            <span className="material-symbols-outlined fs-22 text-body position-relative top-1">
+                              star_rate
+                            </span>
                           </div>
                         </td>
                         <td>
@@ -229,15 +224,14 @@ const Inbox = () => {
                               <input
                                 className="form-check-input wh-20"
                                 type="checkbox"
-                                value=""
+                                defaultValue=""
                                 id="flexCheckDefault3"
                               />
                             </div>
-                            <MaterialSymbol
-                              icon="star_rate"
-                              size={20}
-                              className="text-body position-relative top-1"
-                            />
+
+                            <span className="material-symbols-outlined fs-20 text-body position-relative top-1">
+                              star_rate
+                            </span>
                           </div>
                         </td>
                         <td>
@@ -266,15 +260,13 @@ const Inbox = () => {
                               <input
                                 className="form-check-input wh-20"
                                 type="checkbox"
-                                value=""
+                                defaultValue=""
                                 id="flexCheckDefault4"
                               />
                             </div>
-                            <MaterialSymbol
-                              icon="star_rate"
-                              size={20}
-                              className="text-body position-relative top-1"
-                            />
+                            <span className="material-symbols-outlined fs-20 text-body position-relative top-1">
+                              star_rate
+                            </span>
                           </div>
                         </td>
                         <td>
@@ -303,15 +295,13 @@ const Inbox = () => {
                               <input
                                 className="form-check-input wh-20"
                                 type="checkbox"
-                                value=""
+                                defaultValue=""
                                 id="flexCheckDefault5"
                               />
                             </div>
-                            <MaterialSymbol
-                              icon="star_rate"
-                              size={20}
-                              className="text-body position-relative top-1"
-                            />
+                            <span className="material-symbols-outlined fs-20 text-body position-relative top-1">
+                              star_rate
+                            </span>
                           </div>
                         </td>
                         <td>
@@ -340,15 +330,13 @@ const Inbox = () => {
                               <input
                                 className="form-check-input wh-20"
                                 type="checkbox"
-                                value=""
+                                defaultValue=""
                                 id="flexCheckDefault6"
                               />
                             </div>
-                            <MaterialSymbol
-                              icon="star_rate"
-                              size={20}
-                              className="text-body position-relative top-1"
-                            />
+                            <span className="material-symbols-outlined fs-20 text-body position-relative top-1">
+                              star_rate
+                            </span>
                           </div>
                         </td>
                         <td>
@@ -377,15 +365,13 @@ const Inbox = () => {
                               <input
                                 className="form-check-input wh-20"
                                 type="checkbox"
-                                value=""
+                                defaultValue=""
                                 id="flexCheckDefault7"
                               />
                             </div>
-                            <MaterialSymbol
-                              icon="star_rate"
-                              size={20}
-                              className="text-body position-relative top-1"
-                            />
+                            <span className="material-symbols-outlined fs-20 text-body position-relative top-1">
+                              star_rate
+                            </span>
                           </div>
                         </td>
                         <td>
@@ -414,15 +400,13 @@ const Inbox = () => {
                               <input
                                 className="form-check-input wh-20"
                                 type="checkbox"
-                                value=""
+                                defaultValue=""
                                 id="flexCheckDefault8"
                               />
                             </div>
-                            <MaterialSymbol
-                              icon="star_rate"
-                              size={20}
-                              className="text-body position-relative top-1"
-                            />
+                            <span className="material-symbols-outlined fs-20 text-body position-relative top-1">
+                              star_rate
+                            </span>
                           </div>
                         </td>
                         <td>
@@ -453,15 +437,13 @@ const Inbox = () => {
                               <input
                                 className="form-check-input wh-20"
                                 type="checkbox"
-                                value=""
+                                defaultValue=""
                                 id="flexCheckDefault9"
                               />
                             </div>
-                            <MaterialSymbol
-                              icon="star_rate"
-                              size={20}
-                              className="text-body position-relative top-1"
-                            />
+                            <span className="material-symbols-outlined fs-20 text-body position-relative top-1">
+                              star_rate
+                            </span>
                           </div>
                         </td>
                         <td>
@@ -490,15 +472,13 @@ const Inbox = () => {
                               <input
                                 className="form-check-input wh-20"
                                 type="checkbox"
-                                value=""
+                                defaultValue=""
                                 id="flexCheckDefault10"
                               />
                             </div>
-                            <MaterialSymbol
-                              icon="star_rate"
-                              size={20}
-                              className="text-body position-relative top-1"
-                            />
+                            <span className="material-symbols-outlined fs-20 text-body position-relative top-1">
+                              star_rate
+                            </span>
                           </div>
                         </td>
                         <td>
@@ -529,15 +509,13 @@ const Inbox = () => {
                               <input
                                 className="form-check-input wh-20"
                                 type="checkbox"
-                                value=""
+                                defaultValue=""
                                 id="flexCheckDefault11"
                               />
                             </div>
-                            <MaterialSymbol
-                              icon="star_rate"
-                              size={20}
-                              className="text-body position-relative top-1"
-                            />
+                            <span className="material-symbols-outlined fs-20 text-body position-relative top-1">
+                              star_rate
+                            </span>
                           </div>
                         </td>
                         <td>
@@ -566,15 +544,13 @@ const Inbox = () => {
                               <input
                                 className="form-check-input wh-20"
                                 type="checkbox"
-                                value=""
+                                defaultValue=""
                                 id="flexCheckDefault12"
                               />
                             </div>
-                            <MaterialSymbol
-                              icon="star_rate"
-                              size={20}
-                              className="text-body position-relative top-1"
-                            />
+                            <span className="material-symbols-outlined fs-20 text-body position-relative top-1">
+                              star_rate
+                            </span>
                           </div>
                         </td>
                         <td>
@@ -613,15 +589,13 @@ const Inbox = () => {
                               <input
                                 className="form-check-input wh-20"
                                 type="checkbox"
-                                value=""
+                                defaultValue=""
                                 id="flexCheckDefault19"
                               />
                             </div>
-                            <MaterialSymbol
-                              icon="star_rate"
-                              size={22}
-                              className="text-body position-relative top-1"
-                            />
+                            <span className="material-symbols-outlined fs-22 text-body position-relative top-1">
+                              star_rate
+                            </span>
                           </div>
                         </td>
                         <td>
@@ -652,15 +626,13 @@ const Inbox = () => {
                               <input
                                 className="form-check-input wh-20"
                                 type="checkbox"
-                                value=""
+                                defaultValue=""
                                 id="flexCheckDefault20"
                               />
                             </div>
-                            <MaterialSymbol
-                              icon="star_rate"
-                              size={22}
-                              className="text-body position-relative top-1"
-                            />
+                            <span className="material-symbols-outlined fs-22 text-body position-relative top-1">
+                              star_rate
+                            </span>
                           </div>
                         </td>
                         <td>
@@ -689,15 +661,13 @@ const Inbox = () => {
                               <input
                                 className="form-check-input wh-20"
                                 type="checkbox"
-                                value=""
+                                defaultValue=""
                                 id="flexCheckDefault21"
                               />
                             </div>
-                            <MaterialSymbol
-                              icon="star_rate"
-                              size={22}
-                              className="text-body position-relative top-1"
-                            />
+                            <span className="material-symbols-outlined fs-22 text-body position-relative top-1">
+                              star_rate
+                            </span>
                           </div>
                         </td>
                         <td>
@@ -728,15 +698,13 @@ const Inbox = () => {
                               <input
                                 className="form-check-input wh-20"
                                 type="checkbox"
-                                value=""
+                                defaultValue=""
                                 id="flexCheckDefault22"
                               />
                             </div>
-                            <MaterialSymbol
-                              icon="star_rate"
-                              size={22}
-                              className="text-body position-relative top-1"
-                            />
+                            <span className="material-symbols-outlined fs-22 text-body position-relative top-1">
+                              star_rate
+                            </span>
                           </div>
                         </td>
                         <td>
@@ -765,15 +733,13 @@ const Inbox = () => {
                               <input
                                 className="form-check-input wh-20"
                                 type="checkbox"
-                                value=""
+                                defaultValue=""
                                 id="flexCheckDefault23 "
                               />
                             </div>
-                            <MaterialSymbol
-                              icon="star_rate"
-                              size={22}
-                              className="text-body position-relative top-1"
-                            />
+                            <span className="material-symbols-outlined fs-22 text-body position-relative top-1">
+                              star_rate
+                            </span>
                           </div>
                         </td>
                         <td>
@@ -802,15 +768,13 @@ const Inbox = () => {
                               <input
                                 className="form-check-input wh-20"
                                 type="checkbox"
-                                value=""
+                                defaultValue=""
                                 id="flexCheckDefault13"
                               />
                             </div>
-                            <MaterialSymbol
-                              icon="star_rate"
-                              size={22}
-                              className="text-body position-relative top-1"
-                            />
+                            <span className="material-symbols-outlined fs-22 text-body position-relative top-1">
+                              star_rate
+                            </span>
                           </div>
                         </td>
                         <td>
@@ -839,15 +803,13 @@ const Inbox = () => {
                               <input
                                 className="form-check-input wh-20"
                                 type="checkbox"
-                                value=""
+                                defaultValue=""
                                 id="flexCheckDefault14"
                               />
                             </div>
-                            <MaterialSymbol
-                              icon="star_rate"
-                              size={22}
-                              className="text-body position-relative top-1"
-                            />
+                            <span className="material-symbols-outlined fs-22 text-body position-relative top-1">
+                              star_rate
+                            </span>
                           </div>
                         </td>
                         <td>
@@ -876,15 +838,13 @@ const Inbox = () => {
                               <input
                                 className="form-check-input wh-20"
                                 type="checkbox"
-                                value=""
+                                defaultValue=""
                                 id="flexCheckDefault15 "
                               />
                             </div>
-                            <MaterialSymbol
-                              icon="star_rate"
-                              size={22}
-                              className="text-body position-relative top-1"
-                            />
+                            <span className="material-symbols-outlined fs-22 text-body position-relative top-1">
+                              star_rate
+                            </span>
                           </div>
                         </td>
                         <td>
@@ -913,15 +873,13 @@ const Inbox = () => {
                               <input
                                 className="form-check-input wh-20"
                                 type="checkbox"
-                                value=""
+                                defaultValue=""
                                 id="flexCheckDefault16"
                               />
                             </div>
-                            <MaterialSymbol
-                              icon="star_rate"
-                              size={22}
-                              className="text-body position-relative top-1"
-                            />
+                            <span className="material-symbols-outlined fs-22 text-body position-relative top-1">
+                              star_rate
+                            </span>
                           </div>
                         </td>
                         <td>
@@ -950,15 +908,13 @@ const Inbox = () => {
                               <input
                                 className="form-check-input wh-20"
                                 type="checkbox"
-                                value=""
+                                defaultValue=""
                                 id="flexCheckDefault17"
                               />
                             </div>
-                            <MaterialSymbol
-                              icon="star_rate"
-                              size={22}
-                              className="text-body position-relative top-1"
-                            />
+                            <span className="material-symbols-outlined fs-22 text-body position-relative top-1">
+                              star_rate
+                            </span>
                           </div>
                         </td>
                         <td>
@@ -987,15 +943,13 @@ const Inbox = () => {
                               <input
                                 className="form-check-input wh-20"
                                 type="checkbox"
-                                value=""
+                                defaultValue=""
                                 id="flexCheckDefault18"
                               />
                             </div>
-                            <MaterialSymbol
-                              icon="star_rate"
-                              size={22}
-                              className="text-body position-relative top-1"
-                            />
+                            <span className="material-symbols-outlined fs-22 text-body position-relative top-1">
+                              star_rate
+                            </span>
                           </div>
                         </td>
                         <td>

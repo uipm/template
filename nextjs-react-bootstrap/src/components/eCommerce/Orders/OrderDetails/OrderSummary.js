@@ -1,15 +1,13 @@
 "use client";
 
-import React from "react"; 
+import { Card, Table } from "react-bootstrap";
 import Image from "next/image";
-import Card from "react-bootstrap/Card";
-import Table from "react-bootstrap/Table";
 
 const OrderSummary = () => {
   return (
     <>
       <Card className="bg-white border-0 rounded-3 mb-4">
-        <Card.Body className="card-body p-4">
+        <Card.Body className="p-4">
           <h3 className="mb-3 mb-lg-4">Order Summary</h3>
 
           <div className="default-table-area mb-3 mb-lg-4">

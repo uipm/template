@@ -1,10 +1,7 @@
 "use client";
 
-import React from "react";
+import { Row, Col, Form } from "react-bootstrap";
 import Link from "next/link"; 
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import Form from 'react-bootstrap/Form';
 
 const ChangePassword = () => {
   return (

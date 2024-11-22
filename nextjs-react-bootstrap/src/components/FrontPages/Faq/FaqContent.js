@@ -1,7 +1,6 @@
 "use client";
 
-import React from "react"; 
-import Accordion from 'react-bootstrap/Accordion';
+import { Accordion } from "react-bootstrap";
 
 const FaqContent = () => {
   return (
@@ -20,15 +19,17 @@ const FaqContent = () => {
               <Accordion.Header>
                 <div
                   style={{
-                    fontWeight: '600',
-                    fontSize: '16px'
+                    fontWeight: "600",
+                    fontSize: "16px",
                   }}
                 >
                   What is Trezo?
                 </div>
               </Accordion.Header>
               <Accordion.Body>
-                Trezo is a comprehensive project management software designed to help teams streamline their workflow, collaborate effectively, and achieve project success.
+                Trezo is a comprehensive project management software designed to
+                help teams streamline their workflow, collaborate effectively,
+                and achieve project success.
               </Accordion.Body>
             </Accordion.Item>
 
@@ -36,15 +37,17 @@ const FaqContent = () => {
               <Accordion.Header>
                 <div
                   style={{
-                    fontWeight: '600',
-                    fontSize: '16px'
+                    fontWeight: "600",
+                    fontSize: "16px",
                   }}
                 >
                   What features does Trezo offer?
                 </div>
               </Accordion.Header>
               <Accordion.Body>
-                Trezo is a comprehensive project management software designed to help teams streamline their workflow, collaborate effectively, and achieve project success.
+                Trezo is a comprehensive project management software designed to
+                help teams streamline their workflow, collaborate effectively,
+                and achieve project success.
               </Accordion.Body>
             </Accordion.Item>
 
@@ -52,15 +55,17 @@ const FaqContent = () => {
               <Accordion.Header>
                 <div
                   style={{
-                    fontWeight: '600',
-                    fontSize: '16px'
+                    fontWeight: "600",
+                    fontSize: "16px",
                   }}
                 >
                   Is Trezo suitable for small businesses?
                 </div>
               </Accordion.Header>
               <Accordion.Body>
-                Trezo is a comprehensive project management software designed to help teams streamline their workflow, collaborate effectively, and achieve project success.
+                Trezo is a comprehensive project management software designed to
+                help teams streamline their workflow, collaborate effectively,
+                and achieve project success.
               </Accordion.Body>
             </Accordion.Item>
 
@@ -68,15 +73,17 @@ const FaqContent = () => {
               <Accordion.Header>
                 <div
                   style={{
-                    fontWeight: '600',
-                    fontSize: '16px'
+                    fontWeight: "600",
+                    fontSize: "16px",
                   }}
                 >
                   Can I customize Trezo to fit my team&apos;s specific needs?
                 </div>
               </Accordion.Header>
               <Accordion.Body>
-                Trezo is a comprehensive project management software designed to help teams streamline their workflow, collaborate effectively, and achieve project success.
+                Trezo is a comprehensive project management software designed to
+                help teams streamline their workflow, collaborate effectively,
+                and achieve project success.
               </Accordion.Body>
             </Accordion.Item>
 
@@ -84,15 +91,17 @@ const FaqContent = () => {
               <Accordion.Header>
                 <div
                   style={{
-                    fontWeight: '600',
-                    fontSize: '16px'
+                    fontWeight: "600",
+                    fontSize: "16px",
                   }}
                 >
                   Is Trezo cloud-based or on-premises?
                 </div>
               </Accordion.Header>
               <Accordion.Body>
-                Trezo is a comprehensive project management software designed to help teams streamline their workflow, collaborate effectively, and achieve project success.
+                Trezo is a comprehensive project management software designed to
+                help teams streamline their workflow, collaborate effectively,
+                and achieve project success.
               </Accordion.Body>
             </Accordion.Item>
 
@@ -100,15 +109,17 @@ const FaqContent = () => {
               <Accordion.Header>
                 <div
                   style={{
-                    fontWeight: '600',
-                    fontSize: '16px'
+                    fontWeight: "600",
+                    fontSize: "16px",
                   }}
                 >
                   Does Trezo integrate with other tools?
                 </div>
               </Accordion.Header>
               <Accordion.Body>
-                Trezo is a comprehensive project management software designed to help teams streamline their workflow, collaborate effectively, and achieve project success.
+                Trezo is a comprehensive project management software designed to
+                help teams streamline their workflow, collaborate effectively,
+                and achieve project success.
               </Accordion.Body>
             </Accordion.Item>
           </Accordion>

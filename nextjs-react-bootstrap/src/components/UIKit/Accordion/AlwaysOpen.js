@@ -1,8 +1,6 @@
 "use client";
 
-import React from "react";
-import Card from "react-bootstrap/Card";
-import Accordion from "react-bootstrap/Accordion";
+import { Card, Accordion } from "react-bootstrap";
 
 const AlwaysOpen = () => {
   return (

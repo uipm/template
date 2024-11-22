@@ -1,5 +1,4 @@
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
+import { Row, Col } from "react-bootstrap";
 import Welcome from '@/components/Dashboard/eCommerce/Welcome';
 import TotalSales from '@/components/Dashboard/eCommerce/TotalSales';
 import TotalOrders from '@/components/Dashboard/eCommerce/TotalOrders';

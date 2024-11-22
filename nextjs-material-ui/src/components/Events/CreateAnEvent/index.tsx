@@ -17,11 +17,7 @@ import {
 import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
 import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
 import { DatePicker } from "@mui/x-date-pickers/DatePicker";
-
-import dynamic from "next/dynamic";
-const RichTextEditor = dynamic(() => import("@mantine/rte"), {
-  ssr: false,
-});
+import CustomEditor from "./CustomEditor";
 
 const CreateAnEvent: React.FC = () => {
   const [ticketType, setTicketType] = useState<string>("");
@@ -653,18 +649,7 @@ const CreateAnEvent: React.FC = () => {
                   Event Details
                 </Typography>
 
-                <RichTextEditor
-                  id="rte"
-                  controls={[
-                    ["bold", "italic", "underline", "link", "image"],
-                    ["unorderedList", "h1", "h2", "h3"],
-                    ["sup", "sub"],
-                    ["alignLeft", "alignCenter", "alignRight"],
-                  ]}
-                  style={{
-                    minHeight: "200px",
-                  }}
-                />
+                <CustomEditor />
               </Box>
             </Grid>
 

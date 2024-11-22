@@ -1,15 +1,6 @@
 "use client";
 
-import React from "react";
-import Card from 'react-bootstrap/Card';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import Form from 'react-bootstrap/Form';
-
-import dynamic from 'next/dynamic'
-const RichTextEditor = dynamic(() => import('@mantine/rte'), {
-  ssr: false,
-})
+import { Row, Col, Card, Form } from "react-bootstrap";
 
 const CreateAnEvent = () => {
   return (
@@ -36,9 +27,9 @@ const CreateAnEvent = () => {
                     className="form-control h-55"
                     aria-label="Default select example"
                   >
-                    <option value="0">Select</option>
-                    <option value="1">Free</option>
-                    <option value="2">Paid</option>
+                    <option defaultValue="0">Select</option>
+                    <option defaultValue="1">Free</option>
+                    <option defaultValue="2">Paid</option>
                   </Form.Select>
                 </Form.Group>
               </Col>
@@ -61,10 +52,10 @@ const CreateAnEvent = () => {
                     className="form-control h-55"
                     aria-label="Default select example"
                   >
-                    <option value="0">Select</option>
-                    <option value="1">Online</option>
-                    <option value="2">Offline</option>
-                    <option value="2">Both</option>
+                    <option defaultValue="0">Select</option>
+                    <option defaultValue="1">Online</option>
+                    <option defaultValue="2">Offline</option>
+                    <option defaultValue="2">Both</option>
                   </Form.Select>
                 </Form.Group>
               </Col>
@@ -76,10 +67,10 @@ const CreateAnEvent = () => {
                     className="form-control h-55"
                     aria-label="Default select example"
                   >
-                    <option value="0">Select</option>
-                    <option value="1">Pepper Festival</option>
-                    <option value="2">A Day of Comedy</option>
-                    <option value="2">Replicate</option>
+                    <option defaultValue="0">Select</option>
+                    <option defaultValue="1">Pepper Festival</option>
+                    <option defaultValue="2">A Day of Comedy</option>
+                    <option defaultValue="2">Replicate</option>
                   </Form.Select>
                 </Form.Group>
               </Col>
@@ -102,10 +93,10 @@ const CreateAnEvent = () => {
                     className="form-control h-55"
                     aria-label="Default select example"
                   >
-                    <option value="0">Select</option>
-                    <option value="1">Switzerland</option>
-                    <option value="2">New Zealand</option>
-                    <option value="2">Germany</option>
+                    <option defaultValue="0">Select</option>
+                    <option defaultValue="1">Switzerland</option>
+                    <option defaultValue="2">New Zealand</option>
+                    <option defaultValue="3">Germany</option>
                   </Form.Select>
                 </Form.Group>
               </Col>
@@ -117,10 +108,10 @@ const CreateAnEvent = () => {
                     className="form-control h-55"
                     aria-label="Default select example"
                   >
-                    <option value="0">Select</option>
-                    <option value="1">Florida</option>
-                    <option value="2">Wisconsin</option>
-                    <option value="2">Washington</option>
+                    <option defaultValue="0">Select</option>
+                    <option defaultValue="1">Florida</option>
+                    <option defaultValue="2">Wisconsin</option>
+                    <option defaultValue="3">Washington</option>
                   </Form.Select>
                 </Form.Group>
               </Col>
@@ -132,10 +123,10 @@ const CreateAnEvent = () => {
                     className="form-control h-55"
                     aria-label="Default select example"
                   >
-                    <option value="0">Select</option>
-                    <option value="1">New York</option>
-                    <option value="2">Tokyo</option>
-                    <option value="2">London</option>
+                    <option defaultValue="0">Select</option>
+                    <option defaultValue="1">New York</option>
+                    <option defaultValue="2">Tokyo</option>
+                    <option defaultValue="3">London</option>
                   </Form.Select>
                 </Form.Group>
               </Col>
@@ -200,18 +191,7 @@ const CreateAnEvent = () => {
                 <Form.Group className="mb-4">
                   <label className="label text-secondary">Event Details</label>
 
-                  <RichTextEditor
-                    id="rte"
-                    controls={[
-                      ['bold', 'italic', 'underline', 'link', 'image'],
-                      ['unorderedList', 'h1', 'h2', 'h3'],
-                      ['sup', 'sub'],
-                      ['alignLeft', 'alignCenter', 'alignRight'],
-                    ]}
-                    style={{
-                      minHeight: '180px'
-                    }}
-                  />
+                  <Form.Control as="textarea" rows={6} placeholder="Type here..." /> 
                 </Form.Group>
               </Col>
 

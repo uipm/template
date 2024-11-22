@@ -32,7 +32,6 @@ This files table contents are outlined below>>>>>
   --darkColor: #212529;
   --purpleColor: #ad63f6;
   --orangeColor: #fd5812;
-  --orangeColor: #fd5812;
 }
 
 *,
@@ -903,6 +902,53 @@ button {
   margin-top: 12px;
   width: 350px;
 }
+.v-card.trezo-card .trezo-table-content .trezo-table .v-table table tbody tr td .speaker-info .img {
+  width: 40px;
+  border-radius: 7px;
+}
+.v-card.trezo-card .trezo-table-content .trezo-table .v-table table tbody tr td .speaker-info .img img {
+  border-radius: 7px;
+  margin-bottom: -5px;
+}
+.v-card.trezo-card .trezo-table-content .trezo-table .v-table table tbody tr td .speaker-info span {
+  margin-left: 12px;
+}
+.v-card.trezo-card .trezo-table-content .trezo-table .v-table table tbody tr td .impressions {
+  padding-left: 28px;
+}
+.v-card.trezo-card .trezo-table-content .trezo-table .v-table table tbody tr td .impressions i {
+  left: 0;
+  top: 50%;
+  font-size: 20px;
+  position: absolute;
+  color: var(--successColor);
+  transform: translateY(-50%);
+}
+.v-card.trezo-card .trezo-table-content .trezo-table .v-table table tbody tr td .impressions i.down {
+  color: var(--dangerColor);
+}
+.v-card.trezo-card .trezo-table-content .trezo-table .v-table table tbody tr td .clicks {
+  padding-left: 28px;
+}
+.v-card.trezo-card .trezo-table-content .trezo-table .v-table table tbody tr td .clicks i {
+  left: 0;
+  top: 50%;
+  font-size: 20px;
+  position: absolute;
+  color: var(--successColor);
+  transform: translateY(-50%);
+}
+.v-card.trezo-card .trezo-table-content .trezo-table .v-table table tbody tr td .clicks i.down {
+  color: var(--dangerColor);
+}
+.v-card.trezo-card .trezo-table-content .trezo-table .v-table table tbody tr td .change_24h.up,
+.v-card.trezo-card .trezo-table-content .trezo-table .v-table table tbody tr td .change_7d.up {
+  color: #1e8308;
+}
+.v-card.trezo-card .trezo-table-content .trezo-table .v-table table tbody tr td .change_24h.down,
+.v-card.trezo-card .trezo-table-content .trezo-table .v-table table tbody tr td .change_7d.down {
+  color: #ee3e08;
+}
 .v-card.trezo-card .trezo-table-content .trezo-table .v-table table tbody tr td:first-child {
   border-left: 1px solid var(--borderColor);
 }
@@ -1028,6 +1074,26 @@ table {
 
 .v-progress-linear {
   border-radius: 100px;
+}
+
+.analytics-overview-card .analytics-overview-card-content .content li .v-progress-linear {
+  margin-top: 11px;
+}
+.analytics-overview-card .analytics-overview-card-content .content li .v-progress-linear.new-users-progressbar .v-progress-linear__determinate {
+  background-color: #605dff !important;
+  color: #ffffff !important;
+}
+.analytics-overview-card .analytics-overview-card-content .content li .v-progress-linear.page-views-progressbar .v-progress-linear__determinate {
+  background-color: #ad63f6 !important;
+  color: #ffffff !important;
+}
+.analytics-overview-card .analytics-overview-card-content .content li .v-progress-linear.page-sessions-progressbar .v-progress-linear__determinate {
+  background-color: #3584fc !important;
+  color: #ffffff !important;
+}
+.analytics-overview-card .analytics-overview-card-content .content li .v-progress-linear.bounce-rate-progressbar .v-progress-linear__determinate {
+  background-color: #fd5812 !important;
+  color: #ffffff !important;
 }
 
 .product-development-card .development-card-content .info .v-progress-linear__background {
@@ -1352,6 +1418,26 @@ table {
 }
 .full-calendar-card .calendar-card-content .fc .fc-popover .fc-event-title {
   padding: 4px 8px;
+}
+
+.cryptocurrency-controller .controller-icon {
+  border: 1px solid var(--borderColor);
+  background-color: transparent;
+  color: var(--bodyColor);
+  line-height: 29px;
+  font-size: 22px;
+  margin: 0 2px;
+  height: 31px;
+  width: 31px;
+  padding: 0;
+  border-radius: 4px;
+  text-align: center;
+  cursor: pointer;
+}
+.cryptocurrency-controller .controller-icon:hover {
+  background-color: var(--primaryColor);
+  border-color: var(--primaryColor);
+  color: var(--whiteColor);
 }
 
 /* Max width 767px */
@@ -5143,6 +5229,31 @@ small {
   padding: 0 !important;
 }
 
+.crypto-exchange-card .trezo-form-group {
+  margin-top: 15px;
+  margin-bottom: 0;
+}
+.crypto-exchange-card .trezo-form-group .v-input__control {
+  background-color: var(--whiteColor) !important;
+  border: none;
+}
+.crypto-exchange-card .trezo-form-group .v-input--density-default .v-field__input {
+  font-weight: 700;
+  color: var(--blackColor);
+  min-height: auto;
+  padding-top: 25px;
+  padding-bottom: 3px;
+}
+.crypto-exchange-card .trezo-form-group .v-field--center-affix .v-label.v-field-label {
+  left: 0 !important;
+}
+.crypto-exchange-card .trezo-form-group .value {
+  top: 50%;
+  right: 20px;
+  position: absolute;
+  transform: translateY(-50%);
+}
+
 .dark-theme {
   background-color: #0a0e19;
   --borderColor: #172036;
@@ -6106,6 +6217,84 @@ small {
 }
 .dark-theme .faq-area .v-expansion-panels .v-expansion-panel {
   background-color: #15203c !important;
+}
+.dark-theme .analytics-overview-card .v-card-header .card-subtitle button.active, .dark-theme .analytics-overview-card .v-card-header .card-subtitle button:hover {
+  background-color: #15203c !important;
+}
+.dark-theme .cryptocurrency-watchlist-card .cryptocurrency-watchlist-card-content .cryptocurrency-watchlist-slides .box {
+  background: #0a0e19 !important;
+}
+.dark-theme .transaction-history-card.v-card.trezo-card .trezo-table-content .trezo-table .v-table table thead tr {
+  background-color: #0c1427 !important;
+}
+.dark-theme .transaction-history-card.v-card.trezo-card .trezo-table-content .trezo-table .v-table table thead tr th {
+  background-color: #0c1427 !important;
+}
+.dark-theme .portfolio-card.v-card.trezo-card .trezo-table-content .trezo-table .v-table table thead tr th {
+  background-color: transparent !important;
+}
+.dark-theme .portfolio-card.v-card.trezo-card .trezo-table-content .trezo-table .v-table table tbody tr td {
+  border-color: #757dff !important;
+}
+.dark-theme .portfolio-card.v-card.trezo-card .trezo-table-content .trezo-table .v-table table tbody tr td:first-child {
+  border-color: #757dff !important;
+}
+.dark-theme .portfolio-card.v-card.trezo-card .trezo-table-content .trezo-table .v-table table tbody tr:first-child td {
+  border-color: #757dff !important;
+}
+.dark-theme .crypto-rankings-card.v-card.trezo-card .trezo-table-content .trezo-table .v-table table thead tr {
+  background-color: #0c1427 !important;
+}
+.dark-theme .crypto-rankings-card.v-card.trezo-card .trezo-table-content .trezo-table .v-table table thead tr th {
+  background-color: #0c1427 !important;
+}
+.dark-theme .crypto-exchange-card .v-card-header {
+  border-bottom: 1px solid var(--borderColor) !important;
+}
+.dark-theme .crypto-exchange-card .trezo-form-group .v-input__control {
+  background-color: #0c1427 !important;
+}
+.dark-theme .crypto-exchange-card .trezo-form-group .v-input--density-default .v-field__input {
+  color: var(--whiteColor);
+}
+.dark-theme .crypto-exchange-card .crypto-exchange-card-content .item .cryptocurrency-types button {
+  color: var(--whiteColor) !important;
+}
+.dark-theme .market-price-statistics-card .v-card-header .subtitle .statistics-buttons-list button.active, .dark-theme .market-price-statistics-card .v-card-header .subtitle .statistics-buttons-list button:hover {
+  background-color: #15203c !important;
+}
+.dark-theme .market-price-statistics-card .v-card-header .subtitle .cryptocurrency-types button {
+  color: var(--whiteColor) !important;
+}
+.dark-theme .gross-earnings-card .gross-earnings-card-content .info {
+  border-top: 1px solid var(--borderColor) !important;
+}
+.dark-theme .sales-by-locations-card.v-card.trezo-card .trezo-table-content .trezo-table .v-table table thead tr {
+  background-color: #0c1427 !important;
+}
+.dark-theme .sales-by-locations-card.v-card.trezo-card .trezo-table-content .trezo-table .v-table table thead tr th {
+  background-color: #0c1427 !important;
+}
+.dark-theme .overall-visitors-card {
+  background: #16223e !important;
+}
+.dark-theme .patients-last-7-days-card {
+  background: #16223e !important;
+}
+.dark-theme .patient-appointments-card.v-card.trezo-card .trezo-table-content .trezo-table .v-table table thead tr {
+  background-color: #0c1427 !important;
+}
+.dark-theme .patient-appointments-card.v-card.trezo-card .trezo-table-content .trezo-table .v-table table thead tr th {
+  background-color: #0c1427 !important;
+}
+.dark-theme .patient-bg-age-card .apexcharts-canvas .apexcharts-text {
+  fill: var(--whiteColor);
+}
+.dark-theme .hospital-earnings-card.v-card.trezo-card {
+  background-color: #16223e !important;
+}
+.dark-theme .hospital-earnings-card .hospital-earnings-card-content .content .item::before {
+  background: #0c1427 !important;
 }
 
 .rtl-enabled {
@@ -7864,6 +8053,526 @@ small {
   margin-left: 0 !important;
   margin-right: 15px;
 }
+.rtl-enabled .analytics-overview-card .v-card-header .card-subtitle button:first-child {
+  border-radius: 0 7px 7px 0;
+  border-right-width: 1px;
+  border-left-width: 0;
+}
+.rtl-enabled .analytics-overview-card .v-card-header .card-subtitle button:last-child {
+  border-radius: 7px 0 0 7px;
+  border-right-width: 0;
+  border-left-width: 1px;
+}
+.rtl-enabled .analytics-overview-card .analytics-overview-card-content .chart {
+  margin-left: 0;
+  margin-right: -15px;
+}
+.rtl-enabled .analytics-overview-card .analytics-overview-card-content .content {
+  margin-left: 0;
+  margin-right: -22px;
+}
+.rtl-enabled .analytics-stats-card .stats-card-content .item .chart {
+  right: auto !important;
+  left: -10px;
+}
+.rtl-enabled .analytics-stats-card .stats-card-content .item::before {
+  right: auto !important;
+  left: -27px;
+}
+.rtl-enabled .analytics-stats-card .stats-card-content .col-lg-4:nth-child(2) .item {
+  padding-left: 0 !important;
+  padding-right: 25px;
+  margin-right: 0 !important;
+  margin-left: -25px;
+}
+.rtl-enabled .analytics-stats-card .stats-card-content .shape {
+  transform: scaleX(-1) translateY(-50%) !important;
+  right: auto !important;
+  left: 0;
+}
+.rtl-enabled .realtime-active-users-card .realtime-active-users-card-content .chart {
+  margin-right: -29px;
+  margin-left: -17px;
+}
+.rtl-enabled .realtime-active-users-card .realtime-active-users-card-content ul li span i {
+  margin-left: 0;
+  margin-right: 5px;
+}
+.rtl-enabled .realtime-active-users-card .realtime-active-users-card-content .report-button {
+  padding-right: 0;
+  padding-left: 30px;
+}
+.rtl-enabled .realtime-active-users-card .realtime-active-users-card-content .report-button i {
+  right: auto;
+  left: 6px;
+}
+.rtl-enabled .realtime-active-users-card .realtime-active-users-card-content .shape {
+  transform: scaleX(-1);
+  left: -25px;
+  right: 0;
+}
+.rtl-enabled .browser-used-by-users-card .trezo-table-content .trezo-table table thead tr th:first-child {
+  padding-left: 14px;
+  padding-right: 0;
+}
+.rtl-enabled .browser-used-by-users-card .trezo-table-content .trezo-table table thead tr th:last-child {
+  padding-right: 14px;
+  padding-left: 0;
+}
+.rtl-enabled .browser-used-by-users-card .trezo-table-content .trezo-table table tbody tr td:first-child {
+  padding-left: 14px;
+  padding-right: 0;
+}
+.rtl-enabled .browser-used-by-users-card .trezo-table-content .trezo-table table tbody tr td:last-child {
+  padding-right: 14px;
+  padding-left: 0;
+}
+.rtl-enabled .device-sessions-card .device-sessions-card-content .chart {
+  margin-left: 0;
+  margin-right: -35px;
+}
+.rtl-enabled .device-sessions-card .device-sessions-card-content .content {
+  margin-left: 0;
+  margin-right: -30px;
+}
+.rtl-enabled .device-sessions-card .device-sessions-card-content .content li {
+  padding-left: 0;
+  padding-right: 22px;
+}
+.rtl-enabled .device-sessions-card .device-sessions-card-content .content li .dot {
+  left: auto;
+  right: 0;
+}
+.rtl-enabled .clicks-card .clicks-card-content .info-badge {
+  margin-left: 0;
+  margin-right: 11px;
+}
+.rtl-enabled .clicks-card .clicks-card-content .chart {
+  right: auto !important;
+  left: -9px;
+}
+.rtl-enabled .sessions-card .sessions-card-content .info-badge {
+  margin-left: 0;
+  margin-right: 11px;
+}
+.rtl-enabled .sessions-card .sessions-card-content .chart {
+  right: auto !important;
+  left: -9px;
+}
+.rtl-enabled .impressions-card .impressions-card-content .info-badge {
+  margin-left: 0;
+  margin-right: 11px;
+}
+.rtl-enabled .impressions-card .impressions-card-content .chart {
+  right: auto !important;
+  left: -9px;
+}
+.rtl-enabled .sessions-by-channel-card .sessions-by-card-content .list li .title .dot {
+  margin-right: 0;
+  margin-left: 8px;
+}
+.rtl-enabled .clicks-by-keywords-card .trezo-table-content .trezo-table table thead tr th:first-child {
+  padding-left: 10px;
+  padding-right: 0;
+}
+.rtl-enabled .clicks-by-keywords-card .trezo-table-content .trezo-table table thead tr th:nth-child(2) {
+  padding-left: 20px;
+  padding-right: 0;
+}
+.rtl-enabled .clicks-by-keywords-card .trezo-table-content .trezo-table table thead tr th:last-child {
+  padding-left: 0;
+  padding-right: 20px;
+}
+.rtl-enabled .clicks-by-keywords-card .trezo-table-content .trezo-table table tbody tr td:first-child {
+  padding-left: 10px;
+  padding-right: 0;
+}
+.rtl-enabled .clicks-by-keywords-card .trezo-table-content .trezo-table table tbody tr td:nth-child(2) {
+  padding-left: 20px;
+  padding-right: 0;
+}
+.rtl-enabled .clicks-by-keywords-card .trezo-table-content .trezo-table table tbody tr td:last-child {
+  padding-left: 0;
+  padding-right: 20px;
+}
+.rtl-enabled .top-browsing-pages-card .trezo-table-content .trezo-table table thead tr th:first-child {
+  padding-left: 14px;
+  padding-right: 0 !important;
+}
+.rtl-enabled .top-browsing-pages-card .trezo-table-content .trezo-table table thead tr th:last-child {
+  padding-right: 14px;
+  padding-left: 0 !important;
+}
+.rtl-enabled .top-browsing-pages-card .trezo-table-content .trezo-table table tbody tr td:first-child {
+  padding-left: 14px;
+  padding-right: 0 !important;
+}
+.rtl-enabled .top-browsing-pages-card .trezo-table-content .trezo-table table tbody tr td:last-child {
+  padding-right: 14px;
+  padding-left: 0 !important;
+}
+.rtl-enabled .users-by-country-card .users-by-country-card-content ul li div {
+  padding-left: 0;
+  padding-right: 30px;
+}
+.rtl-enabled .users-by-country-card .users-by-country-card-content ul li div .v-img {
+  left: auto;
+  right: 0;
+}
+.rtl-enabled .transaction-history-card .trezo-table-content .trezo-table table thead tr th:first-child {
+  padding-left: 20px;
+  padding-right: 0;
+}
+.rtl-enabled .transaction-history-card .trezo-table-content .trezo-table table thead tr th:last-child {
+  padding-right: 20px;
+  padding-left: 0;
+}
+.rtl-enabled .transaction-history-card .trezo-table-content .trezo-table table tbody tr td .customer-info span {
+  margin-left: 0;
+  margin-right: 8px;
+}
+.rtl-enabled .transaction-history-card .trezo-table-content .trezo-table table tbody tr td .customer-info span span {
+  margin-right: 0;
+}
+.rtl-enabled .transaction-history-card .trezo-table-content .trezo-table table tbody tr td:first-child {
+  padding-left: 20px;
+  padding-right: 0;
+}
+.rtl-enabled .transaction-history-card .trezo-table-content .trezo-table table tbody tr td:last-child {
+  padding-right: 20px;
+  padding-left: 0;
+}
+.rtl-enabled .cryptocurrency-watchlist-card .cryptocurrency-watchlist-card-content .cryptocurrency-watchlist-slides .box {
+  direction: rtl;
+}
+.rtl-enabled .cryptocurrency-watchlist-card .cryptocurrency-watchlist-card-content .cryptocurrency-watchlist-slides .box .coin div {
+  margin-left: 0;
+  margin-right: 10px;
+}
+.rtl-enabled .cryptocurrency-watchlist-card .cryptocurrency-watchlist-card-content .cryptocurrency-watchlist-slides .box .coin div h4 span {
+  margin-left: 0;
+  margin-right: 2px;
+  padding-left: 0;
+  padding-right: 24px;
+}
+.rtl-enabled .cryptocurrency-watchlist-card .cryptocurrency-watchlist-card-content .cryptocurrency-watchlist-slides .box .coin div h4 span i {
+  left: auto;
+  right: 0;
+}
+.rtl-enabled .cryptocurrency-watchlist-card .cryptocurrency-watchlist-card-content .cryptocurrency-watchlist-slides .box .chart {
+  margin-left: 0;
+  margin-right: -11px;
+}
+.rtl-enabled .cryptocurrency-watchlist-card .cryptocurrency-watchlist-card-content .cryptocurrency-watchlist-slides .box .list {
+  margin-right: 0;
+  margin-left: 8px;
+}
+.rtl-enabled .cryptocurrency-controller {
+  direction: ltr;
+}
+.rtl-enabled .crypto-exchange-card .crypto-exchange-card-content .item .cryptocurrency-types button img {
+  margin-right: 0 !important;
+  margin-left: 10px;
+}
+.rtl-enabled .crypto-exchange-card .crypto-exchange-card-content .item .cryptocurrency-types button span {
+  margin-left: 0 !important;
+  margin-right: 5px;
+}
+.rtl-enabled .crypto-exchange-card .crypto-exchange-card-content .item .cryptocurrency-types button::before {
+  right: auto !important;
+  left: -4px;
+}
+.rtl-enabled .crypto-exchange-card .crypto-exchange-card-content .item .trezo-form-group .value {
+  left: 20px;
+  right: auto !important;
+}
+.rtl-enabled .crypto-exchange-card .crypto-exchange-card-content .item .trezo-form-group .v-field--center-affix .v-label.v-field-label {
+  left: auto !important;
+  right: 0;
+}
+.rtl-enabled .market-price-statistics-card .v-card-header .subtitle .statistics-buttons-list {
+  margin-right: 0 !important;
+  margin-left: 25px;
+}
+.rtl-enabled .market-price-statistics-card .v-card-header .subtitle .statistics-buttons-list button {
+  border-right-width: 0;
+  border-left: 1px solid var(--borderColor);
+}
+.rtl-enabled .market-price-statistics-card .v-card-header .subtitle .statistics-buttons-list button:first-child {
+  border-radius: 0 7px 7px 0;
+  border-left-width: 0;
+  border-right: 1px solid var(--borderColor);
+}
+.rtl-enabled .market-price-statistics-card .v-card-header .subtitle .statistics-buttons-list button:last-child {
+  border-radius: 7px 0 0 7px;
+}
+.rtl-enabled .market-price-statistics-card .v-card-header .subtitle .cryptocurrency-types button {
+  padding: 0 0 0 20px !important;
+}
+.rtl-enabled .market-price-statistics-card .v-card-header .subtitle .cryptocurrency-types button img {
+  margin-right: 0 !important;
+  margin-left: 6px !important;
+}
+.rtl-enabled .market-price-statistics-card .v-card-header .subtitle .cryptocurrency-types button::before {
+  right: auto !important;
+  left: -4px;
+}
+.rtl-enabled .market-price-statistics-card .market-price-statistics-card-content .info .coin div {
+  margin-left: 0;
+  margin-right: 10px;
+}
+.rtl-enabled .market-price-statistics-card .market-price-statistics-card-content .info .coin div h4 span {
+  margin-left: 0 !important;
+  margin-right: 3px;
+  padding-left: 0 !important;
+  padding-right: 25px;
+}
+.rtl-enabled .market-price-statistics-card .market-price-statistics-card-content .info .coin div h4 span i {
+  left: auto !important;
+  right: 0;
+}
+.rtl-enabled .market-price-statistics-card .market-price-statistics-card-content .info .list li:first-child {
+  margin-left: 20px !important;
+  margin-right: 0;
+}
+.rtl-enabled .market-price-statistics-card .market-price-statistics-card-content .info .list li:last-child {
+  margin-right: 20px !important;
+  margin-left: 0;
+}
+.rtl-enabled .market-price-statistics-card .market-price-statistics-card-content .chart {
+  margin-left: 0;
+  margin-right: -15px;
+}
+.rtl-enabled .portfolio-card .portfolio-card-content .total-balance div {
+  margin-left: 0 !important;
+  margin-right: 10px;
+}
+.rtl-enabled .portfolio-card .portfolio-card-content .total-balance div h4 span {
+  margin-left: 0 !important;
+  margin-right: 3px;
+  padding-left: 0 !important;
+  padding-right: 25px;
+}
+.rtl-enabled .portfolio-card .portfolio-card-content .total-balance div h4 span i {
+  left: auto !important;
+  right: 0;
+}
+.rtl-enabled .portfolio-card .portfolio-card-content .shape {
+  right: auto !important;
+  left: 0;
+}
+.rtl-enabled .sales-stats-card .v-card-header h5 span {
+  margin-left: 0 !important;
+  margin-right: 3px;
+}
+.rtl-enabled .sales-stats-card .v-card-header h5 img {
+  margin-left: 0 !important;
+  margin-right: 5px;
+}
+.rtl-enabled .sales-stats-card .v-card-header .stats-list .stats-button {
+  padding-left: 10px !important;
+  padding-right: 36px !important;
+}
+.rtl-enabled .sales-stats-card .v-card-header .stats-list .stats-button i {
+  left: auto !important;
+  right: 10px;
+}
+.rtl-enabled .sales-box .content .icon {
+  margin-right: 0 !important;
+  margin-left: 15px;
+}
+.rtl-enabled .sales-box .info .info-badge {
+  padding: 2px 20px 2px 10px !important;
+}
+.rtl-enabled .sales-box .info .info-badge i {
+  right: 6px;
+  left: auto !important;
+}
+.rtl-enabled .sales-box .info .days {
+  margin-left: 0 !important;
+  margin-right: 10px;
+}
+.rtl-enabled .orders-box .content .icon {
+  margin-right: 0 !important;
+  margin-left: 15px;
+}
+.rtl-enabled .orders-box .info .info-badge {
+  padding: 2px 20px 2px 10px !important;
+}
+.rtl-enabled .orders-box .info .info-badge i {
+  right: 6px;
+  left: auto !important;
+}
+.rtl-enabled .orders-box .info .days {
+  margin-left: 0 !important;
+  margin-right: 10px;
+}
+.rtl-enabled .profit-box .content .icon {
+  margin-right: 0 !important;
+  margin-left: 15px;
+}
+.rtl-enabled .profit-box .info .info-badge {
+  padding: 2px 20px 2px 10px !important;
+}
+.rtl-enabled .profit-box .info .info-badge i {
+  right: 6px;
+  left: auto !important;
+}
+.rtl-enabled .profit-box .info .days {
+  margin-left: 0 !important;
+  margin-right: 10px;
+}
+.rtl-enabled .revenue-box .content .icon {
+  margin-right: 0 !important;
+  margin-left: 15px;
+}
+.rtl-enabled .revenue-box .info .info-badge {
+  padding: 2px 20px 2px 10px !important;
+}
+.rtl-enabled .revenue-box .info .info-badge i {
+  right: 6px;
+  left: auto !important;
+}
+.rtl-enabled .revenue-box .info .days {
+  margin-left: 0 !important;
+  margin-right: 10px;
+}
+.rtl-enabled .sales-transaction-history-card .transaction-history-card-content ul li .icon {
+  margin-right: 0 !important;
+  margin-left: 12px;
+}
+.rtl-enabled .gross-earnings-card .gross-earnings-card-content .gross-earnings div {
+  margin-left: 0 !important;
+  margin-right: 10px;
+}
+.rtl-enabled .gross-earnings-card .gross-earnings-card-content .gross-earnings div h4 span {
+  margin-left: 0 !important;
+  margin-right: 2px;
+  padding-left: 0 !important;
+  padding-right: 25px;
+}
+.rtl-enabled .gross-earnings-card .gross-earnings-card-content .gross-earnings div h4 span i {
+  left: auto !important;
+  right: 0;
+}
+.rtl-enabled .gross-earnings-card .gross-earnings-card-content .info h6 span {
+  padding-left: 0 !important;
+  padding-right: 16px;
+}
+.rtl-enabled .gross-earnings-card .gross-earnings-card-content .info h6 span i {
+  left: auto !important;
+  right: 0;
+}
+.rtl-enabled .real-time-sales-card .real-time-sales-card-content .info h6 span {
+  padding-left: 0 !important;
+  padding-right: 16px;
+}
+.rtl-enabled .real-time-sales-card .real-time-sales-card-content .info h6 span i {
+  right: 0;
+  left: auto !important;
+}
+.rtl-enabled .sales-welcome-card .sales-welcome-card-content .content .info .item {
+  margin-right: 0 !important;
+  margin-left: 30px;
+}
+.rtl-enabled .sales-welcome-card .sales-welcome-card-content .content .info .item .icon {
+  margin-right: 0 !important;
+  margin-left: 12px;
+}
+.rtl-enabled .sales-welcome-card .sales-welcome-card-content .content .info .item:last-child {
+  margin-left: 0 !important;
+}
+.rtl-enabled .sales-welcome-card::before {
+  right: auto !important;
+  left: 0 !important;
+}
+.rtl-enabled .sales-welcome-card::after {
+  right: auto !important;
+  left: 0 !important;
+}
+.rtl-enabled .patients-last-7-days-card .patients-last-7-days-card-content h3 .info-badge {
+  margin-left: 0 !important;
+  margin-right: 10px;
+  padding: 3px 22px 1px 10px !important;
+}
+.rtl-enabled .patients-last-7-days-card .patients-last-7-days-card-content h3 .info-badge i {
+  left: auto !important;
+  right: 6px;
+}
+.rtl-enabled .overall-visitors-card .overall-visitors-card-content h3 .info-badge {
+  margin-left: 0 !important;
+  margin-right: 10px;
+  padding: 3px 22px 1px 10px !important;
+}
+.rtl-enabled .overall-visitors-card .overall-visitors-card-content h3 .info-badge i {
+  left: auto !important;
+  right: 6px;
+}
+.rtl-enabled .bed-occupancy-rate-card .bed-occupancy-card-content .content li .icon {
+  margin-right: 0 !important;
+  margin-left: 10px;
+}
+.rtl-enabled .critical-patients-card .critical-patients-card-content .list li {
+  padding-left: 0 !important;
+  padding-right: 18px;
+}
+.rtl-enabled .critical-patients-card .critical-patients-card-content .list li::before {
+  left: auto !important;
+  right: 0;
+}
+.rtl-enabled .patient-appointments-card .trezo-table-content .trezo-table table thead tr {
+  background-color: transparent !important;
+}
+.rtl-enabled .patient-appointments-card .trezo-table-content .trezo-table table thead tr th:first-child {
+  padding-left: 0 !important;
+  padding-right: 14px;
+}
+.rtl-enabled .patient-appointments-card .trezo-table-content .trezo-table table thead tr th:last-child {
+  padding-left: 0 !important;
+  padding-right: 14px;
+}
+.rtl-enabled .patient-appointments-card .trezo-table-content .trezo-table table tbody tr td .customer-info span {
+  margin-left: 0 !important;
+  margin-right: 8px;
+}
+.rtl-enabled .patient-appointments-card .trezo-table-content .trezo-table table tbody tr td:first-child {
+  padding-left: 0 !important;
+  padding-right: 14px;
+}
+.rtl-enabled .patient-appointments-card .trezo-table-content .trezo-table table tbody tr td:last-child {
+  padding-left: 0 !important;
+  padding-right: 14px;
+}
+.rtl-enabled .hospital-earnings-card .hospital-earnings-card-content .image {
+  margin-right: 0 !important;
+  margin-left: -8px;
+}
+.rtl-enabled .hospital-earnings-card .hospital-earnings-card-content .content {
+  padding-left: 0 !important;
+  padding-right: 15px;
+}
+.rtl-enabled .hospital-earnings-card .hospital-earnings-card-content .content .box .info-badge {
+  padding-left: 0 !important;
+  padding-right: 15px;
+  margin-left: 0 !important;
+  margin-right: 8px;
+}
+.rtl-enabled .hospital-earnings-card .hospital-earnings-card-content .content .box .info-badge i {
+  left: auto !important;
+  right: 0;
+}
+.rtl-enabled .hospital-earnings-card .hospital-earnings-card-content .content .item h3 span {
+  padding-left: 0 !important;
+  padding-right: 15px;
+}
+.rtl-enabled .hospital-earnings-card .hospital-earnings-card-content .content .item h3 span i {
+  left: auto !important;
+  right: 0;
+}
+.rtl-enabled .hospital-earnings-card .hospital-earnings-card-content .content .item .chart {
+  right: auto !important;
+  left: 20px;
+}
 
 /* Max width 767px */
 @media only screen and (max-width: 767px) {
@@ -8174,6 +8883,136 @@ small {
     margin-left: 0;
     margin-right: 12px;
   }
+  .rtl-enabled .analytics-stats-card .stats-card-content .col-lg-4:nth-child(2) .item {
+    margin-left: 0;
+    padding-right: 0;
+  }
+  .rtl-enabled .device-sessions-card .device-sessions-card-content .chart {
+    margin-right: 0;
+  }
+  .rtl-enabled .device-sessions-card .device-sessions-card-content .content {
+    margin-right: 0;
+  }
+  .rtl-enabled .clicks-card .clicks-card-content .info-badge {
+    margin-left: 0;
+    margin-right: 7px;
+  }
+  .rtl-enabled .sessions-card .sessions-card-content .info-badge {
+    margin-left: 0;
+    margin-right: 7px;
+  }
+  .rtl-enabled .impressions-card .impressions-card-content .info-badge {
+    margin-left: 0;
+    margin-right: 7px;
+  }
+  .rtl-enabled .sessions-by-channel-card .sessions-by-card-content .list li .title .dot {
+    margin-right: 0;
+    margin-left: 5px;
+  }
+  .rtl-enabled .clicks-by-keywords-card .trezo-table-content .trezo-table table thead tr th:nth-child(2) {
+    padding-left: 17px;
+  }
+  .rtl-enabled .clicks-by-keywords-card .trezo-table-content .trezo-table table thead tr th:last-child {
+    padding-right: 17px;
+  }
+  .rtl-enabled .clicks-by-keywords-card .trezo-table-content .trezo-table table tbody tr td:nth-child(2) {
+    padding-left: 17px;
+  }
+  .rtl-enabled .clicks-by-keywords-card .trezo-table-content .trezo-table table tbody tr td:last-child {
+    padding-right: 17px;
+  }
+  .rtl-enabled .users-by-country-card .users-by-country-card-content ul li div {
+    padding-right: 28px;
+    padding-left: 0;
+  }
+  .rtl-enabled .transaction-history-card .trezo-table-content .trezo-table table thead tr th:first-child {
+    padding-left: 17px;
+  }
+  .rtl-enabled .transaction-history-card .trezo-table-content .trezo-table table thead tr th:last-child {
+    padding-right: 17px;
+  }
+  .rtl-enabled .transaction-history-card .trezo-table-content .trezo-table table tbody tr td:first-child {
+    padding-left: 17px;
+  }
+  .rtl-enabled .transaction-history-card .trezo-table-content .trezo-table table tbody tr td:last-child {
+    padding-right: 17px;
+  }
+  .rtl-enabled .cryptocurrency-watchlist-card .cryptocurrency-watchlist-card-content .cryptocurrency-watchlist-slides .box .chart {
+    margin-left: 0;
+    margin-right: -10px;
+  }
+  .rtl-enabled .cryptocurrency-watchlist-card .cryptocurrency-watchlist-card-content .cryptocurrency-watchlist-slides .box .list {
+    margin-left: 0;
+  }
+  .rtl-enabled .cryptocurrency-watchlist-card .cryptocurrency-watchlist-card-content .cryptocurrency-watchlist-slides .owl-theme .owl-nav {
+    left: 0;
+  }
+  .rtl-enabled .market-price-statistics-card .market-price-statistics-card-content .v-card-header .subtitle .statistics-buttons-list {
+    margin-left: 0 !important;
+  }
+  .rtl-enabled .market-price-statistics-card .market-price-statistics-card-content .market-price-statistics-card-content .info .coin div {
+    margin-left: 0 !important;
+    margin-right: 10px;
+  }
+  .rtl-enabled .market-price-statistics-card .market-price-statistics-card-content .market-price-statistics-card-content .info .list li:first-child {
+    margin-left: 15px !important;
+  }
+  .rtl-enabled .market-price-statistics-card .market-price-statistics-card-content .market-price-statistics-card-content .info .list li:last-child {
+    margin-right: 15px !important;
+  }
+  .rtl-enabled .sales-transaction-history-card .transaction-history-card-content ul li .icon {
+    margin-right: 0 !important;
+    margin-left: 10px;
+  }
+  .rtl-enabled .sales-welcome-card .sales-welcome-card-content .content .info .item {
+    margin-right: 0 !important;
+    margin-left: 20px;
+  }
+  .rtl-enabled .hospital-earnings-card .hospital-earnings-card-content .image {
+    margin-left: 0 !important;
+  }
+  .rtl-enabled .hospital-earnings-card .hospital-earnings-card-content .content {
+    padding-right: 0 !important;
+  }
+  .rtl-enabled .hospital-earnings-card .hospital-earnings-card-content .content .item .chart {
+    left: 10px;
+    right: auto !important;
+  }
+}
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .rtl-enabled .clicks-by-keywords-card .trezo-table-content .trezo-table table thead tr th:nth-child(2) {
+    padding-left: 20px;
+  }
+  .rtl-enabled .clicks-by-keywords-card .trezo-table-content .trezo-table table thead tr th:last-child {
+    padding-right: 20px;
+  }
+  .rtl-enabled .clicks-by-keywords-card .trezo-table-content .trezo-table table tbody tr td:nth-child(2) {
+    padding-left: 20px;
+  }
+  .rtl-enabled .clicks-by-keywords-card .trezo-table-content .trezo-table table tbody tr td:last-child {
+    padding-right: 20px;
+  }
+  .rtl-enabled .transaction-history-card .trezo-table-content .trezo-table table thead tr th:first-child {
+    padding-left: 20px;
+  }
+  .rtl-enabled .transaction-history-card .trezo-table-content .trezo-table table thead tr th:last-child {
+    padding-right: 20px;
+  }
+  .rtl-enabled .transaction-history-card .trezo-table-content .trezo-table table tbody tr td:first-child {
+    padding-left: 20px;
+  }
+  .rtl-enabled .transaction-history-card .trezo-table-content .trezo-table table tbody tr td:last-child {
+    padding-right: 20px;
+  }
+  .rtl-enabled .market-price-statistics-card .market-price-statistics-card-content .v-card-header .subtitle .statistics-buttons-list {
+    margin-left: 10px !important;
+    margin-right: 0;
+  }
+  .rtl-enabled .hospital-earnings-card .hospital-earnings-card-content .content .item .chart {
+    left: 15px;
+    right: auto !important;
+  }
 }
 /* Min width 768px to Max width 991px */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -8291,6 +9130,16 @@ small {
   .rtl-enabled .pricing-style-1-card .pricing-card-content .features-list li {
     padding-left: 0 !important;
     padding-right: 35px;
+  }
+  .rtl-enabled .device-sessions-card .device-sessions-card-content .chart {
+    margin-right: 0;
+  }
+  .rtl-enabled .device-sessions-card .device-sessions-card-content .content {
+    margin-right: 0;
+  }
+  .rtl-enabled .market-price-statistics-card .v-card-header .subtitle .statistics-buttons-list {
+    margin-left: 10px !important;
+    margin-right: 0 !important;
   }
 }
 /* Min width 992px to Max width 1199px */
@@ -8410,6 +9259,18 @@ small {
     left: -15px;
     right: auto !important;
   }
+  .rtl-enabled .device-sessions-card .device-sessions-card-content .content {
+    margin-left: 0;
+    margin-right: -30px;
+  }
+  .rtl-enabled .users-by-country-card .users-by-country-card-content ul li div {
+    padding-left: 0;
+    padding-right: 28px;
+  }
+  .rtl-enabled .market-price-statistics-card .v-card-header .subtitle .statistics-buttons-list {
+    padding-right: 0 !important;
+    padding-left: 20px !important;
+  }
 }
 /* Min width 1200px to Max width 1399px */
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
@@ -8491,6 +9352,10 @@ small {
   .rtl-enabled .pricing-style-2-card .pricing-card-content .popular {
     left: -15px;
     right: auto !important;
+  }
+  .rtl-enabled .market-price-statistics-card .v-card-header .subtitle .statistics-buttons-list {
+    margin-right: 0 !important;
+    margin-left: 20px !important;
   }
 }
 /* Min width 1600px */

@@ -24,7 +24,7 @@ export class SupportOverviewService {
                         55, 44, 30, 12
                     ],
                     chart: {
-                        height: 225,
+                        height: 181,
                         type: "pie"
                     },
                     labels: [

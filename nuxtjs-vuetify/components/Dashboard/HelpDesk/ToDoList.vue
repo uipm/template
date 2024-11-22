@@ -36,7 +36,7 @@
             </tr>
           </thead>
           <tbody>
-            <tr v-for="item in filteredItems.slice(0, 5)" :key="item.orderID">
+            <tr v-for="item in filteredItems.slice(0, 5)" :key="item.id">
               <td><v-checkbox color="primary"></v-checkbox></td>
               <td class="text-start">
                 <NuxtLink to="/dashboard" class="fw-medium">

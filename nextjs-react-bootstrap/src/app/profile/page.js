@@ -1,8 +1,7 @@
 "use client";
-  
+
+import { Breadcrumb } from "react-bootstrap";
 import Profile from "@/components/Profile";
-import React from "react";
-import Breadcrumb from 'react-bootstrap/Breadcrumb';
 
 export default function Page() {
   return (

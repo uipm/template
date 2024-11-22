@@ -1,14 +1,14 @@
 "use client";
 
-import React from "react"; 
+import { Card } from "react-bootstrap";
 import Image from "next/image";
-import CommentForm from "./CommentForm";
+import CommentForm from "./CommentForm"; 
 
 const TicketDescription = () => {
   return (
     <>
-      <div className="card bg-white border-0 rounded-3 mb-4">
-        <div className="card-body p-4">
+      <Card className="bg-white border-0 rounded-3 mb-4">
+        <Card.Body className="p-4">
           <h4 className="fs-15 mb-2 pb-1">Ticket Description</h4>
           <p>
             Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -52,11 +52,11 @@ const TicketDescription = () => {
             </code>
           </pre>
 
-        </div>
-      </div>
+        </Card.Body>
+      </Card>
 
-      <div className="card bg-white border-0 rounded-3 mb-4">
-        <div className="card-body p-4">
+      <Card className="bg-white border-0 rounded-3 mb-4">
+        <Card.Body className="p-4">
           <div className="border-bottom border-primary pb-4 mb-4">
             <div className="d-flex flex-wrap gap-3 align-items-center mb-3">
               <Image
@@ -183,8 +183,8 @@ const TicketDescription = () => {
 
           {/* CommentForm */}
           <CommentForm />
-        </div>
-      </div>
+        </Card.Body>
+      </Card>
     </>
   );
 };

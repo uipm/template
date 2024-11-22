@@ -1,10 +1,8 @@
 "use client";
-      
+
+import { Card, Breadcrumb } from "react-bootstrap";
 import Nav from "@/components/Settings/Nav";
 import PrivacyPolicy from "@/components/Settings/PrivacyPolicy";
-import React from "react";
-import Breadcrumb from 'react-bootstrap/Breadcrumb';
-import Card from 'react-bootstrap/Card';
 
 export default function Page() {
   return (

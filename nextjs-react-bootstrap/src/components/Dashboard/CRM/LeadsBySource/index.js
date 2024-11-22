@@ -1,10 +1,7 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import Card from "react-bootstrap/Card"; 
-import Form from "react-bootstrap/Form";
+import { Row, Col, Card, Form } from "react-bootstrap";
 
 const LeadsBySource = () => {
   const [Chart, setChart] = useState();
@@ -37,6 +34,7 @@ const LeadsBySource = () => {
         colors: "#64748B",
       },
       markers: {
+        shape: 'diamond',
         width: 9,
         height: 9,
         offsetX: -2,
@@ -52,7 +50,7 @@ const LeadsBySource = () => {
             name: {
               color: "#64748B",
             },
-            value: {
+            defaultValue: {
               show: true,
               color: "#3A4252",
               fontSize: "28px",
@@ -85,11 +83,11 @@ const LeadsBySource = () => {
               className="month-select form-control"
               aria-label="Default select example"
             >
-              <option value="0">Select</option>
-              <option value="1">Today</option>
-              <option value="2">Weekly</option>
-              <option value="3">Monthly</option>
-              <option value="4">Yearly</option>
+              <option defaultValue="0">Select</option>
+              <option defaultValue="1">Today</option>
+              <option defaultValue="2">Weekly</option>
+              <option defaultValue="3">Monthly</option>
+              <option defaultValue="4">Yearly</option>
             </Form.Select>
           </div>
 
@@ -103,7 +101,7 @@ const LeadsBySource = () => {
                 options={options}
                 series={series}
                 type="donut"
-                height={290}
+                height={248}
               />
             )}
           </div>

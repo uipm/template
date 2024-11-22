@@ -61,8 +61,7 @@ const SupportOverview: React.FC = () => {
         colors: "#64748B",
       },
       markers: {
-        shape: "square", // circle, square, line, plus, cross
-        radius: 2,
+        shape: 'diamond',
         offsetX: -2,
         offsetY: -0.1,
       },
@@ -126,7 +125,7 @@ const SupportOverview: React.FC = () => {
               options={options}
               series={series}
               type="pie"
-              height={215}
+              height={175}
               width={"100%"}
             />
           )}

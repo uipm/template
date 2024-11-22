@@ -1,9 +1,6 @@
 "use client";
    
-import React from "react";
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import Breadcrumb from 'react-bootstrap/Breadcrumb';
+import { Row, Col, Breadcrumb } from "react-bootstrap";
 import SingleUserExample from "@/components/UIKit/Avatar/SingleUserExample";
 import GroupUserExample from "@/components/UIKit/Avatar/GroupUserExample";
 import SingleUserWithBadgeExample from "@/components/UIKit/Avatar/SingleUserWithBadgeExample";

@@ -1,8 +1,6 @@
 "use client";
 
-import React from "react";
-import Card from 'react-bootstrap/Card';
-import Table from 'react-bootstrap/Table'; 
+import { Card, Table } from "react-bootstrap";
 
 const OrderSummary = () => {
   return (

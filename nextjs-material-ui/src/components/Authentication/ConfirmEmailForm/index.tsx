@@ -87,7 +87,7 @@ const ConfirmEmailForm: React.FC = () => {
                       fontWeight: "600",
                     }}
                   >
-                    Welcome back to pro.io!
+                    Welcome back to Trezo!
                   </Typography>
 
                   <Typography sx={{ fontWeight: "500", fontSize: "16px" }}>

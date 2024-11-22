@@ -1,9 +1,7 @@
 "use client";
  
-import React, { useState } from 'react';
-import Card from "react-bootstrap/Card";
-import Button from "react-bootstrap/Button";
-import Modal from "react-bootstrap/Modal";
+import React from "react";
+import { Card, Button, Modal } from "react-bootstrap";
 
 function MyVerticallyCenteredModal(props) {
   return (

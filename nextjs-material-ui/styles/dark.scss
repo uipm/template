@@ -23,6 +23,10 @@
     color: var(--darkBodyColor);
   }
 
+  .dark-border {
+    border-color: 1px solid var(--darkBorder) !important;
+  }
+
   // Color
   .bg-white {
     background-color: #0C1427 !important;
@@ -48,7 +52,7 @@
   .bg-ecf0ff {
     background-color: var(--darkSecondaryColor) !important;
   }
-  .bg-orange-50, .bg-success-50, .bg-purple-50, .bg-purple-100, .bg-secondary-100, .bg-success-100, .bg-orange-100, .bg-primary-100  {
+  .bg-orange-50, .bg-success-50, .bg-purple-50, .bg-purple-100, .bg-secondary-100, .bg-success-100, .bg-orange-100, .bg-primary-100, .bg-danger-100  {
     background-color: var(--darkSecondaryColor) !important;
   }
 
@@ -112,7 +116,7 @@
 
   textarea {
     background-color: var(--darkCardBg);
-    border: 1px solid var(--darkBorder);
+    border: 1px solid var(--darkBorder) !important;
     color: #fff;
   }
 
@@ -360,4 +364,56 @@
   .footer-area {
     background-color: var(--darkCardBg);
   } 
+
+  .ds-item {
+    border-bottom: 1px solid var(--darkBorder);
+
+    &:first-child {
+      border-top: 1px solid var(--darkBorder);
+    }
+  }
+   
+  // ticketsStatusContent
+  .ticketsStatusContent::before {
+    background: var(--darkBorder);
+  }
+
+  .he-card {
+    background-color: #000 !important;
+  }
+
+  // exchange-card
+  .exchange-card {
+    background-color: #000 !important;
+
+    .border-bottom {
+      border-color: var(--darkBorder) !important;
+    }
+    .text-black {
+      color: #fff !important;
+    }
+    .MuiInputBase-root {
+      background-color: var(--darkCardBg) !important;
+    }
+  }
+
+  .MuiPaper-root {
+    background-color: var(--darkBodyBg);
+  }
+  .mui-976ow0-MuiButtonBase-root-MuiMenuItem-root-MuiMultiSectionDigitalClockSection-item.Mui-selected {
+    color: #fff !important; 
+  }
+
+  .rsw-editor {
+    border: 1px solid var(--darkBorder) !important;
+
+    .rsw-toolbar { 
+      background-color: var(--darkBodyBg);
+      border-bottom: 1px solid var(--darkBodyBg);
+    }
+
+    .rsw-separator {
+      border-color: 1px solid var(--darkBorder) !important;
+    }
+  }
 }

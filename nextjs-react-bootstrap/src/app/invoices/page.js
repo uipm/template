@@ -1,7 +1,7 @@
 "use client";
-    
-import InvoiceTable from '@/components/Invoices/InvoiceTable';
-import Breadcrumb from 'react-bootstrap/Breadcrumb';
+
+import { Breadcrumb } from "react-bootstrap";
+import InvoiceTable from '@/components/Invoices/InvoiceTable'; 
 
 export default function Page() {
   return (

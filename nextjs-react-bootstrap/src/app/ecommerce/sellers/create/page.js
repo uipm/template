@@ -1,7 +1,7 @@
 "use client";
  
 import CreateSeller from '@/components/eCommerce/CreateSeller';
-import Breadcrumb from 'react-bootstrap/Breadcrumb';  
+import { Breadcrumb } from "react-bootstrap";
 
 export default function Page() {
   return (

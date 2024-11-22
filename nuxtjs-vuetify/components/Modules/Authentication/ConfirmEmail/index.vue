@@ -126,12 +126,14 @@ export default {
         align-items: center;
         justify-content: center;
 
+        & {
+          font: {
+            size: 16px;
+            weight: 500;
+          }
+        }
         i {
           margin-right: 7px;
-        }
-        font: {
-          size: 16px;
-          weight: 500;
         }
       }
     }

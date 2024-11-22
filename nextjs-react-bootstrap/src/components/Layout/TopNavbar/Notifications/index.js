@@ -1,30 +1,25 @@
 "use client";
 
-import React from 'react';
-import { MaterialSymbol } from "react-material-symbols";
-import "react-material-symbols/rounded";
-import Dropdown from 'react-bootstrap/Dropdown';
-import Link from 'next/link';
+import { Dropdown } from "react-bootstrap";
+import Link from "next/link";
 
 const Notifications = () => {
   return (
     <>
       <Dropdown className="dropdown notifications noti">
-        <Dropdown.Toggle 
-          variant="secondary" 
+        <Dropdown.Toggle
+          variant="secondary"
           id="dropdown-basic"
           className="border-0 p-0 position-relative badge"
         >
-          <MaterialSymbol icon="notifications" />
+          <i className="material-symbols-outlined">notifications</i>
         </Dropdown.Toggle>
 
         <Dropdown.Menu className="dropdown-lg p-0 border-0 p-0 dropdown-menu-end">
           <div className="d-flex justify-content-between align-items-center title">
             <span className="fw-semibold fs-15 text-secondary">
               Notifications{" "}
-              <span className="fw-normal text-body fs-14">
-                (03)
-              </span>
+              <span className="fw-normal text-body fs-14">(03)</span>
             </span>
             <button className="p-0 m-0 bg-transparent border-0 fs-14 text-primary">
               Clear All
@@ -36,14 +31,14 @@ const Notifications = () => {
               <Link href="/notifications" className="dropdown-item">
                 <div className="d-flex align-items-center">
                   <div className="flex-shrink-0">
-                    <MaterialSymbol icon="sms" className='text-primary' />
+                    <i className="material-symbols-outlined text-primary">
+                      sms
+                    </i>
                   </div>
                   <div className="flex-grow-1 ms-3">
                     <p>
                       You have requested to{" "}
-                      <span className="fw-semibold">
-                        withdrawal
-                      </span>
+                      <span className="fw-semibold">withdrawal</span>
                     </p>
                     <span className="fs-13">2 hrs ago</span>
                   </div>
@@ -55,7 +50,9 @@ const Notifications = () => {
               <Link href="/notifications" className="dropdown-item">
                 <div className="d-flex align-items-center">
                   <div className="flex-shrink-0">
-                    <MaterialSymbol icon="person" className='text-info' />
+                    <i className="material-symbols-outlined text-info">
+                      person
+                    </i>
                   </div>
                   <div className="flex-grow-1 ms-3">
                     <p>A new user added in Trezo</p>
@@ -69,14 +66,14 @@ const Notifications = () => {
               <Link href="/notifications" className="dropdown-item">
                 <div className="d-flex align-items-center">
                   <div className="flex-shrink-0">
-                    <MaterialSymbol icon="mark_email_unread" className='text-success' />
+                    <i className="material-symbols-outlined text-success">
+                      mark_email_unread
+                    </i>
                   </div>
                   <div className="flex-grow-1 ms-3">
                     <p>
                       You have requested to{" "}
-                      <span className="fw-semibold">
-                        withdrawal
-                      </span>
+                      <span className="fw-semibold">withdrawal</span>
                     </p>
                     <span className="fs-13">1 day ago</span>
                   </div>
@@ -88,20 +85,20 @@ const Notifications = () => {
               <Link href="/notifications" className="dropdown-item">
                 <div className="d-flex align-items-center">
                   <div className="flex-shrink-0">
-                    <MaterialSymbol icon="sms" className='text-primary' />
+                    <i className="material-symbols-outlined text-primary">
+                      sms
+                    </i>
                   </div>
                   <div className="flex-grow-1 ms-3">
                     <p>
                       You have requested to{" "}
-                      <span className="fw-semibold">
-                        withdrawal
-                      </span>
+                      <span className="fw-semibold">withdrawal</span>
                     </p>
                     <span className="fs-13">2 hrs ago</span>
                   </div>
                 </div>
               </Link>
-            </div> 
+            </div>
           </div>
 
           <Link
@@ -113,7 +110,7 @@ const Notifications = () => {
         </Dropdown.Menu>
       </Dropdown>
     </>
-  )
-}
+  );
+};
 
 export default Notifications;

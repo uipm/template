@@ -1,8 +1,7 @@
 "use client";
 
-import React from "react"; 
-import Image from "next/image";
-import Card from "react-bootstrap/Card";
+import { Card } from "react-bootstrap";
+import Image from "next/image"; 
 
 const ProfileIntro = () => {
   return (

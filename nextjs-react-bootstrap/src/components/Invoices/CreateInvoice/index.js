@@ -1,13 +1,6 @@
 "use client";
 
-import React from "react";
-import { MaterialSymbol } from "react-material-symbols";
-import "react-material-symbols/rounded";
-import Card from 'react-bootstrap/Card';
-import Form from 'react-bootstrap/Form';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import Table from 'react-bootstrap/Table';
+import { Row, Col, Card, Form, Table } from "react-bootstrap";
 
 const CreateInvoice = () => {
   return (
@@ -137,7 +130,9 @@ const CreateInvoice = () => {
                       <button
                         className="ps-0 border-0 bg-transparent lh-1 position-relative top-2" 
                       >
-                        <MaterialSymbol icon="delete" size={20} className="text-danger" />
+                        <span className="material-symbols-outlined fs-20 text-danger">
+                          delete
+                        </span>
                       </button>
                     </td>
                   </tr>

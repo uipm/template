@@ -1,8 +1,6 @@
 "use client";
 
 import React from "react";
-import { MaterialSymbol } from "react-material-symbols";
-import "react-material-symbols/rounded";
 import SearchForm from "./SearchForm";
 import AppsMenu from "./AppsMenu";
 import ChooseLanguage from "./ChooseLanguage";
@@ -37,8 +35,8 @@ const TopNavbar = ({ toogleActive }) => {
                   <button
                     className="header-burger-menu bg-transparent p-0 border-0"
                     onClick={toogleActive}
-                  >
-                    <MaterialSymbol icon="menu" size={24} />
+                  > 
+                    <i className="material-symbols-outlined fs-24">menu</i>
                   </button>
                 </li>
 

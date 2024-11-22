@@ -1,68 +1,151 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
+import { Card, Form, Table, Button } from "react-bootstrap";
 import Link from "next/link";
 import Image from "next/image";
-import Card from "react-bootstrap/Card";  
-import Form from "react-bootstrap/Form";
-import Table from "react-bootstrap/Table";
-import SearchForm from "./SearchForm";
-import Pagination from "./Pagination";
 
 const recentOrdersData = [
   {
-    orderID: '#JAN-2345',
+    orderID: "#JAN-2345",
     customer: {
-      img: '/images/user-1.jpg',
-      name: 'Sarah Johnson'
+      img: "/images/user-1.jpg",
+      name: "Sarah Johnson",
     },
-    created: '12 Jun 2024',
-    total: '$10,490',
-    status: 'shipped',
+    created: "12 Jun 2024",
+    total: "$10,490",
+    status: "shipped",
   },
   {
-    orderID: '#JAN-1323',
+    orderID: "#JAN-1323",
     customer: {
-      img: '/images/user-2.jpg',
-      name: 'Michael Smith'
+      img: "/images/user-2.jpg",
+      name: "Michael Smith",
     },
-    created: '11 Jun 2024',
-    total: '$6,575',
-    status: 'confirmed',
+    created: "11 Jun 2024",
+    total: "$6,575",
+    status: "confirmed",
   },
   {
-    orderID: '#DEC-1234',
+    orderID: "#DEC-1234",
     customer: {
-      img: '/images/user-3.jpg',
-      name: 'Emily Brown'
+      img: "/images/user-3.jpg",
+      name: "Emily Brown",
     },
-    created: '10 Jun 2024',
-    total: '$12,870',
-    status: 'pending'
+    created: "10 Jun 2024",
+    total: "$12,870",
+    status: "pending",
   },
   {
-    orderID: '#DEC-3567',
+    orderID: "#DEC-3567",
     customer: {
-      img: '/images/user-4.jpg',
-      name: 'Jason Lee'
+      img: "/images/user-4.jpg",
+      name: "Jason Lee",
     },
-    created: '09 Jun 2024',
-    total: '$7,895',
-    status: 'shipped',
+    created: "09 Jun 2024",
+    total: "$7,895",
+    status: "shipped",
   },
   {
-    orderID: '#DEC-1098',
+    orderID: "#DEC-1098",
     customer: {
-      img: '/images/user-5.jpg',
-      name: 'Ashley Davis'
+      img: "/images/user-5.jpg",
+      name: "Ashley Davis",
     },
-    created: '08 Jun 2024',
-    total: '$4,680',
-    status: 'rejected',
+    created: "08 Jun 2024",
+    total: "$4,680",
+    status: "rejected",
+  },
+  {
+    orderID: "#JAN-2345",
+    customer: {
+      img: "/images/user-1.jpg",
+      name: "Sarah Johnson",
+    },
+    created: "12 Jun 2024",
+    total: "$10,490",
+    status: "shipped",
+  },
+  {
+    orderID: "#DEC-1234",
+    customer: {
+      img: "/images/user-3.jpg",
+      name: "Emily Brown",
+    },
+    created: "10 Jun 2024",
+    total: "$12,870",
+    status: "pending",
+  },
+  {
+    orderID: "#JAN-1323",
+    customer: {
+      img: "/images/user-2.jpg",
+      name: "Michael Smith",
+    },
+    created: "11 Jun 2024",
+    total: "$6,575",
+    status: "confirmed",
+  },
+  {
+    orderID: "#DEC-1098",
+    customer: {
+      img: "/images/user-5.jpg",
+      name: "Ashley Davis",
+    },
+    created: "08 Jun 2024",
+    total: "$4,680",
+    status: "rejected",
+  },
+  {
+    orderID: "#DEC-3567",
+    customer: {
+      img: "/images/user-4.jpg",
+      name: "Jason Lee",
+    },
+    created: "09 Jun 2024",
+    total: "$7,895",
+    status: "shipped",
   },
 ];
 
+const itemsPerPage = 5;
+
 const RecentOrders = () => {
+  const [currentPage, setCurrentPage] = useState(1);
+  const [searchTerm, setSearchTerm] = useState("");
+
+  // Filter data based on the search term
+  const filteredData = recentOrdersData.filter(
+    (order) =>
+      order.orderID.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      order.customer.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      order.status.toLowerCase().includes(searchTerm.toLowerCase())
+  );
+
+  // Calculate total pages based on filtered data length
+  const totalPages = Math.ceil(filteredData.length / itemsPerPage);
+
+  // Get current data slice for the page
+  const currentData = filteredData.slice(
+    (currentPage - 1) * itemsPerPage,
+    currentPage * itemsPerPage
+  );
+
+  // Pagination functions
+  const handlePrevPage = () => {
+    setCurrentPage((prev) => Math.max(prev - 1, 1));
+  };
+
+  const handleNextPage = () => {
+    setCurrentPage((prev) => Math.min(prev + 1, totalPages));
+  };
+
+  // Reset page when search term changes
+  const handleSearchChange = (event) => {
+    setSearchTerm(event.target.value);
+    setCurrentPage(1);
+  };
+
   return (
     <>
       <Card className="bg-white border-0 rounded-3 mb-4">
@@ -71,17 +154,27 @@ const RecentOrders = () => {
             <h3 className="mb-0">Recent Orders</h3>
 
             <div className="d-flex">
-              <SearchForm />
+              <Form className="position-relative table-src-form">
+                <Form.Control
+                  type="text"
+                  placeholder="Search here"
+                  value={searchTerm}
+                  onChange={handleSearchChange}
+                />
+                <i className="material-symbols-outlined position-absolute top-50 start-0 translate-middle-y">
+                  search
+                </i>
+              </Form>
 
               <Form.Select
                 className="month-select form-control"
                 aria-label="Default select example"
               >
-                <option value="0">Select</option>
-                <option value="1">Today</option>
-                <option value="2">Weekly</option>
-                <option value="3">Monthly</option>
-                <option value="4">Yearly</option>
+                <option defaultValue="0">Select</option>
+                <option defaultValue="1">Today</option>
+                <option defaultValue="2">Weekly</option>
+                <option defaultValue="3">Monthly</option>
+                <option defaultValue="4">Yearly</option>
               </Form.Select>
             </div>
           </div>
@@ -99,46 +192,88 @@ const RecentOrders = () => {
                   </tr>
                 </thead>
                 <tbody>
-                  {recentOrdersData &&
-                    recentOrdersData.slice(0, 5).map((value, i) => (
-                      <tr key={i}>
-                        <td>{value.orderID}</td>
-                        <td>
-                          <Link
-                            href="/my-profile"
-                            className="d-flex align-items-center"
-                          >
-                            <Image
-                              src={value.customer.img}
-                              className="wh-40 rounded-3"
-                              alt="user"
-                              width={40}
-                              height={40}
-                            />
-                            <div className="ms-2 ps-1">
-                              <h6 className="fw-medium fs-14">
-                                {value.customer.name}
-                              </h6> 
-                            </div>
-                          </Link>
-                        </td>
-                        <td>{value.created}</td>
-                        <td>{value.total}</td> 
-                        <td>
-                          <span 
-                            className={`badge p-2 fs-12 fw-normal text-capitalize ${value.status}`}
-                          >
-                            {value.status}
-                          </span>
-                        </td>
-                      </tr>
-                    ))}
+                  {currentData.map((order, i) => (
+                    <tr key={i}>
+                      <td>{order.orderID}</td>
+                      <td>
+                        <Link
+                          href="/my-profile"
+                          className="d-flex align-items-center"
+                        >
+                          <Image
+                            src={order.customer.img}
+                            className="wh-40 rounded-3"
+                            alt="user"
+                            width={40}
+                            height={40}
+                          />
+                          <div className="ms-2 ps-1">
+                            <h6 className="fw-medium fs-14">
+                              {order.customer.name}
+                            </h6>
+                          </div>
+                        </Link>
+                      </td>
+                      <td>{order.created}</td>
+                      <td>{order.total}</td>
+                      <td>
+                        <span
+                          className={`badge p-2 fs-12 fw-normal text-capitalize ${order.status}`}
+                        >
+                          {order.status}
+                        </span>
+                      </td>
+                    </tr>
+                  ))}
                 </tbody>
               </Table>
             </div>
 
-            {/* Pagination */}
-            <Pagination />
+            <div className="d-flex justify-content-center justify-content-sm-between align-items-center text-center flex-wrap gap-2 showing-wrap">
+              <span className="fs-12 fw-medium">
+                Showing {currentData.length} of {recentOrdersData.length}{" "}
+                Results
+              </span>
+
+              <nav aria-label="Page navigation example">
+                <ul className="pagination mb-0 justify-content-center">
+                  <li className="page-item">
+                    <Button
+                      className="page-link icon"
+                      onClick={handlePrevPage}
+                      disabled={currentPage === 1}
+                    > 
+                      <i className="material-symbols-outlined">
+                        keyboard_arrow_left
+                      </i>
+                    </Button>
+                  </li>
+                  {[...Array(totalPages)].map((_, index) => (
+                    <li key={index} className="page-item">
+                      <Button
+                        className={`page-link ${
+                          currentPage === index + 1 ? "active" : ""
+                        }`}
+                        onClick={() => setCurrentPage(index + 1)}
+                      >
+                        {index + 1}
+                      </Button>
+                    </li>
+                  ))}
+                  <li className="page-item">
+                    <Button
+                      className="page-link icon"
+                      onClick={handleNextPage}
+                      disabled={currentPage === totalPages}
+                    > 
+                      <i className="material-symbols-outlined">
+                        keyboard_arrow_right
+                      </i>
+                    </Button>
+                  </li>
+                </ul>
+              </nav>
+            </div>
           </div>
         </Card.Body>
       </Card>

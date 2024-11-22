@@ -1,17 +1,12 @@
 "use client";
 
-import React from "react"; 
-import Card from "react-bootstrap/Card";
-import Form from "react-bootstrap/Form";
-import Table from "react-bootstrap/Table";
-import { MaterialSymbol } from "react-material-symbols";
-import "react-material-symbols/rounded";
+import React, { useState } from "react";
+import { Card, Form, Table, Button } from "react-bootstrap";
 import Image from "next/image";
-import Pagination from "./Pagination";
 
 const agentsData = [
   {
-    id: "#854",
+    id: "#850",
     agentName: {
       img: "/images/user-12.jpg",
       name: "Oliver Khan",
@@ -23,7 +18,7 @@ const agentsData = [
     satisfactionRate: "80",
   },
   {
-    id: "#853",
+    id: "#851",
     agentName: {
       img: "/images/user-13.jpg",
       name: "Ava Cooper",
@@ -47,7 +42,7 @@ const agentsData = [
     satisfactionRate: "80",
   },
   {
-    id: "#851",
+    id: "#853",
     agentName: {
       img: "/images/user-15.jpg",
       name: "Mia Hughes",
@@ -59,7 +54,7 @@ const agentsData = [
     satisfactionRate: "100",
   },
   {
-    id: "#850",
+    id: "#854",
     agentName: {
       img: "/images/user-16.jpg",
       name: "Noah Mitchell",
@@ -71,7 +66,55 @@ const agentsData = [
     satisfactionRate: "80",
   },
   {
-    id: "#849",
+    id: "#855",
+    agentName: {
+      img: "/images/user-17.jpg",
+      name: "Sophia Carter",
+    },
+    totalTickets: 120,
+    openTickets: 55,
+    resolvedTickets: 20,
+    avgResolutionTime: "5.3 hours",
+    satisfactionRate: "60",
+  },
+  {
+    id: "#858",
+    agentName: {
+      img: "/images/user-16.jpg",
+      name: "Noah Mitchell",
+    },
+    totalTickets: 320,
+    openTickets: 90,
+    resolvedTickets: 10,
+    avgResolutionTime: "3.8 hours",
+    satisfactionRate: "80",
+  },
+  {
+    id: "#856",
+    agentName: {
+      img: "/images/user-14.jpg",
+      name: "Isabella Evans",
+    },
+    totalTickets: 150,
+    openTickets: 35,
+    resolvedTickets: 45,
+    avgResolutionTime: "3.2 hours",
+    satisfactionRate: "80",
+  },
+  {
+    id: "#857",
+    agentName: {
+      img: "/images/user-15.jpg",
+      name: "Mia Hughes",
+    },
+    totalTickets: 75,
+    openTickets: 86,
+    resolvedTickets: 25,
+    avgResolutionTime: "4.5 hours",
+    satisfactionRate: "100",
+  },
+  {
+    id: "#859",
     agentName: {
       img: "/images/user-17.jpg",
       name: "Sophia Carter",
@@ -84,7 +127,24 @@ const agentsData = [
   },
 ];
 
+const ITEMS_PER_PAGE = 5; // Change as needed
+
 const PerformanceOfAgents = () => {
+  const [currentPage, setCurrentPage] = useState(1);
+
+  const totalPages = Math.ceil(agentsData.length / ITEMS_PER_PAGE);
+
+  const paginatedData = agentsData.slice(
+    (currentPage - 1) * ITEMS_PER_PAGE,
+    currentPage * ITEMS_PER_PAGE
+  );
+
+  const handlePageChange = (page) => {
+    if (page > 0 && page <= totalPages) {
+      setCurrentPage(page);
+    }
+  };
+
   return (
     <>
       <Card className="bg-white border-0 rounded-3 mb-4">
@@ -97,11 +157,11 @@ const PerformanceOfAgents = () => {
                 className="month-select form-control p-0 h-auto border-0"
                 aria-label="Default select example"
               >
-                <option value="0">Select</option>
-                <option value="1">This Day</option>
-                <option value="2">This Week</option>
-                <option value="3">This Month</option>
-                <option value="4">This Year</option>
+                <option defaultValue="0">Select</option>
+                <option defaultValue="1">This Day</option>
+                <option defaultValue="2">This Week</option>
+                <option defaultValue="3">This Month</option>
+                <option defaultValue="4">This Year</option>
               </Form.Select>
             </div>
           </div>
@@ -122,110 +182,153 @@ const PerformanceOfAgents = () => {
                   </tr>
                 </thead>
                 <tbody>
-                  {agentsData &&
-                    agentsData.slice(0, 6).map((value, i) => (
-                      <tr key={i}>
-                        <td className="text-body">{value.id}</td>
+                  {paginatedData.map((agent, index) => (
+                    <tr key={index}>
+                      <td className="text-body">{agent.id}</td>
 
-                        <td>
-                          <div className="d-flex align-items-center">
-                            <div className="flex-shrink-0">
-                              <Image
-                                src={value.agentName.img}
-                                className="wh-34 rounded-circle"
-                                alt="user"
-                                width={34}
-                                height={34}
-                              />
-                            </div>
-                            <div className="flex-grow-1 ms-2 position-relative top-1">
-                              <h6 className="mb-0 fs-14 fw-medium">
-                                {value.agentName.name}
-                              </h6>
-                            </div>
+                      <td>
+                        <div className="d-flex align-items-center">
+                          <div className="flex-shrink-0">
+                            <Image
+                              src={agent.agentName.img}
+                              className="wh-34 rounded-circle"
+                              alt="user"
+                              width={34}
+                              height={34}
+                            />
                           </div>
-                        </td>
+                          <div className="flex-grow-1 ms-2 position-relative top-1">
+                            <h6 className="mb-0 fs-14 fw-medium">
+                              {agent.agentName.name}
+                            </h6>
+                          </div>
+                        </div>
+                      </td>
 
-                        <td>{value.totalTickets}</td>
+                      <td>{agent.totalTickets}</td>
 
-                        <td className="text-body">{value.openTickets}</td>
+                      <td className="text-body">{agent.openTickets}</td>
 
-                        <td className="text-body">{value.resolvedTickets}</td>
+                      <td className="text-body">{agent.resolvedTickets}</td>
 
-                        <td className="text-body">{value.avgResolutionTime}</td>
+                      <td className="text-body">{agent.avgResolutionTime}</td>
 
-                        <td>
+                      <td>
+                        <div
+                          style={{
+                            background: `conic-gradient(#605DFF 0% ${agent.satisfactionRate}%, #f1f1f1 ${agent.satisfactionRate}%)`,
+                            position: "relative",
+                            width: "40px",
+                            height: "40px",
+                            borderRadius: "50%",
+                            display: "flex",
+                            alignItems: "center",
+                            justifyContent: "center",
+                          }}
+                        >
                           <div
                             style={{
-                              background: `conic-gradient(#605DFF 0% ${value.satisfactionRate}%, #f1f1f1 ${value.satisfactionRate}%)`,
-                              position: "relative",
-                              width: "40px",
-                              height: "40px",
+                              position: "absolute",
+                              width: "80%",
+                              height: "80%",
+                              backgroundColor: "white",
                               borderRadius: "50%",
                               display: "flex",
                               alignItems: "center",
                               justifyContent: "center",
                             }}
                           >
-                            <div
+                            <p
                               style={{
-                                position: "absolute",
-                                width: "80%",
-                                height: "80%",
-                                backgroundColor: "white",
-                                borderRadius: "50%",
-                                display: "flex",
-                                alignItems: "center",
-                                justifyContent: "center",
+                                fontSize: "10px",
                               }}
+                              className="text-primary"
                             >
-                              <p
-                                style={{
-                                  fontSize: "10px",
-                                }}
-                                className="text-primary"
-                              >
-                                {value.satisfactionRate}%
-                              </p>
-                            </div>
+                              {agent.satisfactionRate}%
+                            </p>
                           </div>
-                        </td>
+                        </div>
+                      </td>
 
-                        <td>
-                          <div className="d-flex align-items-center gap-1">
-                            <button className="ps-0 border-0 bg-transparent lh-1 position-relative top-2">
-                              <MaterialSymbol
-                                icon="visibility"
-                                size={16}
-                                className="text-primary"
-                              />
-                            </button>
+                      <td>
+                        <div className="d-flex align-items-center gap-1">
+                          <button className="ps-0 border-0 bg-transparent lh-1 position-relative top-2">
+                            <span className="material-symbols-outlined fs-16 text-primary">
+                              visibility
+                            </span>
+                          </button>
 
-                            <button className="ps-0 border-0 bg-transparent lh-1 position-relative top-2">
-                              <MaterialSymbol
-                                icon="edit"
-                                size={16}
-                                className="text-body"
-                              />
-                            </button>
+                          <button className="ps-0 border-0 bg-transparent lh-1 position-relative top-2">
+                            <span className="material-symbols-outlined fs-16 text-body">
+                              edit
+                            </span>
+                          </button>
 
-                            <button className="ps-0 border-0 bg-transparent lh-1 position-relative top-2">
-                              <MaterialSymbol
-                                icon="delete"
-                                size={16}
-                                className="text-danger"
-                              />
-                            </button>
-                          </div>
-                        </td>
-                      </tr>
-                    ))}
+                          <button className="ps-0 border-0 bg-transparent lh-1 position-relative top-2">
+                            <span className="material-symbols-outlined fs-16 text-danger">
+                              delete
+                            </span>
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+                  ))}
                 </tbody>
               </Table>
             </div>
 
-            {/* Pagination */}
-            <Pagination />
+            <div className="p-4 pt-lg-4">
+              <div className="d-flex justify-content-between align-items-center">
+                <span className="fs-12 fw-medium">
+                  Showing {paginatedData.length} of {agentsData.length} Results
+                </span>
+
+                <nav>
+                  <ul className="pagination mb-0">
+                    <li
+                      className={`page-item ${
+                        currentPage === 1 ? "disabled" : ""
+                      }`}
+                    >
+                      <Button
+                        className="page-link icon"
+                        onClick={() => handlePageChange(currentPage - 1)}
+                      >
+                        <span className="material-symbols-outlined">
+                          keyboard_arrow_left
+                        </span>
+                      </Button>
+                    </li>
+                    {Array.from({ length: totalPages }, (_, index) => (
+                      <li key={index} className="page-item">
+                        <Button
+                          className={`page-link ${
+                            currentPage === index + 1 ? "active" : ""
+                          }`}
+                          onClick={() => handlePageChange(index + 1)}
+                        >
+                          {index + 1}
+                        </Button>
+                      </li>
+                    ))}
+                    <li
+                      className={`page-item ${
+                        currentPage === totalPages ? "disabled" : ""
+                      }`}
+                    >
+                      <Button
+                        className="page-link icon"
+                        onClick={() => handlePageChange(currentPage + 1)}
+                      >
+                        <span className="material-symbols-outlined">
+                          keyboard_arrow_right
+                        </span>
+                      </Button>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
           </div>
         </Card.Body>
       </Card>

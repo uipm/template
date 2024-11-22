@@ -31,10 +31,17 @@ const Navbar: React.FC = () => {
           <nav className="navbar navbar-expand-lg">
             <Link className="navbar-brand" href="/">
               <Image
-                src="/images/logo.png"
+                src="/images/logo-big.svg"
                 alt="logo"
-                width={64}
-                height={64}
+                width={142}
+                height={38}
+              />
+              <Image
+                src="/images/white-logo-big.svg"
+                className="d-none"
+                alt="logo"
+                width={142}
+                height={38}
               />
             </Link>
 

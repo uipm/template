@@ -1,13 +1,6 @@
 "use client";
 
-import React from "react";
-import Form from "react-bootstrap/Form";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-import Card from "react-bootstrap/Card";
-import { MaterialSymbol } from "react-material-symbols";
-import "react-material-symbols/rounded";
-import Dropdown from 'react-bootstrap/Dropdown';
+import { Row, Col, Dropdown, Card, Form } from "react-bootstrap";
 
 const Assets = () => {
   return (
@@ -18,49 +11,48 @@ const Assets = () => {
             <Card.Body className="p-4">
               <div className="d-flex justify-content-between">
                 <Form>
-                  <Form.Check
-                    type="checkbox"
-                    id="default-checkbox"
-                    label=''
-                  />
+                  <Form.Check type="checkbox" id="default-checkbox" label="" />
                 </Form>
 
                 <Dropdown className="action-opt ms-2 position-relative top-3">
                   <Dropdown.Toggle
-                    variant="secondary" 
+                    variant="secondary"
                     id="dropdown-basic"
                     className="bg-transparent p-0"
-                  > 
-                    <MaterialSymbol size={25} icon="more_horiz" />
+                  >
+                    <span className="material-symbols-outlined fs-25">
+                      more_horiz
+                    </span>
                   </Dropdown.Toggle>
 
                   <Dropdown.Menu className="bg-white border box-shadow">
-                    <Dropdown.Item href="#"> 
-                      <MaterialSymbol icon="border_color" />
+                    <Dropdown.Item href="#">
+                      <span className="material-symbols-outlined">
+                        border_color
+                      </span>
                       Edit
                     </Dropdown.Item>
 
-                    <Dropdown.Item href="#"> 
-                      <MaterialSymbol icon="delete" />
+                    <Dropdown.Item href="#">
+                      <i className="material-symbols-outlined">delete</i>
                       Delete
                     </Dropdown.Item>
                   </Dropdown.Menu>
-                </Dropdown> 
+                </Dropdown>
               </div>
 
               <div className="d-flex align-items-center py-4 my-3">
-                <MaterialSymbol 
-                  icon="folder_open" 
-                  size={45} 
-                  className='text-primary' 
-                />
+                <span className="material-symbols-outlined fs-45 text-primary">
+                  folder_open
+                </span>
+
                 <span className="fs-15 fw-bold text-secondary ms-2 position-relative top-2">
                   Projects
                 </span>
               </div>
 
               <div className="d-flex justify-content-between">
-                <span className="fs-13 text-secondary">159  Files</span>
+                <span className="fs-13 text-secondary">159 Files</span>
                 <span className="fs-13 text-secondary">4.5 GB</span>
               </div>
             </Card.Body>
@@ -72,49 +64,47 @@ const Assets = () => {
             <Card.Body className="p-4">
               <div className="d-flex justify-content-between">
                 <Form>
-                  <Form.Check
-                    type="checkbox"
-                    id="default-checkbox"
-                    label=''
-                  />
+                  <Form.Check type="checkbox" id="default-checkbox" label="" />
                 </Form>
 
                 <Dropdown className="action-opt ms-2 position-relative top-3">
                   <Dropdown.Toggle
-                    variant="secondary" 
+                    variant="secondary"
                     id="dropdown-basic"
                     className="bg-transparent p-0"
-                  > 
-                    <MaterialSymbol size={25} icon="more_horiz" />
+                  >
+                    <span className="material-symbols-outlined fs-25">
+                      more_horiz
+                    </span>
                   </Dropdown.Toggle>
 
                   <Dropdown.Menu className="bg-white border box-shadow">
-                    <Dropdown.Item href="#"> 
-                      <MaterialSymbol icon="border_color" />
+                    <Dropdown.Item href="#">
+                      <span className="material-symbols-outlined">
+                        border_color
+                      </span>
                       Edit
                     </Dropdown.Item>
 
-                    <Dropdown.Item href="#"> 
-                      <MaterialSymbol icon="delete" />
+                    <Dropdown.Item href="#">
+                      <i className="material-symbols-outlined">delete</i>
                       Delete
                     </Dropdown.Item>
                   </Dropdown.Menu>
-                </Dropdown> 
+                </Dropdown>
               </div>
 
               <div className="d-flex align-items-center py-4 my-3">
-                <MaterialSymbol 
-                  icon="folder_open" 
-                  size={45} 
-                  className='text-primary-div' 
-                />
+                <span className="material-symbols-outlined fs-45 text-primary-div">
+                  folder_open
+                </span>
 
                 <span className="fs-15 fw-bold text-secondary ms-2 position-relative top-2">
                   Documents
                 </span>
               </div>
               <div className="d-flex justify-content-between">
-                <span className="fs-13 text-secondary">159  Files</span>
+                <span className="fs-13 text-secondary">159 Files</span>
                 <span className="fs-13 text-secondary">4.5 GB</span>
               </div>
             </Card.Body>
@@ -126,48 +116,47 @@ const Assets = () => {
             <Card.Body className="p-4">
               <div className="d-flex justify-content-between">
                 <Form>
-                  <Form.Check
-                    type="checkbox"
-                    id="default-checkbox"
-                    label=''
-                  />
+                  <Form.Check type="checkbox" id="default-checkbox" label="" />
                 </Form>
 
                 <Dropdown className="action-opt ms-2 position-relative top-3">
                   <Dropdown.Toggle
-                    variant="secondary" 
+                    variant="secondary"
                     id="dropdown-basic"
                     className="bg-transparent p-0"
-                  > 
-                    <MaterialSymbol size={25} icon="more_horiz" />
+                  >
+                    <span className="material-symbols-outlined fs-25">
+                      more_horiz
+                    </span>
                   </Dropdown.Toggle>
 
                   <Dropdown.Menu className="bg-white border box-shadow">
-                    <Dropdown.Item href="#"> 
-                      <MaterialSymbol icon="border_color" />
+                    <Dropdown.Item href="#">
+                      <span className="material-symbols-outlined">
+                        border_color
+                      </span>
                       Edit
                     </Dropdown.Item>
 
-                    <Dropdown.Item href="#"> 
-                      <MaterialSymbol icon="delete" />
+                    <Dropdown.Item href="#">
+                      <i className="material-symbols-outlined">delete</i>
                       Delete
                     </Dropdown.Item>
                   </Dropdown.Menu>
-                </Dropdown> 
+                </Dropdown>
               </div>
 
               <div className="d-flex align-items-center py-4 my-3">
-                <MaterialSymbol 
-                  icon="folder_open" 
-                  size={45} 
-                  className='text-success' 
-                />
+                <span className="material-symbols-outlined fs-45 text-success">
+                  folder_open
+                </span>
+
                 <span className="fs-15 fw-bold text-secondary ms-2 position-relative top-2">
                   Media
                 </span>
               </div>
               <div className="d-flex justify-content-between">
-                <span className="fs-13 text-secondary">159  Files</span>
+                <span className="fs-13 text-secondary">159 Files</span>
                 <span className="fs-13 text-secondary">4.5 GB</span>
               </div>
             </Card.Body>
@@ -179,42 +168,40 @@ const Assets = () => {
             <Card.Body className="p-4">
               <div className="d-flex justify-content-between">
                 <Form>
-                  <Form.Check
-                    type="checkbox"
-                    id="default-checkbox"
-                    label=''
-                  />
+                  <Form.Check type="checkbox" id="default-checkbox" label="" />
                 </Form>
 
                 <Dropdown className="action-opt ms-2 position-relative top-3">
                   <Dropdown.Toggle
-                    variant="secondary" 
+                    variant="secondary"
                     id="dropdown-basic"
                     className="bg-transparent p-0"
-                  > 
-                    <MaterialSymbol size={25} icon="more_horiz" />
+                  >
+                    <span className="material-symbols-outlined fs-25">
+                      more_horiz
+                    </span>
                   </Dropdown.Toggle>
 
                   <Dropdown.Menu className="bg-white border box-shadow">
-                    <Dropdown.Item href="#"> 
-                      <MaterialSymbol icon="border_color" />
+                    <Dropdown.Item href="#">
+                      <span className="material-symbols-outlined">
+                        border_color
+                      </span>
                       Edit
                     </Dropdown.Item>
 
-                    <Dropdown.Item href="#"> 
-                      <MaterialSymbol icon="delete" />
+                    <Dropdown.Item href="#">
+                      <i className="material-symbols-outlined">delete</i>
                       Delete
                     </Dropdown.Item>
                   </Dropdown.Menu>
-                </Dropdown> 
+                </Dropdown>
               </div>
 
               <div className="d-flex align-items-center py-4 my-3">
-                <MaterialSymbol 
-                  icon="folder_open" 
-                  size={45} 
-                  className='text-danger'
-                />
+                <span className="material-symbols-outlined fs-45 text-danger">
+                  folder_open
+                </span>
                 <span className="fs-15 fw-bold text-secondary ms-2 position-relative top-2">
                   Applications
                 </span>
@@ -232,42 +219,40 @@ const Assets = () => {
             <Card.Body className="p-4">
               <div className="d-flex justify-content-between">
                 <Form>
-                  <Form.Check
-                    type="checkbox"
-                    id="default-checkbox"
-                    label=''
-                  />
+                  <Form.Check type="checkbox" id="default-checkbox" label="" />
                 </Form>
 
                 <Dropdown className="action-opt ms-2 position-relative top-3">
                   <Dropdown.Toggle
-                    variant="secondary" 
+                    variant="secondary"
                     id="dropdown-basic"
                     className="bg-transparent p-0"
-                  > 
-                    <MaterialSymbol size={25} icon="more_horiz" />
+                  >
+                    <span className="material-symbols-outlined fs-25">
+                      more_horiz
+                    </span>
                   </Dropdown.Toggle>
 
                   <Dropdown.Menu className="bg-white border box-shadow">
-                    <Dropdown.Item href="#"> 
-                      <MaterialSymbol icon="border_color" />
+                    <Dropdown.Item href="#">
+                      <span className="material-symbols-outlined">
+                        border_color
+                      </span>
                       Edit
                     </Dropdown.Item>
 
-                    <Dropdown.Item href="#"> 
-                      <MaterialSymbol icon="delete" />
+                    <Dropdown.Item href="#">
+                      <i className="material-symbols-outlined">delete</i>
                       Delete
                     </Dropdown.Item>
                   </Dropdown.Menu>
-                </Dropdown> 
+                </Dropdown>
               </div>
 
               <div className="d-flex align-items-center py-4 my-3">
-                <MaterialSymbol 
-                  icon="folder_open" 
-                  size={45} 
-                  className='text-warning'
-                />
+                <span className="material-symbols-outlined fs-45 text-warning">
+                  folder_open
+                </span>
                 <span className="fs-15 fw-bold text-secondary ms-2 position-relative top-2">
                   ET Template
                 </span>
@@ -285,42 +270,40 @@ const Assets = () => {
             <Card.Body className="p-4">
               <div className="d-flex justify-content-between">
                 <Form>
-                  <Form.Check
-                    type="checkbox"
-                    id="default-checkbox"
-                    label=''
-                  />
+                  <Form.Check type="checkbox" id="default-checkbox" label="" />
                 </Form>
 
                 <Dropdown className="action-opt ms-2 position-relative top-3">
                   <Dropdown.Toggle
-                    variant="secondary" 
+                    variant="secondary"
                     id="dropdown-basic"
                     className="bg-transparent p-0"
-                  > 
-                    <MaterialSymbol size={25} icon="more_horiz" />
+                  >
+                    <span className="material-symbols-outlined fs-25">
+                      more_horiz
+                    </span>
                   </Dropdown.Toggle>
 
                   <Dropdown.Menu className="bg-white border box-shadow">
-                    <Dropdown.Item href="#"> 
-                      <MaterialSymbol icon="border_color" />
+                    <Dropdown.Item href="#">
+                      <span className="material-symbols-outlined">
+                        border_color
+                      </span>
                       Edit
                     </Dropdown.Item>
 
-                    <Dropdown.Item href="#"> 
-                      <MaterialSymbol icon="delete" />
+                    <Dropdown.Item href="#">
+                      <i className="material-symbols-outlined">delete</i>
                       Delete
                     </Dropdown.Item>
                   </Dropdown.Menu>
-                </Dropdown> 
+                </Dropdown>
               </div>
 
               <div className="d-flex align-items-center py-4 my-3">
-                <MaterialSymbol 
-                  icon="folder_open" 
-                  size={45} 
-                  className='text-info'
-                />
+                <span className="material-symbols-outlined fs-45 text-info">
+                  folder_open
+                </span>
                 <span className="fs-15 fw-bold text-secondary ms-2 position-relative top-2">
                   React Template
                 </span>
@@ -338,42 +321,40 @@ const Assets = () => {
             <Card.Body className="p-4">
               <div className="d-flex justify-content-between">
                 <Form>
-                  <Form.Check
-                    type="checkbox"
-                    id="default-checkbox"
-                    label=''
-                  />
+                  <Form.Check type="checkbox" id="default-checkbox" label="" />
                 </Form>
 
                 <Dropdown className="action-opt ms-2 position-relative top-3">
                   <Dropdown.Toggle
-                    variant="secondary" 
+                    variant="secondary"
                     id="dropdown-basic"
                     className="bg-transparent p-0"
-                  > 
-                    <MaterialSymbol size={25} icon="more_horiz" />
+                  >
+                    <span className="material-symbols-outlined fs-25">
+                      more_horiz
+                    </span>
                   </Dropdown.Toggle>
 
                   <Dropdown.Menu className="bg-white border box-shadow">
-                    <Dropdown.Item href="#"> 
-                      <MaterialSymbol icon="border_color" />
+                    <Dropdown.Item href="#">
+                      <span className="material-symbols-outlined">
+                        border_color
+                      </span>
                       Edit
                     </Dropdown.Item>
 
-                    <Dropdown.Item href="#"> 
-                      <MaterialSymbol icon="delete" />
+                    <Dropdown.Item href="#">
+                      <i className="material-symbols-outlined">delete</i>
                       Delete
                     </Dropdown.Item>
                   </Dropdown.Menu>
-                </Dropdown> 
+                </Dropdown>
               </div>
 
               <div className="d-flex align-items-center py-4 my-3">
-                <MaterialSymbol 
-                  icon="folder_open" 
-                  size={45} 
-                  className='text-primary-div'
-                />
+                <span className="material-symbols-outlined fs-45 text-primary-div">
+                  folder_open
+                </span>
                 <span className="fs-15 fw-bold text-secondary ms-2 position-relative top-2">
                   Material UI
                 </span>
@@ -391,42 +372,40 @@ const Assets = () => {
             <Card.Body className="p-4">
               <div className="d-flex justify-content-between">
                 <Form>
-                  <Form.Check
-                    type="checkbox"
-                    id="default-checkbox"
-                    label=''
-                  />
+                  <Form.Check type="checkbox" id="default-checkbox" label="" />
                 </Form>
 
                 <Dropdown className="action-opt ms-2 position-relative top-3">
                   <Dropdown.Toggle
-                    variant="secondary" 
+                    variant="secondary"
                     id="dropdown-basic"
                     className="bg-transparent p-0"
-                  > 
-                    <MaterialSymbol size={25} icon="more_horiz" />
+                  >
+                    <span className="material-symbols-outlined fs-25">
+                      more_horiz
+                    </span>
                   </Dropdown.Toggle>
 
                   <Dropdown.Menu className="bg-white border box-shadow">
-                    <Dropdown.Item href="#"> 
-                      <MaterialSymbol icon="border_color" />
+                    <Dropdown.Item href="#">
+                      <span className="material-symbols-outlined">
+                        border_color
+                      </span>
                       Edit
                     </Dropdown.Item>
 
-                    <Dropdown.Item href="#"> 
-                      <MaterialSymbol icon="delete" />
+                    <Dropdown.Item href="#">
+                      <i className="material-symbols-outlined">delete</i>
                       Delete
                     </Dropdown.Item>
                   </Dropdown.Menu>
-                </Dropdown> 
+                </Dropdown>
               </div>
 
               <div className="d-flex align-items-center py-4 my-3">
-                <MaterialSymbol 
-                  icon="folder_open" 
-                  size={45} 
-                  className='text-secondary'
-                />
+                <span className="material-symbols-outlined fs-45 text-secondary">
+                  folder_open
+                </span>
                 <span className="fs-15 fw-bold text-secondary ms-2 position-relative top-2">
                   WP Themes
                 </span>
@@ -444,42 +423,40 @@ const Assets = () => {
             <Card.Body className="p-4">
               <div className="d-flex justify-content-between">
                 <Form>
-                  <Form.Check
-                    type="checkbox"
-                    id="default-checkbox"
-                    label=''
-                  />
+                  <Form.Check type="checkbox" id="default-checkbox" label="" />
                 </Form>
 
                 <Dropdown className="action-opt ms-2 position-relative top-3">
                   <Dropdown.Toggle
-                    variant="secondary" 
+                    variant="secondary"
                     id="dropdown-basic"
                     className="bg-transparent p-0"
-                  > 
-                    <MaterialSymbol size={25} icon="more_horiz" />
+                  >
+                    <span className="material-symbols-outlined fs-25">
+                      more_horiz
+                    </span>
                   </Dropdown.Toggle>
 
                   <Dropdown.Menu className="bg-white border box-shadow">
-                    <Dropdown.Item href="#"> 
-                      <MaterialSymbol icon="border_color" />
+                    <Dropdown.Item href="#">
+                      <span className="material-symbols-outlined">
+                        border_color
+                      </span>
                       Edit
                     </Dropdown.Item>
 
-                    <Dropdown.Item href="#"> 
-                      <MaterialSymbol icon="delete" />
+                    <Dropdown.Item href="#">
+                      <i className="material-symbols-outlined">delete</i>
                       Delete
                     </Dropdown.Item>
                   </Dropdown.Menu>
-                </Dropdown> 
+                </Dropdown>
               </div>
 
               <div className="d-flex align-items-center py-4 my-3">
-                <MaterialSymbol 
-                  icon="folder_open" 
-                  size={45} 
-                  className='text-danger'
-                />
+                <span className="material-symbols-outlined fs-45 text-danger">
+                  folder_open
+                </span>
                 <span className="fs-15 fw-bold text-secondary ms-2 position-relative top-2">
                   Personal Photos
                 </span>
@@ -497,42 +474,40 @@ const Assets = () => {
             <Card.Body className="p-4">
               <div className="d-flex justify-content-between">
                 <Form>
-                  <Form.Check
-                    type="checkbox"
-                    id="default-checkbox"
-                    label=''
-                  />
+                  <Form.Check type="checkbox" id="default-checkbox" label="" />
                 </Form>
 
                 <Dropdown className="action-opt ms-2 position-relative top-3">
                   <Dropdown.Toggle
-                    variant="secondary" 
+                    variant="secondary"
                     id="dropdown-basic"
                     className="bg-transparent p-0"
-                  > 
-                    <MaterialSymbol size={25} icon="more_horiz" />
+                  >
+                    <span className="material-symbols-outlined fs-25">
+                      more_horiz
+                    </span>
                   </Dropdown.Toggle>
 
                   <Dropdown.Menu className="bg-white border box-shadow">
-                    <Dropdown.Item href="#"> 
-                      <MaterialSymbol icon="border_color" />
+                    <Dropdown.Item href="#">
+                      <span className="material-symbols-outlined">
+                        border_color
+                      </span>
                       Edit
                     </Dropdown.Item>
 
-                    <Dropdown.Item href="#"> 
-                      <MaterialSymbol icon="delete" />
+                    <Dropdown.Item href="#">
+                      <i className="material-symbols-outlined">delete</i>
                       Delete
                     </Dropdown.Item>
                   </Dropdown.Menu>
-                </Dropdown> 
+                </Dropdown>
               </div>
 
               <div className="d-flex align-items-center py-4 my-3">
-                <MaterialSymbol 
-                  icon="folder_open" 
-                  size={45} 
-                  className='text-primary'
-                />
+                <span className="material-symbols-outlined fs-45 text-primary">
+                  folder_open
+                </span>
                 <span className="fs-15 fw-bold text-secondary ms-2 position-relative top-2">
                   Mobile Apps
                 </span>
@@ -550,42 +525,40 @@ const Assets = () => {
             <Card.Body className="p-4">
               <div className="d-flex justify-content-between">
                 <Form>
-                  <Form.Check
-                    type="checkbox"
-                    id="default-checkbox"
-                    label=''
-                  />
+                  <Form.Check type="checkbox" id="default-checkbox" label="" />
                 </Form>
 
                 <Dropdown className="action-opt ms-2 position-relative top-3">
                   <Dropdown.Toggle
-                    variant="secondary" 
+                    variant="secondary"
                     id="dropdown-basic"
                     className="bg-transparent p-0"
-                  > 
-                    <MaterialSymbol size={25} icon="more_horiz" />
+                  >
+                    <span className="material-symbols-outlined fs-25">
+                      more_horiz
+                    </span>
                   </Dropdown.Toggle>
 
                   <Dropdown.Menu className="bg-white border box-shadow">
-                    <Dropdown.Item href="#"> 
-                      <MaterialSymbol icon="border_color" />
+                    <Dropdown.Item href="#">
+                      <span className="material-symbols-outlined">
+                        border_color
+                      </span>
                       Edit
                     </Dropdown.Item>
 
-                    <Dropdown.Item href="#"> 
-                      <MaterialSymbol icon="delete" />
+                    <Dropdown.Item href="#">
+                      <i className="material-symbols-outlined">delete</i>
                       Delete
                     </Dropdown.Item>
                   </Dropdown.Menu>
-                </Dropdown> 
+                </Dropdown>
               </div>
 
               <div className="d-flex align-items-center py-4 my-3">
-                <MaterialSymbol 
-                  icon="folder_open" 
-                  size={45} 
-                  className='text-primary-div'
-                />
+                <span className="material-symbols-outlined fs-45 text-primary-div">
+                  folder_open
+                </span>
                 <span className="fs-15 fw-bold text-secondary ms-2 position-relative top-2">
                   Important Files
                 </span>
@@ -603,44 +576,42 @@ const Assets = () => {
             <Card.Body className="p-4">
               <div className="d-flex justify-content-between">
                 <Form>
-                  <Form.Check
-                    type="checkbox"
-                    id="default-checkbox"
-                    label=''
-                  />
+                  <Form.Check type="checkbox" id="default-checkbox" label="" />
                 </Form>
 
                 <Dropdown className="action-opt ms-2 position-relative top-3">
                   <Dropdown.Toggle
-                    variant="secondary" 
+                    variant="secondary"
                     id="dropdown-basic"
                     className="bg-transparent p-0"
-                  > 
-                    <MaterialSymbol size={25} icon="more_horiz" />
+                  >
+                    <span className="material-symbols-outlined fs-25">
+                      more_horiz
+                    </span>
                   </Dropdown.Toggle>
 
                   <Dropdown.Menu className="bg-white border box-shadow">
-                    <Dropdown.Item href="#"> 
-                      <MaterialSymbol icon="border_color" />
+                    <Dropdown.Item href="#">
+                      <span className="material-symbols-outlined">
+                        border_color
+                      </span>
                       Edit
                     </Dropdown.Item>
 
-                    <Dropdown.Item href="#"> 
-                      <MaterialSymbol icon="delete" />
+                    <Dropdown.Item href="#">
+                      <i className="material-symbols-outlined">delete</i>
                       Delete
                     </Dropdown.Item>
                   </Dropdown.Menu>
-                </Dropdown> 
+                </Dropdown>
               </div>
 
               <div className="d-flex align-items-center py-4 my-3">
-                <MaterialSymbol 
-                  icon="folder_open" 
-                  size={45} 
-                  className='text-warning'
-                />
+                <span className="material-symbols-outlined fs-45 text-warning">
+                  folder_open
+                </span>
                 <span className="fs-15 fw-bold text-secondary ms-2 position-relative top-2">
-                Angular Template
+                  Angular Template
                 </span>
               </div>
               <div className="d-flex justify-content-between">

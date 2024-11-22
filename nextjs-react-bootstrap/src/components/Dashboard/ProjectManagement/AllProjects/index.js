@@ -1,14 +1,9 @@
 "use client";
 
-import React from "react";
+import { useState } from "react";
+import { Card, Form, Table } from "react-bootstrap";
 import Link from "next/link";
-import Card from "react-bootstrap/Card";
-import Form from "react-bootstrap/Form";
-import Table from "react-bootstrap/Table";
-import { MaterialSymbol } from "react-material-symbols";
-import "react-material-symbols/rounded";
 import Image from "next/image";
-import Pagination from "./Pagination";
 
 const projectsData = [
   {
@@ -185,9 +180,98 @@ const projectsData = [
     endDate: "10 Apr 2024",
     status: "inProgress",
   },
+  {
+    id: "#854",
+    projectName: "Project CyberSphere",
+    viewLink: "/project-management/project-overview/",
+    client: "NovaTech Solutions",
+    assignees: {
+      images: [
+        {
+          img: "/images/user-15.jpg",
+        },
+        {
+          img: "/images/user-11.jpg",
+        },
+        {
+          img: "/images/user-6.jpg",
+        },
+        {
+          img: "/images/user-9.jpg",
+        },
+      ],
+      number: "+10",
+    },
+    budget: "$4,500",
+    startDate: "25 Mar 2024",
+    endDate: "25 Apr 2024",
+    status: "finished",
+  },
+  {
+    id: "#852",
+    projectName: "CloudScape Evolution",
+    viewLink: "/project-management/project-overview/",
+    client: "InnovateIQ Inc.",
+    assignees: {
+      images: [
+        {
+          img: "/images/user-10.jpg",
+        },
+        {
+          img: "/images/user-12.jpg",
+        },
+      ],
+      number: "+07",
+    },
+    budget: "$2,500",
+    startDate: "15 Mar 2024",
+    endDate: "15 Apr 2024",
+    status: "pending",
+  },
+  {
+    id: "#849",
+    projectName: "QuantumLeap Quest",
+    viewLink: "/project-management/project-overview/",
+    client: "NexGen Systems",
+    assignees: {
+      images: [
+        {
+          img: "/images/user-7.jpg",
+        },
+        {
+          img: "/images/user-9.jpg",
+        },
+        {
+          img: "/images/user-6.jpg",
+        },
+      ],
+      number: "+03",
+    },
+    budget: "$3,400",
+    startDate: "05 Mar 2024",
+    endDate: "05 Apr 2024",
+    status: "finished",
+  },
 ];
 
 const AllProjects = () => {
+  const [currentPage, setCurrentPage] = useState(1);
+  const itemsPerPage = 5; // Number of items per page
+
+  // Calculate total pages
+  const totalPages = Math.ceil(projectsData.length / itemsPerPage);
+
+  // Get current page data
+  const currentData = projectsData.slice(
+    (currentPage - 1) * itemsPerPage,
+    currentPage * itemsPerPage
+  );
+
+  // Function to handle page change
+  const handlePageChange = (pageNumber) => {
+    setCurrentPage(pageNumber);
+  };
+
   return (
     <>
       <Card className="bg-white border-0 rounded-3 mb-4">
@@ -200,9 +284,9 @@ const AllProjects = () => {
                 className="month-select form-control p-0 h-auto border-0"
                 aria-label="Default select example"
               >
-                <option value="0">This Week</option>
-                <option value="1">This Month</option>
-                <option value="2">This Year</option>
+                <option defaultValue="0">This Week</option>
+                <option defaultValue="1">This Month</option>
+                <option defaultValue="2">This Year</option>
               </Form.Select>
             </div>
           </div>
@@ -224,92 +308,132 @@ const AllProjects = () => {
                   </tr>
                 </thead>
                 <tbody>
-                  {projectsData &&
-                    projectsData.slice(0, 5).map((value, i) => (
-                      <tr key={i}>
-                        <td className="text-body">{value.id}</td>
+                  {currentData.map((project, i) => (
+                    <tr key={i}>
+                      <td className="text-body">{project.id}</td>
 
-                        <td>
-                          <Link href={value.viewLink}>{value.projectName}</Link>
-                        </td>
+                      <td>
+                        <Link href={project.viewLink}>
+                          {project.projectName}
+                        </Link>
+                      </td>
 
-                        <td>{value.client}</td>
+                      <td>{project.client}</td>
 
-                        <td>
-                          <ul className="ps-0 mb-0 list-unstyled d-flex align-items-center">
-                            {value.assignees.images
-                              .slice(0, 5)
-                              .map((value, i) => (
-                                <li key={i} className="ms-m-10">
-                                  <Image
-                                    src={value.img}
-                                    className="wh-34 lh-34 rounded-circle border border-1 border-color-white"
-                                    alt="user"
-                                    width={34}
-                                    height={34}
-                                  />
-                                </li>
-                              ))}
-
-                            <li className="ms-m-10">
-                              <div className="wh-34 lh-34 rounded-circle bg-primary d-block text-center text-decoration-none text-white fs-12 fw-medium border border-1 border-color-white">
-                                {value.assignees.number}
-                              </div>
-                            </li>
-                          </ul>
-                        </td>
-
-                        <td className="text-body">{value.budget}</td>
-
-                        <td className="text-body">{value.startDate}</td>
-
-                        <td className="text-body">{value.endDate}</td>
-
-                        <td>
-                          <span
-                            className={`badge bg-opacity-10 p-2 fs-12 fw-normal text-capitalize ${value.status}`}
-                          >
-                            {value.status}
-                          </span>
-                        </td>
-
-                        <td>
-                          <div className="d-flex align-items-center gap-1">
-                            <Link href={value.viewLink}>
-                              <button className="ps-0 border-0 bg-transparent lh-1 position-relative top-2">
-                                <MaterialSymbol
-                                  icon="visibility"
-                                  size={16}
-                                  className="text-primary"
+                      <td>
+                        <ul className="ps-0 mb-0 list-unstyled d-flex align-items-center">
+                          {project.assignees.images
+                            .slice(0, 5)
+                            .map((assignee, i) => (
+                              <li key={i} className="ms-m-10">
+                                <Image
+                                  src={assignee.img}
+                                  className="wh-34 lh-34 rounded-circle border border-1 border-color-white"
+                                  alt="user"
+                                  width={34}
+                                  height={34}
                                 />
-                              </button>
-                            </Link>
+                              </li>
+                            ))}
+                          <li className="ms-m-10">
+                            <div className="wh-34 lh-34 rounded-circle bg-primary d-block text-center text-decoration-none text-white fs-12 fw-medium border border-1 border-color-white">
+                              {project.assignees.number}
+                            </div>
+                          </li>
+                        </ul>
+                      </td>
 
-                            <button className="ps-0 border-0 bg-transparent lh-1 position-relative top-2">
-                              <MaterialSymbol
-                                icon="edit"
-                                size={16}
-                                className="text-body"
-                              />
-                            </button>
+                      <td className="text-body">{project.budget}</td>
 
+                      <td className="text-body">{project.startDate}</td>
+
+                      <td className="text-body">{project.endDate}</td>
+
+                      <td>
+                        <span
+                          className={`badge bg-opacity-10 p-2 fs-12 fw-normal text-capitalize ${project.status}`}
+                        >
+                          {project.status}
+                        </span>
+                      </td>
+
+                      <td>
+                        <div className="d-flex align-items-center gap-1">
+                          <Link href={project.viewLink}>
                             <button className="ps-0 border-0 bg-transparent lh-1 position-relative top-2">
-                              <MaterialSymbol
-                                icon="delete"
-                                size={16}
-                                className="text-danger"
-                              />
+                              <span className="material-symbols-outlined fs-16 text-primary">
+                                visibility
+                              </span>
                             </button>
-                          </div>
-                        </td>
-                      </tr>
-                    ))}
+                          </Link>
+
+                          <button className="ps-0 border-0 bg-transparent lh-1 position-relative top-2">
+                            <span className="material-symbols-outlined fs-16 text-body">
+                              edit
+                            </span>
+                          </button>
+
+                          <button className="ps-0 border-0 bg-transparent lh-1 position-relative top-2">
+                            <span className="material-symbols-outlined fs-16 text-danger">
+                              delete
+                            </span>
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+                  ))}
                 </tbody>
               </Table>
             </div>
 
-            {/* Pagination */}
-            <Pagination />
+            <div className="p-4 pt-lg-4">
+              <div className="d-flex justify-content-center justify-content-sm-between align-items-center text-center flex-wrap gap-2 showing-wrap">
+                <span className="fs-12 fw-medium">
+                  Showing {currentData.length} of {projectsData.length} Results
+                </span>
+
+                <nav aria-label="Page navigation example">
+                  <ul className="pagination mb-0 justify-content-center">
+                    <li className="page-item">
+                      <button
+                        className="page-link icon btn"
+                        onClick={() => handlePageChange(currentPage - 1)}
+                        disabled={currentPage === 1}
+                        aria-label="Previous"
+                      >
+                        <span className="material-symbols-outlined">
+                          keyboard_arrow_left
+                        </span>
+                      </button>
+                    </li>
+                    {[...Array(totalPages)].map((_, index) => (
+                      <li key={index} className="page-item">
+                        <button
+                          className={`page-link ${
+                            currentPage === index + 1 ? "active" : ""
+                          }`}
+                          onClick={() => handlePageChange(index + 1)}
+                        >
+                          {index + 1}
+                        </button>
+                      </li>
+                    ))}
+                    <li className="page-item">
+                      <button
+                        className="page-link icon btn"
+                        onClick={() => handlePageChange(currentPage + 1)}
+                        disabled={currentPage === totalPages}
+                        aria-label="Next"
+                      >
+                        <span className="material-symbols-outlined">
+                          keyboard_arrow_right
+                        </span>
+                      </button>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
           </div>
         </Card.Body>
       </Card>

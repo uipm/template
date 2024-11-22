@@ -135,9 +135,9 @@ const TicketsStatus: React.FC = () => {
         colors: "#64748B",
       },
       markers: {
+        shape: 'diamond',
         offsetX: -2,
         offsetY: -0.5,
-        radius: 2,
       },
     },
   };
@@ -194,7 +194,7 @@ const TicketsStatus: React.FC = () => {
           </Box>
         </Box>
 
-        <div className={styles.ticketsStatusContent}>
+        <div className={`ticketsStatusContent ${styles.ticketsStatusContent}`}>
           <div
             style={{
               marginBottom: "-22px",

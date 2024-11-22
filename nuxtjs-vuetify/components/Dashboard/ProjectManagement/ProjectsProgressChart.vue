@@ -157,6 +157,7 @@ export default defineComponent({
           height: 9,
           offsetX: -2,
           offsetY: -0.5,
+          shape: "diamond",
         },
       },
     });

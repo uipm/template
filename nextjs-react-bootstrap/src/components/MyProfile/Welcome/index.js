@@ -1,10 +1,7 @@
 "use client";
 
-import React from "react";
+import { Card } from "react-bootstrap";
 import Image from "next/image";
-import Card from 'react-bootstrap/Card';
-import { MaterialSymbol } from "react-material-symbols";
-import "react-material-symbols/rounded";
 
 const Welcome = () => {
   return (
@@ -20,8 +17,8 @@ const Welcome = () => {
 
           <div className="d-flex align-items-center flex-wrap gap-4 gap-xxl-5">
             <div className="d-flex align-items-center welcome-status-item style-two">
-              <div className="flex-shrink-0"> 
-                <MaterialSymbol icon="airplay" />
+              <div className="flex-shrink-0">
+                <span className="material-symbols-outlined">airplay</span>
               </div>
               <div className="flex-grow-1 ms-3">
                 <h5 className="text-white fw-semibold mb-0 fs-16">75h</h5>
@@ -31,7 +28,9 @@ const Welcome = () => {
 
             <div className="d-flex align-items-center welcome-status-item style-two">
               <div className="flex-shrink-0">
-                <MaterialSymbol icon="local_library" className="icon-bg two" />
+                <span className="material-symbols-outlined icon-bg two">
+                  local_library
+                </span>
               </div>
               <div className="flex-grow-1 ms-3">
                 <h5 className="text-white fw-semibold mb-0 fs-16">15</h5>

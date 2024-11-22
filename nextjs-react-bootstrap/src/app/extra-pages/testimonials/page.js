@@ -1,7 +1,6 @@
 "use client";
  
-import React from "react";
-import Breadcrumb from "react-bootstrap/Breadcrumb";
+import { Breadcrumb } from "react-bootstrap";
 import TestimonialsStyle1 from "@/components/ExtraPages/Testimonials/TestimonialsStyle1";
 import TestimonialsStyle2 from "@/components/ExtraPages/Testimonials/TestimonialsStyle2";
 import TestimonialsStyle3 from "@/components/ExtraPages/Testimonials/TestimonialsStyle3";

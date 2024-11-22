@@ -1,9 +1,6 @@
 "use client";
    
-import React from "react";
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import Breadcrumb from 'react-bootstrap/Breadcrumb';
+import { Row, Col, Breadcrumb } from "react-bootstrap";
 import DefaultButtons from "@/components/UIKit/Buttons/DefaultButtons";
 import OutlineButtons from "@/components/UIKit/Buttons/OutlineButtons";
 import SoftButtons from "@/components/UIKit/Buttons/SoftButtons";

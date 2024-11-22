@@ -1,7 +1,7 @@
 "use client";
- 
-import LessonPreview from '@/components/Lms/LessonPreview';
-import Breadcrumb from 'react-bootstrap/Breadcrumb';
+
+import { Breadcrumb } from "react-bootstrap";
+import LessonPreview from '@/components/Lms/LessonPreview'; 
 
 export default function Page() {
   return (

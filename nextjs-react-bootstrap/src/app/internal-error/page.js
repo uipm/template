@@ -1,7 +1,7 @@
 "use client";
-     
-import InternalError from '@/components/InternalError';
-import Breadcrumb from 'react-bootstrap/Breadcrumb';
+
+import { Breadcrumb } from "react-bootstrap";
+import InternalError from '@/components/InternalError'; 
 
 export default function Page() {
   return (

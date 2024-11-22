@@ -13,6 +13,8 @@
 @import "../css/remixicon.css";
 @import "../css/swiper-bundle.min.css";
 @import "../css/fullcalendar.main.css";
+@import "../css/jsvectormap.min.css";
+@import "../css/lightpick.css";
 
 // Default variable overrides
 @import "./variables";
@@ -30,7 +32,7 @@
 @import "./components/calendar";
 @import "./components/chat";
 @import "./components/timeline";
-@import "./components/priceing";
+@import "./components/pricing";
 @import "./components/products";
 @import "./components/rtl";
 @import "./components/dark-mode";
@@ -41,3 +43,6 @@
 @import "./components/card-bg-style";
 @import "./components/fluid-boxed-style";
 @import "./components/landing-page";
+@import "./components/analytics";
+@import "./components/nft";
+@import "./components/marketing";

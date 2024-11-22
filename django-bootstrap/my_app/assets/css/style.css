@@ -14666,6 +14666,10 @@ Swiper Slider Style
   .mw-123 {
     max-width: 43px;
   }
+  /* Marketing Dashboard CSS */
+  .progress-responsive {
+    width: 80px !important;
+  }
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .mw-123 {
@@ -14699,6 +14703,10 @@ Swiper Slider Style
     border: none !important;
     border-top: 1px solid #ECEEF2 !important;
   }
+  /* Marketing Dashboard CSS */
+  .progress-responsive {
+    width: 80px !important;
+  }
 }
 /* Min width 1200px to Max width 1399px */
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
@@ -14727,6 +14735,10 @@ Swiper Slider Style
   .custom-p2 .rounded-start-0 {
     border: none !important;
     border-top: 1px solid #ECEEF2 !important;
+  }
+  /* Marketing Dashboard CSS */
+  .progress-responsive {
+    width: 80px !important;
   }
 }
 /* Min width 1400px to Max width 1799px */
@@ -14807,6 +14819,8 @@ Swiper Slider Style
   color: #3A4252;
   padding: 12px;
   border-radius: 5px;
+  white-space: nowrap;
+  transition: all ease 0.5s;
 }
 .menu-vertical .menu-item .menu-link.menu-toggle::after {
   top: 23%;
@@ -15070,17 +15084,31 @@ Swiper Slider Style
   position: absolute;
 }
 [sidebar-data-theme=sidebar-hide] .sidebar-area .menu-vertical .menu-title {
+  z-index: 1;
+  position: relative;
+}
+[sidebar-data-theme=sidebar-hide] .sidebar-area .menu-vertical .menu-title::before {
+  content: "";
   position: absolute;
   top: 0;
-  opacity: 0;
+  left: 7px;
+  right: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #ECEEF2;
   z-index: -1;
+  transition: all ease 0.5s;
+}
+[sidebar-data-theme=sidebar-hide] .sidebar-area .menu-vertical .menu-title .menu-title-text {
+  opacity: 0;
 }
 [sidebar-data-theme=sidebar-hide] .sidebar-area .layout-menu {
-  padding: 17px;
+  padding: 20px 17px;
   padding-bottom: 60px;
 }
 [sidebar-data-theme=sidebar-hide] .sidebar-area .layout-menu .menu-item .menu-link .title {
-  display: none;
+  opacity: 0;
+  visibility: hidden;
 }
 [sidebar-data-theme=sidebar-hide] .sidebar-area .layout-menu .menu-item .menu-link .menu-icon {
   position: relative;
@@ -15131,8 +15159,15 @@ Swiper Slider Style
   z-index: 1;
   transition: all ease 0.5s;
 }
+[sidebar-data-theme=sidebar-hide] .sidebar-area:hover .menu-vertical .menu-title::before {
+  opacity: 0;
+}
+[sidebar-data-theme=sidebar-hide] .sidebar-area:hover .menu-vertical .menu-title .menu-title-text {
+  opacity: 1;
+}
 [sidebar-data-theme=sidebar-hide] .sidebar-area:hover .layout-menu .menu-item .menu-link .title {
-  display: block;
+  opacity: 1;
+  visibility: visible;
 }
 [sidebar-data-theme=sidebar-hide] .sidebar-area:hover .layout-menu .menu-item .menu-link .menu-icon {
   right: 0;
@@ -15222,7 +15257,8 @@ Swiper Slider Style
     padding-bottom: 60px;
   }
   [sidebar-data-theme=sidebar-hide] .sidebar-area .layout-menu .menu-item .menu-link .title {
-    display: block;
+    opacity: 1;
+    visibility: visible;
   }
   [sidebar-data-theme=sidebar-hide] .sidebar-area .layout-menu .menu-item .menu-link .menu-icon {
     right: 0;
@@ -15904,6 +15940,13 @@ Swiper Slider Style
 
 /* Default Table Area Style
 ============================================*/
+.default-table-area {
+  /* Analytics Dashboard CSS */
+  /* Crypto Dashboard CSS */
+  /* Sales Dashboard CSS */
+  /* Hospital Dashboard CSS */
+  /* Marketing Dashboard CSS */
+}
 .default-table-area .table-responsive {
   border-radius: 8px 8px 0 0 !important;
 }
@@ -15958,8 +16001,14 @@ Swiper Slider Style
 .default-table-area.top-selling-products .table-responsive .table tbody tr td {
   padding: 18.5px 15px;
 }
+.default-table-area.recent-orders {
+  /* Sales Dashboard CSS */
+}
 .default-table-area.recent-orders .table-responsive .table tbody tr td {
   padding: 18.5px 15px;
+}
+.default-table-area.recent-orders.recent-style-two .table-responsive .table tbody tr td {
+  padding: 14.2px 15px;
 }
 .default-table-area.recent-leads.style-two .table-responsive .table tbody tr td {
   padding: 10.8px 8px;
@@ -16041,6 +16090,137 @@ Swiper Slider Style
 .default-table-area.connected-table .table-responsive .table tbody tr td.pe-0 {
   padding-right: 0 !important;
 }
+.default-table-area.browser-leads.style-two .table-responsive .table {
+  width: 866px;
+}
+.default-table-area.browser-leads.style-two .table-responsive .table thead tr th:first-child {
+  padding-left: 0 !important;
+}
+.default-table-area.browser-leads.style-two .table-responsive .table thead tr th:last-child {
+  padding-right: 0 !important;
+}
+.default-table-area.browser-leads.style-two .table-responsive .table tbody tr td {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.default-table-area.browser-leads.style-two .table-responsive .table tbody tr td:first-child {
+  padding-left: 0 !important;
+}
+.default-table-area.browser-leads.style-two .table-responsive .table tbody tr td:last-child {
+  padding-right: 0 !important;
+}
+.default-table-area.transaction-table.style-two .table-responsive .table {
+  width: 866px;
+}
+.default-table-area.transaction-table.style-two .table-responsive .table thead tr th:first-child {
+  padding-left: 0 !important;
+}
+.default-table-area.transaction-table.style-two .table-responsive .table thead tr th:last-child {
+  padding-right: 0 !important;
+}
+.default-table-area.transaction-table.style-two .table-responsive .table tbody tr td {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.default-table-area.transaction-table.style-two .table-responsive .table tbody tr td:first-child {
+  padding-left: 0 !important;
+}
+.default-table-area.transaction-table.style-two .table-responsive .table tbody tr td:last-child {
+  padding-right: 0 !important;
+}
+.default-table-area.portfolio-table.style-two .table-responsive .table thead tr {
+  border-color: #757DFF !important;
+}
+.default-table-area.portfolio-table.style-two .table-responsive .table thead tr th:first-child {
+  padding-left: 0 !important;
+}
+.default-table-area.portfolio-table.style-two .table-responsive .table thead tr th:last-child {
+  padding-right: 0 !important;
+}
+.default-table-area.portfolio-table.style-two .table-responsive .table tbody tr td {
+  border-color: #757DFF;
+  padding-top: 11px;
+  padding-bottom: 11px;
+}
+.default-table-area.portfolio-table.style-two .table-responsive .table tbody tr td:first-child {
+  padding-left: 0 !important;
+}
+.default-table-area.portfolio-table.style-two .table-responsive .table tbody tr td:last-child {
+  padding-right: 0 !important;
+}
+.default-table-area.rankings-table.style-two .table-responsive .table {
+  width: 1536px;
+}
+.default-table-area.rankings-table.style-two .table-responsive .table thead tr th:first-child {
+  padding-left: 0 !important;
+}
+.default-table-area.rankings-table.style-two .table-responsive .table thead tr th:last-child {
+  padding-right: 0 !important;
+}
+.default-table-area.rankings-table.style-two .table-responsive .table tbody tr td {
+  padding-top: 11px;
+  padding-bottom: 11px;
+}
+.default-table-area.rankings-table.style-two .table-responsive .table tbody tr td:first-child {
+  padding-left: 0 !important;
+}
+.default-table-area.rankings-table.style-two .table-responsive .table tbody tr td:last-child {
+  padding-right: 0 !important;
+}
+.default-table-area.sales-locations-table.style-two .table-responsive .table thead tr th:first-child {
+  padding-left: 0 !important;
+}
+.default-table-area.sales-locations-table.style-two .table-responsive .table thead tr th:last-child {
+  padding-right: 0 !important;
+}
+.default-table-area.sales-locations-table.style-two .table-responsive .table tbody tr td {
+  padding-top: 11px;
+  padding-bottom: 11px;
+}
+.default-table-area.sales-locations-table.style-two .table-responsive .table tbody tr td:first-child {
+  padding-left: 0 !important;
+}
+.default-table-area.sales-locations-table.style-two .table-responsive .table tbody tr td:last-child {
+  padding-right: 0 !important;
+}
+.default-table-area.patient-table.style-two .table-responsive .table {
+  width: 1000px;
+}
+.default-table-area.patient-table.style-two .table-responsive .table thead tr th:first-child {
+  padding-left: 0 !important;
+}
+.default-table-area.patient-table.style-two .table-responsive .table thead tr th:last-child {
+  padding-right: 0 !important;
+}
+.default-table-area.patient-table.style-two .table-responsive .table tbody tr td {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.default-table-area.patient-table.style-two .table-responsive .table tbody tr td:first-child {
+  padding-left: 0 !important;
+}
+.default-table-area.patient-table.style-two .table-responsive .table tbody tr td:last-child {
+  padding-right: 0 !important;
+}
+.default-table-area.campaigns-table.style-two .table-responsive .table {
+  width: 1000px;
+}
+.default-table-area.campaigns-table.style-two .table-responsive .table thead tr th:first-child {
+  padding-left: 0 !important;
+}
+.default-table-area.campaigns-table.style-two .table-responsive .table thead tr th:last-child {
+  padding-right: 0 !important;
+}
+.default-table-area.campaigns-table.style-two .table-responsive .table tbody tr td {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.default-table-area.campaigns-table.style-two .table-responsive .table tbody tr td:first-child {
+  padding-left: 0 !important;
+}
+.default-table-area.campaigns-table.style-two .table-responsive .table tbody tr td:last-child {
+  padding-right: 0 !important;
+}
 
 .table-src-form {
   margin-right: 20px;
@@ -16060,6 +16240,9 @@ Swiper Slider Style
 
 /* Max width 767px */
 @media only screen and (max-width: 767px) {
+  .default-table-area {
+    /* Analytics Dashboard CSS */
+  }
   .default-table-area.to-do-list .table {
     width: 738.66px;
   }
@@ -16069,9 +16252,18 @@ Swiper Slider Style
   .default-table-area.manage-reviews-table .table {
     width: 1100px;
   }
+  .default-table-area.browser-leads.style-two .table-responsive .table.for-mobile-width {
+    width: 713px !important;
+  }
 }
 @media only screen and (max-width: 380px) {
+  .default-table-area {
+    /* Crypto Dashboard CSS */
+  }
   .default-table-area.team-members .table {
+    width: 357.33px;
+  }
+  .default-table-area.portfolio-table.style-two .table-responsive .table {
     width: 357.33px;
   }
 }
@@ -16193,7 +16385,6 @@ Swiper Slider Style
     width: 525px;
   }
 }
-/* Min width 1400px to Max width 1799px */
 @media only screen and (max-width: 1399px) {
   .default-table-area.all-projects .table {
     width: 1120px;
@@ -16907,6 +17098,7 @@ Swiper Slider Style
 ============================================*/
 .rtl {
   direction: rtl;
+  /* RTL After Demos Add CSS */
 }
 .rtl .ms-1 {
   margin-left: 0 !important;
@@ -17324,7 +17516,7 @@ Swiper Slider Style
 .rtl #tickets_status {
   direction: ltr;
 }
-.rtl #new_tickets_vs_solved_sickets {
+.rtl #new_tickets_vs_solved_tickets {
   direction: ltr;
 }
 .rtl .apexcharts-legend-text {
@@ -17524,11 +17716,31 @@ Swiper Slider Style
 .rtl .settings-btn .slider:after {
   opacity: 1;
 }
+.rtl img.position-absolute.top-0.end-0.shape-2 {
+  right: auto !important;
+  left: 0 !important;
+}
+.rtl img.position-absolute.top-0.end-0.shape-6 {
+  right: auto !important;
+  left: 0 !important;
+}
+.rtl .chart-position.for-sale {
+  right: auto !important;
+  left: 0;
+}
+.rtl .cryptocurrency-slide {
+  direction: ltr;
+}
+.rtl .border-start {
+  border-left: none !important;
+  border-right: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important;
+}
 
 /* Dark Mode Area Style
 ============================================*/
 [data-theme=dark] {
   background-color: #0A0E19 !important;
+  /* Dark After Demos Add CSS */
 }
 [data-theme=dark] p {
   color: #8695AA !important;
@@ -18118,6 +18330,44 @@ Swiper Slider Style
 [data-theme=dark] .team-controller .controller-icon {
   background-color: #15203c;
   color: #fff;
+}
+[data-theme=dark] .without-card {
+  background-color: #0C1427 !important;
+}
+[data-theme=dark] .exchange-for-dark {
+  background-color: #0A0E19 !important;
+}
+[data-theme=dark] .exchange-for-dark .d-flex.flex-wrap.gap-2 {
+  border-color: #172036 !important;
+}
+[data-theme=dark] .realtime-for-dark p {
+  color: #fff !important;
+}
+[data-theme=dark] .analytics-tabs {
+  border-color: #172036;
+}
+[data-theme=dark] .analytics-tabs li button {
+  border-color: #172036 !important;
+}
+[data-theme=dark] .analytics-tabs li button.active {
+  background-color: #0A0E19;
+  border-color: #172036;
+  color: #fff;
+}
+[data-theme=dark] .analytics-tabs li button:hover {
+  background-color: #0A0E19;
+  border-color: #172036;
+  color: #fff;
+}
+[data-theme=dark] .cryptocurrency-controller .controller-icon {
+  border-color: #172036;
+  color: #fff;
+}
+[data-theme=dark] .for-dark-border {
+  border-color: #172036 !important;
+}
+[data-theme=dark] .for-dark h3, [data-theme=dark] .for-dark .h3 {
+  color: #3A4252;
 }
 
 /* Only Sidebar dark Area Style
@@ -18955,5 +19205,125 @@ Swiper Slider Style
     box-shadow: none;
   }
 }
+/* Analytics Dashboard Area Style
+============================================*/
+.analytics-tabs {
+  border: 1px solid #ECEEF2;
+  border-radius: 7px;
+}
+.analytics-tabs li button {
+  padding: 3px 15px;
+  border: 0;
+  background-color: transparent;
+  color: #64748B;
+}
+.analytics-tabs li button.active {
+  background-color: #ECF0FF;
+}
+.analytics-tabs li button:hover {
+  background-color: #ECF0FF;
+}
+.analytics-tabs li:nth-child(2) button {
+  border-left: 1px solid #ECEEF2;
+  border-right: 1px solid #ECEEF2;
+}
+
+.cryptocurrency-controller .controller-icon {
+  width: 30px;
+  height: 30px;
+  line-height: 29px;
+  text-align: center;
+  border: 1px solid #ECEEF2;
+  display: inline-block;
+  font-size: 17px;
+  border-radius: 4px;
+  transition: all ease 0.5s;
+}
+.cryptocurrency-controller .controller-icon:hover {
+  background-color: #AD63F6;
+  color: #fff;
+}
+
+/* Min width 1400px to Max width 1799px */
+@media only screen and (min-width: 1400px) and (max-width: 1799px) {
+  .ms-minus-27 {
+    margin-left: -27px;
+  }
+  .me-plus-27 {
+    margin-right: 27px;
+  }
+  .ms-plus-21 {
+    margin-left: 21px;
+  }
+}
+/* FNT Area Style
+============================================*/
+/* NFT Dashboard CSS */
+.place-bid .opacity-0 {
+  transition: all ease 0.5s;
+}
+.place-bid:hover .opacity-0 {
+  opacity: 1 !important;
+}
+
+.nft-controller .controller-icon {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  display: inline-block;
+  background-color: #3A4252;
+  color: #C2CDFF;
+  font-size: 18px;
+  border-radius: 50px;
+  transition: all ease 0.5s;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+.nft-controller .controller-icon.next {
+  left: auto;
+  right: 0;
+}
+.nft-controller .controller-icon:hover {
+  background-color: #605DFF;
+}
+
+.nft-slide {
+  margin-top: -95px;
+}
+
+.ethereum-rate-tabs {
+  margin-bottom: 30px;
+  border: 0;
+}
+.ethereum-rate-tabs .nav-item .nav-link {
+  width: 47px;
+  height: 32px;
+  padding: 0;
+  border: 0;
+  font-weight: 600;
+  font-size: 12px;
+  border-radius: 4px;
+  color: #64748B;
+}
+.ethereum-rate-tabs .nav-item .nav-link.active {
+  background-color: #605DFF !important;
+  color: #fff !important;
+}
+
+/* Max width 767px */
+@media only screen and (max-width: 767px) {
+  .manage-nft {
+    padding: 20px !important;
+    padding-bottom: 120px !important;
+  }
+}
+/* Min width 768px to Max width 992px */
+/* Min width 992px to Max width 1199px */
+/* Min width 1200px to Max width 1399px */
+/* Min width 1400px to Max width 1799px */
 
 /*# sourceMappingURL=style.css.map */

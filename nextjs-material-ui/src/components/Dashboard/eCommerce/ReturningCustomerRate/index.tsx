@@ -135,10 +135,9 @@ const ReturningCustomerRate: React.FC = () => {
         colors: "#64748B",
       },
       markers: {
-        shape: "circle", // circle, square, line, plus, cross
-        radius: 2,
         offsetX: -2,
         offsetY: -0.5,
+        shape: 'diamond',
       },
     },
   };

@@ -1,9 +1,6 @@
 "use client";
     
-import React from 'react';
-import Breadcrumb from 'react-bootstrap/Breadcrumb';  
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
+import { Row, Col, Breadcrumb } from "react-bootstrap";
 import TimePicker from '@/components/UIKit/DateTimePicker/TimePicker';
 import DatePicker from '@/components/UIKit/DateTimePicker/DatePicker';
 

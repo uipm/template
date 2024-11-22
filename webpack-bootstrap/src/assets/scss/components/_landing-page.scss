@@ -82,20 +82,6 @@
         background-color: $white !important;
     }
     .btn {
-        &.btn-outline-primary-div {
-            border-color: $primary-div;
-            color: $primary-div;
-
-            &:hover {
-                background-color: $primary-div;
-                color: $white;
-            }
-        }
-        &.btn-primary-div {
-            background-color: $primary-div;
-            border-color: $primary-div;
-            color: $white;
-        }
         &:hover {
             color:  $white !important;
         }
@@ -341,11 +327,6 @@
     }
     p {
         margin-bottom: 45px;
-    }
-    .btn-primary-div {
-        background-color: $primary-div;
-        border-color: $primary-div;
-        color: $white;
     }
 }
 #backtotop {

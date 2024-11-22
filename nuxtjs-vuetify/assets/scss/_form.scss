@@ -123,3 +123,37 @@
     padding: 0 !important;
   }
 }
+.crypto-exchange-card {
+  .trezo-form-group {
+    margin: {
+      top: 15px;
+      bottom: 0;
+    }
+    .v-input__control {
+      background-color: var(--whiteColor) !important;
+      border: none;
+    }
+    .v-input--density-default {
+      .v-field__input {
+        font-weight: 700;
+        color: var(--blackColor);
+        min-height: auto;
+        padding-top: 25px;
+        padding-bottom: 3px;
+      }
+    }
+    .v-field--center-affix {
+      .v-label {
+        &.v-field-label {
+          left: 0 !important;
+        }
+      }
+    }
+    .value {
+      top: 50%;
+      right: 20px;
+      position: absolute;
+      transform: translateY(-50%);
+    }
+  }
+}

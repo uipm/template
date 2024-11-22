@@ -1,9 +1,6 @@
 "use client";
 
-import React from 'react';
-import Card from "react-bootstrap/Card";
-import Tab from 'react-bootstrap/Tab';
-import Tabs from 'react-bootstrap/Tabs';
+import { Card, Tab, Tabs } from "react-bootstrap";
 import AllProducts from './AllProducts';
 import PublishedProducts from './PublishedProducts';
 import DraftProducts from './DraftProducts';

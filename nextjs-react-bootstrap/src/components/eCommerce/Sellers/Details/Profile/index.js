@@ -1,12 +1,7 @@
 "use client";
 
-import React from "react"; 
+import { Dropdown, Card } from "react-bootstrap";
 import Image from "next/image";
-import Card from "react-bootstrap/Card";
-import Form from "react-bootstrap/Form";
-import { MaterialSymbol } from "react-material-symbols";
-import "react-material-symbols/rounded";
-import Dropdown from 'react-bootstrap/Dropdown';
 
 const Profile = () => {
   return (
@@ -25,9 +20,7 @@ const Profile = () => {
                 />
               </div>
               <div className="flex-grow-1 ms-3">
-                <div 
-                  className="text-decoration-none text-secondary fw-medium fs-16 mb-1"
-                >
+                <div className="text-decoration-none text-secondary fw-medium fs-16 mb-1">
                   Ava Turner
                 </div>
                 <span className="d-block">turner@trezo.com</span>
@@ -36,30 +29,30 @@ const Profile = () => {
 
             <Dropdown className="action-opt ms-2 position-relative top-3">
               <Dropdown.Toggle
-                variant="secondary" 
+                variant="secondary"
                 id="dropdown-basic"
                 className="bg-transparent p-0"
-              > 
-                <MaterialSymbol icon="more_horiz" />
+              >
+                <span className="material-symbols-outlined">more_horiz</span>
               </Dropdown.Toggle>
 
               <Dropdown.Menu className="bg-white border box-shadow">
-                <Dropdown.Item href="#"> 
-                  <MaterialSymbol icon="visibility" />
+                <Dropdown.Item href="#">
+                  <i className="material-symbols-outlined">visibility</i>
                   View
                 </Dropdown.Item>
 
-                <Dropdown.Item href="#"> 
-                  <MaterialSymbol icon="edit" />
+                <Dropdown.Item href="#">
+                  <span className="material-symbols-outlined">edit</span>
                   Edit
                 </Dropdown.Item>
-  
-                <Dropdown.Item href="#"> 
-                  <MaterialSymbol icon="delete" />
+
+                <Dropdown.Item href="#">
+                  <i className="material-symbols-outlined">delete</i>
                   Delete
-                </Dropdown.Item> 
+                </Dropdown.Item>
               </Dropdown.Menu>
-            </Dropdown>  
+            </Dropdown>
           </div>
 
           <div className="d-flex align-items-center mb-3">
@@ -82,15 +75,27 @@ const Profile = () => {
             <span>Store:</span>
             <span className="text-secondary ms-1">Barbahall Store</span>
           </div>
- 
+
           <h4 className="fw-medium fs-15 mb-2">Contact Support</h4>
           <form>
-            <textarea rows="5" className="form-control" placeholder="Type here"></textarea>
+            <textarea
+              rows="5"
+              className="form-control"
+              placeholder="Type here"
+            ></textarea>
 
-            <button type="submit" className="btn btn-primary fw-medium fs-16 py-2 px-4 mt-3">
-              <div className="d-flex align-items-center"> 
-                <MaterialSymbol icon="send" size={20} className="me-2 text-white" />
-                <span className="py-1 d-inline-block text-white">Submit Now</span>
+            <button
+              type="submit"
+              className="btn btn-primary fw-medium fs-16 py-2 px-4 mt-3"
+            >
+              <div className="d-flex align-items-center">
+                <span className="material-symbols-outlined fs-20 me-2 text-white">
+                  send
+                </span>
+
+                <span className="py-1 d-inline-block text-white">
+                  Submit Now
+                </span>
               </div>
             </button>
           </form>

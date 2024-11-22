@@ -50,6 +50,7 @@ const OrderSummary: React.FC = () => {
       markers: {
         offsetX: -2,
         offsetY: -0.5,
+        shape: 'diamond',
       },
     },
     dataLabels: {
@@ -108,13 +109,13 @@ const OrderSummary: React.FC = () => {
           </Box>
         </Box>
 
-        <Box>
+        <Box sx={{ mb: '-8px' }}>
           {isChartLoaded && (
             <Chart
               options={options}
               series={series}
               type="donut"
-              height={327}
+              height={300}
               width={"100%"}
             />
           )}

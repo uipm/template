@@ -1,17 +1,15 @@
 "use client";
 
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-import Breadcrumb from 'react-bootstrap/Breadcrumb';
+import { Row, Col, Breadcrumb } from "react-bootstrap";
 import Sidebar from "@/components/Apps/Email/Sidebar";
-import Draft from "@/components/Apps/Email/Draft"; 
+import Draft from "@/components/Apps/Email/Draft";
 
 export default function Page() {
   return (
     <>
       <div className="d-flex justify-content-between align-items-center flex-wrap gap-2 mb-4">
         <h3 className="mb-0">Draft</h3>
- 
+
         <Breadcrumb className="breadcrumb-page-list align-items-center mb-0 lh-1">
           <Breadcrumb.Item href="/dashboard/ecommerce/">
             <div className="d-flex align-items-center text-decoration-none">

@@ -1,14 +1,9 @@
 "use client";
 
-import React from "react";
+import { Card, Form, Table, Button } from "react-bootstrap";
 import Link from "next/link";
-import Card from "react-bootstrap/Card";
-import Form from "react-bootstrap/Form";
-import Table from "react-bootstrap/Table";
-import { MaterialSymbol } from "react-material-symbols";
-import "react-material-symbols/rounded";
 import Image from "next/image";
-import Pagination from "./Pagination";
+import { useState } from "react";
 
 const courseData = [
   {
@@ -110,6 +105,25 @@ const courseData = [
 ];
 
 const Courses = () => {
+  const [currentPage, setCurrentPage] = useState(1);
+  const itemsPerPage = 5;
+
+  const totalPages = Math.ceil(courseData.length / itemsPerPage);
+
+  const handlePrevPage = () => {
+    setCurrentPage((prevPage) => Math.max(prevPage - 1, 1));
+  };
+
+  const handleNextPage = () => {
+    setCurrentPage((prevPage) => Math.min(prevPage + 1, totalPages));
+  };
+
+  const startIndex = (currentPage - 1) * itemsPerPage;
+  const displayedCourses = courseData.slice(
+    startIndex,
+    startIndex + itemsPerPage
+  );
+
   return (
     <>
       <Card className="bg-white border-0 rounded-3 mb-4">
@@ -122,11 +136,11 @@ const Courses = () => {
                 className="month-select form-control p-0 h-auto border-0"
                 aria-label="Default select example"
               >
-                <option value="0">All Courses</option>
-                <option value="1">Paid</option>
-                <option value="2">Free</option>
-                <option value="3">Top Rated</option>
-                <option value="4">Best Seller</option>
+                <option defaultValue="0">All Courses</option>
+                <option defaultValue="1">Paid</option>
+                <option defaultValue="2">Free</option>
+                <option defaultValue="3">Top Rated</option>
+                <option defaultValue="4">Best Seller</option>
               </Form.Select>
             </div>
           </div>
@@ -148,83 +162,106 @@ const Courses = () => {
                   </tr>
                 </thead>
                 <tbody>
-                  {courseData &&
-                    courseData.slice(0, 6).map((value, i) => (
-                      <tr key={i}>
-                        <td className="text-body">{value.id}</td>
-
-                        <td>
-                          <Link href={value.detailsLink}>
-                            {value.courseName}
+                  {displayedCourses.map((defaultValue, i) => (
+                    <tr key={i}>
+                      <td className="text-body">{defaultValue.id}</td>
+                      <td>
+                        <Link href={defaultValue.detailsLink}>
+                          {defaultValue.courseName}
+                        </Link>
+                      </td>
+                      <td>{defaultValue.category}</td>
+                      <td>
+                        <div className="d-flex align-items-center">
+                          <div className="flex-shrink-0">
+                            <Image
+                              src={defaultValue.instructorImg}
+                              className="wh-34 rounded-circle"
+                              alt="user"
+                              width={34}
+                              height={34}
+                            />
+                          </div>
+                          <div className="flex-grow-1 ms-2 position-relative top-1">
+                            <h6 className="mb-0 fs-14 fw-medium">
+                              {defaultValue.instructorName}
+                            </h6>
+                          </div>
+                        </div>
+                      </td>
+                      <td className="text-body">{defaultValue.enrolled}</td>
+                      <td className="text-body">{defaultValue.startDate}</td>
+                      <td className="text-body">{defaultValue.endDate}</td>
+                      <td>{defaultValue.price}</td>
+                      <td>
+                        <div className="d-flex align-items-center gap-1">
+                          <Link href={defaultValue.detailsLink}>
+                            <button className="ps-0 border-0 bg-transparent lh-1 position-relative top-2">
+                              <span className="material-symbols-outlined fs-16 text-primary">
+                                visibility
+                              </span>
+                            </button>
                           </Link>
-                        </td>
-
-                        <td>{value.category}</td>
-
-                        <td>
-                          <div className="d-flex align-items-center">
-                            <div className="flex-shrink-0">
-                              <Image
-                                src={value.instructorImg}
-                                className="wh-34 rounded-circle"
-                                alt="user"
-                                width={34}
-                                height={34}
-                              />
-                            </div>
-                            <div className="flex-grow-1 ms-2 position-relative top-1">
-                              <h6 className="mb-0 fs-14 fw-medium">
-                                {value.instructorName}
-                              </h6>
-                            </div>
-                          </div>
-                        </td>
-
-                        <td className="text-body">{value.enrolled}</td>
-
-                        <td className="text-body">{value.startDate}</td>
-
-                        <td className="text-body">{value.endDate}</td>
-
-                        <td>{value.price}</td>
-
-                        <td>
-                          <div className="d-flex align-items-center gap-1">
-                            <Link href={value.detailsLink}>
-                              <button className="ps-0 border-0 bg-transparent lh-1 position-relative top-2">
-                                <MaterialSymbol
-                                  icon="visibility"
-                                  size={16}
-                                  className="text-primary"
-                                />
-                              </button>
-                            </Link>
-
-                            <button className="ps-0 border-0 bg-transparent lh-1 position-relative top-2">
-                              <MaterialSymbol
-                                icon="edit"
-                                size={16}
-                                className="text-body"
-                              />
-                            </button>
-
-                            <button className="ps-0 border-0 bg-transparent lh-1 position-relative top-2">
-                              <MaterialSymbol
-                                icon="delete"
-                                size={16}
-                                className="text-danger"
-                              />
-                            </button>
-                          </div>
-                        </td>
-                      </tr>
-                    ))}
+                          <button className="ps-0 border-0 bg-transparent lh-1 position-relative top-2">
+                            <span className="material-symbols-outlined fs-16 text-body">
+                              edit
+                            </span>
+                          </button>
+                          <button className="ps-0 border-0 bg-transparent lh-1 position-relative top-2">
+                            <span className="material-symbols-outlined fs-16 text-danger">
+                              delete
+                            </span>
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+                  ))}
                 </tbody>
               </Table>
             </div>
 
-            {/* Pagination */}
-            <Pagination />
+            <div className="p-4 pt-lg-4">
+              <div className="d-flex justify-content-center justify-content-sm-between align-items-center text-center flex-wrap gap-2 showing-wrap">
+                <span className="fs-12 fw-medium">
+                  Showing {startIndex + 1} to{" "}
+                  {Math.min(startIndex + itemsPerPage, courseData.length)} of{" "}
+                  {courseData.length} Results
+                </span>
+
+                <nav aria-label="Page navigation example">
+                  <ul className="pagination mb-0 justify-content-center">
+                    <li
+                      className={`page-item ${currentPage === 1 && "disabled"}`}
+                    >
+                      <Button
+                        className="page-link icon"
+                        onClick={handlePrevPage}
+                        disabled={currentPage === 1}
+                      >
+                        <span className="material-symbols-outlined">
+                          keyboard_arrow_left
+                        </span>
+                      </Button>
+                    </li>
+                    <li
+                      className={`page-item ${
+                        currentPage === totalPages && "disabled"
+                      }`}
+                    >
+                      <Button
+                        className="page-link icon"
+                        onClick={handleNextPage}
+                        disabled={currentPage === totalPages}
+                      >
+                        <span className="material-symbols-outlined">
+                          keyboard_arrow_right
+                        </span>
+                      </Button>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
           </div>
         </Card.Body>
       </Card>

@@ -22,7 +22,7 @@ export class OrderSummaryService {
                 const options = {
                     series: [60, 30, 10],
                     chart: {
-                        height: 327,
+                        height: 293,
                         type: "donut"
                     },
                     labels: [

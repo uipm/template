@@ -58,7 +58,7 @@
                                             <div class="d-sm-flex justify-content-between align-items-center">
                                                 <div class="d-flex align-items-center mb-3 mb-sm-0">
                                                     <div class="flex-shrink-0">
-                                                        <img src="assets/images/user-62.jpg" class="wh-60 rounded-circle" alt="user">
+                                                        <img src="/assets/images/user-62.jpg" class="wh-60 rounded-circle" alt="user">
                                                     </div>
                                                     <div class="flex-grow-1 ms-3">
                                                         <h4 class="fs-16 fw-semibold mb-1">Andrew Burns</h4>
@@ -99,7 +99,7 @@
         &lt;div class="d-sm-flex justify-content-between align-items-center"&gt;
             &lt;div class="d-flex align-items-center mb-3 mb-sm-0"&gt;
                 &lt;div class="flex-shrink-0"&gt;
-                    &lt;img src="assets/images/user-62.jpg" class="wh-60 rounded-circle" alt="user"&gt;
+                    &lt;img src="/assets/images/user-62.jpg" class="wh-60 rounded-circle" alt="user"&gt;
                 &lt;/div&gt;
                 &lt;div class="flex-grow-1 ms-3"&gt;
                     &lt;h4 class="fs-16 fw-semibold mb-1"&gt;Andrew Burns&lt;/h4&gt;
@@ -154,17 +154,17 @@
                                                 <ul class="ps-0 mb-0 list-unstyled d-flex align-items-center">
                                                     <li>
                                                         <a href="#">
-                                                            <img src="assets/images/user-1.jpg" class="wh-40 rounded-circle border border-2 border-color-white" alt="user">
+                                                            <img src="/assets/images/user-1.jpg" class="wh-40 rounded-circle border border-2 border-color-white" alt="user">
                                                         </a>
                                                     </li>
                                                     <li class="ms-m-15">
                                                         <a href="#">
-                                                            <img src="assets/images/user-2.jpg" class="wh-40 rounded-circle border border-2 border-color-white" alt="user">
+                                                            <img src="/assets/images/user-2.jpg" class="wh-40 rounded-circle border border-2 border-color-white" alt="user">
                                                         </a>
                                                     </li>
                                                     <li class="ms-m-15">
                                                         <a href="#">
-                                                            <img src="assets/images/user-3.jpg" class="wh-40 rounded-circle border border-2 border-color-white" alt="user">
+                                                            <img src="/assets/images/user-3.jpg" class="wh-40 rounded-circle border border-2 border-color-white" alt="user">
                                                         </a>
                                                     </li>
                                                     <li class="ms-m-15">
@@ -192,17 +192,17 @@
             &lt;ul class="ps-0 mb-0 list-unstyled d-flex align-items-center"&gt;
                 &lt;li&gt;
                     &lt;a href="#"&gt;
-                        &lt;img src="assets/images/user-1.jpg" class="wh-40 rounded-circle border border-2 border-color-white" alt="user"&gt;
+                        &lt;img src="/assets/images/user-1.jpg" class="wh-40 rounded-circle border border-2 border-color-white" alt="user"&gt;
                     &lt;/a&gt;
                 &lt;/li&gt;
                 &lt;li class="ms-15"&gt;
                     &lt;a href="#"&gt;
-                        &lt;img src="assets/images/user-2.jpg" class="wh-40 rounded-circle border border-2 border-color-white" alt="user"&gt;
+                        &lt;img src="/assets/images/user-2.jpg" class="wh-40 rounded-circle border border-2 border-color-white" alt="user"&gt;
                     &lt;/a&gt;
                 &lt;/li&gt;
                 &lt;li class="ms-15"&gt;
                     &lt;a href="#"&gt;
-                        &lt;img src="assets/images/user-3.jpg" class="wh-40 rounded-circle border border-2 border-color-white" alt="user"&gt;
+                        &lt;img src="/assets/images/user-3.jpg" class="wh-40 rounded-circle border border-2 border-color-white" alt="user"&gt;
                     &lt;/a&gt;
                 &lt;/li&gt;
                 &lt;li class="ms-15"&gt;
@@ -243,19 +243,19 @@
                                                 <ul class="ps-0 mb-0 list-unstyled d-flex align-items-center gap-1">
                                                     <li>
                                                         <a href="#" class="position-relative d-block">
-                                                            <img src="assets/images/user-1.jpg" class="wh-40 rounded-circle border border-2 border-color-white" alt="user">
+                                                            <img src="/assets/images/user-1.jpg" class="wh-40 rounded-circle border border-2 border-color-white" alt="user">
                                                             <div class="position-absolute top-0 end-0 p-1 bg-success border border-2 border-white rounded-circle"></div>
                                                         </a>
                                                     </li>
                                                     <li>
                                                         <a href="#" class="position-relative d-block">
-                                                            <img src="assets/images/user-2.jpg" class="wh-40 rounded-circle border border-2 border-color-white" alt="user">
+                                                            <img src="/assets/images/user-2.jpg" class="wh-40 rounded-circle border border-2 border-color-white" alt="user">
                                                             <div class="position-absolute top-0 end-0 p-1 bg-primary border border-2 border-white rounded-circle"></div>
                                                         </a>
                                                     </li>
                                                     <li>
                                                         <a href="#" class="position-relative d-block">
-                                                            <img src="assets/images/user-3.jpg" class="wh-40 rounded-circle border border-2 border-color-white" alt="user">
+                                                            <img src="/assets/images/user-3.jpg" class="wh-40 rounded-circle border border-2 border-color-white" alt="user">
                                                             <div class="position-absolute top-0 end-0 p-1 bg-warning border border-2 border-white rounded-circle"></div>
                                                         </a>
                                                     </li>
@@ -280,19 +280,19 @@
             &lt;ul class="ps-0 mb-0 list-unstyled d-flex align-items-center gap-1"&gt;
                 &lt;li&gt;
                     &lt;a href="#" class="position-relative d-block"&gt;
-                        &lt;img src="assets/images/user-1.jpg" class="wh-40 rounded-circle border border-2 border-color-white" alt="user"&gt;
+                        &lt;img src="/assets/images/user-1.jpg" class="wh-40 rounded-circle border border-2 border-color-white" alt="user"&gt;
                         &lt;div class="position-absolute top-0 end-0 p-1 bg-success border border-2 border-white rounded-circle"&gt;&lt;/div&gt;
                     &lt;/a&gt;
                 &lt;/li&gt;
                 &lt;li&gt;
                     &lt;a href="#" class="position-relative d-block"&gt;
-                        &lt;img src="assets/images/user-2.jpg" class="wh-40 rounded-circle border border-2 border-color-white" alt="user"&gt;
+                        &lt;img src="/assets/images/user-2.jpg" class="wh-40 rounded-circle border border-2 border-color-white" alt="user"&gt;
                         &lt;div class="position-absolute top-0 end-0 p-1 bg-primary border border-2 border-white rounded-circle"&gt;&lt;/div&gt;
                     &lt;/a&gt;
                 &lt;/li&gt;
                 &lt;li&gt;
                     &lt;a href="#" class="position-relative d-block"&gt;
-                        &lt;img src="assets/images/user-3.jpg" class="wh-40 rounded-circle border border-2 border-color-white" alt="user"&gt;
+                        &lt;img src="/assets/images/user-3.jpg" class="wh-40 rounded-circle border border-2 border-color-white" alt="user"&gt;
                         &lt;div class="position-absolute top-0 end-0 p-1 bg-warning border border-2 border-white rounded-circle"&gt;&lt;/div&gt;
                     &lt;/a&gt;
                 &lt;/li&gt;
@@ -326,11 +326,11 @@
                                     <div class="tab-content" id="myTabContent4">
                                         <div class="tab-pane fade show active" id="preview4-tab-pane" role="tabpanel" aria-labelledby="preview4-tab" tabindex="0">
                                             <div class="d-flex align-items-center gap-4 flex-wrap">
-                                                <img src="assets/images/user-68.jpg" class="wh-87 rounded-circle" alt="user">
-                                                <img src="assets/images/user-68.jpg" class="wh-77 rounded-circle" alt="user">
-                                                <img src="assets/images/user-68.jpg" class="wh-67 rounded-circle" alt="user">
-                                                <img src="assets/images/user-68.jpg" class="wh-57 rounded-circle" alt="user">
-                                                <img src="assets/images/user-68.jpg" class="wh-47 rounded-circle" alt="user">
+                                                <img src="/assets/images/user-68.jpg" class="wh-87 rounded-circle" alt="user">
+                                                <img src="/assets/images/user-68.jpg" class="wh-77 rounded-circle" alt="user">
+                                                <img src="/assets/images/user-68.jpg" class="wh-67 rounded-circle" alt="user">
+                                                <img src="/assets/images/user-68.jpg" class="wh-57 rounded-circle" alt="user">
+                                                <img src="/assets/images/user-68.jpg" class="wh-47 rounded-circle" alt="user">
                                             </div>
                                         </div>
                                         <div class="tab-pane fade" id="code4-tab-pane" role="tabpanel" aria-labelledby="code4-tab" tabindex="0">
@@ -339,11 +339,11 @@
                                             </button>
 <pre class="line-numbers pt-0 pb-0 ps-25 pe-25 mb-0">
 <code class="language-markup" id="basicAlertsCode4">
-&lt;img src="assets/images/user-68.jpg" class="wh-87 rounded-circle" alt="user"&gt;
-&lt;img src="assets/images/user-68.jpg" class="wh-77 rounded-circle" alt="user"&gt;
-&lt;img src="assets/images/user-68.jpg" class="wh-67 rounded-circle" alt="user"&gt;
-&lt;img src="assets/images/user-68.jpg" class="wh-57 rounded-circle" alt="user"&gt;
-&lt;img src="assets/images/user-68.jpg" class="wh-47 rounded-circle" alt="user"&gt;
+&lt;img src="/assets/images/user-68.jpg" class="wh-87 rounded-circle" alt="user"&gt;
+&lt;img src="/assets/images/user-68.jpg" class="wh-77 rounded-circle" alt="user"&gt;
+&lt;img src="/assets/images/user-68.jpg" class="wh-67 rounded-circle" alt="user"&gt;
+&lt;img src="/assets/images/user-68.jpg" class="wh-57 rounded-circle" alt="user"&gt;
+&lt;img src="/assets/images/user-68.jpg" class="wh-47 rounded-circle" alt="user"&gt;
 </code>
 </pre>
                                         </div>
@@ -366,11 +366,11 @@
                                     <div class="tab-content" id="myTabContent5">
                                         <div class="tab-pane fade show active" id="preview5-tab-pane" role="tabpanel" aria-labelledby="preview5-tab" tabindex="0">
                                             <div class="d-flex align-items-center gap-4 flex-wrap">
-                                                <img src="assets/images/screenshorts.jpg" class="wh-87 rounded-3" alt="screenshorts">
-                                                <img src="assets/images/screenshorts.jpg" class="wh-77 rounded-3" alt="screenshorts">
-                                                <img src="assets/images/screenshorts.jpg" class="wh-67 rounded-3" alt="screenshorts">
-                                                <img src="assets/images/screenshorts.jpg" class="wh-57 rounded-3" alt="screenshorts">
-                                                <img src="assets/images/screenshorts.jpg" class="wh-47 rounded-3" alt="screenshorts">
+                                                <img src="/assets/images/screenshorts.jpg" class="wh-87 rounded-3" alt="screenshorts">
+                                                <img src="/assets/images/screenshorts.jpg" class="wh-77 rounded-3" alt="screenshorts">
+                                                <img src="/assets/images/screenshorts.jpg" class="wh-67 rounded-3" alt="screenshorts">
+                                                <img src="/assets/images/screenshorts.jpg" class="wh-57 rounded-3" alt="screenshorts">
+                                                <img src="/assets/images/screenshorts.jpg" class="wh-47 rounded-3" alt="screenshorts">
                                             </div>
                                         </div>
                                         <div class="tab-pane fade" id="code5-tab-pane" role="tabpanel" aria-labelledby="code5-tab" tabindex="0">
@@ -379,11 +379,11 @@
                                             </button>
 <pre class="line-numbers pt-0 pb-0 ps-25 pe-25 mb-0">
 <code class="language-markup" id="basicAlertsCode5">
-&lt;img src="assets/images/screenshorts.jpg" class="wh-87 rounded-3" alt="screenshorts"&gt;
-&lt;img src="assets/images/screenshorts.jpg" class="wh-77 rounded-3" alt="screenshorts"&gt;
-&lt;img src="assets/images/screenshorts.jpg" class="wh-67 rounded-3" alt="screenshorts"&gt;
-&lt;img src="assets/images/screenshorts.jpg" class="wh-57 rounded-3" alt="screenshorts"&gt;
-&lt;img src="assets/images/screenshorts.jpg" class="wh-47 rounded-3" alt="screenshorts"&gt;
+&lt;img src="/assets/images/screenshorts.jpg" class="wh-87 rounded-3" alt="screenshorts"&gt;
+&lt;img src="/assets/images/screenshorts.jpg" class="wh-77 rounded-3" alt="screenshorts"&gt;
+&lt;img src="/assets/images/screenshorts.jpg" class="wh-67 rounded-3" alt="screenshorts"&gt;
+&lt;img src="/assets/images/screenshorts.jpg" class="wh-57 rounded-3" alt="screenshorts"&gt;
+&lt;img src="/assets/images/screenshorts.jpg" class="wh-47 rounded-3" alt="screenshorts"&gt;
 </code>
 </pre>
                                         </div>

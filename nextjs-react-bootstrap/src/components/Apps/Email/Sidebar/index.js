@@ -1,11 +1,7 @@
 "use client";
 
-import React from "react";
+import { Card, Form } from "react-bootstrap";
 import Link from "next/link";
-import Card from "react-bootstrap/Card";
-import Form from "react-bootstrap/Form"; 
-import { MaterialSymbol } from "react-material-symbols";
-import "react-material-symbols/rounded";
 import { usePathname } from "next/navigation";
 
 const Sidebar = () => {
@@ -20,14 +16,14 @@ const Sidebar = () => {
               className="rounded-1"
               placeholder="Search"
             />
-            <MaterialSymbol
-              icon="search"
-              size={18}
-              className="position-absolute start-0 translate-middle-y"
+            <span
+              className="material-symbols-outlined fs-18 position-absolute start-0 translate-middle-y"
               style={{
-                top: '20px'
+                top: "20px",
               }}
-            />
+            >
+              search
+            </span>
           </Form>
 
           <Link
@@ -35,7 +31,7 @@ const Sidebar = () => {
             className="btn btn-primary fs-16 fw-medium text-center d-block py-2 mb-4"
           >
             <div className="d-flex align-items-center justify-content-center py-lg-1">
-              <MaterialSymbol icon="edit" size={18} className="me-2" />
+              <span className="material-symbols-outlined fs-18 me-2">edit</span>
               <span>Compose</span>
             </div>
           </Link>
@@ -48,11 +44,9 @@ const Sidebar = () => {
                   pathname === "/apps/email/inbox/" ? "active" : ""
                 }`}
               >
-                <MaterialSymbol
-                  icon="inbox"
-                  size={18}
-                  className="position-relative top-1 me-2"
-                />
+                <span className="material-symbols-outlined fs-18 position-relative top-1 me-2">
+                  inbox
+                </span>
                 <span className="fw-medium">Inbox</span>
               </Link>
               <span className="fs-13">10</span>
@@ -65,11 +59,9 @@ const Sidebar = () => {
                   pathname === "/apps/email/starred/" ? "active" : ""
                 }`}
               >
-                <MaterialSymbol
-                  icon="star_rate"
-                  size={18}
-                  className="position-relative top-1 me-2"
-                />
+                <span className="material-symbols-outlined fs-18 position-relative top-1 me-2">
+                  star_rate
+                </span>
                 <span className="fw-medium">Started</span>
               </Link>
             </li>
@@ -81,11 +73,9 @@ const Sidebar = () => {
                   pathname === "/apps/email/snoozed/" ? "active" : ""
                 }`}
               >
-                <MaterialSymbol
-                  icon="alarm"
-                  size={18}
-                  className="position-relative top-1 me-2"
-                />
+                <span className="material-symbols-outlined fs-18 position-relative top-1 me-2">
+                  alarm
+                </span>
                 <span className="fw-medium">Snoozed</span>
               </Link>
             </li>
@@ -97,11 +87,9 @@ const Sidebar = () => {
                   pathname === "/apps/email/sent-mail/" ? "active" : ""
                 }`}
               >
-                <MaterialSymbol
-                  icon="send"
-                  size={18}
-                  className="position-relative top-1 me-2"
-                />
+                <span className="material-symbols-outlined fs-18 position-relative top-1 me-2">
+                  send
+                </span>
                 <span className="fw-medium">Sent</span>
               </Link>
             </li>
@@ -113,11 +101,9 @@ const Sidebar = () => {
                   pathname === "/apps/email/draft/" ? "active" : ""
                 }`}
               >
-                <MaterialSymbol
-                  icon="draft"
-                  size={18}
-                  className="position-relative top-1 me-2"
-                />
+                <span className="material-symbols-outlined fs-18 position-relative top-1 me-2">
+                  draft
+                </span>
                 <span className="fw-medium">Drafts</span>
               </Link>
             </li>
@@ -129,11 +115,9 @@ const Sidebar = () => {
                   pathname === "/apps/email/important/" ? "active" : ""
                 }`}
               >
-                <MaterialSymbol
-                  icon="bookmark"
-                  size={18}
-                  className="position-relative top-1 me-2"
-                />
+                <span className="material-symbols-outlined fs-18 position-relative top-1 me-2">
+                  bookmark
+                </span>
                 <span className="fw-medium">Important</span>
               </Link>
             </li>
@@ -145,11 +129,9 @@ const Sidebar = () => {
                   pathname === "#" ? "active" : ""
                 }`}
               >
-                <MaterialSymbol
-                  icon="auto_read_pause"
-                  size={18}
-                  className="position-relative top-1 me-2"
-                />
+                <span className="material-symbols-outlined fs-18 position-relative top-1 me-2">
+                  auto_read_pause
+                </span>
                 <span className="fw-medium">Chats</span>
               </Link>
             </li>
@@ -161,11 +143,9 @@ const Sidebar = () => {
                   pathname === "#" ? "active" : ""
                 }`}
               >
-                <MaterialSymbol
-                  icon="schedule_send"
-                  size={18}
-                  className="position-relative top-1 me-2"
-                />
+                <span className="material-symbols-outlined fs-18 position-relative top-1 me-2">
+                  schedule_send
+                </span>
                 <span className="fw-medium">Scheduled</span>
               </Link>
             </li>
@@ -177,11 +157,9 @@ const Sidebar = () => {
                   pathname === "#" ? "active" : ""
                 }`}
               >
-                <MaterialSymbol
-                  icon="live_help"
-                  size={18}
-                  className="position-relative top-1 me-2"
-                />
+                <span className="material-symbols-outlined fs-18 position-relative top-1 me-2">
+                  live_help
+                </span>
                 <span className="fw-medium">Spam</span>
               </Link>
             </li>
@@ -193,11 +171,9 @@ const Sidebar = () => {
                   pathname === "#" ? "active" : ""
                 }`}
               >
-                <MaterialSymbol
-                  icon="delete"
-                  size={18}
-                  className="position-relative top-1 me-2"
-                />
+                <span className="material-symbols-outlined fs-18 position-relative top-1 me-2">
+                  delete
+                </span>
                 <span className="fw-medium">Trash</span>
               </Link>
             </li>
@@ -207,11 +183,9 @@ const Sidebar = () => {
                 href="#"
                 className="d-flex align-items-center text-decoration-none"
               >
-                <MaterialSymbol
-                  icon="account_circle"
-                  size={18}
-                  className="position-relative top-1 me-2"
-                />
+                <span className="material-symbols-outlined fs-18 position-relative top-1 me-2">
+                  account_circle
+                </span>
                 <span className="fw-medium">Personal</span>
               </Link>
             </li>
@@ -221,11 +195,9 @@ const Sidebar = () => {
                 href="#"
                 className="d-flex align-items-center text-decoration-none"
               >
-                <MaterialSymbol
-                  icon="trip"
-                  size={18}
-                  className="position-relative top-1 me-2"
-                />
+                <span className="material-symbols-outlined fs-18 position-relative top-1 me-2">
+                  trip
+                </span>
                 <span className="fw-medium">Company</span>
               </Link>
             </li>

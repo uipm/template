@@ -31,13 +31,20 @@ img {
     max-width: 100%;
     height: auto;
 }
-.label {
+.label, .form-label {
     font-size: 14px;
     font-weight: 500;
     margin-bottom: 10px;
 }
 .card {
     transition: $transition;
+}
+.btn-primary {
+    &:hover {
+        span {
+            color:  #fff !important;
+        }
+    }
 }
 .form-control {
 	background-color: $white; 
@@ -101,11 +108,11 @@ textarea {
 .month-select {
     width: 114px;
     height: 36px;
-    padding-top: 8px;
-    padding-bottom: 8px;
+    padding-top: 6px;
+    padding-bottom: 10px;
     background-image: url(/images/down2.svg);
     background-size: 10px 10px;
-    background-position: right 16px center;
+    background-position: right 8px center;
     font-size: 14px;
     &.w-145 {
         width: 145px;
@@ -120,6 +127,50 @@ textarea {
         width: 105px;
     }
 }
+.lcbmp-none {
+    &:last-child {
+        padding-bottom: 0 !important;
+        margin-bottom: 0 !important;
+        border-bottom: none !important;
+    }
+}
+.lcmb-none {
+    &:last-child {
+        border-bottom: 0 !important;
+        margin-bottom: 0 !important;
+    }
+}
+.tr-lcbp-none {
+    &:last-child {
+        td {
+            border-bottom: none;
+            padding-bottom: 0 !important;
+        }
+    }
+}
+.list-last-child {
+    li {
+        &:last-child {
+            padding-bottom: 0 !important;
+            margin-bottom: 0 !important;
+            border-bottom: none !important;
+        }
+    }
+}
+.l-lcbm {
+    li {
+        &:last-child {
+            margin-bottom: 0 !important;
+            border-bottom: none !important;
+        }
+    }
+}
+.hover-text-white {
+    &:hover {
+        color: #fff !important;
+    }
+}
+
 .py-38 {
     padding-top: 38px !important;
     padding-bottom: 38px !important;
@@ -135,7 +186,6 @@ textarea {
         left: 15px !important;
     }
 }
-
 .breadcrumb-page-list {
     .breadcrumb {
         margin: 0;
@@ -145,6 +195,10 @@ textarea {
             }
         }
     }
+}
+
+.bg-4936F5 {
+    background-color: #4936F5;
 }
 
 /* BG Image Area Style
@@ -322,12 +376,14 @@ Action Opt Style
         .dropdown-item {
             font-size: 14px;
             padding: 8px 12px;
+            display: flex;
+            align-items: center;
 
-            i, .material-symbols {
+            i, span {
                 font-size: 16px;
                 margin-right: 5px;
                 position: relative;
-                top: 2px;
+                top: 0;
             }
             &:hover {
                 background: rgba(92, 97, 242, 0.05);
@@ -580,17 +636,20 @@ Custom Transition Area Style
 /*
 Custom Font Size Area Style
 ======================================================*/
+.fs-10 {
+    font-size: 10px;
+}
 .fs-11 {
     font-size: 11px;
 }
 .fs-12 {
     font-size: 12px;
 }
-.fs-14 {
-    font-size: 14px;
-}
 .fs-13 {
     font-size: 13px;
+}
+.fs-14 {
+    font-size: 14px;
 }
 .fs-15 {
     font-size: 15px;
@@ -604,17 +663,38 @@ Custom Font Size Area Style
 .fs-18 {
     font-size: 18px;
 }
+.fs-19 {
+    font-size: 19px;
+}
 .fs-20 {
     font-size: 20px;
+}
+.fs-21 {
+    font-size: 21px;
 }
 .fs-22 {
     font-size: 22px;
 }
+.fs-23 {
+    font-size: 23px;
+}
 .fs-24 {
     font-size: 24px;
 }
+.fs-25 {
+    font-size: 25px;
+}
+.fs-26 {
+    font-size: 26px;
+}
+.fs-27 {
+    font-size: 27px;
+}
 .fs-28 {
     font-size: 28px;
+}
+.fs-29 {
+    font-size: 29px;
 }
 .fs-30 {
     font-size: 30px;
@@ -635,6 +715,9 @@ Custom Font Size Area Style
 /*
 Custom Padding & Margin Area Style
 ======================================================*/
+.mb-29 {
+    margin-bottom: 29px;
+}
 .mb-30 {
     margin-bottom: 30px;
 }
@@ -660,6 +743,9 @@ Custom Padding & Margin Area Style
 }
 .ms-m-10 {
     margin-left: -10px;
+}
+.ms-e-10 {
+    margin-right: -10px;
 }
 .p-20 {
     padding: 20px;
@@ -767,7 +853,7 @@ Custom Hover Area Style
     transition: $transition;
     &:hover {
         color: $primary !important;
-        i, .material-symbols {
+        i, span {
             color: $primary !important; 
         }
     }
@@ -776,7 +862,7 @@ Custom Hover Area Style
     transition: $transition;
     &:hover {
         color: $white !important;
-        i, .material-symbols {
+        i, span {
             color: $white !important; 
         }
     }
@@ -786,7 +872,7 @@ Custom Hover Area Style
     &:hover {
         background-color: $primary !important;
         color: $white !important;
-        i, .material-symbols {
+        i, span {
             color: $white !important; 
         }
     }
@@ -841,7 +927,7 @@ Custom Hover Area Style
                 &::before {
                     opacity: 1;
                 }
-                i, .material-symbols {
+                i, span {
                     color: $primary !important;
                 }
             }
@@ -925,11 +1011,11 @@ Custom Hover Area Style
     top: 5px;
 }
 button {
-    i, .material-symbols {
+    i, span {
         transition: $transition;
     }
     &:hover {
-        i, .material-symbols {
+        i, span {
             color: $primary;
         }
     }
@@ -972,13 +1058,13 @@ button {
     opacity: 1;
 }
 .rating {
-    i, .material-symbols {
+    i, span {
         transition: $transition;
         font-size: 20px;
         cursor: pointer;
     }
     &.active {
-        i, .material-symbols {
+        i, span {
             color: #f7d700;
         }
     }
@@ -1496,6 +1582,59 @@ Swiper Slider Style
     }
 }
 
+.cryptocurrency-slider {
+    .swiper-pagination {
+        bottom: 0;
+
+        .swiper-pagination-bullet {
+
+            &.swiper-pagination-bullet-active {
+                background-color: $primary;
+            }
+        }
+    }
+}
+.recent-property-slide {
+    .swiper-pagination {
+        position: initial;
+        line-height: 1;
+        margin-top: 10px;
+
+        .swiper-pagination-bullet {
+            &.swiper-pagination-bullet-active {
+                background-color: $primary;
+            }
+        }
+    }
+}
+
+.date-time-picker-demo {
+    .react-datetime-picker__wrapper {
+        border: 1px solid #eee;
+        border-radius: 10px;
+        padding: 4px 10px;
+        background: #f5f5f5; 
+
+        .react-datetime-picker__inputGroup {
+            font-size: 13px;
+        }
+        .react-datetime-picker__button {
+            padding: 0;
+            margin-left: 5px;
+
+            svg {
+                display: inherit;
+                width: 15px;
+            }
+        }
+    }
+    .react-calendar {
+        border: 1px solid $border-color;
+        padding: 10px;
+    }
+}
+
+
 [dir="rtl"] {
     .control-panel-modal {
         right: auto; 
@@ -1517,6 +1656,277 @@ Swiper Slider Style
         background-color: $primary;
     }
 }
+
+// custom-modal
+.custom-modal {
+    background-color: rgba(0, 0, 0, .2);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99999; 
+    transition: $transition;
+
+    .close-link {
+        cursor: pointer;
+        line-height: 1;
+    }
+    .custom-modal-content  {
+        width: 400px;
+        height: 100%;
+        background-color: $body-bg;
+        overflow-y: auto;
+    }
+    .custom-modal-header {
+        background-color: $body-bg;
+    }
+
+    &.right {
+        right: -100%;
+        left: auto;
+
+        &.show {
+            right: 0;
+            left: 0;
+        }
+        .custom-modal-content  {
+            margin-left: auto;
+        }
+    }
+    &.left {
+        left: -100%;
+        right: auto;
+
+        &.show {
+            right: 0;
+            left: 0;
+        } 
+    }
+    &.center {
+        transform: scale(0);
+        padding: 20px;
+        
+        &.show {
+            transform: scale(1);
+        }
+        .custom-modal-content  {
+            width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+    .close-outside {
+        position: absolute;
+        left: 0;
+        top: 0;
+        cursor: ne-resize;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+/* Marketing Dashboard CSS */
+.avatar-upload {
+    position: relative;
+    max-width: 135px;
+    .avatar-edit {
+        position: absolute;
+        right: -17px;
+        bottom: -17px;
+        z-index: 1;
+        input {
+            display: none;
+            + label {
+                display: inline-block;
+                width: 30px;
+                height: 30px;
+                line-height: 30px;
+                margin-bottom: 0;
+                border-radius: 100%;
+                background: #FFFFFF;
+                border: 1px solid transparent;
+                box-shadow: 0px 4px 34px 0px rgba(0, 0, 0, 0.15);
+                cursor: pointer;
+                font-weight: normal;
+                transition: $transition;
+                font-size: 20px;
+                &:after {
+                    content: "\ea13";
+                    font-family: remixicon !important;
+                    color: #757575;
+                    position: absolute;
+                    top: 0;
+                    left: 1px;
+                    right: 0;
+                    text-align: center;
+                    margin: auto;
+                }
+            }
+        }
+    }
+    .avatar-preview {
+        width: 135px;
+        height: 135px;
+        position: relative;
+        border-radius: 4px;
+        border: 6px solid #F8F8F8;
+        box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+        > div {
+            width: 100%;
+            height: 100%;
+            border-radius: 4px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    }
+}
+
+// dark
+.dark {
+    .avatar-upload {
+        .avatar-preview {
+            border: 6px solid #2f2f2f;
+        }
+    }
+}
+
+/* File Upload Area Style
+============================================*/
+.only-file-upload {
+    .form__file {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        cursor: pointer;
+        opacity: 0;
+    }
+    .form__files-container {
+        display: flex;
+        width: 100%;
+        padding: 5px 0;
+        justify-content: space-between;
+        align-items: center;
+        background-color: $border-color;
+        padding: 10px;
+        margin-top: 10px;
+        border-radius: 6px;
+    }
+    .form__text {
+        font-size: 14px;
+        color: $secondary;
+        max-width: 450px;
+        whitespace: no-wrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .form__icon {
+        font-size: 22px;
+        color: $primary;
+        text-decoration: none;
+        background-color: rgba(31, 100, 241, 0.1);
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+        text-align: center;
+        border-radius: 4px;
+        display: inline-block;
+        &:hover {
+            background-color: $primary;
+            color: $white;
+        }
+    }
+}
+
+/* Card Body Custom Padding Area Style
+============================================*/
+.custom-padding-30 {
+    padding: 30px;
+}
+.custom-shadow {
+    box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.05);
+}
+.upcoming-events-slide-two {
+    .swiper-pagination {
+        position: initial;
+        line-height: 1;
+        bottom: 0;
+
+        .swiper-pagination-bullet {
+            background-color: $primary;
+            border-radius: 50px;
+            transition: $transition;
+            height: 4px;
+            
+            &.swiper-pagination-bullet-active {
+                width: 24px;
+            }
+        }
+    }
+}
+.fw-800 {
+    font-weight: 800;
+}
+.fw-900 {
+    font-weight: 900;
+}
+.last-child-none {
+    .child {
+        &:last-child {
+            border-bottom: 0 !important;
+            padding-bottom: 0 !important;
+            margin-bottom: 0 !important;
+        }
+    }
+}
+.school-nb {
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 17.5px;
+    padding-bottom: 17.5px;
+
+    &:last-child { 
+        padding-bottom: 0;
+        border-bottom: none !important;
+    }
+}
+
+// call-center
+.bg-ecf0ff {
+    background-color: #ecf0ff;
+}
+.bg-faf5ff {
+    background-color: #faf5ff;
+}
+.bg-fff5ed {
+    background-color: #fff5ed;
+}
+.cco-tab-btn {
+    cursor: pointer;
+
+    img {
+        &.hidden {
+            display: none;
+        }
+    }
+ 
+    &.active {
+        img {
+            display: none;
+          
+            &.hidden {
+                display: block;
+            }
+        }
+        .text-body, .text-secondary, .text-black, .text-success, .text-danger-50 {
+            color: $white !important;
+        }
+    }
+}
+
 
 /* Max width 767px */
 @media only screen and (max-width : 767px) {
@@ -1546,8 +1956,21 @@ Swiper Slider Style
     .mw-123 {
         max-width: 43px;
     }
-    
+    .custom-padding-30 {
+        padding: 20px;
+    }
+    .custom-modal {
+        .custom-modal-content  {
+            width: 320px;
+        }
+        &.center {
+            .custom-modal-content  {
+                width: 320px; 
+            }
+        }
+    }
 }
+
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
 
@@ -1648,6 +2071,31 @@ Swiper Slider Style
         height: 100%;
     }
 
+}
+
+@media only screen and (min-width: 1600px) {
+    .employee-attendance-list {
+        li {
+            position: relative;
+
+            &::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: -50%;
+                transform: translateX(-50%);
+                width: 0.5px;
+                height: 100%;
+                background-color: $border-color;
+            }
+
+            &:first-child {
+                &::before {
+                    display: none;
+                }
+            }
+        }
+    }
 }
 
 @media only screen and (min-width : 1920px) {

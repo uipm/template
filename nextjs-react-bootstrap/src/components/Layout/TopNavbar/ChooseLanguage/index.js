@@ -1,9 +1,6 @@
 "use client";
 
-import React from 'react';
-import { MaterialSymbol } from "react-material-symbols";
-import "react-material-symbols/rounded";
-import Dropdown from 'react-bootstrap/Dropdown';
+import { Dropdown } from "react-bootstrap";
 import Image from "next/image";
 
 const ChooseLanguage = () => {
@@ -14,8 +11,10 @@ const ChooseLanguage = () => {
           variant="secondary" 
           id="dropdown-basic"
           className="border-0 p-0 position-relative"
-        >
-          <MaterialSymbol icon="translate" />
+        > 
+          <i className="material-symbols-outlined">
+            translate
+          </i>
         </Dropdown.Toggle>
 
         <Dropdown.Menu className="dropdown-menu dropdown-lg p-0 border-0 dropdown-menu-end">

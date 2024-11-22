@@ -1,10 +1,7 @@
 "use client";
 
-import "react-material-symbols/rounded";
-import Card from "react-bootstrap/Card";
-import { useState } from "react";
-import Alert from "react-bootstrap/Alert";
-import Button from "react-bootstrap/Button";
+import { Card, Button, Alert } from "react-bootstrap";
+import { useState } from "react"; 
 
 const AlertDismissible = () => {
   const [show, setShow] = useState(true);

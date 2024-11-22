@@ -1,7 +1,6 @@
 "use client";
 
-import React from "react";
-import Breadcrumb from "react-bootstrap/Breadcrumb";
+import { Breadcrumb } from "react-bootstrap";
 import SearchContent from "@/components/ExtraPages/SearchContent";
 
 export default function Page() {

@@ -143,21 +143,19 @@
                     }
                     &.dropdown-toggle {
                         padding-right: 16px !important;
-
                         &::after {
-                            top: 7px;
+                            content: "";
+                            position: absolute;
+                            background-image: url(../images/down.svg);
+                            background-position: center center;
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                            width: 20px;
+                            height: 20px;
+                            top: 3px;
+                            right: -4px;
                             margin: 0;
                             border: 0;
-                            right: 3px;
-                            content: "";
-                            width: .5em;
-                            height: .5em;
-                            position: absolute;
-                            transform: rotate(135deg);
-                            border: {
-                                right: 2px solid #818093;
-                                top: 2px solid #818093;
-                            };
                         }
                     }
                 }
@@ -261,10 +259,26 @@
         }
         .fullscreen-btn {
             position: relative;
+            &.active {
+                i {
+                    opacity: 0;
+                }
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 24px;
+                    height: 24px;
+                    background-image: url(../images/full-screen.png);
+                    background-position: center center;
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                }
+            }
         }
         .admin-profile {
             top: -3px;
-            
             h3 {
                 font-size: 14px;
                 font-weight: 600;
@@ -276,22 +290,20 @@
             }
             .dropdown-toggle {
                 padding-right: 16px !important;
-
                 &::after {
+                    content: "";
+                    position: absolute;
+                    background-image: url(../images/down.svg);
+                    background-position: center center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    width: 20px;
+                    height: 20px;
                     top: 50%;
+                    right: -4px;
                     margin: 0;
                     border: 0;
-                    right: 2px;
-                    content: "";
-                    width: .5em;
-                    height: .5em;
-                    margin-top: -2.2px;
-                    position: absolute;
-                    transform: translateY(-50%) rotate(135deg);
-                    border: {
-                        right: 2px solid #818093;
-                        top: 2px solid #818093;
-                    };
+                    transform: translateY(-50%);
                 }
             }
             .dropdown-menu {
@@ -330,6 +342,18 @@
                                 transition: $transition;
                             }
                             &:hover {
+                                background-color: transparent;
+                                &::before {
+                                    transform: scaleY(1);
+                                }
+                                span {
+                                    color: $primary;
+                                }
+                                i {
+                                    color: $primary;
+                                }
+                            }
+                            &.active {
                                 background-color: transparent;
                                 &::before {
                                     transform: scaleY(1);

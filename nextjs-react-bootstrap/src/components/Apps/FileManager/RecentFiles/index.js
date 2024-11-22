@@ -1,14 +1,8 @@
 "use client";
 
 import React, { useState } from "react";
+import { Card, Form, Table, Button, Offcanvas } from "react-bootstrap";
 import Pagination from "./Pagination";
-import Table from "react-bootstrap/Table";
-import Card from "react-bootstrap/Card";
-import { MaterialSymbol } from "react-material-symbols";
-import "react-material-symbols/rounded";
-import Offcanvas from "react-bootstrap/Offcanvas";
-import Button from "react-bootstrap/Button";
-import Form from "react-bootstrap/Form";
 
 const recentFilesData = [
   {
@@ -94,10 +88,11 @@ const recentFilesData = [
 ];
 
 const RecentFiles = () => {
-  const [show, setShow] = useState(false);
-
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
+  // Modal
+  const [isShowModal, setShowModal] = useState("false");
+  const handleToggleShowModal = () => {
+    setShowModal(!isShowModal);
+  };
 
   return (
     <>
@@ -110,7 +105,7 @@ const RecentFiles = () => {
               <div className="text-end">
                 <button
                   className="btn btn-outline-primary py-1 px-2 px-sm-4 fs-14 fw-medium rounded-3 hover-bg"
-                  onClick={handleShow}
+                  onClick={handleToggleShowModal}
                 >
                   <span className="py-sm-1 d-block">
                     <i className="ri-add-line"></i>
@@ -138,57 +133,49 @@ const RecentFiles = () => {
 
                 <tbody>
                   {recentFilesData &&
-                    recentFilesData.slice(0, 8).map((value, i) => (
+                    recentFilesData.slice(0, 8).map((defaultValue, i) => (
                       <tr key={i}>
                         <td className="text-body">
-                          <div className="d-flex align-items-center"> 
-                            <MaterialSymbol
-                              icon="folder"
-                              size={28}
-                              className="text-warning"
-                            />
+                          <div className="d-flex align-items-center">
+                            <span className="material-symbols-outlined fs-28 text-warning">
+                              folder
+                            </span>
                             <div className="ms-2">
-                              <h6 className="fw-medium fs-14 position-relative top-1 m-0">{value.fileName}</h6>
+                              <h6 className="fw-medium fs-14 position-relative top-1 m-0">
+                                {defaultValue.fileName}
+                              </h6>
                             </div>
                           </div>
                         </td>
 
-                        <td className="text-body">{value.owner}</td>
+                        <td className="text-body">{defaultValue.owner}</td>
 
-                        <td>{value.listedDate}</td>
+                        <td>{defaultValue.listedDate}</td>
 
-                        <td className="text-body">{value.fileType}</td>
+                        <td className="text-body">{defaultValue.fileType}</td>
 
-                        <td className="text-body">{value.fileSize}</td>
+                        <td className="text-body">{defaultValue.fileSize}</td>
 
-                        <td>
-                          {value.fileItems} 
-                        </td>
+                        <td>{defaultValue.fileItems}</td>
 
                         <td>
                           <div className="d-flex align-items-center gap-1">
                             <button className="ps-0 border-0 bg-transparent lh-1 position-relative top-2">
-                              <MaterialSymbol
-                                icon="visibility"
-                                size={16}
-                                className="text-primary"
-                              />
+                              <span className="material-symbols-outlined fs-16 text-primary">
+                                visibility
+                              </span>
                             </button>
 
                             <button className="ps-0 border-0 bg-transparent lh-1 position-relative top-2">
-                              <MaterialSymbol
-                                icon="edit"
-                                size={16}
-                                className="text-body"
-                              />
+                              <span className="material-symbols-outlined fs-16 text-body">
+                                edit
+                              </span>
                             </button>
 
                             <button className="ps-0 border-0 bg-transparent lh-1 position-relative top-2">
-                              <MaterialSymbol
-                                icon="delete"
-                                size={16}
-                                className="text-danger"
-                              />
+                              <span className="material-symbols-outlined fs-16 text-danger">
+                                delete
+                              </span>
                             </button>
                           </div>
                         </td>
@@ -204,95 +191,102 @@ const RecentFiles = () => {
         </Card.Body>
       </Card>
 
-      {/* Offcanvas */}
-      <Offcanvas show={show} onHide={handleClose} placement="end">
-        <Offcanvas.Header className="border-bottom p-4" closeButton>
-          <Offcanvas.Title className="fs-18 mb-0">Create New Files</Offcanvas.Title>
-        </Offcanvas.Header>
+      {/* Modal */}
+      <div className={`custom-modal right ${isShowModal ? "" : "show"}`}>
+        <div className="custom-modal-content position-relative z-3">
+          <div className="border-bottom py-3 px-4 d-flex align-items-center justify-content-between">
+            <h3 className="fs-18 mb-0">Create New Files</h3>
 
-        <Offcanvas.Body className="p-4">
-          <Form>
-            <Form.Group className="mb-4">
-              <Form.Label className="label">File Name</Form.Label>
-              <Form.Control
-                type="text"
-                className="text-dark"
-                placeholder="File Name"
-              />
-            </Form.Group>
+            <div className="close-link" onClick={handleToggleShowModal}>
+              <span className="material-symbols-outlined">close</span>
+            </div>
+          </div>
 
-            <Form.Group className="mb-4">
-              <Form.Label className="label">Owner</Form.Label>
-              <Form.Control
-                type="text"
-                className="text-dark"
-                placeholder="Owner"
-              />
-            </Form.Group>
+          <div className="p-4">
+            <Form>
+              <Form.Group className="mb-4">
+                <Form.Label className="label">File Name</Form.Label>
+                <Form.Control
+                  type="text"
+                  className="text-dark"
+                  placeholder="File Name"
+                />
+              </Form.Group>
 
-            <Form.Group className="mb-4">
-              <Form.Label className="label">Listed Date</Form.Label>
-              <Form.Control type="date" className="text-dark" />
-            </Form.Group>
+              <Form.Group className="mb-4">
+                <Form.Label className="label">Owner</Form.Label>
+                <Form.Control
+                  type="text"
+                  className="text-dark"
+                  placeholder="Owner"
+                />
+              </Form.Group>
 
-            <Form.Group className="mb-4">
-              <Form.Label className="label">File Type</Form.Label>
-              <Form.Select
-                className="form-control text-dark"
-                aria-label="Default select example"
-              >
-                <option>Select</option>
-                <option value="0">.pdf</option>
-                <option value="1">.zip</option>
-                <option value="1">.psd</option>
-                <option value="2">.file</option>
-              </Form.Select>
-            </Form.Group>
+              <Form.Group className="mb-4">
+                <Form.Label className="label">Listed Date</Form.Label>
+                <Form.Control type="date" className="text-dark" />
+              </Form.Group>
 
-            <Form.Group className="mb-4">
-              <Form.Label className="label">File Size</Form.Label>
-              <Form.Select
-                className="form-control text-dark"
-                aria-label="Default select example"
-              >
-                <option>Select</option>
-                <option value="0">1GP</option>
-                <option value="1">1.5GP</option>
-                <option value="2">2GP</option>
-                <option value="3">2.5GP</option>
-              </Form.Select>
-            </Form.Group>
- 
-            <Form.Group className="mb-4">
-              <Form.Label className="label">File Items</Form.Label>
-              <Form.Select
-                className="form-control text-dark"
-                aria-label="Default select example"
-              >
-                <option>Select</option>
-                <option value="0">10</option>
-                <option value="1">20</option>
-                <option value="2">30</option>
-                <option value="3">40</option>
-                <option value="4">50</option>
-              </Form.Select>
-            </Form.Group>
+              <Form.Group className="mb-4">
+                <Form.Label className="label">File Type</Form.Label>
+                <Form.Select
+                  className="form-control text-dark"
+                  aria-label="Default select example"
+                >
+                  <option>Select</option>
+                  <option defaultValue="0">.pdf</option>
+                  <option defaultValue="1">.zip</option>
+                  <option defaultValue="1">.psd</option>
+                  <option defaultValue="2">.file</option>
+                </Form.Select>
+              </Form.Group>
 
-            <Form.Group className="d-flex gap-3">
-              <Button
-                variant="primary"
-                type="submit"
-                className="text-white fw-semibold py-2 px-2 px-sm-3"
-              >
-                <span className="py-sm-1 d-block">
-                  <i className="ri-add-line text-white"></i>{" "}
-                  <span>Create New File</span>
-                </span>
-              </Button>
-            </Form.Group>
-          </Form>
-        </Offcanvas.Body>
-      </Offcanvas>
+              <Form.Group className="mb-4">
+                <Form.Label className="label">File Size</Form.Label>
+                <Form.Select
+                  className="form-control text-dark"
+                  aria-label="Default select example"
+                >
+                  <option>Select</option>
+                  <option defaultValue="0">1GP</option>
+                  <option defaultValue="1">1.5GP</option>
+                  <option defaultValue="2">2GP</option>
+                  <option defaultValue="3">2.5GP</option>
+                </Form.Select>
+              </Form.Group>
+
+              <Form.Group className="mb-4">
+                <Form.Label className="label">File Items</Form.Label>
+                <Form.Select
+                  className="form-control text-dark"
+                  aria-label="Default select example"
+                >
+                  <option>Select</option>
+                  <option defaultValue="0">10</option>
+                  <option defaultValue="1">20</option>
+                  <option defaultValue="2">30</option>
+                  <option defaultValue="3">40</option>
+                  <option defaultValue="4">50</option>
+                </Form.Select>
+              </Form.Group>
+
+              <Form.Group className="d-flex gap-3">
+                <Button
+                  variant="primary"
+                  type="submit"
+                  className="text-white fw-semibold py-2 px-2 px-sm-3"
+                >
+                  <span className="py-sm-1 d-block">
+                    <i className="ri-add-line text-white"></i>{" "}
+                    <span>Create New File</span>
+                  </span>
+                </Button>
+              </Form.Group>
+            </Form>
+          </div>
+        </div>
+        <div className="close-outside" onClick={handleToggleShowModal}></div>
+      </div>
     </>
   );
 };

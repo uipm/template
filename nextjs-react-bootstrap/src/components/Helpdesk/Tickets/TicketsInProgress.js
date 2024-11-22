@@ -1,9 +1,7 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import Card from "react-bootstrap/Card";
-import { MaterialSymbol } from "react-material-symbols";
-import "react-material-symbols/rounded";
+import { Card } from "react-bootstrap";
 
 const TicketsInProgress = () => {
   const [Chart, setChart] = useState();
@@ -16,8 +14,8 @@ const TicketsInProgress = () => {
   const series = [
     {
       name: "Tickets In Progress",
-      data: [30, 65, 50, 85, 65, 75, 60]
-    }
+      data: [30, 65, 50, 85, 65, 75, 60],
+    },
   ];
 
   const options = {
@@ -102,6 +100,7 @@ const TicketsInProgress = () => {
         colors: "#64748B",
       },
       markers: {
+        shape: "diamond",
         width: 9,
         height: 9,
         offsetX: -2,
@@ -139,11 +138,9 @@ const TicketsInProgress = () => {
 
           <div className="d-flex justify-content-between align-items-center">
             <span className="fs-12">This Month</span>
-            <MaterialSymbol
-              icon="trending_down"
-              size={24}
-              className="text-danger"
-            />
+            <span className="material-symbols-outlined fs-24 text-danger">
+              trending_down
+            </span>
           </div>
         </Card.Body>
       </Card>

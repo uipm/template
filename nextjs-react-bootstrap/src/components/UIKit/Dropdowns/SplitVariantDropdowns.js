@@ -1,9 +1,6 @@
 "use client";
 
-import React from "react";
-import Card from "react-bootstrap/Card";
-import Dropdown from "react-bootstrap/Dropdown";
-import SplitButton from "react-bootstrap/SplitButton";
+import { Dropdown, Card, SplitButton } from "react-bootstrap";
 
 const SplitVariantDropdowns = () => {
   return (

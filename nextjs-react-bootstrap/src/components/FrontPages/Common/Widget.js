@@ -1,9 +1,6 @@
 "use client";
 
-import React from "react"; 
 import Image from "next/image";
-import { MaterialSymbol } from "react-material-symbols";
-import "react-material-symbols/rounded";
 
 const Widget = () => {
   return (
@@ -33,7 +30,9 @@ const Widget = () => {
                   <li>
                     <div className="d-flex">
                       <div className="flex-shrink-0">
-                        <MaterialSymbol icon="done_outline" size={22} className="text-primary" />
+                        <i className="material-symbols-outlined text-primary fs-22">
+                          done_outline
+                        </i>
                       </div>
                       <div className="flex-grow-1 ms-3">
                         <h3>Tailored Display</h3>
@@ -48,7 +47,9 @@ const Widget = () => {
                   <li>
                     <div className="d-flex">
                       <div className="flex-shrink-0">
-                        <MaterialSymbol icon="done_outline" size={22} className="text-primary" />
+                        <i className="material-symbols-outlined text-primary fs-22">
+                          done_outline
+                        </i>
                       </div>
                       <div className="flex-grow-1 ms-3">
                         <h3>Personalized Insights</h3>
@@ -63,7 +64,9 @@ const Widget = () => {
                   <li>
                     <div className="d-flex">
                       <div className="flex-shrink-0">
-                        <MaterialSymbol icon="done_outline" size={22} className="text-primary" />
+                        <i className="material-symbols-outlined text-primary fs-22">
+                          done_outline
+                        </i>
                       </div>
                       <div className="flex-grow-1 ms-3">
                         <h3>Flexibility and Versatility</h3>
@@ -78,7 +81,9 @@ const Widget = () => {
                   <li>
                     <div className="d-flex">
                       <div className="flex-shrink-0">
-                        <MaterialSymbol icon="done_outline" size={22} className="text-primary" />
+                        <i className="material-symbols-outlined text-primary fs-22">
+                          done_outline
+                        </i>
                       </div>
                       <div className="flex-grow-1 ms-3">
                         <h3>Seamless Integration</h3>

@@ -1,10 +1,6 @@
 "use client";
 
-import React from 'react';
-import { MaterialSymbol } from "react-material-symbols";
-import "react-material-symbols/rounded";
-import Button from 'react-bootstrap/Button';
-import Form from 'react-bootstrap/Form';
+import { Form, Button } from "react-bootstrap";
 
 const SearchForm = () => {
   return (
@@ -18,8 +14,8 @@ const SearchForm = () => {
           variant="primary"
           type="submit"
           className="src-btn position-absolute top-50 end-0 translate-middle-y bg-transparent p-0 border-0"
-        >
-          <MaterialSymbol icon="search" />
+        > 
+          <i className="material-symbols-outlined">search</i>
         </Button>
       </Form>
     </>

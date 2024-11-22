@@ -1,6 +1,6 @@
 "use client";
 
-import Breadcrumb from 'react-bootstrap/Breadcrumb';
+import { Breadcrumb } from "react-bootstrap";
 import OrdersTable from '@/components/eCommerce/Orders/OrdersTable';
 
 export default function Page() {

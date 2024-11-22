@@ -101,22 +101,22 @@
                                                         <ul class="ps-0 mb-0 list-unstyled d-flex align-items-center">
                                                             <li>
                                                                 <a href="my-profile">
-                                                                    <img src="assets/images/user-16.jpg" class="wh-34 lh-34 rounded-circle border border-1 border-color-white" alt="user">
+                                                                    <img src="/assets/images/user-16.jpg" class="wh-34 lh-34 rounded-circle border border-1 border-color-white" alt="user">
                                                                 </a>
                                                             </li>
                                                             <li class="ms-m-15">
                                                                 <a href="my-profile">
-                                                                    <img src="assets/images/user-17.jpg" class="wh-34 lh-34 rounded-circle border border-1 border-color-white" alt="user">
+                                                                    <img src="/assets/images/user-17.jpg" class="wh-34 lh-34 rounded-circle border border-1 border-color-white" alt="user">
                                                                 </a>
                                                             </li>
                                                             <li class="ms-m-15">
                                                                 <a href="my-profile">
-                                                                    <img src="assets/images/user-18.jpg" class="wh-34 lh-34 rounded-circle border border-1 border-color-white" alt="user">
+                                                                    <img src="/assets/images/user-18.jpg" class="wh-34 lh-34 rounded-circle border border-1 border-color-white" alt="user">
                                                                 </a>
                                                             </li>
                                                             <li class="ms-m-15">
                                                                 <a href="my-profile">
-                                                                    <img src="assets/images/user-19.jpg" class="wh-34 lh-34 rounded-circle border border-1 border-color-white" alt="user">
+                                                                    <img src="/assets/images/user-19.jpg" class="wh-34 lh-34 rounded-circle border border-1 border-color-white" alt="user">
                                                                 </a>
                                                             </li>
                                                             <li class="ms-m-15">
@@ -321,22 +321,22 @@
                                                     <ul class="ps-0 mb-0 list-unstyled d-flex align-items-center">
                                                         <li>
                                                             <a href="my-profile">
-                                                                <img src="assets/images/user-16.jpg" class="wh-34 lh-34 rounded-circle border border-1 border-color-white" alt="user">
+                                                                <img src="/assets/images/user-16.jpg" class="wh-34 lh-34 rounded-circle border border-1 border-color-white" alt="user">
                                                             </a>
                                                         </li>
                                                         <li class="ms-m-15">
                                                             <a href="my-profile">
-                                                                <img src="assets/images/user-17.jpg" class="wh-34 lh-34 rounded-circle border border-1 border-color-white" alt="user">
+                                                                <img src="/assets/images/user-17.jpg" class="wh-34 lh-34 rounded-circle border border-1 border-color-white" alt="user">
                                                             </a>
                                                         </li>
                                                         <li class="ms-m-15">
                                                             <a href="my-profile">
-                                                                <img src="assets/images/user-18.jpg" class="wh-34 lh-34 rounded-circle border border-1 border-color-white" alt="user">
+                                                                <img src="/assets/images/user-18.jpg" class="wh-34 lh-34 rounded-circle border border-1 border-color-white" alt="user">
                                                             </a>
                                                         </li>
                                                         <li class="ms-m-15">
                                                             <a href="my-profile">
-                                                                <img src="assets/images/user-19.jpg" class="wh-34 lh-34 rounded-circle border border-1 border-color-white" alt="user">
+                                                                <img src="/assets/images/user-19.jpg" class="wh-34 lh-34 rounded-circle border border-1 border-color-white" alt="user">
                                                             </a>
                                                         </li>
                                                         <li class="ms-m-15">
@@ -374,17 +374,17 @@
                                                     <ul class="ps-0 mb-0 list-unstyled d-flex align-items-center">
                                                         <li>
                                                             <a href="my-profile">
-                                                                <img src="assets/images/user-16.jpg" class="wh-34 lh-34 rounded-circle border border-1 border-color-white" alt="user">
+                                                                <img src="/assets/images/user-16.jpg" class="wh-34 lh-34 rounded-circle border border-1 border-color-white" alt="user">
                                                             </a>
                                                         </li>
                                                         <li class="ms-m-15">
                                                             <a href="my-profile">
-                                                                <img src="assets/images/user-17.jpg" class="wh-34 lh-34 rounded-circle border border-1 border-color-white" alt="user">
+                                                                <img src="/assets/images/user-17.jpg" class="wh-34 lh-34 rounded-circle border border-1 border-color-white" alt="user">
                                                             </a>
                                                         </li>
                                                         <li class="ms-m-15">
                                                             <a href="my-profile">
-                                                                <img src="assets/images/user-18.jpg" class="wh-34 lh-34 rounded-circle border border-1 border-color-white" alt="user">
+                                                                <img src="/assets/images/user-18.jpg" class="wh-34 lh-34 rounded-circle border border-1 border-color-white" alt="user">
                                                             </a>
                                                         </li>
                                                         <li class="ms-m-15">
@@ -422,12 +422,12 @@
                                                     <ul class="ps-0 mb-0 list-unstyled d-flex align-items-center">
                                                         <li>
                                                             <a href="my-profile">
-                                                                <img src="assets/images/user-16.jpg" class="wh-34 lh-34 rounded-circle border border-1 border-color-white" alt="user">
+                                                                <img src="/assets/images/user-16.jpg" class="wh-34 lh-34 rounded-circle border border-1 border-color-white" alt="user">
                                                             </a>
                                                         </li>
                                                         <li class="ms-m-15">
                                                             <a href="my-profile">
-                                                                <img src="assets/images/user-17.jpg" class="wh-34 lh-34 rounded-circle border border-1 border-color-white" alt="user">
+                                                                <img src="/assets/images/user-17.jpg" class="wh-34 lh-34 rounded-circle border border-1 border-color-white" alt="user">
                                                             </a>
                                                         </li>
                                                         <li class="ms-m-15">
@@ -465,22 +465,22 @@
                                                     <ul class="ps-0 mb-0 list-unstyled d-flex align-items-center">
                                                         <li>
                                                             <a href="my-profile">
-                                                                <img src="assets/images/user-16.jpg" class="wh-34 lh-34 rounded-circle border border-1 border-color-white" alt="user">
+                                                                <img src="/assets/images/user-16.jpg" class="wh-34 lh-34 rounded-circle border border-1 border-color-white" alt="user">
                                                             </a>
                                                         </li>
                                                         <li class="ms-m-15">
                                                             <a href="my-profile">
-                                                                <img src="assets/images/user-17.jpg" class="wh-34 lh-34 rounded-circle border border-1 border-color-white" alt="user">
+                                                                <img src="/assets/images/user-17.jpg" class="wh-34 lh-34 rounded-circle border border-1 border-color-white" alt="user">
                                                             </a>
                                                         </li>
                                                         <li class="ms-m-15">
                                                             <a href="my-profile">
-                                                                <img src="assets/images/user-18.jpg" class="wh-34 lh-34 rounded-circle border border-1 border-color-white" alt="user">
+                                                                <img src="/assets/images/user-18.jpg" class="wh-34 lh-34 rounded-circle border border-1 border-color-white" alt="user">
                                                             </a>
                                                         </li>
                                                         <li class="ms-m-15">
                                                             <a href="my-profile">
-                                                                <img src="assets/images/user-19.jpg" class="wh-34 lh-34 rounded-circle border border-1 border-color-white" alt="user">
+                                                                <img src="/assets/images/user-19.jpg" class="wh-34 lh-34 rounded-circle border border-1 border-color-white" alt="user">
                                                             </a>
                                                         </li>
                                                         <li class="ms-m-15">
@@ -518,17 +518,17 @@
                                                     <ul class="ps-0 mb-0 list-unstyled d-flex align-items-center">
                                                         <li>
                                                             <a href="my-profile">
-                                                                <img src="assets/images/user-16.jpg" class="wh-34 lh-34 rounded-circle border border-1 border-color-white" alt="user">
+                                                                <img src="/assets/images/user-16.jpg" class="wh-34 lh-34 rounded-circle border border-1 border-color-white" alt="user">
                                                             </a>
                                                         </li>
                                                         <li class="ms-m-15">
                                                             <a href="my-profile">
-                                                                <img src="assets/images/user-17.jpg" class="wh-34 lh-34 rounded-circle border border-1 border-color-white" alt="user">
+                                                                <img src="/assets/images/user-17.jpg" class="wh-34 lh-34 rounded-circle border border-1 border-color-white" alt="user">
                                                             </a>
                                                         </li>
                                                         <li class="ms-m-15">
                                                             <a href="my-profile">
-                                                                <img src="assets/images/user-18.jpg" class="wh-34 lh-34 rounded-circle border border-1 border-color-white" alt="user">
+                                                                <img src="/assets/images/user-18.jpg" class="wh-34 lh-34 rounded-circle border border-1 border-color-white" alt="user">
                                                             </a>
                                                         </li>
                                                         <li class="ms-m-15">
@@ -679,7 +679,7 @@
                                                         <td class="border-0 py-3 pb-0">
                                                             <div class="d-flex align-items-center">
                                                                 <div class="flex-shrink-0">
-                                                                    <img src="assets/images/user-20.jpg" class="wh-44 rounded-circle" alt="user">
+                                                                    <img src="/assets/images/user-20.jpg" class="wh-44 rounded-circle" alt="user">
                                                                 </div>
                                                                 <div class="flex-grow-1 ms-2 position-relative top-2">
                                                                     <h6 class="mb-0 fs-14 fw-medium">Olivia Clark</h6>
@@ -699,7 +699,7 @@
                                                         <td class="border-0 py-3 pb-0">
                                                             <div class="d-flex align-items-center">
                                                                 <div class="flex-shrink-0">
-                                                                    <img src="assets/images/user-21.jpg" class="wh-44 rounded-circle" alt="user">
+                                                                    <img src="/assets/images/user-21.jpg" class="wh-44 rounded-circle" alt="user">
                                                                 </div>
                                                                 <div class="flex-grow-1 ms-2 position-relative top-2">
                                                                     <h6 class="mb-0 fs-14 fw-medium">Alexander Garcia</h6>
@@ -719,7 +719,7 @@
                                                         <td class="border-0 py-3 pb-0">
                                                             <div class="d-flex align-items-center">
                                                                 <div class="flex-shrink-0">
-                                                                    <img src="assets/images/user-22.jpg" class="wh-44 rounded-circle" alt="user">
+                                                                    <img src="/assets/images/user-22.jpg" class="wh-44 rounded-circle" alt="user">
                                                                 </div>
                                                                 <div class="flex-grow-1 ms-2 position-relative top-2">
                                                                     <h6 class="mb-0 fs-14 fw-medium">Chloe Lewis</h6>
@@ -739,7 +739,7 @@
                                                         <td class="border-0 py-3 pb-0">
                                                             <div class="d-flex align-items-center">
                                                                 <div class="flex-shrink-0">
-                                                                    <img src="assets/images/user-23.jpg" class="wh-44 rounded-circle" alt="user">
+                                                                    <img src="/assets/images/user-23.jpg" class="wh-44 rounded-circle" alt="user">
                                                                 </div>
                                                                 <div class="flex-grow-1 ms-2 position-relative top-2">
                                                                     <h6 class="mb-0 fs-14 fw-medium">Ava Turner</h6>
@@ -759,7 +759,7 @@
                                                         <td class="border-0 py-3 pb-0">
                                                             <div class="d-flex align-items-center">
                                                                 <div class="flex-shrink-0">
-                                                                    <img src="assets/images/user-24.jpg" class="wh-44 rounded-circle" alt="user">
+                                                                    <img src="/assets/images/user-24.jpg" class="wh-44 rounded-circle" alt="user">
                                                                 </div>
                                                                 <div class="flex-grow-1 ms-2 position-relative top-2">
                                                                     <h6 class="mb-0 fs-14 fw-medium">Ryan Flores</h6>

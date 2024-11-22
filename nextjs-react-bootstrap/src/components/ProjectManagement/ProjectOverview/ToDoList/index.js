@@ -1,14 +1,9 @@
 "use client";
 
 import React, { useState } from "react";
+import { Card, Form, Table, Button, Offcanvas } from "react-bootstrap";
 import SearchForm from "./SearchForm";
 import Pagination from "./Pagination";
-import Table from "react-bootstrap/Table";
-import { MaterialSymbol } from "react-material-symbols";
-import "react-material-symbols/rounded";
-import Offcanvas from "react-bootstrap/Offcanvas";
-import Button from 'react-bootstrap/Button';
-import Form from 'react-bootstrap/Form';
 
 const toDoListData = [
   {
@@ -54,15 +49,16 @@ const toDoListData = [
 ];
 
 const ToDoList = () => {
-  const [show, setShow] = useState(false);
-
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
+  // Modal
+  const [isShowModal, setShowModal] = useState("false");
+  const handleToggleShowModal = () => {
+    setShowModal(!isShowModal);
+  };
 
   return (
     <>
-      <div className="card bg-white border-0 rounded-3 mb-4">
-        <div className="card-body p-0">
+      <Card className="bg-white border-0 rounded-3 mb-4">
+        <Card.Body className="p-0">
           <div className="p-4">
             <div className="d-flex justify-content-between align-items-center flex-wrap gap-3">
               <h3 className="mb-0">To Do List</h3>
@@ -73,7 +69,7 @@ const ToDoList = () => {
                 <div className="text-end">
                   <button
                     className="btn btn-outline-primary py-1 px-2 px-sm-4 fs-14 fw-medium rounded-3 hover-bg"
-                    onClick={handleShow}
+                    onClick={handleToggleShowModal}
                   >
                     <span className="py-sm-1 d-block">
                       <i className="ri-add-line"></i>
@@ -95,9 +91,9 @@ const ToDoList = () => {
                         <Form.Check
                           type="checkbox"
                           id="default-checkbox"
-                          label="ID" 
+                          label="ID"
                         />
-                      </Form> 
+                      </Form>
                     </th>
                     <th scope="col">Task Title</th>
                     <th scope="col">Assigned To</th>
@@ -119,7 +115,7 @@ const ToDoList = () => {
                               id={value.id}
                               label={value.id}
                             />
-                          </Form> 
+                          </Form>
                         </td>
 
                         <td className="text-body">{value.taskTitle}</td>
@@ -141,27 +137,21 @@ const ToDoList = () => {
                         <td>
                           <div className="d-flex align-items-center gap-1">
                             <button className="ps-0 border-0 bg-transparent lh-1 position-relative top-2">
-                              <MaterialSymbol
-                                icon="visibility"
-                                size={16}
-                                className="text-primary"
-                              />
+                              <span className="material-symbols-outlined fs-16 text-primary">
+                                visibility
+                              </span>
                             </button>
 
                             <button className="ps-0 border-0 bg-transparent lh-1 position-relative top-2">
-                              <MaterialSymbol
-                                icon="edit"
-                                size={16}
-                                className="text-body"
-                              />
+                              <span className="material-symbols-outlined fs-16 text-body">
+                                edit
+                              </span>
                             </button>
 
                             <button className="ps-0 border-0 bg-transparent lh-1 position-relative top-2">
-                              <MaterialSymbol
-                                icon="delete"
-                                size={16}
-                                className="text-danger"
-                              />
+                              <span className="material-symbols-outlined fs-16 text-danger">
+                                delete
+                              </span>
                             </button>
                           </div>
                         </td>
@@ -174,98 +164,110 @@ const ToDoList = () => {
               <Pagination />
             </div>
           </div>
+        </Card.Body>
+      </Card>
+
+      {/* Modal */}
+      <div className={`custom-modal right ${isShowModal ? "" : "show"}`}>
+        <div className="custom-modal-content position-relative z-3">
+          <div className="border-bottom py-3 px-4 d-flex align-items-center justify-content-between">
+            <h3 className="fs-18 mb-0">Create Task</h3>
+
+            <div className="close-link" onClick={handleToggleShowModal}>
+              <span className="material-symbols-outlined">close</span>
+            </div>
+          </div>
+
+          <div className="p-4">
+            <Form>
+              <Form.Group className="mb-4">
+                <Form.Label className="label">Task ID</Form.Label>
+                <Form.Control
+                  type="text"
+                  className="text-dark"
+                  placeholder="Task ID"
+                />
+              </Form.Group>
+
+              <Form.Group className="mb-4">
+                <Form.Label className="label">Task Title</Form.Label>
+                <Form.Control
+                  type="text"
+                  className="text-dark"
+                  placeholder="Task Title"
+                />
+              </Form.Group>
+
+              <Form.Group className="mb-4">
+                <Form.Label className="label">Assigned To</Form.Label>
+                <Form.Control
+                  type="text"
+                  className="text-dark"
+                  placeholder="Assigned To"
+                />
+              </Form.Group>
+
+              <Form.Group className="mb-4">
+                <Form.Label className="label">Due Date</Form.Label>
+                <Form.Control type="date" className="text-dark" />
+              </Form.Group>
+
+              <Form.Group className="mb-4">
+                <Form.Label className="label">Priority</Form.Label>
+                <Form.Select
+                  className="form-control text-dark"
+                  aria-label="Default select example"
+                >
+                  <option>Select</option>
+                  <option value="0">High</option>
+                  <option value="1">Low</option>
+                  <option value="2">Medium</option>
+                </Form.Select>
+              </Form.Group>
+
+              <Form.Group className="mb-4">
+                <Form.Label className="label">Status</Form.Label>
+                <Form.Select
+                  className="form-control text-dark"
+                  aria-label="Default select example"
+                >
+                  <option>Select</option>
+                  <option value="0">Pending</option>
+                  <option value="1">In Progress</option>
+                  <option value="2">Cancelled</option>
+                </Form.Select>
+              </Form.Group>
+
+              <Form.Group className="mb-4">
+                <Form.Label className="label">Action</Form.Label>
+                <Form.Select
+                  className="form-control text-dark"
+                  aria-label="Default select example"
+                >
+                  <option>Select</option>
+                  <option value="0">Yes</option>
+                  <option value="1">No</option>
+                </Form.Select>
+              </Form.Group>
+
+              <Form.Group className="d-flex gap-3">
+                <Button
+                  variant="primary"
+                  type="submit"
+                  className="text-white fw-semibold py-2 px-2 px-sm-3"
+                >
+                  <span className="py-sm-1 d-block">
+                    <i className="ri-add-line text-white"></i>{" "}
+                    <span>Create Task</span>
+                  </span>
+                </Button>
+              </Form.Group>
+            </Form>
+          </div>
         </div>
+
+        <div className="close-outside" onClick={handleToggleShowModal}></div>
       </div>
-
-      {/* Offcanvas */}
-      <Offcanvas show={show} onHide={handleClose} placement="end">
-        <Offcanvas.Header className="border-bottom p-4" closeButton>
-          <Offcanvas.Title className="fs-18 mb-0">Create Task</Offcanvas.Title>
-        </Offcanvas.Header>
-
-        <Offcanvas.Body className="p-4">
-          <Form>
-            <Form.Group className="mb-4">
-              <Form.Label className="label">Task ID</Form.Label>
-              <Form.Control
-                type="text"
-                className="text-dark"
-                placeholder="Task ID"
-              />
-            </Form.Group>
-
-            <Form.Group className="mb-4">
-              <Form.Label className="label">Task Title</Form.Label>
-              <Form.Control
-                type="text"
-                className="text-dark"
-                placeholder="Task Title"
-              />
-            </Form.Group>
-
-            <Form.Group className="mb-4">
-              <Form.Label className="label">Assigned To</Form.Label>
-              <Form.Control
-                type="text"
-                className="text-dark"
-                placeholder="Assigned To"
-              />
-            </Form.Group>
-
-            <Form.Group className="mb-4">
-              <Form.Label className="label">Due Date</Form.Label>
-              <Form.Control type="date" className="text-dark" />
-            </Form.Group>
-
-            <Form.Group className="mb-4">
-              <Form.Label className="label">Priority</Form.Label>
-              <Form.Select
-                className="form-control text-dark"
-                aria-label="Default select example"
-              >
-                <option>Select</option>
-                <option value="0">High</option>
-                <option value="1">Low</option>
-                <option value="2">Medium</option>
-              </Form.Select>
-            </Form.Group>
-
-            <Form.Group className="mb-4">
-              <Form.Label className="label">Status</Form.Label>
-              <Form.Select
-                className="form-control text-dark"
-                aria-label="Default select example"
-              >
-                <option>Select</option>
-                <option value="0">Pending</option>
-                <option value="1">In Progress</option>
-                <option value="2">Cancelled</option>
-              </Form.Select>
-            </Form.Group>
-
-            <Form.Group className="mb-4">
-              <Form.Label className="label">Action</Form.Label>
-              <Form.Select
-                className="form-control text-dark"
-                aria-label="Default select example"
-              >
-                <option>Select</option>
-                <option value="0">Yes</option>
-                <option value="1">No</option>
-              </Form.Select>
-            </Form.Group>
-
-            <Form.Group className="d-flex gap-3">
-              <Button variant="primary" type="submit" className="text-white fw-semibold py-2 px-2 px-sm-3">
-                <span className="py-sm-1 d-block">
-                  <i className="ri-add-line text-white"></i> {' '}
-                  <span>Create Task</span>
-                </span>
-              </Button>
-            </Form.Group>
-          </Form>
-        </Offcanvas.Body>
-      </Offcanvas>
     </>
   );
 };

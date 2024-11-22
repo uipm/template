@@ -29,7 +29,7 @@
                                     <p>Ticket Solved</p>
                                     <a href="my-profile" class="btn btn-primary fw-medium">View Profile</a>
                                 </div>
-                                <img src="assets/images/congratulations.gif" class="congratulations wh-150 position-absolute" alt="congratulations">
+                                <img src="/assets/images/congratulations.gif" class="congratulations wh-150 position-absolute" alt="congratulations">
                             </div>
 
                             <div class="row justify-content-center">
@@ -159,7 +159,7 @@
                                         <div class="card-body p-4">
                                             <div class="d-flex justify-content-between align-items-center flex-wrap gap-3 mb-3 mb-lg-4">
                                                 <h3 class="mb-0 text-white">Customer Satisfaction</h3>
-                                                <select class="form-select month-selecet form-control p-0 h-auto border-0 w-90 text-white bg-transparent" style="background-position: right 0 center; background-image: url(assets/images/down-white.svg);" aria-label="Default select example">
+                                                <select class="form-select month-selecet form-control p-0 h-auto border-0 w-90 text-white bg-transparent" style="background-position: right 0 center; background-image: url(/assets/images/down-white.svg);" aria-label="Default select example">
                                                     <option class="text-secondary" selected>Last Month</option>
                                                     <option class="text-secondary" value="1">Last Year</option>
                                                 </select>
@@ -167,7 +167,7 @@
 
                                             <div class="d-flex justify-content-between align-items-center">
                                                 <div id="customer_satisfaction" style="margin-bottom: -16px;"></div>
-                                                <img src="assets/images/satisfaction.png" alt="satisfaction">
+                                                <img src="/assets/images/satisfaction.png" alt="satisfaction">
                                             </div>
                                         </div>
                                     </div>
@@ -233,7 +233,7 @@
                                                 <td>
                                                     <a href="agents" class="d-flex align-items-center">
                                                         <div class="flex-shrink-0">
-                                                            <img src="assets/images/user-42.jpg" class="wh-34 rounded-circle" alt="user">
+                                                            <img src="/assets/images/user-42.jpg" class="wh-34 rounded-circle" alt="user">
                                                         </div>
                                                         <div class="flex-grow-1 ms-2 position-relative top-1">
                                                             <h6 class="mb-0 fs-14 fw-medium">Oliver Khan</h6>
@@ -266,7 +266,7 @@
                                                 <td>
                                                     <a href="agents" class="d-flex align-items-center">
                                                         <div class="flex-shrink-0">
-                                                            <img src="assets/images/user-43.jpg" class="wh-34 rounded-circle" alt="user">
+                                                            <img src="/assets/images/user-43.jpg" class="wh-34 rounded-circle" alt="user">
                                                         </div>
                                                         <div class="flex-grow-1 ms-2 position-relative top-1">
                                                             <h6 class="mb-0 fs-14 fw-medium">Ava Cooper</h6>
@@ -299,7 +299,7 @@
                                                 <td>
                                                     <a href="agents" class="d-flex align-items-center">
                                                         <div class="flex-shrink-0">
-                                                            <img src="assets/images/user-44.jpg" class="wh-34 rounded-circle" alt="user">
+                                                            <img src="/assets/images/user-44.jpg" class="wh-34 rounded-circle" alt="user">
                                                         </div>
                                                         <div class="flex-grow-1 ms-2 position-relative top-1">
                                                             <h6 class="mb-0 fs-14 fw-medium">Isabella Evans</h6>
@@ -332,7 +332,7 @@
                                                 <td>
                                                     <a href="agents" class="d-flex align-items-center">
                                                         <div class="flex-shrink-0">
-                                                            <img src="assets/images/user-45.jpg" class="wh-34 rounded-circle" alt="user">
+                                                            <img src="/assets/images/user-45.jpg" class="wh-34 rounded-circle" alt="user">
                                                         </div>
                                                         <div class="flex-grow-1 ms-2 position-relative top-1">
                                                             <h6 class="mb-0 fs-14 fw-medium">Mia Hughes</h6>
@@ -365,7 +365,7 @@
                                                 <td>
                                                     <a href="agents" class="d-flex align-items-center">
                                                         <div class="flex-shrink-0">
-                                                            <img src="assets/images/user-46.jpg" class="wh-34 rounded-circle" alt="user">
+                                                            <img src="/assets/images/user-46.jpg" class="wh-34 rounded-circle" alt="user">
                                                         </div>
                                                         <div class="flex-grow-1 ms-2 position-relative top-1">
                                                             <h6 class="mb-0 fs-14 fw-medium">Noah Mitchell</h6>
@@ -398,7 +398,7 @@
                                                 <td>
                                                     <a href="agents" class="d-flex align-items-center">
                                                         <div class="flex-shrink-0">
-                                                            <img src="assets/images/user-47.jpg" class="wh-34 rounded-circle" alt="user">
+                                                            <img src="/assets/images/user-47.jpg" class="wh-34 rounded-circle" alt="user">
                                                         </div>
                                                         <div class="flex-grow-1 ms-2 position-relative top-1">
                                                             <h6 class="mb-0 fs-14 fw-medium">Sophia Carter</h6>
@@ -473,7 +473,7 @@
                                     </div>
 
                                     <div style="margin-bottom: -15px; margin-left: -10px; margin-top: -5px;">
-                                        <div id="new_tickets_vs_solved_sickets"></div>
+                                        <div id="new_tickets_vs_solved_tickets"></div>
                                     </div>
                                 </div>
                             </div>
@@ -551,7 +551,7 @@
                                                         <td>
                                                             <a href="instructors" class="d-flex align-items-center">
                                                                 <div class="flex-shrink-0">
-                                                                    <img src="assets/images/user-25.jpg" class="wh-44 rounded-circle" alt="user">
+                                                                    <img src="/assets/images/user-25.jpg" class="wh-44 rounded-circle" alt="user">
                                                                 </div>
                                                                 <div class="flex-grow-1 ms-2 position-relative top-2">
                                                                     <h6 class="mb-0 fs-14 fw-medium">Olivia Clark</h6>
@@ -584,7 +584,7 @@
                                                         <td>
                                                             <a href="instructors" class="d-flex align-items-center">
                                                                 <div class="flex-shrink-0">
-                                                                    <img src="assets/images/user-26.jpg" class="wh-44 rounded-circle" alt="user">
+                                                                    <img src="/assets/images/user-26.jpg" class="wh-44 rounded-circle" alt="user">
                                                                 </div>
                                                                 <div class="flex-grow-1 ms-2 position-relative top-2">
                                                                     <h6 class="mb-0 fs-14 fw-medium">Ethan Parker</h6>
@@ -617,7 +617,7 @@
                                                         <td>
                                                             <a href="instructors" class="d-flex align-items-center">
                                                                 <div class="flex-shrink-0">
-                                                                    <img src="assets/images/user-27.jpg" class="wh-44 rounded-circle" alt="user">
+                                                                    <img src="/assets/images/user-27.jpg" class="wh-44 rounded-circle" alt="user">
                                                                 </div>
                                                                 <div class="flex-grow-1 ms-2 position-relative top-2">
                                                                     <h6 class="mb-0 fs-14 fw-medium">Ava Turner</h6>
@@ -650,7 +650,7 @@
                                                         <td>
                                                             <a href="instructors" class="d-flex align-items-center">
                                                                 <div class="flex-shrink-0">
-                                                                    <img src="assets/images/user-28.jpg" class="wh-44 rounded-circle" alt="user">
+                                                                    <img src="/assets/images/user-28.jpg" class="wh-44 rounded-circle" alt="user">
                                                                 </div>
                                                                 <div class="flex-grow-1 ms-2 position-relative top-2">
                                                                     <h6 class="mb-0 fs-14 fw-medium">Lucas Morgan</h6>
@@ -683,7 +683,7 @@
                                                         <td>
                                                             <a href="instructors" class="d-flex align-items-center">
                                                                 <div class="flex-shrink-0">
-                                                                    <img src="assets/images/user-29.jpg" class="wh-44 rounded-circle" alt="user">
+                                                                    <img src="/assets/images/user-29.jpg" class="wh-44 rounded-circle" alt="user">
                                                                 </div>
                                                                 <div class="flex-grow-1 ms-2 position-relative top-2">
                                                                     <h6 class="mb-0 fs-14 fw-medium">Isabella Cooper</h6>

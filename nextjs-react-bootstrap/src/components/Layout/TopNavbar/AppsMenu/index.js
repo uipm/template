@@ -1,10 +1,7 @@
 "use client";
 
-import React from 'react';
+import { Dropdown} from "react-bootstrap";
 import Image from "next/image";
-import { MaterialSymbol } from "react-material-symbols";
-import "react-material-symbols/rounded";
-import Dropdown from 'react-bootstrap/Dropdown';
 
 const AppsMenu = () => {
   return (
@@ -14,8 +11,10 @@ const AppsMenu = () => {
           variant="secondary" 
           id="dropdown-basic"
           className="border-0 p-0 position-relative"
-        >
-          <MaterialSymbol icon="apps" />
+        > 
+          <i className="material-symbols-outlined">
+            apps
+          </i>
         </Dropdown.Toggle>
 
         <Dropdown.Menu

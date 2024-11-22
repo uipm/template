@@ -1,9 +1,7 @@
 "use client";
 
-import React from "react";
+import { Card, ProgressBar } from "react-bootstrap";
 import Image from "next/image";
-import Card from "react-bootstrap/Card";
-import ProgressBar from 'react-bootstrap/ProgressBar';
 import ReviewsForm from "./ReviewsForm";
 
 const Reviews = () => {
@@ -21,8 +19,8 @@ const Reviews = () => {
 
           <div className="row justify-content-center">
             <div className="col-xl-4 col-sm-6 col-md-6">
-              <div className="card bg-body-bg border-0 rounded-3 mb-4">
-                <div className="card-body p-4">
+              <Card className="bg-body-bg border-0 rounded-3 mb-4">
+                <Card.Body className="p-4">
                   <ul className="ps-0 mb-2 list-unstyled d-flex gap-2">
                     <li>
                       <i className="ri-star-fill text-warning fs-20"></i>
@@ -59,13 +57,13 @@ const Reviews = () => {
                       <h4 className="mb-0 fs-16 fw-medium">Alvarado Turner</h4>
                     </div>
                   </div>
-                </div>
-              </div>
+                </Card.Body>
+              </Card>
             </div>
 
             <div className="col-xl-4 col-sm-6 col-md-6">
-              <div className="card bg-body-bg border-0 rounded-3 mb-4">
-                <div className="card-body p-4">
+              <Card className="bg-body-bg border-0 rounded-3 mb-4">
+                <Card.Body className="p-4">
                   <ul className="ps-0 mb-2 list-unstyled d-flex gap-2">
                     <li>
                       <i className="ri-star-fill text-warning fs-20"></i>
@@ -102,13 +100,13 @@ const Reviews = () => {
                       <h4 className="mb-0 fs-16 fw-medium">Eddie Bryan</h4>
                     </div>
                   </div>
-                </div>
-              </div>
+                </Card.Body>
+              </Card>
             </div>
 
             <div className="col-xl-4 col-sm-6 col-md-6">
-              <div className="card bg-body-bg border-0 rounded-3 mb-4">
-                <div className="card-body p-4">
+              <Card className="bg-body-bg border-0 rounded-3 mb-4">
+                <Card.Body className="p-4">
                   <ul className="ps-0 mb-2 list-unstyled d-flex gap-2">
                     <li>
                       <i className="ri-star-fill text-warning fs-20"></i>
@@ -145,15 +143,15 @@ const Reviews = () => {
                       <h4 className="mb-0 fs-16 fw-medium">Thomas Albart</h4>
                     </div>
                   </div>
-                </div>
-              </div>
+                </Card.Body>
+              </Card>
             </div>
           </div>
 
           <h3 className="fs-18 fw-semibold mb-4">Customers Feedback :</h3>
 
-          <div className="card bg-body-bg border-0 rounded-3 mb-4">
-            <div className="card-body p-4">
+          <Card className="bg-body-bg border-0 rounded-3 mb-4">
+            <Card.Body className="p-4">
               <div className="row align-items-center">
                 <div className="col-lg-8">
                     
@@ -337,8 +335,8 @@ const Reviews = () => {
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
+            </Card.Body>
+          </Card>
 
           <ReviewsForm />
         </Card.Body>

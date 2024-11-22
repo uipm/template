@@ -1,12 +1,6 @@
 "use client";
 
-import React from "react";
-import Link from "next/link";
-import Card from "react-bootstrap/Card";
-import Form from "react-bootstrap/Form";
-import Table from "react-bootstrap/Table";
-import { MaterialSymbol } from "react-material-symbols";
-import "react-material-symbols/rounded";
+import { Card, Form, Table } from "react-bootstrap";
 
 const myTasksData = [
   {
@@ -59,9 +53,9 @@ const MyTasks = () => {
                 className="month-select form-control p-0 h-auto border-0"
                 aria-label="Default select example"
               >
-                <option value="0">All Tasks</option>
-                <option value="1">This Month</option>
-                <option value="2">This Year</option>
+                <option defaultValue="0">All Tasks</option>
+                <option defaultValue="1">This Month</option>
+                <option defaultValue="2">This Year</option>
               </Form.Select>
             </div>
           </div>
@@ -78,7 +72,7 @@ const MyTasks = () => {
                           id="default-checkbox"
                           label="Project Name"
                         />
-                      </Form> 
+                      </Form>
                     </th>
                     <th scope="col">Deadline</th>
                     <th scope="col">Status</th>
@@ -113,7 +107,7 @@ const MyTasks = () => {
                     ))}
                 </tbody>
               </Table>
-            </div> 
+            </div>
           </div>
         </Card.Body>
       </Card>

@@ -1,12 +1,8 @@
 "use client";
 
-import React from "react";
+import { Row, Col, Card } from "react-bootstrap";
 import Link from "next/link";
 import Image from "next/image";
-import { MaterialSymbol } from "react-material-symbols";
-import "react-material-symbols/rounded";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
 
 const ProductsGrid = () => {
   return (
@@ -29,11 +25,9 @@ const ProductsGrid = () => {
                 type="button"
                 className="bg-body-bg bg-for-dark-mode pt-2 ps-2 position-absolute bottom-0 end-0 rounded-3 rounded-bottom-0 rounded-end-0 border-0"
               >
-                <MaterialSymbol
-                  icon="shopping_cart"
-                  size={24}
-                  className="wh-60 lh-60 bg-primary hover-bg d-inline-block text-white text-center rounded-3"
-                />
+                <span className="material-symbols-outlined fs-24 wh-60 lh-60 bg-primary hover-bg d-inline-block text-white text-center rounded-3">
+                  shopping_cart
+                </span>
               </button>
             </div>
 
@@ -75,11 +69,9 @@ const ProductsGrid = () => {
                 type="button"
                 className="bg-body-bg bg-for-dark-mode pt-2 ps-2 position-absolute bottom-0 end-0 rounded-3 rounded-bottom-0 rounded-end-0 border-0"
               >
-                <MaterialSymbol
-                  icon="shopping_cart"
-                  size={24}
-                  className="wh-60 lh-60 bg-primary hover-bg d-inline-block text-white text-center rounded-3"
-                />
+                <span className="material-symbols-outlined fs-24 wh-60 lh-60 bg-primary hover-bg d-inline-block text-white text-center rounded-3">
+                  shopping_cart
+                </span>
               </button>
             </div>
             <Link
@@ -120,11 +112,9 @@ const ProductsGrid = () => {
                 type="button"
                 className="bg-body-bg bg-for-dark-mode pt-2 ps-2 position-absolute bottom-0 end-0 rounded-3 rounded-bottom-0 rounded-end-0 border-0"
               >
-                <MaterialSymbol
-                  icon="shopping_cart"
-                  size={24}
-                  className="wh-60 lh-60 bg-primary hover-bg d-inline-block text-white text-center rounded-3"
-                />
+                <span className="material-symbols-outlined fs-24 wh-60 lh-60 bg-primary hover-bg d-inline-block text-white text-center rounded-3">
+                  shopping_cart
+                </span>
               </button>
             </div>
             <Link
@@ -165,11 +155,9 @@ const ProductsGrid = () => {
                 type="button"
                 className="bg-body-bg bg-for-dark-mode pt-2 ps-2 position-absolute bottom-0 end-0 rounded-3 rounded-bottom-0 rounded-end-0 border-0"
               >
-                <MaterialSymbol
-                  icon="shopping_cart"
-                  size={24}
-                  className="wh-60 lh-60 bg-primary hover-bg d-inline-block text-white text-center rounded-3"
-                />
+                <span className="material-symbols-outlined fs-24 wh-60 lh-60 bg-primary hover-bg d-inline-block text-white text-center rounded-3">
+                  shopping_cart
+                </span>
               </button>
             </div>
             <Link
@@ -210,11 +198,9 @@ const ProductsGrid = () => {
                 type="button"
                 className="bg-body-bg bg-for-dark-mode pt-2 ps-2 position-absolute bottom-0 end-0 rounded-3 rounded-bottom-0 rounded-end-0 border-0"
               >
-                <MaterialSymbol
-                  icon="shopping_cart"
-                  size={24}
-                  className="wh-60 lh-60 bg-primary hover-bg d-inline-block text-white text-center rounded-3"
-                />
+                <span className="material-symbols-outlined fs-24 wh-60 lh-60 bg-primary hover-bg d-inline-block text-white text-center rounded-3">
+                  shopping_cart
+                </span>
               </button>
             </div>
             <Link
@@ -255,11 +241,9 @@ const ProductsGrid = () => {
                 type="button"
                 className="bg-body-bg bg-for-dark-mode pt-2 ps-2 position-absolute bottom-0 end-0 rounded-3 rounded-bottom-0 rounded-end-0 border-0"
               >
-                <MaterialSymbol
-                  icon="shopping_cart"
-                  size={24}
-                  className="wh-60 lh-60 bg-primary hover-bg d-inline-block text-white text-center rounded-3"
-                />
+                <span className="material-symbols-outlined fs-24 wh-60 lh-60 bg-primary hover-bg d-inline-block text-white text-center rounded-3">
+                  shopping_cart
+                </span>
               </button>
             </div>
             <Link
@@ -300,11 +284,9 @@ const ProductsGrid = () => {
                 type="button"
                 className="bg-body-bg bg-for-dark-mode pt-2 ps-2 position-absolute bottom-0 end-0 rounded-3 rounded-bottom-0 rounded-end-0 border-0"
               >
-                <MaterialSymbol
-                  icon="shopping_cart"
-                  size={24}
-                  className="wh-60 lh-60 bg-primary hover-bg d-inline-block text-white text-center rounded-3"
-                />
+                <span className="material-symbols-outlined fs-24 wh-60 lh-60 bg-primary hover-bg d-inline-block text-white text-center rounded-3">
+                  shopping_cart
+                </span>
               </button>
             </div>
             <Link
@@ -345,11 +327,9 @@ const ProductsGrid = () => {
                 type="button"
                 className="bg-body-bg bg-for-dark-mode pt-2 ps-2 position-absolute bottom-0 end-0 rounded-3 rounded-bottom-0 rounded-end-0 border-0"
               >
-                <MaterialSymbol
-                  icon="shopping_cart"
-                  size={24}
-                  className="wh-60 lh-60 bg-primary hover-bg d-inline-block text-white text-center rounded-3"
-                />
+                <span className="material-symbols-outlined fs-24 wh-60 lh-60 bg-primary hover-bg d-inline-block text-white text-center rounded-3">
+                  shopping_cart
+                </span>
               </button>
             </div>
             <Link
@@ -390,11 +370,9 @@ const ProductsGrid = () => {
                 type="button"
                 className="bg-body-bg bg-for-dark-mode pt-2 ps-2 position-absolute bottom-0 end-0 rounded-3 rounded-bottom-0 rounded-end-0 border-0"
               >
-                <MaterialSymbol
-                  icon="shopping_cart"
-                  size={24}
-                  className="wh-60 lh-60 bg-primary hover-bg d-inline-block text-white text-center rounded-3"
-                />
+                <span className="material-symbols-outlined fs-24 wh-60 lh-60 bg-primary hover-bg d-inline-block text-white text-center rounded-3">
+                  shopping_cart
+                </span>
               </button>
             </div>
             <Link
@@ -420,8 +398,8 @@ const ProductsGrid = () => {
         </Col>
 
         <Col sm={12} lg={12}>
-          <div className="card bg-white border-0 rounded-3 mb-4">
-            <div className="card-body p-4">
+          <Card className="bg-white border-0 rounded-3 mb-4">
+            <Card.Body className="p-4">
               <div className="d-flex justify-content-center justify-content-sm-between align-items-center text-center flex-wrap gap-2 showing-wrap">
                 <span className="fs-12 fw-medium">
                   Showing 09 of 30 Results
@@ -435,7 +413,9 @@ const ProductsGrid = () => {
                         href="#"
                         aria-label="Previous"
                       >
-                        <MaterialSymbol icon="keyboard_arrow_left" size={24} />
+                        <span className="material-symbols-outlined fs-24">
+                          keyboard_arrow_left
+                        </span>
                       </Link>
                     </li>
                     <li className="page-item">
@@ -464,14 +444,16 @@ const ProductsGrid = () => {
                         href="#"
                         aria-label="Next"
                       >
-                        <MaterialSymbol icon="keyboard_arrow_right" size={24} />
+                        <span className="material-symbols-outlined fs-24">
+                          keyboard_arrow_right
+                        </span>
                       </Link>
                     </li>
                   </ul>
                 </nav>
               </div>
-            </div>
-          </div>
+            </Card.Body>
+          </Card>
         </Col>
       </Row>
     </>

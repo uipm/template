@@ -1,5 +1,4 @@
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
+import { Row, Col } from "react-bootstrap";
 import Welcome from "@/components/Dashboard/LMS/Welcome";
 import TotalCourses from "@/components/Dashboard/LMS/TotalCourses";
 import TotalEnrolled from "@/components/Dashboard/LMS/TotalEnrolled";

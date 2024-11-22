@@ -180,7 +180,7 @@ const rows = [
     "#854",
     "/images/users/user6.jpg",
     "Oliver Khan",
-    "oliver@pro.io.vn",
+    "oliver@trezo.com",
     "Project Manager",
     "Hotel Management System, Python Upgrade",
     "active"
@@ -189,7 +189,7 @@ const rows = [
     "#853",
     "/images/users/user7.jpg",
     "Carolyn Barnes",
-    "carolyn@pro.io.vn",
+    "carolyn@trezo.com",
     "Developer",
     "Project Monitoring, Project Alpho",
     "active"
@@ -198,7 +198,7 @@ const rows = [
     "#852",
     "/images/users/user8.jpg",
     "Donna Miller",
-    "donna@pro.io.vn",
+    "donna@trezo.com",
     "Business Analyst",
     "Aegis Accounting Service, Beja Banking Finance",
     "deactive"
@@ -207,7 +207,7 @@ const rows = [
     "#851",
     "/images/users/user9.jpg",
     "Barbara Cros",
-    "barbara@pro.io.vn",
+    "barbara@trezo.com",
     "UI/UX Designer",
     "Aoriv AI Design, Vaxo App Design",
     "active"
@@ -216,16 +216,16 @@ const rows = [
     "#850",
     "/images/users/user10.jpg",
     "Rebecca Block",
-    "Rebecca@pro.io.vn",
+    "Rebecca@trezo.com",
     "QA Tester",
-    "Product Development, pro.io Dashboard Design",
+    "Product Development, Trezo Dashboard Design",
     "deactive"
   ),
   createData(
     "#849",
     "/images/users/user11.jpg",
     "Ramiro McCarty",
-    "ramiro@pro.io.vn",
+    "ramiro@trezo.com",
     "Admin",
     "Hotel Management System, Python Upgrad",
     "active"
@@ -234,7 +234,7 @@ const rows = [
     "#848",
     "/images/users/user12.jpg",
     "Robert Fairweather",
-    "robert@pro.io.vn",
+    "robert@trezo.com",
     "Editor",
     "Project Monitoring, Project Alph",
     "active"
@@ -243,7 +243,7 @@ const rows = [
     "#847",
     "/images/users/user13.jpg",
     "Marcelino Haddock",
-    "marcelino@pro.io.vn",
+    "marcelino@trezo.com",
     "Project Manager",
     "Aegis Accounting Service, Beja Banking Finance",
     "active"
@@ -252,7 +252,7 @@ const rows = [
     "#846",
     "/images/users/user14.jpg",
     "Thomas Wilson",
-    "thomas@pro.io.vn",
+    "thomas@trezo.com",
     "UI/UX Designer",
     "Aoriv AI Design, Vaxo App Design",
     "deactive"
@@ -261,16 +261,16 @@ const rows = [
     "#845",
     "/images/users/user15.jpg",
     "Nathaniel Hulsey",
-    "nathaniel@pro.io.vn",
+    "nathaniel@trezo.com",
     "Web Developer",
-    "Product Development, pro.io Dashboard Design",
+    "Product Development, Trezo Dashboard Design",
     "deactive"
   ),
   createData(
     "#844",
     "/images/users/user16.jpg",
     "Jake Khan",
-    "jake@pro.io.vn",
+    "jake@trezo.com",
     "+1 555-123-4567",
     "19 Jun 2024",
     "active"
@@ -279,16 +279,16 @@ const rows = [
     "#843",
     "/images/users/user17.jpg",
     "Noah Barnes",
-    "noah@pro.io.vn",
+    "noah@trezo.com",
     "Web Developer",
-    "Product Development, pro.io Dashboard Design",
+    "Product Development, Trezo Dashboard Design",
     "active"
   ),
   createData(
     "#842",
     "/images/users/user18.jpg",
     "James Miller",
-    "james@pro.io.vn",
+    "james@trezo.com",
     "UI/UX Designer",
     "Aoriv AI Design, Vaxo App Design",
     "deactive"
@@ -297,7 +297,7 @@ const rows = [
     "#841",
     "/images/users/user19.jpg",
     "Connor Cros",
-    "connor@pro.io.vn",
+    "connor@trezo.com",
     "Project Manager",
     "Aegis Accounting Service, Beja Banking Finance",
     "active"
@@ -306,7 +306,7 @@ const rows = [
     "#840",
     "/images/users/user20.jpg",
     "Liam Block",
-    "liam@pro.io.vn",
+    "liam@trezo.com",
     "Editor",
     "Project Monitoring, Project Alpho",
     "deactive"
@@ -315,7 +315,7 @@ const rows = [
     "#839",
     "/images/users/user21.jpg",
     "Harry McCarty",
-    "harry@pro.io.vn",
+    "harry@trezo.com",
     "Admin",
     "Hotel Management System, Python Upgrade",
     "active"
@@ -324,16 +324,16 @@ const rows = [
     "#838",
     "/images/users/user22.jpg",
     "Harry Fairweather",
-    "harry@pro.io.vn",
+    "harry@trezo.com",
     "QA Tester",
-    "Product Development, pro.io Dashboard Design",
+    "Product Development, Trezo Dashboard Design",
     "active"
   ),
   createData(
     "#837",
     "/images/users/user23.jpg",
     "Jacob Haddock",
-    "jacob@pro.io.vn",
+    "jacob@trezo.com",
     "UI/UX Designer",
     "Aoriv AI Design, Vaxo App Design",
     "active"
@@ -342,7 +342,7 @@ const rows = [
     "#836",
     "/images/users/user24.jpg",
     "Jacob Wilson",
-    "jacob@pro.io.vn",
+    "jacob@trezo.com",
     "Business Analyst",
     "Aegis Accounting Service, Beja Banking Finance",
     "deactive"
@@ -351,7 +351,7 @@ const rows = [
     "#835",
     "/images/users/user25.jpg",
     "Michael Hulsey",
-    "michael@pro.io.vn",
+    "michael@trezo.com",
     "Developer",
     "Project Monitoring, Project Alpho",
     "deactive"
@@ -672,7 +672,7 @@ const UsersTable: React.FC = () => {
                       className="border-bottom"
                     >
                       <Box
-                        className={`pro.io-badge ${row.status}`}
+                        className={`trezo-badge ${row.status}`}
                         sx={{ textTransform: "capitalize" }}
                       >
                         {row.status}
@@ -943,7 +943,7 @@ const UsersTable: React.FC = () => {
                         <MenuItem value={6}>Aoriv AI Design</MenuItem>
                         <MenuItem value={7}>Vaxo App Design</MenuItem>
                         <MenuItem value={8}>Product Development</MenuItem>
-                        <MenuItem value={9}>pro.io Dashboard</MenuItem>
+                        <MenuItem value={9}>Trezo Dashboard</MenuItem>
                       </Select>
                     </FormControl>
                   </Grid>

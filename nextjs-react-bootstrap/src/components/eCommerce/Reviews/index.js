@@ -1,13 +1,8 @@
 "use client";
 
-import React from "react";
 import Image from "next/image";
-import Card from "react-bootstrap/Card";
-import Table from "react-bootstrap/Table";
-import Form from "react-bootstrap/Form"; 
-import { MaterialSymbol } from "react-material-symbols";
-import "react-material-symbols/rounded";
-import Link from 'next/link';
+import { Card, Table, Form } from "react-bootstrap";
+import Link from "next/link";
 
 const Reviews = () => {
   return (
@@ -16,22 +11,21 @@ const Reviews = () => {
         <Card.Body className="p-4">
           <div className="d-flex justify-content-between align-items-center flex-wrap gap-2 mb-3 mb-md-4">
             <Form className="position-relative table-src-form me-0">
-              <Form.Control
-                type="text" 
-                placeholder="Search here"
-              />
-       
-              <MaterialSymbol icon="search" className="position-absolute top-50 start-0 translate-middle-y" />
+              <Form.Control type="text" placeholder="Search here" />
+
+              <span className="material-symbols-outlined position-absolute top-50 start-0 translate-middle-y">
+                search
+              </span>
             </Form>
 
             <Form.Select
               className="month-select form-control"
               aria-label="Default select example"
             >
-              <option value="0">Show All</option>
-              <option value="1">Weekly</option>
-              <option value="2">Monthly</option>
-              <option value="3">Yearly</option>
+              <option defaultValue="0">Show All</option>
+              <option defaultValue="1">Weekly</option>
+              <option defaultValue="2">Monthly</option>
+              <option defaultValue="3">Yearly</option>
             </Form.Select>
           </div>
 
@@ -51,9 +45,7 @@ const Reviews = () => {
                 <tbody>
                   <tr>
                     <td>
-                      <div
-                        className="d-flex align-items-center"
-                      >
+                      <div className="d-flex align-items-center">
                         <Image
                           src="/images/user-6.jpg"
                           className="wh-40 rounded-circle"
@@ -84,9 +76,7 @@ const Reviews = () => {
                     </td>
 
                     <td>
-                      <div
-                        className="d-flex align-items-center text-secondary hover"
-                      >
+                      <div className="d-flex align-items-center text-secondary hover">
                         <Image
                           src="/images/product-1.jpg"
                           className="rounded-3 wh-40"
@@ -111,22 +101,22 @@ const Reviews = () => {
 
                     <td>
                       <div className="d-flex align-items-center gap-3">
-                        <button
-                          className="ps-0 border-0 bg-transparent lh-1 position-relative top-2"
-                        >
-                          <MaterialSymbol icon="download_done" size={16} className="text-primary" />
+                        <button className="ps-0 border-0 bg-transparent lh-1 position-relative top-2">
+                          <span className="material-symbols-outlined text-primary fs-16">
+                            download_done
+                          </span>
                         </button>
 
-                        <button
-                          className="ps-0 border-0 bg-transparent lh-1 position-relative top-2"
-                        >
-                          <MaterialSymbol icon="reply" size={16} className="text-body" />
+                        <button className="ps-0 border-0 bg-transparent lh-1 position-relative top-2">
+                          <span className="material-symbols-outlined text-body fs-16">
+                            reply
+                          </span>
                         </button>
 
-                        <button
-                          className="ps-0 border-0 bg-transparent lh-1 position-relative top-2"
-                        >
-                          <MaterialSymbol icon="delete" size={16} className="text-danger" />
+                        <button className="ps-0 border-0 bg-transparent lh-1 position-relative top-2">
+                          <span className="material-symbols-outlined text-danger fs-16">
+                            delete
+                          </span>
                         </button>
                       </div>
                     </td>
@@ -134,9 +124,7 @@ const Reviews = () => {
 
                   <tr>
                     <td>
-                      <div
-                        className="d-flex align-items-center"
-                      >
+                      <div className="d-flex align-items-center">
                         <Image
                           src="/images/user-7.jpg"
                           className="wh-40 rounded-circle"
@@ -167,9 +155,7 @@ const Reviews = () => {
                     </td>
 
                     <td>
-                      <div
-                        className="d-flex align-items-center text-secondary hover"
-                      >
+                      <div className="d-flex align-items-center text-secondary hover">
                         <Image
                           src="/images/product-2.jpg"
                           className="rounded-3 wh-40"
@@ -194,22 +180,22 @@ const Reviews = () => {
 
                     <td>
                       <div className="d-flex align-items-center gap-3">
-                        <button
-                          className="ps-0 border-0 bg-transparent lh-1 position-relative top-2"
-                        >
-                          <MaterialSymbol icon="download_done" size={16} className="text-primary" />
+                        <button className="ps-0 border-0 bg-transparent lh-1 position-relative top-2">
+                          <span className="material-symbols-outlined text-primary fs-16">
+                            download_done
+                          </span>
                         </button>
 
-                        <button
-                          className="ps-0 border-0 bg-transparent lh-1 position-relative top-2"
-                        >
-                          <MaterialSymbol icon="reply" size={16} className="text-body" />
+                        <button className="ps-0 border-0 bg-transparent lh-1 position-relative top-2">
+                          <span className="material-symbols-outlined text-body fs-16">
+                            reply
+                          </span>
                         </button>
 
-                        <button
-                          className="ps-0 border-0 bg-transparent lh-1 position-relative top-2"
-                        >
-                          <MaterialSymbol icon="delete" size={16} className="text-danger" />
+                        <button className="ps-0 border-0 bg-transparent lh-1 position-relative top-2">
+                          <span className="material-symbols-outlined text-danger fs-16">
+                            delete
+                          </span>
                         </button>
                       </div>
                     </td>
@@ -217,9 +203,7 @@ const Reviews = () => {
 
                   <tr>
                     <td>
-                      <div
-                        className="d-flex align-items-center"
-                      >
+                      <div className="d-flex align-items-center">
                         <Image
                           src="/images/user-8.jpg"
                           className="wh-40 rounded-circle"
@@ -250,9 +234,7 @@ const Reviews = () => {
                     </td>
 
                     <td>
-                      <div
-                        className="d-flex align-items-center text-secondary hover"
-                      >
+                      <div className="d-flex align-items-center text-secondary hover">
                         <Image
                           src="/images/product-3.jpg"
                           className="rounded-3 wh-40"
@@ -260,7 +242,9 @@ const Reviews = () => {
                           width={40}
                           height={40}
                         />
-                        <span className="fs-15 fw-medium ms-2">iPhone 15 Plus</span>
+                        <span className="fs-15 fw-medium ms-2">
+                          iPhone 15 Plus
+                        </span>
                       </div>
                     </td>
 
@@ -277,27 +261,26 @@ const Reviews = () => {
 
                     <td>
                       <div className="d-flex align-items-center gap-3">
-                        <button
-                          className="ps-0 border-0 bg-transparent lh-1 position-relative top-2"
-                        >
-                          <MaterialSymbol icon="download_done" size={16} className="text-primary" />
+                        <button className="ps-0 border-0 bg-transparent lh-1 position-relative top-2">
+                          <span className="material-symbols-outlined text-primary fs-16">
+                            download_done
+                          </span>
                         </button>
 
-                        <button
-                          className="ps-0 border-0 bg-transparent lh-1 position-relative top-2"
-                        >
-                          <MaterialSymbol icon="reply" size={16} className="text-body" />
+                        <button className="ps-0 border-0 bg-transparent lh-1 position-relative top-2">
+                          <span className="material-symbols-outlined text-body fs-16">
+                            reply
+                          </span>
                         </button>
 
-                        <button
-                          className="ps-0 border-0 bg-transparent lh-1 position-relative top-2"
-                        >
-                          <MaterialSymbol icon="delete" size={16} className="text-danger" />
+                        <button className="ps-0 border-0 bg-transparent lh-1 position-relative top-2">
+                          <span className="material-symbols-outlined text-danger fs-16">
+                            delete
+                          </span>
                         </button>
                       </div>
                     </td>
                   </tr>
-
                 </tbody>
               </Table>
             </div>
@@ -316,7 +299,9 @@ const Reviews = () => {
                         href="#"
                         aria-label="Previous"
                       >
-                        <MaterialSymbol icon="keyboard_arrow_left" />
+                        <span className="material-symbols-outlined">
+                          keyboard_arrow_left
+                        </span>
                       </Link>
                     </li>
                     <li className="page-item">
@@ -325,7 +310,9 @@ const Reviews = () => {
                         href="#"
                         aria-label="Next"
                       >
-                        <MaterialSymbol icon="keyboard_arrow_right" />
+                        <span className="material-symbols-outlined">
+                          keyboard_arrow_right
+                        </span>
                       </Link>
                     </li>
                   </ul>

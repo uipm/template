@@ -142,7 +142,7 @@
   position: absolute;
   right: 10px;
 }
-.left-sidebar-menu .sidebar-inner .sidebar-menu .mat-accordion .mat-summary .MuiAccordionSummary-content .pro.io-badge {
+.left-sidebar-menu .sidebar-inner .sidebar-menu .mat-accordion .mat-summary .MuiAccordionSummary-content .trezo-badge {
   top: 50%;
   padding: 0;
   right: 34px;
@@ -159,11 +159,11 @@
   text-align: center;
   border-radius: 100%;
 }
-.left-sidebar-menu .sidebar-inner .sidebar-menu .mat-accordion .mat-summary .MuiAccordionSummary-content .pro.io-badge.style-two {
+.left-sidebar-menu .sidebar-inner .sidebar-menu .mat-accordion .mat-summary .MuiAccordionSummary-content .trezo-badge.style-two {
   color: #00b69b;
   background: rgba(0, 182, 155, 0.07);
 }
-.left-sidebar-menu .sidebar-inner .sidebar-menu .mat-accordion .mat-summary .MuiAccordionSummary-content .pro.io-badge.style-three {
+.left-sidebar-menu .sidebar-inner .sidebar-menu .mat-accordion .mat-summary .MuiAccordionSummary-content .trezo-badge.style-three {
   color: #ee368c;
   background: rgba(238, 54, 140, 0.1);
 }
@@ -185,6 +185,7 @@
 }
 .left-sidebar-menu .sidebar-inner .sidebar-menu .mat-accordion .mat-details .sidebar-sub-menu .sidemenu-item {
   margin-bottom: 4px;
+  white-space: nowrap;
 }
 .left-sidebar-menu .sidebar-inner .sidebar-menu .mat-accordion .mat-details .sidebar-sub-menu .sidemenu-item .sidemenu-link {
   display: block;
@@ -219,7 +220,7 @@
 .left-sidebar-menu .sidebar-inner .sidebar-menu .mat-accordion .mat-details .sidebar-sub-menu .sidemenu-item .sidemenu-link:hover::after, .left-sidebar-menu .sidebar-inner .sidebar-menu .mat-accordion .mat-details .sidebar-sub-menu .sidemenu-item .sidemenu-link.active::after {
   border-color: var(--primaryColor);
 }
-.left-sidebar-menu .sidebar-inner .sidebar-menu .mat-accordion .mat-details .sidebar-sub-menu .sidemenu-item .sidemenu-link .pro.io-badge {
+.left-sidebar-menu .sidebar-inner .sidebar-menu .mat-accordion .mat-details .sidebar-sub-menu .sidemenu-item .sidemenu-link .trezo-badge {
   top: -1px;
   color: #FD5812;
   padding: 2px 6px;
@@ -232,7 +233,7 @@
   display: inline-block;
   position: relative;
 }
-.left-sidebar-menu .sidebar-inner .sidebar-menu .mat-accordion .mat-details .sidebar-sub-menu .sidemenu-item .sidemenu-link .pro.io-badge::before {
+.left-sidebar-menu .sidebar-inner .sidebar-menu .mat-accordion .mat-details .sidebar-sub-menu .sidemenu-item .sidemenu-link .trezo-badge::before {
   top: 50%;
   left: -3px;
   width: 6px;
@@ -242,11 +243,11 @@
   background: #FFE8D4;
   transform: translateY(-50%) rotate(45deg);
 }
-.left-sidebar-menu .sidebar-inner .sidebar-menu .mat-accordion .mat-details .sidebar-sub-menu .sidemenu-item .sidemenu-link .pro.io-badge.style-two {
+.left-sidebar-menu .sidebar-inner .sidebar-menu .mat-accordion .mat-details .sidebar-sub-menu .sidemenu-item .sidemenu-link .trezo-badge.style-two {
   color: #25B003;
   background-color: #D8FFC8;
 }
-.left-sidebar-menu .sidebar-inner .sidebar-menu .mat-accordion .mat-details .sidebar-sub-menu .sidemenu-item .sidemenu-link .pro.io-badge.style-two::before {
+.left-sidebar-menu .sidebar-inner .sidebar-menu .mat-accordion .mat-details .sidebar-sub-menu .sidemenu-item .sidemenu-link .trezo-badge.style-two::before {
   background: #D8FFC8;
 }
 .left-sidebar-menu .sidebar-inner .sidebar-menu .mat-accordion .mat-details .sidebar-sub-menu .sidemenu-item:last-child {
@@ -390,7 +391,7 @@
   left: auto;
   right: 12px;
 }
-[dir=rtl] .left-sidebar-menu .sidebar-inner .sidebar-menu .mat-accordion .mat-summary .MuiAccordionSummary-content .pro.io-badge {
+[dir=rtl] .left-sidebar-menu .sidebar-inner .sidebar-menu .mat-accordion .mat-summary .MuiAccordionSummary-content .trezo-badge {
   right: auto;
   left: 34px;
 }
@@ -410,7 +411,7 @@
   left: auto;
   right: 18px;
 }
-[dir=rtl] .left-sidebar-menu .sidebar-inner .sidebar-menu .mat-accordion .mat-details .sidebar-sub-menu .sidemenu-item .sidemenu-link .pro.io-badge {
+[dir=rtl] .left-sidebar-menu .sidebar-inner .sidebar-menu .mat-accordion .mat-details .sidebar-sub-menu .sidemenu-item .sidemenu-link .trezo-badge {
   margin-left: 0;
   margin-right: 9px;
 }
@@ -513,7 +514,7 @@
     padding-left: 10px;
     padding-top: 10px;
   }
-  .main-wrapper-content.active .left-sidebar-menu .sidebar-inner .sidebar-menu .mat-accordion .mat-summary .MuiAccordionSummary-content .title, .main-wrapper-content.active .left-sidebar-menu .sidebar-inner .sidebar-menu .mat-accordion .mat-summary .MuiAccordionSummary-content .pro.io-badge {
+  .main-wrapper-content.active .left-sidebar-menu .sidebar-inner .sidebar-menu .mat-accordion .mat-summary .MuiAccordionSummary-content .title, .main-wrapper-content.active .left-sidebar-menu .sidebar-inner .sidebar-menu .mat-accordion .mat-summary .MuiAccordionSummary-content .trezo-badge {
     display: none;
   }
   .main-wrapper-content.active .left-sidebar-menu .sidebar-inner .sidebar-menu .mat-accordion .mat-summary .MuiAccordionSummary-expandIconWrapper {
@@ -571,7 +572,7 @@
     padding-left: 40px;
     padding-top: 9.5px;
   }
-  .main-wrapper-content.active .left-sidebar-menu:hover .sidebar-inner .sidebar-menu .mat-accordion .mat-summary .MuiAccordionSummary-content .title, .main-wrapper-content.active .left-sidebar-menu:hover .sidebar-inner .sidebar-menu .mat-accordion .mat-summary .MuiAccordionSummary-content .pro.io-badge {
+  .main-wrapper-content.active .left-sidebar-menu:hover .sidebar-inner .sidebar-menu .mat-accordion .mat-summary .MuiAccordionSummary-content .title, .main-wrapper-content.active .left-sidebar-menu:hover .sidebar-inner .sidebar-menu .mat-accordion .mat-summary .MuiAccordionSummary-content .trezo-badge {
     display: inline-block;
   }
   .main-wrapper-content.active .left-sidebar-menu:hover .sidebar-inner .sidebar-menu .mat-accordion .mat-summary .MuiAccordionSummary-expandIconWrapper {

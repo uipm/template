@@ -46,7 +46,7 @@
 }
 .fp-outlined-btn:hover {
   background-color: var(--fpPurpleColor);
-  color: #fff;
+  color: #fff !important;
 }
 .fp-outlined-btn:hover::before {
   border-color: var(--fpPurpleColor);

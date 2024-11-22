@@ -1,12 +1,8 @@
 "use client";
 
-import React from "react";
+import { Card, Form, Table } from "react-bootstrap";
 import SearchForm from "./SearchForm";
 import Pagination from "./Pagination";
-import Table from "react-bootstrap/Table";
-import Form from "react-bootstrap/Form";
-import { MaterialSymbol } from "react-material-symbols";
-import "react-material-symbols/rounded";
 import Image from "next/image";
 
 const contactsData = [
@@ -145,8 +141,8 @@ const contactsData = [
 const Contacts = () => {
   return (
     <>
-      <div className="card bg-white border-0 rounded-3 mb-4">
-        <div className="card-body p-0">
+      <Card className="bg-white border-0 rounded-3 mb-4">
+        <Card.Body className="p-0">
           <div className="d-flex justify-content-between align-items-center flex-wrap gap-2 p-4">
             <SearchForm />
 
@@ -155,9 +151,9 @@ const Contacts = () => {
                 className="month-select form-control"
                 aria-label="Default select example"
               >
-                <option value="0">All</option>
-                <option value="1">Active</option>
-                <option value="2">Deactive</option>
+                <option defaultValue="0">All</option>
+                <option defaultValue="1">Active</option>
+                <option defaultValue="2">Deactive</option>
               </Form.Select>
             </div>
           </div>
@@ -214,7 +210,7 @@ const Contacts = () => {
                             </div>
                             <div className="flex-grow-1 ms-2 position-relative top-1">
                               <h6 className="mb-0 fs-14 fw-medium">
-                              {value.user.name}
+                                {value.user.name}
                               </h6>
                             </div>
                           </div>
@@ -241,27 +237,21 @@ const Contacts = () => {
                         <td>
                           <div className="d-flex align-items-center gap-1">
                             <button className="ps-0 border-0 bg-transparent lh-1 position-relative top-2">
-                              <MaterialSymbol
-                                icon="visibility"
-                                size={16}
-                                className="text-primary"
-                              />
+                              <span className="material-symbols-outlined fs-16 text-primary">
+                                visibility
+                              </span>
                             </button>
 
                             <button className="ps-0 border-0 bg-transparent lh-1 position-relative top-2">
-                              <MaterialSymbol
-                                icon="edit"
-                                size={16}
-                                className="text-body"
-                              />
+                              <span className="material-symbols-outlined fs-16 text-body">
+                                edit
+                              </span>
                             </button>
 
                             <button className="ps-0 border-0 bg-transparent lh-1 position-relative top-2">
-                              <MaterialSymbol
-                                icon="delete"
-                                size={16}
-                                className="text-danger"
-                              />
+                              <span className="material-symbols-outlined fs-16 text-danger">
+                                delete
+                              </span>
                             </button>
                           </div>
                         </td>
@@ -274,8 +264,8 @@ const Contacts = () => {
               <Pagination />
             </div>
           </div>
-        </div>
-      </div>
+        </Card.Body>
+      </Card>
     </>
   );
 };

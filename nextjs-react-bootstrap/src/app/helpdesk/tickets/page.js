@@ -1,8 +1,6 @@
 "use client";
   
-import Breadcrumb from 'react-bootstrap/Breadcrumb'; 
-import Row from "react-bootstrap/Row"; 
-import Col from "react-bootstrap/Col"; 
+import { Row, Col, Breadcrumb } from "react-bootstrap";
 import TicketsResolved from '@/components/Helpdesk/Tickets/TicketsResolved';
 import TicketsInProgress from '@/components/Helpdesk/Tickets/TicketsInProgress';
 import TicketsDue from '@/components/Helpdesk/Tickets/TicketsDue';

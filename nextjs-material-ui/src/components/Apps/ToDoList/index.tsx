@@ -298,7 +298,7 @@ const rows = [
   ),
   createData(
     "#873",
-    "Schedule meeting with pro.io",
+    "Schedule meeting with Trezo",
     "Catalina Engles",
     "15 Apr 2024",
     "High",
@@ -599,7 +599,7 @@ const ToDoList: React.FC = () => {
                       }}
                       className="border-bottom"
                     >
-                      <div className={`pro.io-badge ${row.status}`}>
+                      <div className={`trezo-badge ${row.status}`}>
                         {row.status}
                       </div>
                     </TableCell>

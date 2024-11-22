@@ -602,7 +602,7 @@ const OrdersTable: React.FC = () => {
                       }}
                       className="border-bottom"
                     >
-                      <div className={`pro.io-badge ${row.status}`}>
+                      <div className={`trezo-badge ${row.status}`}>
                         {row.status}
                       </div>
                     </TableCell>

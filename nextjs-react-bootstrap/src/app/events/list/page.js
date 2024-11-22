@@ -1,7 +1,7 @@
 "use client";
-    
-import EventsList from '@/components/Events/EventsList';
-import Breadcrumb from 'react-bootstrap/Breadcrumb';
+
+import { Breadcrumb } from "react-bootstrap";
+import EventsList from '@/components/Events/EventsList'; 
 
 export default function Page() {
   return (

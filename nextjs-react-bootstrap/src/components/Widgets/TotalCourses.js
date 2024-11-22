@@ -1,9 +1,6 @@
 "use client";
 
-import React from "react";
-import Card from "react-bootstrap/Card";
-import { MaterialSymbol } from "react-material-symbols";
-import "react-material-symbols/rounded";
+import { Card } from "react-bootstrap";
 
 const TotalCourses = () => {
   return (
@@ -16,17 +13,17 @@ const TotalCourses = () => {
 
           <div className="py-3">
             <div className="wh-77 lh-97 text-center m-auto bg-primary bg-opacity-25 rounded-circle">
-              <MaterialSymbol
-                icon="auto_stories"
-                size={32}
-                className="text-primary"
-              />
+              <span className="material-symbols-outlined fs-32 text-primary">
+                auto_stories
+              </span>
             </div>
           </div>
 
           <div className="d-flex justify-content-between align-items-center">
             <span className="fs-12">This Month</span>
-            <MaterialSymbol icon="timeline" size={24} className="text-success" />
+            <span className="material-symbols-outlined fs-24 text-success">
+              timeline
+            </span>
           </div>
         </Card.Body>
       </Card>

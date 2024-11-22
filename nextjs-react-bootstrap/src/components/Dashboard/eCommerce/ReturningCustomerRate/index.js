@@ -1,8 +1,7 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import Card from "react-bootstrap/Card"; 
-import Form from "react-bootstrap/Form";
+import { Card, Form } from "react-bootstrap";
 
 const ReturningCustomerRate = () => {
   const [Chart, setChart] = useState();
@@ -121,6 +120,7 @@ const ReturningCustomerRate = () => {
         height: 9,
         offsetX: -2,
         offsetY: -0.5,
+        shape: 'diamond',
       },
     },
   };
@@ -135,11 +135,11 @@ const ReturningCustomerRate = () => {
               className="month-select form-control"
               aria-label="Default select example"
             >
-              <option value="0">Select</option>
-              <option value="1">Today</option>
-              <option value="2">Weekly</option>
-              <option value="3">Monthly</option>
-              <option value="4">Yearly</option>
+              <option defaultValue="0">Select</option>
+              <option defaultValue="1">Today</option>
+              <option defaultValue="2">Weekly</option>
+              <option defaultValue="3">Monthly</option>
+              <option defaultValue="4">Yearly</option>
             </Form.Select>
           </div>
 
@@ -147,7 +147,7 @@ const ReturningCustomerRate = () => {
             style={{
               marginBottom: "-15px",
               marginLeft: "-10px",
-              marginTop: "-10px",
+              marginTop: "-20px",
             }}
           >
             {Chart && (
@@ -155,7 +155,7 @@ const ReturningCustomerRate = () => {
                 options={options}
                 series={series}
                 type="line"
-                height={330}
+                height={305}
               />
             )}
           </div>

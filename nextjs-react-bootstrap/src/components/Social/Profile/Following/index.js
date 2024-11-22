@@ -1,11 +1,8 @@
 "use client";
 
-import React from "react";
+import { Card, Form, Table } from "react-bootstrap";
 import Link from "next/link";
 import Image from "next/image";
-import Card from "react-bootstrap/Card";
-import Table from "react-bootstrap/Table";  
-import Form from "react-bootstrap/Form";
 
 const followingData = [
   {

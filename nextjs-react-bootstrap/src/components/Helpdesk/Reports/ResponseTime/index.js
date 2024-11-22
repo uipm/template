@@ -1,9 +1,7 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import Image from "next/image";
-import Card from "react-bootstrap/Card";
-import Form from "react-bootstrap/Form";
+import { Card, Form } from "react-bootstrap";
 
 const ResponseTime = () => {
   const [Chart, setChart] = useState();
@@ -131,6 +129,7 @@ const ResponseTime = () => {
         colors: "#64748B",
       },
       markers: {
+        shape: 'diamond',
         width: 9,
         height: 9,
         offsetX: -2,

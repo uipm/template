@@ -1,18 +1,17 @@
 "use client";
 
-import React from "react";
+import {
+  Row,
+  Col,
+  Dropdown,
+  Card,
+  Form,
+  Button,
+  OverlayTrigger,
+  Tooltip,
+} from "react-bootstrap";
 import Image from "next/image";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-import Card from "react-bootstrap/Card";
-import Dropdown from "react-bootstrap/Dropdown";
 import Sidebar from "./Sidebar";
-import Form from "react-bootstrap/Form";
-import Button from "react-bootstrap/Button";
-import OverlayTrigger from "react-bootstrap/OverlayTrigger";
-import Tooltip from "react-bootstrap/Tooltip";
-import { MaterialSymbol } from "react-material-symbols";
-import "react-material-symbols/rounded";
 
 const ChatContent = () => {
   return (
@@ -77,22 +76,24 @@ const ChatContent = () => {
                           id="dropdown-basic"
                           className="bg-transparent p-0"
                         >
-                          <MaterialSymbol icon="more_vert" />
+                          <i className="material-symbols-outlined">more_vert</i>
                         </Dropdown.Toggle>
 
                         <Dropdown.Menu className="bg-white border box-shadow">
                           <Dropdown.Item href="#">
-                            <MaterialSymbol icon="visibility" />
+                            <i className="material-symbols-outlined">
+                              visibility
+                            </i>
                             View Profile
                           </Dropdown.Item>
 
                           <Dropdown.Item href="#">
-                            <MaterialSymbol icon="delete" />
+                            <i className="material-symbols-outlined">delete</i>
                             Delete Chat
                           </Dropdown.Item>
 
                           <Dropdown.Item href="#">
-                            <MaterialSymbol icon="lock" />
+                            <i className="material-symbols-outlined">lock</i>
                             Block
                           </Dropdown.Item>
                         </Dropdown.Menu>
@@ -137,17 +138,23 @@ const ChatContent = () => {
 
                           <Dropdown.Menu className="bg-white border box-shadow">
                             <Dropdown.Item href="#">
-                              <MaterialSymbol icon="refresh" />
+                              <i className="material-symbols-outlined">
+                                refresh
+                              </i>
                               Reply
                             </Dropdown.Item>
 
                             <Dropdown.Item href="#">
-                              <MaterialSymbol icon="delete" />
+                              <i className="material-symbols-outlined">
+                                delete
+                              </i>
                               Delete You
                             </Dropdown.Item>
 
                             <Dropdown.Item href="#">
-                              <MaterialSymbol icon="delete" />
+                              <i className="material-symbols-outlined">
+                                delete
+                              </i>
                               Delete Everyone
                             </Dropdown.Item>
                           </Dropdown.Menu>
@@ -173,17 +180,23 @@ const ChatContent = () => {
 
                           <Dropdown.Menu className="bg-white border box-shadow">
                             <Dropdown.Item href="#">
-                              <MaterialSymbol icon="refresh" />
+                              <i className="material-symbols-outlined">
+                                refresh
+                              </i>
                               Reply
                             </Dropdown.Item>
 
                             <Dropdown.Item href="#">
-                              <MaterialSymbol icon="delete" />
+                              <i className="material-symbols-outlined">
+                                delete
+                              </i>
                               Delete You
                             </Dropdown.Item>
 
                             <Dropdown.Item href="#">
-                              <MaterialSymbol icon="delete" />
+                              <i className="material-symbols-outlined">
+                                delete
+                              </i>
                               Delete Everyone
                             </Dropdown.Item>
                           </Dropdown.Menu>
@@ -225,17 +238,23 @@ const ChatContent = () => {
 
                           <Dropdown.Menu className="bg-white border box-shadow">
                             <Dropdown.Item href="#">
-                              <MaterialSymbol icon="refresh" />
+                              <i className="material-symbols-outlined">
+                                refresh
+                              </i>
                               Reply
                             </Dropdown.Item>
 
                             <Dropdown.Item href="#">
-                              <MaterialSymbol icon="delete" />
+                              <i className="material-symbols-outlined">
+                                delete
+                              </i>
                               Delete You
                             </Dropdown.Item>
 
                             <Dropdown.Item href="#">
-                              <MaterialSymbol icon="delete" />
+                              <i className="material-symbols-outlined">
+                                delete
+                              </i>
                               Delete Everyone
                             </Dropdown.Item>
                           </Dropdown.Menu>
@@ -261,17 +280,23 @@ const ChatContent = () => {
 
                           <Dropdown.Menu className="bg-white border box-shadow">
                             <Dropdown.Item href="#">
-                              <MaterialSymbol icon="refresh" />
+                              <i className="material-symbols-outlined">
+                                refresh
+                              </i>
                               Reply
                             </Dropdown.Item>
 
                             <Dropdown.Item href="#">
-                              <MaterialSymbol icon="delete" />
+                              <i className="material-symbols-outlined">
+                                delete
+                              </i>
                               Delete You
                             </Dropdown.Item>
 
                             <Dropdown.Item href="#">
-                              <MaterialSymbol icon="delete" />
+                              <i className="material-symbols-outlined">
+                                delete
+                              </i>
                               Delete Everyone
                             </Dropdown.Item>
                           </Dropdown.Menu>
@@ -313,17 +338,23 @@ const ChatContent = () => {
 
                           <Dropdown.Menu className="bg-white border box-shadow">
                             <Dropdown.Item href="#">
-                              <MaterialSymbol icon="refresh" />
+                              <i className="material-symbols-outlined">
+                                refresh
+                              </i>
                               Reply
                             </Dropdown.Item>
 
                             <Dropdown.Item href="#">
-                              <MaterialSymbol icon="delete" />
+                              <i className="material-symbols-outlined">
+                                delete
+                              </i>
                               Delete You
                             </Dropdown.Item>
 
                             <Dropdown.Item href="#">
-                              <MaterialSymbol icon="delete" />
+                              <i className="material-symbols-outlined">
+                                delete
+                              </i>
                               Delete Everyone
                             </Dropdown.Item>
                           </Dropdown.Menu>
@@ -349,17 +380,23 @@ const ChatContent = () => {
 
                           <Dropdown.Menu className="bg-white border box-shadow">
                             <Dropdown.Item href="#">
-                              <MaterialSymbol icon="refresh" />
+                              <i className="material-symbols-outlined">
+                                refresh
+                              </i>
                               Reply
                             </Dropdown.Item>
 
                             <Dropdown.Item href="#">
-                              <MaterialSymbol icon="delete" />
+                              <i className="material-symbols-outlined">
+                                delete
+                              </i>
                               Delete You
                             </Dropdown.Item>
 
                             <Dropdown.Item href="#">
-                              <MaterialSymbol icon="delete" />
+                              <i className="material-symbols-outlined">
+                                delete
+                              </i>
                               Delete Everyone
                             </Dropdown.Item>
                           </Dropdown.Menu>
@@ -405,17 +442,23 @@ const ChatContent = () => {
 
                           <Dropdown.Menu className="bg-white border box-shadow">
                             <Dropdown.Item href="#">
-                              <MaterialSymbol icon="refresh" />
+                              <i className="material-symbols-outlined">
+                                refresh
+                              </i>
                               Reply
                             </Dropdown.Item>
 
                             <Dropdown.Item href="#">
-                              <MaterialSymbol icon="delete" />
+                              <i className="material-symbols-outlined">
+                                delete
+                              </i>
                               Delete You
                             </Dropdown.Item>
 
                             <Dropdown.Item href="#">
-                              <MaterialSymbol icon="delete" />
+                              <i className="material-symbols-outlined">
+                                delete
+                              </i>
                               Delete Everyone
                             </Dropdown.Item>
                           </Dropdown.Menu>
@@ -441,17 +484,23 @@ const ChatContent = () => {
 
                           <Dropdown.Menu className="bg-white border box-shadow">
                             <Dropdown.Item href="#">
-                              <MaterialSymbol icon="refresh" />
+                              <i className="material-symbols-outlined">
+                                refresh
+                              </i>
                               Reply
                             </Dropdown.Item>
 
                             <Dropdown.Item href="#">
-                              <MaterialSymbol icon="delete" />
+                              <i className="material-symbols-outlined">
+                                delete
+                              </i>
                               Delete You
                             </Dropdown.Item>
 
                             <Dropdown.Item href="#">
-                              <MaterialSymbol icon="delete" />
+                              <i className="material-symbols-outlined">
+                                delete
+                              </i>
                               Delete Everyone
                             </Dropdown.Item>
                           </Dropdown.Menu>
@@ -514,11 +563,9 @@ const ChatContent = () => {
                     variant="primary"
                     className="p-0 border-0 bg-transparent position-absolute top-50 end-0 translate-middle-y pe-3 d-sm-none"
                   >
-                    <MaterialSymbol
-                      icon="send"
-                      size={24}
-                      className="text-primary"
-                    />
+                    <span className="material-symbols-outlined fs-24 text-primary">
+                      send
+                    </span>
                   </Button>
                 </Form>
 
@@ -526,11 +573,9 @@ const ChatContent = () => {
                   variant="primary"
                   className="p-0 border-0 bg-primary d-none d-sm-block rounded-1 ms-3"
                 >
-                  <MaterialSymbol
-                    icon="send"
-                    size={24}
-                    className="text-white wh-55 lh-55 d-inline-block"
-                  />
+                  <span className="material-symbols-outlined text-white wh-55 lh-55 d-inline-block">
+                    send
+                  </span>
                 </Button>
               </div>
             </Card.Body>

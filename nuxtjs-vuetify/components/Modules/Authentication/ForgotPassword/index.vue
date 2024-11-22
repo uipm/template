@@ -124,16 +124,20 @@ export default {
           align-items: center;
           justify-content: center;
 
+          & {
+            font: {
+              size: 16px;
+              weight: 500;
+            }
+          }
+          & {
+            margin: {
+              top: 24px;
+              bottom: 20px;
+            }
+          }
           i {
             margin-right: 5px;
-          }
-          font: {
-            size: 16px;
-            weight: 500;
-          }
-          margin: {
-            top: 24px;
-            bottom: 20px;
           }
         }
         .info {

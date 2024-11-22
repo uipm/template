@@ -57,7 +57,7 @@ const ProfileIntro: React.FC = () => {
                 Alice Johnson
               </Typography>
 
-              <Typography>johnson&#64;pro.io.vn</Typography>
+              <Typography>johnson&#64;trezo.com</Typography>
             </Box>
           </Box>
 

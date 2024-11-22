@@ -1,8 +1,6 @@
 "use client";
 
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-import Breadcrumb from 'react-bootstrap/Breadcrumb';
+import { Row, Col, Breadcrumb } from "react-bootstrap";
 import Sidebar from "@/components/Apps/Email/Sidebar";
 import Snoozed from "@/components/Apps/Email/Snoozed"; 
 

@@ -24,7 +24,7 @@ export class PatientByAgeService {
                         30, 40, 20, 10
                     ],
                     chart: {
-                        height: 331,
+                        height: 298,
                         type: "pie"
                     },
                     labels: [

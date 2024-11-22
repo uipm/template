@@ -4,6 +4,7 @@ import vuetify, { transformAssetUrls } from "vite-plugin-vuetify";
 
 export default defineNuxtConfig({
   app: {
+    baseURL: "/trezo/",
     head: {
       link: [
         {
@@ -20,6 +21,9 @@ export default defineNuxtConfig({
 
   css: [
     "@mdi/font/css/materialdesignicons.css",
+    "swiper/css",
+    "swiper/css/pagination",
+    "swiper/css/navigation",
     "quill/dist/quill.snow.css",
     "remixicon/fonts/remixicon.css",
     "/assets/scss/styles.css",
@@ -55,6 +59,7 @@ export default defineNuxtConfig({
       );
     },
     "vue3-carousel-nuxt",
+    "nuxt-swiper",
   ],
 
   carousel: {
@@ -76,6 +81,12 @@ export default defineNuxtConfig({
       isCustomElement: (tag) => tag.toLowerCase() === "script",
     },
   },
+  nitro: {
+    output: {
+      dir: "dist",
+      serverDir: "dist/server",
+    },
+  },
 
-  compatibilityDate: "2024-07-11",
+  compatibilityDate: "2024-08-18",
 });

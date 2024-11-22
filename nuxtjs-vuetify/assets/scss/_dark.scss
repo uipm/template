@@ -1566,4 +1566,228 @@
       }
     }
   }
+
+  .analytics-overview-card {
+    .v-card-header {
+      .card-subtitle {
+        button {
+          &.active,
+          &:hover {
+            background-color: #15203c !important;
+          }
+        }
+      }
+    }
+  }
+  .cryptocurrency-watchlist-card {
+    .cryptocurrency-watchlist-card-content {
+      .cryptocurrency-watchlist-slides {
+        .box {
+          background: #0a0e19 !important;
+        }
+      }
+    }
+  }
+  .transaction-history-card {
+    &.v-card {
+      &.trezo-card {
+        .trezo-table-content {
+          .trezo-table {
+            .v-table {
+              table {
+                thead {
+                  tr {
+                    background-color: #0c1427 !important;
+                    th {
+                      background-color: #0c1427 !important;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .portfolio-card {
+    &.v-card {
+      &.trezo-card {
+        .trezo-table-content {
+          .trezo-table {
+            .v-table {
+              table {
+                thead {
+                  tr {
+                    th {
+                      background-color: transparent !important;
+                    }
+                  }
+                }
+                tbody {
+                  tr {
+                    td {
+                      border-color: #757dff !important;
+                      &:first-child {
+                        border-color: #757dff !important;
+                      }
+                    }
+                    &:first-child {
+                      td {
+                        border-color: #757dff !important;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .crypto-rankings-card {
+    &.v-card {
+      &.trezo-card {
+        .trezo-table-content {
+          .trezo-table {
+            .v-table {
+              table {
+                thead {
+                  tr {
+                    background-color: #0c1427 !important;
+                    th {
+                      background-color: #0c1427 !important;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .crypto-exchange-card {
+    .v-card-header {
+      border-bottom: 1px solid var(--borderColor) !important;
+    }
+    .trezo-form-group {
+      .v-input__control {
+        background-color: #0c1427 !important;
+      }
+      .v-input--density-default .v-field__input {
+        color: var(--whiteColor);
+      }
+    }
+    .crypto-exchange-card-content {
+      .item {
+        .cryptocurrency-types {
+          button {
+            color: var(--whiteColor) !important;
+          }
+        }
+      }
+    }
+  }
+  .market-price-statistics-card {
+    .v-card-header {
+      .subtitle {
+        .statistics-buttons-list {
+          button {
+            &.active,
+            &:hover {
+              background-color: #15203c !important;
+            }
+          }
+        }
+        .cryptocurrency-types {
+          button {
+            color: var(--whiteColor) !important;
+          }
+        }
+      }
+    }
+  }
+  .gross-earnings-card {
+    .gross-earnings-card-content {
+      .info {
+        border-top: 1px solid var(--borderColor) !important;
+      }
+    }
+  }
+  .sales-by-locations-card {
+    &.v-card {
+      &.trezo-card {
+        .trezo-table-content {
+          .trezo-table {
+            .v-table {
+              table {
+                thead {
+                  tr {
+                    background-color: #0c1427 !important;
+                    th {
+                      background-color: #0c1427 !important;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .overall-visitors-card {
+    background: #16223e !important;
+  }
+  .patients-last-7-days-card {
+    background: #16223e !important;
+  }
+  .patient-appointments-card {
+    &.v-card {
+      &.trezo-card {
+        .trezo-table-content {
+          .trezo-table {
+            .v-table {
+              table {
+                thead {
+                  tr {
+                    background-color: #0c1427 !important;
+                    th {
+                      background-color: #0c1427 !important;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .patient-bg-age-card {
+    .apexcharts-canvas {
+      .apexcharts-text {
+        fill: var(--whiteColor);
+      }
+    }
+  }
+  .hospital-earnings-card {
+    &.v-card {
+      &.trezo-card {
+        background-color: #16223e !important;
+      }
+    }
+
+    .hospital-earnings-card-content {
+      .content {
+        .item {
+          &::before {
+            background: #0c1427 !important;
+          }
+        }
+      }
+    }
+  }
 }

@@ -1,6 +1,6 @@
 "use client";
      
-import Breadcrumb from 'react-bootstrap/Breadcrumb';
+import { Breadcrumb } from "react-bootstrap";
 import Select from '@/components/Forms/AdvancedElements/Select';
 import Picker from '@/components/Forms/AdvancedElements/Picker';
 

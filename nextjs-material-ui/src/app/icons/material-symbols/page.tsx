@@ -53,7 +53,6 @@ export default function Page() {
               mb: "25px",
               padding: { xs: "18px", sm: "20px", lg: "40px" },
               textAlign: 'center'
-
             }}
             className="icon-card"
           >

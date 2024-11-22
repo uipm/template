@@ -1,12 +1,8 @@
 "use client";
     
-import React from 'react';
-import Breadcrumb from 'react-bootstrap/Breadcrumb';  
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';   
+import { Row, Col, Breadcrumb } from "react-bootstrap";  
 import BasicNavbar from '@/components/UIKit/Navbars/BasicNavbar';
-import ColorSchemesNavbar from '@/components/UIKit/Navbars/ColorSchemesNavbar';
-import OffcanvasExample from '@/components/UIKit/Navbars/OffcanvasExample';
+import ColorSchemesNavbar from '@/components/UIKit/Navbars/ColorSchemesNavbar'; 
 
 export default function Page() {
   return (
@@ -34,9 +30,7 @@ export default function Page() {
 
       <BasicNavbar />
 
-      <ColorSchemesNavbar />
-
-      <OffcanvasExample />
+      <ColorSchemesNavbar /> 
  
       <Row>
         <Col xxl={6}>

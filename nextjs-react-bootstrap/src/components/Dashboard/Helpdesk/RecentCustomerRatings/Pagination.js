@@ -1,9 +1,6 @@
 "use client";
 
-import React from "react";
-import Link from "next/link"; 
-import { MaterialSymbol } from "react-material-symbols";
-import "react-material-symbols/rounded";
+import Link from "next/link";
 
 const Pagination = () => {
   return (
@@ -23,17 +20,17 @@ const Pagination = () => {
                     href="#"
                     aria-label="Previous"
                   >
-                    <MaterialSymbol icon="keyboard_arrow_left" />
+                    <span className="material-symbols-outlined">
+                      keyboard_arrow_left
+                    </span>
                   </Link>
                 </li>
 
                 <li className="page-item">
-                  <Link
-                    className="page-link icon"
-                    href="#"
-                    aria-label="Next"
-                  >
-                    <MaterialSymbol icon="keyboard_arrow_right" />
+                  <Link className="page-link icon" href="#" aria-label="Next">
+                    <span className="material-symbols-outlined">
+                      keyboard_arrow_right
+                    </span>
                   </Link>
                 </li>
               </ul>

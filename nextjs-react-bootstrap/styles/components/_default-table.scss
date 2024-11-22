@@ -99,6 +99,19 @@
                 }
             }
         }
+        &.recent-style-two {
+            .table-responsive {
+                .table {
+                    tbody {
+                        tr {
+                            td {
+                                padding: 15px 15px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
     &.recent-leads {
         &.style-two {
@@ -276,24 +289,459 @@
             }
         }
     }
+    /* Analytics Dashboard CSS */
+    &.browser-leads {
+        &.style-two {
+            .table-responsive {
+                .table {
+                    thead {
+                        tr {
+                            th {
+                                &:first-child {
+                                    padding-left: 0 !important;
+                                }
+                                &:last-child {
+                                    padding-right: 0 !important;
+                                }
+                            }
+                        }
+                    }
+                    tbody {
+                        tr {
+                            td {
+                                padding-top: 8px;
+                                padding-bottom: 8px;
+                                &:first-child {
+                                    padding-left: 0 !important;
+                                }
+                                &:last-child {
+                                    padding-right: 0 !important;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    /* Crypto Dashboard CSS */
+    &.transaction-table {
+        &.style-two {
+            .table-responsive { 
+                .table {
+                    thead {
+                        tr {
+                            th {
+                                &:first-child {
+                                    padding-left: 0 !important;
+                                }
+                                &:last-child {
+                                    padding-right: 0 !important;
+                                }
+                            }
+                        }
+                    }
+                    tbody {
+                        tr {
+                            td {
+                                padding-top: 8px;
+                                padding-bottom: 8px;
+                                &:first-child {
+                                    padding-left: 0 !important;
+                                }
+                                &:last-child {
+                                    padding-right: 0 !important;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &.portfolio-table {
+        &.style-two {
+            .table-responsive {
+                .table {
+                    thead {
+                        tr {
+                            border-color: #757DFF !important;
+                            th {
+                                &:first-child {
+                                    padding-left: 0 !important;
+                                }
+                                &:last-child {
+                                    padding-right: 0 !important;
+                                }
+                            }
+                        }
+                    }
+                    tbody {
+                        tr {
+                            td {
+                                border-color: #757DFF;
+                                padding-top: 11px;
+                                padding-bottom: 11px;
+                                &:first-child {
+                                    padding-left: 0 !important;
+                                }
+                                &:last-child {
+                                    padding-right: 0 !important;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &.rankings-table {
+        &.style-two {
+            .table-responsive {
+                .table {
+                    thead {
+                        tr {
+                            th {
+                                &:first-child {
+                                    padding-left: 0 !important;
+                                }
+                                &:last-child {   
+                                    padding-right: 0 !important;
+                                }
+                            }
+                        }
+                    }
+                    tbody {
+                        tr {
+                            td {
+                                padding-top: 11px;
+                                padding-bottom: 11px;
+                                &:first-child {
+                                    padding-left: 0 !important;
+                                }
+                                &:last-child {
+                                    padding-right: 0 !important;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    /* Sales Dashboard CSS */
+    &.sales-locations-table {
+        &.style-two {
+            .table-responsive {
+                .table {
+                    thead {
+                        tr {
+                            th {
+                                &:first-child {
+                                    padding-left: 0 !important;
+                                }
+                                &:last-child {
+                                    padding-right: 0 !important;
+                                }
+                            }
+                        }
+                    }
+                    tbody {
+                        tr {
+                            td {
+                                padding-top: 11px;
+                                padding-bottom: 11px;
+                                &:first-child {
+                                    padding-left: 0 !important;
+                                }
+                                &:last-child {
+                                    padding-right: 0 !important;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    /* Hospital Dashboard CSS */
+    &.patient-table {
+        &.style-two {
+            .table-responsive {
+                .table {
+                    thead {
+                        tr {
+                            th {
+                                &:first-child {
+                                    padding-left: 0 !important;
+                                }
+                                &:last-child {
+                                    padding-right: 0 !important;
+                                }
+                            }
+                        }
+                    }
+                    tbody {
+                        tr {
+                            td {
+                                padding-top: 8px;
+                                padding-bottom: 8px;
+                                &:first-child {
+                                    padding-left: 0 !important;
+                                }
+                                &:last-child {
+                                    padding-right: 0 !important;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    /* Marketing Dashboard CSS */
+    &.campaigns-table {
+        &.style-two {
+            .table-responsive {
+                .table {
+                    thead {
+                        tr {
+                            th {
+                                &:first-child {
+                                    padding-left: 0 !important;
+                                }
+                                &:last-child {
+                                    padding-right: 0 !important;
+                                }
+                            }
+                        }
+                    }
+                    tbody {
+                        tr {
+                            td {
+                                padding-top: 10px;
+                                padding-bottom: 10px;
+                                &:first-child {
+                                    padding-left: 0 !important;
+                                }
+                                &:last-child {
+                                    padding-right: 0 !important;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /* NFT Dashboard CSS */
+    &.top-nfts-table {
+        &.style-two {
+            .table-responsive {
+                .table {
+                    thead {
+                        tr {
+                            th {
+                                &:first-child {
+                                    padding-left: 0 !important;
+                                }
+                                &:last-child {
+                                    padding-right: 0 !important;
+                                }
+                            }
+                        }
+                    }
+                    tbody {
+                        tr {
+                            td {
+                                padding-top: 10px;
+                                padding-bottom: 10px;
+                                &:first-child {
+                                    padding-left: 0 !important;
+                                }
+                                &:last-child {
+                                    padding-right: 0 !important;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    /* NFT Dashboard CSS */
+    &.history-of-bids {
+        &.style-two {
+            .table-responsive {
+                height: 438px;
+                .table {
+                    tbody {
+                        tr {
+                            td {
+                                padding-top: 10px;
+                                padding-bottom: 10px;
+                                &:first-child {
+                                    padding-left: 0 !important;
+                                }
+                                &:last-child {
+                                    padding-right: 0 !important;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    /* Finance Dashboard CSS */
+    &.transaction-history {
+        &.style-two {
+            .table-responsive {
+                .table {
+                    tbody {
+                        tr {
+                            td {
+                                padding-top: 23.5px;
+                                padding-bottom: 23.5px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &.transaction-history-large {
+        &.style-two {
+            .table-responsive {
+                .table {
+                    tbody {
+                        tr {
+                            td {
+                                padding-top: 23.5px;
+                                padding-bottom: 23.5px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &.shipment-list {
+        &.style-two {
+            .table-responsive {
+                .table {
+                    tbody {
+                        tr {
+                            td {
+                                padding-top: 19px;
+                                padding-bottom: 19px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &.style-three {
+        .table-responsive {
+            .table {
+                thead {
+                    tr {
+                        th {
+                            font-size: 14px;
+                            color: $body-color;
+                            &:first-child {
+                                padding-left: 30px !important;
+                            }
+                            &:last-child {
+                                padding-right: 30px;
+                            }
+                        }
+                    }
+                }
+                tbody {
+                    tr {
+                        td {
+                            padding-top: 10px;
+                            padding-bottom: 10px;
+                            border-left: none;
+                            border-right: none;
+                            &:first-child {
+                                padding-left: 30px !important;
+                            }
+                            &:last-child {
+                                padding-right: 30px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &.agents-performance-overview {
+        &.style-three {
+            .table-responsive {
+                border-radius: 0 !important;
+                .table {
+                    border-spacing: 10px;
+                    tbody {
+                        tr {
+                            td {
+                                padding: 10px !important;
+                                border-left: none;
+                                border-right: none;
+                                border-bottom: none;
+                                border-top: 10px solid #fff;
+                                background-color: #F6F7F9;
+                                border-radius: 0 !important;  
+
+                                &:first-child {
+                                    border-radius: 10px 0 0 10px !important;
+                                }
+                                &:last-child {
+                                    border-radius: 0 10px 10px 0 !important;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &.for-data-table {
+        .tablesorter-header {
+            background-color: transparent !important;
+            position: relative;
+            &::after {
+                content: "\f326";
+                font-family: remixicon!important;
+                margin-left: 4px;
+            }
+        }
+        .Selc {
+            display: none;
+        }
+    }
 }
+
 .table-src-form {
     margin-right: 20px;
 
-    i, .material-symbols {
+    i, .material-symbols-outlined {
         left: 15px !important;
         font-size: 20px;
     }
     .form-control {
         padding-left: 40px;
         background-color: #F6F7F9;
-        height: 35px;
+        height: 36px;
         width: 240px;
         padding-top: 5px;
         padding-bottom: 5px;
     }
 }
-
+ 
 /* Max width 767px */
 @media only screen and (max-width: 767px) {
 
@@ -313,6 +761,65 @@
                 width: 1100px;
             }
         }
+        &.latest-transaction {
+            .table {
+                width: 967px;
+            }
+        }
+        &.transaction-history {
+            &.tracking-order {
+                &.style-two {
+                    .table-responsive {
+                        .table {
+                            width: 742px;
+                        } 
+                    }
+                } 
+            }
+        }
+        &.style-three {
+            .table-responsive {
+                .table {
+                    thead {
+                        tr {
+                            th {
+                                &:first-child {
+                                    padding-left: 15px !important;
+                                }
+                                &:last-child {
+                                    padding-right: 15px !important;
+                                }
+                            }
+                        }
+                    }
+                    tbody {
+                        tr {
+                            td {
+                                &:first-child {
+                                    padding-left: 15px !important;
+                                }
+                                &:last-child {
+                                    padding-right: 15px !important;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        /* Analytics Dashboard CSS */
+        &.browser-leads {
+            &.style-two {
+                .table-responsive {
+                    .table {
+                        &.for-mobile-width {
+                            width: 715px !important;
+                        }
+                    }
+                }
+            }
+        }
     }
 
     .ec-recent-orders {
@@ -321,6 +828,51 @@
         }
     }
     
+    // analytics-bu-by-users 
+    .analytics-bu-by-users {
+        width: 715px;
+    }
+    .analytics-tbpt-table {
+        width: 715px;
+    }
+    .crypto-th-table {
+        width: 715px;
+    }
+    .crypto-cr-table {
+        width: 900px;
+    }
+    .patient-table {
+        .table {
+            width: 730px;
+        }
+    }
+}
+
+/* Max width 490px */
+@media only screen and (max-width: 490px) {
+
+    /* Analytics Dashboard CSS */
+    .default-table-area {
+        &.top-nfts-table {
+            &.style-two {
+                .table-responsive {
+                    .table {
+                        width: 436px !important;
+                    }
+                }
+            }
+        }
+        &.agents-performance-overview {
+            &.style-three {
+                .table-responsive {
+                    .table {
+                        width: 480px;
+                    }
+                }
+            }
+        }
+    }
+
 }
 
 @media only screen and (max-width: 380px) {
@@ -331,8 +883,19 @@
                 width: 357.33px;
             }
         }
-    }
 
+        /* Crypto Dashboard CSS */
+        &.portfolio-table {
+            &.style-two {
+                .table-responsive {
+                    .table {
+                        width: 357.33px;
+                    }
+                }
+            }
+        }
+    }
+ 
 }
 
 @media only screen and (max-width : 576px) {
@@ -388,6 +951,34 @@
     
 }
 
+/* Max width 650px */
+@media only screen and (max-width: 650px) {
+
+    /* Analytics Dashboard CSS */
+    .default-table-area {
+        /* Marketing Dashboard CSS */
+        &.campaigns-table {
+            &.style-two {
+                .table-responsive {
+                    .table {
+                        width: 670px !important;
+                    }
+                }
+            }
+        }
+        &.employee-leave-request {
+            &.style-three {
+                .table-responsive {
+                    .table {
+                        width: 626px !important;
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
 @media only screen and (max-width : 685px) {
 
     .default-table-area {
@@ -410,6 +1001,42 @@
 
 }
 
+/* Max width 1340px */
+@media only screen and (max-width: 1340px) {
+
+    /* Crypto Dashboard CSS */
+    .default-table-area {
+        &.patient-table {
+            &.style-two {
+                .table-responsive {
+                    .table {
+                        width: 927px !important;
+                    }
+                }
+            }
+        }
+        &.shipment-list {
+            &.style-two {
+                .table-responsive {
+                    .table {
+                       width: 1003px;
+                    }
+                }
+            }
+        }
+        &.employee-list {
+            &.style-three {
+                .table-responsive {
+                    .table {
+                       width: 1042px;
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
 /* Min width 768px to Max width 992px */
 @media only screen and (min-width : 768px) and (max-width : 991px) {
 
@@ -429,6 +1056,41 @@
                 width: 1100px;
             }
         }
+        &.latest-transaction {
+            .table {
+                width: 967px;
+            }
+        }
+        &.style-three {
+            .table-responsive {
+                .table {
+                    thead {
+                        tr {
+                            th {
+                                &:first-child {
+                                    padding-left: 15px !important;
+                                }
+                                &:last-child {
+                                    padding-right: 15px !important;
+                                }
+                            }
+                        }
+                    }
+                    tbody {
+                        tr {
+                            td {
+                                &:first-child {
+                                    padding-left: 15px !important;
+                                }
+                                &:last-child {
+                                    padding-right: 15px !important;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 
     .ec-recent-orders {
@@ -436,7 +1098,50 @@
             width: 1050px;
         }
     }
-    
+
+    .crypto-cr-table {
+        width: 930px;
+    }
+}
+
+@media only screen and (max-width : 685px) {
+
+    .default-table-area {
+        &.recent-orders {
+            .table {
+                width: 690px;
+            }
+        }
+        &.recent-leads {
+            .table {
+                width: 690px;
+            }
+        }
+        &.email-list {
+            .table {
+                width: 680px;
+            }
+        }
+        /* Finance Dashboard CSS */
+        &.transaction-history {
+            &.style-two {
+                .table-responsive {
+                    .table {
+                        width: 685px;
+                    } 
+                }
+            }
+        }
+        &.recent-calls {
+            &.style-three {
+                .table-responsive {
+                    .table {
+                        width: 710px;
+                    } 
+                }
+            }
+        }
+    }
 
 }
 
@@ -468,6 +1173,12 @@
             .table {
                 width: 525px;
             }
+        }
+    }
+
+    .patient-table {
+        .table {
+            width: 730px;
         }
     }
 
@@ -524,11 +1235,20 @@
         }
     }
 
+    .patient-table {
+        .table {
+            width: 730px;
+        }
+    }
 }
 
-/* Min width 1400px to Max width 1799px */
-@media only screen and (min-width : 1400px) and (max-width : 1799px) {
+/* Min width 1400px to Max width 1500px */
+@media only screen and (min-width : 1400px) and (max-width : 1550px) {
 
+    .crypto-th-table {
+        width: 715px;
+    }
+    
     
 }
 
@@ -561,6 +1281,25 @@
 @media only screen and (max-width: 1550px) {
 
     .default-table-area {
+        &.campaigns-table {
+            &.latest-transaction-table {
+                .table-responsive {
+                    .table {
+                        width: 927px !important;
+                    }
+                }
+            }
+        }
+        &.real-estate-customers {
+            &.style-two {
+                .table-responsive {
+                    .table  {
+                        width: 1252px;
+                    }
+                }
+            }
+        }
+
         &.all-products {
             .table {
                 width: 1300px;
@@ -577,3 +1316,4 @@
     }
 
 }
+

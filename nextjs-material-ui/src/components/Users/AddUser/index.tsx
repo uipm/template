@@ -16,11 +16,7 @@ import {
   Select,
   SelectChangeEvent,
 } from "@mui/material";
-
-import dynamic from "next/dynamic";
-const RichTextEditor = dynamic(() => import("@mantine/rte"), {
-  ssr: false,
-});
+import CustomEditor from "./CustomEditor";
 
 const AddUser: React.FC = () => {
   const [location, setLocation] = useState<string>("");
@@ -151,7 +147,7 @@ const AddUser: React.FC = () => {
 
                       <TextField
                         label="Enter email address"
-                        placeholder="E.g. olivia@pro.io.vn"
+                        placeholder="E.g. olivia@trezo.com"
                         variant="filled"
                         id="emailAddress"
                         name="emailAddress"
@@ -314,18 +310,7 @@ const AddUser: React.FC = () => {
                       Add Some Info
                     </Typography>
 
-                    <RichTextEditor
-                      id="rte"
-                      controls={[
-                        ["bold", "italic", "underline", "link", "image"],
-                        ["unorderedList", "h1", "h2", "h3"],
-                        ["sup", "sub"],
-                        ["alignLeft", "alignCenter", "alignRight"],
-                      ]}
-                      style={{
-                        minHeight: "200px",
-                      }}
-                    />
+                    <CustomEditor />
                   </Box>
                 </Grid>
 

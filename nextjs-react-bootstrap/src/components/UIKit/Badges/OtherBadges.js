@@ -1,10 +1,6 @@
 "use client";
 
-import React from "react";
-import "react-material-symbols/rounded";
-import Card from "react-bootstrap/Card";
-import Badge from "react-bootstrap/Badge";
-import Button from "react-bootstrap/Button";
+import { Card, Button, Badge } from "react-bootstrap";
 
 const OtherBadges = () => {
   return (

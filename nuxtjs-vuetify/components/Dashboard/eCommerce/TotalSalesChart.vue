@@ -150,11 +150,10 @@ export default defineComponent({
           colors: "#64748B",
         },
         markers: {
-          width: 12,
-          height: 12,
+          size: 7,
           offsetX: -2,
-          offsetY: 2,
-          radius: 50,
+          offsetY: -0.5,
+          shape: "diamond",
         },
       },
       tooltip: {

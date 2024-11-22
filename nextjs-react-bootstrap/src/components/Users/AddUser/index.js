@@ -1,10 +1,6 @@
 "use client";
 
-import React from "react";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-import Card from "react-bootstrap/Card";
-import Form from "react-bootstrap/Form";
+import { Row, Col, Card, Form } from "react-bootstrap";
 
 const AddUser = () => {
   return (
@@ -57,11 +53,11 @@ const AddUser = () => {
                         className="form-select form-control h-55"
                         aria-label="Default select example"
                       >
-                        <option selected>Select</option>
-                        <option value="1">New Zealand</option>
-                        <option value="2">Germany</option>
-                        <option value="3">United States</option>
-                        <option value="4">Switzerland</option>
+                        <option defaultValue="0">Select</option>
+                        <option defaultValue="1">New Zealand</option>
+                        <option defaultValue="2">Germany</option>
+                        <option defaultValue="3">United States</option>
+                        <option defaultValue="4">Switzerland</option>
                       </select>
                     </Form.Group>
                   </Col>
@@ -154,7 +150,7 @@ const AddUser = () => {
                       </label>
                       <div className="form-control h-100 text-center position-relative p-4 p-lg-5">
                         <div className="product-upload">
-                          <label for="file-upload" className="file-upload mb-0">
+                          <label htmlFor="file-upload" className="file-upload mb-0">
                             <i className="ri-folder-image-line bg-primary bg-opacity-10 p-2 rounded-1 text-primary"></i>
                             <span className="d-block text-body fs-14">
                               Drag and drop an image or{" "}
@@ -199,7 +195,7 @@ const AddUser = () => {
                       value=""
                       id="flexCheckDefault"
                     />
-                    <label className="form-check-label" for="flexCheckDefault">
+                    <label className="form-check-label" htmlFor="flexCheckDefault">
                       Allow users to show your email
                     </label>
                   </div>
@@ -211,7 +207,7 @@ const AddUser = () => {
                       value=""
                       id="flexCheckChecked2"
                     />
-                    <label className="form-check-label" for="flexCheckChecked2">
+                    <label className="form-check-label" htmlFor="flexCheckChecked2">
                       Allow users to show your experiences
                     </label>
                   </div>
@@ -223,7 +219,7 @@ const AddUser = () => {
                       value=""
                       id="flexCheckChecked3"
                     />
-                    <label className="form-check-label" for="flexCheckChecked3">
+                    <label className="form-check-label" htmlFor="flexCheckChecked3">
                       Allow users to show your followers
                     </label>
                   </div>
@@ -237,11 +233,11 @@ const AddUser = () => {
                   className="form-select form-control h-55"
                   aria-label="Default select example"
                 >
-                  <option selected>Select</option>
-                  <option value="1">Data Analysis</option>
-                  <option value="2">Project Management</option>
-                  <option value="3">Teamwork</option>
-                  <option value="4">Leadership</option>
+                  <option defaultValue="0">Select</option>
+                  <option defaultValue="1">Data Analysis</option>
+                  <option defaultValue="2">Project Management</option>
+                  <option defaultValue="3">Teamwork</option>
+                  <option defaultValue="4">Leadership</option>
                 </select>
               </Card.Body>
             </Card>

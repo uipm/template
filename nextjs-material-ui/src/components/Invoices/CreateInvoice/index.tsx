@@ -206,7 +206,7 @@ const CreateInvoice: React.FC = () => {
                   </Typography>
 
                   <Typography mt="5px !important">
-                    olivia&#64;pro.io.vn
+                    olivia&#64;trezo.com
                   </Typography>
 
                   <Typography mt="5px !important">

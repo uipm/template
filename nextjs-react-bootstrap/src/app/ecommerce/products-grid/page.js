@@ -2,7 +2,7 @@
 
 import ProductsGrid from '@/components/eCommerce/ProductsGrid';
 import Filter from '@/components/eCommerce/ProductsGrid/Filter';
-import Breadcrumb from 'react-bootstrap/Breadcrumb';
+import { Breadcrumb } from "react-bootstrap";
 
 export default function Page() {
   return (

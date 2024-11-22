@@ -1,6 +1,6 @@
 "use client";
 
-import Breadcrumb from 'react-bootstrap/Breadcrumb'; 
+import { Breadcrumb } from "react-bootstrap";
 import CategoriesTable from '@/components/eCommerce/Categories/CategoriesTable';
 
 export default function Page() {

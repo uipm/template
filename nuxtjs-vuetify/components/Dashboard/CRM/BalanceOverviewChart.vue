@@ -27,6 +27,7 @@
         </v-list>
       </v-menu>
     </div>
+
     <div class="balance-overview-content">
       <div class="chart">
         <apexchart
@@ -172,6 +173,7 @@ export default defineComponent({
           offsetX: -2,
           offsetY: -0.5,
           radius: 2,
+          shape: "diamond",
         },
       },
     });

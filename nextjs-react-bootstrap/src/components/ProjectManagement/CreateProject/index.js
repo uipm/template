@@ -1,10 +1,6 @@
 "use client";
 
-import React from "react";
-import Card from 'react-bootstrap/Card';
-import Form from 'react-bootstrap/Form';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
+import { Row, Col, Card, Form } from "react-bootstrap";
 
 const CreateProject = () => {
   return (
@@ -22,7 +18,7 @@ const CreateProject = () => {
                   <Form.Group className="mb-4">
                     <Form.Label className="label">Project Name</Form.Label>
                     <Form.Control
-                      type="text" 
+                      type="text"
                       placeholder="Write project name"
                     />
                   </Form.Group>
@@ -31,10 +27,7 @@ const CreateProject = () => {
                 <Col lg={6}>
                   <Form.Group className="mb-4">
                     <Form.Label className="label">Project ID</Form.Label>
-                    <Form.Control
-                      type="text" 
-                      placeholder="Write project ID"
-                    />
+                    <Form.Control type="text" placeholder="Write project ID" />
                   </Form.Group>
                 </Col>
 
@@ -54,7 +47,9 @@ const CreateProject = () => {
 
                 <Col lg={12}>
                   <Form.Group className="mb-4">
-                    <Form.Label className="label">Project Description</Form.Label>
+                    <Form.Label className="label">
+                      Project Description
+                    </Form.Label>
                     <textarea
                       rows="5"
                       className="form-control"
@@ -66,10 +61,7 @@ const CreateProject = () => {
                 <Col lg={6}>
                   <Form.Group className="mb-4">
                     <Form.Label className="label">Budget</Form.Label>
-                    <Form.Control
-                      type="text" 
-                      placeholder="Enter budget"
-                    />
+                    <Form.Control type="text" placeholder="Enter budget" />
                   </Form.Group>
                 </Col>
 
@@ -149,11 +141,16 @@ const CreateProject = () => {
 
                 <Col lg={6}>
                   <Form.Group className="mb-4">
-                    <Form.Label className="label">Project Preview Image</Form.Label>
+                    <Form.Label className="label">
+                      Project Preview Image
+                    </Form.Label>
 
                     <div className="form-control h-100 text-center position-relative p-4 p-lg-5">
                       <div className="product-upload">
-                        <label htmlFor="file-upload" className="file-upload mb-0">
+                        <label
+                          htmlFor="file-upload"
+                          className="file-upload mb-0"
+                        >
                           <i className="ri-folder-image-line bg-primary bg-opacity-10 p-2 rounded-1 text-primary"></i>
                           <span className="d-block text-body fs-14">
                             Drag and drop an image or{" "}
@@ -174,7 +171,10 @@ const CreateProject = () => {
 
                     <div className="form-control h-100 text-center position-relative p-4 p-lg-5">
                       <div className="product-upload">
-                        <label htmlFor="file-upload" className="file-upload mb-0">
+                        <label
+                          htmlFor="file-upload"
+                          className="file-upload mb-0"
+                        >
                           <i className="ri-file-line bg-primary bg-opacity-10 p-2 rounded-1 text-primary"></i>
                           <span className="d-block text-body fs-14">
                             Drag and drop a file or{" "}
@@ -196,8 +196,8 @@ const CreateProject = () => {
                     </button>
                     <button className="btn btn-primary py-2 px-4 fw-medium fs-16">
                       {" "}
-                      <i className="ri-add-line text-white fw-medium"></i> Create
-                      Project
+                      <i className="ri-add-line text-white fw-medium"></i>{" "}
+                      Create Project
                     </button>
                   </div>
                 </Col>

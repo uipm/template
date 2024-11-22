@@ -70,7 +70,7 @@
                   </span>
                 </div>
               </td>
-              <td class="text-body">${{ item.enrolled }}</td>
+              <td class="text-body">{{ item.enrolled }}</td>
               <td class="text-body">{{ item.startDate }}</td>
               <td class="text-body">{{ item.endDate }}</td>
               <td>

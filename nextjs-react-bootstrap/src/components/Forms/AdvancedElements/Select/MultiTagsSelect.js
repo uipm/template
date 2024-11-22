@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import Form from 'react-bootstrap/Form';
+import { Form } from "react-bootstrap";
 import Select from 'react-select';
 
 const MultiTagsSelect = () => {

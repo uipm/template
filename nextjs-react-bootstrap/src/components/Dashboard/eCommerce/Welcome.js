@@ -1,12 +1,7 @@
 "use client";
 
-import React from "react";
+import { Row, Col, Card } from "react-bootstrap";
 import Image from "next/image";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-import Card from "react-bootstrap/Card";
-import { MaterialSymbol } from "react-material-symbols";
-import "react-material-symbols/rounded";
 
 const Welcome = () => {
   return (
@@ -26,8 +21,8 @@ const Welcome = () => {
 
               <div className="d-flex align-items-center flex-wrap gap-4 gap-xxl-5">
                 <div className="d-flex align-items-center welcome-status-item">
-                  <div className="flex-shrink-0">
-                    <MaterialSymbol icon="shopping_bag" />
+                  <div className="flex-shrink-0"> 
+                    <i className="material-symbols-outlined">shopping_bag</i>
                   </div>
                   <div className="flex-grow-1 ms-3">
                     <h5 className="text-white fw-semibold mb-0">
@@ -38,8 +33,8 @@ const Welcome = () => {
                 </div>
 
                 <div className="d-flex align-items-center welcome-status-item">
-                  <div className="flex-shrink-0">
-                    <MaterialSymbol icon="chat_error" className="icon-bg" />
+                  <div className="flex-shrink-0"> 
+                    <i className="material-symbols-outlined icon-bg">chat_error</i>
                   </div>
                   <div className="flex-grow-1 ms-3">
                     <h5 className="text-white fw-semibold mb-0">35 Products</h5>

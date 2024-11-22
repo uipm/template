@@ -2,8 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
-import Card from "react-bootstrap/Card";
-import Form from "react-bootstrap/Form";
+import { Card, Form } from "react-bootstrap";
 
 const CustomerSatisfaction = () => {
   const [Chart, setChart] = useState();
@@ -41,6 +40,7 @@ const CustomerSatisfaction = () => {
         colors: "#64748B",
       },
       markers: {
+        shape: 'diamond',
         width: 9,
         height: 9,
         offsetX: -2,
@@ -57,7 +57,7 @@ const CustomerSatisfaction = () => {
             name: {
               color: "#fff",
             },
-            value: {
+            defaultValue: {
               show: true,
               color: "#fff",
               fontSize: "28px",
@@ -100,13 +100,13 @@ const CustomerSatisfaction = () => {
               }}
               aria-label="Default select example"
             >
-              <option value="0" className="text-secondary">
+              <option defaultValue="0" className="text-secondary">
                 Select
               </option>
-              <option value="1" className="text-secondary">
+              <option defaultValue="1" className="text-secondary">
                 Last Month
               </option>
-              <option value="2" className="text-secondary">
+              <option defaultValue="2" className="text-secondary">
                 Last Year
               </option>
             </Form.Select>
@@ -119,7 +119,7 @@ const CustomerSatisfaction = () => {
                   options={options}
                   series={series}
                   type="donut"
-                  height={175}
+                  height={145}
                 />
               )}
             </div>

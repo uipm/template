@@ -24,6 +24,9 @@ export default {
   span {
     color: #ad63f6;
   }
+  a {
+    color: var(--primaryColor);
+  }
 }
 
 @media only screen and (max-width: 767px) {

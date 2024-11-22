@@ -55,11 +55,11 @@
                                     </ul>
                                     <div class="tab-content" id="myTabContent">
                                         <div class="tab-pane fade show active" id="preview-tab-pane" role="tabpanel" aria-labelledby="preview-tab" tabindex="0">
-                                            <img src="assets/images/user-1.jpg" class="wh-38 rounded-circle border border-2 border-white transition-x" alt="user">
-                                            <img src="assets/images/user-2.jpg" class="wh-38 rounded-circle border border-2 border-white transition-x ms-8" alt="user">
-                                            <img src="assets/images/user-3.jpg" class="wh-38 rounded-circle border border-2 border-white transition-x ms-8" alt="user">
-                                            <img src="assets/images/user-4.jpg" class="wh-38 rounded-circle border border-2 border-white transition-x ms-8" alt="user">
-                                            <img src="assets/images/user-5.jpg" class="wh-38 rounded-circle border border-2 border-white transition-x ms-8" alt="user">
+                                            <img src="/assets/images/user-1.jpg" class="wh-38 rounded-circle border border-2 border-white transition-x" alt="user">
+                                            <img src="/assets/images/user-2.jpg" class="wh-38 rounded-circle border border-2 border-white transition-x ms-8" alt="user">
+                                            <img src="/assets/images/user-3.jpg" class="wh-38 rounded-circle border border-2 border-white transition-x ms-8" alt="user">
+                                            <img src="/assets/images/user-4.jpg" class="wh-38 rounded-circle border border-2 border-white transition-x ms-8" alt="user">
+                                            <img src="/assets/images/user-5.jpg" class="wh-38 rounded-circle border border-2 border-white transition-x ms-8" alt="user">
                                         </div>
                                         <div class="tab-pane fade" id="code-tab-pane" role="tabpanel" aria-labelledby="code-tab" tabindex="0">
                                             <button class="btn btn-outline-primary bg-white btn-sm copy-btn position-absolute top-0 end-0" data-clipboard-target="#basicAlertsCode">
@@ -67,11 +67,11 @@
                                             </button>
 <pre class="line-numbers pt-0 pb-0 ps-25 pe-25 mb-0">
 <code class="language-markup" id="basicAlertsCode">
-&lt;img src="assets/images/user-1.jpg" class="wh-38 rounded-circle border border-2 border-white transition-x" alt="user"&gt;
-&lt;img src="assets/images/user-2.jpg" class="wh-38 rounded-circle border border-2 border-white transition-x ms-8" alt="user"&gt;
-&lt;img src="assets/images/user-3.jpg" class="wh-38 rounded-circle border border-2 border-white transition-x ms-8" alt="user"&gt;
-&lt;img src="assets/images/user-4.jpg" class="wh-38 rounded-circle border border-2 border-white transition-x ms-8" alt="user"&gt;
-&lt;img src="assets/images/user-5.jpg" class="wh-38 rounded-circle border border-2 border-white transition-x ms-8" alt="user"&gt;
+&lt;img src="/assets/images/user-1.jpg" class="wh-38 rounded-circle border border-2 border-white transition-x" alt="user"&gt;
+&lt;img src="/assets/images/user-2.jpg" class="wh-38 rounded-circle border border-2 border-white transition-x ms-8" alt="user"&gt;
+&lt;img src="/assets/images/user-3.jpg" class="wh-38 rounded-circle border border-2 border-white transition-x ms-8" alt="user"&gt;
+&lt;img src="/assets/images/user-4.jpg" class="wh-38 rounded-circle border border-2 border-white transition-x ms-8" alt="user"&gt;
+&lt;img src="/assets/images/user-5.jpg" class="wh-38 rounded-circle border border-2 border-white transition-x ms-8" alt="user"&gt;
 </code>
 </pre>
                                         </div>
@@ -93,11 +93,11 @@
                                     </ul>
                                     <div class="tab-content" id="myTabContent2">
                                         <div class="tab-pane fade show active" id="preview2-tab-pane" role="tabpanel" aria-labelledby="preview2-tab" tabindex="0">
-                                            <img src="assets/images/user-1.jpg" class="wh-38 rounded-circle border border-2 border-white transition-x-right me-8" alt="user">
-                                            <img src="assets/images/user-2.jpg" class="wh-38 rounded-circle border border-2 border-white transition-x-right me-8" alt="user">
-                                            <img src="assets/images/user-3.jpg" class="wh-38 rounded-circle border border-2 border-white transition-x-right me-8" alt="user">
-                                            <img src="assets/images/user-4.jpg" class="wh-38 rounded-circle border border-2 border-white transition-x-right me-8" alt="user">
-                                            <img src="assets/images/user-5.jpg" class="wh-38 rounded-circle border border-2 border-white transition-x-right" alt="user">
+                                            <img src="/assets/images/user-1.jpg" class="wh-38 rounded-circle border border-2 border-white transition-x-right me-8" alt="user">
+                                            <img src="/assets/images/user-2.jpg" class="wh-38 rounded-circle border border-2 border-white transition-x-right me-8" alt="user">
+                                            <img src="/assets/images/user-3.jpg" class="wh-38 rounded-circle border border-2 border-white transition-x-right me-8" alt="user">
+                                            <img src="/assets/images/user-4.jpg" class="wh-38 rounded-circle border border-2 border-white transition-x-right me-8" alt="user">
+                                            <img src="/assets/images/user-5.jpg" class="wh-38 rounded-circle border border-2 border-white transition-x-right" alt="user">
                                         </div>
                                         <div class="tab-pane fade" id="code2-tab-pane" role="tabpanel" aria-labelledby="code2-tab" tabindex="0">
                                             <button class="btn btn-outline-primary bg-white btn-sm copy-btn position-absolute top-0 end-0" data-clipboard-target="#basicAlertsCode2">
@@ -105,11 +105,11 @@
                                             </button>
 <pre class="line-numbers pt-0 pb-0 ps-25 pe-25 mb-0">
 <code class="language-markup" id="basicAlertsCode2">
-&lt;img src="assets/images/user-1.jpg" class="wh-38 rounded-circle border border-2 border-white transition-x-right" alt="user"&gt;
-&lt;img src="assets/images/user-2.jpg" class="wh-38 rounded-circle border border-2 border-white transition-x-right me-8" alt="user"&gt;
-&lt;img src="assets/images/user-3.jpg" class="wh-38 rounded-circle border border-2 border-white transition-x-right me-8" alt="user"&gt;
-&lt;img src="assets/images/user-4.jpg" class="wh-38 rounded-circle border border-2 border-white transition-x-right me-8" alt="user"&gt;
-&lt;img src="assets/images/user-5.jpg" class="wh-38 rounded-circle border border-2 border-white transition-x-right me-8" alt="user"&gt;
+&lt;img src="/assets/images/user-1.jpg" class="wh-38 rounded-circle border border-2 border-white transition-x-right" alt="user"&gt;
+&lt;img src="/assets/images/user-2.jpg" class="wh-38 rounded-circle border border-2 border-white transition-x-right me-8" alt="user"&gt;
+&lt;img src="/assets/images/user-3.jpg" class="wh-38 rounded-circle border border-2 border-white transition-x-right me-8" alt="user"&gt;
+&lt;img src="/assets/images/user-4.jpg" class="wh-38 rounded-circle border border-2 border-white transition-x-right me-8" alt="user"&gt;
+&lt;img src="/assets/images/user-5.jpg" class="wh-38 rounded-circle border border-2 border-white transition-x-right me-8" alt="user"&gt;
 </code>
 </pre>
                                         </div>
@@ -131,11 +131,11 @@
                                     </ul>
                                     <div class="tab-content" id="myTabContent3">
                                         <div class="tab-pane fade show active" id="preview3-tab-pane" role="tabpanel" aria-labelledby="preview3-tab" tabindex="0">
-                                            <img src="assets/images/user-1.jpg" class="wh-38 rounded-circle border border-2 border-white transition-y me-8" alt="user">
-                                            <img src="assets/images/user-2.jpg" class="wh-38 rounded-circle border border-2 border-white transition-y me-8" alt="user">
-                                            <img src="assets/images/user-3.jpg" class="wh-38 rounded-circle border border-2 border-white transition-y me-8" alt="user">
-                                            <img src="assets/images/user-4.jpg" class="wh-38 rounded-circle border border-2 border-white transition-y me-8" alt="user">
-                                            <img src="assets/images/user-5.jpg" class="wh-38 rounded-circle border border-2 border-white transition-y" alt="user">
+                                            <img src="/assets/images/user-1.jpg" class="wh-38 rounded-circle border border-2 border-white transition-y me-8" alt="user">
+                                            <img src="/assets/images/user-2.jpg" class="wh-38 rounded-circle border border-2 border-white transition-y me-8" alt="user">
+                                            <img src="/assets/images/user-3.jpg" class="wh-38 rounded-circle border border-2 border-white transition-y me-8" alt="user">
+                                            <img src="/assets/images/user-4.jpg" class="wh-38 rounded-circle border border-2 border-white transition-y me-8" alt="user">
+                                            <img src="/assets/images/user-5.jpg" class="wh-38 rounded-circle border border-2 border-white transition-y" alt="user">
                                         </div>
                                         <div class="tab-pane fade" id="code3-tab-pane" role="tabpanel" aria-labelledby="code3-tab" tabindex="0">
                                             <button class="btn btn-outline-primary bg-white btn-sm copy-btn position-absolute top-0 end-0" data-clipboard-target="#basicAlertsCode3">
@@ -143,11 +143,11 @@
                                             </button>
 <pre class="line-numbers pt-0 pb-0 ps-25 pe-25 mb-0">
 <code class="language-markup" id="basicAlertsCode3">
-&lt;img src="assets/images/user-1.jpg" class="wh-38 rounded-circle border border-2 border-white transition-y" alt="user"&gt;
-&lt;img src="assets/images/user-2.jpg" class="wh-38 rounded-circle border border-2 border-white transition-y ms-8" alt="user"&gt;
-&lt;img src="assets/images/user-3.jpg" class="wh-38 rounded-circle border border-2 border-white transition-y ms-8" alt="user"&gt;
-&lt;img src="assets/images/user-4.jpg" class="wh-38 rounded-circle border border-2 border-white transition-y ms-8" alt="user"&gt;
-&lt;img src="assets/images/user-5.jpg" class="wh-38 rounded-circle border border-2 border-white transition-y ms-8" alt="user"&gt;
+&lt;img src="/assets/images/user-1.jpg" class="wh-38 rounded-circle border border-2 border-white transition-y" alt="user"&gt;
+&lt;img src="/assets/images/user-2.jpg" class="wh-38 rounded-circle border border-2 border-white transition-y ms-8" alt="user"&gt;
+&lt;img src="/assets/images/user-3.jpg" class="wh-38 rounded-circle border border-2 border-white transition-y ms-8" alt="user"&gt;
+&lt;img src="/assets/images/user-4.jpg" class="wh-38 rounded-circle border border-2 border-white transition-y ms-8" alt="user"&gt;
+&lt;img src="/assets/images/user-5.jpg" class="wh-38 rounded-circle border border-2 border-white transition-y ms-8" alt="user"&gt;
 </code>
 </pre>
                                         </div>
@@ -169,11 +169,11 @@
                                     </ul>
                                     <div class="tab-content" id="myTabContent4">
                                         <div class="tab-pane fade show active" id="preview4-tab-pane" role="tabpanel" aria-labelledby="preview4-tab" tabindex="0">
-                                            <img src="assets/images/user-1.jpg" class="wh-38 rounded-circle border border-2 border-white transition-y-bottom me-8" alt="user">
-                                            <img src="assets/images/user-2.jpg" class="wh-38 rounded-circle border border-2 border-white transition-y-bottom me-8" alt="user">
-                                            <img src="assets/images/user-3.jpg" class="wh-38 rounded-circle border border-2 border-white transition-y-bottom me-8" alt="user">
-                                            <img src="assets/images/user-4.jpg" class="wh-38 rounded-circle border border-2 border-white transition-y-bottom me-8" alt="user">
-                                            <img src="assets/images/user-5.jpg" class="wh-38 rounded-circle border border-2 border-white transition-y-bottom" alt="user">
+                                            <img src="/assets/images/user-1.jpg" class="wh-38 rounded-circle border border-2 border-white transition-y-bottom me-8" alt="user">
+                                            <img src="/assets/images/user-2.jpg" class="wh-38 rounded-circle border border-2 border-white transition-y-bottom me-8" alt="user">
+                                            <img src="/assets/images/user-3.jpg" class="wh-38 rounded-circle border border-2 border-white transition-y-bottom me-8" alt="user">
+                                            <img src="/assets/images/user-4.jpg" class="wh-38 rounded-circle border border-2 border-white transition-y-bottom me-8" alt="user">
+                                            <img src="/assets/images/user-5.jpg" class="wh-38 rounded-circle border border-2 border-white transition-y-bottom" alt="user">
                                         </div>
                                         <div class="tab-pane fade" id="code4-tab-pane" role="tabpanel" aria-labelledby="code4-tab" tabindex="0">
                                             <button class="btn btn-outline-primary bg-white btn-sm copy-btn position-absolute top-0 end-0" data-clipboard-target="#basicAlertsCode4">
@@ -181,11 +181,11 @@
                                             </button>
 <pre class="line-numbers pt-0 pb-0 ps-25 pe-25 mb-0">
 <code class="language-markup" id="basicAlertsCode4">
-&lt;img src="assets/images/user-1.jpg" class="wh-38 rounded-circle border border-2 border-white transition-y-bottom" alt="user"&gt;
-&lt;img src="assets/images/user-2.jpg" class="wh-38 rounded-circle border border-2 border-white transition-y-bottom ms-8" alt="user"&gt;
-&lt;img src="assets/images/user-3.jpg" class="wh-38 rounded-circle border border-2 border-white transition-y-bottom ms-8" alt="user"&gt;
-&lt;img src="assets/images/user-4.jpg" class="wh-38 rounded-circle border border-2 border-white transition-y-bottom ms-8" alt="user"&gt;
-&lt;img src="assets/images/user-5.jpg" class="wh-38 rounded-circle border border-2 border-white transition-y-bottom ms-8" alt="user"&gt;
+&lt;img src="/assets/images/user-1.jpg" class="wh-38 rounded-circle border border-2 border-white transition-y-bottom" alt="user"&gt;
+&lt;img src="/assets/images/user-2.jpg" class="wh-38 rounded-circle border border-2 border-white transition-y-bottom ms-8" alt="user"&gt;
+&lt;img src="/assets/images/user-3.jpg" class="wh-38 rounded-circle border border-2 border-white transition-y-bottom ms-8" alt="user"&gt;
+&lt;img src="/assets/images/user-4.jpg" class="wh-38 rounded-circle border border-2 border-white transition-y-bottom ms-8" alt="user"&gt;
+&lt;img src="/assets/images/user-5.jpg" class="wh-38 rounded-circle border border-2 border-white transition-y-bottom ms-8" alt="user"&gt;
 </code>
 </pre>
                                         </div>
@@ -207,11 +207,11 @@
                                     </ul>
                                     <div class="tab-content" id="myTabContent5">
                                         <div class="tab-pane fade show active" id="preview5-tab-pane" role="tabpanel" aria-labelledby="preview5-tab" tabindex="0">
-                                            <img src="assets/images/user-1.jpg" class="wh-38 rounded-circle border border-2 border-white transition-zoom-in me-8" alt="user">
-                                            <img src="assets/images/user-2.jpg" class="wh-38 rounded-circle border border-2 border-white transition-zoom-in me-8" alt="user">
-                                            <img src="assets/images/user-3.jpg" class="wh-38 rounded-circle border border-2 border-white transition-zoom-in me-8" alt="user">
-                                            <img src="assets/images/user-4.jpg" class="wh-38 rounded-circle border border-2 border-white transition-zoom-in me-8" alt="user">
-                                            <img src="assets/images/user-5.jpg" class="wh-38 rounded-circle border border-2 border-white transition-zoom-in" alt="user">
+                                            <img src="/assets/images/user-1.jpg" class="wh-38 rounded-circle border border-2 border-white transition-zoom-in me-8" alt="user">
+                                            <img src="/assets/images/user-2.jpg" class="wh-38 rounded-circle border border-2 border-white transition-zoom-in me-8" alt="user">
+                                            <img src="/assets/images/user-3.jpg" class="wh-38 rounded-circle border border-2 border-white transition-zoom-in me-8" alt="user">
+                                            <img src="/assets/images/user-4.jpg" class="wh-38 rounded-circle border border-2 border-white transition-zoom-in me-8" alt="user">
+                                            <img src="/assets/images/user-5.jpg" class="wh-38 rounded-circle border border-2 border-white transition-zoom-in" alt="user">
                                         </div>
                                         <div class="tab-pane fade" id="code5-tab-pane" role="tabpanel" aria-labelledby="code5-tab" tabindex="0">
                                             <button class="btn btn-outline-primary bg-white btn-sm copy-btn position-absolute top-0 end-0" data-clipboard-target="#basicAlertsCode5">
@@ -219,11 +219,11 @@
                                             </button>
 <pre class="line-numbers pt-0 pb-0 ps-25 pe-25 mb-0">
 <code class="language-markup" id="basicAlertsCode5">
-&lt;img src="assets/images/user-1.jpg" class="wh-38 rounded-circle border border-2 border-white transition-zoom-in me-8" alt="user"&gt;
-&lt;img src="assets/images/user-2.jpg" class="wh-38 rounded-circle border border-2 border-white transition-zoom-in me-8" alt="user"&gt;
-&lt;img src="assets/images/user-3.jpg" class="wh-38 rounded-circle border border-2 border-white transition-zoom-in me-8" alt="user"&gt;
-&lt;img src="assets/images/user-4.jpg" class="wh-38 rounded-circle border border-2 border-white transition-zoom-in me-8" alt="user"&gt;
-&lt;img src="assets/images/user-5.jpg" class="wh-38 rounded-circle border border-2 border-white transition-zoom-in" alt="user"&gt;
+&lt;img src="/assets/images/user-1.jpg" class="wh-38 rounded-circle border border-2 border-white transition-zoom-in me-8" alt="user"&gt;
+&lt;img src="/assets/images/user-2.jpg" class="wh-38 rounded-circle border border-2 border-white transition-zoom-in me-8" alt="user"&gt;
+&lt;img src="/assets/images/user-3.jpg" class="wh-38 rounded-circle border border-2 border-white transition-zoom-in me-8" alt="user"&gt;
+&lt;img src="/assets/images/user-4.jpg" class="wh-38 rounded-circle border border-2 border-white transition-zoom-in me-8" alt="user"&gt;
+&lt;img src="/assets/images/user-5.jpg" class="wh-38 rounded-circle border border-2 border-white transition-zoom-in" alt="user"&gt;
 </code>
 </pre>
                                         </div>

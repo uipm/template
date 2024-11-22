@@ -1,8 +1,7 @@
 "use client";
    
+import { Breadcrumb } from "react-bootstrap";
 import StarterContent from "@/components/Starter/StarterContent";
-import React from "react";
-import Breadcrumb from 'react-bootstrap/Breadcrumb';
 
 export default function Page() {
   return (

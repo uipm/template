@@ -1,9 +1,8 @@
 "use client";
 
-import React from "react";
+import { Card } from "react-bootstrap";
 import Link from "next/link";
 import Image from "next/image";
-import Card from "react-bootstrap/Card";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper/modules";
 

@@ -5,7 +5,10 @@ import '../scss/styles.scss';
 import * as bootstrap from 'bootstrap';
 
 // Others JS
-import "./data-table";
 import "./prism";
 import "./simplebar.min";
-import "./apexcharts-custom";
+import "./jsvectormap.min";
+import "./world-merc";
+import "./custom/apexcharts";
+import "./custom/echarts";
+import "./custom/custom";

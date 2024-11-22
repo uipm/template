@@ -1,10 +1,12 @@
 import "swiper/css";
 import "swiper/css/bundle";
 import 'remixicon/fonts/remixicon.css';
+import '../../node_modules/boxicons/css/boxicons.min.css';
 import '../../styles/front-pages.css';
 import "../../styles/control-panel.css";
 import "../../styles/left-sidebar-menu.css";
 import "../../styles/top-navbar.css";
+import "../../styles/crypto-dashboard.css";
 import "../../styles/globals.css";
 // globals dark Mode CSS
 import "../../styles/dark.css";
@@ -19,7 +21,7 @@ import theme from "@/theme";
 import LayoutProvider from "@/providers/LayoutProvider";
 
 export const metadata = {
-  title: "pro.io.vn - React Nextjs 14+ Material Design Admin Dashboard Template",
+  title: "Trezo - React Nextjs 14+ Material Design Admin Dashboard Template",
   description: "React Nextjs 14+ Material Design Admin Dashboard Template",
 };
 

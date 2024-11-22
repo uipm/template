@@ -1,12 +1,7 @@
 "use client";
- 
-import Card from "react-bootstrap/Card";
+
 import React, { useState } from 'react';
-import Button from 'react-bootstrap/Button';
-import Col from 'react-bootstrap/Col';
-import Container from 'react-bootstrap/Container';
-import Modal from 'react-bootstrap/Modal';
-import Row from 'react-bootstrap/Row';
+import { Container, Row, Col, Card, Button, Modal } from "react-bootstrap";
 
 function MydModalWithGrid(props) {
   return (

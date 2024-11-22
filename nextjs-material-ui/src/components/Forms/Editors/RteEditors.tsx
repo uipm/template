@@ -2,11 +2,7 @@
 
 import React from "react";
 import { Card, Box, Typography } from "@mui/material";
-
-import dynamic from "next/dynamic";
-const RichTextEditor = dynamic(() => import("@mantine/rte"), {
-  ssr: false,
-});
+import CustomEditor from "./CustomEditor";
 
 const RteEditors: React.FC = () => {
   return (
@@ -38,18 +34,7 @@ const RteEditors: React.FC = () => {
         </Box>
 
         <Box>
-          <RichTextEditor
-            id="rte"
-            controls={[
-              ["bold", "italic", "underline", "link", "image"],
-              ["unorderedList", "h1", "h2", "h3"],
-              ["sup", "sub"],
-              ["alignLeft", "alignCenter", "alignRight"],
-            ]}
-            style={{
-              minHeight: "250px",
-            }}
-          />
+          <CustomEditor />
         </Box>
       </Card>
     </>

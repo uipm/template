@@ -1,12 +1,7 @@
 "use client";
 
-import React from "react"; 
+import { Dropdown, Card, Form } from "react-bootstrap";
 import Image from "next/image";
-import Card from "react-bootstrap/Card";
-import Form from "react-bootstrap/Form";
-import { MaterialSymbol } from "react-material-symbols";
-import "react-material-symbols/rounded";
-import Dropdown from "react-bootstrap/Dropdown";
 
 const CreatePost = () => {
   return (
@@ -26,11 +21,10 @@ const CreatePost = () => {
 
             <div className="d-flex align-items-center gap-3">
               <button className="btn btn-primary py-2 px-3 align-items-center d-flex fs-16 fw-medium">
-                <MaterialSymbol
-                  icon="send"
-                  size={22}
-                  className="text-white me-2"
-                />
+                <span className="material-symbols-outlined fs-22 text-white me-2">
+                  send
+                </span>
+
                 <span className="py-1 d-none d-sm-inline-block">
                   Publish Post
                 </span>
@@ -77,7 +71,7 @@ const CreatePost = () => {
                 id="dropdown-basic"
                 className="bg-transparent p-0"
               >
-                <MaterialSymbol icon="more_horiz" />
+                <span className="material-symbols-outlined">more_horiz</span>
               </Dropdown.Toggle>
 
               <Dropdown.Menu className="bg-white border box-shadow">
@@ -146,11 +140,9 @@ const CreatePost = () => {
 
               <div className="d-flex align-items-center gap-3 ms-3">
                 <button className="p-0 bg-primary border-0 wh-44 lh-56 rounded-2">
-                  <MaterialSymbol
-                    icon="send"
-                    size={22}
-                    className="text-white"
-                  />
+                  <span className="material-symbols-outlined fs-22 text-white">
+                    send
+                  </span>
                 </button>
                 <button className="p-0 bg-transparent border-0 fs-20 text-body hover">
                   <i className="ri-emotion-line"></i>
@@ -167,9 +159,7 @@ const CreatePost = () => {
       <Card className="bg-white border-0 rounded-3 mb-4">
         <Card.Body className="p-4">
           <div className="d-flex justify-content-between align-items-center border-bottom pb-3 mb-3">
-            <div 
-              className="d-flex align-items-center text-decoration-none"
-            >
+            <div className="d-flex align-items-center text-decoration-none">
               <div className="flex-shrink-0">
                 <Image
                   src="/images/user-7.jpg"
@@ -191,7 +181,7 @@ const CreatePost = () => {
                 id="dropdown-basic"
                 className="bg-transparent p-0"
               >
-                <MaterialSymbol icon="more_horiz" />
+                <span className="material-symbols-outlined">more_horiz</span>
               </Dropdown.Toggle>
 
               <Dropdown.Menu className="bg-white border box-shadow">
@@ -256,11 +246,9 @@ const CreatePost = () => {
 
               <div className="d-flex align-items-center gap-3 ms-3">
                 <button className="p-0 bg-primary border-0 wh-44 lh-56 rounded-2">
-                  <MaterialSymbol
-                    icon="send"
-                    size={22}
-                    className="text-white"
-                  />
+                  <span className="material-symbols-outlined fs-22 text-white">
+                    send
+                  </span>
                 </button>
 
                 <button className="p-0 bg-transparent border-0 fs-20 text-body hover">
@@ -277,11 +265,9 @@ const CreatePost = () => {
       </Card>
 
       <Card className="bg-white border-0 rounded-3 mb-4">
-        <Card.Body className="card-body p-4">
+        <Card.Body className="p-4">
           <div className="d-flex justify-content-between align-items-center border-bottom pb-3 mb-3">
-            <div 
-              className="d-flex align-items-center text-decoration-none"
-            >
+            <div className="d-flex align-items-center text-decoration-none">
               <div className="flex-shrink-0">
                 <Image
                   src="/images/user-8.jpg"
@@ -303,7 +289,7 @@ const CreatePost = () => {
                 id="dropdown-basic"
                 className="bg-transparent p-0"
               >
-                <MaterialSymbol icon="more_horiz" />
+                <span className="material-symbols-outlined">more_horiz</span>
               </Dropdown.Toggle>
 
               <Dropdown.Menu className="bg-white border box-shadow">
@@ -370,11 +356,9 @@ const CreatePost = () => {
 
               <div className="d-flex align-items-center gap-3 ms-3">
                 <button className="p-0 bg-primary border-0 wh-44 lh-56 rounded-2">
-                  <MaterialSymbol
-                    icon="send"
-                    size={22}
-                    className="text-white"
-                  />
+                  <span className="material-symbols-outlined fs-22 text-white">
+                    send
+                  </span>
                 </button>
 
                 <button className="p-0 bg-transparent border-0 fs-20 text-body hover">
@@ -393,9 +377,7 @@ const CreatePost = () => {
       <Card className="bg-white border-0 rounded-3 mb-4">
         <Card.Body className="p-4">
           <div className="d-flex justify-content-between align-items-center border-bottom pb-3 mb-2">
-            <div 
-              className="d-flex align-items-center text-decoration-none"
-            >
+            <div className="d-flex align-items-center text-decoration-none">
               <div className="flex-shrink-0">
                 <Image
                   src="/images/user-8.jpg"
@@ -417,7 +399,7 @@ const CreatePost = () => {
                 id="dropdown-basic"
                 className="bg-transparent p-0"
               >
-                <MaterialSymbol icon="more_horiz" />
+                <span className="material-symbols-outlined">more_horiz</span>
               </Dropdown.Toggle>
 
               <Dropdown.Menu className="bg-white border box-shadow">
@@ -435,14 +417,14 @@ const CreatePost = () => {
           <p>Our Author Products</p>
 
           <div className="row">
-            <div className="col-lg-6 col-sm-6"> 
+            <div className="col-lg-6 col-sm-6">
               <Image
                 src="/images/product-6.jpg"
                 className="rounded-3"
                 alt="product"
                 width={600}
                 height={600}
-              /> 
+              />
             </div>
 
             <div className="col-lg-6 col-sm-6 mt-4 mt-sm-0">
@@ -499,11 +481,9 @@ const CreatePost = () => {
 
               <div className="d-flex align-items-center gap-3 ms-3">
                 <button className="p-0 bg-primary border-0 wh-44 lh-56 rounded-2">
-                  <MaterialSymbol
-                    icon="send"
-                    size={22}
-                    className="text-white"
-                  />
+                  <span className="material-symbols-outlined fs-22 text-white">
+                    send
+                  </span>
                 </button>
 
                 <button className="p-0 bg-transparent border-0 fs-20 text-body hover">

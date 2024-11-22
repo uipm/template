@@ -238,29 +238,22 @@
         }
     }
     .boto-next, .boto-prev {
+        position: absolute;
         top: 0;
         right: 5px;
-		padding: 0;
         border: none;
-        position: absolute;
+		padding: 0;
 		background-color: transparent;
-
         &::before {
-            background-color: #ECEEF2;
-            display: inline-block;
-            border-radius: 50%;
-            line-height: 22px;
-            content: ">";
-            height: 24px;
-			width: 24px;
+            content: url(../../assets/images/chevron-right.svg);
+			width: 40px;
         }
     }
     .boto-prev {
         right: auto;
         left: 5px;
-
         &::before {
-            content: "<";
+            content: url(../../assets/images/chevron-left.svg);
         }
     }
 }

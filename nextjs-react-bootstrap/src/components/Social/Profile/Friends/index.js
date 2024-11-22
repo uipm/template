@@ -1,13 +1,8 @@
 "use client";
 
-import React from "react";
+import { Card, Form, Table } from "react-bootstrap";
 import Link from "next/link";
 import Image from "next/image";
-import Card from "react-bootstrap/Card";
-import Table from "react-bootstrap/Table";
-import { MaterialSymbol } from "react-material-symbols";
-import "react-material-symbols/rounded";
-import Form from "react-bootstrap/Form";
 
 const friendsData = [
   {
@@ -15,35 +10,35 @@ const friendsData = [
     name: "Alex Davis",
     email: "alex@trezo.com",
     link: "#",
-    activeStatus: 'bg-danger',
+    activeStatus: "bg-danger",
   },
   {
     image: "/images/user-7.jpg",
     name: "Laura Martinez",
     email: "laura@trezo.com",
     link: "#",
-    activeStatus: 'bg-success',
+    activeStatus: "bg-success",
   },
   {
     image: "/images/user-8.jpg",
     name: "Mark Thompson",
     email: "mark@trezo.com",
     link: "#",
-    activeStatus: 'bg-success',
+    activeStatus: "bg-success",
   },
   {
     image: "/images/user-9.jpg",
     name: "Rachel White",
     email: "rachel@trezo.com",
     link: "#",
-    activeStatus: 'bg-success',
+    activeStatus: "bg-success",
   },
   {
     image: "/images/user-10.jpg",
     name: "Kevin Lee",
     email: "kevin@trezo.com",
     link: "#",
-    activeStatus: 'bg-danger',
+    activeStatus: "bg-danger",
   },
 ];
 
@@ -73,11 +68,10 @@ const Friends = () => {
                 className="rounded-2"
                 placeholder="Search here"
               />
-              <MaterialSymbol
-                icon="search"
-                size={18}
-                className="position-absolute top-50 start-0 translate-middle-y"
-              />
+
+              <span className="material-symbols-outlined fs-18 position-absolute top-50 start-0 translate-middle-y">
+                search
+              </span>
             </Form>
           </div>
 
@@ -98,7 +92,9 @@ const Friends = () => {
                                 width={44}
                                 height={44}
                               />
-                              <div className={`${value.activeStatus} position-absolute p-1 border border-2 border-white rounded-circle status-position2`}></div>
+                              <div
+                                className={`${value.activeStatus} position-absolute p-1 border border-2 border-white rounded-circle status-position2`}
+                              ></div>
                             </div>
 
                             <div className="flex-grow-1 ms-2 position-relative top-2">

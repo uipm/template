@@ -3,6 +3,7 @@
 import * as React from "react";
 import styles from "@/components/Layout/TopNavbar/AppsMenu/AppsMenu.module.css";
 import { IconButton, Typography, Tooltip, Menu } from "@mui/material";
+import Image from "next/image";
 
 const AppsMenu: React.FC = () => {
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
@@ -72,7 +73,12 @@ const AppsMenu: React.FC = () => {
         <ul className={styles.appsMenuList}>
           <li>
             <a href="https://www.figma.com/" target="_blank">
-              <img src="/images/icons/figma.svg" alt="figma" />
+              <Image
+                src="/images/icons/figma.svg"
+                alt="figma"
+                width={20}
+                height={30}
+              />
               <Typography sx={{ display: "block", fontSize: "12px" }}>
                 Figma
               </Typography>
@@ -81,7 +87,12 @@ const AppsMenu: React.FC = () => {
 
           <li>
             <a href="https://dribbble.com/" target="_blank" className="d-block">
-              <img src="/images/icons/dribbble.svg" alt="dribbble" />
+              <Image
+                src="/images/icons/dribbble.svg"
+                alt="dribbble"
+                width={30}
+                height={30}
+              />
               <Typography sx={{ display: "block", fontSize: "12px" }}>
                 Dribbble
               </Typography>
@@ -94,7 +105,12 @@ const AppsMenu: React.FC = () => {
               target="_blank"
               className="d-block"
             >
-              <img src="/images/icons/spotify.svg" alt="spotify" />
+              <Image
+                src="/images/icons/spotify.svg"
+                alt="spotify"
+                width={30}
+                height={30}
+              />
               <Typography sx={{ display: "block", fontSize: "12px" }}>
                 Spotify
               </Typography>
@@ -103,7 +119,12 @@ const AppsMenu: React.FC = () => {
 
           <li>
             <a href="https://gitlab.com/" target="_blank" className="d-block">
-              <img src="/images/icons/gitlab.svg" alt="gitlab" />
+              <Image
+                src="/images/icons/gitlab.svg"
+                alt="gitlab"
+                width={34}
+                height={30}
+              />
               <Typography sx={{ display: "block", fontSize: "12px" }}>
                 Gitlab
               </Typography>
@@ -116,7 +137,12 @@ const AppsMenu: React.FC = () => {
               target="_blank"
               className="d-block"
             >
-              <img src="/images/icons/google-drive.svg" alt="google-drive" />
+              <Image
+                src="/images/icons/google-drive.svg"
+                alt="google-drive"
+                width={34}
+                height={30}
+              />
               <Typography sx={{ display: "block", fontSize: "12px" }}>
                 GDrive
               </Typography>
@@ -125,7 +151,12 @@ const AppsMenu: React.FC = () => {
 
           <li>
             <a href="https://trello.com/" target="_blank" className="d-block">
-              <img src="/images/icons/trello.svg" alt="trello" />
+              <Image
+                src="/images/icons/trello.svg"
+                alt="trello"
+                width={30}
+                height={30}
+              />
               <Typography sx={{ display: "block", fontSize: "12px" }}>
                 Trello
               </Typography>
@@ -134,7 +165,12 @@ const AppsMenu: React.FC = () => {
 
           <li>
             <a href="https://slack.com/" target="_blank" className="d-block">
-              <img src="/images/icons/slack.svg" alt="slack" />
+              <Image
+                src="/images/icons/slack.svg"
+                alt="slack"
+                width={30}
+                height={30}
+              />
               <Typography sx={{ display: "block", fontSize: "12px" }}>
                 Slack
               </Typography>
@@ -147,7 +183,12 @@ const AppsMenu: React.FC = () => {
               target="_blank"
               className="d-block"
             >
-              <img src="/images/icons/pinterest.svg" alt="pinterest" />
+              <Image
+                src="/images/icons/pinterest.svg"
+                alt="pinterest"
+                width={30}
+                height={30}
+              />
               <Typography sx={{ display: "block", fontSize: "12px" }}>
                 Pinterest
               </Typography>
@@ -160,7 +201,12 @@ const AppsMenu: React.FC = () => {
               target="_blank"
               className="d-block"
             >
-              <img src="/images/icons/facebook.svg" alt="facebook" />
+              <Image
+                src="/images/icons/facebook.svg"
+                alt="facebook"
+                width={30}
+                height={30}
+              />
               <Typography sx={{ display: "block", fontSize: "12px" }}>
                 Facebook
               </Typography>
@@ -173,7 +219,12 @@ const AppsMenu: React.FC = () => {
               target="_blank"
               className="d-block"
             >
-              <img src="/images/icons/linkedin.svg" alt="linkedin" />
+              <Image
+                src="/images/icons/linkedin.svg"
+                alt="linkedin"
+                width={30}
+                height={30}
+              />
               <Typography sx={{ display: "block", fontSize: "12px" }}>
                 LinkedIn
               </Typography>

@@ -1,8 +1,6 @@
 "use client";
 
 import React, { useState } from "react"; 
-import { MaterialSymbol } from "react-material-symbols";
-import "react-material-symbols/rounded";
 
 const FullscreenButton = () => {
   const [isFullscreen, setIsFullscreen] = useState(false);
@@ -29,8 +27,8 @@ const FullscreenButton = () => {
         variant="text" 
         className="fullscreen-btn bg-transparent p-0 border-0"
         onClick={handleToggleFullscreen}
-      >
-        <MaterialSymbol icon="fullscreen" size={24} className="text-body" />
+      > 
+        <i className="material-symbols-outlined fs-24 text-body">fullscreen</i>
       </button>
     </>
   );

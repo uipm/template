@@ -1,10 +1,8 @@
 "use client";
-    
+
+import { Row, Col, Breadcrumb } from "react-bootstrap";
 import TextualInputs from '@/components/Forms/BasicElements/TextualInputs';
 import BasicForm from '@/components/Forms/BasicElements/BasicForm';
-import Breadcrumb from 'react-bootstrap/Breadcrumb';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
 import CustomStyles from '@/components/Forms/BasicElements/CustomStyles';
 import InputGroupsButtons from '@/components/Forms/BasicElements/InputGroupsButtons';
 

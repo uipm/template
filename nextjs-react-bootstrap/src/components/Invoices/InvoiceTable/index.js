@@ -1,136 +1,131 @@
 "use client";
 
-import React from "react";
+import { Card, Form, Table } from "react-bootstrap";
 import Link from "next/link";
 import Image from "next/image";
-import Card from "react-bootstrap/Card";  
-import Form from "react-bootstrap/Form";
-import Table from "react-bootstrap/Table";
 import SearchForm from "./SearchForm";
 import Pagination from "./Pagination";
-import { MaterialSymbol } from "react-material-symbols";
-import "react-material-symbols/rounded";
 
 const invoiceData = [
   {
-    invoiceID: '#JAN-158',
+    invoiceID: "#JAN-158",
     customer: {
-      img: '/images/user-6.jpg',
-      name: 'Marcia Baker',
+      img: "/images/user-6.jpg",
+      name: "Marcia Baker",
     },
-    email: 'marcia@trezo.com',
-    total: '$5,000',
-    issuedDate: '10 Nov 2024',
+    email: "marcia@trezo.com",
+    total: "$5,000",
+    issuedDate: "10 Nov 2024",
     quantity: 6,
-    walletBalance: '$2,000',
+    walletBalance: "$2,000",
   },
   {
-    invoiceID: '#JAN-325',
+    invoiceID: "#JAN-325",
     customer: {
-      img: '/images/user-7.jpg',
-      name: 'Carolyn Barnes'
+      img: "/images/user-7.jpg",
+      name: "Carolyn Barnes",
     },
-    email: 'barnes@trezo.com',
-    total: '$8,750',
-    issuedDate: '11 Nov 2024',
+    email: "barnes@trezo.com",
+    total: "$8,750",
+    issuedDate: "11 Nov 2024",
     quantity: 10,
-    walletBalance: '$4,500',
+    walletBalance: "$4,500",
   },
   {
-    invoiceID: '#JAN-286',
+    invoiceID: "#JAN-286",
     customer: {
-      img: '/images/user-8.jpg',
-      name: 'Donna Miller'
+      img: "/images/user-8.jpg",
+      name: "Donna Miller",
     },
-    email: 'donna@trezo.com',
-    total: '$3,200',
-    issuedDate: '12 Nov 2024',
+    email: "donna@trezo.com",
+    total: "$3,200",
+    issuedDate: "12 Nov 2024",
     quantity: 6,
-    walletBalance: '$1,550',
+    walletBalance: "$1,550",
   },
   {
-    invoiceID: '#JAN-463',
+    invoiceID: "#JAN-463",
     customer: {
-      img: '/images/user-9.jpg',
-      name: 'Barbara Cross'
+      img: "/images/user-9.jpg",
+      name: "Barbara Cross",
     },
-    email: 'cross@trezo.com',
-    total: '$3,750',
-    issuedDate: '13 Nov 2024',
+    email: "cross@trezo.com",
+    total: "$3,750",
+    issuedDate: "13 Nov 2024",
     quantity: 4,
-    walletBalance: '$2,490',
+    walletBalance: "$2,490",
   },
   {
-    invoiceID: '#JAN-998',
+    invoiceID: "#JAN-998",
     customer: {
-      img: '/images/user-10.jpg',
-      name: 'Rebecca Block'
+      img: "/images/user-10.jpg",
+      name: "Rebecca Block",
     },
-    email: 'block@trezo.com',
-    total: '$6,000',
-    issuedDate: '14 Nov 2024',
+    email: "block@trezo.com",
+    total: "$6,000",
+    issuedDate: "14 Nov 2024",
     quantity: 2,
-    walletBalance: '$3,599',
+    walletBalance: "$3,599",
   },
   {
-    invoiceID: '#JAN-436',
+    invoiceID: "#JAN-436",
     customer: {
-      img: '/images/user-11.jpg',
-      name: 'Ramiro McCarty'
+      img: "/images/user-11.jpg",
+      name: "Ramiro McCarty",
     },
-    email: 'ramiro@trezo.com',
-    total: '$9,200',
-    issuedDate: '13 Nov 2024',
+    email: "ramiro@trezo.com",
+    total: "$9,200",
+    issuedDate: "13 Nov 2024",
     quantity: 8,
-    walletBalance: '$5,800',
+    walletBalance: "$5,800",
   },
   {
-    invoiceID: '#JAN-860',
+    invoiceID: "#JAN-860",
     customer: {
-      img: '/images/user-12.jpg',
-      name: 'Robert Fairweather'
+      img: "/images/user-12.jpg",
+      name: "Robert Fairweather",
     },
-    email: 'robert@trezo.com',
-    total: '$2,500',
-    issuedDate: '12 Nov 2024',
+    email: "robert@trezo.com",
+    total: "$2,500",
+    issuedDate: "12 Nov 2024",
     quantity: 6,
-    walletBalance: '$1,200',
+    walletBalance: "$1,200",
   },
   {
-    invoiceID: '#JAN-491',
+    invoiceID: "#JAN-491",
     customer: {
-      img: '/images/user-13.jpg',
-      name: 'Marcelino Haddock'
+      img: "/images/user-13.jpg",
+      name: "Marcelino Haddock",
     },
-    email: 'haddock@trezo.com',
-    total: '$7,300',
-    issuedDate: '17 Nov 2024',
+    email: "haddock@trezo.com",
+    total: "$7,300",
+    issuedDate: "17 Nov 2024",
     quantity: 9,
-    walletBalance: '$4,850',
+    walletBalance: "$4,850",
   },
   {
-    invoiceID: '#JAN-125',
+    invoiceID: "#JAN-125",
     customer: {
-      img: '/images/user-14.jpg',
-      name: 'Thomas Wilson'
+      img: "/images/user-14.jpg",
+      name: "Thomas Wilson",
     },
-    email: 'wildon@trezo.com',
-    total: '$4,800',
-    issuedDate: '18 Nov 2024',
+    email: "wildon@trezo.com",
+    total: "$4,800",
+    issuedDate: "18 Nov 2024",
     quantity: 5,
-    walletBalance: '$2,300',
+    walletBalance: "$2,300",
   },
   {
-    invoiceID: '#JAN-579',
+    invoiceID: "#JAN-579",
     customer: {
-      img: '/images/user-15.jpg',
-      name: 'Nathaniel Hulsey'
+      img: "/images/user-15.jpg",
+      name: "Nathaniel Hulsey",
     },
-    email: 'hulsey@trezo.com',
-    total: '$6,500',
-    issuedDate: '19 Nov 2024',
+    email: "hulsey@trezo.com",
+    total: "$6,500",
+    issuedDate: "19 Nov 2024",
     quantity: 6,
-    walletBalance: '$4,560',
+    walletBalance: "$4,560",
   },
 ];
 
@@ -141,7 +136,7 @@ const InvoiceTable = () => {
         <Card.Body className="p-4">
           <div className="d-flex justify-content-between align-items-center flex-wrap gap-3 mb-3 mb-lg-4">
             <SearchForm />
-  
+
             <Form.Select
               className="month-select form-control"
               aria-label="Default select example"
@@ -175,61 +170,47 @@ const InvoiceTable = () => {
                       <tr key={i}>
                         <td>{value.invoiceID}</td>
                         <td>
-                          <div 
-                            className="d-flex align-items-center"
-                          >
+                          <div className="d-flex align-items-center">
                             <Image
                               src={value.customer.img}
                               className="wh-40"
                               alt="user"
                               width={40}
                               height={40}
-                              style={{ borderRadius: '100%' }}
+                              style={{ borderRadius: "100%" }}
                             />
                             <div className="ms-2 ps-1">
                               <h6 className="fw-medium fs-14 m-0">
                                 {value.customer.name}
-                              </h6> 
+                              </h6>
                             </div>
                           </div>
                         </td>
                         <td>{value.email}</td>
-                        <td>{value.issuedDate}</td> 
-                        <td>                          
-                          {value.total} 
-                        </td>
-                        <td>                          
-                          {value.quantity} 
-                        </td>
-                        <td>                          
-                          {value.walletBalance} 
-                        </td>
+                        <td>{value.issuedDate}</td>
+                        <td>{value.total}</td>
+                        <td>{value.quantity}</td>
+                        <td>{value.walletBalance}</td>
                         <td>
                           <div className="d-flex align-items-center gap-1">
                             <Link href="/invoices/details/">
                               <button className="ps-0 border-0 bg-transparent lh-1 position-relative top-2">
-                                <MaterialSymbol
-                                  icon="visibility"
-                                  size={16}
-                                  className="text-primary"
-                                />
+                                <span className="material-symbols-outlined fs-16 text-primary">
+                                  visibility
+                                </span>
                               </button>
                             </Link>
 
                             <button className="ps-0 border-0 bg-transparent lh-1 position-relative top-2">
-                              <MaterialSymbol
-                                icon="print"
-                                size={16}
-                                className="text-body"
-                              />
+                              <span className="material-symbols-outlined fs-16 text-body">
+                                thumb_down
+                              </span>
                             </button>
 
                             <button className="ps-0 border-0 bg-transparent lh-1 position-relative top-2">
-                              <MaterialSymbol
-                                icon="delete"
-                                size={16}
-                                className="text-danger"
-                              />
+                              <span className="material-symbols-outlined fs-16 text-danger">
+                                delete
+                              </span>
                             </button>
                           </div>
                         </td>

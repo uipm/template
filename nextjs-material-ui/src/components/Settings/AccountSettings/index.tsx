@@ -18,11 +18,7 @@ import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
 import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
 import { DatePicker } from "@mui/x-date-pickers/DatePicker";
 import NavList from "../NavList";
-
-import dynamic from "next/dynamic";
-const RichTextEditor = dynamic(() => import("@mantine/rte"), {
-  ssr: false,
-});
+import CustomEditor from "./CustomEditor";
 
 const AccountSettings: React.FC = () => {
   const [country, setCountry] = useState<string>("");
@@ -189,7 +185,7 @@ const AccountSettings: React.FC = () => {
 
                   <TextField
                     label="Enter amail address"
-                    defaultValue="olivia@pro.io.vn"
+                    defaultValue="olivia@trezo.com"
                     variant="filled"
                     id="emailAddress"
                     name="emailAddress"
@@ -505,7 +501,7 @@ const AccountSettings: React.FC = () => {
 
                   <TextField
                     label="Enter company name"
-                    defaultValue="pro.io Admin"
+                    defaultValue="Trezo Admin"
                     variant="filled"
                     id="companyName"
                     name="companyName"
@@ -586,18 +582,7 @@ const AccountSettings: React.FC = () => {
                   Add Your Bio
                 </Typography>
 
-                <RichTextEditor
-                  id="rte"
-                  controls={[
-                    ["bold", "italic", "underline", "link", "image"],
-                    ["unorderedList", "h1", "h2", "h3"],
-                    ["sup", "sub"],
-                    ["alignLeft", "alignCenter", "alignRight"],
-                  ]}
-                  style={{
-                    minHeight: "200px",
-                  }}
-                />
+                <CustomEditor />
               </Box>
             </Grid>
 

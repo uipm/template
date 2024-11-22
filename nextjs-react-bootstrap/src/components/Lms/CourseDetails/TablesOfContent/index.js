@@ -1,13 +1,7 @@
 "use client";
 
-import React from "react";
-import Link from "next/link"; 
-import Card from "react-bootstrap/Card";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-import Accordion from 'react-bootstrap/Accordion';
-import { MaterialSymbol } from "react-material-symbols";
-import "react-material-symbols/rounded";
+import { Row, Col, Card, Accordion } from "react-bootstrap";
+import Link from "next/link";
 
 const TablesOfContent = () => {
   return (
@@ -19,7 +13,10 @@ const TablesOfContent = () => {
           <Row className="align-items-center">
             <Col lg={7}>
               <Accordion className="course-accordion" defaultActiveKey="0">
-                <Accordion.Item className="border-0 rounded-3 mb-3" eventKey="0">
+                <Accordion.Item
+                  className="border-0 rounded-3 mb-3"
+                  eventKey="0"
+                >
                   <Accordion.Header className="rounded-3 p-2">
                     <div className="fs-15 fw-semibold text-secondary rounded-3">
                       Introduction to Cybersecurity
@@ -30,7 +27,10 @@ const TablesOfContent = () => {
                     <ul className="mt-2 ps-0 mb-0 list-unstyled">
                       <li className="border-bottom pb-3 mb-3 d-flex justify-content-between align-items-center flex-wrap gap-1">
                         <div className="d-flex align-items-center">
-                          <MaterialSymbol icon="info" size={20} className="text-primary position-relative top-1" />
+                          <span className="material-symbols-outlined fs-20 text-primary position-relative top-1">
+                            info
+                          </span>
+
                           <span className="ms-2">Course Introduction</span>
                         </div>
                         <span>2m 24s</span>
@@ -38,7 +38,10 @@ const TablesOfContent = () => {
 
                       <li className="border-bottom pb-3 mb-3 d-flex justify-content-between align-items-center flex-wrap gap-1">
                         <div className="d-flex align-items-center">
-                          <MaterialSymbol icon="play_circle" size={20} className="text-primary position-relative top-1" />
+                          <span className="material-symbols-outlined fs-20 text-primary position-relative top-1">
+                            play_circle
+                          </span>
+
                           <span className="ms-2">
                             Cyber Security Introduction
                           </span>
@@ -48,7 +51,9 @@ const TablesOfContent = () => {
 
                       <li className="border-bottom pb-3 mb-3 d-flex justify-content-between align-items-center flex-wrap gap-1">
                         <div className="d-flex align-items-center">
-                          <MaterialSymbol icon="list" size={20} className="text-primary position-relative top-1" />
+                          <span className="material-symbols-outlined fs-20 text-primary position-relative top-1">
+                            list
+                          </span>
                           <span className="ms-2">
                             What is Cyber Security and the CIA Triad
                           </span>
@@ -58,7 +63,9 @@ const TablesOfContent = () => {
 
                       <li className="border-bottom pb-3 mb-3 d-flex justify-content-between align-items-center flex-wrap gap-1">
                         <div className="d-flex align-items-center">
-                          <MaterialSymbol icon="star" size={20} className="text-primary position-relative top-1" />
+                          <span className="material-symbols-outlined fs-20 text-primary position-relative top-1">
+                            star
+                          </span>
                           <span className="ms-2">
                             Threat Actors: Who are They?
                           </span>
@@ -68,7 +75,9 @@ const TablesOfContent = () => {
 
                       <li className="d-flex justify-content-between align-items-center flex-wrap gap-1">
                         <div className="d-flex align-items-center">
-                          <MaterialSymbol icon="hotel_class" size={20} className="text-primary position-relative top-1" />
+                          <span className="material-symbols-outlined fs-20 text-primary position-relative top-1">
+                            hotel_class
+                          </span>
                           <span className="ms-2">Types of Threat Actors</span>
                         </div>
                         <span>2m 13s</span>
@@ -77,7 +86,10 @@ const TablesOfContent = () => {
                   </Accordion.Body>
                 </Accordion.Item>
 
-                <Accordion.Item className="border-0 rounded-3 mb-3" eventKey="1">
+                <Accordion.Item
+                  className="border-0 rounded-3 mb-3"
+                  eventKey="1"
+                >
                   <Accordion.Header className="rounded-3 p-2">
                     <div className="fs-15 fw-semibold text-secondary rounded-3">
                       Secure Networking
@@ -88,7 +100,9 @@ const TablesOfContent = () => {
                     <ul className="mt-2 ps-0 mb-0 list-unstyled">
                       <li className="border-bottom pb-3 mb-3 d-flex justify-content-between align-items-center flex-wrap gap-1">
                         <div className="d-flex align-items-center">
-                          <MaterialSymbol icon="info" size={20} className="text-primary position-relative top-1" />
+                          <span className="material-symbols-outlined fs-20 text-primary position-relative top-1">
+                            info
+                          </span>
                           <span className="ms-2">
                             Network Security Introduction
                           </span>
@@ -98,7 +112,9 @@ const TablesOfContent = () => {
 
                       <li className="border-bottom pb-3 mb-3 d-flex justify-content-between align-items-center flex-wrap gap-1">
                         <div className="d-flex align-items-center">
-                          <MaterialSymbol icon="hotel_class" size={20} className="text-primary position-relative top-1" />
+                          <span className="material-symbols-outlined fs-20 text-primary position-relative top-1">
+                            hotel_class
+                          </span>
                           <span className="ms-2">
                             Introduction to Wired and Wireless Networks
                           </span>
@@ -108,7 +124,9 @@ const TablesOfContent = () => {
 
                       <li className="border-bottom pb-3 mb-3 d-flex justify-content-between align-items-center flex-wrap gap-1">
                         <div className="d-flex align-items-center">
-                          <MaterialSymbol icon="list" size={20} className="text-primary position-relative top-1" />
+                          <span className="material-symbols-outlined fs-20 text-primary position-relative top-1">
+                            list
+                          </span>
                           <span className="ms-2">
                             Wired Network Vulnerabilities and How to Protect
                             Wired Networks
@@ -119,10 +137,12 @@ const TablesOfContent = () => {
 
                       <li className="d-flex justify-content-between align-items-center flex-wrap gap-1">
                         <div className="d-flex align-items-center">
-                          <MaterialSymbol icon="star" size={20} className="text-primary position-relative top-1" />
+                          <span className="material-symbols-outlined fs-20 text-primary position-relative top-1">
+                            star
+                          </span>
                           <span className="ms-2">
-                            Wireless Network Vulnerabilities and How to
-                            Protect Wireless Networks
+                            Wireless Network Vulnerabilities and How to Protect
+                            Wireless Networks
                           </span>
                         </div>
                         <span>2m 2s</span>
@@ -131,7 +151,10 @@ const TablesOfContent = () => {
                   </Accordion.Body>
                 </Accordion.Item>
 
-                <Accordion.Item className="border-0 rounded-3 mb-3" eventKey="2">
+                <Accordion.Item
+                  className="border-0 rounded-3 mb-3"
+                  eventKey="2"
+                >
                   <Accordion.Header className="rounded-3 p-2">
                     <div className="fs-15 fw-semibold text-secondary rounded-3">
                       Secure E-Mail
@@ -142,7 +165,9 @@ const TablesOfContent = () => {
                     <ul className="mt-2 ps-0 mb-0 list-unstyled">
                       <li className="border-bottom pb-3 mb-3 d-flex justify-content-between align-items-center flex-wrap gap-1">
                         <div className="d-flex align-items-center">
-                          <MaterialSymbol icon="info" size={20} className="text-primary position-relative top-1" />
+                          <span className="material-symbols-outlined fs-20 text-primary position-relative top-1">
+                            info
+                          </span>
                           <span className="ms-2">
                             E-Mail Security Introduction
                           </span>
@@ -152,7 +177,9 @@ const TablesOfContent = () => {
 
                       <li className="border-bottom pb-3 mb-3 d-flex justify-content-between align-items-center flex-wrap gap-1">
                         <div className="d-flex align-items-center">
-                          <MaterialSymbol icon="play_circle" size={20} className="text-primary position-relative top-1" />
+                          <span className="material-symbols-outlined fs-20 text-primary position-relative top-1">
+                            play_circle
+                          </span>
                           <span className="ms-2">
                             E-Mail: Overview and Importance
                           </span>
@@ -162,7 +189,9 @@ const TablesOfContent = () => {
 
                       <li className="border-bottom pb-3 mb-3 d-flex justify-content-between align-items-center flex-wrap gap-1">
                         <div className="d-flex align-items-center">
-                          <MaterialSymbol icon="list" size={20} className="text-primary position-relative top-1" />
+                          <span className="material-symbols-outlined fs-20 text-primary position-relative top-1">
+                            list
+                          </span>
                           <span className="ms-2">
                             Phishing: Techniques, Implications and How to Spot
                           </span>
@@ -172,7 +201,9 @@ const TablesOfContent = () => {
 
                       <li className="d-flex justify-content-between align-items-center flex-wrap gap-1">
                         <div className="d-flex align-items-center">
-                          <MaterialSymbol icon="star" size={20} className="text-primary position-relative top-1" />
+                          <span className="material-symbols-outlined fs-20 text-primary position-relative top-1">
+                            star
+                          </span>
                           <span className="ms-2">
                             Understanding E-Mail Headers for Verification
                           </span>
@@ -183,7 +214,10 @@ const TablesOfContent = () => {
                   </Accordion.Body>
                 </Accordion.Item>
 
-                <Accordion.Item className="border-0 rounded-3 mb-3" eventKey="3">
+                <Accordion.Item
+                  className="border-0 rounded-3 mb-3"
+                  eventKey="3"
+                >
                   <Accordion.Header className="rounded-3 p-2">
                     <div className="fs-15 fw-semibold text-secondary rounded-3">
                       Secure Internet Browsing
@@ -194,7 +228,9 @@ const TablesOfContent = () => {
                     <ul className="mt-2 ps-0 mb-0 list-unstyled">
                       <li className="border-bottom pb-3 mb-3 d-flex justify-content-between align-items-center flex-wrap gap-1">
                         <div className="d-flex align-items-center">
-                          <MaterialSymbol icon="info" size={20} className="text-primary position-relative top-1" />
+                          <span className="material-symbols-outlined fs-20 text-primary position-relative top-1">
+                            info
+                          </span>
                           <span className="ms-2">
                             Internet Security Introduction
                           </span>
@@ -204,7 +240,10 @@ const TablesOfContent = () => {
 
                       <li className="border-bottom pb-3 mb-3 d-flex justify-content-between align-items-center flex-wrap gap-1">
                         <div className="d-flex align-items-center">
-                          <MaterialSymbol icon="play_circle" size={20} className="text-primary position-relative top-1" />
+                          <span className="material-symbols-outlined fs-20 text-primary position-relative top-1">
+                            play_circle
+                          </span>
+
                           <span className="ms-2">
                             Exploring Web-Based Threats
                           </span>
@@ -214,7 +253,9 @@ const TablesOfContent = () => {
 
                       <li className="border-bottom pb-3 mb-3 d-flex justify-content-between align-items-center flex-wrap gap-1">
                         <div className="d-flex align-items-center">
-                          <MaterialSymbol icon="list" size={20} className="text-primary position-relative top-1" />
+                          <span className="material-symbols-outlined fs-20 text-primary position-relative top-1">
+                            list
+                          </span>
                           <span className="ms-2">
                             Typo Squatting: Risks and Mitigation
                           </span>
@@ -224,7 +265,9 @@ const TablesOfContent = () => {
 
                       <li className="border-bottom pb-3 mb-3 d-flex justify-content-between align-items-center flex-wrap gap-1">
                         <div className="d-flex align-items-center">
-                          <MaterialSymbol icon="star" size={20} className="text-primary position-relative top-1" />
+                          <span className="material-symbols-outlined fs-20 text-primary position-relative top-1">
+                            star
+                          </span>
                           <span className="ms-2">
                             Watering Hole Attacks: Tactics and Countermeasures
                           </span>
@@ -234,7 +277,9 @@ const TablesOfContent = () => {
 
                       <li className="d-flex justify-content-between align-items-center flex-wrap gap-1">
                         <div className="d-flex align-items-center">
-                          <MaterialSymbol icon="hotel_class" size={20} className="text-primary position-relative top-1" />
+                          <span className="material-symbols-outlined fs-20 text-primary position-relative top-1">
+                            hotel_class
+                          </span>
                           <span className="ms-2">
                             Secure Browsing Best Practices
                           </span>
@@ -256,7 +301,9 @@ const TablesOfContent = () => {
                     <ul className="mt-2 ps-0 mb-0 list-unstyled">
                       <li className="border-bottom pb-3 mb-3 d-flex justify-content-between align-items-center flex-wrap gap-1">
                         <div className="d-flex align-items-center">
-                          <MaterialSymbol icon="info" size={20} className="text-primary position-relative top-1" />
+                          <span className="material-symbols-outlined fs-20 text-primary position-relative top-1">
+                            info
+                          </span>
                           <span className="ms-2">
                             Device Security Introduction
                           </span>
@@ -266,7 +313,9 @@ const TablesOfContent = () => {
 
                       <li className="border-bottom pb-3 mb-3 d-flex justify-content-between align-items-center flex-wrap gap-1">
                         <div className="d-flex align-items-center">
-                          <MaterialSymbol icon="play_circle" size={20} className="text-primary position-relative top-1" />
+                          <span className="material-symbols-outlined fs-20 text-primary position-relative top-1">
+                            play_circle
+                          </span>
                           <span className="ms-2">
                             Securing Computers, Laptops, and Mobile Devices
                           </span>
@@ -276,17 +325,19 @@ const TablesOfContent = () => {
 
                       <li className="border-bottom pb-3 mb-3 d-flex justify-content-between align-items-center flex-wrap gap-1">
                         <div className="d-flex align-items-center">
-                          <MaterialSymbol icon="list" size={20} className="text-primary position-relative top-1" />
-                          <span className="ms-2">
-                            Password Best Practices
+                          <span className="material-symbols-outlined fs-20 text-primary position-relative top-1">
+                            list
                           </span>
+                          <span className="ms-2">Password Best Practices</span>
                         </div>
                         <span>3m 32s</span>
                       </li>
 
                       <li className="border-bottom pb-3 mb-3 d-flex justify-content-between align-items-center flex-wrap gap-1">
                         <div className="d-flex align-items-center">
-                          <MaterialSymbol icon="star" size={20} className="text-primary position-relative top-1" />
+                          <span className="material-symbols-outlined fs-20 text-primary position-relative top-1">
+                            star
+                          </span>
                           <span className="ms-2">
                             Multi-Factor Authentication (MFA)
                           </span>
@@ -296,7 +347,9 @@ const TablesOfContent = () => {
 
                       <li className="d-flex justify-content-between align-items-center flex-wrap gap-1">
                         <div className="d-flex align-items-center">
-                          <MaterialSymbol icon="hotel_class" size={20} className="text-primary position-relative top-1" />
+                          <span className="material-symbols-outlined fs-20 text-primary position-relative top-1">
+                            hotel_class
+                          </span>
                           <span className="ms-2">
                             Keeping Devices Up-to-Date
                           </span>

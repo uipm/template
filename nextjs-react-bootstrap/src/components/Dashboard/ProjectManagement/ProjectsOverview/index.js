@@ -1,12 +1,7 @@
 "use client";
 
-import React from "react";
-import Card from "react-bootstrap/Card";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
+import { Row, Col, Card } from "react-bootstrap";
 import Image from "next/image";
-import { MaterialSymbol } from "react-material-symbols";
-import "react-material-symbols/rounded";
 
 const ProjectsOverview = () => {
   return (
@@ -23,11 +18,9 @@ const ProjectsOverview = () => {
                 <Card.Body className="p-4">
                   <div className="d-flex align-items-center mb-19">
                     <div className="flex-shrink-0">
-                      <MaterialSymbol
-                        icon="folder_open"
-                        size={40}
-                        className="text-primary"
-                      /> 
+                      <span className="material-symbols-outlined fs-40 text-primary">
+                        folder_open
+                      </span>
                     </div>
                     <div className="flex-grow-1 ms-2">
                       <span>Total Projects</span>
@@ -47,11 +40,9 @@ const ProjectsOverview = () => {
                 <Card.Body className="p-4">
                   <div className="d-flex align-items-center mb-19">
                     <div className="flex-shrink-0">
-                      <MaterialSymbol
-                        icon="stacks"
-                        size={40}
-                        className="text-danger"
-                      />
+                      <span className="material-symbols-outlined fs-40 text-danger">
+                        stacks
+                      </span>
                     </div>
                     <div className="flex-grow-1 ms-2">
                       <span>Active Projects</span>
@@ -71,11 +62,9 @@ const ProjectsOverview = () => {
                 <Card.Body className="p-4">
                   <div className="d-flex align-items-center mb-19">
                     <div className="flex-shrink-0">
-                      <MaterialSymbol
-                        icon="assignment_turned_in"
-                        size={40}
-                        className="text-success"
-                      />
+                      <span className="material-symbols-outlined fs-40 text-success">
+                        assignment_turned_in
+                      </span>
                     </div>
                     <div className="flex-grow-1 ms-2">
                       <span>Finished Projects</span>
@@ -95,11 +84,9 @@ const ProjectsOverview = () => {
                 <Card.Body className="p-4">
                   <div className="d-flex align-items-center mb-2">
                     <div className="flex-shrink-0">
-                      <MaterialSymbol
-                        icon="group"
-                        size={40}
-                        className="text-primary-div"
-                      />
+                      <span className="material-symbols-outlined fs-40 text-primary-div">
+                        group
+                      </span>
                     </div>
                     <div className="flex-grow-1 ms-2">
                       <span>Team Members</span>

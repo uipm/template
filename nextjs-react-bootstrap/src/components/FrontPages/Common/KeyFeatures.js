@@ -1,11 +1,5 @@
 "use client";
 
-import React from "react";
-import Link from "next/link";
-import Image from "next/image";
-import { MaterialSymbol } from "react-material-symbols";
-import "react-material-symbols/rounded";
-
 const KeyFeatures = () => {
   return (
     <>
@@ -25,7 +19,9 @@ const KeyFeatures = () => {
           <div className="row justify-content-center">
             <div className="col-lg-4 col-md-6">
               <div className="key-features-single-item">
-                <MaterialSymbol icon="stacks" className="wh-87 bg-primary bg-opacity-25 d-inline-block text-primary" />
+                <i className="material-symbols-outlined wh-87 bg-primary bg-opacity-25 d-inline-block text-primary">
+                  stacks
+                </i>
 
                 <h3>Real-Time Updates</h3>
                 <p>
@@ -38,8 +34,9 @@ const KeyFeatures = () => {
 
             <div className="col-lg-4 col-md-6">
               <div className="key-features-single-item">
-                <MaterialSymbol icon="frame_source" className="wh-87 bg-primary-div bg-opacity-25 d-inline-block text-primary-div" />
-
+                <i className="material-symbols-outlined wh-87 bg-primary-div bg-opacity-25 d-inline-block text-primary-div">
+                  source
+                </i>
                 <h3>Quality Code</h3>
                 <p>
                   These features include adherence to coding standards, robust
@@ -51,7 +48,9 @@ const KeyFeatures = () => {
 
             <div className="col-lg-4 col-md-6">
               <div className="key-features-single-item">
-                <MaterialSymbol icon="support_agent" className="wh-87 bg-danger bg-opacity-25 d-inline-block text-danger" />
+                <i className="material-symbols-outlined wh-87 bg-danger bg-opacity-25 d-inline-block text-danger">
+                  support_agent
+                </i>
 
                 <h3>24/7 Customer Support</h3>
                 <p>

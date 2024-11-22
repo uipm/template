@@ -1,9 +1,6 @@
 "use client";
 
-import React from 'react';
-import "react-material-symbols/rounded";
-import Card from 'react-bootstrap/Card';
-import Alert from 'react-bootstrap/Alert';
+import { Card, Alert } from "react-bootstrap";
 
 const BasicAlertsWithBG = () => {
   return (

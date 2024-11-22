@@ -1,9 +1,7 @@
 "use client";
 
-import React from "react";
+import { Card, Table } from "react-bootstrap";
 import Link from "next/link";
-import Card from 'react-bootstrap/Card'; 
-import Table from 'react-bootstrap/Table'; 
 
 const YourOrder = () => {
   return (

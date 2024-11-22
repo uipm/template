@@ -86,7 +86,7 @@
                     &:hover {
                         background-color: #F6F7F9;
                     }
-                    .material-symbols {
+                    .material-symbols-outlined {
                         margin-right: 8px;
                         font-size: 21px;
                         color: $secondary;
@@ -96,7 +96,7 @@
                     }
                     .count {
                         background-color: #FFF5ED;
-                        color: #FD5812;
+                        color: #FD5812 !important;
                         border-radius: 50px;
                         color: $danger;
                         font-size: 11px;
@@ -172,7 +172,7 @@
                     }
                 }
             } 
-			.material-symbols {
+			.material-symbols-outlined {
 				margin-right: 8px;
                 font-size: 21px;
                 color: $secondary;
@@ -185,7 +185,7 @@
                 background-color: #f5f5f9;
                 color: $primary;
 
-                .material-symbols {
+                .material-symbols-outlined {
                     color: $primary;
                 }
 
@@ -292,7 +292,7 @@
                                     &::after {
                                         display: none;
                                     }
-                                    .material-symbols {
+                                    .material-symbols-outlined {
                                         margin-right: 0;
                                     }
                                     .title {
@@ -343,7 +343,7 @@
                                         &::after {
                                             display: block;
                                         }
-                                        .material-symbols {
+                                        .material-symbols-outlined {
                                             margin-right: 8px;
                                         }
                                         .title {

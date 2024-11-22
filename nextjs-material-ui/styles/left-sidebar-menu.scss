@@ -164,7 +164,7 @@
                         right: 10px;
                     }
                     .MuiAccordionSummary-content {
-                        .pro.io-badge {
+                        .trezo-badge {
                             top: 50%;
                             padding: 0;
                             right: 34px;
@@ -213,6 +213,7 @@
 
                         .sidemenu-item {
                             margin-bottom: 4px;
+                            white-space: nowrap;
 
                             .sidemenu-link {
                                 display: block;
@@ -251,7 +252,7 @@
                                         border-color: var(--primaryColor);
                                     }
                                 }
-                                .pro.io-badge {
+                                .trezo-badge {
                                     top: -1px;
                                     color: #FD5812;
                                     padding: 2px 6px;
@@ -495,7 +496,7 @@
                                 left: auto;
                                 right: 12px;
                             }
-                            .pro.io-badge {
+                            .trezo-badge {
                                 right: auto;
                                 left: 34px;
                             }
@@ -521,7 +522,7 @@
                                         right: 18px;
                                     }
 
-                                    .pro.io-badge {
+                                    .trezo-badge {
                                         margin-left: 0;
                                         margin-right: 9px;
                                     }
@@ -691,7 +692,7 @@
                                 padding-top: 10px;
 
                                 .MuiAccordionSummary-content {
-                                    .title, .pro.io-badge {
+                                    .title, .trezo-badge {
                                         display: none;
                                     }
                                 }
@@ -765,7 +766,7 @@
                                     padding-top: 9.5px;
     
                                     .MuiAccordionSummary-content {
-                                        .title, .pro.io-badge {
+                                        .title, .trezo-badge {
                                             display: inline-block;
                                         }
                                     }

@@ -334,16 +334,16 @@ const ProductDetailsContent: React.FC = () => {
 
               <div className="share-to-socials">
                 <span className="title">Share:</span>
-                <a href="#" target="_blank" mat-button>
+                <a href="https://www.facebook.com/" target="_blank">
                   <i className="ri-facebook-fill"></i>
                 </a>
-                <a href="#" target="_blank" mat-button>
+                <a href="https://x.com/?lang=en" target="_blank">
                   <i className="ri-twitter-x-fill"></i>
                 </a>
-                <a href="#" target="_blank" mat-button>
+                <a href="https://www.linkedin.com/" target="_blank">
                   <i className="ri-linkedin-fill"></i>
                 </a>
-                <a href="#" target="_blank" mat-button>
+                <a href="https://web.whatsapp.com/" target="_blank">
                   <i className="ri-whatsapp-line"></i>
                 </a>
               </div>

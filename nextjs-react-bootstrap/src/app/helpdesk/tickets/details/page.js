@@ -1,8 +1,7 @@
 "use client";
   
-import TicketDetails from '@/components/Helpdesk/TicketDetails';
-import Breadcrumb from 'react-bootstrap/Breadcrumb'; 
-
+import { Breadcrumb } from "react-bootstrap";
+import TicketDetails from '@/components/Helpdesk/TicketDetails'; 
 
 export default function Page() {
   return (

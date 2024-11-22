@@ -201,7 +201,7 @@
             }
         }
         &.active, &.hide-sidebar {
-            left: 85px;
+            left: 125px;
         }
         &.hide-sidebar {
             .header-left-side {
@@ -215,7 +215,7 @@
             right: 285px;
 
             &.active, &.hide-sidebar {
-                right: 85px;
+                right: 125px;
             }
         }
         &.sticky {
@@ -339,7 +339,7 @@
             }
             &.active, &.hide-sidebar {
                 left: 25px;
-                right: 85px;
+                right: 125px;
             }
             &.right-sidebar {
                 left: 285px;
@@ -347,7 +347,7 @@
     
                 &.active, &.hide-sidebar {
                     right: 25px;
-                    left: 85px;
+                    left: 125px;
                 }
             }
         }
@@ -1303,14 +1303,14 @@
             left: 265px;
             
             &.active, &.hide-sidebar {
-                left: 85px;
+                left: 125px;
             }
             &.right-sidebar {
                 left: 25px;
                 right: 265px;
     
                 &.active, &.hide-sidebar {
-                    right: 85px;
+                    right: 125px;
                 }
             }
             &.component-rtl-enabled {
@@ -1318,7 +1318,7 @@
             
                 &.active, &.hide-sidebar {
                     left: 25px;
-                    right: 85px;
+                    right: 125px;
                 }
                 &.right-sidebar {
                     left: 265px;
@@ -1326,7 +1326,7 @@
         
                     &.active, &.hide-sidebar {
                         right: 25px;
-                        left: 85px;
+                        left: 125px;
                     }
                 }
             }

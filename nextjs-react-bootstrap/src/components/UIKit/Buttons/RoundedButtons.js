@@ -1,9 +1,6 @@
 "use client";
 
-import React from "react";
-import "react-material-symbols/rounded";
-import Card from "react-bootstrap/Card";
-import Button from "react-bootstrap/Button";
+import { Card, Button } from "react-bootstrap";
 
 const RoundedButtons = () => {
   return (

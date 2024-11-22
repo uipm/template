@@ -1,9 +1,7 @@
 "use client";
 
-import React from "react";
+import { Card, Alert } from "react-bootstrap";
 import "react-material-symbols/rounded";
-import Card from "react-bootstrap/Card";
-import Alert from "react-bootstrap/Alert";
 
 const AdditionalContent = () => {
   return (

@@ -33,7 +33,7 @@ const BillingDetails: React.FC = () => {
           </Box>
 
           <Box mt="8px">
-            <span className="text-black">Email:</span> example&#64;pro.io.vn
+            <span className="text-black">Email:</span> example&#64;trezo.com
           </Box>
 
           <Box mt="8px">

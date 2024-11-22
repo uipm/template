@@ -1,13 +1,9 @@
 "use client";
 
-import React from "react";
+import { Card, Table } from "react-bootstrap";
 import Image from "next/image";
 import Link from "next/link";
-import Table from "react-bootstrap/Table";
-import Card from "react-bootstrap/Card";
 import Pagination from "./Pagination";
-import { MaterialSymbol } from "react-material-symbols";
-import "react-material-symbols/rounded";
 import SearchForm from "./SearchForm";
 
 const ordersData = [
@@ -107,7 +103,7 @@ const OrdersTable = () => {
   return (
     <>
       <Card className="bg-white border-0 rounded-3 mb-4">
-        <Card.Body className="card-body p-4">
+        <Card.Body className="p-4">
           <div className="d-flex justify-content-between align-items-center flex-wrap gap-2 mb-lg-4 mb-3">
             <SearchForm />
 
@@ -180,27 +176,21 @@ const OrdersTable = () => {
                         <td>
                           <div className="d-flex align-items-center gap-1">
                             <button className="ps-0 border-0 bg-transparent lh-1 position-relative top-2">
-                              <MaterialSymbol
-                                icon="visibility"
-                                size={16}
-                                className="text-primary"
-                              />
+                              <span className="material-symbols-outlined fs-16 text-primary">
+                                visibility
+                              </span>
                             </button>
 
                             <button className="ps-0 border-0 bg-transparent lh-1 position-relative top-2">
-                              <MaterialSymbol
-                                icon="edit"
-                                size={16}
-                                className="text-body"
-                              />
+                              <span className="material-symbols-outlined fs-16 text-body">
+                                edit
+                              </span>
                             </button>
 
                             <button className="ps-0 border-0 bg-transparent lh-1 position-relative top-2">
-                              <MaterialSymbol
-                                icon="delete"
-                                size={16}
-                                className="text-danger"
-                              />
+                              <span className="material-symbols-outlined fs-16 text-danger">
+                                delete
+                              </span>
                             </button>
                           </div>
                         </td>

@@ -1,7 +1,7 @@
 "use client";
-  
+
+import { Breadcrumb } from "react-bootstrap";
 import CreateProject from '@/components/ProjectManagement/CreateProject';
-import Breadcrumb from 'react-bootstrap/Breadcrumb'; 
 
 export default function Page() {
   return (

@@ -1,7 +1,7 @@
 "use client";
-      
-import EditInvoice from '@/components/Invoices/EditInvoice';
-import Breadcrumb from 'react-bootstrap/Breadcrumb';
+
+import { Breadcrumb } from "react-bootstrap";
+import EditInvoice from '@/components/Invoices/EditInvoice'; 
 
 export default function Page() {
   return (

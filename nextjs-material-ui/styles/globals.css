@@ -18,9 +18,7 @@
   --purpleColor: #AD63F6;
   --orangeColor: #FD5812;
 }
-::-webkit-scrollbar {
-  display: none;
-}
+
 .text-start {
   text-align: start !important;
 }
@@ -326,7 +324,7 @@
   text-decoration: line-through !important;
 }
 
-.pro.io-badge {
+.trezo-badge {
   background-color: #ECF0FF;
   color: var(--primaryColor);
   display: inline-block;
@@ -335,25 +333,29 @@
   font-weight: 500;
   font-size: 12px;
 }
-.pro.io-badge.pending, .pro.io-badge.Pending {
+.trezo-badge.pending, .trezo-badge.Pending {
   background-color: rgba(255, 193, 7, 0.15);
   color: var(--warningColor);
 }
-.pro.io-badge.rejected, .pro.io-badge.Rejected, .pro.io-badge.NotAvailable, .pro.io-badge.notAvailable .pro.io-badge.Not.Available, .pro.io-badge.not.available, .pro.io-badge.Not, .pro.io-badge.not, .pro.io-badge.past, .pro.io-badge.Past {
+.trezo-badge.rejected, .trezo-badge.Rejected, .trezo-badge.NotAvailable, .trezo-badge.notAvailable .trezo-badge.Not.Available, .trezo-badge.not.available, .trezo-badge.Not, .trezo-badge.not, .trezo-badge.past, .trezo-badge.Past {
   background-color: #FFE1DD;
   color: var(--dangerColor);
 }
-.pro.io-badge.pInProgress, .pro.io-badge.cancelled, .pro.io-badge.Cancelled, .pro.io-badge.draft, .pro.io-badge.Draft, .pro.io-badge.deactive, .pro.io-badge.Deactive, .pro.io-badge.Deactivate, .pro.io-badge.deactivate, .pro.io-badge.Unread, .pro.io-badge.unread {
+.trezo-badge.pInProgress, .trezo-badge.cancelled, .trezo-badge.Cancelled, .trezo-badge.draft, .trezo-badge.Draft, .trezo-badge.deactive, .trezo-badge.Deactive, .trezo-badge.Deactivate, .trezo-badge.deactivate, .trezo-badge.Unread, .trezo-badge.unread {
   background-color: #FFE8D4;
   color: #EE3E08;
 }
-.pro.io-badge.inProgress, .pro.io-badge.in.Progress, .pro.io-badge.In.Progress, .pro.io-badge.finished, .pro.io-badge .Finished, .pro.io-badge.shipped, .pro.io-badge.Shipped, .pro.io-badge.pFinished {
+.trezo-badge.inProgress, .trezo-badge.in.Progress, .trezo-badge.In.Progress, .trezo-badge.finished, .trezo-badge .Finished, .trezo-badge.shipped, .trezo-badge.Shipped, .trezo-badge.pFinished {
   background-color: #D8FFC8;
   color: var(--successColor);
 }
-.pro.io-badge.pPending {
+.trezo-badge.pPending {
   background-color: #F3E8FF;
   color: #7C24CC;
+}
+.trezo-badge.rescheduled, .trezo-badge.Rescheduled {
+  color: #c52b09;
+  background-color: #ffe8d4;
 }
 
 .ml-1 {
@@ -966,6 +968,13 @@ a {
   transition: var(--transition) !important;
 }
 
+.cikTable .bx-trending-up {
+  color: var(--successColor);
+}
+.cikTable .bx-trending-down {
+  color: var(--dangerColor);
+}
+
 .main-wrapper-content {
   overflow: hidden;
   min-height: 100vh;
@@ -976,6 +985,13 @@ a {
 }
 .main-wrapper-content.active {
   padding-left: 85px;
+}
+
+textarea {
+  font-family: var(--fontFamily);
+}
+textarea:focus-visible {
+  outline: 0;
 }
 
 [dir=rtl] .main-wrapper-content {
@@ -1170,34 +1186,47 @@ a {
   display: none;
 }
 
-.email-content-details h1, .email-content-details h2, .email-content-details h3, .email-content-details h4, .email-content-details h5, .email-content-details h6 {
+.email-content-details h1, .email-content-details h2, .email-content-details h3, .email-content-details h4, .email-content-details h5, .email-content-details h6, .rsw-editor h1, .rsw-editor h2, .rsw-editor h3, .rsw-editor h4, .rsw-editor h5, .rsw-editor h6 {
   font-weight: 500;
   margin-bottom: 15px;
   color: var(--blackColor);
 }
-.email-content-details h1 {
+.email-content-details h1, .rsw-editor h1 {
   font-size: 17px;
 }
-.email-content-details h2 {
+.email-content-details h2, .rsw-editor h2 {
   font-size: 16px;
 }
-.email-content-details h3 {
+.email-content-details h3, .rsw-editor h3 {
   font-size: 15px;
 }
-.email-content-details h4 {
+.email-content-details h4, .rsw-editor h4 {
   font-size: 14px;
 }
-.email-content-details h5 {
+.email-content-details h5, .rsw-editor h5 {
   font-size: 13px;
 }
-.email-content-details h5 {
+.email-content-details h5, .rsw-editor h5 {
   font-size: 12px;
 }
-.email-content-details h6 {
+.email-content-details h6, .rsw-editor h6 {
   font-size: 12px;
 }
-.email-content-details p {
+.email-content-details p, .rsw-editor p {
   margin-bottom: 15px;
+}
+
+.rsw-editor h1 {
+  font-size: 18px;
+}
+.rsw-editor h2 {
+  font-size: 16px;
+}
+.rsw-editor h3 {
+  font-size: 15px;
+}
+.rsw-editor h4 {
+  font-size: 14px;
 }
 
 .share-to-socials {
@@ -1307,4 +1336,25 @@ table tfoot tr p {
 }
 .full-calendar-box .fc-theme-standard td, .full-calendar-box .fc-theme-standard th {
   border: 1px solid var(--borderColor);
+}
+
+.uc-content .MuiGrid-item:nth-last-child(1) .border-bottom, .uc-content .MuiGrid-item:nth-last-child(2) .border-bottom {
+  border-bottom: none !important;
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.date-time-picker-box .MuiStack-root {
+  padding: 0;
+}
+.date-time-picker-box .MuiStack-root .MuiFormControl-root {
+  min-width: 200px;
+}
+.date-time-picker-box .MuiStack-root .MuiFormControl-root .MuiInputBase-input {
+  padding: 5px 14px;
+  height: auto;
+  font-size: 12px;
+}
+.date-time-picker-box .MuiStack-root .MuiFormControl-root .MuiButtonBase-root {
+  padding: 4px;
 }/*# sourceMappingURL=globals.css.map */

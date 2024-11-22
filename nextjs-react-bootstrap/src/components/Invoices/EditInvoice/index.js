@@ -1,13 +1,6 @@
 "use client";
 
-import React from "react";
-import { MaterialSymbol } from "react-material-symbols";
-import "react-material-symbols/rounded";
-import Card from 'react-bootstrap/Card';
-import Form from 'react-bootstrap/Form';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import Table from 'react-bootstrap/Table';
+import { Row, Col, Card, Form, Table } from "react-bootstrap";
 
 const EditInvoice = () => {
   return (
@@ -70,10 +63,9 @@ const EditInvoice = () => {
                   <button
                     type="submit"
                     className="btn border-primary text-primary position-absolute hover-bg"
-                    style={{ right: '24px', top: '24px' }}
+                    style={{ right: "24px", top: "24px" }}
                   >
-                    <i className="ri-pencil-line"></i> {' '}
-                    Change
+                    <i className="ri-pencil-line"></i> Change
                   </button>
                 </div>
               </Col>
@@ -85,7 +77,7 @@ const EditInvoice = () => {
                   <button
                     type="submit"
                     className="btn border-primary text-primary position-absolute hover-bg"
-                    style={{ right: '24px', top: '24px' }}
+                    style={{ right: "24px", top: "24px" }}
                   >
                     <i className="ri-add-line"></i>
                     Add
@@ -134,10 +126,10 @@ const EditInvoice = () => {
                     </td>
                     <td className="text-body">$0.00</td>
                     <td>
-                      <button
-                        className="ps-0 border-0 bg-transparent lh-1 position-relative top-2" 
-                      >
-                        <MaterialSymbol icon="delete" size={20} className="text-danger" />
+                      <button className="ps-0 border-0 bg-transparent lh-1 position-relative top-2">
+                        <span className="material-symbols-outlined fs-20 text-danger">
+                          delete
+                        </span>
                       </button>
                     </td>
                   </tr>
@@ -207,7 +199,7 @@ const EditInvoice = () => {
                     <td className="text-body">- $0.00</td>
                     <td></td>
                   </tr>
-                  
+
                   <tr>
                     <td></td>
                     <td></td>

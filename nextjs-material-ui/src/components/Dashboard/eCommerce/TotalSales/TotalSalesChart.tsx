@@ -126,8 +126,7 @@ const TotalSalesChart: React.FC = () => {
         colors: "#64748B",
       },
       markers: {
-        shape: "square", // circle, square, line, plus, cross
-        radius: 2,
+        shape: 'diamond',
         offsetX: -2,
         offsetY: -0.5,
       },

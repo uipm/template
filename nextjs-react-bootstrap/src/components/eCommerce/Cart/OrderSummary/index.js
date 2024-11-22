@@ -1,10 +1,6 @@
 "use client";
 
-import React from "react";
-import Card from "react-bootstrap/Card";
-import Table from "react-bootstrap/Table"; 
-import { MaterialSymbol } from "react-material-symbols";
-import "react-material-symbols/rounded";
+import { Card, Table } from "react-bootstrap";
 
 const OrderSummary = () => {
   return (
@@ -73,13 +69,15 @@ const OrderSummary = () => {
                 placeholder="Write here"
               ></textarea>
             </div>
-            
+
             <button
               type="submit"
               className="btn btn-primary py-2 px-md-4 px-3 fa-16 fw-medium mt-lg-4 mt-3"
             >
-              <div className="d-flex align-items-center py-md-1"> 
-                <MaterialSymbol icon="add" size={20} className="me-1 text-white" />
+              <div className="d-flex align-items-center py-md-1">
+                <span className="material-symbols-outlined fs-20 me-1 text-white">
+                  add
+                </span>
                 <span>Proceed To Shipping</span>
               </div>
             </button>

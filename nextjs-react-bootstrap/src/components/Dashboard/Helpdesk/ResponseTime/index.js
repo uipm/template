@@ -1,9 +1,7 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import Image from "next/image";
-import Card from "react-bootstrap/Card";
-import Form from "react-bootstrap/Form";
+import { Card, Form } from "react-bootstrap";
 
 const ResponseTime = () => {
   const [Chart, setChart] = useState();
@@ -131,6 +129,7 @@ const ResponseTime = () => {
         colors: "#64748B",
       },
       markers: {
+        shape: 'diamond',
         width: 9,
         height: 9,
         offsetX: -2,
@@ -151,12 +150,12 @@ const ResponseTime = () => {
               className="month-select form-control p-0 h-auto border-0"
               aria-label="Default select example"
             >
-              <option value="0">Select</option>
-              <option value="1">Last 30 Days</option>
-              <option value="2">Last 40 Days</option>
-              <option value="3">Last 50 Days</option>
-              <option value="4">Last 60 Days</option>
-              <option value="5">Last 90 Days</option>
+              <option defaultValue="0">Select</option>
+              <option defaultValue="1">Last 30 Days</option>
+              <option defaultValue="2">Last 40 Days</option>
+              <option defaultValue="3">Last 50 Days</option>
+              <option defaultValue="4">Last 60 Days</option>
+              <option defaultValue="5">Last 90 Days</option>
             </Form.Select>
           </div>
 

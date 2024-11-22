@@ -1,15 +1,8 @@
 "use client";
 
-import React from "react";
+import { Row, Col, Dropdown, Card, ProgressBar } from "react-bootstrap";
 import Link from "next/link";
 import Image from "next/image";
-import ProgressBar from 'react-bootstrap/ProgressBar';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import Card from 'react-bootstrap/Card';
-import Dropdown from 'react-bootstrap/Dropdown';
-import { MaterialSymbol } from "react-material-symbols";
-import "react-material-symbols/rounded";
 
 const TeamCard = () => {
   return (
@@ -37,35 +30,37 @@ const TeamCard = () => {
 
                 <Dropdown className="action-opt ms-2 position-relative top-3">
                   <Dropdown.Toggle
-                    variant="secondary" 
+                    variant="secondary"
                     id="dropdown-basic"
                     className="bg-transparent p-0"
-                  > 
-                    <MaterialSymbol icon="more_horiz" />
+                  >
+                    <span className="material-symbols-outlined">
+                      more_horiz
+                    </span>
                   </Dropdown.Toggle>
 
                   <Dropdown.Menu className="bg-white border box-shadow">
-                    <Dropdown.Item href="#"> 
-                      <MaterialSymbol icon="visibility" />
+                    <Dropdown.Item href="#">
+                      <i className="material-symbols-outlined">visibility</i>
                       View
                     </Dropdown.Item>
 
-                    <Dropdown.Item href="#"> 
-                      <MaterialSymbol icon="edit" />
+                    <Dropdown.Item href="#">
+                      <span className="material-symbols-outlined">edit</span>
                       Edit
                     </Dropdown.Item>
-  
-                    <Dropdown.Item href="#"> 
-                      <MaterialSymbol icon="delete" />
+
+                    <Dropdown.Item href="#">
+                      <i className="material-symbols-outlined">delete</i>
                       Delete
                     </Dropdown.Item>
                   </Dropdown.Menu>
-                </Dropdown> 
+                </Dropdown>
               </div>
 
               <span
                 className="d-block py-2 px-3 text-center rounded-pill fw-medium text-secondary mb-3 bg-for-dark-mode"
-                style={{ backgroundColor: '#F3E8FF' }}
+                style={{ backgroundColor: "#F3E8FF" }}
               >
                 Project Management
               </span>
@@ -75,9 +70,7 @@ const TeamCard = () => {
               </span>
 
               <div className="d-flex flex-wrap justify-content-center mb-3">
-                <div
-                  className="ms-m-15"
-                >
+                <div className="ms-m-15">
                   <Image
                     src="/images/user-52.jpg"
                     className="wh-40 rounded-circle border border-2"
@@ -86,9 +79,7 @@ const TeamCard = () => {
                     height={40}
                   />
                 </div>
-                <div 
-                  className="ms-m-15" 
-                >
+                <div className="ms-m-15">
                   <Image
                     src="/images/user-54.jpg"
                     className="wh-40 rounded-circle border border-2"
@@ -97,9 +88,7 @@ const TeamCard = () => {
                     height={40}
                   />
                 </div>
-                <div 
-                  className="ms-m-15" 
-                >
+                <div className="ms-m-15">
                   <Image
                     src="/images/user-55.jpg"
                     className="wh-40 rounded-circle border border-2"
@@ -108,9 +97,7 @@ const TeamCard = () => {
                     height={40}
                   />
                 </div>
-                <div
-                  className="ms-m-15" 
-                >
+                <div className="ms-m-15">
                   <Image
                     src="/images/user-56.jpg"
                     className="wh-40 rounded-circle border border-2"
@@ -127,11 +114,11 @@ const TeamCard = () => {
                   <span className="fw-medium d-block">85%</span>
                 </div>
 
-                <ProgressBar 
-                  variant="primary" 
-                  now={85} 
+                <ProgressBar
+                  variant="primary"
+                  now={85}
                   style={{
-                    height: '4px'
+                    height: "4px",
                   }}
                 />
               </div>
@@ -168,47 +155,47 @@ const TeamCard = () => {
 
                 <Dropdown className="action-opt ms-2 position-relative top-3">
                   <Dropdown.Toggle
-                    variant="secondary" 
+                    variant="secondary"
                     id="dropdown-basic"
                     className="bg-transparent p-0"
-                  > 
-                    <MaterialSymbol icon="more_horiz" />
+                  >
+                    <span className="material-symbols-outlined">
+                      more_horiz
+                    </span>
                   </Dropdown.Toggle>
 
                   <Dropdown.Menu className="bg-white border box-shadow">
-                    <Dropdown.Item href="#"> 
-                      <MaterialSymbol icon="visibility" />
+                    <Dropdown.Item href="#">
+                      <i className="material-symbols-outlined">visibility</i>
                       View
                     </Dropdown.Item>
 
-                    <Dropdown.Item href="#"> 
-                      <MaterialSymbol icon="edit" />
+                    <Dropdown.Item href="#">
+                      <span className="material-symbols-outlined">edit</span>
                       Edit
                     </Dropdown.Item>
-  
-                    <Dropdown.Item href="#"> 
-                      <MaterialSymbol icon="delete" />
+
+                    <Dropdown.Item href="#">
+                      <i className="material-symbols-outlined">delete</i>
                       Delete
                     </Dropdown.Item>
                   </Dropdown.Menu>
-                </Dropdown> 
+                </Dropdown>
               </div>
 
               <span
-                className="d-block py-2 px-3 text-center rounded-pill fw-medium text-secondary mb-3 bg-for-dark-mode" 
-                style={{ backgroundColor: '#DAEBFF' }}
+                className="d-block py-2 px-3 text-center rounded-pill fw-medium text-secondary mb-3 bg-for-dark-mode"
+                style={{ backgroundColor: "#DAEBFF" }}
               >
                 eCommerce Theme
               </span>
-              
+
               <span className="d-block text-center text-body mb-3">
                 Team Members
               </span>
 
               <div className="d-flex flex-wrap justify-content-center mb-3">
-                <div
-                  className="ms-m-15"
-                >
+                <div className="ms-m-15">
                   <Image
                     src="/images/user-52.jpg"
                     className="wh-40 rounded-circle border border-2"
@@ -217,9 +204,7 @@ const TeamCard = () => {
                     height={40}
                   />
                 </div>
-                <div
-                  className="ms-m-15"
-                >
+                <div className="ms-m-15">
                   <Image
                     src="/images/user-54.jpg"
                     className="wh-40 rounded-circle border border-2"
@@ -228,9 +213,7 @@ const TeamCard = () => {
                     height={40}
                   />
                 </div>
-                <div
-                  className="ms-m-15"
-                >
+                <div className="ms-m-15">
                   <Image
                     src="/images/user-55.jpg"
                     className="wh-40 rounded-circle border border-2"
@@ -239,9 +222,7 @@ const TeamCard = () => {
                     height={40}
                   />
                 </div>
-                <div
-                  className="ms-m-15"
-                >
+                <div className="ms-m-15">
                   <Image
                     src="/images/user-56.jpg"
                     className="wh-40 rounded-circle border border-2"
@@ -258,11 +239,11 @@ const TeamCard = () => {
                   <span className="fw-medium d-block">45%</span>
                 </div>
 
-                <ProgressBar 
-                  variant="primary" 
-                  now={45} 
+                <ProgressBar
+                  variant="primary"
+                  now={45}
                   style={{
-                    height: '4px'
+                    height: "4px",
                   }}
                 />
               </div>
@@ -298,35 +279,37 @@ const TeamCard = () => {
 
                 <Dropdown className="action-opt ms-2 position-relative top-3">
                   <Dropdown.Toggle
-                    variant="secondary" 
+                    variant="secondary"
                     id="dropdown-basic"
                     className="bg-transparent p-0"
-                  > 
-                    <MaterialSymbol icon="more_horiz" />
+                  >
+                    <span className="material-symbols-outlined">
+                      more_horiz
+                    </span>
                   </Dropdown.Toggle>
 
                   <Dropdown.Menu className="bg-white border box-shadow">
-                    <Dropdown.Item href="#"> 
-                      <MaterialSymbol icon="visibility" />
+                    <Dropdown.Item href="#">
+                      <i className="material-symbols-outlined">visibility</i>
                       View
                     </Dropdown.Item>
 
-                    <Dropdown.Item href="#"> 
-                      <MaterialSymbol icon="edit" />
+                    <Dropdown.Item href="#">
+                      <span className="material-symbols-outlined">edit</span>
                       Edit
                     </Dropdown.Item>
-  
-                    <Dropdown.Item href="#"> 
-                      <MaterialSymbol icon="delete" />
+
+                    <Dropdown.Item href="#">
+                      <i className="material-symbols-outlined">delete</i>
                       Delete
                     </Dropdown.Item>
                   </Dropdown.Menu>
-                </Dropdown> 
+                </Dropdown>
               </div>
 
               <span
-                className="d-block py-2 px-3 text-center rounded-pill fw-medium text-secondary mb-3 bg-for-dark-mode" 
-                style={{ backgroundColor: '#D8FFC8' }}
+                className="d-block py-2 px-3 text-center rounded-pill fw-medium text-secondary mb-3 bg-for-dark-mode"
+                style={{ backgroundColor: "#D8FFC8" }}
               >
                 Shopify Theme Dev
               </span>
@@ -336,9 +319,7 @@ const TeamCard = () => {
               </span>
 
               <div className="d-flex flex-wrap justify-content-center mb-3">
-                <div
-                  className="ms-m-15"
-                >
+                <div className="ms-m-15">
                   <Image
                     src="/images/user-52.jpg"
                     className="wh-40 rounded-circle border border-2"
@@ -347,9 +328,7 @@ const TeamCard = () => {
                     height={40}
                   />
                 </div>
-                <div
-                  className="ms-m-15"
-                >
+                <div className="ms-m-15">
                   <Image
                     src="/images/user-54.jpg"
                     className="wh-40 rounded-circle border border-2"
@@ -358,9 +337,7 @@ const TeamCard = () => {
                     height={40}
                   />
                 </div>
-                <div
-                  className="ms-m-15"
-                >
+                <div className="ms-m-15">
                   <Image
                     src="/images/user-55.jpg"
                     className="wh-40 rounded-circle border border-2"
@@ -369,9 +346,7 @@ const TeamCard = () => {
                     height={40}
                   />
                 </div>
-                <div
-                  className="ms-m-15"
-                >
+                <div className="ms-m-15">
                   <Image
                     src="/images/user-56.jpg"
                     className="wh-40 rounded-circle border border-2"
@@ -388,11 +363,11 @@ const TeamCard = () => {
                   <span className="fw-medium d-block">70%</span>
                 </div>
 
-                <ProgressBar 
-                  variant="primary" 
-                  now={70} 
+                <ProgressBar
+                  variant="primary"
+                  now={70}
                   style={{
-                    height: '4px'
+                    height: "4px",
                   }}
                 />
               </div>
@@ -428,35 +403,37 @@ const TeamCard = () => {
 
                 <Dropdown className="action-opt ms-2 position-relative top-3">
                   <Dropdown.Toggle
-                    variant="secondary" 
+                    variant="secondary"
                     id="dropdown-basic"
                     className="bg-transparent p-0"
-                  > 
-                    <MaterialSymbol icon="more_horiz" />
+                  >
+                    <span className="material-symbols-outlined">
+                      more_horiz
+                    </span>
                   </Dropdown.Toggle>
 
                   <Dropdown.Menu className="bg-white border box-shadow">
-                    <Dropdown.Item href="#"> 
-                      <MaterialSymbol icon="visibility" />
+                    <Dropdown.Item href="#">
+                      <i className="material-symbols-outlined">visibility</i>
                       View
                     </Dropdown.Item>
 
-                    <Dropdown.Item href="#"> 
-                      <MaterialSymbol icon="edit" />
+                    <Dropdown.Item href="#">
+                      <span className="material-symbols-outlined">edit</span>
                       Edit
                     </Dropdown.Item>
-  
-                    <Dropdown.Item href="#"> 
-                      <MaterialSymbol icon="delete" />
+
+                    <Dropdown.Item href="#">
+                      <i className="material-symbols-outlined">delete</i>
                       Delete
                     </Dropdown.Item>
                   </Dropdown.Menu>
-                </Dropdown> 
+                </Dropdown>
               </div>
 
               <span
-                className="d-block py-2 px-3 text-center rounded-pill fw-medium text-secondary mb-3 bg-for-dark-mode" 
-                style={{ backgroundColor: '#FFE8D4' }}
+                className="d-block py-2 px-3 text-center rounded-pill fw-medium text-secondary mb-3 bg-for-dark-mode"
+                style={{ backgroundColor: "#FFE8D4" }}
               >
                 Oito - HTM
               </span>
@@ -466,9 +443,7 @@ const TeamCard = () => {
               </span>
 
               <div className="d-flex flex-wrap justify-content-center mb-3">
-                <div
-                  className="ms-m-15"
-                >
+                <div className="ms-m-15">
                   <Image
                     src="/images/user-52.jpg"
                     className="wh-40 rounded-circle border border-2"
@@ -477,9 +452,7 @@ const TeamCard = () => {
                     height={40}
                   />
                 </div>
-                <div
-                  className="ms-m-15" 
-                >
+                <div className="ms-m-15">
                   <Image
                     src="/images/user-54.jpg"
                     className="wh-40 rounded-circle border border-2"
@@ -488,9 +461,7 @@ const TeamCard = () => {
                     height={40}
                   />
                 </div>
-                <div
-                  className="ms-m-15" 
-                >
+                <div className="ms-m-15">
                   <Image
                     src="/images/user-55.jpg"
                     className="wh-40 rounded-circle border border-2"
@@ -499,9 +470,7 @@ const TeamCard = () => {
                     height={40}
                   />
                 </div>
-                <div
-                  className="ms-m-15" 
-                >
+                <div className="ms-m-15">
                   <Image
                     src="/images/user-56.jpg"
                     className="wh-40 rounded-circle border border-2"
@@ -518,11 +487,11 @@ const TeamCard = () => {
                   <span className="fw-medium d-block">90%</span>
                 </div>
 
-                <ProgressBar 
-                  variant="primary" 
-                  now={90} 
+                <ProgressBar
+                  variant="primary"
+                  now={90}
                   style={{
-                    height: '4px'
+                    height: "4px",
                   }}
                 />
               </div>
@@ -558,35 +527,37 @@ const TeamCard = () => {
 
                 <Dropdown className="action-opt ms-2 position-relative top-3">
                   <Dropdown.Toggle
-                    variant="secondary" 
+                    variant="secondary"
                     id="dropdown-basic"
                     className="bg-transparent p-0"
-                  > 
-                    <MaterialSymbol icon="more_horiz" />
+                  >
+                    <span className="material-symbols-outlined">
+                      more_horiz
+                    </span>
                   </Dropdown.Toggle>
 
                   <Dropdown.Menu className="bg-white border box-shadow">
-                    <Dropdown.Item href="#"> 
-                      <MaterialSymbol icon="visibility" />
+                    <Dropdown.Item href="#">
+                      <i className="material-symbols-outlined">visibility</i>
                       View
                     </Dropdown.Item>
 
-                    <Dropdown.Item href="#"> 
-                      <MaterialSymbol icon="edit" />
+                    <Dropdown.Item href="#">
+                      <span className="material-symbols-outlined">edit</span>
                       Edit
                     </Dropdown.Item>
-  
-                    <Dropdown.Item href="#"> 
-                      <MaterialSymbol icon="delete" />
+
+                    <Dropdown.Item href="#">
+                      <i className="material-symbols-outlined">delete</i>
                       Delete
                     </Dropdown.Item>
                   </Dropdown.Menu>
-                </Dropdown> 
+                </Dropdown>
               </div>
 
               <span
-                className="d-block py-2 px-3 text-center rounded-pill fw-medium text-secondary mb-3 bg-for-dark-mode" 
-                style={{ backgroundColor: '#D8FFC8' }}
+                className="d-block py-2 px-3 text-center rounded-pill fw-medium text-secondary mb-3 bg-for-dark-mode"
+                style={{ backgroundColor: "#D8FFC8" }}
               >
                 Tanus - Template
               </span>
@@ -596,9 +567,7 @@ const TeamCard = () => {
               </span>
 
               <div className="d-flex flex-wrap justify-content-center mb-3">
-                <div
-                  className="ms-m-15"
-                >
+                <div className="ms-m-15">
                   <Image
                     src="/images/user-52.jpg"
                     className="wh-40 rounded-circle border border-2"
@@ -607,9 +576,7 @@ const TeamCard = () => {
                     height={40}
                   />
                 </div>
-                <div
-                  className="ms-m-15" 
-                >
+                <div className="ms-m-15">
                   <Image
                     src="/images/user-54.jpg"
                     className="wh-40 rounded-circle border border-2"
@@ -618,9 +585,7 @@ const TeamCard = () => {
                     height={40}
                   />
                 </div>
-                <div
-                  className="ms-m-15" 
-                >
+                <div className="ms-m-15">
                   <Image
                     src="/images/user-55.jpg"
                     className="wh-40 rounded-circle border border-2"
@@ -629,9 +594,7 @@ const TeamCard = () => {
                     height={40}
                   />
                 </div>
-                <div
-                  className="ms-m-15" 
-                >
+                <div className="ms-m-15">
                   <Image
                     src="/images/user-56.jpg"
                     className="wh-40 rounded-circle border border-2"
@@ -648,11 +611,11 @@ const TeamCard = () => {
                   <span className="fw-medium d-block">75%</span>
                 </div>
 
-                <ProgressBar 
-                  variant="primary" 
-                  now={75} 
+                <ProgressBar
+                  variant="primary"
+                  now={75}
                   style={{
-                    height: '4px'
+                    height: "4px",
                   }}
                 />
               </div>
@@ -688,35 +651,37 @@ const TeamCard = () => {
 
                 <Dropdown className="action-opt ms-2 position-relative top-3">
                   <Dropdown.Toggle
-                    variant="secondary" 
+                    variant="secondary"
                     id="dropdown-basic"
                     className="bg-transparent p-0"
-                  > 
-                    <MaterialSymbol icon="more_horiz" />
+                  >
+                    <span className="material-symbols-outlined">
+                      more_horiz
+                    </span>
                   </Dropdown.Toggle>
 
                   <Dropdown.Menu className="bg-white border box-shadow">
-                    <Dropdown.Item href="#"> 
-                      <MaterialSymbol icon="visibility" />
+                    <Dropdown.Item href="#">
+                      <i className="material-symbols-outlined">visibility</i>
                       View
                     </Dropdown.Item>
 
-                    <Dropdown.Item href="#"> 
-                      <MaterialSymbol icon="edit" />
+                    <Dropdown.Item href="#">
+                      <span className="material-symbols-outlined">edit</span>
                       Edit
                     </Dropdown.Item>
-  
-                    <Dropdown.Item href="#"> 
-                      <MaterialSymbol icon="delete" />
+
+                    <Dropdown.Item href="#">
+                      <i className="material-symbols-outlined">delete</i>
                       Delete
                     </Dropdown.Item>
                   </Dropdown.Menu>
-                </Dropdown> 
+                </Dropdown>
               </div>
 
               <span
-                className="d-block py-2 px-3 text-center rounded-pill fw-medium text-secondary mb-3 bg-for-dark-mode" 
-                style={{ backgroundColor: '#F3E8FF' }}
+                className="d-block py-2 px-3 text-center rounded-pill fw-medium text-secondary mb-3 bg-for-dark-mode"
+                style={{ backgroundColor: "#F3E8FF" }}
               >
                 Delft - TypeScript
               </span>
@@ -726,9 +691,7 @@ const TeamCard = () => {
               </span>
 
               <div className="d-flex flex-wrap justify-content-center mb-3">
-                <div
-                  className="ms-m-15"
-                >
+                <div className="ms-m-15">
                   <Image
                     src="/images/user-52.jpg"
                     className="wh-40 rounded-circle border border-2"
@@ -737,9 +700,7 @@ const TeamCard = () => {
                     height={40}
                   />
                 </div>
-                <div
-                  className="ms-m-15"
-                >
+                <div className="ms-m-15">
                   <Image
                     src="/images/user-54.jpg"
                     className="wh-40 rounded-circle border border-2"
@@ -748,9 +709,7 @@ const TeamCard = () => {
                     height={40}
                   />
                 </div>
-                <div
-                  className="ms-m-15"
-                >
+                <div className="ms-m-15">
                   <Image
                     src="/images/user-55.jpg"
                     className="wh-40 rounded-circle border border-2"
@@ -759,9 +718,7 @@ const TeamCard = () => {
                     height={40}
                   />
                 </div>
-                <div
-                  className="ms-m-15"
-                >
+                <div className="ms-m-15">
                   <Image
                     src="/images/user-56.jpg"
                     className="wh-40 rounded-circle border border-2"
@@ -778,11 +735,11 @@ const TeamCard = () => {
                   <span className="fw-medium d-block">65%</span>
                 </div>
 
-                <ProgressBar 
-                  variant="primary" 
-                  now={65} 
+                <ProgressBar
+                  variant="primary"
+                  now={65}
                   style={{
-                    height: '4px'
+                    height: "4px",
                   }}
                 />
               </div>
@@ -818,35 +775,37 @@ const TeamCard = () => {
 
                 <Dropdown className="action-opt ms-2 position-relative top-3">
                   <Dropdown.Toggle
-                    variant="secondary" 
+                    variant="secondary"
                     id="dropdown-basic"
                     className="bg-transparent p-0"
-                  > 
-                    <MaterialSymbol icon="more_horiz" />
+                  >
+                    <span className="material-symbols-outlined">
+                      more_horiz
+                    </span>
                   </Dropdown.Toggle>
 
                   <Dropdown.Menu className="bg-white border box-shadow">
-                    <Dropdown.Item href="#"> 
-                      <MaterialSymbol icon="visibility" />
+                    <Dropdown.Item href="#">
+                      <i className="material-symbols-outlined">visibility</i>
                       View
                     </Dropdown.Item>
 
-                    <Dropdown.Item href="#"> 
-                      <MaterialSymbol icon="edit" />
+                    <Dropdown.Item href="#">
+                      <span className="material-symbols-outlined">edit</span>
                       Edit
                     </Dropdown.Item>
-  
-                    <Dropdown.Item href="#"> 
-                      <MaterialSymbol icon="delete" />
+
+                    <Dropdown.Item href="#">
+                      <i className="material-symbols-outlined">delete</i>
                       Delete
                     </Dropdown.Item>
                   </Dropdown.Menu>
-                </Dropdown> 
+                </Dropdown>
               </div>
 
               <span
-                className="d-block py-2 px-3 text-center rounded-pill fw-medium text-secondary mb-3 bg-for-dark-mode" 
-                style={{ backgroundColor: '#DAEBFF' }}
+                className="d-block py-2 px-3 text-center rounded-pill fw-medium text-secondary mb-3 bg-for-dark-mode"
+                style={{ backgroundColor: "#DAEBFF" }}
               >
                 Trezo - Angular
               </span>
@@ -856,9 +815,7 @@ const TeamCard = () => {
               </span>
 
               <div className="d-flex flex-wrap justify-content-center mb-3">
-                <div
-                  className="ms-m-15"
-                >
+                <div className="ms-m-15">
                   <Image
                     src="/images/user-52.jpg"
                     className="wh-40 rounded-circle border border-2"
@@ -868,9 +825,7 @@ const TeamCard = () => {
                   />
                 </div>
 
-                <div
-                  className="ms-m-15"
-                >
+                <div className="ms-m-15">
                   <Image
                     src="/images/user-54.jpg"
                     className="wh-40 rounded-circle border border-2"
@@ -879,9 +834,7 @@ const TeamCard = () => {
                     height={40}
                   />
                 </div>
-                <div
-                  className="ms-m-15"
-                >
+                <div className="ms-m-15">
                   <Image
                     src="/images/user-55.jpg"
                     className="wh-40 rounded-circle border border-2"
@@ -890,9 +843,7 @@ const TeamCard = () => {
                     height={40}
                   />
                 </div>
-                <div
-                  className="ms-m-15"
-                >
+                <div className="ms-m-15">
                   <Image
                     src="/images/user-56.jpg"
                     className="wh-40 rounded-circle border border-2"
@@ -909,11 +860,11 @@ const TeamCard = () => {
                   <span className="fw-medium d-block">95%</span>
                 </div>
 
-                <ProgressBar 
-                  variant="primary" 
-                  now={95} 
+                <ProgressBar
+                  variant="primary"
+                  now={95}
                   style={{
-                    height: '4px'
+                    height: "4px",
                   }}
                 />
               </div>
@@ -949,35 +900,37 @@ const TeamCard = () => {
 
                 <Dropdown className="action-opt ms-2 position-relative top-3">
                   <Dropdown.Toggle
-                    variant="secondary" 
+                    variant="secondary"
                     id="dropdown-basic"
                     className="bg-transparent p-0"
-                  > 
-                    <MaterialSymbol icon="more_horiz" />
+                  >
+                    <span className="material-symbols-outlined">
+                      more_horiz
+                    </span>
                   </Dropdown.Toggle>
 
                   <Dropdown.Menu className="bg-white border box-shadow">
-                    <Dropdown.Item href="#"> 
-                      <MaterialSymbol icon="visibility" />
+                    <Dropdown.Item href="#">
+                      <i className="material-symbols-outlined">visibility</i>
                       View
                     </Dropdown.Item>
 
-                    <Dropdown.Item href="#"> 
-                      <MaterialSymbol icon="edit" />
+                    <Dropdown.Item href="#">
+                      <span className="material-symbols-outlined">edit</span>
                       Edit
                     </Dropdown.Item>
-  
-                    <Dropdown.Item href="#"> 
-                      <MaterialSymbol icon="delete" />
+
+                    <Dropdown.Item href="#">
+                      <i className="material-symbols-outlined">delete</i>
                       Delete
                     </Dropdown.Item>
                   </Dropdown.Menu>
-                </Dropdown> 
+                </Dropdown>
               </div>
 
               <span
-                className="d-block py-2 px-3 text-center rounded-pill fw-medium text-secondary mb-3 bg-for-dark-mode" 
-                style={{ backgroundColor: '#F3E8FF' }}
+                className="d-block py-2 px-3 text-center rounded-pill fw-medium text-secondary mb-3 bg-for-dark-mode"
+                style={{ backgroundColor: "#F3E8FF" }}
               >
                 eLearniv - React
               </span>
@@ -987,9 +940,7 @@ const TeamCard = () => {
               </span>
 
               <div className="d-flex flex-wrap justify-content-center mb-3">
-                <div
-                  className="ms-m-15"
-                >
+                <div className="ms-m-15">
                   <Image
                     src="/images/user-52.jpg"
                     className="wh-40 rounded-circle border border-2"
@@ -998,9 +949,7 @@ const TeamCard = () => {
                     height={40}
                   />
                 </div>
-                <div
-                  className="ms-m-15"
-                >
+                <div className="ms-m-15">
                   <Image
                     src="/images/user-54.jpg"
                     className="wh-40 rounded-circle border border-2"
@@ -1009,9 +958,7 @@ const TeamCard = () => {
                     height={40}
                   />
                 </div>
-                <div
-                  className="ms-m-15"
-                >
+                <div className="ms-m-15">
                   <Image
                     src="/images/user-55.jpg"
                     className="wh-40 rounded-circle border border-2"
@@ -1020,9 +967,7 @@ const TeamCard = () => {
                     height={40}
                   />
                 </div>
-                <div
-                  className="ms-m-15"
-                >
+                <div className="ms-m-15">
                   <Image
                     src="/images/user-56.jpg"
                     className="wh-40 rounded-circle border border-2"
@@ -1039,11 +984,11 @@ const TeamCard = () => {
                   <span className="fw-medium d-block">80%</span>
                 </div>
 
-                <ProgressBar 
-                  variant="primary" 
-                  now={80} 
+                <ProgressBar
+                  variant="primary"
+                  now={80}
                   style={{
-                    height: '4px'
+                    height: "4px",
                   }}
                 />
               </div>
@@ -1073,7 +1018,9 @@ const TeamCard = () => {
                         href="#"
                         aria-label="Previous"
                       >
-                        <MaterialSymbol icon="keyboard_arrow_left" />
+                        <span className="material-symbols-outlined">
+                          keyboard_arrow_left
+                        </span>
                       </Link>
                     </li>
                     <li className="page-item">
@@ -1102,7 +1049,9 @@ const TeamCard = () => {
                         href="#"
                         aria-label="Next"
                       >
-                        <MaterialSymbol icon="keyboard_arrow_right" />
+                        <span className="material-symbols-outlined">
+                          keyboard_arrow_right
+                        </span>
                       </Link>
                     </li>
                   </ul>

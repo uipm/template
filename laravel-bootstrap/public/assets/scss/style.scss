@@ -1,5 +1,5 @@
 /**
-@File: Escola Template Styles
+@File: Trezo Template Styles
 
 * This file contains the styling for the actual template, this
 is the file you need to edit to change the look of the template.
@@ -75,7 +75,7 @@ $utilities: (
 @import "./components/main-content";
 @import "./components/header-area";
 @import "./components/footer-area";
-@import "./components/stats-box";
+@import "./components/status-box";
 @import "./components/sales-by-locations";
 @import "./components/default-table";
 @import "./components/pagination";
@@ -93,3 +93,5 @@ $utilities: (
 @import "./components/card-bg-style";
 @import "./components/fluid-boxed-style";
 @import "./components/landing-page";
+@import "./components/analytics";
+@import "./components/nft";

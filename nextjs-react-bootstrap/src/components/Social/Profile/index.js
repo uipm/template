@@ -1,8 +1,7 @@
 "use client";
 
-import React from "react"; 
+import { Card } from "react-bootstrap";
 import Image from "next/image";
-import Card from 'react-bootstrap/Card';
 
 const Profile = () => {
   return (
@@ -15,9 +14,15 @@ const Profile = () => {
           width={1680}
           height={360}
         />
-        
-        <div className="position-absolute" style={{ bottom: '25px', right: '25px' }}>
-          <button type="button" className="btn btn-outline-light text-white hover rounded-2">
+
+        <div
+          className="position-absolute"
+          style={{ bottom: "25px", right: "25px" }}
+        >
+          <button
+            type="button"
+            className="btn btn-outline-light text-white hover rounded-2"
+          >
             Update Cover Photo
           </button>
         </div>
@@ -59,7 +64,10 @@ const Profile = () => {
                 <span>Edit</span>
               </button>
 
-              <button button="button" className="btn btn-primary fw-medium fs-16 px-4 ms-3">
+              <button
+                button="button"
+                className="btn btn-primary fw-medium fs-16 px-4 ms-3"
+              >
                 <i className="ri-share-fill fw-medium fs-18 me-1"></i>
                 <span>Share</span>
               </button>

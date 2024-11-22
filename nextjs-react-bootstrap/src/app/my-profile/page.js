@@ -1,8 +1,6 @@
 "use client";
    
-import Breadcrumb from 'react-bootstrap/Breadcrumb'; 
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
+import { Row, Col, Breadcrumb } from "react-bootstrap";
 import Welcome from '@/components/MyProfile/Welcome';
 import TotalProjects from '@/components/MyProfile/TotalProjects';
 import TotalOrders from '@/components/MyProfile/TotalOrders';

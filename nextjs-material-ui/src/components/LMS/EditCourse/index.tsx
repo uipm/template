@@ -14,16 +14,11 @@ import {
   Select,
   SelectChangeEvent,
   styled,
-} from "@mui/material";
-import { TextareaAutosize as BaseTextareaAutosize } from "@mui/base/TextareaAutosize";
+} from "@mui/material"; 
 import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
 import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
 import { DatePicker } from "@mui/x-date-pickers/DatePicker";
-
-import dynamic from "next/dynamic";
-const RichTextEditor = dynamic(() => import("@mantine/rte"), {
-  ssr: false,
-});
+import CustomEditor from "./CustomEditor";
 
 const EditCourse: React.FC = () => {
   const [instructor, setInstructor] = useState<string>("");
@@ -36,60 +31,6 @@ const EditCourse: React.FC = () => {
   const handleTagsChange = (event: SelectChangeEvent) => {
     setTags(event.target.value as string);
   };
-
-  // Textarea
-  const blue = {
-    100: "#DAECFF",
-    200: "#b6daff",
-    400: "#3399FF",
-    500: "#007FFF",
-    600: "#0072E5",
-    900: "#605DFF",
-  };
-
-  const grey = {
-    50: "#F3F6F9",
-    100: "#E5EAF2",
-    200: "#DAE2ED",
-    300: "#C7D0DD",
-    400: "#B0B8C4",
-    500: "#9DA8B7",
-    600: "#6B7A90",
-    700: "#434D5B",
-    800: "#303740",
-    900: "#1C2025",
-  };
-
-  const Textarea = styled(BaseTextareaAutosize)(
-    ({ theme }) => `
-    box-sizing: border-box;
-    width: 100%;
-    font-family: "Inter", sans-serif;
-    font-size: 0.875rem;
-    font-weight: 400;
-    line-height: 1.5;
-    padding: 8px 12px;
-    border-radius: 7px;
-    color: ${theme.palette.mode === "dark" ? grey[300] : grey[900]};
-    background: ${theme.palette.mode === "dark" ? grey[900] : "#fff"};
-    border: 1px solid ${theme.palette.mode === "dark" ? grey[700] : grey[200]};
-    box-shadow: none;
-
-    &:hover {
-      border-color: ${blue[900]};
-    }
-
-    &:focus {
-      border-color: ${blue[900]};
-      box-shadow: none;
-    }
-
-    // firefox
-    &:focus-visible {
-      outline: 0;
-    }
-  `
-  );
 
   return (
     <>
@@ -185,18 +126,7 @@ const EditCourse: React.FC = () => {
                       Description
                     </Typography>
 
-                    <RichTextEditor
-                      id="rte"
-                      controls={[
-                        ["bold", "italic", "underline", "link", "image"],
-                        ["unorderedList", "h1", "h2", "h3"],
-                        ["sup", "sub"],
-                        ["alignLeft", "alignCenter", "alignRight"],
-                      ]}
-                      style={{
-                        minHeight: "200px",
-                      }}
-                    />
+                    <CustomEditor />
                   </Box>
                 </Grid>
 
@@ -547,11 +477,18 @@ const EditCourse: React.FC = () => {
                         Lesson Description
                       </Typography>
 
-                      <Textarea
-                        aria-label="minimum height"
-                        minRows={5}
-                        placeholder="Type here..."
-                      />
+                      <textarea 
+                        id="lessonDescription" 
+                        name="lessonDescription" 
+                        placeholder="Lesson Description"
+                        rows={5}
+                        style={{
+                          width: '100%',
+                          borderRadius: '6px',
+                          padding: '10px 15px',
+                          border: '1px solid #D5D9E2'
+                        }} 
+                      ></textarea> 
                     </FormControl>
                   </Box>
                 </Grid>

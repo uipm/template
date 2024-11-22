@@ -1,12 +1,6 @@
 "use client";
 
-import React from "react";
-import Link from "next/link";
-import Image from "next/image";
-import Card from "react-bootstrap/Card";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-import Form from "react-bootstrap/Form";
+import { Row, Col, Card, Form } from "react-bootstrap";
 
 const ReviewsForm = () => {
   return (

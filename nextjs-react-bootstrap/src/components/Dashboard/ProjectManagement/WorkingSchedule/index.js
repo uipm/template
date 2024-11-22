@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import Calendar from 'react-calendar';
-import Card from "react-bootstrap/Card"; 
+import { Card } from "react-bootstrap";
   
 import UpcomingEvents from "./UpcomingEvents";
 

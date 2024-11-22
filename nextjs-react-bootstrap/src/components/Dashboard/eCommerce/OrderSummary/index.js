@@ -1,9 +1,7 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import Card from "react-bootstrap/Card";
-import Form from "react-bootstrap/Form";
-import ProgressBar from "react-bootstrap/ProgressBar";
+import { Card, Form, ProgressBar } from "react-bootstrap";
 
 const OrderSummary = () => {
   const [Chart, setChart] = useState();
@@ -31,6 +29,7 @@ const OrderSummary = () => {
         colors: "#64748B",
       },
       markers: {
+        shape: 'diamond',
         width: 9,
         height: 9,
         offsetX: -2,
@@ -44,7 +43,7 @@ const OrderSummary = () => {
 
   return (
     <>
-      <Card className="card bg-white border-0 rounded-3 mb-4">
+      <Card className="bg-white border-0 rounded-3 mb-4">
         <Card.Body className="p-4">
           <div className="d-flex justify-content-between align-items-center flex-wrap gap-3 mb-3 mb-lg-4">
             <h3 className="mb-0">Order Summary</h3>
@@ -54,11 +53,11 @@ const OrderSummary = () => {
                 className="month-select form-control"
                 aria-label="Default select example"
               >
-                <option value="0">Select</option>
-                <option value="1">Today</option>
-                <option value="2">Weekly</option>
-                <option value="3">Monthly</option>
-                <option value="4">Yearly</option>
+                <option defaultValue="0">Select</option>
+                <option defaultValue="1">Today</option>
+                <option defaultValue="2">Weekly</option>
+                <option defaultValue="3">Monthly</option>
+                <option defaultValue="4">Yearly</option>
               </Form.Select>
             </div>
           </div>
@@ -69,7 +68,7 @@ const OrderSummary = () => {
                 options={options}
                 series={series}
                 type="donut"
-                height={327}
+                height={300}
               />
             )}
           </div>

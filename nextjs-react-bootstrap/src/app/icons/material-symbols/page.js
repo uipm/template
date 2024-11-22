@@ -1,7 +1,7 @@
 "use client";
-   
-import MaterialSymbols from '@/components/Icons/MaterialSymbols';
-import Breadcrumb from 'react-bootstrap/Breadcrumb';
+
+import { Breadcrumb } from "react-bootstrap";
+import MaterialSymbols from '@/components/Icons/MaterialSymbols'; 
 
 export default function Page() {
   return (

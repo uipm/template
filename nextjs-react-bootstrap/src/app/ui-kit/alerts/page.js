@@ -1,9 +1,6 @@
 "use client";
    
-import React from "react";
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import Breadcrumb from 'react-bootstrap/Breadcrumb';
+import { Row, Col, Breadcrumb } from "react-bootstrap";
 import BasicAlerts from "@/components/UIKit/Alerts/BasicAlerts";
 import BasicAlertsWithBG from "@/components/UIKit/Alerts/BasicAlertsWithBG";
 import AlertsWithLink from "@/components/UIKit/Alerts/AlertsWithLink";

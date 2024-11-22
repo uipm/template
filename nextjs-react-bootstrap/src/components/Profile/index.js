@@ -1,13 +1,7 @@
 "use client";
 
-import React from "react";
-import Link from "next/link";
+import { Row, Col, Card } from "react-bootstrap";
 import Image from "next/image";
-import { MaterialSymbol } from "react-material-symbols";
-import "react-material-symbols/rounded";
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import Card from 'react-bootstrap/Card';
 import Nav from "./Nav";
 import Followers from "./Followers";
 import MyProjects from "./MyProjects";

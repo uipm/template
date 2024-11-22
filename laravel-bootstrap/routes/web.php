@@ -22,6 +22,22 @@ Route::get('/help-desk', function () {
     return view('help-desk');
 });
 
+Route::get('/analytics', function () {
+    return view('analytics');
+});
+
+Route::get('/crypto', function () {
+    return view('crypto');
+});
+
+Route::get('/sales', function () {
+    return view('sales');
+});
+
+Route::get('/hospital', function () {
+    return view('hospital');
+});
+
 Route::get('/landing-page', function () {
     return view('landing-page');
 });

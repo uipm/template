@@ -142,7 +142,7 @@
             .accordion-item {
                 .accordion-header {
                     .accordion-button {
-                        .material-symbols {
+                        i, span {
                             margin-right: 0;
                             margin-left: 8px;
                         }
@@ -156,7 +156,7 @@
         }
         .menu-item {
             .menu-link {
-                .material-symbols {
+                i, span {
                     margin-right: 0;
                     margin-left: 8px;
                 }
@@ -327,7 +327,7 @@
         margin-right: 0;
         margin-left: 20px;
 
-        i, .material-symbols {
+        i, span {
             left: auto !important;
             right: 15px !important;
         }
@@ -900,4 +900,81 @@
             margin-left: 0;    
         }
     }
+
+    // custom-modal
+    .custom-modal {
+        &.right {
+            right: auto;
+            left: -100%;
+
+            &.show {
+                left: 0;
+                right: 0;
+            }
+ 
+            .custom-modal-content  {
+                margin-left: 0;
+                margin-right: auto;
+            }
+        }
+        &.left {
+            left: auto;
+            right: -100%;
+
+            &.show {
+                left: 0;
+                right: 0;
+            }
+        }
+    }
+
+    .nft-slide, .nft-slide-two {
+        .swiper-button-next {
+            right: auto;
+            left: 0;
+        }
+    }
+
+    .for-rtl-chat {
+        .ms-auto {
+            margin-left: 0 !important;
+            margin-right: auto !important;
+            text-align: right;
+        }
+    }
+    .for-rtl-form {
+        .start-0 {
+            left: auto !important;
+            right: 0;
+        }
+        .form-control {
+            padding-right: 40px;
+        }
+    }
+
+    .date-time-picker-demo {
+        .react-datetime-picker__wrapper {
+            .react-datetime-picker__button {
+                margin-left: 0;
+                margin-right: 5px;
+            }
+        }
+    }
+    .ms-e-10 {
+        margin-right: 0;
+        margin-left: -10px;
+    }
+
+    .action-opt {
+        .dropdown-menu {
+            .dropdown-item {
+                i, span {
+                    margin-right: 0;
+                    margin-left: 5px;
+                }
+            }
+        }
+    }
+
+
 }

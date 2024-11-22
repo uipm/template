@@ -358,7 +358,7 @@ const NotificationsTable: React.FC = () => {
 
                   <TableCell className="border-bottom">
                     <div
-                      className={`pro.io-badge ${row.status}`}
+                      className={`trezo-badge ${row.status}`}
                       style={{ textTransform: "capitalize" }}
                     >
                       {row.status}

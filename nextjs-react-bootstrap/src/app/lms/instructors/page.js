@@ -1,7 +1,7 @@
 "use client";
-  
-import Instructors from '@/components/Lms/Instructors';
-import Breadcrumb from 'react-bootstrap/Breadcrumb';
+
+import { Breadcrumb } from "react-bootstrap";
+import Instructors from '@/components/Lms/Instructors'; 
 
 export default function Page() {
   return (

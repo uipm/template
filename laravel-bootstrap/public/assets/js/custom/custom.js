@@ -55,17 +55,11 @@
 	const getHeaderBurgerMenuId = document.getElementById('header-burger-menu');
 	if (getHeaderBurgerMenuId) {
 		const switchtoggle = document.querySelector(".header-burger-menu");
-		const savedTheme = localStorage.getItem("splash_sidebar");
-		if (savedTheme) {
-			document.body.setAttribute("sidebar-data-theme", savedTheme);
-		}
 		switchtoggle.addEventListener("click", function () {
 			if (document.body.getAttribute("sidebar-data-theme") === "sidebar-hide") {
 				document.body.setAttribute("sidebar-data-theme", "sidebar-show");
-				localStorage.setItem("splash_sidebar", "sidebar-show");
 			} else {
 				document.body.setAttribute("sidebar-data-theme", "sidebar-hide");
-				localStorage.setItem("splash_sidebar", "sidebar-hide");
 			}
 		});
 	}
@@ -74,17 +68,11 @@
 	const getSidebarBurgerMenuId = document.getElementById('sidebar-burger-menu');
 	if (getSidebarBurgerMenuId) {
 		const switchtoggle = document.querySelector(".sidebar-burger-menu");
-		const savedTheme = localStorage.getItem("splash_sidebar");
-		if (savedTheme) {
-			document.body.setAttribute("sidebar-data-theme", savedTheme);
-		}
 		switchtoggle.addEventListener("click", function () {
 			if (document.body.getAttribute("sidebar-data-theme") === "sidebar-hide") {
 				document.body.setAttribute("sidebar-data-theme", "sidebar-show");
-				localStorage.setItem("splash_sidebar", "sidebar-show");
 			} else {
 				document.body.setAttribute("sidebar-data-theme", "sidebar-hide");
-				localStorage.setItem("splash_sidebar", "sidebar-hide");
 			}
 		});
 	}
@@ -778,7 +766,7 @@
 		},
     });
 
-	// Top Selling Slider JS
+	// Team Slider JS
 	var swiper = new Swiper(".team-slide", {
         slidesPerView: 1,
         spaceBetween: 25,
@@ -816,6 +804,130 @@
 			},
 		}
     });
+
+	// Cryptocurrency Slider JS
+	var swiper = new Swiper(".cryptocurrency-slide", {
+        slidesPerView: 1,
+        spaceBetween: 25,
+		centeredSlides: false,
+		preventClicks: true,
+		loop: false, 
+		autoplay: {
+			delay: 8000,
+			disableOnInteraction: false,
+			pauseOnMouseEnter: true,
+		},
+		navigation: {
+			nextEl: ".prev",
+          	prevEl: ".next",
+		},
+		pagination: {
+			el: ".swiper-pagination-top-selling",
+			clickable: true,
+		},
+		breakpoints: {
+			0: {
+				slidesPerView: 1,
+			},
+			768: {
+				slidesPerView: 2,
+			},
+			1199: {
+				slidesPerView: 3,
+			},
+			1440: {
+				slidesPerView: 4,
+			},
+			1600: {
+				slidesPerView: 4,
+			},
+		}
+    });
+
+	// NFT Slider JS
+	var swiper = new Swiper(".nft-slide", {
+        slidesPerView: 1,
+        spaceBetween: 25,
+		centeredSlides: false,
+		preventClicks: true,
+		loop: false, 
+		autoplay: {
+			delay: 8000,
+			disableOnInteraction: false,
+			pauseOnMouseEnter: true,
+		},
+		navigation: {
+			nextEl: ".prev",
+          	prevEl: ".next",
+		},
+		pagination: {
+			el: ".swiper-pagination-top-selling",
+			clickable: true,
+		},
+		breakpoints: {
+			0: {
+				slidesPerView: 1,
+			},
+			768: {
+				slidesPerView: 2,
+			},
+			992: {
+				slidesPerView: 3,
+			},
+			1199: {
+				slidesPerView: 3,
+			},
+			1440: {
+				slidesPerView: 4,
+			},
+			1600: {
+				slidesPerView: 4,
+			},
+		}
+    });
+
+	// NFT Slider Two JS
+	var swiper = new Swiper(".nft-slide-two", {
+        slidesPerView: 1,
+        spaceBetween: 25,
+		centeredSlides: false,
+		preventClicks: true,
+		loop: false, 
+		autoplay: {
+			delay: 8000,
+			disableOnInteraction: false,
+			pauseOnMouseEnter: true,
+		},
+		navigation: {
+			nextEl: ".prev",
+          	prevEl: ".next",
+		},
+		pagination: {
+			el: ".swiper-pagination-top-selling",
+			clickable: true,
+		},
+		breakpoints: {
+			0: {
+				slidesPerView: 1,
+			},
+			768: {
+				slidesPerView: 2,
+			},
+			992: {
+				slidesPerView: 2,
+			},
+			1199: {
+				slidesPerView: 2,
+			},
+			1440: {
+				slidesPerView: 3,
+			},
+			1600: {
+				slidesPerView: 3,
+			},
+		}
+    });
+	
 
 	// Theme Settings
 	// Dark/Light Toggle

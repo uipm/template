@@ -1,8 +1,7 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import Card from "react-bootstrap/Card";
-import Form from "react-bootstrap/Form";
+import { Card, Form } from "react-bootstrap";
 
 const TasksOverview = () => {
   const [Chart, setChart] = useState();
@@ -52,6 +51,7 @@ const TasksOverview = () => {
         colors: "#64748B",
       },
       markers: {
+        shape: 'diamond',
         width: 9,
         radius: 2,
         height: 9,
@@ -72,11 +72,11 @@ const TasksOverview = () => {
               className="month-select form-control p-0 h-auto border-0"
               aria-label="Default select example"
             >
-              <option value="0">Select</option>
-              <option value="1">This Day</option>
-              <option value="2">This Weekly</option>
-              <option value="3">This Monthly</option>
-              <option value="4">This Yearly</option>
+              <option defaultValue="0">Select</option>
+              <option defaultValue="1">This Day</option>
+              <option defaultValue="2">This Weekly</option>
+              <option defaultValue="3">This Monthly</option>
+              <option defaultValue="4">This Yearly</option>
             </Form.Select>
           </div>
 
@@ -86,7 +86,7 @@ const TasksOverview = () => {
                 options={options}
                 series={series}
                 type="pie"
-                height={407}
+                height={375}
               />
             )}
           </div>

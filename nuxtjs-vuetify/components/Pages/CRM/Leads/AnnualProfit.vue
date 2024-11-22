@@ -33,7 +33,7 @@ export default defineComponent({
     const isClient = ref(false);
     const profit = ref([
       {
-        name: "Revenue Growth",
+        name: "Annual Profit",
         data: [3, 12, 8, 10, 15, 10, 7],
       },
     ]);

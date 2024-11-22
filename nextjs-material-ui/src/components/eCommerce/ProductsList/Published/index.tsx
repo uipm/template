@@ -141,7 +141,7 @@ const rows = [
     "$2,625",
     "5.00 (141 reviews)",
     "Published",
-    "/products-list/details/"
+    "/ecommerce/products-list/details/"
   ),
   createData(
     "#JAN-998",
@@ -155,7 +155,7 @@ const rows = [
     "$1,225",
     "5.00 (69 reviews)",
     "Published",
-    "/products-list/details/"
+    "/ecommerce/products-list/details/"
   ),
   createData(
     "#JAN-996",
@@ -169,7 +169,7 @@ const rows = [
     "$2,360",
     "4.00 (75 reviews)",
     "Published",
-    "/products-list/details/"
+    "/ecommerce/products-list/details/"
   ),
   createData(
     "#JAN-997",
@@ -183,7 +183,7 @@ const rows = [
     "$5,445",
     "5.00 (99 reviews)",
     "Published",
-    "/products-list/details/"
+    "/ecommerce/products-list/details/"
   ),
   createData(
     "#JAN-995",
@@ -197,7 +197,7 @@ const rows = [
     "$4,424",
     "5.00 (158 reviews)",
     "Published",
-    "/products-list/details/"
+    "/ecommerce/products-list/details/"
   ),
   createData(
     "#JAN-994",
@@ -211,7 +211,7 @@ const rows = [
     "$2,625",
     "5.00 (141 reviews)",
     "Published",
-    "/products-list/details/"
+    "/ecommerce/products-list/details/"
   ),
   createData(
     "#JAN-992",
@@ -225,7 +225,7 @@ const rows = [
     "$5,445",
     "5.00 (99 reviews)",
     "Published",
-    "/products-list/details/"
+    "/ecommerce/products-list/details/"
   ),
   createData(
     "#JAN-991",
@@ -239,7 +239,7 @@ const rows = [
     "$2,360",
     "4.00 (75 reviews)",
     "Published",
-    "/products-list/details/"
+    "/ecommerce/products-list/details/"
   ),
   createData(
     "#JAN-993",
@@ -253,7 +253,7 @@ const rows = [
     "$1,225",
     "5.00 (69 reviews)",
     "Published",
-    "/products-list/details/"
+    "/ecommerce/products-list/details/"
   ),
   createData(
     "#JAN-990",
@@ -267,7 +267,7 @@ const rows = [
     "$4,424",
     "5.00 (158 reviews)",
     "Published",
-    "/products-list/details/"
+    "/ecommerce/products-list/details/"
   ),
   createData(
     "#JAN-989",
@@ -281,7 +281,7 @@ const rows = [
     "$2,625",
     "5.00 (141 reviews)",
     "Published",
-    "/products-list/details/"
+    "/ecommerce/products-list/details/"
   ),
   createData(
     "#JAN-988",
@@ -295,7 +295,7 @@ const rows = [
     "$1,225",
     "5.00 (69 reviews)",
     "Published",
-    "/products-list/details/"
+    "/ecommerce/products-list/details/"
   ),
   createData(
     "#JAN-987",
@@ -309,7 +309,7 @@ const rows = [
     "$5,445",
     "5.00 (99 reviews)",
     "Published",
-    "/products-list/details/"
+    "/ecommerce/products-list/details/"
   ),
   createData(
     "#JAN-986",
@@ -323,7 +323,7 @@ const rows = [
     "$2,360",
     "4.00 (75 reviews)",
     "Published",
-    "/products-list/details/"
+    "/ecommerce/products-list/details/"
   ),
   createData(
     "#JAN-985",
@@ -337,7 +337,7 @@ const rows = [
     "$4,424",
     "5.00 (158 reviews)",
     "Published",
-    "/products-list/details/"
+    "/ecommerce/products-list/details/"
   ),
   createData(
     "#JAN-984",
@@ -351,7 +351,7 @@ const rows = [
     "$2,625",
     "5.00 (141 reviews)",
     "Published",
-    "/products-list/details/"
+    "/ecommerce/products-list/details/"
   ),
   createData(
     "#JAN-983",
@@ -365,7 +365,7 @@ const rows = [
     "$1,225",
     "5.00 (69 reviews)",
     "Published",
-    "/products-list/details/"
+    "/ecommerce/products-list/details/"
   ),
   createData(
     "#JAN-982",
@@ -379,7 +379,7 @@ const rows = [
     "$5,445",
     "5.00 (99 reviews)",
     "Published",
-    "/products-list/details/"
+    "/ecommerce/products-list/details/"
   ),
   createData(
     "#JAN-981",
@@ -393,7 +393,7 @@ const rows = [
     "$2,360",
     "4.00 (75 reviews)",
     "Published",
-    "/products-list/details/"
+    "/ecommerce/products-list/details/"
   ),
   createData(
     "#JAN-980",
@@ -407,7 +407,7 @@ const rows = [
     "$4,424",
     "5.00 (158 reviews)",
     "Published",
-    "/products-list/details/"
+    "/ecommerce/products-list/details/"
   ),
 ].sort((b, a) => (a.orderID < b.orderID ? -1 : 1));
 
@@ -750,7 +750,7 @@ const Published: React.FC = () => {
                       }}
                       className="border-bottom"
                     >
-                      <div className={`pro.io-badge ${row.status}`}>
+                      <div className={`trezo-badge ${row.status}`}>
                         {row.status}
                       </div>
                     </TableCell>

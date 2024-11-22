@@ -1,7 +1,7 @@
 "use client";
-     
-import Teams from '@/components/Profile/Teams';
-import Breadcrumb from 'react-bootstrap/Breadcrumb';
+
+import { Breadcrumb } from "react-bootstrap";
+import Teams from '@/components/Profile/Teams'; 
 
 export default function Page() {
   return (

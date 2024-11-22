@@ -141,7 +141,7 @@ const rows = [
     "$2,625",
     "5.00 (141 reviews)",
     "Draft",
-    "/products-list/details/"
+    "/ecommerce/products-list/details/"
   ),
   createData(
     "#JAN-998",
@@ -155,7 +155,7 @@ const rows = [
     "$1,225",
     "5.00 (69 reviews)",
     "Draft",
-    "/products-list/details/"
+    "/ecommerce/products-list/details/"
   ),
   createData(
     "#JAN-996",
@@ -169,7 +169,7 @@ const rows = [
     "$2,360",
     "4.00 (75 reviews)",
     "Draft",
-    "/products-list/details/"
+    "/ecommerce/products-list/details/"
   ),
 ].sort((b, a) => (a.orderID < b.orderID ? -1 : 1));
 
@@ -512,7 +512,7 @@ const Draft: React.FC = () => {
                       }}
                       className="border-bottom"
                     >
-                      <div className={`pro.io-badge ${row.status}`}>
+                      <div className={`trezo-badge ${row.status}`}>
                         {row.status}
                       </div>
                     </TableCell>

@@ -135,6 +135,12 @@ a {
   padding: 10px 18px 11px !important;
   border-radius: 5px !important;
 
+  & {
+    font: {
+      size: var(--fontSize) !important;
+      weight: 500 !important;
+    }
+  }
   &.v-btn {
     padding: 14px 35px !important;
     min-height: unset;
@@ -144,10 +150,6 @@ a {
   }
   &.trezo {
     border: 1px solid rgba(0, 0, 0, 0.12);
-  }
-  font: {
-    size: var(--fontSize) !important;
-    weight: 500 !important;
   }
   &.trezo {
     color: var(--primaryColor);

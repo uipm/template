@@ -1,14 +1,13 @@
 "use client";
 
-import React from "react";
-import Card from "react-bootstrap/Card";
+import { Card } from "react-bootstrap";
 import Link from "next/link";
 import Image from "next/image";
 
 const InternalError = () => {
   return (
     <>
-      <Card className="card bg-white border-0 rounded-3 mb-4">
+      <Card className="bg-white border-0 rounded-3 mb-4">
         <Card.Body className="p-4">
           <div className="text-center">
             <Image

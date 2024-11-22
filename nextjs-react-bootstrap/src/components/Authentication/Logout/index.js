@@ -1,12 +1,8 @@
 "use client";
 
-import React from "react";
+import { Row, Col } from "react-bootstrap";
 import Link from "next/link";
 import Image from "next/image";
-import { MaterialSymbol } from "react-material-symbols";
-import "react-material-symbols/rounded";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col"; 
 
 const Logout = () => {
   return (
@@ -43,35 +39,31 @@ const Logout = () => {
               </div>
 
               <h3 className="fs-28 mb-2">Welcome back to Trezo!</h3>
-              <p className="fw-medium fs-16 mb-4">
-                You Are Logged out
-              </p>
+              <p className="fw-medium fs-16 mb-4">You Are Logged out</p>
 
               <div className="d-flex align-items-center gap-2 mb-3">
                 <div>
                   <Image
-                    src="/images/user-69.jpg" 
+                    src="/images/user-69.jpg"
                     alt="user"
                     width={50}
                     height={50}
                     style={{
-                      borderRadius: '100px'
+                      borderRadius: "100px",
                     }}
                   />
                 </div>
                 <h5 className="m-0 fs-16">Olivia John</h5>
               </div>
-  
+
               <Link
                 href="/authentication/sign-in/"
                 className="btn btn-primary fw-medium py-2 px-3 w-100"
               >
                 <div className="d-flex align-items-center justify-content-center py-1">
-                  <MaterialSymbol
-                    icon="autorenew"
-                    size={20}
-                    className="text-white me-2"
-                  />
+                  <span className="material-symbols-outlined fs-20 text-white me-2">
+                    autorenew
+                  </span>
                   <span>Sign In</span>
                 </div>
               </Link>

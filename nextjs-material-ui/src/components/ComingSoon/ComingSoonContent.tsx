@@ -105,7 +105,7 @@ const ComingSoonContent: React.FC = () => {
                       </Typography>
 
                       <TextField
-                        label="example&#64;pro.io.vn"
+                        label="example&#64;trezo.com"
                         variant="filled"
                         id="email"
                         name="email"

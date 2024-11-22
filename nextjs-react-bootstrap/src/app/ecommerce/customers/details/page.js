@@ -1,8 +1,6 @@
 "use client";
  
-import Breadcrumb from 'react-bootstrap/Breadcrumb'; 
-import Row from 'react-bootstrap/Row'; 
-import Col from 'react-bootstrap/Col'; 
+import { Row, Col, Breadcrumb } from "react-bootstrap";
 import TransactionsHistory from '@/components/eCommerce/Customers/Details/TransactionsHistory';
 import Profile from '@/components/eCommerce/Customers/Details/Profile';
 

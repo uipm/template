@@ -1,7 +1,6 @@
 "use client";
 
-import React from "react";
-import Breadcrumb from "react-bootstrap/Breadcrumb";
+import { Breadcrumb } from "react-bootstrap";
 import Timeline from "@/components/ExtraPages/Timeline";
 
 export default function Page() {

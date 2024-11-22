@@ -67,7 +67,7 @@ import { defineComponent, ref, onMounted } from "vue";
 import stateStore from "~/utils/store";
 
 export default defineComponent({
-  name: "TopHeader",
+  name: "Navbar",
   setup() {
     const isSticky = ref(false);
     const stateStoreInstance = stateStore;

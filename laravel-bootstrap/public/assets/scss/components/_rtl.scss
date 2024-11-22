@@ -353,7 +353,7 @@
         .swiper-pagination2 {
             left: auto !important;
             right: 25px !important;
-            text-align: right;
+            text-align: right !important;
         }
     }
     .row.mb-4 {
@@ -367,7 +367,7 @@
             border-radius: 8px !important;
         }
     }
-    .month-selecet {
+    .month-select {
         background-position: left 16px center !important;
         &.p-0 {
             background-position: left 0 center !important;
@@ -509,7 +509,7 @@
     #tickets_status {
         direction: ltr;
     }
-    #new_tickets_vs_solved_sickets {
+    #new_tickets_vs_solved_tickets {
         direction: ltr;
     }
     .apexcharts-legend-text {
@@ -545,6 +545,16 @@
         &.show {
             transform: translateX(0);
         }
+    }
+    img.position-absolute.top-0.end-0 {
+        right: 0 !important;
+        left: auto !important;
+    }
+    i.material-symbols-outlined.position-absolute.top-50.start-0.translate-middle-y {
+        right: auto;
+    }
+    .right-header-content .header-right-item .admin-profile .dropdown-menu {
+        transform: translate(20px, 55px) !important;
     }
     @media (min-width: 768px) {
         .ms-md-3 {
@@ -706,7 +716,7 @@
                     &.noti {
                         .dropdown-menu {
                             width: 293px;
-                            transform: translate(107px, 60px) !important;
+                            transform: translate(145px, 60px) !important;
                         }
                     }
                 }
@@ -755,4 +765,29 @@
         }
     }
 
+    /* RTL After Demos Add CSS */
+    img.position-absolute.top-0.end-0 {
+        &.shape-2 {
+            right: auto !important;
+            left: 0 !important;
+        }
+        &.shape-6 {
+            right: auto !important;
+            left: 0 !important;
+        }
+    }
+    .chart-position {
+        &.for-sale {
+            right: auto !important;
+            left: 0;
+        }
+    }
+    .cryptocurrency-slide {
+        direction: ltr;
+    }
+    .border-start {
+        border-left: none !important;
+        border-right: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important;
+    }
+    
 }

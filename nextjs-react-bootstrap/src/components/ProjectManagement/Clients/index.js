@@ -1,11 +1,8 @@
 "use client";
 
-import React from "react";
+import { Row, Col, Card } from "react-bootstrap";
 import Link from "next/link";
 import Image from "next/image";
-import Card from 'react-bootstrap/Card';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
 
 const Clients = () => {
   return (
@@ -35,11 +32,15 @@ const Clients = () => {
               <ul className="ps-0 mb-4 list-unstyled">
                 <li className="mb-2 pb-1">
                   <span className="fw-medium me-1">Name:</span>
-                  <span className="fw-medium text-secondary">Olivia Taylor</span>
+                  <span className="fw-medium text-secondary">
+                    Olivia Taylor
+                  </span>
                 </li>
                 <li className="mb-2 pb-1">
                   <span className="fw-medium me-1">Phone:</span>
-                  <span className="fw-medium text-secondary">(555) 555-5555</span>
+                  <span className="fw-medium text-secondary">
+                    (555) 555-5555
+                  </span>
                 </li>
                 <li className="mb-0">
                   <span className="fw-medium me-1">Projects:</span>
@@ -48,7 +49,10 @@ const Clients = () => {
               </ul>
 
               <div className="d-flex align-items-center">
-                <a href="mailto:info@codecraft.com" className="btn btn-primary py-2 fw-medium">
+                <a
+                  href="mailto:info@codecraft.com"
+                  className="btn btn-primary py-2 fw-medium"
+                >
                   Message
                 </a>
                 <Link
@@ -90,7 +94,9 @@ const Clients = () => {
                 </li>
                 <li className="mb-2 pb-1">
                   <span className="fw-medium me-1">Phone:</span>
-                  <span className="fw-medium text-secondary">(555) 123-4567</span>
+                  <span className="fw-medium text-secondary">
+                    (555) 123-4567
+                  </span>
                 </li>
                 <li className="mb-0">
                   <span className="fw-medium me-1">Projects:</span>
@@ -99,7 +105,10 @@ const Clients = () => {
               </ul>
 
               <div className="d-flex align-items-center">
-                <a href="mailto:info@bytesavvy.com" className="btn btn-primary py-2 fw-medium">
+                <a
+                  href="mailto:info@bytesavvy.com"
+                  className="btn btn-primary py-2 fw-medium"
+                >
                   Message
                 </a>
                 <Link
@@ -137,11 +146,15 @@ const Clients = () => {
               <ul className="ps-0 mb-4 list-unstyled">
                 <li className="mb-2 pb-1">
                   <span className="fw-medium me-1">Name:</span>
-                  <span className="fw-medium text-secondary">Alice Johnson</span>
+                  <span className="fw-medium text-secondary">
+                    Alice Johnson
+                  </span>
                 </li>
                 <li className="mb-2 pb-1">
                   <span className="fw-medium me-1">Phone:</span>
-                  <span className="fw-medium text-secondary">(555) 234-5678</span>
+                  <span className="fw-medium text-secondary">
+                    (555) 234-5678
+                  </span>
                 </li>
                 <li className="mb-0">
                   <span className="fw-medium me-1">Projects:</span>
@@ -149,7 +162,10 @@ const Clients = () => {
                 </li>
               </ul>
               <div className="d-flex align-items-center">
-                <a href="mailto:info@datatech.com" className="btn btn-primary py-2 fw-medium">
+                <a
+                  href="mailto:info@datatech.com"
+                  className="btn btn-primary py-2 fw-medium"
+                >
                   Message
                 </a>
                 <Link
@@ -191,7 +207,9 @@ const Clients = () => {
                 </li>
                 <li className="mb-2 pb-1">
                   <span className="fw-medium me-1">Phone:</span>
-                  <span className="fw-medium text-secondary">(555) 345-6789</span>
+                  <span className="fw-medium text-secondary">
+                    (555) 345-6789
+                  </span>
                 </li>
                 <li className="mb-0">
                   <span className="fw-medium me-1">Projects:</span>
@@ -200,7 +218,10 @@ const Clients = () => {
               </ul>
 
               <div className="d-flex align-items-center">
-                <a href="mailto:info@cyberbyte.com" className="btn btn-primary py-2 fw-medium">
+                <a
+                  href="mailto:info@cyberbyte.com"
+                  className="btn btn-primary py-2 fw-medium"
+                >
                   Message
                 </a>
                 <Link
@@ -242,7 +263,9 @@ const Clients = () => {
                 </li>
                 <li className="mb-2 pb-1">
                   <span className="fw-medium me-1">Phone:</span>
-                  <span className="fw-medium text-secondary">(555) 456-7890</span>
+                  <span className="fw-medium text-secondary">
+                    (555) 456-7890
+                  </span>
                 </li>
                 <li className="mb-0">
                   <span className="fw-medium me-1">Projects:</span>
@@ -251,7 +274,10 @@ const Clients = () => {
               </ul>
 
               <div className="d-flex align-items-center">
-                <a href="mailto:info@netgen.com" className="btn btn-primary py-2 fw-medium">
+                <a
+                  href="mailto:info@netgen.com"
+                  className="btn btn-primary py-2 fw-medium"
+                >
                   Message
                 </a>
                 <Link
@@ -289,11 +315,15 @@ const Clients = () => {
               <ul className="ps-0 mb-4 list-unstyled">
                 <li className="mb-2 pb-1">
                   <span className="fw-medium me-1">Name:</span>
-                  <span className="fw-medium text-secondary">Michael Jones</span>
+                  <span className="fw-medium text-secondary">
+                    Michael Jones
+                  </span>
                 </li>
                 <li className="mb-2 pb-1">
                   <span className="fw-medium me-1">Phone:</span>
-                  <span className="fw-medium text-secondary">(555) 567-8901</span>
+                  <span className="fw-medium text-secondary">
+                    (555) 567-8901
+                  </span>
                 </li>
                 <li className="mb-0">
                   <span className="fw-medium me-1">Projects:</span>
@@ -302,7 +332,10 @@ const Clients = () => {
               </ul>
 
               <div className="d-flex align-items-center">
-                <a href="mailto:info@techfuse.com" className="btn btn-primary py-2 fw-medium">
+                <a
+                  href="mailto:info@techfuse.com"
+                  className="btn btn-primary py-2 fw-medium"
+                >
                   Message
                 </a>
                 <Link
@@ -340,11 +373,15 @@ const Clients = () => {
               <ul className="ps-0 mb-4 list-unstyled">
                 <li className="mb-2 pb-1">
                   <span className="fw-medium me-1">Name:</span>
-                  <span className="fw-medium text-secondary">Sophia Martinez</span>
+                  <span className="fw-medium text-secondary">
+                    Sophia Martinez
+                  </span>
                 </li>
                 <li className="mb-2 pb-1">
                   <span className="fw-medium me-1">Phone:</span>
-                  <span className="fw-medium text-secondary">(555) 678-9012</span>
+                  <span className="fw-medium text-secondary">
+                    (555) 678-9012
+                  </span>
                 </li>
                 <li className="mb-0">
                   <span className="fw-medium me-1">Projects:</span>
@@ -353,7 +390,10 @@ const Clients = () => {
               </ul>
 
               <div className="d-flex align-items-center">
-                <a href="mailto:info@techfuse.com" className="btn btn-primary py-2 fw-medium">
+                <a
+                  href="mailto:info@techfuse.com"
+                  className="btn btn-primary py-2 fw-medium"
+                >
                   Message
                 </a>
                 <Link
@@ -391,11 +431,15 @@ const Clients = () => {
               <ul className="ps-0 mb-4 list-unstyled">
                 <li className="mb-2 pb-1">
                   <span className="fw-medium me-1">Name:</span>
-                  <span className="fw-medium text-secondary">William Davis</span>
+                  <span className="fw-medium text-secondary">
+                    William Davis
+                  </span>
                 </li>
                 <li className="mb-2 pb-1">
                   <span className="fw-medium me-1">Phone:</span>
-                  <span className="fw-medium text-secondary">(555) 789-0123</span>
+                  <span className="fw-medium text-secondary">
+                    (555) 789-0123
+                  </span>
                 </li>
                 <li className="mb-0">
                   <span className="fw-medium me-1">Projects:</span>
@@ -404,7 +448,10 @@ const Clients = () => {
               </ul>
 
               <div className="d-flex align-items-center">
-                <a href="mailto:info@webwiz.com" className="btn btn-primary py-2 fw-medium">
+                <a
+                  href="mailto:info@webwiz.com"
+                  className="btn btn-primary py-2 fw-medium"
+                >
                   Message
                 </a>
                 <Link
@@ -446,7 +493,9 @@ const Clients = () => {
                 </li>
                 <li className="mb-2 pb-1">
                   <span className="fw-medium me-1">Phone:</span>
-                  <span className="fw-medium text-secondary">(555) 890-1234</span>
+                  <span className="fw-medium text-secondary">
+                    (555) 890-1234
+                  </span>
                 </li>
                 <li className="mb-0">
                   <span className="fw-medium me-1">Projects:</span>
@@ -455,7 +504,10 @@ const Clients = () => {
               </ul>
 
               <div className="d-flex align-items-center">
-                <a href="mailto:info@bytetech.com" className="btn btn-primary py-2 fw-medium">
+                <a
+                  href="mailto:info@bytetech.com"
+                  className="btn btn-primary py-2 fw-medium"
+                >
                   Message
                 </a>
                 <Link
@@ -497,7 +549,9 @@ const Clients = () => {
                 </li>
                 <li className="mb-2 pb-1">
                   <span className="fw-medium me-1">Phone:</span>
-                  <span className="fw-medium text-secondary">(555) 901-2345</span>
+                  <span className="fw-medium text-secondary">
+                    (555) 901-2345
+                  </span>
                 </li>
                 <li className="mb-0">
                   <span className="fw-medium me-1">Projects:</span>
@@ -506,7 +560,10 @@ const Clients = () => {
               </ul>
 
               <div className="d-flex align-items-center">
-                <a href="mailto:info@cloudflex.com" className="btn btn-primary py-2 fw-medium">
+                <a
+                  href="mailto:info@cloudflex.com"
+                  className="btn btn-primary py-2 fw-medium"
+                >
                   Message
                 </a>
                 <Link
@@ -544,11 +601,15 @@ const Clients = () => {
               <ul className="ps-0 mb-4 list-unstyled">
                 <li className="mb-2 pb-1">
                   <span className="fw-medium me-1">Name:</span>
-                  <span className="fw-medium text-secondary">Isabella Clark</span>
+                  <span className="fw-medium text-secondary">
+                    Isabella Clark
+                  </span>
                 </li>
                 <li className="mb-2 pb-1">
                   <span className="fw-medium me-1">Phone:</span>
-                  <span className="fw-medium text-secondary">(555) 012-3456</span>
+                  <span className="fw-medium text-secondary">
+                    (555) 012-3456
+                  </span>
                 </li>
                 <li className="mb-0">
                   <span className="fw-medium me-1">Projects:</span>
@@ -556,7 +617,10 @@ const Clients = () => {
                 </li>
               </ul>
               <div className="d-flex align-items-center">
-                <a href="mailto:info@webWorx.com" className="btn btn-primary py-2 fw-medium">
+                <a
+                  href="mailto:info@webWorx.com"
+                  className="btn btn-primary py-2 fw-medium"
+                >
                   Message
                 </a>
                 <Link
@@ -594,11 +658,15 @@ const Clients = () => {
               <ul className="ps-0 mb-4 list-unstyled">
                 <li className="mb-2 pb-1">
                   <span className="fw-medium me-1">Name:</span>
-                  <span className="fw-medium text-secondary">Alexander Lewis</span>
+                  <span className="fw-medium text-secondary">
+                    Alexander Lewis
+                  </span>
                 </li>
                 <li className="mb-2 pb-1">
                   <span className="fw-medium me-1">Phone:</span>
-                  <span className="fw-medium text-secondary">(555) 210-9876</span>
+                  <span className="fw-medium text-secondary">
+                    (555) 210-9876
+                  </span>
                 </li>
                 <li className="mb-0">
                   <span className="fw-medium me-1">Projects:</span>
@@ -607,7 +675,10 @@ const Clients = () => {
               </ul>
 
               <div className="d-flex align-items-center">
-                <a href="mailto:info@techsync.com" className="btn btn-primary py-2 fw-medium">
+                <a
+                  href="mailto:info@techsync.com"
+                  className="btn btn-primary py-2 fw-medium"
+                >
                   Message
                 </a>
                 <Link

@@ -1,19 +1,14 @@
 "use client";
 
-import React from "react";
-import { MaterialSymbol } from "react-material-symbols";
-import "react-material-symbols/rounded";
-import Dropdown from 'react-bootstrap/Dropdown';
+import { Dropdown } from "react-bootstrap";
 import Image from "next/image";
-import Link from 'next/link';
+import Link from "next/link";
 
 const Profile = () => {
   return (
     <>
       <Dropdown className="admin-profile">
-        <Dropdown.Toggle
-          className="d-xxl-flex align-items-center bg-transparent border-0 text-start p-0 cursor"
-        >
+        <Dropdown.Toggle className="d-xxl-flex align-items-center bg-transparent border-0 text-start p-0 cursor">
           <div className="flex-shrink-0">
             <Image
               className="rounded-circle wh-40 administrator"
@@ -57,8 +52,8 @@ const Profile = () => {
               <Link
                 className="dropdown-item d-flex align-items-center text-body"
                 href="/my-profile/"
-              > 
-                <MaterialSymbol icon="account_circle" />
+              >
+                <i className="material-symbols-outlined">account_circle</i>
                 <span className="ms-2">My Profile</span>
               </Link>
             </li>
@@ -67,8 +62,8 @@ const Profile = () => {
               <Link
                 className="dropdown-item d-flex align-items-center text-body"
                 href="/apps/chat/"
-              > 
-                <MaterialSymbol icon="chat" />
+              >
+                <i className="material-symbols-outlined">chat</i>
                 <span className="ms-2">Messages</span>
               </Link>
             </li>
@@ -78,7 +73,9 @@ const Profile = () => {
                 className="dropdown-item d-flex align-items-center text-body"
                 href="/apps/to-do-list/"
               >
-                <MaterialSymbol icon="format_list_bulleted" />
+                <i className="material-symbols-outlined">
+                  format_list_bulleted
+                </i>
                 <span className="ms-2">My Task</span>
               </Link>
             </li>
@@ -87,8 +84,8 @@ const Profile = () => {
               <Link
                 className="dropdown-item d-flex align-items-center text-body"
                 href="/ecommerce/checkout/"
-              > 
-                <MaterialSymbol icon="credit_card" />
+              >
+                <i className="material-symbols-outlined">credit_card</i>
                 <span className="ms-2">Billing</span>
               </Link>
             </li>
@@ -99,8 +96,8 @@ const Profile = () => {
               <Link
                 className="dropdown-item d-flex align-items-center text-body"
                 href="/settings/account-settings/"
-              > 
-                <MaterialSymbol icon="settings" />
+              >
+                <i className="material-symbols-outlined">settings</i>
                 <span className="ms-2">Settings</span>
               </Link>
             </li>
@@ -109,8 +106,8 @@ const Profile = () => {
               <Link
                 className="dropdown-item d-flex align-items-center text-body"
                 href="/helpdesk/tickets/"
-              > 
-                <MaterialSymbol icon="support" />
+              >
+                <i className="material-symbols-outlined">support</i>
                 <span className="ms-2">Support</span>
               </Link>
             </li>
@@ -119,8 +116,8 @@ const Profile = () => {
               <Link
                 className="dropdown-item d-flex align-items-center text-body"
                 href="/authentication/lock-screen/"
-              > 
-                <MaterialSymbol icon="lock" />
+              >
+                <i className="material-symbols-outlined">lock</i>
                 <span className="ms-2">Lock Screen</span>
               </Link>
             </li>
@@ -130,7 +127,7 @@ const Profile = () => {
                 className="dropdown-item d-flex align-items-center text-body"
                 href="/authentication/logout/"
               >
-                <MaterialSymbol icon="logout" />
+                <i className="material-symbols-outlined">logout</i>
                 <span className="ms-2">Logout</span>
               </Link>
             </li>

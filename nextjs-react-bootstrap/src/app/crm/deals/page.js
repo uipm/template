@@ -1,6 +1,6 @@
 "use client";
   
-import Breadcrumb from 'react-bootstrap/Breadcrumb'; 
+import { Breadcrumb } from "react-bootstrap";
 import DealsTable from '@/components/Crm/DealsTable';
 
 export default function Page() {

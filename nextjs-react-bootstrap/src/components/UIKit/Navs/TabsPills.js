@@ -1,8 +1,6 @@
 "use client";
 
-import React from "react";
-import Card from "react-bootstrap/Card";
-import Nav from "react-bootstrap/Nav";
+import { Card, Nav } from "react-bootstrap";
 
 const TabsPills = () => {
   return (

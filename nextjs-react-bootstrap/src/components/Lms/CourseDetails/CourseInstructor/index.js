@@ -1,13 +1,13 @@
 "use client";
 
-import React from "react"; 
-import Image from "next/image";
+import { Card } from "react-bootstrap";
+import Image from "next/image"; 
 
 const CourseInstructor = () => {
   return (
     <>
-      <div className="card bg-white border-0 rounded-3 mb-4">
-        <div className="card-body p-4">
+      <Card className="bg-white border-0 rounded-3 mb-4">
+        <Card.Body className="p-4">
           <h3 className="mb-4">Course Instructor</h3>
 
           <div className="d-flex align-items-center mb-4">
@@ -49,8 +49,8 @@ const CourseInstructor = () => {
             in the learning materials, and the instructor is providing guidance
             and support.
           </p>
-        </div>
-      </div>
+        </Card.Body>
+      </Card>
     </>
   );
 };

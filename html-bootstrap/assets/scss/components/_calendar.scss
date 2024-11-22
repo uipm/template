@@ -258,6 +258,119 @@
     }
 }
 
+/* Calendar Area Style
+============================================*/
+.calendar-container {
+	width: 100%;
+	border: none;
+	padding: 0;
+	box-shadow: none;
+	border-radius: 0;
+    position: relative;
+    &.border-bottom-1 {
+        border-bottom: 1px dashed #B9C1CD;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+    }
+    .calendar-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 0;
+        select {
+            padding: 0;
+            font-size: 16px;
+            border: 0;
+            font-weight: 600;
+            font-size: 12px;
+            text-transform: uppercase;
+            cursor: pointer;
+            &:focus {
+                box-shadow: none;
+                border-bottom: none;
+                outline: 0;
+            }
+        }
+        button {
+            display: none;
+        }
+    }
+    .calendar-table {
+        width: 100%;
+        border-collapse: collapse;
+        th {
+            text-align: center;
+            color: #7A799B;
+            font-size: 12px;
+            letter-spacing: 0.72px;
+            text-transform: capitalize;
+            font-weight: 400;
+            padding-bottom: 15px;
+        }
+        td {
+            text-align: center;
+            width: 44px;
+            height: 52px;
+            font-size: 16px;
+            font-weight: 400;
+            color: $secondary;
+            cursor: pointer;
+            background-color: transparent;
+            border: 2px solid $white;
+            border-radius: 10px;
+            position: relative;
+            z-index: 1;
+            &::after {
+                content: "";
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                left: 0;
+                right: 0;
+                margin: auto;
+                width: 100%;
+                height: 100%;
+                background-color: #E6EFF2;
+                z-index: -2;
+                border-radius: 10px;
+            }
+            &.prev-month {
+                background-color: $white;
+                color: #ACC1C9;
+                &::after {
+                    background-color: transparent;
+                    border: 1px solid #E6EFF2;
+                }
+            }
+            &.next-month {
+                background-color: $white;
+                color: #ACC1C9;
+            }
+            &.current-day {
+                color: $white;
+                font-weight: 500;
+                position: relative;
+                z-index: 1;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    left: 0;
+                    right: 0;
+                    margin: auto;
+                    width: 32px;
+                    height: 32px;
+                    line-height: 32px;
+                    background-color: $primary !important;
+                    border-radius: 50px;
+                    z-index: -1;
+                }
+            }
+        }
+    }
+}
+
 .calendar-content {
     #month-year {
         font-size: 18px;

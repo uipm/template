@@ -35,7 +35,7 @@
             </tr>
           </thead>
           <tbody>
-            <tr v-for="item in filteredItems" :key="item.id">
+            <tr v-for="item in filteredItems" :key="item.orderID">
               <td class="text-start">
                 <NuxtLink to="/dashboard" class="fw-medium">
                   {{ item.orderID }}

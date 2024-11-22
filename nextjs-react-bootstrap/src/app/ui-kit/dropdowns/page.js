@@ -1,9 +1,6 @@
 "use client";
    
-import React from "react";
-import Breadcrumb from 'react-bootstrap/Breadcrumb';  
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col'; 
+import { Row, Col, Breadcrumb } from "react-bootstrap";
 import SingleButtonDropdowns from "@/components/UIKit/Dropdowns/SingleButtonDropdowns";
 import ButtonVariantsDropdowns from "@/components/UIKit/Dropdowns/ButtonVariantsDropdowns";
 import SplitButtonDropdowns from "@/components/UIKit/Dropdowns/SplitButtonDropdowns";

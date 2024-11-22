@@ -1,10 +1,8 @@
 "use client";
 
-import React from "react";
+import { Card, Form } from "react-bootstrap";
 import Link from "next/link";
 import Image from "next/image";
-import Card from "react-bootstrap/Card";
-import Form from "react-bootstrap/Form";
 
 const topPerformerData = [
   {
@@ -51,10 +49,10 @@ const TopPerformer = () => {
               className="month-select form-control p-0 h-auto border-0"
               aria-label="Default select example"
             >
-              <option value="0">Select</option>
-              <option value="1">This Month</option>
-              <option value="2">Last Month</option>
-              <option value="3">Last Year</option>
+              <option defaultValue="0">Select</option>
+              <option defaultValue="1">This Month</option>
+              <option defaultValue="2">Last Month</option>
+              <option defaultValue="3">Last Year</option>
             </Form.Select>
           </div>
 

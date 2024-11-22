@@ -1,12 +1,6 @@
 "use client";
 
-import React from "react";
-import Card from "react-bootstrap/Card";
-import Table from "react-bootstrap/Table";
-import Dropdown from "react-bootstrap/Dropdown";
-import ProgressBar from "react-bootstrap/ProgressBar";
-import { MaterialSymbol } from "react-material-symbols";
-import "react-material-symbols/rounded";
+import { Dropdown, Card, Table, ProgressBar } from "react-bootstrap";
 import Pagination from "./Pagination";
 
 const studentsProgressData = [
@@ -63,42 +57,44 @@ const StudentsProgress = () => {
                   id="dropdown-basic"
                   className="bg-transparent p-0"
                 >
-                  <MaterialSymbol icon="more_horiz" />
+                  <span className="material-symbols-outlined">more_horiz</span>
                 </Dropdown.Toggle>
 
                 <Dropdown.Menu className="bg-white border box-shadow">
                   <Dropdown.Item href="#">
-                    <MaterialSymbol icon="schedule" />
+                    <span className="material-symbols-outlined">schedule</span>
                     Today
                   </Dropdown.Item>
 
                   <Dropdown.Item href="#">
-                    <MaterialSymbol icon="pie_chart" />
+                    <span className="material-symbols-outlined">pie_chart</span>
                     Last 7 Days
                   </Dropdown.Item>
 
                   <Dropdown.Item href="#">
-                    <MaterialSymbol icon="refresh" />
+                    <i className="material-symbols-outlined">refresh</i>
                     Last Month
                   </Dropdown.Item>
 
                   <Dropdown.Item href="#">
-                    <MaterialSymbol icon="calendar_today" />
+                    <span className="material-symbols-outlined">
+                      calendar_today
+                    </span>
                     Last 1 Year
                   </Dropdown.Item>
 
                   <Dropdown.Item href="#">
-                    <MaterialSymbol icon="bar_chart" />
+                    <span className="material-symbols-outlined">bar_chart</span>
                     All Time
                   </Dropdown.Item>
 
                   <Dropdown.Item href="#">
-                    <MaterialSymbol icon="visibility" />
+                    <i className="material-symbols-outlined">visibility</i>
                     View
                   </Dropdown.Item>
 
                   <Dropdown.Item href="#">
-                    <MaterialSymbol icon="delete" />
+                    <i className="material-symbols-outlined">delete</i>
                     Delete
                   </Dropdown.Item>
                 </Dropdown.Menu>

@@ -1,8 +1,6 @@
 "use client";
 
-import Breadcrumb from 'react-bootstrap/Breadcrumb';
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";  
+import { Row, Col, Breadcrumb } from "react-bootstrap";
 import TrackingID from '@/components/eCommerce/Orders/OrderDetails/TrackingID';
 import RecentOrders from '@/components/eCommerce/Orders/OrderDetails/RecentOrders';
 import OrderSummary from '@/components/eCommerce/Orders/OrderDetails/OrderSummary';

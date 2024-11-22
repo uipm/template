@@ -183,7 +183,7 @@
 }
 .key-features-single-item {
     margin-bottom: 25px;
-    i, .material-symbols {
+    i, span {
         width: 85px;
         height: 85px;
         line-height: 85px;
@@ -246,7 +246,7 @@
 		margin-bottom: 22px;
 		li {
 			display: inline-block;
-			i, .material-symbols {
+			i, span {
 				color: $warning;
                 font-size: 20px;
 			}
@@ -367,7 +367,8 @@
 	transition: $transition;
     font-size: 20px;
     border-radius: 4px;
-    i, .material-symbols {
+
+    i, span {
         color: $white;
     }
     &:hover {
@@ -414,7 +415,7 @@
         }
     }
     .key-features-single-item {
-        i, .material-symbols {
+        i, span {
             width: 70px;
             height: 70px;
             line-height: 70px;
@@ -515,7 +516,7 @@
         }
     }
     .key-features-single-item {
-        i, .material-symbols {
+        i, span {
             width: 70px;
             height: 70px;
             line-height: 70px;

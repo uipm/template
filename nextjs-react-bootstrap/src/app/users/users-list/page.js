@@ -1,8 +1,7 @@
 "use client";
    
+import { Breadcrumb } from "react-bootstrap";
 import UsersListTable from "@/components/Users/UsersListTable";
-import React from "react";
-import Breadcrumb from 'react-bootstrap/Breadcrumb';
 
 export default function Page() {
   return (

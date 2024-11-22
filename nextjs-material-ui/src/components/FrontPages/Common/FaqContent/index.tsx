@@ -108,7 +108,7 @@ const FaqContent: React.FC = () => {
                 fontSize="14px"
                 className="text-black"
               >
-                What is pro.io?
+                What is Trezo?
               </Typography>
             </AccordionSummary>
 
@@ -119,7 +119,7 @@ const FaqContent: React.FC = () => {
               }}
             >
               <Typography sx={{ lineHeight: "1.8" }} mb="15px">
-                pro.io is a comprehensive project management software designed to
+                Trezo is a comprehensive project management software designed to
                 help teams streamline their workflow, collaborate effectively,
                 and achieve project success.
               </Typography>
@@ -151,7 +151,7 @@ const FaqContent: React.FC = () => {
                 fontSize="14px"
                 className="text-black"
               >
-                What features does pro.io offer?
+                What features does Trezo offer?
               </Typography>
             </AccordionSummary>
 
@@ -162,7 +162,7 @@ const FaqContent: React.FC = () => {
               }}
             >
               <Typography sx={{ lineHeight: "1.8" }} mb="15px">
-                pro.io is a comprehensive project management software designed to
+                Trezo is a comprehensive project management software designed to
                 help teams streamline their workflow, collaborate effectively,
                 and achieve project success.
               </Typography>
@@ -194,7 +194,7 @@ const FaqContent: React.FC = () => {
                 fontSize="14px"
                 className="text-black"
               >
-                How can pro.io benefit my team?
+                How can Trezo benefit my team?
               </Typography>
             </AccordionSummary>
 
@@ -205,7 +205,7 @@ const FaqContent: React.FC = () => {
               }}
             >
               <Typography sx={{ lineHeight: "1.8" }} mb="15px">
-                pro.io is a comprehensive project management software designed to
+                Trezo is a comprehensive project management software designed to
                 help teams streamline their workflow, collaborate effectively,
                 and achieve project success.
               </Typography>
@@ -237,7 +237,7 @@ const FaqContent: React.FC = () => {
                 fontSize="14px"
                 className="text-black"
               >
-                Is pro.io suitable for small businesses?
+                Is Trezo suitable for small businesses?
               </Typography>
             </AccordionSummary>
 
@@ -248,7 +248,7 @@ const FaqContent: React.FC = () => {
               }}
             >
               <Typography sx={{ lineHeight: "1.8" }} mb="15px">
-                pro.io is a comprehensive project management software designed to
+                Trezo is a comprehensive project management software designed to
                 help teams streamline their workflow, collaborate effectively,
                 and achieve project success.
               </Typography>
@@ -280,7 +280,7 @@ const FaqContent: React.FC = () => {
                 fontSize="14px"
                 className="text-black"
               >
-                Can I customize pro.io to fit my team's specific needs?
+                Can I customize Trezo to fit my team's specific needs?
               </Typography>
             </AccordionSummary>
 
@@ -291,7 +291,7 @@ const FaqContent: React.FC = () => {
               }}
             >
               <Typography sx={{ lineHeight: "1.8" }} mb="15px">
-                pro.io is a comprehensive project management software designed to
+                Trezo is a comprehensive project management software designed to
                 help teams streamline their workflow, collaborate effectively,
                 and achieve project success.
               </Typography>
@@ -323,7 +323,7 @@ const FaqContent: React.FC = () => {
                 fontSize="14px"
                 className="text-black"
               >
-                Is pro.io cloud-based or on-premises?
+                Is Trezo cloud-based or on-premises?
               </Typography>
             </AccordionSummary>
 
@@ -334,7 +334,7 @@ const FaqContent: React.FC = () => {
               }}
             >
               <Typography sx={{ lineHeight: "1.8" }} mb="15px">
-                pro.io is a comprehensive project management software designed to
+                Trezo is a comprehensive project management software designed to
                 help teams streamline their workflow, collaborate effectively,
                 and achieve project success.
               </Typography>
@@ -366,7 +366,7 @@ const FaqContent: React.FC = () => {
                 fontSize="14px"
                 className="text-black"
               >
-                Does pro.io integrate with other tools?
+                Does Trezo integrate with other tools?
               </Typography>
             </AccordionSummary>
 
@@ -377,7 +377,7 @@ const FaqContent: React.FC = () => {
               }}
             >
               <Typography sx={{ lineHeight: "1.8" }} mb="15px">
-                pro.io is a comprehensive project management software designed to
+                Trezo is a comprehensive project management software designed to
                 help teams streamline their workflow, collaborate effectively,
                 and achieve project success.
               </Typography>

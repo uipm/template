@@ -1,12 +1,6 @@
 "use client";
 
-import React from "react";
-import Link from "next/link";
-import Image from "next/image";
-import Row from 'react-bootstrap/Row'; 
-import Col from 'react-bootstrap/Col'; 
-import Card from 'react-bootstrap/Card'; 
-import Form from 'react-bootstrap/Form'; 
+import { Row, Col, Card, Form } from "react-bootstrap";
 import YourOrder from "./YourOrder";
 
 const CreateOrder = () => {
@@ -64,10 +58,10 @@ const CreateOrder = () => {
                         className="form-control h-55"
                         aria-label="Default select example"
                       >
-                        <option value="0">State</option>
-                        <option value="1">Florida</option>
-                        <option value="2">Wisconsin</option>
-                        <option value="3">Washington</option>
+                        <option defaultValue="0">State</option>
+                        <option defaultValue="1">Florida</option>
+                        <option defaultValue="2">Wisconsin</option>
+                        <option defaultValue="3">Washington</option>
                       </Form.Select>
                     </Form.Group>
                   </Col>
@@ -79,10 +73,10 @@ const CreateOrder = () => {
                         className="form-control h-55"
                         aria-label="Default select example"
                       >
-                        <option value="0">State</option>
-                        <option value="1">New York</option>
-                        <option value="2">Tokyo</option>
-                        <option value="3">Amsterdam</option>
+                        <option defaultValue="0">State</option>
+                        <option defaultValue="1">New York</option>
+                        <option defaultValue="2">Tokyo</option>
+                        <option defaultValue="3">Amsterdam</option>
                       </Form.Select>
                     </Form.Group>
                   </Col>
@@ -120,10 +114,10 @@ const CreateOrder = () => {
                         className="form-control h-55"
                         aria-label="Default select example"
                       >
-                        <option value="0">Select</option>
-                        <option value="1">USA</option>
-                        <option value="2">Canada</option>
-                        <option value="3">Spain</option>
+                        <option defaultValue="0">Select</option>
+                        <option defaultValue="1">USA</option>
+                        <option defaultValue="2">Canada</option>
+                        <option defaultValue="3">Spain</option>
                       </Form.Select>
                     </Form.Group>
                   </Col>
@@ -175,11 +169,11 @@ const CreateOrder = () => {
                         className="form-control h-55"
                         aria-label="Default select example"
                       >
-                        <option value="0">PayPal</option>
-                        <option value="1">Stax</option>
-                        <option value="2">Helcim</option>
-                        <option value="3">Square</option>
-                        <option value="4">Stripe</option>
+                        <option defaultValue="0">PayPal</option>
+                        <option defaultValue="1">Stax</option>
+                        <option defaultValue="2">Helcim</option>
+                        <option defaultValue="3">Square</option>
+                        <option defaultValue="4">Stripe</option>
                       </Form.Select>
                     </Form.Group>
                   </Col>

@@ -1,10 +1,6 @@
 "use client";
 
-import React from 'react';
-import Image from 'react-bootstrap/Image';
-import Card from 'react-bootstrap/Card';
-import Col from 'react-bootstrap/Col';
-import Row from 'react-bootstrap/Row';
+import { Row, Col, Card, Image } from "react-bootstrap";
 
 const ShapeExample = () => {
   return (

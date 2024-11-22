@@ -1,14 +1,13 @@
 "use client";
 
-import Breadcrumb from 'react-bootstrap/Breadcrumb'; 
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col"; 
+import { Row, Col, Breadcrumb } from "react-bootstrap";
 import Sidebar from '@/components/Apps/FileManager/Sidebar';
 import Projects from '@/components/Apps/FileManager/Projects'; 
 
 export default function Page() {
   return (
     <>
+    
       <div className="d-flex justify-content-between align-items-center flex-wrap gap-2 mb-4">
         <h3 className="mb-0">File Manager</h3>
  

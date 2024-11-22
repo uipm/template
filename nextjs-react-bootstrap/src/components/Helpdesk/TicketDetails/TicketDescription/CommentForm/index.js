@@ -1,14 +1,6 @@
 "use client";
 
-import React from "react";
-import Form from "react-bootstrap/Form";
-import { MaterialSymbol } from "react-material-symbols";
-import "react-material-symbols/rounded";
-
-import dynamic from "next/dynamic";
-const RichTextEditor = dynamic(() => import("@mantine/rte"), {
-  ssr: false,
-});
+import { Form } from "react-bootstrap";
 
 const CommentForm = () => {
   return (
@@ -19,18 +11,7 @@ const CommentForm = () => {
             Post A Reply
           </Form.Label>
 
-          <RichTextEditor
-            id="rte"
-            controls={[
-              ["bold", "italic", "underline", "link", "image"],
-              ["unorderedList", "h1", "h2", "h3"],
-              ["sup", "sub"],
-              ["alignLeft", "alignCenter", "alignRight"],
-            ]}
-            style={{
-              minHeight: "285px",
-            }}
-          />
+          <Form.Control as="textarea" rows={6} placeholder="Type here..." /> 
         </Form.Group>
 
         <Form.Group className="d-flex flex-wrap gap-3">
@@ -48,7 +29,9 @@ const CommentForm = () => {
             className="btn btn-primary fw-medium fs-16 py-2 px-4"
           >
             <div className="d-flex align-items-center">
-              <MaterialSymbol icon="send" size={20} className="me-2 text-white" />
+              <span className="material-symbols-outlined fs-20 me-2 text-white">
+                  send
+                </span>
               
               <span className="py-1 d-inline-block text-white">Submit Now</span>
             </div>

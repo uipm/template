@@ -1,13 +1,8 @@
 "use client";
 
-import React from "react";
+import { Row, Col, Form } from "react-bootstrap";
 import Link from "next/link";
 import Image from "next/image";
-import { MaterialSymbol } from "react-material-symbols";
-import "react-material-symbols/rounded";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-import Form from "react-bootstrap/Form";
 
 const SignInForm = () => {
   return (
@@ -135,11 +130,9 @@ const SignInForm = () => {
                     className="btn btn-primary fw-medium py-2 px-3 w-100"
                   >
                     <div className="d-flex align-items-center justify-content-center py-1">
-                      <MaterialSymbol
-                        icon="login"
-                        size={20}
-                        className="text-white me-2"
-                      />
+                      <span className="material-symbols-outlined fs-20 text-white me-2">
+                        login
+                      </span>
                       <span>Sign In</span>
                     </div>
                   </button>

@@ -1,14 +1,8 @@
 "use client";
 
-import React from "react";
+import { Row, Col, Card, ProgressBar } from "react-bootstrap";
 import Link from "next/link";
 import Image from "next/image";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-import Card from "react-bootstrap/Card";
-import { MaterialSymbol } from "react-material-symbols";
-import "react-material-symbols/rounded";
-import ProgressBar from "react-bootstrap/ProgressBar";
 
 const EventsGrid = () => {
   return (
@@ -925,7 +919,9 @@ const EventsGrid = () => {
                         href="#"
                         aria-label="Previous"
                       >
-                        <MaterialSymbol icon="keyboard_arrow_left" />
+                        <span className="material-symbols-outlined">
+                          keyboard_arrow_left
+                        </span>
                       </Link>
                     </li>
                     <li className="page-item">
@@ -954,7 +950,9 @@ const EventsGrid = () => {
                         href="#"
                         aria-label="Next"
                       >
-                        <MaterialSymbol icon="keyboard_arrow_right" />
+                        <span className="material-symbols-outlined">
+                          keyboard_arrow_right
+                        </span>
                       </Link>
                     </li>
                   </ul>

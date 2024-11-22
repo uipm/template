@@ -812,4 +812,52 @@
         background-color: #15203c;
         color: $white;
     }
+
+    /* Dark After Demos Add CSS */
+    .without-card {
+        background-color: $dark-card-bg !important;
+    }
+    .exchange-for-dark {
+        background-color: $dark-body-bg !important;
+        .d-flex.flex-wrap.gap-2 {
+            border-color: $dark-border !important;
+        }
+    }
+    .realtime-for-dark {
+        p {
+            color: $white !important;
+        }
+    }
+    .analytics-tabs {
+        border-color: $dark-border;
+        li {
+            button {
+                border-color: $dark-border !important;
+                &.active {
+                    background-color: $dark-body-bg;
+                    border-color: $dark-border;
+                    color: $white;
+                }
+                &:hover {
+                    background-color: $dark-body-bg;
+                    border-color: $dark-border;
+                    color: $white;
+                }
+            }
+        }
+    }
+    .cryptocurrency-controller {
+        .controller-icon {
+            border-color: $dark-border;
+            color: $white;
+        }
+    }
+    .for-dark-border {
+        border-color: $dark-border !important;
+    }
+    .for-dark {
+        h3 {
+            color: $secondary;
+        }
+    }
 }

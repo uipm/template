@@ -1,7 +1,7 @@
 "use client";
-   
-import Remixicon from '@/components/Icons/Remixicon';
-import Breadcrumb from 'react-bootstrap/Breadcrumb';
+
+import { Breadcrumb } from "react-bootstrap";
+import Remixicon from '@/components/Icons/Remixicon'; 
 
 export default function Page() {
   return (

@@ -45,7 +45,6 @@ export default defineComponent({
       display: inline-block;
 
       .page-link {
-        padding: 6px 0;
         border-radius: 4px;
         border: 1px solid #eceef2;
         background: var(--whiteColor);
@@ -53,8 +52,8 @@ export default defineComponent({
         font-weight: 500;
         color: var(--bodyColor);
         position: relative;
-        width: 36px;
-        height: 36px;
+        width: 30px;
+        height: 30px;
         display: inline-block;
         &:focus {
           box-shadow: none;
@@ -64,7 +63,7 @@ export default defineComponent({
             padding: 0;
             text-align: center;
             position: relative;
-            top: -2px;
+            top: 2px;
           }
         }
         &.active {

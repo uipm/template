@@ -1,5 +1,4 @@
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
+import { Row, Col } from "react-bootstrap";
 import Congratulations from "@/components/Dashboard/Helpdesk/Congratulations";
 import TicketsResolved from "@/components/Dashboard/Helpdesk/TicketsResolved";
 import TicketsInProgress from "@/components/Dashboard/Helpdesk/TicketsInProgress";

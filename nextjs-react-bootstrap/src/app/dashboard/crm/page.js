@@ -1,5 +1,4 @@
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
+import { Row, Col } from "react-bootstrap";
 import RevenueGrowth from "@/components/Dashboard/CRM/RevenueGrowth";
 import LeadConversion from "@/components/Dashboard/CRM/LeadConversion";
 import TotalOrders from "@/components/Dashboard/CRM/TotalOrders";

@@ -118,7 +118,7 @@ import image11 from "~/assets/images/sellers/seller11.png";
 import image12 from "~/assets/images/sellers/seller12.png";
 
 export default defineComponent({
-  name: "AllProducts",
+  name: "Sellers",
   setup() {
     const items = ref([
       {

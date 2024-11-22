@@ -48,6 +48,15 @@ a {
 .transition {
 	transition: var(--transition) !important;
 }
+
+.cikTable {
+    .bx-trending-up {
+        color: var(--successColor);
+    }
+    .bx-trending-down {
+        color: var(--dangerColor);
+    }
+}
  
 .main-wrapper-content {
     overflow: hidden;
@@ -59,6 +68,14 @@ a {
 
     &.active {
         padding-left: 85px;
+    }
+}
+
+textarea {
+    font-family: var(--fontFamily);
+
+    &:focus-visible {
+        outline: 0;
     }
 }
 
@@ -322,7 +339,7 @@ a {
 }
 
 // email-content-details
-.email-content-details {
+.email-content-details, .rsw-editor {
     h1, h2, h3, h4, h5, h6 {
         font-weight: 500;
         margin-bottom: 15px;
@@ -351,6 +368,22 @@ a {
     }
     p {
         margin-bottom: 15px;
+    }
+}
+
+// rsw-editor
+.rsw-editor {
+    h1 {
+        font-size: 18px;
+    }
+    h2 {
+        font-size: 16px;
+    }
+    h3 {
+        font-size: 15px;
+    }
+    h4 {
+        font-size: 14px;
     }
 }
 
@@ -501,5 +534,35 @@ table {
     }
     .fc-theme-standard td, .fc-theme-standard th {
         border: 1px solid var(--borderColor);
+    }
+}
+
+.uc-content {
+    .MuiGrid-item:nth-last-child(1), .MuiGrid-item:nth-last-child(2) {
+        .border-bottom {
+            border-bottom: none !important;
+            margin-bottom: 0 !important;
+            padding-bottom: 0 !important;
+        }
+    } 
+}
+
+// date-time-picker-box
+.date-time-picker-box {
+    .MuiStack-root {
+        padding: 0;
+
+        .MuiFormControl-root {
+            min-width: 200px;
+            
+            .MuiInputBase-input {
+                padding: 5px 14px;
+                height: auto;
+                font-size: 12px;
+            }
+            .MuiButtonBase-root {
+                padding: 4px;
+            }
+        }
     }
 }

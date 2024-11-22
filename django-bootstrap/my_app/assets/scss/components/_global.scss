@@ -605,10 +605,6 @@ Custom Padding & Margin Area Style
 .mt-minus-110 {
     margin-top: -100px;
 }
-
-
-
-
 .box-shadow {
     box-shadow: $box-shadow;
 }
@@ -1328,7 +1324,10 @@ Swiper Slider Style
     .mw-123 {
         max-width: 43px;
     }
-    
+    /* Marketing Dashboard CSS */
+    .progress-responsive {
+        width: 80px !important;
+    }
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
@@ -1369,6 +1368,10 @@ Swiper Slider Style
             border-top: 1px solid $border-color !important;
         }
     }
+    /* Marketing Dashboard CSS */
+    .progress-responsive {
+        width: 80px !important;
+    }
 
 }
 
@@ -1400,6 +1403,10 @@ Swiper Slider Style
             border: none !important;
             border-top: 1px solid $border-color !important;
         }
+    }
+    /* Marketing Dashboard CSS */
+    .progress-responsive {
+        width: 80px !important;
     }
 
 }

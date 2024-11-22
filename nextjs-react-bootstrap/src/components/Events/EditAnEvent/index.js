@@ -1,15 +1,6 @@
 "use client";
 
-import React from "react";
-import Card from 'react-bootstrap/Card';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import Form from 'react-bootstrap/Form';
-
-import dynamic from 'next/dynamic'
-const RichTextEditor = dynamic(() => import('@mantine/rte'), {
-  ssr: false,
-})
+import { Row, Col, Card, Form } from "react-bootstrap";
 
 const EditAnEvent = () => {
   return (
@@ -200,18 +191,7 @@ const EditAnEvent = () => {
                 <Form.Group className="mb-4">
                   <label className="label text-secondary">Event Details</label>
 
-                  <RichTextEditor
-                    id="rte"
-                    controls={[
-                      ['bold', 'italic', 'underline', 'link', 'image'],
-                      ['unorderedList', 'h1', 'h2', 'h3'],
-                      ['sup', 'sub'],
-                      ['alignLeft', 'alignCenter', 'alignRight'],
-                    ]}
-                    style={{
-                      minHeight: '180px'
-                    }}
-                  />
+                  <Form.Control as="textarea" rows={6} placeholder="Type here..." /> 
                 </Form.Group>
               </Col>
 

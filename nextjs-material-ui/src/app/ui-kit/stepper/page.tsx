@@ -5,7 +5,6 @@ import HorizontalLinearStepper from "@/components/UiKit/Stepper/HorizontalLinear
 import HorizontalNonLinearStepper from "@/components/UiKit/Stepper/HorizontalNonLinearStepper";
 import LinearAlternativeLabelStepper from "@/components/UiKit/Stepper/LinearAlternativeLabelStepper";
 import HorizontalStepperWithError from "@/components/UiKit/Stepper/HorizontalStepperWithError";
-import CustomizedSteppers from "@/components/UiKit/Stepper/CustomizedSteppers";
 import VerticalLinearStepper from "@/components/UiKit/Stepper/VerticalLinearStepper";
 
 export default function Page() {
@@ -31,14 +30,12 @@ export default function Page() {
         <Grid item xs={12} md={6} lg={6} xl={6}>
           <HorizontalLinearStepper />
 
-          <LinearAlternativeLabelStepper />
+          <LinearAlternativeLabelStepper /> 
 
-          <CustomizedSteppers />
+          <HorizontalNonLinearStepper />
         </Grid>
 
-        <Grid item xs={12} md={6} lg={6} xl={6}>
-          <HorizontalNonLinearStepper />
-
+        <Grid item xs={12} md={6} lg={6} xl={6}> 
           <HorizontalStepperWithError />
 
           <VerticalLinearStepper />

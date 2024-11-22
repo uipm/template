@@ -1,11 +1,8 @@
 "use client";
 
+import { Row, Col, Breadcrumb } from "react-bootstrap";
 import AnimationX from "@/components/ExtraPages/Animation/AnimationX";
 import AnimationXRight from "@/components/ExtraPages/Animation/AnimationXRight";
-import React from "react";
-import Breadcrumb from "react-bootstrap/Breadcrumb";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
 import AnimationY from "@/components/ExtraPages/Animation/AnimationY";
 import AnimationYBottom from "@/components/ExtraPages/Animation/AnimationYBottom";
 import AnimationZoomeIn from "@/components/ExtraPages/Animation/AnimationZoomeIn";

@@ -1,11 +1,6 @@
 "use client";
 
-import React from "react";
-import Card from "react-bootstrap/Card";
-import Form from "react-bootstrap/Form";
-import Table from "react-bootstrap/Table";
-import { MaterialSymbol } from "react-material-symbols";
-import "react-material-symbols/rounded";
+import { Card, Form, Table } from "react-bootstrap";
 import Image from "next/image";
 import Pagination from "./Pagination";
 
@@ -18,106 +13,7 @@ const agentsData = [
     openTickets: 20,
     resolvedTickets: 75,
     avgResolutionTime: "2.5 hours",
-    satisfactionRate: '80',
-    availability: 'available',
-  },
-  {
-    id: "#FEB-853",
-    agentImg: "/images/user-13.jpg",
-    agentName: "Ava Cooper",
-    totalTickets: 180,
-    openTickets: 16,
-    resolvedTickets: 35,
-    avgResolutionTime: "1.4 hours",
-    satisfactionRate: '75',
-    availability: 'available',
-  },
-  {
-    id: "#MAR-852",
-    agentImg: "/images/user-14.jpg",
-    agentName: "Isabella Evans",
-    totalTickets: 150,
-    openTickets: 35,
-    resolvedTickets: 45,
-    avgResolutionTime: "3.2 hours",
-    satisfactionRate: '80',
-    availability: 'available',
-  },
-  {
-    id: "#APR-851",
-    agentImg: "/images/user-15.jpg",
-    agentName: "Mia Hughes",
-    totalTickets: 75,
-    openTickets: 86,
-    resolvedTickets: 25,
-    avgResolutionTime: "4.5 hours",
-    satisfactionRate: '100',
-    availability: 'available',
-  },
-  {
-    id: "#MAY-850",
-    agentImg: "/images/user-16.jpg",
-    agentName: "Noah Mitchell",
-    totalTickets: 320,
-    openTickets: 90,
-    resolvedTickets: 10,
-    avgResolutionTime: "3.8 hours",
-    satisfactionRate: '80',
-    availability: 'notAvailable',
-  },
-  {
-    id: "#JUN-849",
-    agentImg: "/images/user-17.jpg",
-    agentName: "Sophia Carter",
-    totalTickets: 120,
-    openTickets: 55,
-    resolvedTickets: 20,
-    avgResolutionTime: "5.3 hours",
-    satisfactionRate: '60',
-    availability: 'available',
-  },
-  {
-    id: "#JUN-849",
-    agentImg: "/images/user-17.jpg",
-    agentName: "Sophia Carter",
-    totalTickets: 120,
-    openTickets: 55,
-    resolvedTickets: 20,
-    avgResolutionTime: "5.3 hours",
-    satisfactionRate: '60',
-    availability: 'available',
-  },
-  {
-    id: "#MAY-850",
-    agentImg: "/images/user-16.jpg",
-    agentName: "Noah Mitchell",
-    totalTickets: 320,
-    openTickets: 90,
-    resolvedTickets: 10,
-    avgResolutionTime: "3.8 hours",
-    satisfactionRate: '80',
-    availability: 'available',
-  },
-  {
-    id: "#APR-851",
-    agentImg: "/images/user-15.jpg",
-    agentName: "Mia Hughes",
-    totalTickets: 75,
-    openTickets: 86,
-    resolvedTickets: 25,
-    avgResolutionTime: "4.5 hours",
-    satisfactionRate: '100',
-    availability: 'available',
-  },
-  {
-    id: "#MAR-852",
-    agentImg: "/images/user-14.jpg",
-    agentName: "Isabella Evans",
-    totalTickets: 150,
-    openTickets: 35,
-    resolvedTickets: 45,
-    avgResolutionTime: "3.2 hours",
-    satisfactionRate:'80',
+    satisfactionRate: "80",
     availability: "available",
   },
   {
@@ -128,8 +24,107 @@ const agentsData = [
     openTickets: 16,
     resolvedTickets: 35,
     avgResolutionTime: "1.4 hours",
-    satisfactionRate: '75',
-    availability: 'available',
+    satisfactionRate: "75",
+    availability: "available",
+  },
+  {
+    id: "#MAR-852",
+    agentImg: "/images/user-14.jpg",
+    agentName: "Isabella Evans",
+    totalTickets: 150,
+    openTickets: 35,
+    resolvedTickets: 45,
+    avgResolutionTime: "3.2 hours",
+    satisfactionRate: "80",
+    availability: "available",
+  },
+  {
+    id: "#APR-851",
+    agentImg: "/images/user-15.jpg",
+    agentName: "Mia Hughes",
+    totalTickets: 75,
+    openTickets: 86,
+    resolvedTickets: 25,
+    avgResolutionTime: "4.5 hours",
+    satisfactionRate: "100",
+    availability: "available",
+  },
+  {
+    id: "#MAY-850",
+    agentImg: "/images/user-16.jpg",
+    agentName: "Noah Mitchell",
+    totalTickets: 320,
+    openTickets: 90,
+    resolvedTickets: 10,
+    avgResolutionTime: "3.8 hours",
+    satisfactionRate: "80",
+    availability: "notAvailable",
+  },
+  {
+    id: "#JUN-849",
+    agentImg: "/images/user-17.jpg",
+    agentName: "Sophia Carter",
+    totalTickets: 120,
+    openTickets: 55,
+    resolvedTickets: 20,
+    avgResolutionTime: "5.3 hours",
+    satisfactionRate: "60",
+    availability: "available",
+  },
+  {
+    id: "#JUN-849",
+    agentImg: "/images/user-17.jpg",
+    agentName: "Sophia Carter",
+    totalTickets: 120,
+    openTickets: 55,
+    resolvedTickets: 20,
+    avgResolutionTime: "5.3 hours",
+    satisfactionRate: "60",
+    availability: "available",
+  },
+  {
+    id: "#MAY-850",
+    agentImg: "/images/user-16.jpg",
+    agentName: "Noah Mitchell",
+    totalTickets: 320,
+    openTickets: 90,
+    resolvedTickets: 10,
+    avgResolutionTime: "3.8 hours",
+    satisfactionRate: "80",
+    availability: "available",
+  },
+  {
+    id: "#APR-851",
+    agentImg: "/images/user-15.jpg",
+    agentName: "Mia Hughes",
+    totalTickets: 75,
+    openTickets: 86,
+    resolvedTickets: 25,
+    avgResolutionTime: "4.5 hours",
+    satisfactionRate: "100",
+    availability: "available",
+  },
+  {
+    id: "#MAR-852",
+    agentImg: "/images/user-14.jpg",
+    agentName: "Isabella Evans",
+    totalTickets: 150,
+    openTickets: 35,
+    resolvedTickets: 45,
+    avgResolutionTime: "3.2 hours",
+    satisfactionRate: "80",
+    availability: "available",
+  },
+  {
+    id: "#FEB-853",
+    agentImg: "/images/user-13.jpg",
+    agentName: "Ava Cooper",
+    totalTickets: 180,
+    openTickets: 16,
+    resolvedTickets: 35,
+    avgResolutionTime: "1.4 hours",
+    satisfactionRate: "75",
+    availability: "available",
   },
 ];
 
@@ -204,7 +199,6 @@ const PerformanceOfAgents = () => {
 
                         <td className="text-body">{value.avgResolutionTime}</td>
 
-                         
                         <td>
                           <div
                             style={{
@@ -243,7 +237,7 @@ const PerformanceOfAgents = () => {
                         </td>
 
                         <td className="text-body">
-                          <span 
+                          <span
                             className={`badge p-2 fs-12 fw-normal text-capitalize ${value.availability}`}
                           >
                             {value.availability}
@@ -253,27 +247,21 @@ const PerformanceOfAgents = () => {
                         <td>
                           <div className="d-flex align-items-center gap-1">
                             <button className="ps-0 border-0 bg-transparent lh-1 position-relative top-2">
-                              <MaterialSymbol
-                                icon="visibility"
-                                size={16}
-                                className="text-primary"
-                              />
+                              <span className="material-symbols-outlined fs-16 text-primary">
+                                visibility
+                              </span>
                             </button>
 
                             <button className="ps-0 border-0 bg-transparent lh-1 position-relative top-2">
-                              <MaterialSymbol
-                                icon="edit"
-                                size={16}
-                                className="text-body"
-                              />
+                              <span className="material-symbols-outlined fs-16 text-body">
+                                edit
+                              </span>
                             </button>
 
                             <button className="ps-0 border-0 bg-transparent lh-1 position-relative top-2">
-                              <MaterialSymbol
-                                icon="delete"
-                                size={16}
-                                className="text-danger"
-                              />
+                              <span className="material-symbols-outlined fs-16 text-danger">
+                                delete
+                              </span>
                             </button>
                           </div>
                         </td>

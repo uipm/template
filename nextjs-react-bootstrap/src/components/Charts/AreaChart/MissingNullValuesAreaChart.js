@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import Card from "react-bootstrap/Card";
+import { Card } from "react-bootstrap";
 
 const MissingNullValuesAreaChart = () => {
   const [Chart, setChart] = useState();
@@ -138,6 +138,7 @@ const MissingNullValuesAreaChart = () => {
       },
     },
     markers: {
+      shape: 'diamond',
       size: 5,
       hover: {
         size: 9,
@@ -211,7 +212,7 @@ const MissingNullValuesAreaChart = () => {
 
   return (
     <>
-      <Card className="card bg-white border-0 rounded-3 mb-4">
+      <Card className="bg-white border-0 rounded-3 mb-4">
         <Card.Body className="p-4">
           <div className="mb-3 mb-lg-4">
             <h3 className="mb-0">Missing Null Values Area Chart</h3>

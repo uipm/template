@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import Card from "react-bootstrap/Card";
+import { Card } from "react-bootstrap";
 
 const StackedColumnChart = () => {
   const [Chart, setChart] = useState();
@@ -84,6 +84,7 @@ const StackedColumnChart = () => {
         vertical: 5,
       },
       markers: {
+        shape: 'diamond',
         offsetX: -2,
         offsetY: -0.5,
       },
@@ -116,7 +117,7 @@ const StackedColumnChart = () => {
 
   return (
     <>
-      <Card className="card bg-white border-0 rounded-3 mb-4">
+      <Card className="bg-white border-0 rounded-3 mb-4">
         <Card.Body className="p-4">
           <div className="mb-3 mb-lg-4">
             <h3 className="mb-0">Stacked Column Chart</h3>

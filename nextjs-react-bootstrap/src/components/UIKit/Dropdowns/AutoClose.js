@@ -1,8 +1,6 @@
 "use client";
 
-import React from "react";
-import Card from "react-bootstrap/Card";
-import Dropdown from "react-bootstrap/Dropdown";
+import { Dropdown, Card } from "react-bootstrap";
 
 const AutoClose = () => {
   return (

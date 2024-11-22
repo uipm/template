@@ -1,8 +1,6 @@
 "use client";
 
-import Breadcrumb from 'react-bootstrap/Breadcrumb'; 
-import Row from 'react-bootstrap/Row'; 
-import Col from 'react-bootstrap/Col'; 
+import { Row, Col, Breadcrumb } from "react-bootstrap";
 import BasicGoogleMap from '@/components/Maps/BasicGoogleMap';
 import GoogleMapsWithMarker from '@/components/Maps/GoogleMapsWithMarker';
 import GoogleMapsWithSatellite from '@/components/Maps/GoogleMapsWithSatellite';

@@ -30,6 +30,7 @@
         </v-list>
       </v-menu>
     </div>
+
     <div class="trezo-table-content">
       <div class="trezo-table">
         <v-table>
@@ -69,7 +70,7 @@
             </tr>
           </tbody>
         </v-table>
-        <CommonPagination />
+        <CommonPagination items="5" />
       </div>
     </div>
   </v-card>
@@ -90,6 +91,7 @@ export default defineComponent({
     return {
       items: [
         {
+          id: 1,
           product: {
             image: image1,
             name: "Smart Band",
@@ -101,6 +103,7 @@ export default defineComponent({
           amount: "2,625",
         },
         {
+          id: 2,
           product: {
             image: image2,
             name: "Headphone",
@@ -112,6 +115,7 @@ export default defineComponent({
           amount: "1,225",
         },
         {
+          id: 3,
           product: {
             image: image3,
             name: "iPhone 15 Plus",
@@ -123,6 +127,7 @@ export default defineComponent({
           amount: "5,445",
         },
         {
+          id: 4,
           product: {
             image: image4,
             name: "Bluetooth Speaker",
@@ -134,6 +139,7 @@ export default defineComponent({
           amount: "2,360",
         },
         {
+          id: 5,
           product: {
             image: image5,
             name: "Airbuds 2nd Gen",
@@ -145,6 +151,7 @@ export default defineComponent({
           amount: "4,424",
         },
         {
+          id: 6,
           product: {
             image: image2,
             name: "Headphone",

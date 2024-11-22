@@ -1,12 +1,8 @@
 "use client";
 
 import React, { useState } from "react";
-import Card from "react-bootstrap/Card";
-import Toast from "react-bootstrap/Toast";
+import { Row, Col, Card, Button, Toast } from "react-bootstrap";
 import Image from "next/image";
-import Button from "react-bootstrap/Button";
-import Col from "react-bootstrap/Col";
-import Row from "react-bootstrap/Row";
 
 const Dismissible = () => {
   const [showA, setShowA] = useState(true);
@@ -17,7 +13,7 @@ const Dismissible = () => {
 
   return (
     <>
-      <Card className="card bg-white border-0 rounded-3 mb-4">
+      <Card className="bg-white border-0 rounded-3 mb-4">
         <Card.Body className="p-4">
           <div className="mb-3 mb-lg-4">
             <h3 className="mb-0">Dismissible</h3>

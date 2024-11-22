@@ -1,9 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import { MaterialSymbol } from "react-material-symbols";
-import "react-material-symbols/rounded";
-import Button from "react-bootstrap/Button";
+import { Button } from "react-bootstrap";
 import RTLMode from "./RTLMode"; 
 import DarkMode from "./DarkMode";
 import TopNavbarDark from "./TopNavbarDark";
@@ -22,7 +20,9 @@ const ControlPanel = () => {
         className="theme-settings-btn p-0 border-0 bg-transparent" 
         onClick={handleToggleControlPanel}
       >
-        <MaterialSymbol icon="settings" size={24} />
+        <i className="material-symbols-outlined text-24">
+          settings
+        </i>
       </Button>
   
       <div

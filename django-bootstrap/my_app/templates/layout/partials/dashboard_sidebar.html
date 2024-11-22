@@ -25,7 +25,7 @@
 				<span class="menu-title-text">MAIN</span>
 			</li>
 			<li
-				class="menu-item {% if request.path == '/dashboard/' or request.path == '/crm/' or request.path == '/project-management/' or request.path == '/lms/' or request.path == '/help-desk/' %}open{% endif %}"
+				class="menu-item {% if request.path == '/dashboard/' or request.path == '/crm/' or request.path == '/project-management/' or request.path == '/lms/' or request.path == '/help-desk/' or request.path == '/analytics/' or request.path == '/crypto/' or request.path == '/sales/' or request.path == '/hospital/' %}open{% endif %}"
 			>
 				<a
 					href="javascript:void(0);"
@@ -35,7 +35,7 @@
 						>dashboard</span
 					>
 					<span class="title">Dashboard</span>
-					<span class="count">5</span>
+					<span class="count">9</span>
 				</a>
 
 				<ul class="menu-sub">
@@ -79,6 +79,42 @@
 						>
 							HelpDesk
 							<span class="new tag">New</span>
+						</a>
+					</li>
+					<li class="menu-item mb-0">
+						<a
+							href="/analytics"
+							class="menu-link {% if request.path == '/analytics/' %}active{% endif %}"
+						>
+							Analytics
+							<span class="hot tag">New</span>
+						</a>
+					</li>
+					<li class="menu-item mb-0">
+						<a
+							href="/crypto"
+							class="menu-link {% if request.path == '/crypto/' %}active{% endif %}"
+						>
+							Crypto
+							<span class="hot tag">New</span>
+						</a>
+					</li>
+					<li class="menu-item mb-0">
+						<a
+							href="/sales"
+							class="menu-link {% if request.path == '/sales/' %}active{% endif %}"
+						>
+							Sales
+							<span class="hot tag">New</span>
+						</a>
+					</li>
+					<li class="menu-item mb-0">
+						<a
+							href="/hospital"
+							class="menu-link {% if request.path == '/hospital/' %}active{% endif %}"
+						>
+							Hospital
+							<span class="hot tag">New</span>
 						</a>
 					</li>
 				</ul>

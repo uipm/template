@@ -1,9 +1,6 @@
 "use client";
 
-import React from "react";
-import Breadcrumb from "react-bootstrap/Breadcrumb";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";  
+import { Breadcrumb } from "react-bootstrap";
 import Gallery from "@/components/ExtraPages/Gallery";
 
 export default function Page() {

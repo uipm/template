@@ -1,7 +1,7 @@
 "use client";
-  
-import User from '@/components/ProjectManagement/User';
-import Breadcrumb from 'react-bootstrap/Breadcrumb'; 
+
+import { Breadcrumb } from "react-bootstrap";
+import User from '@/components/ProjectManagement/User'; 
 
 export default function Page() {
   return (

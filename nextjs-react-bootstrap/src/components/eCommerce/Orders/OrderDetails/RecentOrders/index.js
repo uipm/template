@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import { Card } from "react-bootstrap";
 import Link from "next/link";
 import Image from "next/image";
 import ProductQuantity from './ProductQuantity';
@@ -8,8 +8,8 @@ import ProductQuantity from './ProductQuantity';
 const RecentOrders = () => {
   return (
     <>
-      <div className="card bg-white border-0 rounded-3 mb-4">
-        <div className="card-body p-4">
+      <Card className="bg-white border-0 rounded-3 mb-4">
+        <Card.Body className="p-4">
           <div className="d-flex justify-content-between align-items-center flex-wrap gap-3 mb-lg-4 mb-3">
             <h3 className="mb-0">Recent Orders</h3>
             <h3 className="mb-0">Customer ID : 357951</h3>
@@ -167,8 +167,8 @@ const RecentOrders = () => {
               </table>
             </div>
           </div>
-        </div>
-      </div>
+        </Card.Body>
+      </Card>
     </>
   );
 };

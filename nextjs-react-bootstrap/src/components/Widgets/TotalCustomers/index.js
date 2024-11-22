@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import Card from "react-bootstrap/Card"; 
+import { Card } from "react-bootstrap";
 
 const TotalCustomers = () => {
   const [Chart, setChart] = useState();
@@ -100,6 +100,7 @@ const TotalCustomers = () => {
         colors: "#64748B",
       },
       markers: {
+        shape: 'diamond',
         offsetX: -2,
         offsetY: -0.5,
       },

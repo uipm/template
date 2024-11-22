@@ -1,10 +1,6 @@
 "use client";
 
-import React from 'react';
-import Card from 'react-bootstrap/Card';
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar'; 
+import { Container, Card, Navbar, Nav } from "react-bootstrap";
 
 const ColorSchemesNavbar = () => {
   return (

@@ -1,12 +1,7 @@
 "use client";
 
-import React from "react";
-import Link from "next/link";
-import Card from "react-bootstrap/Card";
-import Form from "react-bootstrap/Form";
-import Table from "react-bootstrap/Table";
-import { MaterialSymbol } from "react-material-symbols";
-import "react-material-symbols/rounded";
+import { useState } from "react";
+import { Card, Form, Table } from "react-bootstrap";
 
 const myTasksData = [
   {
@@ -46,7 +41,25 @@ const myTasksData = [
   },
 ];
 
+const itemsPerPage = 4;
+
 const MyTasks = () => {
+  const [currentPage, setCurrentPage] = useState(1);
+
+  const totalItems = myTasksData.length;
+  const totalPages = Math.ceil(totalItems / itemsPerPage);
+
+  const startIndex = (currentPage - 1) * itemsPerPage;
+  const currentItems = myTasksData.slice(startIndex, startIndex + itemsPerPage);
+
+  const handlePrevious = () => {
+    setCurrentPage((prev) => Math.max(prev - 1, 1));
+  };
+
+  const handleNext = () => {
+    setCurrentPage((prev) => Math.min(prev + 1, totalPages));
+  };
+
   return (
     <>
       <Card className="bg-white border-0 rounded-3 mb-4">
@@ -59,9 +72,9 @@ const MyTasks = () => {
                 className="month-select form-control p-0 h-auto border-0"
                 aria-label="Default select example"
               >
-                <option value="0">All Tasks</option>
-                <option value="1">This Month</option>
-                <option value="2">This Year</option>
+                <option defaultValue="0">All Tasks</option>
+                <option defaultValue="1">This Month</option>
+                <option defaultValue="2">This Year</option>
               </Form.Select>
             </div>
           </div>
@@ -78,7 +91,7 @@ const MyTasks = () => {
                           id="default-checkbox"
                           label="Project Name"
                         />
-                      </Form> 
+                      </Form>
                     </th>
                     <th scope="col">Deadline</th>
                     <th scope="col">Status</th>
@@ -86,61 +99,66 @@ const MyTasks = () => {
                 </thead>
 
                 <tbody>
-                  {myTasksData &&
-                    myTasksData.slice(0, 4).map((value, i) => (
-                      <tr key={i}>
-                        <td>
-                          <Form>
-                            <Form.Check
-                              type="checkbox"
-                              id="default-checkbox"
-                              label={value.projectName}
-                              className="fw-medium fs-14"
-                            />
-                          </Form>
-                        </td>
-
-                        <td>{value.deadline}</td>
-
-                        <td>
-                          <span
-                            className={`badge bg-opacity-10 p-2 fs-12 fw-normal text-capitalize ${value.status}`}
-                          >
-                            {value.status}
-                          </span>
-                        </td>
-                      </tr>
-                    ))}
+                  {currentItems.map((task, index) => (
+                    <tr key={index}>
+                      <td>
+                        <Form.Check
+                          type="checkbox"
+                          id={`checkbox-${index}`}
+                          label={task.projectName}
+                          className="fw-medium fs-14"
+                        />
+                      </td>
+                      <td>{task.deadline}</td>
+                      <td>
+                        <span
+                          className={`badge bg-opacity-10 p-2 fs-12 fw-normal text-capitalize ${task.status}`}
+                        >
+                          {task.status}
+                        </span>
+                      </td>
+                    </tr>
+                  ))}
                 </tbody>
               </Table>
             </div>
 
             <div className="p-4 pt-lg-4">
               <div className="d-flex justify-content-center justify-content-sm-between align-items-center text-center flex-wrap gap-2 showing-wrap">
-                <span className="fs-12 fw-medium">Items per pages: 5</span>
+                <span className="fs-12 fw-medium">
+                  Items per page: {itemsPerPage}
+                </span>
 
                 <div className="d-flex align-items-center">
-                  <span className="fs-12 fw-medium me-2">1 - 5 of 12</span>
+                  <span className="fs-12 fw-medium me-2">
+                    {startIndex + 1} -{" "}
+                    {Math.min(startIndex + itemsPerPage, totalItems)} of{" "}
+                    {totalItems}
+                  </span>
 
                   <nav aria-label="Page navigation example">
                     <ul className="pagination mb-0 justify-content-center">
                       <li className="page-item">
-                        <Link
+                        <button
                           className="page-link icon"
-                          href="#"
-                          aria-label="Previous"
+                          onClick={handlePrevious}
+                          disabled={currentPage === 1}
                         >
-                          <MaterialSymbol icon="keyboard_arrow_left" />
-                        </Link>
+                          <span className="material-symbols-outlined">
+                            keyboard_arrow_left
+                          </span>
+                        </button>
                       </li>
                       <li className="page-item">
-                        <Link
+                        <button
                           className="page-link icon"
-                          href="#"
-                          aria-label="Next"
+                          onClick={handleNext}
+                          disabled={currentPage === totalPages}
                         >
-                          <MaterialSymbol icon="keyboard_arrow_right" />
-                        </Link>
+                          <span className="material-symbols-outlined">
+                            keyboard_arrow_right
+                          </span>
+                        </button>
                       </li>
                     </ul>
                   </nav>

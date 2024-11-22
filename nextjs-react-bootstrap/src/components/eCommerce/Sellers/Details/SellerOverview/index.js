@@ -1,11 +1,6 @@
 "use client";
 
-import React from "react";
-import Card from "react-bootstrap/Card";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-import { MaterialSymbol } from "react-material-symbols";
-import "react-material-symbols/rounded";
+import { Row, Col, Card } from "react-bootstrap";
 
 const SellerOverview = () => {
   return (
@@ -20,7 +15,9 @@ const SellerOverview = () => {
                 <Card.Body className="p-4">
                   <div className="d-flex align-items-center mb-35">
                     <div className="flex-shrink-0">
-                      <MaterialSymbol icon="settings_account_box" size={40} className="text-primary" />
+                      <span className="material-symbols-outlined fs-40 text-primary">
+                        settings_account_box
+                      </span>
                     </div>
                     <div className="flex-grow-1 ms-2">
                       <span>Total Orders</span>
@@ -40,7 +37,9 @@ const SellerOverview = () => {
                 <Card.Body className="p-4">
                   <div className="d-flex align-items-center mb-35">
                     <div className="flex-shrink-0">
-                      <MaterialSymbol icon="settings_timelapse" size={40} className="text-danger" />
+                      <span className="material-symbols-outlined fs-40 text-danger">
+                        settings_timelapse
+                      </span>
                     </div>
                     <div className="flex-grow-1 ms-2">
                       <span>Total Earnings</span>
@@ -60,7 +59,9 @@ const SellerOverview = () => {
                 <Card.Body className="p-4">
                   <div className="d-flex align-items-center mb-35">
                     <div className="flex-shrink-0">
-                      <MaterialSymbol icon="assignment_return" size={40} className="text-success" />
+                      <span className="material-symbols-outlined fs-40 text-success">
+                        assignment_return
+                      </span>
                     </div>
                     <div className="flex-grow-1 ms-2">
                       <span>Total Refunds</span>
@@ -80,7 +81,9 @@ const SellerOverview = () => {
                 <Card.Body className="p-4">
                   <div className="d-flex align-items-center mb-35">
                     <div className="flex-shrink-0">
-                      <MaterialSymbol icon="discover_tune" size={40} className="text-primary-div" />
+                      <span className="material-symbols-outlined fs-40 text-primary-div">
+                        discover_tune
+                      </span>
                     </div>
                     <div className="flex-grow-1 ms-2">
                       <span>Conversion Rate</span>

@@ -1,11 +1,6 @@
 "use client";
 
-import React from "react";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-import Form from "react-bootstrap/Form";
-import Table from "react-bootstrap/Table";
-import Card from "react-bootstrap/Card";
+import { Row, Col, Card, Form, Table } from "react-bootstrap";
 
 const Checkout = () => {
   return (
@@ -235,7 +230,7 @@ const Checkout = () => {
                         <option defaultValue="2">Helcim</option>
                         <option defaultValue="3">Square</option>
                         <option defaultValue="4">Stripe</option>
-                        <option defaultValue="4">Stax</option>
+                        <option defaultValue="5">Stax</option>
                       </select>
                     </div>
                   </Col>

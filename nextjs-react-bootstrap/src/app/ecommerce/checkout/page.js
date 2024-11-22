@@ -1,6 +1,6 @@
 "use client";
 
-import Breadcrumb from 'react-bootstrap/Breadcrumb';
+import { Breadcrumb } from "react-bootstrap";
 import Checkout from '@/components/eCommerce/Checkout';
 
 export default function Page() {

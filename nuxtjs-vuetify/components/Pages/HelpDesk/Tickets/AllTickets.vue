@@ -31,7 +31,7 @@
               </td>
               <td>
                 <NuxtLink
-                  to="/helpdesk/ticket-details"
+                  to="/help-desk/ticket-details"
                   class="project-name fw-medium"
                 >
                   {{ item.ticketTitle }}

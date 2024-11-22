@@ -22,6 +22,9 @@
 .dark-theme button, .dark-theme a, .dark-theme p, .dark-theme q, .dark-theme tspan, .dark-theme li, .dark-theme tbody, .dark-theme tfoot, .dark-theme thead, .dark-theme th, .dark-theme td, .dark-theme canvas, .dark-theme ::placeholder, .dark-theme abbr, .dark-theme address, .dark-theme blockquote, .dark-theme caption, .dark-theme cite, .dark-theme code, .dark-theme dd, .dark-theme dl, .dark-theme mark, .dark-theme option, .dark-theme pre, .dark-theme time, .dark-theme del, .dark-theme .MuiTypography-p, .dark-theme .MuiDataGrid-cellContent, .dark-theme .MuiTabPanel-root, .dark-theme .MuiTypography-body1, .dark-theme .MuiTypography-body2, .dark-theme .MuiStepLabel-label, .dark-theme .MuiTypography-caption {
   color: var(--darkBodyColor);
 }
+.dark-theme .dark-border {
+  border-color: 1px solid var(--darkBorder) !important;
+}
 .dark-theme .bg-white {
   background-color: #0C1427 !important;
 }
@@ -46,7 +49,7 @@
 .dark-theme .bg-ecf0ff {
   background-color: var(--darkSecondaryColor) !important;
 }
-.dark-theme .bg-orange-50, .dark-theme .bg-success-50, .dark-theme .bg-purple-50, .dark-theme .bg-purple-100, .dark-theme .bg-secondary-100, .dark-theme .bg-success-100, .dark-theme .bg-orange-100, .dark-theme .bg-primary-100 {
+.dark-theme .bg-orange-50, .dark-theme .bg-success-50, .dark-theme .bg-purple-50, .dark-theme .bg-purple-100, .dark-theme .bg-secondary-100, .dark-theme .bg-success-100, .dark-theme .bg-orange-100, .dark-theme .bg-primary-100, .dark-theme .bg-danger-100 {
   background-color: var(--darkSecondaryColor) !important;
 }
 .dark-theme .border {
@@ -98,7 +101,7 @@
 }
 .dark-theme textarea {
   background-color: var(--darkCardBg);
-  border: 1px solid var(--darkBorder);
+  border: 1px solid var(--darkBorder) !important;
   color: #fff;
 }
 .dark-theme .MuiSelect-icon {
@@ -250,4 +253,44 @@
 }
 .dark-theme .footer-area {
   background-color: var(--darkCardBg);
+}
+.dark-theme .ds-item {
+  border-bottom: 1px solid var(--darkBorder);
+}
+.dark-theme .ds-item:first-child {
+  border-top: 1px solid var(--darkBorder);
+}
+.dark-theme .ticketsStatusContent::before {
+  background: var(--darkBorder);
+}
+.dark-theme .he-card {
+  background-color: #000 !important;
+}
+.dark-theme .exchange-card {
+  background-color: #000 !important;
+}
+.dark-theme .exchange-card .border-bottom {
+  border-color: var(--darkBorder) !important;
+}
+.dark-theme .exchange-card .text-black {
+  color: #fff !important;
+}
+.dark-theme .exchange-card .MuiInputBase-root {
+  background-color: var(--darkCardBg) !important;
+}
+.dark-theme .MuiPaper-root {
+  background-color: var(--darkBodyBg);
+}
+.dark-theme .mui-976ow0-MuiButtonBase-root-MuiMenuItem-root-MuiMultiSectionDigitalClockSection-item.Mui-selected {
+  color: #fff !important;
+}
+.dark-theme .rsw-editor {
+  border: 1px solid var(--darkBorder) !important;
+}
+.dark-theme .rsw-editor .rsw-toolbar {
+  background-color: var(--darkBodyBg);
+  border-bottom: 1px solid var(--darkBodyBg);
+}
+.dark-theme .rsw-editor .rsw-separator {
+  border-color: 1px solid var(--darkBorder) !important;
 }/*# sourceMappingURL=dark.css.map */

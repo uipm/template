@@ -3,11 +3,7 @@
 import * as React from "react";
 import { Card, Box, Typography, Button } from "@mui/material";
 import Image from "next/image";
-
-import dynamic from "next/dynamic";
-const RichTextEditor = dynamic(() => import("@mantine/rte"), {
-  ssr: false,
-});
+import CustomEditor from "./CustomEditor";
 
 const Comments: React.FC = () => {
   return (
@@ -59,7 +55,7 @@ const Comments: React.FC = () => {
               <Typography>a day ago</Typography>
 
               <Typography
-                className="pro.io-badge bg-primary text-white"
+                className="trezo-badge bg-primary text-white"
                 sx={{ mt: { xs: "5px !important", sm: "0 !important" } }}
               >
                 #BD0JL0G6
@@ -135,7 +131,7 @@ const Comments: React.FC = () => {
               <Typography className="d-block">18 hours ago</Typography>
 
               <Typography
-                className="pro.io-badge bg-secondary text-white"
+                className="trezo-badge bg-secondary text-white"
                 sx={{ mt: { xs: "5px !important", sm: "0 !important" } }}
               >
                 Support Staff
@@ -267,7 +263,7 @@ const Comments: React.FC = () => {
 
               <Typography className="d-block">05 hours ago</Typography>
               <Typography
-                className="pro.io-badge bg-secondary text-white"
+                className="trezo-badge bg-secondary text-white"
                 sx={{ mt: { xs: "5px !important", sm: "0 !important" } }}
               >
                 Support Staff
@@ -299,18 +295,7 @@ const Comments: React.FC = () => {
               Post A Reply
             </Typography>
 
-            <RichTextEditor
-              id="rte"
-              controls={[
-                ["bold", "italic", "underline", "link", "image"],
-                ["unorderedList", "h1", "h2", "h3"],
-                ["sup", "sub"],
-                ["alignLeft", "alignCenter", "alignRight"],
-              ]}
-              style={{
-                minHeight: "200px",
-              }}
-            />
+            <CustomEditor />
           </Box>
 
           <Box

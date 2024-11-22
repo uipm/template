@@ -1,7 +1,7 @@
 "use client";
-  
-import Members from '@/components/Members';
-import Breadcrumb from 'react-bootstrap/Breadcrumb'; 
+
+import { Breadcrumb } from "react-bootstrap";
+import Members from '@/components/Members'; 
 
 export default function Page() {
   return (

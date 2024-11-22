@@ -35,7 +35,7 @@
         <apexchart
           v-if="isClient"
           type="donut"
-          height="310"
+          height="278"
           :options="orderSummary"
           :series="summary"
         ></apexchart>
@@ -92,7 +92,7 @@ export default defineComponent({
     const summary = ref([60, 30, 10]);
     const orderSummary = ref({
       chart: {
-        height: 310,
+        height: 278,
         type: "donut",
       },
       labels: ["Completed", "New Order", "Pending"],
@@ -114,6 +114,7 @@ export default defineComponent({
           height: 9,
           offsetX: -2,
           offsetY: -0.5,
+          shape: "diamond",
         },
       },
       dataLabels: {

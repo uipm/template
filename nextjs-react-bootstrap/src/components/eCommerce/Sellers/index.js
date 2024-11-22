@@ -1,15 +1,8 @@
 "use client";
 
-import React from "react";
+import { Row, Col, Dropdown, Card, Form } from "react-bootstrap";
 import Link from "next/link";
 import Image from "next/image";
-import Card from "react-bootstrap/Card";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-import Form from "react-bootstrap/Form";
-import { MaterialSymbol } from "react-material-symbols";
-import "react-material-symbols/rounded";
-import Dropdown from 'react-bootstrap/Dropdown';
 
 const Sellers = () => {
   return (
@@ -22,7 +15,9 @@ const Sellers = () => {
                 type="text" 
                 placeholder="Search here"
               />
-              <MaterialSymbol icon="search" className="position-absolute top-50 start-0 translate-middle-y" />
+              <span className="material-symbols-outlined position-absolute top-50 start-0 translate-middle-y">
+                search
+              </span>
             </Form>
 
             <Link
@@ -70,22 +65,30 @@ const Sellers = () => {
                     id="dropdown-basic"
                     className="bg-transparent p-0"
                   > 
-                    <MaterialSymbol icon="more_horiz" />
+                    <span className="material-symbols-outlined">
+                  more_horiz
+                </span>
                   </Dropdown.Toggle>
 
                   <Dropdown.Menu className="bg-white border box-shadow">
                     <Dropdown.Item href="#"> 
-                      <MaterialSymbol icon="visibility" />
+                      <i className="material-symbols-outlined">
+	visibility
+</i>
                       View
                     </Dropdown.Item>
 
                     <Dropdown.Item href="#"> 
-                      <MaterialSymbol icon="edit" />
+                      <span className="material-symbols-outlined">
+                  edit
+                </span>
                       Edit
                     </Dropdown.Item>
       
                     <Dropdown.Item href="#"> 
-                      <MaterialSymbol icon="delete" />
+                      <i className="material-symbols-outlined">
+	delete
+</i>
                       Delete
                     </Dropdown.Item> 
                   </Dropdown.Menu>
@@ -147,22 +150,30 @@ const Sellers = () => {
                     id="dropdown-basic"
                     className="bg-transparent p-0"
                   > 
-                    <MaterialSymbol icon="more_horiz" />
+                    <span className="material-symbols-outlined">
+                  more_horiz
+                </span>
                   </Dropdown.Toggle>
 
                   <Dropdown.Menu className="bg-white border box-shadow">
                     <Dropdown.Item href="#"> 
-                      <MaterialSymbol icon="visibility" />
+                      <i className="material-symbols-outlined">
+	visibility
+</i>
                       View
                     </Dropdown.Item>
 
                     <Dropdown.Item href="#"> 
-                      <MaterialSymbol icon="edit" />
+                      <span className="material-symbols-outlined">
+                  edit
+                </span>
                       Edit
                     </Dropdown.Item>
       
                     <Dropdown.Item href="#"> 
-                      <MaterialSymbol icon="delete" />
+                      <i className="material-symbols-outlined">
+	delete
+</i>
                       Delete
                     </Dropdown.Item> 
                   </Dropdown.Menu>
@@ -224,22 +235,30 @@ const Sellers = () => {
                     id="dropdown-basic"
                     className="bg-transparent p-0"
                   > 
-                    <MaterialSymbol icon="more_horiz" />
+                    <span className="material-symbols-outlined">
+                  more_horiz
+                </span>
                   </Dropdown.Toggle>
 
                   <Dropdown.Menu className="bg-white border box-shadow">
                     <Dropdown.Item href="#"> 
-                      <MaterialSymbol icon="visibility" />
+                      <i className="material-symbols-outlined">
+	visibility
+</i>
                       View
                     </Dropdown.Item>
 
                     <Dropdown.Item href="#"> 
-                      <MaterialSymbol icon="edit" />
+                      <span className="material-symbols-outlined">
+                  edit
+                </span>
                       Edit
                     </Dropdown.Item>
       
                     <Dropdown.Item href="#"> 
-                      <MaterialSymbol icon="delete" />
+                      <i className="material-symbols-outlined">
+	delete
+</i>
                       Delete
                     </Dropdown.Item> 
                   </Dropdown.Menu>
@@ -301,22 +320,30 @@ const Sellers = () => {
                     id="dropdown-basic"
                     className="bg-transparent p-0"
                   > 
-                    <MaterialSymbol icon="more_horiz" />
+                    <span className="material-symbols-outlined">
+                  more_horiz
+                </span>
                   </Dropdown.Toggle>
 
                   <Dropdown.Menu className="bg-white border box-shadow">
                     <Dropdown.Item href="#"> 
-                      <MaterialSymbol icon="visibility" />
+                      <i className="material-symbols-outlined">
+	visibility
+</i>
                       View
                     </Dropdown.Item>
 
                     <Dropdown.Item href="#"> 
-                      <MaterialSymbol icon="edit" />
+                      <span className="material-symbols-outlined">
+                  edit
+                </span>
                       Edit
                     </Dropdown.Item>
       
                     <Dropdown.Item href="#"> 
-                      <MaterialSymbol icon="delete" />
+                      <i className="material-symbols-outlined">
+	delete
+</i>
                       Delete
                     </Dropdown.Item> 
                   </Dropdown.Menu>
@@ -378,22 +405,30 @@ const Sellers = () => {
                     id="dropdown-basic"
                     className="bg-transparent p-0"
                   > 
-                    <MaterialSymbol icon="more_horiz" />
+                    <span className="material-symbols-outlined">
+                  more_horiz
+                </span>
                   </Dropdown.Toggle>
 
                   <Dropdown.Menu className="bg-white border box-shadow">
                     <Dropdown.Item href="#"> 
-                      <MaterialSymbol icon="visibility" />
+                      <i className="material-symbols-outlined">
+	visibility
+</i>
                       View
                     </Dropdown.Item>
 
                     <Dropdown.Item href="#"> 
-                      <MaterialSymbol icon="edit" />
+                      <span className="material-symbols-outlined">
+                  edit
+                </span>
                       Edit
                     </Dropdown.Item>
       
                     <Dropdown.Item href="#"> 
-                      <MaterialSymbol icon="delete" />
+                      <i className="material-symbols-outlined">
+	delete
+</i>
                       Delete
                     </Dropdown.Item> 
                   </Dropdown.Menu>
@@ -455,22 +490,30 @@ const Sellers = () => {
                     id="dropdown-basic"
                     className="bg-transparent p-0"
                   > 
-                    <MaterialSymbol icon="more_horiz" />
+                    <span className="material-symbols-outlined">
+                  more_horiz
+                </span>
                   </Dropdown.Toggle>
 
                   <Dropdown.Menu className="bg-white border box-shadow">
                     <Dropdown.Item href="#"> 
-                      <MaterialSymbol icon="visibility" />
+                      <i className="material-symbols-outlined">
+	visibility
+</i>
                       View
                     </Dropdown.Item>
 
                     <Dropdown.Item href="#"> 
-                      <MaterialSymbol icon="edit" />
+                      <span className="material-symbols-outlined">
+                  edit
+                </span>
                       Edit
                     </Dropdown.Item>
       
                     <Dropdown.Item href="#"> 
-                      <MaterialSymbol icon="delete" />
+                      <i className="material-symbols-outlined">
+	delete
+</i>
                       Delete
                     </Dropdown.Item> 
                   </Dropdown.Menu>
@@ -532,22 +575,30 @@ const Sellers = () => {
                     id="dropdown-basic"
                     className="bg-transparent p-0"
                   > 
-                    <MaterialSymbol icon="more_horiz" />
+                    <span className="material-symbols-outlined">
+                  more_horiz
+                </span>
                   </Dropdown.Toggle>
 
                   <Dropdown.Menu className="bg-white border box-shadow">
                     <Dropdown.Item href="#"> 
-                      <MaterialSymbol icon="visibility" />
+                      <i className="material-symbols-outlined">
+	visibility
+</i>
                       View
                     </Dropdown.Item>
 
                     <Dropdown.Item href="#"> 
-                      <MaterialSymbol icon="edit" />
+                      <span className="material-symbols-outlined">
+                  edit
+                </span>
                       Edit
                     </Dropdown.Item>
       
                     <Dropdown.Item href="#"> 
-                      <MaterialSymbol icon="delete" />
+                      <i className="material-symbols-outlined">
+	delete
+</i>
                       Delete
                     </Dropdown.Item> 
                   </Dropdown.Menu>
@@ -609,22 +660,30 @@ const Sellers = () => {
                     id="dropdown-basic"
                     className="bg-transparent p-0"
                   > 
-                    <MaterialSymbol icon="more_horiz" />
+                    <span className="material-symbols-outlined">
+                  more_horiz
+                </span>
                   </Dropdown.Toggle>
 
                   <Dropdown.Menu className="bg-white border box-shadow">
                     <Dropdown.Item href="#"> 
-                      <MaterialSymbol icon="visibility" />
+                      <i className="material-symbols-outlined">
+	visibility
+</i>
                       View
                     </Dropdown.Item>
 
                     <Dropdown.Item href="#"> 
-                      <MaterialSymbol icon="edit" />
+                      <span className="material-symbols-outlined">
+                  edit
+                </span>
                       Edit
                     </Dropdown.Item>
       
                     <Dropdown.Item href="#"> 
-                      <MaterialSymbol icon="delete" />
+                      <i className="material-symbols-outlined">
+	delete
+</i>
                       Delete
                     </Dropdown.Item> 
                   </Dropdown.Menu>
@@ -686,22 +745,30 @@ const Sellers = () => {
                     id="dropdown-basic"
                     className="bg-transparent p-0"
                   > 
-                    <MaterialSymbol icon="more_horiz" />
+                    <span className="material-symbols-outlined">
+                  more_horiz
+                </span>
                   </Dropdown.Toggle>
 
                   <Dropdown.Menu className="bg-white border box-shadow">
                     <Dropdown.Item href="#"> 
-                      <MaterialSymbol icon="visibility" />
+                      <i className="material-symbols-outlined">
+	visibility
+</i>
                       View
                     </Dropdown.Item>
 
                     <Dropdown.Item href="#"> 
-                      <MaterialSymbol icon="edit" />
+                      <span className="material-symbols-outlined">
+                  edit
+                </span>
                       Edit
                     </Dropdown.Item>
       
                     <Dropdown.Item href="#"> 
-                      <MaterialSymbol icon="delete" />
+                      <i className="material-symbols-outlined">
+	delete
+</i>
                       Delete
                     </Dropdown.Item> 
                   </Dropdown.Menu>
@@ -763,22 +830,30 @@ const Sellers = () => {
                     id="dropdown-basic"
                     className="bg-transparent p-0"
                   > 
-                    <MaterialSymbol icon="more_horiz" />
+                    <span className="material-symbols-outlined">
+                  more_horiz
+                </span>
                   </Dropdown.Toggle>
 
                   <Dropdown.Menu className="bg-white border box-shadow">
                     <Dropdown.Item href="#"> 
-                      <MaterialSymbol icon="visibility" />
+                      <i className="material-symbols-outlined">
+	visibility
+</i>
                       View
                     </Dropdown.Item>
 
                     <Dropdown.Item href="#"> 
-                      <MaterialSymbol icon="edit" />
+                      <span className="material-symbols-outlined">
+                  edit
+                </span>
                       Edit
                     </Dropdown.Item>
       
                     <Dropdown.Item href="#"> 
-                      <MaterialSymbol icon="delete" />
+                      <i className="material-symbols-outlined">
+	delete
+</i>
                       Delete
                     </Dropdown.Item> 
                   </Dropdown.Menu>
@@ -840,22 +915,30 @@ const Sellers = () => {
                     id="dropdown-basic"
                     className="bg-transparent p-0"
                   > 
-                    <MaterialSymbol icon="more_horiz" />
+                    <span className="material-symbols-outlined">
+                  more_horiz
+                </span>
                   </Dropdown.Toggle>
 
                   <Dropdown.Menu className="bg-white border box-shadow">
                     <Dropdown.Item href="#"> 
-                      <MaterialSymbol icon="visibility" />
+                      <i className="material-symbols-outlined">
+	visibility
+</i>
                       View
                     </Dropdown.Item>
 
                     <Dropdown.Item href="#"> 
-                      <MaterialSymbol icon="edit" />
+                      <span className="material-symbols-outlined">
+                  edit
+                </span>
                       Edit
                     </Dropdown.Item>
       
                     <Dropdown.Item href="#"> 
-                      <MaterialSymbol icon="delete" />
+                      <i className="material-symbols-outlined">
+	delete
+</i>
                       Delete
                     </Dropdown.Item> 
                   </Dropdown.Menu>
@@ -917,22 +1000,30 @@ const Sellers = () => {
                     id="dropdown-basic"
                     className="bg-transparent p-0"
                   > 
-                    <MaterialSymbol icon="more_horiz" />
+                    <span className="material-symbols-outlined">
+                  more_horiz
+                </span>
                   </Dropdown.Toggle>
 
                   <Dropdown.Menu className="bg-white border box-shadow">
                     <Dropdown.Item href="#"> 
-                      <MaterialSymbol icon="visibility" />
+                      <i className="material-symbols-outlined">
+	visibility
+</i>
                       View
                     </Dropdown.Item>
 
                     <Dropdown.Item href="#"> 
-                      <MaterialSymbol icon="edit" />
+                      <span className="material-symbols-outlined">
+                  edit
+                </span>
                       Edit
                     </Dropdown.Item>
       
                     <Dropdown.Item href="#"> 
-                      <MaterialSymbol icon="delete" />
+                      <i className="material-symbols-outlined">
+	delete
+</i>
                       Delete
                     </Dropdown.Item> 
                   </Dropdown.Menu>

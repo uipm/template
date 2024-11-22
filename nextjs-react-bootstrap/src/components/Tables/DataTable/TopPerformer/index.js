@@ -1,12 +1,8 @@
 "use client";
 
-import React from "react";
+import { Card, Form } from "react-bootstrap";
 import Link from "next/link";
 import Image from "next/image";
-import Card from "react-bootstrap/Card";
-import { MaterialSymbol } from "react-material-symbols";
-import "react-material-symbols/rounded";
-import Form from "react-bootstrap/Form";
 
 const topPerformerData = [
   {
@@ -53,10 +49,10 @@ const TopPerformer = () => {
               className="month-select form-control p-0 h-auto border-0"
               aria-label="Default select example"
             >
-              <option value="0">Select</option>
-              <option value="1">This Month</option>
-              <option value="2">Last Month</option>
-              <option value="3">Last Year</option>
+              <option defaultValue="0">Select</option>
+              <option defaultValue="1">This Month</option>
+              <option defaultValue="2">Last Month</option>
+              <option defaultValue="3">Last Year</option>
             </Form.Select>
           </div>
 
@@ -92,9 +88,7 @@ const TopPerformer = () => {
               ))}
           </ul>
 
-          <div 
-            className="d-flex justify-content-center justify-content-sm-between align-items-center text-center flex-wrap gap-2 showing-wrap"
-          >
+          <div className="d-flex justify-content-center justify-content-sm-between align-items-center text-center flex-wrap gap-2 showing-wrap">
             <span className="fs-12 fw-medium">Items per pages: 5</span>
 
             <div className="d-flex align-items-center">
@@ -108,16 +102,16 @@ const TopPerformer = () => {
                       href="#"
                       aria-label="Previous"
                     >
-                      <MaterialSymbol icon="keyboard_arrow_left" />
+                      <span className="material-symbols-outlined">
+                        keyboard_arrow_left
+                      </span>
                     </Link>
                   </li>
                   <li className="page-item">
-                    <Link
-                      className="page-link icon"
-                      href="#"
-                      aria-label="Next"
-                    >
-                      <MaterialSymbol icon="keyboard_arrow_right" />
+                    <Link className="page-link icon" href="#" aria-label="Next">
+                      <span className="material-symbols-outlined">
+                        keyboard_arrow_right
+                      </span>
                     </Link>
                   </li>
                 </ul>

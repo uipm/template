@@ -173,7 +173,7 @@
                                                 </div>
                                             </div>
                                             <div class="d-flex align-items-center py-4 my-3">
-                                                <img src="assets/images/figma.svg" alt="figma">
+                                                <img src="/assets/images/figma.svg" alt="figma">
                                                 <span class="fs-15 fw-bold text-secondary ms-2 position-relative top-2">ET Template</span>
                                             </div>
                                             <div class="d-flex justify-content-between">
@@ -223,7 +223,7 @@
                                                 </div>
                                             </div>
                                             <div class="d-flex align-items-center py-4 my-3">
-                                                <img src="assets/images/dribbble.svg" alt="dribbble">
+                                                <img src="/assets/images/dribbble.svg" alt="dribbble">
                                                 <span class="fs-15 fw-bold text-secondary ms-2 position-relative top-2">React Template</span>
                                             </div>
                                             <div class="d-flex justify-content-between">
@@ -273,7 +273,7 @@
                                                 </div>
                                             </div>
                                             <div class="d-flex align-items-center py-4 my-3">
-                                                <img src="assets/images/spotify.svg" alt="spotify">
+                                                <img src="/assets/images/spotify.svg" alt="spotify">
                                                 <span class="fs-15 fw-bold text-secondary ms-2 position-relative top-2">Material UI</span>
                                             </div>
                                             <div class="d-flex justify-content-between">
@@ -323,7 +323,7 @@
                                                 </div>
                                             </div>
                                             <div class="d-flex align-items-center py-4 my-3">
-                                                <img src="assets/images/github.svg" alt="github">
+                                                <img src="/assets/images/github.svg" alt="github">
                                                 <span class="fs-15 fw-bold text-secondary ms-2 position-relative top-2">WP Themes</span>
                                             </div>
                                             <div class="d-flex justify-content-between">
@@ -373,7 +373,7 @@
                                                 </div>
                                             </div>
                                             <div class="d-flex align-items-center py-4 my-3">
-                                                <img src="assets/images/gdrive.svg" alt="gdrive">
+                                                <img src="/assets/images/gdrive.svg" alt="gdrive">
                                                 <span class="fs-15 fw-bold text-secondary ms-2 position-relative top-2">Personal Photos</span>
                                             </div>
                                             <div class="d-flex justify-content-between">
@@ -423,7 +423,7 @@
                                                 </div>
                                             </div>
                                             <div class="d-flex align-items-center py-4 my-3">
-                                                <img src="assets/images/trello.svg" alt="trello">
+                                                <img src="/assets/images/trello.svg" alt="trello">
                                                 <span class="fs-15 fw-bold text-secondary ms-2 position-relative top-2">Mobile Apps</span>
                                             </div>
                                             <div class="d-flex justify-content-between">
@@ -473,7 +473,7 @@
                                                 </div>
                                             </div>
                                             <div class="d-flex align-items-center py-4 my-3">
-                                                <img src="assets/images/slak.svg" alt="slak">
+                                                <img src="/assets/images/slak.svg" alt="slak">
                                                 <span class="fs-15 fw-bold text-secondary ms-2 position-relative top-2">Important Files</span>
                                             </div>
                                             <div class="d-flex justify-content-between">
@@ -523,7 +523,7 @@
                                                 </div>
                                             </div>
                                             <div class="d-flex align-items-center py-4 my-3">
-                                                <img src="assets/images/pinterest.svg" alt="pinterest">
+                                                <img src="/assets/images/pinterest.svg" alt="pinterest">
                                                 <span class="fs-15 fw-bold text-secondary ms-2 position-relative top-2">Angular Template</span>
                                             </div>
                                             <div class="d-flex justify-content-between">
@@ -573,7 +573,7 @@
                                                 </div>
                                             </div>
                                             <div class="d-flex align-items-center py-4 my-3">
-                                                <img src="assets/images/facebook.svg" alt="facebook">
+                                                <img src="/assets/images/facebook.svg" alt="facebook">
                                                 <span class="fs-15 fw-bold text-secondary ms-2 position-relative top-2">Projects</span>
                                             </div>
                                             <div class="d-flex justify-content-between">
@@ -623,7 +623,7 @@
                                                 </div>
                                             </div>
                                             <div class="d-flex align-items-center py-4 my-3">
-                                                <img src="assets/images/linkedin.svg" alt="linkedin">
+                                                <img src="/assets/images/linkedin.svg" alt="linkedin">
                                                 <span class="fs-15 fw-bold text-secondary ms-2 position-relative top-2">Documents</span>
                                             </div>
                                             <div class="d-flex justify-content-between">

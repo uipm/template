@@ -2,8 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
-import Card from "react-bootstrap/Card";
-import Form from "react-bootstrap/Form";
+import { Card, Form } from "react-bootstrap";
 
 const CustomerSatisfaction = () => {
   const [Chart, setChart] = useState();
@@ -41,6 +40,7 @@ const CustomerSatisfaction = () => {
         colors: "#64748B",
       },
       markers: {
+        shape: 'diamond',
         width: 9,
         height: 9,
         offsetX: -2,
@@ -117,7 +117,7 @@ const CustomerSatisfaction = () => {
                 options={options}
                 series={series}
                 type="donut"
-                height={175}
+                height={135}
               />
             )}
        

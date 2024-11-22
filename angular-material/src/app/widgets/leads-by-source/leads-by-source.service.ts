@@ -22,7 +22,7 @@ export class LeadsBySourceService {
                 const options = {
                     series: [320, 60, 30, 160, 279, 19],
                     chart: {
-                        height: 290,
+                        height: 264,
                         type: "donut"
                     },
                     labels: [

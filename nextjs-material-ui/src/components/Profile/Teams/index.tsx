@@ -1253,7 +1253,7 @@ const Teams: React.FC = () => {
                   borderRadius: "30px",
                 }}
               >
-                pro.io - Angular
+                Trezo - Angular
               </Typography>
             </Box>
 

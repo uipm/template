@@ -1,7 +1,7 @@
 "use client";
  
 import Refunds from '@/components/eCommerce/Refunds';
-import Breadcrumb from 'react-bootstrap/Breadcrumb';
+import { Breadcrumb } from "react-bootstrap";
 
 export default function Page() {
   return (

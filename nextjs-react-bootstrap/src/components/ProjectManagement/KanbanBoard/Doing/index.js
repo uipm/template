@@ -1,19 +1,15 @@
 "use client";
 
 import React, { useState } from "react";
+import { Dropdown, Card, Form } from "react-bootstrap";
 import Image from "next/image";
-import Card from "react-bootstrap/Card";
-import Dropdown from "react-bootstrap/Dropdown";
-import { MaterialSymbol } from "react-material-symbols";
-import "react-material-symbols/rounded";
-import Form from 'react-bootstrap/Form';
-import Offcanvas from "react-bootstrap/Offcanvas";
 
 const Doing = () => {
-  const [show, setShow] = useState(false);
-
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
+  // Modal
+  const [isShowModal, setShowModal] = useState("false");
+  const handleToggleShowModal = () => {
+    setShowModal(!isShowModal);
+  };
 
   return (
     <>
@@ -28,7 +24,7 @@ const Doing = () => {
                 id="dropdown-basic"
                 className="bg-transparent p-0"
               >
-                <MaterialSymbol icon="more_horiz" />
+                <span className="material-symbols-outlined">more_horiz</span>
               </Dropdown.Toggle>
 
               <Dropdown.Menu className="bg-white border box-shadow">
@@ -51,8 +47,8 @@ const Doing = () => {
             <div className="d-flex justify-content-between align-items-center mb-3">
               <h4 className="mb-0 fs-14 fw-semibold">React Template</h4>
               <button className="fs-20 text-body hover border-0 p-0 bg-transparent">
-                <MaterialSymbol icon="edit" />
-              </button> 
+                <span className="material-symbols-outlined">edit</span>
+              </button>
             </div>
             <p>
               A brief description of the project, its objectives, and its
@@ -103,8 +99,8 @@ const Doing = () => {
             <div className="d-flex justify-content-between align-items-center mb-3">
               <h4 className="mb-0 fs-14 fw-semibold">Laravel Project</h4>
               <button className="fs-20 text-body hover border-0 p-0 bg-transparent">
-                <MaterialSymbol icon="edit" />
-              </button> 
+                <span className="material-symbols-outlined">edit</span>
+              </button>
             </div>
             <p>
               A brief description of the project, its objectives, and its
@@ -145,8 +141,8 @@ const Doing = () => {
             <div className="d-flex justify-content-between align-items-center mb-3">
               <h4 className="mb-0 fs-14 fw-semibold">Project Requirements</h4>
               <button className="fs-20 text-body hover border-0 p-0 bg-transparent">
-                <MaterialSymbol icon="edit" />
-              </button> 
+                <span className="material-symbols-outlined">edit</span>
+              </button>
             </div>
             <p>
               A brief description of the project, its objectives, and its
@@ -196,8 +192,8 @@ const Doing = () => {
             <div className="d-flex justify-content-between align-items-center mb-3">
               <h4 className="mb-0 fs-14 fw-semibold">UX/UI Design</h4>
               <button className="fs-20 text-body hover border-0 p-0 bg-transparent">
-                <MaterialSymbol icon="edit" />
-              </button> 
+                <span className="material-symbols-outlined">edit</span>
+              </button>
             </div>
             <p>
               A brief description of the project, its objectives, and its
@@ -230,7 +226,7 @@ const Doing = () => {
 
           <button
             className="btn btn-outline-primary py-1 px-2 px-sm-4 fs-14 fw-medium rounded-3 hover-bg"
-            onClick={handleShow}
+            onClick={handleToggleShowModal}
           >
             <span className="py-sm-1 d-block">
               <i className="ri-add-line d-none d-sm-inline-block"></i>
@@ -239,73 +235,75 @@ const Doing = () => {
           </button>
         </Card.Body>
       </Card>
-      
-      {/* offcanvas */}
-      <Offcanvas
-        show={show} 
-        onHide={handleClose} 
-        placement="end"
-      >
-        <Offcanvas.Header className="border-bottom p-4" closeButton>
-          <Offcanvas.Title className="fs-18 mb-0">
-            Add New Card
-          </Offcanvas.Title> 
-        </Offcanvas.Header>
 
-        <Offcanvas.Body className="p-4">
-          <Form>
-            <Form.Group className="mb-4">
-              <Form.Label className="label">Project Name</Form.Label>
-              <Form.Control
-                type="text"
-                className="text-dark"
-                placeholder="Project Name"
-              />
-            </Form.Group>
+      {/* Modal */}
+      <div className={`custom-modal right ${isShowModal ? "" : "show"}`}>
+        <div className="custom-modal-content position-relative z-3">
+          <div className="border-bottom py-3 px-4 d-flex align-items-center justify-content-between">
+            <h3 className="fs-18 mb-0">Add New Card</h3>
 
-            <Form.Group className="mb-4">
-              <Form.Label className="label">Select User</Form.Label>
-              <Form.Select
-                className="form-control text-dark"
-                aria-label="Default select example"
-              >
-                <option value="0">Select</option>
-                <option value="1">Alex</option>
-                <option value="2">Staven</option>
-                <option value="3">Juhon</option>
-              </Form.Select>
-            </Form.Group>
+            <div className="close-link" onClick={handleToggleShowModal}>
+              <span className="material-symbols-outlined">close</span>
+            </div>
+          </div>
 
-            <Form.Group className="mb-4">
-              <Form.Label className="label">User Image</Form.Label>
-              <Form.Control type="file" className="file" />
-            </Form.Group>
+          <div className="p-4">
+            <Form>
+              <Form.Group className="mb-4">
+                <Form.Label className="label">Project Name</Form.Label>
+                <Form.Control
+                  type="text"
+                  className="text-dark"
+                  placeholder="Project Name"
+                />
+              </Form.Group>
 
-            <Form.Group className="mb-4">
-              <Form.Label className="label">Deadline</Form.Label>
-              <Form.Control type="date" />
-            </Form.Group>
+              <Form.Group className="mb-4">
+                <Form.Label className="label">Select User</Form.Label>
+                <Form.Select
+                  className="form-control text-dark"
+                  aria-label="Default select example"
+                >
+                  <option value="0">Select</option>
+                  <option value="1">Alex</option>
+                  <option value="2">Staven</option>
+                  <option value="3">Juhon</option>
+                </Form.Select>
+              </Form.Group>
 
-            <Form.Group className="mb-4">
-              <Form.Label className="label">Description</Form.Label>
-              <Form.Control 
-                as="textarea"
-                placeholder="Description"
-                style={{ height: '120px' }}
-              ></Form.Control>
-            </Form.Group>
+              <Form.Group className="mb-4">
+                <Form.Label className="label">User Image</Form.Label>
+                <Form.Control type="file" className="file" />
+              </Form.Group>
 
-            <Form.Group className="d-flex gap-3">
-              <button className="btn btn-primary text-white fw-semibold py-2 px-2 px-sm-3">
-                <span className="py-sm-1 d-block">
-                  <i className="ri-add-line text-white"></i>
-                  <span>Create Card</span>
-                </span>
-              </button>
-            </Form.Group>
-          </Form>
-        </Offcanvas.Body>
-      </Offcanvas>
+              <Form.Group className="mb-4">
+                <Form.Label className="label">Deadline</Form.Label>
+                <Form.Control type="date" />
+              </Form.Group>
+
+              <Form.Group className="mb-4">
+                <Form.Label className="label">Description</Form.Label>
+                <Form.Control
+                  as="textarea"
+                  placeholder="Description"
+                  style={{ height: "120px" }}
+                ></Form.Control>
+              </Form.Group>
+
+              <Form.Group className="d-flex gap-3">
+                <button className="btn btn-primary text-white fw-semibold py-2 px-2 px-sm-3">
+                  <span className="py-sm-1 d-block">
+                    <i className="ri-add-line text-white"></i>
+                    <span>Create Card</span>
+                  </span>
+                </button>
+              </Form.Group>
+            </Form>
+          </div>
+        </div>
+
+        <div className="close-outside" onClick={handleToggleShowModal}></div>
+      </div>
     </>
   );
 };

@@ -52,44 +52,6 @@
 	feather.replace();
 
 	// Header Burger Button
-	// const getHeaderBurgerMenuId = document.getElementById('header-burger-menu');
-	// if (getHeaderBurgerMenuId) {
-	// 	const switchtoggle = document.querySelector(".header-burger-menu");
-	// 	const savedTheme = localStorage.getItem("trezo_sidebar");
-	// 	if (savedTheme) {
-	// 		document.body.setAttribute("sidebar-data-theme", savedTheme);
-	// 	}
-	// 	switchtoggle.addEventListener("click", function () {
-	// 		if (document.body.getAttribute("sidebar-data-theme") === "sidebar-hide") {
-	// 			document.body.setAttribute("sidebar-data-theme", "sidebar-show");
-	// 			localStorage.setItem("trezo_sidebar", "sidebar-show");
-	// 		} else {
-	// 			document.body.setAttribute("sidebar-data-theme", "sidebar-hide");
-	// 			localStorage.setItem("trezo_sidebar", "sidebar-hide");
-	// 		}
-	// 	});
-	// }
-
-	// Sidebar Burger Button
-	// const getSidebarBurgerMenuId = document.getElementById('sidebar-burger-menu');
-	// if (getSidebarBurgerMenuId) {
-	// 	const switchtoggle = document.querySelector(".sidebar-burger-menu");
-	// 	const savedTheme = localStorage.getItem("trezo_sidebar");
-	// 	if (savedTheme) {
-	// 		document.body.setAttribute("sidebar-data-theme", savedTheme);
-	// 	}
-	// 	switchtoggle.addEventListener("click", function () {
-	// 		if (document.body.getAttribute("sidebar-data-theme") === "sidebar-hide") {
-	// 			document.body.setAttribute("sidebar-data-theme", "sidebar-show");
-	// 			localStorage.setItem("trezo_sidebar", "sidebar-show");
-	// 		} else {
-	// 			document.body.setAttribute("sidebar-data-theme", "sidebar-hide");
-	// 			localStorage.setItem("trezo_sidebar", "sidebar-hide");
-	// 		}
-	// 	});
-	// }
-
-	// Header Burger Button
 	const getHeaderBurgerMenuId = document.getElementById('header-burger-menu');
 	if (getHeaderBurgerMenuId) {
 		const switchtoggle = document.querySelector(".header-burger-menu");
@@ -192,20 +154,23 @@
 	});
 
 	// Multiple Range Sliders
-	try {
+	const getRangeSlidersId = document.querySelectorAll('slider');
+	if (getRangeSlidersId) {
 		// Single
-		ionRangeSlider('.single-slider');
-		document.querySelectorAll('.slider').forEach(function (slider) {
-			ionRangeSlider(slider, {
-				min: 0,
-				max: 5000,
-				prefix: "$",
-				grid: true,
-				grid_num: 5,
-				step: 100,
+		try {
+			ionRangeSlider('.single-slider');
+			document.querySelectorAll('.slider').forEach(function (slider) {
+				ionRangeSlider(slider, {
+					min: 0,
+					max: 5000,
+					prefix: "$",
+					grid: true,
+					grid_num: 5,
+					step: 100,
+				});
 			});
-		});
-	} catch (err) { }
+		} catch (err) { }
+	}
 
 	// Review Rating
 	const ratings = document.querySelectorAll('.rating');
@@ -432,6 +397,56 @@
 			});
 
 			tagContainer.appendChild(tag);
+		}
+	});
+
+	// Media JS
+	document.addEventListener('DOMContentLoaded', function () {
+		const MediaContainer = document.getElementById('MediaContainer');
+		const MediaInput = document.getElementById('MediaInput');
+		if (MediaInput) {
+			MediaInput.addEventListener('keydown', function (event) {
+				if (event.key === 'Enter' && MediaInput.value.trim() !== '') {
+					createTag(MediaInput.value.trim());
+					MediaInput.value = '';
+				}
+			});
+		}
+		function createTag(tagText) {
+			const tag = document.createElement('div');
+			tag.classList.add('tag');
+			tag.innerHTML = `${tagText} <span class="tag-close">&#10006;</span>`;
+
+			tag.querySelector('.tag-close').addEventListener('click', function () {
+				tag.remove();
+			});
+
+			MediaContainer.appendChild(tag);
+		}
+	});
+
+	// Add Team Member JS
+	document.addEventListener('DOMContentLoaded', function () {
+		const AddTeamMemberContainer = document.getElementById('AddTeamMemberContainer');
+		const AddTeamMemberInput = document.getElementById('AddTeamMemberInput');
+		if (AddTeamMemberInput) {
+			AddTeamMemberInput.addEventListener('keydown', function (event) {
+				if (event.key === 'Enter' && AddTeamMemberInput.value.trim() !== '') {
+					createTag(AddTeamMemberInput.value.trim());
+					AddTeamMemberInput.value = '';
+				}
+			});
+		}
+		function createTag(tagText) {
+			const tag = document.createElement('div');
+			tag.classList.add('tag');
+			tag.innerHTML = `${tagText} <span class="tag-close">&#10006;</span>`;
+
+			tag.querySelector('.tag-close').addEventListener('click', function () {
+				tag.remove();
+			});
+
+			AddTeamMemberContainer.appendChild(tag);
 		}
 	});
 
@@ -804,7 +819,45 @@
 		},
     });
 
-	// Top Selling Slider JS
+	// Recent Property JS
+	var swiper = new Swiper(".recent-property-slide", {
+        slidesPerView: 1,
+        spaceBetween: 24,
+		centeredSlides: false,
+		preventClicks: true,
+		loop: true, 
+		autoplay: {
+			delay: 8000,
+			disableOnInteraction: false,
+			pauseOnMouseEnter: true,
+		},
+		pagination: {
+			el: ".swiper-pagination3",
+			clickable: true,
+		},
+		breakpoints: {
+			0: {
+				slidesPerView: 1,
+			},
+			768: {
+				slidesPerView: 2,
+			},
+			1199: {
+				slidesPerView: 2,
+			},
+			1400: {
+				slidesPerView: 1,
+			},
+			1600: {
+				slidesPerView: 1,
+			},
+			1700: {
+				slidesPerView: 2,
+			},
+		}
+    });
+
+	// Team Slider JS
 	var swiper = new Swiper(".team-slide", {
         slidesPerView: 1,
         spaceBetween: 25,
@@ -821,7 +874,6 @@
           	prevEl: ".next",
 		},
 		pagination: {
-			el: ".swiper-pagination-top-selling",
 			clickable: true,
 		},
 		breakpoints: {
@@ -843,6 +895,751 @@
 		}
     });
 
+	// Cryptocurrency Slider JS
+	var swiper = new Swiper(".cryptocurrency-slide", {
+        slidesPerView: 1,
+        spaceBetween: 25,
+		centeredSlides: false,
+		preventClicks: true,
+		loop: false, 
+		autoplay: {
+			delay: 8000,
+			disableOnInteraction: false,
+			pauseOnMouseEnter: true,
+		},
+		navigation: {
+			nextEl: ".prev",
+          	prevEl: ".next",
+		},
+		pagination: {
+			clickable: true,
+		},
+		breakpoints: {
+			0: {
+				slidesPerView: 1,
+			},
+			768: {
+				slidesPerView: 2,
+			},
+			992: {
+				slidesPerView: 3,
+			},
+			1199: {
+				slidesPerView: 3,
+			},
+			1440: {
+				slidesPerView: 4,
+			},
+			1600: {
+				slidesPerView: 4,
+			},
+		}
+    });
+
+	// NFT Slider JS
+	var swiper = new Swiper(".nft-slide", {
+        slidesPerView: 1,
+        spaceBetween: 25,
+		centeredSlides: false,
+		preventClicks: true,
+		loop: false, 
+		autoplay: {
+			delay: 8000,
+			disableOnInteraction: false,
+			pauseOnMouseEnter: true,
+		},
+		navigation: {
+			nextEl: ".prev",
+          	prevEl: ".next",
+		},
+		pagination: {
+			clickable: true,
+		},
+		breakpoints: {
+			0: {
+				slidesPerView: 1,
+			},
+			768: {
+				slidesPerView: 2,
+			},
+			992: {
+				slidesPerView: 3,
+			},
+			1199: {
+				slidesPerView: 3,
+			},
+			1440: {
+				slidesPerView: 4,
+			},
+			1600: {
+				slidesPerView: 4,
+			},
+		}
+    });
+
+	// NFT Slider Two JS
+	var swiper = new Swiper(".nft-slide-two", {
+        slidesPerView: 1,
+        spaceBetween: 25,
+		centeredSlides: false,
+		preventClicks: true,
+		loop: false, 
+		autoplay: {
+			delay: 8000,
+			disableOnInteraction: false,
+			pauseOnMouseEnter: true,
+		},
+		navigation: {
+			nextEl: ".prev",
+          	prevEl: ".next",
+		},
+		pagination: {
+			clickable: true,
+		},
+		breakpoints: {
+			0: {
+				slidesPerView: 1,
+			},
+			768: {
+				slidesPerView: 2,
+			},
+			992: {
+				slidesPerView: 2,
+			},
+			1199: {
+				slidesPerView: 2,
+			},
+			1440: {
+				slidesPerView: 3,
+			},
+			1600: {
+				slidesPerView: 3,
+			},
+		}
+    });
+
+	// Top Collections JS
+	var swiper = new Swiper(".top-collections-slide", {
+        slidesPerView: 1,
+        spaceBetween: 25,
+		centeredSlides: false,
+		preventClicks: true,
+		loop: false, 
+		autoplay: {
+			delay: 8000,
+			disableOnInteraction: false,
+			pauseOnMouseEnter: true,
+		},
+		pagination: {
+			clickable: true,
+			el: ".swiper-pagination-top-collections",
+		},
+    });
+
+	// Thumb Images Upload JS
+	const getImagePreviewId = document.getElementById('imagePreview');
+	if (getImagePreviewId) {
+		function readURL(input) {
+			if (input.files && input.files[0]) {
+				var reader = new FileReader();
+				reader.onload = function(e) {
+					var imagePreview = document.getElementById('imagePreview');
+					imagePreview.style.backgroundImage = 'url(' + e.target.result + ')';
+					imagePreview.style.display = 'none';
+					setTimeout(function() {
+						imagePreview.style.display = 'block';
+						imagePreview.style.transition = 'opacity 0.65s';
+						imagePreview.style.opacity = 1;
+					}, 0);
+				};
+				reader.readAsDataURL(input.files[0]);
+			}
+		}
+		
+		document.getElementById('imageUpload').addEventListener('change', function() {
+			readURL(this);
+		});
+	}
+
+	// Days, Hrs, Min, Sec JS 
+	const getCountDownId = document.getElementsByClassName('clockdiv');
+	if (getCountDownId) {
+		document.addEventListener('readystatechange', event => {
+			if (event.target.readyState === "complete") {
+				var clockdiv = document.getElementsByClassName("clockdiv");
+				var countDownDate = new Array();
+					for (var i = 0; i < clockdiv.length; i++) {
+						countDownDate[i] = new Array();
+						countDownDate[i]['el'] = clockdiv[i];
+						countDownDate[i]['time'] = new Date(clockdiv[i].getAttribute('data-date')).getTime();
+						countDownDate[i]['days'] = 0;
+						countDownDate[i]['hours'] = 0;
+						countDownDate[i]['seconds'] = 0;
+						countDownDate[i]['minutes'] = 0;
+					}
+					var countdownfunction = setInterval(function() {
+						for (var i = 0; i < countDownDate.length; i++) {
+						var now = new Date().getTime();
+						var distance = countDownDate[i]['time'] - now;
+						countDownDate[i]['days'] = Math.floor(distance / (1000 * 60 * 60 * 24));
+						countDownDate[i]['hours'] = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+						countDownDate[i]['minutes'] = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+						countDownDate[i]['seconds'] = Math.floor((distance % (1000 * 60)) / 1000);
+						if (distance < 0) {
+							countDownDate[i]['el'].querySelector('.days').innerHTML = 0;
+							countDownDate[i]['el'].querySelector('.hours').innerHTML = 0;
+							countDownDate[i]['el'].querySelector('.minutes').innerHTML = 0;
+							countDownDate[i]['el'].querySelector('.seconds').innerHTML = 0;
+						}
+						else {
+							countDownDate[i]['el'].querySelector('.days').innerHTML = countDownDate[i]['days'];
+							countDownDate[i]['el'].querySelector('.hours').innerHTML = countDownDate[i]['hours'];
+							countDownDate[i]['el'].querySelector('.minutes').innerHTML = countDownDate[i]['minutes'];
+							countDownDate[i]['el'].querySelector('.seconds').innerHTML = countDownDate[i]['seconds'];
+						}
+					}  
+				}, 1000);
+			}
+		});
+	}
+
+	// File Uploads JS
+	try {
+		const multipleEvents = (element, eventNames, listener) => {
+			const events = eventNames.split(' ');
+		
+			events.forEach(event => {
+				element.addEventListener(event, listener, false);
+			});
+		};
+		const fileUpload = () => {
+			const INPUT_FILE = document.querySelector('#upload-files');
+			const INPUT_CONTAINER = document.querySelector('#upload-container');
+			const FILES_LIST_CONTAINER = document.querySelector('#files-list-container')
+			const FILE_LIST = [];
+		
+			multipleEvents(INPUT_FILE, 'click dragstart dragover', () => {
+				INPUT_CONTAINER.classList.add('active');
+			});
+			
+			multipleEvents(INPUT_FILE, 'dragleave dragend drop change', () => {
+				INPUT_CONTAINER.classList.remove('active');
+			});
+			
+			INPUT_FILE.addEventListener('change', () => {
+			const files = [...INPUT_FILE.files];
+			
+			files.forEach(file => {
+				const fileURL = URL.createObjectURL(file);
+				const fileName = file.name;
+				const uploadedFiles = {
+					name: fileName,
+					url: fileURL,
+				};
+				
+				FILE_LIST.push(uploadedFiles);
+			});
+			FILES_LIST_CONTAINER.innerHTML = '';
+			FILE_LIST.forEach(addedFile => {
+				const content = `
+					<div class="form__files-container">
+					<span class="form__text">${addedFile.name}</span>
+					<div>
+						<a class="form__icon" href="${addedFile.url}" target="_blank" title="Preview">&#128065;</a>
+						<a class="form__icon" href="${addedFile.url}" title="Download" download>&#11123;</a>
+					</div>
+					</div>
+				`;
+		
+				FILES_LIST_CONTAINER.insertAdjacentHTML('beforeEnd', content);
+				});
+			});
+		};
+		fileUpload();
+	} catch { }
+
+
+	// Sales By Locations Map JS
+	const getSalesByLocationsMapId = document.getElementById('sales_by_locations_map');
+	if (getSalesByLocationsMapId) {
+		var markers = [
+			{ name: "United States", coords: [26.8206, 30.8025] },
+			{ name: "Germany", coords: [61.524, 105.3188] },
+			{ name: "United Kingdom", coords: [56.1304, -106.3468] },
+			{ name: "Canada", coords: [71.7069, -42.6043] },
+			{ name: "Portugal", coords: [80.7069, -70.6043] },
+			{ name: "Spain", coords: [0.7069, -40.6043] },
+		];
+		  
+		var jvm = new jsVectorMap({
+			map: "world_merc",
+			selector: "#sales_by_locations_map",
+			// zoomButtons: true,
+			onLoaded(map) {
+				window.addEventListener("resize", () => {
+					map.updateSize();
+				});
+			},
+			regionStyle: {
+			   initial: { fill: '#d1d4db' }
+			},
+			labels: {
+				markers: {
+					render: (marker) => marker.name
+				}
+			},
+			markersSelectable: true,
+			selectedMarkers: markers.map((marker, index) => {
+				var name = marker.name;
+			
+				if (name === "Russia" || name === "Brazil") {
+					return index;
+				}
+			}),
+			markers: markers,
+			markerStyle: {
+				initial: { fill: "#5c5cff" },
+				selected: { fill: "#ff5050" }
+			},
+			markerLabelStyle: {
+				initial: {
+					fontFamily: "Inter",
+					fontWeight: 400,
+					fontSize: 0
+				}
+			}
+		});
+	}
+
+	// Enrolled by Countries Map JS
+	const getEnrolledByCountriesMapId = document.getElementById('enrolled_by_countries_map');
+	if (getEnrolledByCountriesMapId) {
+		var markers = [
+			{ name: "United States", coords: [26.8206, 30.8025] },
+			{ name: "Germany", coords: [61.524, 105.3188] },
+			{ name: "United Kingdom", coords: [56.1304, -106.3468] },
+			{ name: "Canada", coords: [71.7069, -42.6043] },
+		];
+		  
+		var jvm = new jsVectorMap({
+			map: "world_merc",
+			selector: "#enrolled_by_countries_map",
+			// zoomButtons: true,
+			onLoaded(map) {
+				window.addEventListener("resize", () => {
+					map.updateSize();
+				});
+			},
+			regionStyle: {
+			   initial: { fill: '#d1d4db' }
+			},
+			labels: {
+				markers: {
+					render: (marker) => marker.name
+				}
+			},
+			markersSelectable: true,
+			selectedMarkers: markers.map((marker, index) => {
+				var name = marker.name;
+			
+				if (name === "Russia" || name === "Brazil") {
+					return index;
+				}
+			}),
+			markers: markers,
+			markerStyle: {
+				initial: { fill: "#5c5cff" },
+				selected: { fill: "#ff5050" }
+			},
+			markerLabelStyle: {
+				initial: {
+					fontFamily: "Inter",
+					fontWeight: 400,
+					fontSize: 0
+				}
+			}
+		});
+	}
+
+	// Users by Country Map JS
+	const getUsersByCountryMapId = document.getElementById('users_by_country_map');
+	if (getUsersByCountryMapId) {
+		var markers = [
+			{ name: "Canada", coords: [56.1304, -106.3468] },
+			{ name: "Australia", coords: [71.7069, -42.6043] },
+			{ name: "United States", coords: [26.8206, 30.8025] },
+			{ name: "United Kingdom", coords: [61.524, 105.3188] },
+		];
+		  
+		var jvm = new jsVectorMap({
+			map: "world_merc",
+			selector: "#users_by_country_map",
+			// zoomButtons: true,
+			onLoaded(map) {
+				window.addEventListener("resize", () => {
+					map.updateSize();
+				});
+			},
+			regionStyle: {
+			   initial: { fill: '#d1d4db' }
+			},
+			labels: {
+				markers: {
+					render: (marker) => marker.name
+				}
+			},
+			markersSelectable: true,
+			selectedMarkers: markers.map((marker, index) => {
+				var name = marker.name;
+			
+				if (name === "Russia" || name === "Brazil") {
+					return index;
+				}
+			}),
+			markers: markers,
+			markerStyle: {
+				initial: { fill: "#5c5cff" },
+				selected: { fill: "#ff5050" }
+			},
+			markerLabelStyle: {
+				initial: {
+					fontFamily: "Inter",
+					fontWeight: 400,
+					fontSize: 0
+				}
+			}
+		});
+	}
+
+	// Worldwide Top Creators Map JS
+	const getWorldwideTopCreatorsMapId = document.getElementById('worldwide_top_creators_map');
+	if (getWorldwideTopCreatorsMapId) {
+		var markers = [
+			{ name: "Japan", coords: [56.1304, -106.3468] },
+			{ name: "Australia", coords: [71.7069, -42.6043] },
+			{ name: "United States", coords: [26.8206, 30.8025] },
+			{ name: "United Kingdom", coords: [61.524, 105.3188] },
+		];
+		  
+		var jvm = new jsVectorMap({
+			map: "world_merc",
+			selector: "#worldwide_top_creators_map",
+			// zoomButtons: true,
+			onLoaded(map) {
+				window.addEventListener("resize", () => {
+					map.updateSize();
+				});
+			},
+			regionStyle: {
+			   initial: { fill: '#d1d4db' }
+			},
+			labels: {
+				markers: {
+					render: (marker) => marker.name
+				}
+			},
+			markersSelectable: true,
+			selectedMarkers: markers.map((marker, index) => {
+				var name = marker.name;
+			
+				if (name === "Russia" || name === "Brazil") {
+					return index;
+				}
+			}),
+			markers: markers,
+			markerStyle: {
+				initial: { fill: "#5c5cff" },
+				selected: { fill: "#ff5050" }
+			},
+			markerLabelStyle: {
+				initial: {
+					fontFamily: "Inter",
+					fontWeight: 400,
+					fontSize: 0
+				}
+			}
+		});
+	}
+
+	// Sales By Country Map JS
+	const getSalesByCountryMapId = document.getElementById('sales_by_country_map');
+	if (getSalesByCountryMapId) {
+		var markers = [
+			{ name: "Japan", coords: [56.1304, -106.3468] },
+			{ name: "Australia", coords: [71.7069, -42.6043] },
+			{ name: "United States", coords: [26.8206, 30.8025] },
+			{ name: "Germany", coords: [61.524, 105.3188] },
+		];
+		  
+		var jvm = new jsVectorMap({
+			map: "world_merc",
+			selector: "#sales_by_country_map",
+			// zoomButtons: true,
+			onLoaded(map) {
+				window.addEventListener("resize", () => {
+					map.updateSize();
+				});
+			},
+			regionStyle: {
+			   initial: { fill: '#d1d4db' }
+			},
+			labels: {
+				markers: {
+					render: (marker) => marker.name
+				}
+			},
+			markersSelectable: true,
+			selectedMarkers: markers.map((marker, index) => {
+				var name = marker.name;
+			
+				if (name === "Russia" || name === "Brazil") {
+					return index;
+				}
+			}),
+			markers: markers,
+			markerStyle: {
+				initial: { fill: "#5c5cff" },
+				selected: { fill: "#ff5050" }
+			},
+			markerLabelStyle: {
+				initial: {
+					fontFamily: "Inter",
+					fontWeight: 400,
+					fontSize: 0
+				}
+			}
+		});
+	}
+
+	// Most Sales Location Map JS
+	const getMostSalesLocationId = document.getElementById('most_sales_location');
+	if (getMostSalesLocationId) {
+		var markers = [
+			{ name: "United States", coords: [26.8206, 30.8025] },
+			{ name: "Germany", coords: [61.524, 105.3188] },
+			{ name: "United Kingdom", coords: [56.1304, -106.3468] },
+			{ name: "Canada", coords: [71.7069, -42.6043] },
+			{ name: "Portugal", coords: [80.7069, -70.6043] },
+			{ name: "Spain", coords: [0.7069, -40.6043] },
+			{ name: "France", coords: [70.7069, -100.6043] },
+		];
+		  
+		var jvm = new jsVectorMap({
+			map: "world_merc",
+			selector: "#most_sales_location",
+			// zoomButtons: true,
+			onLoaded(map) {
+				window.addEventListener("resize", () => {
+					map.updateSize();
+				});
+			},
+			regionStyle: {
+			   initial: { fill: '#d1d4db' }
+			},
+			labels: {
+				markers: {
+					render: (marker) => marker.name
+				}
+			},
+			markersSelectable: true,
+			selectedMarkers: markers.map((marker, index) => {
+				var name = marker.name;
+			
+				if (name === "Russia" || name === "Brazil") {
+					return index;
+				}
+			}),
+			markers: markers,
+			markerStyle: {
+				initial: { fill: "#5c5cff" },
+				selected: { fill: "#ff5050" }
+			},
+			markerLabelStyle: {
+				initial: {
+					fontFamily: "Inter",
+					fontWeight: 400,
+					fontSize: 0
+				}
+			}
+		});
+	}
+
+	// Shipment To Top Map JS
+	const getShipmentToTopId = document.getElementById('shipment_to_top');
+	if (getShipmentToTopId) {
+		var markers = [
+			{ name: "United States", coords: [26.8206, 30.8025] },
+		];
+		  
+		var jvm = new jsVectorMap({
+			map: "world_merc",
+			selector: "#shipment_to_top",
+			// zoomButtons: true,
+			onLoaded(map) {
+				window.addEventListener("resize", () => {
+					map.updateSize();
+				});
+			},
+			regionStyle: {
+			   initial: { fill: '#ffffff' }
+			},
+			labels: {
+				markers: {
+					render: (marker) => marker.name
+				}
+			},
+			markersSelectable: true,
+			selectedMarkers: markers.map((marker, index) => {
+				var name = marker.name;
+			
+				if (name === "Russia" || name === "Brazil") {
+					return index;
+				}
+			}),
+			markers: markers,
+			markerStyle: {
+				initial: { fill: "#ffffff" },
+				selected: { fill: "#ffffff" }
+			},
+			markerLabelStyle: {
+				initial: {
+					fontFamily: "Inter",
+					fontWeight: 400,
+					fontSize: 0
+				}
+			}
+		});
+	}
+
+	// Call Center Geography Map JS
+	const getCallCenterGeographyId = document.getElementById('call_center_geography');
+	if (getCallCenterGeographyId) {
+		var markers = [
+			{ name: "United States", coords: [26.8206, 30.8025] },
+			{ name: "Canada", coords: [71.7069, -42.6043] },
+			{ name: "Brazil", coords: [0.7069, -40.6043] },
+		];
+		  
+		var jvm = new jsVectorMap({
+			map: "world_merc",
+			selector: "#call_center_geography",
+			// zoomButtons: true,
+			onLoaded(map) {
+				window.addEventListener("resize", () => {
+					map.updateSize();
+				});
+			},
+			regionStyle: {
+			   initial: { fill: '#d1d4db' }
+			},
+			labels: {
+				markers: {
+					render: (marker) => marker.name
+				}
+			},
+			markersSelectable: true,
+			selectedMarkers: markers.map((marker, index) => {
+				var name = marker.name;
+			
+				if (name === "Russia" || name === "Brazil") {
+					return index;
+				}
+			}),
+			markers: markers,
+			markerStyle: {
+				initial: { fill: "#5c5cff" },
+				selected: { fill: "#ff5050" }
+			},
+			markerLabelStyle: {
+				initial: {
+					fontFamily: "Inter",
+					fontWeight: 400,
+					fontSize: 0
+				}
+			}
+		});
+	}
+
+	// Range Datepicker JS
+	const getRangeDatepickerId = document.getElementById('range_datepicker');
+	if (getRangeDatepickerId) {
+		var picker = new Lightpick({
+			field: document.getElementById('range_datepicker'),
+			singleDate: false,
+			onSelect: function(start, end){
+				var str = '';
+				str += start ? start.format('Do MMMM YYYY') + ' to ' : '';
+				str += end ? end.format('Do MMMM YYYY') : '...';
+				document.getElementById('range_datepicker').innerHTML = str;
+			}
+		});
+	}
+
+	// Stepper Tabs JS
+	try {
+		let currentTab = 0; // Initialize to the first tab
+		function showTab(index) {
+			const tabs = document.querySelectorAll('.tab');
+			const contents = document.querySelectorAll('.tab-contents');
+			// Remove 'active' class from all tabs and contents
+			tabs.forEach(tab => tab.classList.remove('active'));
+			contents.forEach(content => content.classList.remove('active'));
+			// Set 'active' class on selected tab and content
+			tabs[index].classList.add('active');
+			contents[index].classList.add('active');
+			currentTab = index;
+		}
+		function nextTab() {
+			if (currentTab < 5) {
+				showTab(currentTab + 1);
+			}
+		}
+		function previousTab() {
+			if (currentTab > 0) {
+				showTab(currentTab - 1);
+			}
+		}
+		document.querySelectorAll('.tab').forEach((tab, index) => {
+			tab.addEventListener('click', () => showTab(index));
+		});
+		document.getElementById('nextButton').addEventListener('click', nextTab);
+		document.getElementById('prevButton').addEventListener('click', previousTab);
+	} catch { }
+
+	//  Digital Date
+	const getDigitalDateId = document.getElementById('digital_date');
+	if (getDigitalDateId) {
+		function updateDate() {
+			var now = new Date();
+			var date = now.getDate();
+			var monthNames = ["January", "February", "March", "April", "May", "June",
+				"July", "August", "September", "October", "November", "December"];
+			var month = monthNames[now.getMonth()];
+			var year = now.getFullYear();
+			var digitalDate = document.getElementById("digital_date");
+			digitalDate.innerHTML = "Today - " + month + " " + date + ", " + year;
+		}
+		setInterval(updateDate, 1000);
+	}
+
+	// Upcoming Events JS
+	var swiper = new Swiper(".upcoming-events-slide-two", {
+        slidesPerView: 1,
+        spaceBetween: 25,
+		centeredSlides: false,
+		preventClicks: true,
+		loop: false, 
+		autoplay: {
+			delay: 8000,
+			disableOnInteraction: false,
+			pauseOnMouseEnter: true,
+		},
+		pagination: {
+			clickable: true,
+			el: ".swiper-pagination-upcoming-events",
+		},
+    });
+	
 	// Theme Settings
 	// Dark/Light Toggle
 	const getSwitchToggleId = document.getElementById('switch-toggle');
@@ -992,6 +1789,33 @@
 			}
 		};
 	}
+
+	// Admin Link Active Color JS
+	document.addEventListener("DOMContentLoaded", function() {
+        const links = document.querySelectorAll(".admin-item-link");
+        const activeLink = localStorage.getItem("activeLink");
+
+        // Apply active class from localStorage if it exists
+        if (activeLink) {
+            links.forEach(link => {
+                if (link.getAttribute("href") === activeLink) {
+                    link.classList.add("active");
+                }
+            });
+        }
+
+        // Add click event to each link
+        links.forEach(link => {
+            link.addEventListener("click", function() {
+                // Remove active class from all links
+                links.forEach(l => l.classList.remove("active"));
+                // Add active class to the clicked link
+                link.classList.add("active");
+                // Save to localStorage
+                localStorage.setItem("activeLink", link.getAttribute("href"));
+            });
+        });
+    });
 
 })();
 

@@ -1,9 +1,6 @@
 "use client";
    
-import React from "react";
-import Breadcrumb from 'react-bootstrap/Breadcrumb';  
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';  
+import { Row, Col, Breadcrumb } from "react-bootstrap";
 import BasicListGroup from "@/components/UIKit/ListGroups/BasicListGroup";
 import ActiveItems from "@/components/UIKit/ListGroups/ActiveItems";
 import NumberedListGroup from "@/components/UIKit/ListGroups/NumberedListGroup";

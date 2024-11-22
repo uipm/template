@@ -37,7 +37,7 @@
         <apexchart
           v-if="isClient"
           type="pie"
-          height="450"
+          height="415"
           :options="tasksOverview"
           :series="overview"
         ></apexchart>
@@ -56,7 +56,7 @@ export default defineComponent({
     const overview = ref([55, 44, 30, 12, 22]);
     const tasksOverview = ref({
       chart: {
-        height: 450,
+        height: 415,
         type: "pie",
       },
       labels: ["Completed", "In Progress", "Pending", "Active", "Cancelled"],
@@ -92,6 +92,7 @@ export default defineComponent({
           height: 9,
           offsetX: -2,
           offsetY: -0.1,
+          shape: "diamond",
         },
       },
     });

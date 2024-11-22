@@ -2,16 +2,11 @@
 
 import * as React from "react";
 import { Card, Typography, Box, Button, IconButton } from "@mui/material";
-
-import dynamic from "next/dynamic";
-const RichTextEditor = dynamic(() => import("@mantine/rte"), {
-  ssr: false,
-});
-
 import AttachFileIcon from "@mui/icons-material/AttachFile";
 import TagFacesIcon from "@mui/icons-material/TagFaces";
 import AddPhotoAlternateIcon from "@mui/icons-material/AddPhotoAlternate";
 import EditIcon from "@mui/icons-material/Edit";
+import CustomEditor from "./CustomEditor";
 
 const CreatePost: React.FC = () => {
   return (
@@ -52,18 +47,7 @@ const CreatePost: React.FC = () => {
               What's on your mind, Alice Johnson?
             </Typography>
 
-            <RichTextEditor
-              id="rte"
-              controls={[
-                ["bold", "italic", "underline", "link", "image"],
-                ["unorderedList", "h1", "h2", "h3"],
-                ["sup", "sub"],
-                ["alignLeft", "alignCenter", "alignRight"],
-              ]}
-              style={{
-                minHeight: "200px",
-              }}
-            />
+            <CustomEditor />
           </Box>
 
           <Box

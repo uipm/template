@@ -1,15 +1,6 @@
 "use client";
 
-import React from "react";
-import Form from 'react-bootstrap/Form';
-import Card from 'react-bootstrap/Card';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-
-import dynamic from 'next/dynamic'
-const RichTextEditor = dynamic(() => import('@mantine/rte'), {
-  ssr: false,
-})
+import { Row, Col, Card, Form } from "react-bootstrap";
 
 const CreateProduct = () => {
   return (
@@ -87,18 +78,7 @@ const CreateProduct = () => {
                         Product Description
                       </Form.Label>
 
-                      <RichTextEditor
-                        id="rte"
-                        controls={[
-                          ['bold', 'italic', 'underline', 'link', 'image'],
-                          ['unorderedList', 'h1', 'h2', 'h3'],
-                          ['sup', 'sub'],
-                          ['alignLeft', 'alignCenter', 'alignRight'],
-                        ]}
-                        style={{
-                          minHeight: '200px'
-                        }}
-                      />
+                      <Form.Control as="textarea" rows={6} placeholder="Type description here..." /> 
                     </Form.Group>
                   </Col>
                   

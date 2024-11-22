@@ -1,13 +1,9 @@
 "use client";
 
-import React from "react";
+import { Card, Table } from "react-bootstrap";
 import Link from "next/link";
 import Image from "next/image";
-import Card from "react-bootstrap/Card";
-import Table from "react-bootstrap/Table";
 import ProductQuantity from "./ProductQuantity";
-import { MaterialSymbol } from "react-material-symbols";
-import "react-material-symbols/rounded";
 
 const YourOrder = () => {
   return (
@@ -183,7 +179,9 @@ const YourOrder = () => {
               className="btn btn-primary py-2 px-md-4 px-3 fa-16 fw-medium mt-lg-4 mt-3"
             >
               <div className="d-flex align-items-center py-md-1">
-                <MaterialSymbol icon='done_all' size={20} className="me-1 text-white" />
+                <span className="material-symbols-outlined fs-20 me-1 text-white">
+                  done_all
+                </span>
                 <span>Apply</span>
               </div>
             </button>

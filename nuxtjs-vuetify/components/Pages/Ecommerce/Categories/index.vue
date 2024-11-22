@@ -174,17 +174,17 @@ export default defineComponent({
     const filteredItems = computed(() => {
       return items.value.filter(
         (item: {
-          id: string;
+          id: number;
           image: string;
           name: string;
-          totalProducts: string;
+          totalProducts: number;
           slug: string;
           description: string;
           status: string;
         }) =>
-          item.name.toLowerCase().includes(searchTerm.value.toLowerCase()) ||
+          item.name.toString().includes(searchTerm.value.toLowerCase()) ||
           item.totalProducts
-            .toLowerCase()
+            .toString()
             .includes(searchTerm.value.toLowerCase()) ||
           item.slug.toLowerCase().includes(searchTerm.value.toLowerCase()) ||
           item.description

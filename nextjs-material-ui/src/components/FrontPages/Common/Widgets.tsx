@@ -105,10 +105,20 @@ const Widgets: React.FC = () => {
 
           {/* Shape Images */}
           <div className="shape1">
-            <img src="/images/front-pages/shape1.png" alt="shape1" />
+            <Image
+              src="/images/front-pages/shape1.png"
+              alt="shape1"
+              width={530}
+              height={530}
+            />
           </div>
           <div className="shape2">
-            <img src="/images/front-pages/shape2.png" alt="shape2" />
+            <Image
+              src="/images/front-pages/shape2.png"
+              alt="shape2"
+              width={447}
+              height={453}
+            />
           </div>
         </Box>
       </Box>

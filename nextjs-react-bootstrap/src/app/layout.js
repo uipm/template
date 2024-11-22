@@ -3,14 +3,13 @@ import 'remixicon/fonts/remixicon.css';
 import 'react-calendar/dist/Calendar.css';
 import "swiper/css";
 import "swiper/css/bundle";
+import 'react-datetime-picker/dist/DateTimePicker.css';
+import 'react-calendar/dist/Calendar.css';
+import 'react-clock/dist/Clock.css';
 import 'react-tabs/style/react-tabs.css';
  
 // Styles
 import "../../styles/style.css";
-// Rtl Styles
-// import "../../styles/rtl.css";
-// Dark Mode Styles
-// import "../../styles/dark.css";
 
 import LayoutProvider from '@/providers/LayoutProvider';
 import { Inter } from "next/font/google";

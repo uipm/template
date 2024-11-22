@@ -1,13 +1,7 @@
 "use client";
 
-import React from "react";
-import Card from "react-bootstrap/Card";
+import { Dropdown, Card, OverlayTrigger, Tooltip} from "react-bootstrap";
 import Image from "next/image";
-import { MaterialSymbol } from "react-material-symbols";
-import "react-material-symbols/rounded";
-import Dropdown from "react-bootstrap/Dropdown";
-import OverlayTrigger from "react-bootstrap/OverlayTrigger";
-import Tooltip from "react-bootstrap/Tooltip";
 
 const ReadEmail = () => {
   return (
@@ -23,11 +17,9 @@ const ReadEmail = () => {
                 overlay={<Tooltip id="tooltip-top">Archive</Tooltip>}
               >
                 <button className="pe-0 border-0 bg-transparent ps-2">
-                  <MaterialSymbol
-                    icon="archive"
-                    size={20}
-                    className="text-body hover"
-                  />
+                  <span className="material-symbols-outlined fs-20 text-body hover">
+                    archive
+                  </span>
                 </button>
               </OverlayTrigger>
 
@@ -36,11 +28,9 @@ const ReadEmail = () => {
                 overlay={<Tooltip id="tooltip-top">Help</Tooltip>}
               >
                 <button className="pe-0 border-0 bg-transparent ms-2">
-                  <MaterialSymbol
-                    icon="help_clinic"
-                    size={20}
-                    className="text-body hover"
-                  />
+                  <span className="material-symbols-outlined fs-20 text-body hover">
+                    help_clinic
+                  </span> 
                 </button>
               </OverlayTrigger>
 
@@ -49,11 +39,9 @@ const ReadEmail = () => {
                 overlay={<Tooltip id="tooltip-top">Tresh</Tooltip>}
               >
                 <button className="pe-0 border-0 bg-transparent ms-2">
-                  <MaterialSymbol
-                    icon="delete"
-                    size={20}
-                    className="text-body hover"
-                  />
+                  <span className="material-symbols-outlined fs-20 text-body hover">
+                    delete
+                  </span> 
                 </button>
               </OverlayTrigger>
 
@@ -67,22 +55,30 @@ const ReadEmail = () => {
                     id="dropdown-basic"
                     className="p-0 border-0 bg-transparent"
                   >
-                    <MaterialSymbol icon="more_vert" />
+                    <i className="material-symbols-outlined">
+	more_vert
+</i>
                   </Dropdown.Toggle>
 
                   <Dropdown.Menu className="bg-white border box-shadow">
                     <Dropdown.Item href="#">
-                      <MaterialSymbol icon="visibility" />
+                      <i className="material-symbols-outlined">
+	visibility
+</i>
                       View All
                     </Dropdown.Item>
 
                     <Dropdown.Item href="#">
-                      <MaterialSymbol icon="delete" />
+                      <i className="material-symbols-outlined">
+	delete
+</i>
                       Delete One
                     </Dropdown.Item>
 
                     <Dropdown.Item href="#">
-                      <MaterialSymbol icon="lock" />
+                      <i className="material-symbols-outlined">
+	lock
+</i>
                       Block
                     </Dropdown.Item>
                   </Dropdown.Menu>

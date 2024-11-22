@@ -1,9 +1,8 @@
 "use client";
 
-import React from "react";
+import { Card } from "react-bootstrap";
 import Image from "next/image";
-import Link from "next/link";
-import Card from "react-bootstrap/Card";
+import Link from "next/link"; 
 
 const GroupUserExample = () => {
   return (

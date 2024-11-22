@@ -50,7 +50,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <img src="assets/images/welcome-2.gif" class="welcome-2 d-none d-sm-block" alt="welcome">
+                                <img src="/assets/images/welcome-2.gif" class="welcome-2 d-none d-sm-block" alt="welcome">
                             </div>
                         </div>
                         <div class="col-xxl-6">
@@ -199,7 +199,7 @@
                                                         <td>
                                                             <a href="instructors" class="d-flex align-items-center">
                                                                 <div class="flex-shrink-0">
-                                                                    <img src="assets/images/user-25.jpg" class="wh-44 rounded-circle" alt="user">
+                                                                    <img src="/assets/images/user-25.jpg" class="wh-44 rounded-circle" alt="user">
                                                                 </div>
                                                                 <div class="flex-grow-1 ms-2 position-relative top-2">
                                                                     <h6 class="mb-0 fs-14 fw-medium">Olivia Clark</h6>
@@ -232,7 +232,7 @@
                                                         <td>
                                                             <a href="instructors" class="d-flex align-items-center">
                                                                 <div class="flex-shrink-0">
-                                                                    <img src="assets/images/user-26.jpg" class="wh-44 rounded-circle" alt="user">
+                                                                    <img src="/assets/images/user-26.jpg" class="wh-44 rounded-circle" alt="user">
                                                                 </div>
                                                                 <div class="flex-grow-1 ms-2 position-relative top-2">
                                                                     <h6 class="mb-0 fs-14 fw-medium">Ava Turner</h6>
@@ -265,7 +265,7 @@
                                                         <td>
                                                             <a href="instructors" class="d-flex align-items-center">
                                                                 <div class="flex-shrink-0">
-                                                                    <img src="assets/images/user-27.jpg" class="wh-44 rounded-circle" alt="user">
+                                                                    <img src="/assets/images/user-27.jpg" class="wh-44 rounded-circle" alt="user">
                                                                 </div>
                                                                 <div class="flex-grow-1 ms-2 position-relative top-2">
                                                                     <h6 class="mb-0 fs-14 fw-medium">Lucas Morgan</h6>
@@ -298,7 +298,7 @@
                                                         <td>
                                                             <a href="instructors" class="d-flex align-items-center">
                                                                 <div class="flex-shrink-0">
-                                                                    <img src="assets/images/user-28.jpg" class="wh-44 rounded-circle" alt="user">
+                                                                    <img src="/assets/images/user-28.jpg" class="wh-44 rounded-circle" alt="user">
                                                                 </div>
                                                                 <div class="flex-grow-1 ms-2 position-relative top-2">
                                                                     <h6 class="mb-0 fs-14 fw-medium">Isabella Cooper</h6>
@@ -612,13 +612,13 @@
                                                                 <div class="flex-shrink-0">
                                                                     <div class="d-flex">
                                                                         <a href="my-profile">
-                                                                            <img src="assets/images/user-30.jpg" class="wh-44 rounded-circle border border-2 border-color-white" alt="user">
+                                                                            <img src="/assets/images/user-30.jpg" class="wh-44 rounded-circle border border-2 border-color-white" alt="user">
                                                                         </a>
                                                                         <a href="my-profile" class="ms-m-20">
-                                                                            <img src="assets/images/user-31.jpg" class="wh-44 rounded-circle border border-2 border-color-white" alt="user">
+                                                                            <img src="/assets/images/user-31.jpg" class="wh-44 rounded-circle border border-2 border-color-white" alt="user">
                                                                         </a>
                                                                         <a href="my-profile" class="ms-m-20">
-                                                                            <img src="assets/images/user-32.jpg" class="wh-44 rounded-circle border border-2 border-color-white" alt="user">
+                                                                            <img src="/assets/images/user-32.jpg" class="wh-44 rounded-circle border border-2 border-color-white" alt="user">
                                                                         </a>
                                                                     </div>
                                                                 </div>
@@ -640,13 +640,13 @@
                                                                 <div class="flex-shrink-0">
                                                                     <div class="d-flex">
                                                                         <a href="my-profile">
-                                                                            <img src="assets/images/user-33.jpg" class="wh-44 rounded-circle border border-2 border-color-white" alt="user">
+                                                                            <img src="/assets/images/user-33.jpg" class="wh-44 rounded-circle border border-2 border-color-white" alt="user">
                                                                         </a>
                                                                         <a href="my-profile" class="ms-m-20">
-                                                                            <img src="assets/images/user-34.jpg" class="wh-44 rounded-circle border border-2 border-color-white" alt="user">
+                                                                            <img src="/assets/images/user-34.jpg" class="wh-44 rounded-circle border border-2 border-color-white" alt="user">
                                                                         </a>
                                                                         <a href="my-profile" class="ms-m-20">
-                                                                            <img src="assets/images/user-35.jpg" class="wh-44 rounded-circle border border-2 border-color-white" alt="user">
+                                                                            <img src="/assets/images/user-35.jpg" class="wh-44 rounded-circle border border-2 border-color-white" alt="user">
                                                                         </a>
                                                                     </div>
                                                                 </div>
@@ -668,13 +668,13 @@
                                                                 <div class="flex-shrink-0">
                                                                     <div class="d-flex">
                                                                         <a href="my-profile">
-                                                                            <img src="assets/images/user-36.jpg" class="wh-44 rounded-circle border border-2 border-color-white" alt="user">
+                                                                            <img src="/assets/images/user-36.jpg" class="wh-44 rounded-circle border border-2 border-color-white" alt="user">
                                                                         </a>
                                                                         <a href="my-profile" class="ms-m-20">
-                                                                            <img src="assets/images/user-37.jpg" class="wh-44 rounded-circle border border-2 border-color-white" alt="user">
+                                                                            <img src="/assets/images/user-37.jpg" class="wh-44 rounded-circle border border-2 border-color-white" alt="user">
                                                                         </a>
                                                                         <a href="my-profile" class="ms-m-20">
-                                                                            <img src="assets/images/user-38.jpg" class="wh-44 rounded-circle border border-2 border-color-white" alt="user">
+                                                                            <img src="/assets/images/user-38.jpg" class="wh-44 rounded-circle border border-2 border-color-white" alt="user">
                                                                         </a>
                                                                     </div>
                                                                 </div>
@@ -696,13 +696,13 @@
                                                                 <div class="flex-shrink-0">
                                                                     <div class="d-flex">
                                                                         <a href="my-profile">
-                                                                            <img src="assets/images/user-39.jpg" class="wh-44 rounded-circle border border-2 border-color-white" alt="user">
+                                                                            <img src="/assets/images/user-39.jpg" class="wh-44 rounded-circle border border-2 border-color-white" alt="user">
                                                                         </a>
                                                                         <a href="my-profile" class="ms-m-20">
-                                                                            <img src="assets/images/user-40.jpg" class="wh-44 rounded-circle border border-2 border-color-white" alt="user">
+                                                                            <img src="/assets/images/user-40.jpg" class="wh-44 rounded-circle border border-2 border-color-white" alt="user">
                                                                         </a>
                                                                         <a href="my-profile" class="ms-m-20">
-                                                                            <img src="assets/images/user-41.jpg" class="wh-44 rounded-circle border border-2 border-color-white" alt="user">
+                                                                            <img src="/assets/images/user-41.jpg" class="wh-44 rounded-circle border border-2 border-color-white" alt="user">
                                                                         </a>
                                                                     </div>
                                                                 </div>
@@ -724,13 +724,13 @@
                                                                 <div class="flex-shrink-0">
                                                                     <div class="d-flex">
                                                                         <a href="my-profile">
-                                                                            <img src="assets/images/user-25.jpg" class="wh-44 rounded-circle border border-2 border-color-white" alt="user">
+                                                                            <img src="/assets/images/user-25.jpg" class="wh-44 rounded-circle border border-2 border-color-white" alt="user">
                                                                         </a>
                                                                         <a href="my-profile" class="ms-m-20">
-                                                                            <img src="assets/images/user-28.jpg" class="wh-44 rounded-circle border border-2 border-color-white" alt="user">
+                                                                            <img src="/assets/images/user-28.jpg" class="wh-44 rounded-circle border border-2 border-color-white" alt="user">
                                                                         </a>
                                                                         <a href="my-profile" class="ms-m-20">
-                                                                            <img src="assets/images/user-31.jpg" class="wh-44 rounded-circle border border-2 border-color-white" alt="user">
+                                                                            <img src="/assets/images/user-31.jpg" class="wh-44 rounded-circle border border-2 border-color-white" alt="user">
                                                                         </a>
                                                                     </div>
                                                                 </div>
@@ -834,12 +834,12 @@
                                         </div>
                                     </div>
                                     <div class="text-center pt-4 mb-4 pb-1">
-                                        <img src="assets/images/map.svg" alt="map">
+                                        <img src="/assets/images/map.svg" alt="map">
                                     </div>
                                     <ul class="ps-0 mb-0 list-unstyled sales_by_locations mt-4">
                                         <li class="d-flex align-items-center">
                                             <div class="flex-shrink-0">
-                                                <img src="assets/images/usa.svg" class="wh-30 rounded-circle" alt="usa">
+                                                <img src="/assets/images/usa.svg" class="wh-30 rounded-circle" alt="usa">
                                             </div>
                                             <div class="flex-grow-1 ms-3">
                                                 <span class="fw-medium d-block mb-2">United States</span>
@@ -852,7 +852,7 @@
                                         </li>
                                         <li class="d-flex align-items-center">
                                             <div class="flex-shrink-0">
-                                                <img src="assets/images/germany.svg" class="wh-30 rounded-circle" alt="germany">
+                                                <img src="/assets/images/germany.svg" class="wh-30 rounded-circle" alt="germany">
                                             </div>
                                             <div class="flex-grow-1 ms-3">
                                                 <span class="fw-medium d-block mb-2">Germany</span>
@@ -865,7 +865,7 @@
                                         </li>
                                         <li class="d-flex align-items-center">
                                             <div class="flex-shrink-0">
-                                                <img src="assets/images/united-kingdom.svg" class="wh-30 rounded-circle" alt="united-kingdom">
+                                                <img src="/assets/images/united-kingdom.svg" class="wh-30 rounded-circle" alt="united-kingdom">
                                             </div>
                                             <div class="flex-grow-1 ms-3">
                                                 <span class="fw-medium d-block mb-2">United Kingdom</span>
@@ -878,7 +878,7 @@
                                         </li>
                                         <li class="d-flex align-items-center">
                                             <div class="flex-shrink-0">
-                                                <img src="assets/images/canada.svg" class="wh-30 rounded-circle" alt="canada">
+                                                <img src="/assets/images/canada.svg" class="wh-30 rounded-circle" alt="canada">
                                             </div>
                                             <div class="flex-grow-1 ms-3">
                                                 <span class="fw-medium d-block mb-2">Canada</span>
@@ -933,7 +933,7 @@
                                                 <td>
                                                     <a href="instructors" class="d-flex align-items-center">
                                                         <div class="flex-shrink-0">
-                                                            <img src="assets/images/user-42.jpg" class="wh-34 rounded-circle" alt="user">
+                                                            <img src="/assets/images/user-42.jpg" class="wh-34 rounded-circle" alt="user">
                                                         </div>
                                                         <div class="flex-grow-1 ms-2 position-relative top-1">
                                                             <h6 class="mb-0 fs-14 fw-medium">Oliver Khan</h6>
@@ -967,7 +967,7 @@
                                                 <td>
                                                     <a href="instructors" class="d-flex align-items-center">
                                                         <div class="flex-shrink-0">
-                                                            <img src="assets/images/user-43.jpg" class="wh-34 rounded-circle" alt="user">
+                                                            <img src="/assets/images/user-43.jpg" class="wh-34 rounded-circle" alt="user">
                                                         </div>
                                                         <div class="flex-grow-1 ms-2 position-relative top-1">
                                                             <h6 class="mb-0 fs-14 fw-medium">Ava Cooper</h6>
@@ -1001,7 +1001,7 @@
                                                 <td>
                                                     <a href="instructors" class="d-flex align-items-center">
                                                         <div class="flex-shrink-0">
-                                                            <img src="assets/images/user-44.jpg" class="wh-34 rounded-circle" alt="user">
+                                                            <img src="/assets/images/user-44.jpg" class="wh-34 rounded-circle" alt="user">
                                                         </div>
                                                         <div class="flex-grow-1 ms-2 position-relative top-1">
                                                             <h6 class="mb-0 fs-14 fw-medium">Isabella Evans</h6>
@@ -1035,7 +1035,7 @@
                                                 <td>
                                                     <a href="instructors" class="d-flex align-items-center">
                                                         <div class="flex-shrink-0">
-                                                            <img src="assets/images/user-45.jpg" class="wh-34 rounded-circle" alt="user">
+                                                            <img src="/assets/images/user-45.jpg" class="wh-34 rounded-circle" alt="user">
                                                         </div>
                                                         <div class="flex-grow-1 ms-2 position-relative top-1">
                                                             <h6 class="mb-0 fs-14 fw-medium">Mia Hughes</h6>
@@ -1069,7 +1069,7 @@
                                                 <td>
                                                     <a href="instructors" class="d-flex align-items-center">
                                                         <div class="flex-shrink-0">
-                                                            <img src="assets/images/user-46.jpg" class="wh-34 rounded-circle" alt="user">
+                                                            <img src="/assets/images/user-46.jpg" class="wh-34 rounded-circle" alt="user">
                                                         </div>
                                                         <div class="flex-grow-1 ms-2 position-relative top-1">
                                                             <h6 class="mb-0 fs-14 fw-medium">Noah Mitchell</h6>
@@ -1103,7 +1103,7 @@
                                                 <td>
                                                     <a href="instructors" class="d-flex align-items-center">
                                                         <div class="flex-shrink-0">
-                                                            <img src="assets/images/user-47.jpg" class="wh-34 rounded-circle" alt="user">
+                                                            <img src="/assets/images/user-47.jpg" class="wh-34 rounded-circle" alt="user">
                                                         </div>
                                                         <div class="flex-grow-1 ms-2 position-relative top-1">
                                                             <h6 class="mb-0 fs-14 fw-medium">Sophia Carter</h6>
@@ -1215,7 +1215,7 @@
 
                                                 <div class="d-flex align-items-center py-3">
                                                     <div class="flex-shrink-0">
-                                                        <img src="assets/images/courses-1.jpg" class="wh-130-113 rounded-3" alt="courses">
+                                                        <img src="/assets/images/courses-1.jpg" class="wh-130-113 rounded-3" alt="courses">
                                                     </div>
                                                     <div class="flex-grow-1 ms-3">
                                                         <span class="d-block mb-2 text-white">Python Programming</span>
@@ -1239,7 +1239,7 @@
                                                     </a>
                                                 </div>
                                             </div>
-                                            <img src="assets/images/shape.png" class="position-absolute top-0 end-0" alt="shape">
+                                            <img src="/assets/images/shape.png" class="position-absolute top-0 end-0" alt="shape">
                                         </div>
                                     </div>
                                     <div class="swiper-slide">
@@ -1249,7 +1249,7 @@
 
                                                 <div class="d-flex align-items-center py-3">
                                                     <div class="flex-shrink-0">
-                                                        <img src="assets/images/event-5.jpg" class="wh-130-113 rounded-3" alt="courses">
+                                                        <img src="/assets/images/event-5.jpg" class="wh-130-113 rounded-3" alt="courses">
                                                     </div>
                                                     <div class="flex-grow-1 ms-3">
                                                         <span class="d-block mb-2 text-white">Basic Python</span>
@@ -1273,7 +1273,7 @@
                                                     </a>
                                                 </div>
                                             </div>
-                                            <img src="assets/images/shape.png" class="position-absolute top-0 end-0" alt="shape">
+                                            <img src="/assets/images/shape.png" class="position-absolute top-0 end-0" alt="shape">
                                         </div>
                                     </div>
                                 </div>

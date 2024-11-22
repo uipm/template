@@ -14,13 +14,9 @@ import {
   SelectChangeEvent,
   Button,
 } from "@mui/material";
-
-import dynamic from "next/dynamic";
 import ShoppingCart from "./ShoppingCart";
 import PaymentMethod from "./PaymentMethod";
-const RichTextEditor = dynamic(() => import("@mantine/rte"), {
-  ssr: false,
-});
+import CustomEditor from "./CustomEditor";
 
 const Checkout: React.FC = () => {
   const [state, setState] = useState<string>("");
@@ -173,7 +169,7 @@ const Checkout: React.FC = () => {
 
                       <TextField
                         label="Enter email address"
-                        placeholder="E.g. ava@pro.io.vn"
+                        placeholder="E.g. ava@trezo.com"
                         variant="filled"
                         id="emailAddress"
                         name="emailAddress"
@@ -414,19 +410,8 @@ const Checkout: React.FC = () => {
                     >
                       Order Note (optional)
                     </Typography>
-
-                    <RichTextEditor
-                      id="rte"
-                      controls={[
-                        ["bold", "italic", "underline", "link", "image"],
-                        ["unorderedList", "h1", "h2", "h3"],
-                        ["sup", "sub"],
-                        ["alignLeft", "alignCenter", "alignRight"],
-                      ]}
-                      style={{
-                        minHeight: "200px",
-                      }}
-                    />
+ 
+                    <CustomEditor />
                   </Box>
                 </Grid>
               </Grid>

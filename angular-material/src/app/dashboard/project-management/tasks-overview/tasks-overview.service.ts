@@ -24,7 +24,7 @@ export class TasksOverviewService {
                         55, 44, 30, 12, 22
                     ],
                     chart: {
-                        height: 407,
+                        height: 374,
                         type: "pie"
                     },
                     labels: [

@@ -1,10 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import Card from "react-bootstrap/Card";
-import Form from "react-bootstrap/Form";
-import Toast from "react-bootstrap/Toast";
-import ToastContainer from "react-bootstrap/ToastContainer";
+import { Card, Form, Toast, ToastContainer } from "react-bootstrap";
 import Image from "next/image";
 
 const Placement = () => {
@@ -12,7 +9,7 @@ const Placement = () => {
 
   return (
     <>
-      <Card className="card bg-white border-0 rounded-3 mb-4">
+      <Card className="bg-white border-0 rounded-3 mb-4">
         <Card.Body className="p-4">
           <div className="mb-3 mb-lg-4">
             <h3 className="mb-0">Placement</h3>

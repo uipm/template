@@ -1,7 +1,6 @@
 "use client";
 
-import React from "react";
-import Card from "react-bootstrap/Card";
+import { Card } from "react-bootstrap";
 
 const About = () => {
   return (
@@ -31,11 +30,13 @@ const About = () => {
             experience working at VivoTech, where they collaborated with
             cross-functional teams to deliver user-centric solutions for various
             clients. This early exposure provided invaluable insights into the
-            complexities of design processes and solidified Alice commitment
-            to enhancing user experiences.
+            complexities of design processes and solidified Alice commitment to
+            enhancing user experiences.
           </p>
 
-          <h4 className="fs-16 fw-medium mb-2 pb-1">Expertise in UX/UI Design</h4>
+          <h4 className="fs-16 fw-medium mb-2 pb-1">
+            Expertise in UX/UI Design
+          </h4>
           <p>
             Driven by a desire for continuous growth, Alice delved deeper into
             the nuances of UX/UI design, staying abreast of emerging trends,

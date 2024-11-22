@@ -10,7 +10,7 @@
         
         .logo {
             border-bottom: 1px solid var(--borderColor);
-            padding: 22px 25px 19px;
+            padding: 24px 25px 20px;
             position: absolute;
             z-index: 2;
             right: 0;
@@ -20,6 +20,9 @@
             a {
                 transition: unset;
                 
+                img {
+                    left: 0;
+                }
                 span {
                     margin-left: 8px;
                     font-size: 24px;
@@ -67,6 +70,9 @@
             .ng-scroll-content {
                 padding-right: 0 !important;
             }
+            scrollbar-x {
+                display: none !important;
+            }
         }
         .sidebar-inner {
             padding: {
@@ -79,6 +85,7 @@
                 .sub-title {
                     font-size: 12px;
                     color: #8695AA;
+                    position: relative;
                     margin-bottom: 10px;
 
                     &:not(:first-child) {
@@ -108,27 +115,29 @@
                                 weight: 500;
                             };
                             padding: {
-                                bottom: 8px;
+                                bottom: 9px;
                                 right: 30px;
-                                left: 41px;
-                                top: 8px;
+                                left: 14px;
+                                top: 9px;
                             };
                             i {
                                 transition: var(--transition);
-                                transform: translateY(-50%);
                                 color: var(--bodyColor);
-                                position: absolute;
+                                margin-right: 7px;
                                 font-size: 22px;
                                 line-height: 1;
-                                left: 12px;
-                                top: 50%;
+                            }
+                            .title {
+                                line-height: 1;
                             }
                             .mat-content {
                                 display: block;
             
                                 .mat-expansion-panel-header-title, .mat-expansion-panel-header-description {
-                                    display: block;
+                                    display: flex;
                                     margin-right: 0;
+                                    white-space: nowrap;
+                                    align-items: center;
                                     color: var(--blackColor);
                                     transition: var(--transition);
                                 }
@@ -173,18 +182,17 @@
                                 }
                             }
                             .trezo-badge {
-                                top: 50%;
                                 padding: 0;
-                                right: 34px;
                                 width: 20px;
                                 height: 20px;
                                 font-size: 11px;
                                 line-height: 20px;
-                                position: absolute;
                                 color: var(--orangeColor);
-                                transform: translateY(-50%);
                                 background-color: #FFF5ED;
-                                
+                                margin: {
+                                    left: auto;
+                                    right: 4px;
+                                };
                                 &.style-two {
                                     color: #00b69b;
                                     background: rgba(0, 182, 155, 0.07);
@@ -230,6 +238,7 @@
                             }
                             .mat-expansion-panel-header {
                                 border-radius: 7px;
+                                white-space: nowrap;
                                 color: var(--bodyColor);
                                 font: {
                                     size: var(--fontSize);
@@ -313,6 +322,7 @@
                                 };
                                 .sidemenu-item {
                                     margin-bottom: 4px;
+                                    white-space: nowrap;
 
                                     .sidemenu-link {
                                         display: block;
@@ -415,15 +425,17 @@
                     .sidebar-menu-link {
                         transition: var(--transition);
                         color: var(--blackColor);
+                        align-items: center;
+                        white-space: nowrap;
                         margin-bottom: 5px;
                         position: relative;
                         border-radius: 7px;
-                        display: block;
+                        display: flex;
                         padding: {
-                            bottom: 11.5px;
+                            bottom: 9px;
                             right: 30px;
-                            top: 11.5px;
-                            left: 40px;
+                            left: 14px;
+                            top: 9px;
                         };
                         font: {
                             size: var(--fontSize);
@@ -431,13 +443,13 @@
                         };
                         i {
                             transition: var(--transition);
-                            transform: translateY(-50%);
                             color: var(--bodyColor);
-                            position: absolute;
+                            margin-right: 6px;
                             font-size: 22px;
                             line-height: 1;
-                            left: 12px;
-                            top: 50%;
+                        }
+                        .title {
+                            line-height: 1;
                         }
                         &:hover, &.active {
                             color: var(--primaryColor);
@@ -692,7 +704,8 @@
             box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px !important;
         }
         &.component-rtl-enabled {
-            text-align: end;
+            text-align: start;
+            direction: rtl;
             left: auto;
             right: 0;
 
@@ -711,9 +724,13 @@
                 left: 25px;
             }
             .ng-scrollbar {
+                width: 100% !important;
                 height: 100vh;
     
                 .ng-scroll-content {
+                    padding: 0;
+                    width: 100% !important;
+                    
                     .ng-scrollbar-sticky {
                         right: auto;
                         left: 0;
@@ -721,17 +738,22 @@
                 }
             }
             .sidebar-inner {
+                text-align: start;
+                direction: rtl;
+                
                 .sidebar-menu {
                     .mat-accordion {
                         .mat-expansion-panel {
                             .mat-expansion-panel-header {
                                 padding: {
-                                    right: 41px;
+                                    right: 14px;
                                     left: 30px;
                                 };
                                 i {
-                                    left: auto;
-                                    right: 12px;
+                                    margin: {
+                                        right: 0;
+                                        left: 7px;
+                                    };
                                 }
                                 .mat-expansion-indicator {
                                     right: auto;
@@ -742,8 +764,10 @@
                                     }
                                 }
                                 .trezo-badge {
-                                    right: auto;
-                                    left: 34px;
+                                    margin: {
+                                        left: 4px;
+                                        right: auto;
+                                    };
                                 }
                             }
                             &.mat-expanded {
@@ -804,12 +828,14 @@
                         }
                         .sidebar-menu-link {
                             padding: {
-                                right: 40px;
+                                right: 14px;
                                 left: 30px;
                             };
                             i {
-                                left: auto;
-                                right: 12px;
+                                margin: {
+                                    right: 0;
+                                    left: 6px;
+                                };
                             }
                         }
                     }
@@ -818,25 +844,6 @@
             &.right-sidebar {
                 left: 0;
                 right: auto;
-            }
-        }
-    }
-    .horizontal-menu-dashboard {
-        .sidebar-area {
-            left: -100%;
-
-            &.right-sidebar {
-                left: auto;
-                right: -100%;
-            }
-            &.component-rtl-enabled {
-                left: auto;
-                right: -100%;
-    
-                &.right-sidebar {
-                    left: -100%;
-                    right: auto;
-                }
             }
         }
     }
@@ -877,12 +884,10 @@
                                 padding: {
                                     bottom: 8px;
                                     right: 25px;
-                                    left: 37px;
                                     top: 8px;
                                 };
                                 i {
                                     font-size: 18px;
-                                    left: 12px;
                                 }
                                 .mat-expansion-indicator {
                                     right: 8px;
@@ -892,7 +897,6 @@
                                     }
                                 }
                                 .trezo-badge {
-                                    right: 28px;
                                     width: 18px;
                                     height: 18px;
                                     font-size: 11px;
@@ -935,12 +939,10 @@
                             padding: {
                                 bottom: 8px;
                                 right: 25px;
-                                left: 37px;
                                 top: 8px;
                             };
                             i {
                                 font-size: 18px;
-                                left: 12px;
                             }
                         }
                     }
@@ -970,20 +972,12 @@
                             .mat-expansion-panel {
                                 .mat-expansion-panel-header {
                                     padding: {
-                                        right: 37px;
+                                        right: 14px;
                                         left: 25px;
                                     };
-                                    i {
-                                        left: auto;
-                                        right: 12px;
-                                    }
                                     .mat-expansion-indicator {
                                         right: auto;
                                         left: 8px;
-                                    }
-                                    .trezo-badge {
-                                        right: auto;
-                                        left: 28px;
                                     }
                                 }
                                 .mat-expansion-panel-body {
@@ -1015,13 +1009,9 @@
                             }
                             .sidebar-menu-link {
                                 padding: {
-                                    right: 37px;
+                                    right: 14px;
                                     left: 25px;
                                 };
-                                i {
-                                    left: auto;
-                                    right: 12px;
-                                }
                             }
                         }
                     }
@@ -1134,18 +1124,15 @@
     ::ng-deep {
         .sidebar-area {
             &.active, &.hide-sidebar {
-                width: 60px;
+                width: 100px;
     
                 .logo {
-                    padding: {
-                        left: 12px;
-                        right: 12px;
-                    };
                     a {
-                        left: 5px;
-
+                        img {
+                            left: 11px;
+                        }
                         span {
-                            display: none;
+                            opacity: 0;
                         }
                     }
                 }
@@ -1154,30 +1141,30 @@
                     visibility: hidden;
                 }
                 .sidebar-inner {
-                    padding: {
-                        left: 12px;
-                        right: 12px;
-                    };
                     .sidebar-menu {
                         .sub-title {
-                            display: none !important;
+                            font-size: 0;
+                            height: 15px;
+
+                            &::before {
+                                top: 50%;
+                                width: 50px;
+                                content: '';
+                                height: 1px;
+                                position: absolute;
+                                transform: translateY(-50%);
+                                background: var(--borderColor);
+                            }
                         }
                         .mat-accordion {
                             .mat-expansion-panel {
-                                margin-bottom: 5px;
-
                                 .mat-expansion-panel-header {
-                                    padding: 0;
-                                    width: 36px;
-                                    height: 36px;
+                                    padding: 9px 6px 9px 14px;
 
-                                    i {
-                                        text-align: center;
-                                        right: 0;
-                                        left: 0;
-                                    }
                                     .title {
-                                        display: none;
+                                        transition: var(--transition);
+                                        opacity: 0;
+                                        width: 0;
                                     }
                                     .mat-expansion-indicator {
                                         display: none;
@@ -1191,18 +1178,12 @@
                                 }
                             }
                             .sidebar-menu-link {
-                                padding: 0;
-                                width: 36px;
-                                height: 36px;
-                                margin-bottom: 5px;
+                                padding: 9px 6px 9px 14px;
         
-                                i {
-                                    left: 0;
-                                    right: 0;
-                                    text-align: center;
-                                }
                                 .title {
-                                    display: none;
+                                    transition: var(--transition);
+                                    opacity: 0;
+                                    width: 0;
                                 }
                             }
                         }
@@ -1212,15 +1193,12 @@
                     width: 260px;
 
                     .logo {
-                        padding: {
-                            left: 25px;
-                            right: 25px;
-                        };
                         a {
-                            left: 0;
-
+                            img {
+                                left: 0;
+                            }
                             span {
-                                display: inline-block;
+                                opacity: 1;
                             }
                         }
                     }
@@ -1229,33 +1207,24 @@
                         visibility: visible;
                     }
                     .sidebar-inner {
-                        padding: {
-                            left: 25px;
-                            right: 25px;
-                        };
                         .sidebar-menu {
                             .sub-title {
-                                display: block !important;
+                                font-size: 12px;
+
+                                &::before {
+                                    display: none;
+                                }
                             }
                             .mat-accordion {
                                 .mat-expansion-panel {
-                                    margin-bottom: 5px;
-
                                     .mat-expansion-panel-header {
-                                        height: auto;
-                                        width: auto;
                                         padding: {
-                                            bottom: 8px;
                                             right: 30px;
-                                            left: 41px;
-                                            top: 8px;
+                                            left: 14px;
                                         };
-                                        i {
-                                            right: auto;
-                                            left: 12px;
-                                        }
                                         .title {
-                                            display: block;
+                                            opacity: 1;
+                                            width: auto;
                                         }
                                         .mat-expansion-indicator {
                                             display: inline-block;
@@ -1269,21 +1238,13 @@
                                     }
                                 }
                                 .sidebar-menu-link {
-                                    margin-bottom: 5px;
-                                    height: auto;
-                                    width: auto;
                                     padding: {
-                                        bottom: 11.5px;
                                         right: 30px;
-                                        top: 11.5px;
-                                        left: 40px;
+                                        left: 14px;
                                     };
-                                    i {
-                                        right: auto;
-                                        left: 12px;
-                                    }
                                     .title {
-                                        display: block;
+                                        opacity: 1;
+                                        width: auto;
                                     }
                                 }
                             }
@@ -1298,43 +1259,43 @@
             }
             &.component-rtl-enabled {
                 &.active, &.hide-sidebar {
-                    .logo {
-                        a {
-                            left: auto;
-                            right: 5px;
+                    .sidebar-inner {
+                        .sidebar-menu {
+                            .mat-accordion {
+                                .mat-expansion-panel {
+                                    .mat-expansion-panel-header {
+                                        padding: {
+                                            left: 6px;
+                                            right: 14px;
+                                        };
+                                    }
+                                }
+                                .sidebar-menu-link {
+                                    padding: {
+                                        left: 6px;
+                                        right: 14px;
+                                    };
+                                }
+                            }
                         }
                     }
                     &:hover {
-                        .logo {
-                            a {
-                                left: auto;
-                                right: 0;
-                            }
-                        }
                         .sidebar-inner {
                             .sidebar-menu {
                                 .mat-accordion {
                                     .mat-expansion-panel {
                                         .mat-expansion-panel-header {
                                             padding: {
-                                                right: 41px;
+                                                right: 14px;
                                                 left: 30px;
                                             };
-                                            i {
-                                                right: 12px;
-                                                left: auto;
-                                            }
                                         }
                                     }
                                     .sidebar-menu-link {
                                         padding: {
-                                            right: 40px;
+                                            right: 14px;
                                             left: 30px;
                                         };
-                                        i {
-                                            right: 12px;
-                                            left: auto;
-                                        }
                                     }
                                 }
                             }
@@ -1355,7 +1316,7 @@
             width: 240px;
 
             &.active, &.hide-sidebar {
-                width: 60px;
+                width: 100px;
     
                 &:hover {
                     width: 240px;

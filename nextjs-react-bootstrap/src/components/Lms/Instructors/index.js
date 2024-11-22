@@ -1,15 +1,9 @@
 "use client";
 
 import React, { useState } from "react";
+import { Card, Form, Table, Button } from "react-bootstrap";
 import SearchForm from "./SearchForm";
 import Pagination from "./Pagination";
-import Table from "react-bootstrap/Table";
-import Card from "react-bootstrap/Card";
-import { MaterialSymbol } from "react-material-symbols";
-import "react-material-symbols/rounded";
-import Offcanvas from "react-bootstrap/Offcanvas";
-import Button from "react-bootstrap/Button";
-import Form from "react-bootstrap/Form";
 import Image from "next/image";
 
 const instructorsData = [
@@ -70,7 +64,7 @@ const instructorsData = [
         star: "ri-star-half-fill",
       },
     ],
-    status: 'deactive',
+    status: "deactive",
   },
   {
     id: "#A-2951",
@@ -99,7 +93,7 @@ const instructorsData = [
         star: "ri-star-line",
       },
     ],
-    status: 'active',
+    status: "active",
   },
   {
     id: "#A-7342",
@@ -128,7 +122,7 @@ const instructorsData = [
         star: "ri-star-half-fill",
       },
     ],
-    status: 'active',
+    status: "active",
   },
   {
     id: "#A-1217",
@@ -157,7 +151,7 @@ const instructorsData = [
         star: "ri-star-fill",
       },
     ],
-    status: 'active',
+    status: "active",
   },
   {
     id: "#A-1364",
@@ -186,7 +180,7 @@ const instructorsData = [
         star: "ri-star-half-fill",
       },
     ],
-    status: 'deactive',
+    status: "deactive",
   },
   {
     id: "#A-2951",
@@ -215,7 +209,7 @@ const instructorsData = [
         star: "ri-star-line",
       },
     ],
-    status: 'active',
+    status: "active",
   },
   {
     id: "#A-7342",
@@ -244,7 +238,7 @@ const instructorsData = [
         star: "ri-star-half-fill",
       },
     ],
-    status: 'active',
+    status: "active",
   },
   {
     id: "#A-1217",
@@ -273,7 +267,7 @@ const instructorsData = [
         star: "ri-star-fill",
       },
     ],
-    status: 'active',
+    status: "active",
   },
   {
     id: "#A-1364",
@@ -302,15 +296,16 @@ const instructorsData = [
         star: "ri-star-half-fill",
       },
     ],
-    status: 'deactive',
+    status: "deactive",
   },
 ];
 
 const Instructors = () => {
-  const [show, setShow] = useState(false);
-
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
+  // Modal
+  const [isShowModal, setShowModal] = useState("false");
+  const handleToggleShowModal = () => {
+    setShowModal(!isShowModal);
+  };
 
   return (
     <>
@@ -322,7 +317,7 @@ const Instructors = () => {
 
               <button
                 className="btn btn-outline-primary py-1 px-2 px-sm-4 fs-14 fw-medium rounded-3 hover-bg"
-                onClick={handleShow}
+                onClick={handleToggleShowModal}
               >
                 <span className="py-sm-1 d-block">
                   <i className="ri-add-line"></i>
@@ -407,27 +402,21 @@ const Instructors = () => {
                         <td>
                           <div className="d-flex justify-content-end align-items-center gap-1">
                             <button className="ps-0 border-0 bg-transparent lh-1 position-relative top-2">
-                              <MaterialSymbol
-                                icon="visibility"
-                                size={16}
-                                className="text-primary"
-                              />
+                              <span className="material-symbols-outlined fs-16 text-primary">
+                                visibility
+                              </span>
                             </button>
 
                             <button className="ps-0 border-0 bg-transparent lh-1 position-relative top-2">
-                              <MaterialSymbol
-                                icon="edit"
-                                size={16}
-                                className="text-body"
-                              />
+                              <span className="material-symbols-outlined fs-16 text-body">
+                                edit
+                              </span>
                             </button>
 
                             <button className="ps-0 border-0 bg-transparent lh-1 position-relative top-2">
-                              <MaterialSymbol
-                                icon="delete"
-                                size={16}
-                                className="text-danger"
-                              />
+                              <span className="material-symbols-outlined fs-16 text-danger">
+                                delete
+                              </span>
                             </button>
                           </div>
                         </td>
@@ -443,100 +432,108 @@ const Instructors = () => {
         </Card.Body>
       </Card>
 
-      {/* Offcanvas */}
-      <Offcanvas show={show} onHide={handleClose} placement="end">
-        <Offcanvas.Header className="border-bottom p-4" closeButton>
-          <Offcanvas.Title className="fs-18 mb-0">Add New Instructor</Offcanvas.Title>
-        </Offcanvas.Header>
+      {/* Modal */}
+      <div className={`custom-modal right ${isShowModal ? "" : "show"}`}>
+        <div className="custom-modal-content position-relative z-3">
+          <div className="border-bottom py-3 px-4 d-flex align-items-center justify-content-between">
+            <h3 className="fs-18 mb-0">Add New Instructor</h3>
 
-        <Offcanvas.Body className="p-4">
-          <Form>
-            <Form.Group className="mb-4">
-              <Form.Label className="label">ID No</Form.Label>
-              <Form.Control
-                type="text"
-                className="text-dark"
-                placeholder="ID No"
-              />
-            </Form.Group>
+            <div className="close-link" onClick={handleToggleShowModal}>
+              <span className="material-symbols-outlined">close</span>
+            </div>
+          </div>
 
-            <Form.Group className="mb-4">
-              <Form.Label className="label">Name</Form.Label>
-              <Form.Control
-                type="text"
-                className="text-dark"
-                placeholder="Name"
-              />
-            </Form.Group>
+          <div className="p-4">
+            <Form>
+              <Form.Group className="mb-4">
+                <Form.Label className="label">ID No</Form.Label>
+                <Form.Control
+                  type="text"
+                  className="text-dark"
+                  placeholder="ID No"
+                />
+              </Form.Group>
 
-            <Form.Group className="mb-4">
-              <Form.Label className="label">Courses</Form.Label>
-              <Form.Control
-                type="text"
-                className="text-dark"
-                placeholder="Courses"
-              />
-            </Form.Group>
+              <Form.Group className="mb-4">
+                <Form.Label className="label">Name</Form.Label>
+                <Form.Control
+                  type="text"
+                  className="text-dark"
+                  placeholder="Name"
+                />
+              </Form.Group>
 
-            <Form.Group className="mb-4">
-              <Form.Label className="label">Total Earnings</Form.Label>
-              <Form.Control
-                type="text"
-                className="text-dark"
-                placeholder="Total Earnings"
-              />
-            </Form.Group>
+              <Form.Group className="mb-4">
+                <Form.Label className="label">Courses</Form.Label>
+                <Form.Control
+                  type="text"
+                  className="text-dark"
+                  placeholder="Courses"
+                />
+              </Form.Group>
 
-            <Form.Group className="mb-4">
-              <Form.Label className="label">Email</Form.Label>
-              <Form.Control
-                type="email"
-                className="text-dark"
-                placeholder="Email"
-              />
-            </Form.Group>
- 
-            <Form.Group className="mb-4">
-              <Form.Label className="label">Ratings</Form.Label>
-              <Form.Select
-                className="form-control text-dark"
-                aria-label="Default select example"
-              > 
-                <option value="0">1</option>
-                <option value="1">2</option>
-                <option value="2">3</option>
-                <option value="3">4</option>
-                <option value="4">5</option>
-              </Form.Select>
-            </Form.Group>
+              <Form.Group className="mb-4">
+                <Form.Label className="label">Total Earnings</Form.Label>
+                <Form.Control
+                  type="text"
+                  className="text-dark"
+                  placeholder="Total Earnings"
+                />
+              </Form.Group>
 
-            <Form.Group className="mb-4">
-              <Form.Label className="label">Status</Form.Label>
-              <Form.Select
-                className="form-control text-dark"
-                aria-label="Default select example"
-              >
-                <option>Select</option>
-                <option value="0">Active</option>
-                <option value="1">Deactive</option> 
-              </Form.Select>
-            </Form.Group>
- 
-            <Form.Group className="d-flex gap-3">
-              <Button
-                variant="primary"
-                type="submit"
-                className="text-white fw-semibold py-2 px-2 px-sm-3"
-              >
-                <span className="py-sm-1 d-block">
-                  <i className="ri-add-line text-white"></i>{" "}
-                  <span>Create New Instructor</span>
-                </span>
-              </Button>
-            </Form.Group>
-          </Form>
-        </Offcanvas.Body>
-      </Offcanvas>
+              <Form.Group className="mb-4">
+                <Form.Label className="label">Email</Form.Label>
+                <Form.Control
+                  type="email"
+                  className="text-dark"
+                  placeholder="Email"
+                />
+              </Form.Group>
+
+              <Form.Group className="mb-4">
+                <Form.Label className="label">Ratings</Form.Label>
+                <Form.Select
+                  className="form-control text-dark"
+                  aria-label="Default select example"
+                >
+                  <option value="0">1</option>
+                  <option value="1">2</option>
+                  <option value="2">3</option>
+                  <option value="3">4</option>
+                  <option value="4">5</option>
+                </Form.Select>
+              </Form.Group>
+
+              <Form.Group className="mb-4">
+                <Form.Label className="label">Status</Form.Label>
+                <Form.Select
+                  className="form-control text-dark"
+                  aria-label="Default select example"
+                >
+                  <option>Select</option>
+                  <option value="0">Active</option>
+                  <option value="1">Deactive</option>
+                </Form.Select>
+              </Form.Group>
+
+              <Form.Group className="d-flex gap-3">
+                <Button
+                  variant="primary"
+                  type="submit"
+                  className="text-white fw-semibold py-2 px-2 px-sm-3"
+                >
+                  <span className="py-sm-1 d-block">
+                    <i className="ri-add-line text-white"></i>{" "}
+                    <span>Create New Instructor</span>
+                  </span>
+                </Button>
+              </Form.Group>
+            </Form>
+          </div>
+        </div>
+
+        <div className="close-outside" onClick={handleToggleShowModal}></div>
+      </div>
     </>
   );
 };

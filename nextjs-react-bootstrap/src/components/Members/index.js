@@ -1,12 +1,8 @@
 "use client";
 
-import React from "react";
+import { Card, Table } from "react-bootstrap";
 import Image from "next/image";
-import Card from "react-bootstrap/Card";
-import Table from "react-bootstrap/Table";
 import Pagination from "./Pagination";
-import { MaterialSymbol } from "react-material-symbols";
-import "react-material-symbols/rounded";
 
 const membersData = [
   {
@@ -153,15 +149,13 @@ const Members = () => {
               <Table className="align-middle">
                 <thead>
                   <tr>
-                    <th scope="col">
-                      ID
-                    </th>
+                    <th scope="col">ID</th>
                     <th scope="col">Member</th>
                     <th scope="col">Email</th>
                     <th scope="col">Phone</th>
                     <th scope="col">Location</th>
                     <th scope="col">Joining Date</th>
-                    <th scope="col">Last Active</th> 
+                    <th scope="col">Last Active</th>
                     <th scope="col">Action</th>
                   </tr>
                 </thead>
@@ -170,9 +164,7 @@ const Members = () => {
                   {membersData &&
                     membersData.slice(0, 10).map((value, i) => (
                       <tr key={i}>
-                        <td>
-                          {value.id}
-                        </td>
+                        <td>{value.id}</td>
 
                         <td>
                           <div className="d-flex align-items-center">
@@ -200,31 +192,25 @@ const Members = () => {
                         <td>{value.joiningDate}</td>
 
                         <td>{value.lastActive}</td>
- 
+
                         <td>
                           <div className="d-flex align-items-center gap-1">
                             <button className="ps-0 border-0 bg-transparent lh-1 position-relative top-2">
-                              <MaterialSymbol
-                                icon="visibility"
-                                size={16}
-                                className="text-primary"
-                              />
+                              <span className="material-symbols-outlined fs-16 text-primary">
+                                visibility
+                              </span>
                             </button>
 
                             <button className="ps-0 border-0 bg-transparent lh-1 position-relative top-2">
-                              <MaterialSymbol
-                                icon="edit"
-                                size={16}
-                                className="text-body"
-                              />
+                              <span className="material-symbols-outlined fs-16 text-body">
+                                edit
+                              </span>
                             </button>
 
                             <button className="ps-0 border-0 bg-transparent lh-1 position-relative top-2">
-                              <MaterialSymbol
-                                icon="delete"
-                                size={16}
-                                className="text-danger"
-                              />
+                              <span className="material-symbols-outlined fs-16 text-danger">
+                                delete
+                              </span>
                             </button>
                           </div>
                         </td>

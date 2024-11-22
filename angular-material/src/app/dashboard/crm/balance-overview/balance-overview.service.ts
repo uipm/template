@@ -32,7 +32,7 @@ export class BalanceOverviewService {
                     ],
                     chart: {
                         type: "area",
-                        height: 350,
+                        height: 365,
                         zoom: {
                             enabled: false
                         },

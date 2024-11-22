@@ -3,6 +3,7 @@
 import * as React from "react";
 import { Box } from "@mui/material";
 import Link from "next/link";
+import Image from "next/image";
 
 const Cta: React.FC = () => {
   return (
@@ -29,9 +30,9 @@ const Cta: React.FC = () => {
           }}
         >
           <div className="fp-cta-content text-center">
-            <h2>Unlock a world of possibilities with pro.io Dashboard.</h2>
+            <h2>Unlock a world of possibilities with Trezo Dashboard.</h2>
             <p>
-              Experience the difference with pro.io Dashboard. Sign up for a free
+              Experience the difference with Trezo Dashboard. Sign up for a free
               trial today and see how our intuitive platform can revolutionize
               your data analysis process.
             </p>
@@ -44,10 +45,20 @@ const Cta: React.FC = () => {
 
           {/* shape Images */}
           <div className="shape1">
-            <img src="/images/front-pages/shape1.png" alt="shape1" />
+            <Image
+              src="/images/front-pages/shape1.png"
+              alt="shape1"
+              width={530}
+              height={530}
+            />
           </div>
           <div className="shape2">
-            <img src="/images/front-pages/shape2.png" alt="shape2" />
+            <Image
+              src="/images/front-pages/shape2.png"
+              alt="shape2"
+              width={447}
+              height={453}
+            />
           </div>
         </Box>
       </Box>

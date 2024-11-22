@@ -1,19 +1,12 @@
 "use client";
 
-import React from "react";
-import Form from "react-bootstrap/Form";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-import dynamic from 'next/dynamic'
-const RichTextEditor = dynamic(() => import('@mantine/rte'), {
-  ssr: false,
-})
+import { Row, Col, Card, Form } from "react-bootstrap";
 
 const CreateSeller = () => {
   return (
     <>
-      <div className="card bg-white border-0 rounded-3 mb-4">
-        <div className="card-body p-4">
+      <Card className="bg-white border-0 rounded-3 mb-4">
+        <Card.Body className="p-4">
           <Form>
             <Row>
               <Col sm={6} lg={4}>
@@ -74,10 +67,10 @@ const CreateSeller = () => {
                     className="form-control h-55"
                     aria-label="Default select example"
                   >
-                    <option value="0">State</option>
-                    <option value="1">New York</option>
-                    <option value="2">Tokyo</option>
-                    <option value="3">Amsterdam</option>
+                    <option defaultValue="0">State</option>
+                    <option defaultValue="1">New York</option>
+                    <option defaultValue="2">Tokyo</option>
+                    <option defaultValue="3">Amsterdam</option>
                   </Form.Select>
                 </Form.Group>
               </Col>
@@ -89,10 +82,10 @@ const CreateSeller = () => {
                     className="form-control h-55"
                     aria-label="Default select example"
                   >
-                    <option value="0">Select</option>
-                    <option value="1">USA</option>
-                    <option value="2">Canada</option>
-                    <option value="3">Spain</option>
+                    <option defaultValue="0">Select</option>
+                    <option defaultValue="1">USA</option>
+                    <option defaultValue="2">Canada</option>
+                    <option defaultValue="3">Spain</option>
                   </Form.Select>
                 </Form.Group>
               </Col>
@@ -123,18 +116,7 @@ const CreateSeller = () => {
                 <Form.Group className="mb-4">
                   <Form.Label className="label text-secondary fs-14">Description</Form.Label>
 
-                  <RichTextEditor
-                    id="rte"
-                    controls={[
-                      ['bold', 'italic', 'underline', 'link', 'image'],
-                      ['unorderedList', 'h1', 'h2', 'h3'],
-                      ['sup', 'sub'],
-                      ['alignLeft', 'alignCenter', 'alignRight'],
-                    ]}
-                    style={{
-                      minHeight: '285px'
-                    }}
-                  />
+                  <Form.Control as="textarea" rows={6} placeholder="Type description here..." /> 
                 </Form.Group>
               </Col>
 
@@ -144,7 +126,7 @@ const CreateSeller = () => {
 
                   <div className="form-control h-100 text-center position-relative p-4 p-lg-5">
                     <div className="product-upload">
-                      <label for="file-upload" className="file-upload mb-0">
+                      <label htmlFor="file-upload" className="file-upload mb-0">
                         <i className="ri-folder-image-line bg-primary bg-opacity-10 p-2 rounded-1 text-primary"></i>
                         <span className="d-block text-body fs-14">
                           Drag and drop an image or{" "}
@@ -173,8 +155,8 @@ const CreateSeller = () => {
               </Col>
             </Row>
           </Form>
-        </div>
-      </div>
+        </Card.Body>
+      </Card>
     </>
   );
 };

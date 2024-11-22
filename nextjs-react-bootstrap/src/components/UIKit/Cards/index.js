@@ -1,11 +1,8 @@
 "use client";
 
-import React from "react";
+import { Row, Col, Card } from "react-bootstrap";
 import Link from "next/link";
 import Image from "next/image";
-import Card from "react-bootstrap/Card";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
 
 const Cards = () => {
   return (

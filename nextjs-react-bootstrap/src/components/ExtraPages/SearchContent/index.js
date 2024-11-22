@@ -1,16 +1,13 @@
 "use client";
 
-import React from "react";
 import Link from "next/link";
-import Image from "next/image";
-import { MaterialSymbol } from "react-material-symbols";
-import "react-material-symbols/rounded";
+import { Card } from "react-bootstrap";
 
 const SearchContent = () => {
   return (
     <>
-      <div className="card bg-white border-0 rounded-3 mb-4">
-        <div className="card-body p-4">
+      <Card className="bg-white border-0 rounded-3 mb-4">
+        <Card.Body className="p-4">
           <h3 className="mb-3 mb-lg-4">
             120 <span className="text-body">results found for</span> “Ipsum”
           </h3>
@@ -37,13 +34,13 @@ const SearchContent = () => {
               It is a long established fact that a reader will be distracted by
               the readable content of a page when looking at its layout. The
               point of using Lorem Ipsum is that it has a more-or-less normal
-              distribution of letters, as opposed to using Content here,
-              content here making it look like readable English. Many desktop
-              publishing packages and web page editors now use Lorem Ipsum as
-              their default model text, and a search for lorem ipsum will
-              uncover many web sites still in their infancy. Various versions
-              have evolved over the years, sometimes by accident, sometimes on
-              purpose (injected humour and the like).
+              distribution of letters, as opposed to using Content here, content
+              here making it look like readable English. Many desktop publishing
+              packages and web page editors now use Lorem Ipsum as their default
+              model text, and a search for lorem ipsum will uncover many web
+              sites still in their infancy. Various versions have evolved over
+              the years, sometimes by accident, sometimes on purpose (injected
+              humour and the like).
             </p>
           </div>
 
@@ -65,8 +62,8 @@ const SearchContent = () => {
               Bonorum et Malorum (The Extremes of Good and Evil) by Cicero,
               written in 45 BC. This book is a treatise on the theory of ethics,
               very popular during the Renaissance. The first line of Lorem
-              Ipsum, Lorem ipsum dolor sit amet, comes from a line in
-              section 1.10.32.
+              Ipsum, Lorem ipsum dolor sit amet, comes from a line in section
+              1.10.32.
             </p>
           </div>
 
@@ -77,10 +74,10 @@ const SearchContent = () => {
             <p>
               There are many variations of passages of Lorem Ipsum available,
               but the majority have suffered alteration in some form, by
-              injected humour, or randomised words which do look even
-              slightly believable. If you are going to use a passage of Lorem
-              Ipsum, you need to be sure there isn anything embarrassing
-              hidden in the middle of text.
+              injected humour, or randomised words which do look even slightly
+              believable. If you are going to use a passage of Lorem Ipsum, you
+              need to be sure there isn anything embarrassing hidden in the
+              middle of text.
             </p>
             <p>
               All the Lorem Ipsum generators on the Internet tend to repeat
@@ -104,10 +101,12 @@ const SearchContent = () => {
                     href="#"
                     aria-label="Previous"
                   >
-                    <MaterialSymbol icon="keyboard_arrow_left" />
+                    <span className="material-symbols-outlined">
+                      keyboard_arrow_left
+                    </span>
                   </Link>
                 </li>
-                
+
                 <li className="page-item">
                   <Link className="page-link active" href="#">
                     1
@@ -133,19 +132,17 @@ const SearchContent = () => {
                 </li>
 
                 <li className="page-item">
-                  <Link
-                    className="page-link icon"
-                    href="#"
-                    aria-label="Next"
-                  >
-                    <MaterialSymbol icon="keyboard_arrow_right" />
+                  <Link className="page-link icon" href="#" aria-label="Next">
+                    <span className="material-symbols-outlined">
+                      keyboard_arrow_right
+                    </span>
                   </Link>
                 </li>
               </ul>
             </nav>
           </div>
-        </div>
-      </div>
+        </Card.Body>
+      </Card>
     </>
   );
 };

@@ -1,9 +1,7 @@
 "use client";
 
-import React from "react";
+import { Table } from "react-bootstrap";
 import Link from "next/link";
-import Card from "react-bootstrap/Card";
-import Table from "react-bootstrap/Table";
 import Image from "next/image";
 
 const Connections = () => {
