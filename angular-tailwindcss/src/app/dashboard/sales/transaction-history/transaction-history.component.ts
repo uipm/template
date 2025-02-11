@@ -3,7 +3,6 @@ import { NgIf } from '@angular/common';
 
 @Component({
     selector: 'app-transaction-history',
-    standalone: true,
     imports: [NgIf],
     templateUrl: './transaction-history.component.html',
     styleUrl: './transaction-history.component.scss'

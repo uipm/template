@@ -1,13 +1,11 @@
 import { Component } from '@angular/core';
-import { RouterLink } from '@angular/router';
 import { CarouselModule, OwlOptions } from 'ngx-owl-carousel-o';
 import { NgClass, NgFor, NgIf } from '@angular/common';
 import { CustomizerSettingsService } from '../../../customizer-settings/customizer-settings.service';
 
 @Component({
     selector: 'app-working-schedule',
-    standalone: true,
-    imports: [RouterLink, CarouselModule, NgClass, NgFor, NgIf],
+    imports: [CarouselModule, NgClass, NgFor, NgIf],
     templateUrl: './working-schedule.component.html',
     styleUrl: './working-schedule.component.scss'
 })
@@ -35,16 +33,9 @@ export class WorkingScheduleComponent {
         this.classApplied = !this.classApplied;
     }
 
-	// isToggled
-    isToggled = false;
-
     constructor(
         public themeService: CustomizerSettingsService
-    ) {
-        this.themeService.isToggled$.subscribe(isToggled => {
-            this.isToggled = isToggled;
-        });
-    }
+    ) {}
 
     // Calendar
     currentMonth!: number;

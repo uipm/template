@@ -7,86 +7,29 @@ import { isPlatformBrowser } from '@angular/common';
 export class EmergencyRoomVisitsService {
 
     private isBrowser: boolean;
+    private chartInstance: any;
 
     constructor(@Inject(PLATFORM_ID) private platformId: any) {
         this.isBrowser = isPlatformBrowser(this.platformId);
     }
 
-    public generateData(count:any, yrange:any) {
-        var i = 0;
-        var series = [];
-        while (i < count) {
-        var x = "W" + (i + 1).toString();
-        var y =
-            Math.floor(Math.random() * (yrange.max - yrange.min + 1)) + yrange.min;
-            series.push({
-                x: x,
-                y: y
-            });
-            i++;
+    public generateData(count: number, yrange: { min: number, max: number }) {
+        const series = [];
+        for (let i = 0; i < count; i++) {
+            const x = "W" + (i + 1).toString();
+            const y = Math.floor(Math.random() * (yrange.max - yrange.min + 1)) + yrange.min;
+            series.push({ x, y });
         }
         return series;
     }
 
-    async loadChart(): Promise<void> {
+    async loadChart(series: any[]): Promise<void> {
         if (this.isBrowser) {
             try {
-                // Dynamically import ApexCharts
                 const ApexCharts = (await import('apexcharts')).default;
 
-                // Define chart options
                 const options = {
-                    series: [
-                        {
-                            name: "14 PM",
-                            data: this.generateData(14, {
-                                min: 0,
-                                max: 90
-                            })
-                        },
-                        {
-                            name: "13 PM",
-                            data: this.generateData(14, {
-                                min: 0,
-                                max: 90
-                            })
-                        },
-                        {
-                            name: "12 PM",
-                            data: this.generateData(14, {
-                                min: 0,
-                                max: 90
-                            })
-                        },
-                        {
-                            name: "11 AM",
-                            data: this.generateData(14, {
-                                min: 0,
-                                max: 90
-                            })
-                        },
-                        {
-                            name: "10 AM",
-                            data: this.generateData(14, {
-                                min: 0,
-                                max: 90
-                            })
-                        },
-                        {
-                            name: "9 AM",
-                            data: this.generateData(14, {
-                                min: 0,
-                                max: 90
-                            })
-                        },
-                        {
-                            name: "8 AM",
-                            data: this.generateData(14, {
-                                min: 0,
-                                max: 90
-                            })
-                        }
-                    ],
+                    series: series,
                     chart: {
                         height: 225,
                         type: "heatmap",
@@ -140,12 +83,17 @@ export class EmergencyRoomVisitsService {
                     }
                 };
 
-                // Initialize and render the chart
-                const chart = new ApexCharts(document.querySelector('#emergency_room_visits_chart'), options);
-                chart.render();
+                this.chartInstance = new ApexCharts(document.querySelector('#emergency_room_visits_chart'), options);
+                this.chartInstance.render();
             } catch (error) {
                 console.error('Error loading ApexCharts:', error);
             }
+        }
+    }
+
+    updateChartData(series: any[]): void {
+        if (this.chartInstance) {
+            this.chartInstance.updateSeries(series);
         }
     }
 

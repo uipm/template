@@ -3,7 +3,6 @@ import { NgIf } from '@angular/common';
 
 @Component({
     selector: 'app-timeline',
-    standalone: true,
     imports: [NgIf],
     templateUrl: './timeline.component.html',
     styleUrl: './timeline.component.scss'

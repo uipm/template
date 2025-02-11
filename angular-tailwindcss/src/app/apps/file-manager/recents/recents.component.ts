@@ -4,7 +4,6 @@ import { RouterLink } from '@angular/router';
 
 @Component({
     selector: 'app-recents',
-    standalone: true,
     imports: [RouterLink, NgIf],
     templateUrl: './recents.component.html',
     styleUrl: './recents.component.scss'

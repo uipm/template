@@ -1,10 +1,9 @@
 import { Component } from '@angular/core';
-import { RouterLink } from '@angular/router';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatTableDataSource, MatTableModule } from '@angular/material/table';
-import { NgClass, NgIf } from '@angular/common';
+import { NgIf } from '@angular/common';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { SelectionModel } from '@angular/cdk/collections';
 import { MatFormFieldModule } from '@angular/material/form-field';
@@ -16,8 +15,7 @@ import { CustomizerSettingsService } from '../../../customizer-settings/customiz
 
 @Component({
     selector: 'app-to-do-list',
-    standalone: true,
-    imports: [RouterLink, MatCardModule, MatButtonModule, MatMenuModule, MatTableModule, NgIf, MatCheckboxModule, NgClass, MatFormFieldModule, MatInputModule, MatSelectModule, MatDatepickerModule, MatNativeDateModule],
+    imports: [MatCardModule, MatButtonModule, MatMenuModule, MatTableModule, NgIf, MatCheckboxModule, MatFormFieldModule, MatInputModule, MatSelectModule, MatDatepickerModule, MatNativeDateModule],
     templateUrl: './to-do-list.component.html',
     styleUrl: './to-do-list.component.scss'
 })
@@ -63,16 +61,9 @@ export class ToDoListComponent {
         this.classApplied = !this.classApplied;
     }
 
-	// isToggled
-    isToggled = false;
-
     constructor(
         public themeService: CustomizerSettingsService
-    ) {
-        this.themeService.isToggled$.subscribe(isToggled => {
-            this.isToggled = isToggled;
-        });
-    }
+    ) {}
 
 }
 

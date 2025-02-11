@@ -1,11 +1,10 @@
 import { Component, HostListener } from '@angular/core';
 import { RouterLink } from '@angular/router';
-import { NgClass, NgIf } from '@angular/common';
+import { NgIf } from '@angular/common';
 
 @Component({
     selector: 'app-top-selling-products',
-    standalone: true,
-    imports: [RouterLink, NgClass, NgIf],
+    imports: [RouterLink, NgIf],
     templateUrl: './top-selling-products.component.html',
     styleUrl: './top-selling-products.component.scss'
 })

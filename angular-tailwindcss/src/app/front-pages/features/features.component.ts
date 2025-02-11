@@ -6,7 +6,6 @@ import { FpTeamComponent } from '../common/fp-team/fp-team.component';
 
 @Component({
     selector: 'app-features',
-    standalone: true,
     imports: [FpKeyFeaturesComponent, FpCtaComponent, FpTeamComponent],
     templateUrl: './features.component.html',
     styleUrl: './features.component.scss'

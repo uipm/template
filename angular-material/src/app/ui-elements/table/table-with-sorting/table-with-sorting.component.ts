@@ -24,7 +24,6 @@ const ELEMENT_DATA: PeriodicElement[] = [
 
 @Component({
     selector: 'app-table-with-sorting',
-    standalone: true,
     imports: [MatTableModule, MatSortModule],
     templateUrl: './table-with-sorting.component.html',
     styleUrl: './table-with-sorting.component.scss'
@@ -53,4 +52,4 @@ export class TableWithSortingComponent implements AfterViewInit {
             this._liveAnnouncer.announce('Sorting cleared');
         }
     }
-  }
+}

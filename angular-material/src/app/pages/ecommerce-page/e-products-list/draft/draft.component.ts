@@ -10,7 +10,6 @@ import { MatTabsModule } from '@angular/material/tabs';
 
 @Component({
     selector: 'app-draft:not(2)',
-    standalone: true,
     imports: [RouterLink, MatCardModule, MatButtonModule, MatMenuModule, MatTabsModule, MatTableModule, NgIf, NgClass, MatPaginatorModule],
     templateUrl: './draft.component.html',
     styleUrl: './draft.component.scss'

@@ -12,7 +12,6 @@ import { CustomizerSettingsService } from '../../../customizer-settings/customiz
 
 @Component({
     selector: 'app-profile-settings',
-    standalone: true,
     imports: [RouterLink, MatCardModule, MatCheckboxModule, MatRadioModule, MatButtonModule, MatFormFieldModule, MatInputModule, FileUploadModule, MatSelectModule],
     templateUrl: './profile-settings.component.html',
     styleUrl: './profile-settings.component.scss'
@@ -31,15 +30,8 @@ export class ProfileSettingsComponent {
     // File Uploader
     public multiple: boolean = false;
 
-    // isToggled
-    isToggled = false;
-
     constructor(
         public themeService: CustomizerSettingsService
-    ) {
-        this.themeService.isToggled$.subscribe(isToggled => {
-            this.isToggled = isToggled;
-        });
-    }
+    ) {}
 
 }

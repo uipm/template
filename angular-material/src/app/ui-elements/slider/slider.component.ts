@@ -5,7 +5,6 @@ import { RouterLink } from '@angular/router';
 
 @Component({
     selector: 'app-slider',
-    standalone: true,
     imports: [RouterLink, MatCardModule, MatSliderModule],
     templateUrl: './slider.component.html',
     styleUrl: './slider.component.scss'

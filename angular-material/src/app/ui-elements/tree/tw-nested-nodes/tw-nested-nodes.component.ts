@@ -34,7 +34,6 @@ const TREE_DATA: FoodNode[] = [
 
 @Component({
     selector: 'app-tw-nested-nodes',
-    standalone: true,
     imports: [MatTreeModule, MatButtonModule],
     templateUrl: './tw-nested-nodes.component.html',
     styleUrl: './tw-nested-nodes.component.scss'

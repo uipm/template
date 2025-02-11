@@ -4,13 +4,11 @@ import { RevenueGrowthComponent } from '../../../dashboard/crm/revenue-growth/re
 import { LeadConversionComponent } from '../../../dashboard/crm/lead-conversion/lead-conversion.component';
 import { TotalOrdersComponent } from '../../../dashboard/crm/total-orders/total-orders.component';
 import { AnnualProfitComponent } from '../../../dashboard/crm/annual-profit/annual-profit.component';
-import { NgClass, NgIf } from '@angular/common';
 import { FileUploadModule } from '@iplab/ngx-file-upload';
 
 @Component({
     selector: 'app-c-leads',
-    standalone: true,
-    imports: [RouterLink, RevenueGrowthComponent, LeadConversionComponent, TotalOrdersComponent, AnnualProfitComponent, NgClass, NgIf, FileUploadModule],
+    imports: [RouterLink, RevenueGrowthComponent, LeadConversionComponent, TotalOrdersComponent, AnnualProfitComponent, FileUploadModule],
     templateUrl: './c-leads.component.html',
     styleUrl: './c-leads.component.scss'
 })

@@ -1,12 +1,11 @@
 import { Component } from '@angular/core';
-import { NgClass, NgIf } from '@angular/common';
+import { NgClass } from '@angular/common';
 import { RouterLink } from '@angular/router';
 import { CustomizerSettingsService } from '../../customizer-settings/customizer-settings.service';
 
 @Component({
     selector: 'app-kanban-board',
-    standalone: true,
-    imports: [RouterLink, NgIf, NgClass],
+    imports: [RouterLink, NgClass],
     templateUrl: './kanban-board.component.html',
     styleUrl: './kanban-board.component.scss'
 })
@@ -210,15 +209,8 @@ export class KanbanBoardComponent {
         this.classApplied = !this.classApplied;
     }
 
-    // isToggled
-    isToggled = false;
-
     constructor(
         public themeService: CustomizerSettingsService
-    ) {
-        this.themeService.isToggled$.subscribe(isToggled => {
-            this.isToggled = isToggled;
-        });
-    }
+    ) {}
 
 }

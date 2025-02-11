@@ -4,7 +4,6 @@ import { NgIf } from '@angular/common';
 
 @Component({
     selector: 'app-recent-orders:not(0)',
-    standalone: true,
     imports: [RouterLink, NgIf],
     templateUrl: './recent-orders.component.html',
     styleUrl: './recent-orders.component.scss'

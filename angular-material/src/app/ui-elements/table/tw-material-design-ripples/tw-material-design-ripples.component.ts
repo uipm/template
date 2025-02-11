@@ -17,7 +17,6 @@ const ELEMENT_DATA = [
 
 @Component({
     selector: 'app-tw-material-design-ripples',
-    standalone: true,
     imports: [MatTableModule, MatRippleModule],
     templateUrl: './tw-material-design-ripples.component.html',
     styleUrl: './tw-material-design-ripples.component.scss'

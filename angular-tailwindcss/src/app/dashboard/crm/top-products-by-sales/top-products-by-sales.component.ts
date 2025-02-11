@@ -4,7 +4,6 @@ import { NgIf } from '@angular/common';
 
 @Component({
     selector: 'app-top-products-by-sales',
-    standalone: true,
     imports: [RouterLink, NgIf],
     templateUrl: './top-products-by-sales.component.html',
     styleUrl: './top-products-by-sales.component.scss'

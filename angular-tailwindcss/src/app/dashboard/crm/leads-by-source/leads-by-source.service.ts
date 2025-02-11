@@ -7,27 +7,25 @@ import { isPlatformBrowser } from '@angular/common';
 export class LeadsBySourceService {
 
     private isBrowser: boolean;
+    private chartInstance: any;
 
     constructor(@Inject(PLATFORM_ID) private platformId: any) {
         this.isBrowser = isPlatformBrowser(this.platformId);
     }
 
-    async loadChart(): Promise<void> {
+    async loadChart(series: number[], labels: string[]): Promise<void> {
         if (this.isBrowser) {
             try {
-                // Dynamically import ApexCharts
                 const ApexCharts = (await import('apexcharts')).default;
 
                 // Define chart options
                 const options = {
-                    series: [320, 60, 30, 160, 279, 19],
+                    series,
                     chart: {
                         height: 266,
                         type: "donut"
                     },
-                    labels: [
-                        "Organic", "Paid", "Direct", "Social", "Referrals", "Others"
-                    ],
+                    labels,
                     colors: [
                         "#605DFF", "#3584FC", "#AD63F6", "#0dcaf0", "#25B003", "#FD5812"
                     ],
@@ -85,13 +83,23 @@ export class LeadsBySourceService {
                         enabled: false
                     }
                 };
-
-                // Initialize and render the chart
-                const chart = new ApexCharts(document.querySelector('#crm_leads_by_source_chart'), options);
-                chart.render();
+                this.chartInstance = new ApexCharts(
+                    document.querySelector('#crm_leads_by_source_chart'),
+                    options
+                );
+                this.chartInstance.render();
             } catch (error) {
                 console.error('Error loading ApexCharts:', error);
             }
+        }
+    }
+
+    updateChart(series: number[], labels: string[]): void {
+        if (this.chartInstance) {
+            this.chartInstance.updateOptions({
+                series,
+                labels
+            });
         }
     }
 

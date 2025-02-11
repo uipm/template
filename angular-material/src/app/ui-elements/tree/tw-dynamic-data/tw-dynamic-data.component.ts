@@ -134,7 +134,6 @@ export class DynamicDataSource implements DataSource<DynamicFlatNode> {
 
 @Component({
     selector: 'app-tw-dynamic-data',
-    standalone: true,
     imports: [MatTreeModule, MatButtonModule, MatProgressBarModule],
     templateUrl: './tw-dynamic-data.component.html',
     styleUrl: './tw-dynamic-data.component.scss'

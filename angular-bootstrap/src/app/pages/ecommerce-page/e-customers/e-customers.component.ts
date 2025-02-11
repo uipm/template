@@ -1,11 +1,10 @@
 import { Component, HostListener } from '@angular/core';
 import { RouterLink } from '@angular/router';
-import { NgFor, NgIf } from '@angular/common';
+import { NgIf } from '@angular/common';
 
 @Component({
     selector: 'app-e-customers',
-    standalone: true,
-    imports: [RouterLink, NgIf, NgFor],
+    imports: [RouterLink, NgIf],
     templateUrl: './e-customers.component.html',
     styleUrl: './e-customers.component.scss'
 })

@@ -10,7 +10,6 @@ export interface Transaction {
 
 @Component({
     selector: 'app-table-with-sticky-footer',
-    standalone: true,
     imports: [MatTableModule, CurrencyPipe],
     templateUrl: './table-with-sticky-footer.component.html',
     styleUrl: './table-with-sticky-footer.component.scss'
@@ -32,15 +31,8 @@ export class TableWithStickyFooterComponent {
         return this.transactions.map(t => t.cost).reduce((acc, value) => acc + value, 0);
     }
 
-    // isToggled
-    isToggled = false;
-
     constructor(
         public themeService: CustomizerSettingsService
-    ) {
-        this.themeService.isToggled$.subscribe(isToggled => {
-            this.isToggled = isToggled;
-        });
-    }
+    ) {}
 
 }

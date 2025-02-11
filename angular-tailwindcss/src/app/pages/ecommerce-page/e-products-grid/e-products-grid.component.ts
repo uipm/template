@@ -4,7 +4,6 @@ import { NgIf } from '@angular/common';
 
 @Component({
     selector: 'app-e-products-grid',
-    standalone: true,
     imports: [RouterLink, NgIf],
     templateUrl: './e-products-grid.component.html',
     styleUrl: './e-products-grid.component.scss'

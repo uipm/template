@@ -7,22 +7,14 @@ import { CustomizerSettingsService } from '../../../customizer-settings/customiz
 
 @Component({
     selector: 'app-e-sellers',
-    standalone: true,
     imports: [RouterLink, MatCardModule, MatButtonModule, MatMenuModule],
     templateUrl: './e-sellers.component.html',
     styleUrl: './e-sellers.component.scss'
 })
 export class ESellersComponent {
 
-    // isToggled
-    isToggled = false;
-
     constructor(
         public themeService: CustomizerSettingsService
-    ) {
-        this.themeService.isToggled$.subscribe(isToggled => {
-            this.isToggled = isToggled;
-        });
-    }
+    ) {}
 
 }

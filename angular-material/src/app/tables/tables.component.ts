@@ -3,7 +3,6 @@ import { RouterOutlet } from '@angular/router';
 
 @Component({
     selector: 'app-tables',
-    standalone: true,
     imports: [RouterOutlet],
     templateUrl: './tables.component.html',
     styleUrl: './tables.component.scss'

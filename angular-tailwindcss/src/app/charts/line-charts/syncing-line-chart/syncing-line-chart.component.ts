@@ -3,7 +3,6 @@ import { SyncingLineChartService } from './syncing-line-chart.service';
 
 @Component({
     selector: 'app-syncing-line-chart',
-    standalone: true,
     imports: [],
     templateUrl: './syncing-line-chart.component.html',
     styleUrl: './syncing-line-chart.component.scss'

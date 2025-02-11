@@ -7,29 +7,20 @@ import { isPlatformBrowser } from '@angular/common';
 export class SalesReportService {
 
     private isBrowser: boolean;
+    private chartInstance: any;
 
     constructor(@Inject(PLATFORM_ID) private platformId: any) {
         this.isBrowser = isPlatformBrowser(this.platformId);
     }
 
-    async loadChart(): Promise<void> {
+    async loadChart(series: { name: string; data: number[] }[], categories: string[]): Promise<void> {
         if (this.isBrowser) {
             try {
-                // Dynamically import ApexCharts
                 const ApexCharts = (await import('apexcharts')).default;
 
                 // Define chart options
                 const options = {
-                    series: [
-                        {
-                            name: "Online",
-                            data: [45, 23, 62, 60, 110, 100, 135]
-                        },
-                        {
-                            name: "Offline",
-                            data: [20, 58, 24, 50, 40, 70, 97]
-                        }
-                    ],
+                    series,
                     chart: {
                         height: 360,
                         type: "line",
@@ -63,15 +54,7 @@ export class SalesReportService {
                         }
                     },
                     xaxis: {
-                        categories: [
-                            "Mon",
-                            "Tue",
-                            "Wed",
-                            "Thu",
-                            "Fri",
-                            "Sat",
-                            "Sun"
-                        ],
+                        categories,
                         axisTicks: {
                             show: false,
                             color: '#B1BBC8'
@@ -89,8 +72,8 @@ export class SalesReportService {
                         }
                     },
                     yaxis: {
-                        tickAmount: 6,
-                        max: 150,
+                        // tickAmount: 6,
+                        // max: 150,
                         min: 0,
                         labels: {
                             formatter: (val:any) => {
@@ -122,13 +105,22 @@ export class SalesReportService {
                         }
                     }
                 };
-
-                // Initialize and render the chart
-                const chart = new ApexCharts(document.querySelector('#crm_sales_report_chart'), options);
-                chart.render();
+                this.chartInstance = new ApexCharts(document.querySelector('#crm_sales_report_chart'), options);
+                this.chartInstance.render();
             } catch (error) {
                 console.error('Error loading ApexCharts:', error);
             }
+        }
+    }
+
+    updateChart(series: { name: string; data: number[] }[], categories: string[]): void {
+        if (this.chartInstance) {
+            this.chartInstance.updateOptions({
+                series,
+                xaxis: {
+                    categories
+                }
+            });
         }
     }
 

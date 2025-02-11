@@ -26,7 +26,6 @@ import { LeadsBySourceComponent } from './leads-by-source/leads-by-source.compon
 
 @Component({
     selector: 'app-widgets',
-    standalone: true,
     imports: [RouterLink, RevenueGrowthComponent, LeadConversionComponent, TotalOrdersComponent, AnnualProfitComponent, ProjectsOverviewComponent, ProjectsRoadmapComponent, WelcomeComponent, TotalCoursesComponent, TotalEnrolledComponent, TotalMentorsComponent, TicketsResolvedComponent, TicketsInProgressComponent, TicketsDueComponent, TicketsNewOpenComponent, CoursesSalesComponent, TimeSpentComponent, OurTopCoursesComponent, TotalCustomersComponent, TotalRevenueComponent, TopOrdersComponent, ProjectAnalysisComponent, TeamMembersComponent, LeadsBySourceComponent],
     templateUrl: './widgets.component.html',
     styleUrl: './widgets.component.scss'

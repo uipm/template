@@ -3,7 +3,6 @@ import { TopOrdersService } from './top-orders.service';
 
 @Component({
     selector: 'app-top-orders',
-    standalone: true,
     imports: [],
     templateUrl: './top-orders.component.html',
     styleUrl: './top-orders.component.scss'

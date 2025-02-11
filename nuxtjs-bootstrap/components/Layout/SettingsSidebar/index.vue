@@ -25,12 +25,6 @@
       </div>
       <div class="mb-4 pb-2">
         <h4 class="fs-15 fw-semibold border-bottom pb-2 mb-3">
-          Container Style Fluid / Boxed
-        </h4>
-        <LayoutSettingsSidebarContainerStyleBtn />
-      </div>
-      <div class="mb-4 pb-2">
-        <h4 class="fs-15 fw-semibold border-bottom pb-2 mb-3">
           Only Sidebar Light / Dark
         </h4>
         <LayoutSettingsSidebarOnlySidebarDark />
@@ -59,6 +53,12 @@
         </h4>
         <LayoutSettingsSidebarCardStyleBG />
       </div>
+      <!-- <div class="mb-4 pb-2">
+        <h4 class="fs-15 fw-semibold border-bottom pb-2 mb-3">
+          Container Style Fluid / Boxed
+        </h4>
+        <LayoutSettingsSidebarContainerStyleBtn />
+      </div> -->
     </div>
   </div>
 </template>

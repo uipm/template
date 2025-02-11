@@ -4,7 +4,6 @@ import { NgClass } from '@angular/common';
 
 @Component({
     selector: 'app-faq-page',
-    standalone: true,
     imports: [RouterLink, NgClass],
     templateUrl: './faq-page.component.html',
     styleUrl: './faq-page.component.scss'

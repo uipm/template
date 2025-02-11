@@ -174,7 +174,7 @@
               <tr>
                 <td>
                   <button class="btn btn-primary">
-                    <i class="ri-add-line text-white"></i>
+                    <i class="ri-add-line text-white me-1"></i>
                     Add Item
                   </button>
                 </td>

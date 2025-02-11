@@ -8,23 +8,15 @@ import { NgIf } from '@angular/common';
 
 @Component({
     selector: 'app-e-seller-details',
-    standalone: true,
     imports: [RouterLink, NgIf, SellerOverviewComponent, RevenueComponent, ProductsComponent],
     templateUrl: './e-seller-details.component.html',
     styleUrl: './e-seller-details.component.scss'
 })
 export class ESellerDetailsComponent {
 
-    // isToggled
-    isToggled = false;
-
     constructor(
         public themeService: CustomizerSettingsService
-    ) {
-        this.themeService.isToggled$.subscribe(isToggled => {
-            this.isToggled = isToggled;
-        });
-    }
+    ) {}
 
     // Card Header Menu
     isCardHeaderOpen = false;

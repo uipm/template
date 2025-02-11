@@ -4,7 +4,6 @@ import { RouterLink } from '@angular/router';
 
 @Component({
     selector: 'app-navs-tabs',
-    standalone: true,
     imports: [RouterLink, NgIf, NgClass],
     templateUrl: './navs-tabs.component.html',
     styleUrl: './navs-tabs.component.scss'

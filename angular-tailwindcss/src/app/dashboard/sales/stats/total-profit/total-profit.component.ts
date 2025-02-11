@@ -3,7 +3,6 @@ import { TotalProfitService } from './total-profit.service';
 
 @Component({
     selector: 'app-total-profit',
-    standalone: true,
     imports: [],
     templateUrl: './total-profit.component.html',
     styleUrl: './total-profit.component.scss'

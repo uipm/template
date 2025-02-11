@@ -5,23 +5,15 @@ import { NgIf } from '@angular/common';
 
 @Component({
     selector: 'app-bt-my-tasks',
-    standalone: true,
     imports: [RouterLink, NgIf],
     templateUrl: './bt-my-tasks.component.html',
     styleUrl: './bt-my-tasks.component.scss'
 })
 export class BtMyTasksComponent {
 
-    // isToggled
-    isToggled = false;
-
     constructor(
         public themeService: CustomizerSettingsService
-    ) {
-        this.themeService.isToggled$.subscribe(isToggled => {
-            this.isToggled = isToggled;
-        });
-    }
+    ) {}
 
     // Card Header Menu
     isCardHeaderOpen = false;

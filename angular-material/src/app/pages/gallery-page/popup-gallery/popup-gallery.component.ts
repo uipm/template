@@ -1,13 +1,11 @@
 import { NgFor } from '@angular/common';
 import { Component } from '@angular/core';
 import { MatCardModule } from '@angular/material/card';
-import { RouterLink } from '@angular/router';
 import { Lightbox, LightboxModule } from 'ngx-lightbox';
 
 @Component({
     selector: 'app-popup-gallery',
-    standalone: true,
-    imports: [RouterLink, MatCardModule, LightboxModule, NgFor],
+    imports: [MatCardModule, LightboxModule, NgFor],
     templateUrl: './popup-gallery.component.html',
     styleUrl: './popup-gallery.component.scss'
 })

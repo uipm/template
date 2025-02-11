@@ -4,7 +4,7 @@ import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatTableDataSource, MatTableModule } from '@angular/material/table';
-import { NgClass, NgIf } from '@angular/common';
+import { NgIf } from '@angular/common';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { SelectionModel } from '@angular/cdk/collections';
 import { MatPaginatorModule, MatPaginator } from '@angular/material/paginator';
@@ -16,8 +16,7 @@ import { MatNativeDateModule } from '@angular/material/core';
 
 @Component({
     selector: 'app-pm-users',
-    standalone: true,
-    imports: [RouterLink, MatCardModule, MatButtonModule, MatMenuModule, MatTableModule, NgIf, MatCheckboxModule, MatPaginatorModule, NgClass, MatFormFieldModule, MatInputModule, MatSelectModule, MatDatepickerModule, MatNativeDateModule],
+    imports: [RouterLink, MatCardModule, MatButtonModule, MatMenuModule, MatTableModule, NgIf, MatCheckboxModule, MatPaginatorModule, MatFormFieldModule, MatInputModule, MatSelectModule, MatDatepickerModule, MatNativeDateModule],
     templateUrl: './pm-users.component.html',
     styleUrl: './pm-users.component.scss'
 })

@@ -343,8 +343,9 @@
                 <td>
                   <span
                     class="badge bg-danger bg-opacity-10 text-danger p-2 fs-12 fw-normal"
-                    >Published</span
                   >
+                    Published
+                  </span>
                 </td>
                 <td>
                   <div class="d-flex align-items-center gap-3">
@@ -352,25 +353,25 @@
                       class="ps-0 border-0 bg-transparent lh-1 position-relative top-2"
                       v-b-tooltip.hover.top="'Approved'"
                     >
-                      <i class="material-symbols-outlined fs-16 text-primary"
-                        >download_done</i
-                      >
+                      <i class="material-symbols-outlined fs-16 text-primary">
+                        download_done
+                      </i>
                     </button>
                     <button
                       class="ps-0 border-0 bg-transparent lh-1 position-relative top-2"
                       v-b-tooltip.hover.top="'Reply'"
                     >
-                      <i class="material-symbols-outlined fs-16 text-body"
-                        >reply</i
-                      >
+                      <i class="material-symbols-outlined fs-16 text-body">
+                        reply
+                      </i>
                     </button>
                     <button
                       class="ps-0 border-0 bg-transparent lh-1 position-relative top-2"
                       v-b-tooltip.hover.top="'Delete'"
                     >
-                      <i class="material-symbols-outlined fs-16 text-danger"
-                        >delete</i
-                      >
+                      <i class="material-symbols-outlined fs-16 text-danger">
+                        delete
+                      </i>
                     </button>
                   </div>
                 </td>

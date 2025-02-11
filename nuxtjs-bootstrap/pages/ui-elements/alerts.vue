@@ -7,7 +7,6 @@
 </template>
 
 <script lang="ts">
-import { ModulesUIElementsAlerts } from "#build/components";
 import { defineComponent } from "vue";
 
 export default defineComponent({

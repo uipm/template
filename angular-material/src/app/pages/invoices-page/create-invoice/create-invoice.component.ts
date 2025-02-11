@@ -11,22 +11,14 @@ import { CustomizerSettingsService } from '../../../customizer-settings/customiz
 
 @Component({
     selector: 'app-create-invoice',
-    standalone: true,
     imports: [RouterLink, MatCardModule, MatFormFieldModule, MatInputModule, MatDatepickerModule, MatNativeDateModule, MatSelectModule, MatButtonModule],
     templateUrl: './create-invoice.component.html',
     styleUrl: './create-invoice.component.scss'
 })
 export class CreateInvoiceComponent {
 
-    // isToggled
-    isToggled = false;
-
     constructor(
         public themeService: CustomizerSettingsService
-    ) {
-        this.themeService.isToggled$.subscribe(isToggled => {
-            this.isToggled = isToggled;
-        });
-    }
+    ) {}
 
 }

@@ -1,11 +1,9 @@
 import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
-import { NgClass, NgIf } from '@angular/common';
 
 @Component({
     selector: 'app-pm-users',
-    standalone: true,
-    imports: [RouterLink, NgIf, NgClass],
+    imports: [RouterLink],
     templateUrl: './pm-users.component.html',
     styleUrl: './pm-users.component.scss'
 })

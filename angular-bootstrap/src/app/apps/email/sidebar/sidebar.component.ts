@@ -4,23 +4,15 @@ import { CustomizerSettingsService } from '../../../customizer-settings/customiz
 
 @Component({
     selector: 'app-sidebar',
-    standalone: true,
     imports: [RouterLink, RouterLinkActive],
     templateUrl: './sidebar.component.html',
     styleUrl: './sidebar.component.scss'
 })
 export class SidebarComponent {
 
-    // isToggled
-    isToggled = false;
-
     constructor(
         public themeService: CustomizerSettingsService
-    ) {
-        this.themeService.isToggled$.subscribe(isToggled => {
-            this.isToggled = isToggled;
-        });
-    }
+    ) {}
 
     // Dark Mode
     toggleTheme() {

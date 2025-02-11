@@ -477,7 +477,7 @@
                     }
                     &.right {
                         text-align: end;
-                        margin-left: auto;
+                        margin-right: auto;
                         padding: {
                             left: 0;
                             right: 0;
@@ -688,8 +688,8 @@
                         }
                         &.right {
                             margin: {
-                                right: auto;
-                                left: 0;
+                                left: auto;
+                                right: 0;
                             };
                             padding: {
                                 left: 0;

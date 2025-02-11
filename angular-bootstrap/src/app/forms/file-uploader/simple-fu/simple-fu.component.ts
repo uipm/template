@@ -3,7 +3,6 @@ import { FileUploadModule } from '@iplab/ngx-file-upload';
 
 @Component({
     selector: 'app-simple-fu',
-    standalone: true,
     imports: [FileUploadModule],
     templateUrl: './simple-fu.component.html',
     styleUrl: './simple-fu.component.scss'

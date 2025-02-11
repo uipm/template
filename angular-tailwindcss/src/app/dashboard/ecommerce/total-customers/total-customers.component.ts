@@ -3,7 +3,6 @@ import { TotalCustomersService } from './total-customers.service';
 
 @Component({
     selector: 'app-total-customers',
-    standalone: true,
     imports: [],
     templateUrl: './total-customers.component.html',
     styleUrl: './total-customers.component.scss'

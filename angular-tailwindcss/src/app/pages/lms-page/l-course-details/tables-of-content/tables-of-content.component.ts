@@ -4,7 +4,6 @@ import { NgClass } from '@angular/common';
 
 @Component({
     selector: 'app-tables-of-content',
-    standalone: true,
     imports: [RouterLink, NgClass],
     templateUrl: './tables-of-content.component.html',
     styleUrl: './tables-of-content.component.scss'

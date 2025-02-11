@@ -206,6 +206,35 @@ import { CryptoComponent } from './dashboard/crypto/crypto.component';
 import { SalesComponent } from './dashboard/sales/sales.component';
 import { HospitalComponent } from './dashboard/hospital/hospital.component';
 import { DownloadableTableComponent } from './tables/downloadable-table/downloadable-table.component';
+import { HrmComponent } from './dashboard/hrm/hrm.component';
+import { SchoolComponent } from './dashboard/school/school.component';
+import { CallCenterComponent } from './dashboard/call-center/call-center.component';
+import { MarketingComponent } from './dashboard/marketing/marketing.component';
+import { NftComponent } from './dashboard/nft/nft.component';
+import { SaasComponent } from './dashboard/saas/saas.component';
+import { RealEstateComponent } from './dashboard/real-estate/real-estate.component';
+import { ShipmentComponent } from './dashboard/shipment/shipment.component';
+import { FinanceComponent } from './dashboard/finance/finance.component';
+import { FinancePageComponent } from './pages/finance-page/finance-page.component';
+import { FWalletComponent } from './pages/finance-page/f-wallet/f-wallet.component';
+import { FTransactionsComponent } from './pages/finance-page/f-transactions/f-transactions.component';
+import { RealEstatePageComponent } from './pages/real-estate-page/real-estate-page.component';
+import { RePropertyListComponent } from './pages/real-estate-page/re-property-list/re-property-list.component';
+import { RePropertyDetailsComponent } from './pages/real-estate-page/re-property-details/re-property-details.component';
+import { ReAddPropertyComponent } from './pages/real-estate-page/re-add-property/re-add-property.component';
+import { ReAgentsComponent } from './pages/real-estate-page/re-agents/re-agents.component';
+import { ReAgentDetailsComponent } from './pages/real-estate-page/re-agent-details/re-agent-details.component';
+import { ReAddAgentComponent } from './pages/real-estate-page/re-add-agent/re-add-agent.component';
+import { ReCustomersComponent } from './pages/real-estate-page/re-customers/re-customers.component';
+import { NftMarketplacePageComponent } from './pages/nft-marketplace-page/nft-marketplace-page.component';
+import { NmMarketplaceComponent } from './pages/nft-marketplace-page/nm-marketplace/nm-marketplace.component';
+import { NmExploreAllComponent } from './pages/nft-marketplace-page/nm-explore-all/nm-explore-all.component';
+import { NmLiveAuctionComponent } from './pages/nft-marketplace-page/nm-live-auction/nm-live-auction.component';
+import { NmNftDetailsComponent } from './pages/nft-marketplace-page/nm-nft-details/nm-nft-details.component';
+import { NmCreatorsComponent } from './pages/nft-marketplace-page/nm-creators/nm-creators.component';
+import { NmWalletConnectComponent } from './pages/nft-marketplace-page/nm-wallet-connect/nm-wallet-connect.component';
+import { NmCreateNftComponent } from './pages/nft-marketplace-page/nm-create-nft/nm-create-nft.component';
+import { NmCreatorDetailsComponent } from './pages/nft-marketplace-page/nm-creator-details/nm-creator-details.component';
 
 export const routes: Routes = [
     {
@@ -232,6 +261,15 @@ export const routes: Routes = [
             {path: 'crypto', component: CryptoComponent},
             {path: 'sales', component: SalesComponent},
             {path: 'hospital', component: HospitalComponent},
+            {path: 'hrm', component: HrmComponent},
+            {path: 'school', component: SchoolComponent},
+            {path: 'call-center', component: CallCenterComponent},
+            {path: 'marketing', component: MarketingComponent},
+            {path: 'nft', component: NftComponent},
+            {path: 'saas', component: SaasComponent},
+            {path: 'real-estate', component: RealEstateComponent},
+            {path: 'shipment', component: ShipmentComponent},
+            {path: 'finance', component: FinanceComponent},
             {
                 path: 'apps',
                 component: AppsComponent,
@@ -342,6 +380,41 @@ export const routes: Routes = [
                     {path: 'ticket-details', component: HdTicketDetailsComponent},
                     {path: 'agents', component: HdAgentsComponent},
                     {path: 'reports', component: HdReportsComponent}
+                ]
+            },
+            {
+                path: 'nft-marketplace-page',
+                component: NftMarketplacePageComponent,
+                children: [
+                    {path: '', component: NmMarketplaceComponent},
+                    {path: 'explore-all', component: NmExploreAllComponent},
+                    {path: 'live-auction', component: NmLiveAuctionComponent},
+                    {path: 'nft-details', component: NmNftDetailsComponent},
+                    {path: 'creators', component: NmCreatorsComponent},
+                    {path: 'creator-details', component: NmCreatorDetailsComponent},
+                    {path: 'wallet-connect', component: NmWalletConnectComponent},
+                    {path: 'create-nft', component: NmCreateNftComponent}
+                ]
+            },
+            {
+                path: 'real-estate-page',
+                component: RealEstatePageComponent,
+                children: [
+                    {path: '', component: RePropertyListComponent},
+                    {path: 'property-details', component: RePropertyDetailsComponent},
+                    {path: 'add-property', component: ReAddPropertyComponent},
+                    {path: 'agents', component: ReAgentsComponent},
+                    {path: 'agent-details', component: ReAgentDetailsComponent},
+                    {path: 'add-agent', component: ReAddAgentComponent},
+                    {path: 'customers', component: ReCustomersComponent}
+                ]
+            },
+            {
+                path: 'finance-page',
+                component: FinancePageComponent,
+                children: [
+                    {path: '', component: FWalletComponent},
+                    {path: 'transactions', component: FTransactionsComponent},
                 ]
             },
             {
@@ -517,7 +590,7 @@ export const routes: Routes = [
                     {path: 'privacy-policy', component: PrivacyPolicyComponent},
                     {path: 'terms-conditions', component: TermsConditionsComponent}
                 ]
-            },
+            }
         ]
     },
     {

@@ -6,7 +6,6 @@ import { CustomizerSettingsService } from '../../../customizer-settings/customiz
 
 @Component({
     selector: 'app-add-user',
-    standalone: true,
     imports: [RouterLink, NgxEditorModule, FileUploadModule],
     templateUrl: './add-user.component.html',
     styleUrl: './add-user.component.scss'
@@ -16,15 +15,8 @@ export class AddUserComponent {
     // File Uploader
     public multiple: boolean = false;
 
-    // isToggled
-    isToggled = false;
-
     constructor(
         public themeService: CustomizerSettingsService
-    ) {
-        this.themeService.isToggled$.subscribe(isToggled => {
-            this.isToggled = isToggled;
-        });
-    }
+    ) {}
 
 }

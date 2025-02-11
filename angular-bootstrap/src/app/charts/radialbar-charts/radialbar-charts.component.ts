@@ -9,7 +9,6 @@ import { SemiCircularGaugeRadialbarChartComponent } from './semi-circular-gauge-
 
 @Component({
     selector: 'app-radialbar-charts',
-    standalone: true,
     imports: [RouterLink, BasicRadialbarChartComponent, MultipleRadialbarChartComponent, CustomAngleCircleRadialbarChartComponent, GradientRadialbarChartComponent, StrockedCircularGaugeRadialbarChartComponent, SemiCircularGaugeRadialbarChartComponent],
     templateUrl: './radialbar-charts.component.html',
     styleUrl: './radialbar-charts.component.scss'

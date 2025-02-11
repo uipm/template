@@ -4,7 +4,6 @@ import { NgIf } from '@angular/common';
 
 @Component({
     selector: 'app-my-tasks',
-    standalone: true,
     imports: [RouterLink, NgIf],
     templateUrl: './my-tasks.component.html',
     styleUrl: './my-tasks.component.scss'

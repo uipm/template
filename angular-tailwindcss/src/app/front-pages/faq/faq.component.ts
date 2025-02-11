@@ -4,7 +4,6 @@ import { FpCtaComponent } from '../common/fp-cta/fp-cta.component';
 
 @Component({
     selector: 'app-faq',
-    standalone: true,
     imports: [FpFaqComponent, FpCtaComponent],
     templateUrl: './faq.component.html',
     styleUrl: './faq.component.scss'

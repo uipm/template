@@ -1,11 +1,9 @@
 import { Component, HostListener } from '@angular/core';
-import { RouterLink } from '@angular/router';
 import { NgIf } from '@angular/common';
 
 @Component({
     selector: 'app-team-members:not(1)',
-    standalone: true,
-    imports: [RouterLink, NgIf],
+    imports: [NgIf],
     templateUrl: './team-members.component.html',
     styleUrl: './team-members.component.scss'
 })

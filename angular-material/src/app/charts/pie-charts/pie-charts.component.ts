@@ -6,7 +6,6 @@ import { PieMonochromeChartComponent } from './pie-monochrome-chart/pie-monochro
 
 @Component({
     selector: 'app-pie-charts',
-    standalone: true,
     imports: [RouterLink, BasicPieChartComponent, PieDonutChartComponent, PieMonochromeChartComponent],
     templateUrl: './pie-charts.component.html',
     styleUrl: './pie-charts.component.scss'

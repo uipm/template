@@ -4,7 +4,6 @@ import { CarouselModule, OwlOptions } from 'ngx-owl-carousel-o';
 
 @Component({
     selector: 'app-our-top-courses',
-    standalone: true,
     imports: [RouterLink, CarouselModule],
     templateUrl: './our-top-courses.component.html',
     styleUrl: './our-top-courses.component.scss'

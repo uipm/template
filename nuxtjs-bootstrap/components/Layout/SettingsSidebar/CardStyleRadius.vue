@@ -1,12 +1,75 @@
 <template>
-  <button
-    class="card-radius-square settings-btn card-style-btn"
-    id="card-radius-square"
-    @click="toggleCardStyleRadius"
+  <div
+    class="d-flex align-items-center position-relative settings-box-wrap for-card-radius"
+    style="gap: 25px"
   >
-    Click To <span class="square">Square</span>
-    <span class="radius">Radius</span>
-  </button>
+    <div class="cursor position-relative active-wrap2" @click="setRounded">
+      <div class="settings-box" :class="{ 'rounded-style': isRounded }">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span class="rounded-3"></span>
+        <span class="rounded-3"></span>
+        <span class="rounded-3"></span>
+        <span class="rounded-3"></span>
+        <span class="rounded-3"></span>
+        <span class="rounded-3"></span>
+      </div>
+      <div class="d-flex align-items-center" style="gap: 5px; margin-top: 10px">
+        <i
+          class="ri-checkbox-circle-fill position-relative top-1 fs-18 text-primary"
+          :class="{ 'opacity-0': isRounded, 'opacity-1': !isRounded }"
+        ></i>
+        <i
+          class="ri-checkbox-blank-circle-line position-relative fs-18 text-light-40 position-absolute start-0 bottom-0"
+          :class="{ 'opacity-1': isRounded, 'opacity-0': !isRounded }"
+        ></i>
+        <span class="fw-semibold">Radius</span>
+      </div>
+    </div>
+
+    <div class="cursor position-relative active-wrap1" @click="setSquare">
+      <div
+        class="settings-box rounded-0"
+        :class="{ 'square-style': !isRounded }"
+      >
+        <span class="rounded-0"></span>
+        <span class="rounded-0"></span>
+        <span class="rounded-0"></span>
+        <span class="rounded-0"></span>
+        <span class="rounded-0"></span>
+        <span class="rounded-0"></span>
+        <span class="rounded-0"></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="d-flex align-items-center" style="gap: 5px; margin-top: 10px">
+        <i
+          class="ri-checkbox-circle-fill position-relative top-1 fs-18 text-primary"
+          :class="{ 'opacity-0': !isRounded, 'opacity-1': isRounded }"
+        ></i>
+        <i
+          class="ri-checkbox-blank-circle-line position-relative fs-18 text-light-40 position-absolute start-0 bottom-0"
+          :class="{ 'opacity-1': !isRounded, 'opacity-0': isRounded }"
+        ></i>
+        <span class="fw-semibold">Square</span>
+      </div>
+    </div>
+
+    <button
+      class="card-radius-square settings-btn"
+      id="card-radius-square"
+      @click="toggleCardStyleRadius"
+    ></button>
+  </div>
 </template>
 
 <script lang="ts">
@@ -15,35 +78,40 @@ import { defineComponent, ref, onMounted } from "vue";
 export default defineComponent({
   name: "CardStyleRadius",
   setup() {
-    const isDarkMode = ref(false);
+    const isRounded = ref(false);
 
     const toggleCardStyleRadius = () => {
-      isDarkMode.value = !isDarkMode.value;
-      const body = document.body;
+      isRounded.value = !isRounded.value;
+      updateBodyClass();
+      localStorage.setItem("card-radius", String(isRounded.value));
+    };
 
-      if (body) {
-        // Toggle the class on the element
-        body.classList.toggle("card-radius", isDarkMode.value);
-      }
+    const setRounded = () => {
+      isRounded.value = true;
+      updateBodyClass();
+      localStorage.setItem("card-radius", "true");
+    };
 
-      localStorage.setItem("card-radius", isDarkMode.value.toString());
+    const setSquare = () => {
+      isRounded.value = false;
+      updateBodyClass();
+      localStorage.setItem("card-radius", "false");
+    };
+
+    const updateBodyClass = () => {
+      document.body.classList.toggle("card-radius", isRounded.value);
     };
 
     onMounted(() => {
-      const storedDarkMode = localStorage.getItem("card-radius");
-      if (storedDarkMode) {
-        isDarkMode.value = storedDarkMode === "true";
-        const body = document.body;
-        if (body) {
-          // Toggle the class on the element
-          body.classList.toggle("card-radius", isDarkMode.value);
-        }
-      }
+      isRounded.value = localStorage.getItem("card-radius") === "true";
+      updateBodyClass();
     });
 
     return {
-      isDarkMode,
+      isRounded,
       toggleCardStyleRadius,
+      setRounded,
+      setSquare,
     };
   },
 });

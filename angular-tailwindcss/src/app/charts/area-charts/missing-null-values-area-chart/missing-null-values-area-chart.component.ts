@@ -3,7 +3,6 @@ import { MissingNullValuesAreaChartService } from './missing-null-values-area-ch
 
 @Component({
     selector: 'app-missing-null-values-area-chart',
-    standalone: true,
     imports: [],
     templateUrl: './missing-null-values-area-chart.component.html',
     styleUrl: './missing-null-values-area-chart.component.scss'

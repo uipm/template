@@ -3,7 +3,6 @@ import { BasicAreaChartService } from './basic-area-chart.service';
 
 @Component({
     selector: 'app-basic-area-chart',
-    standalone: true,
     imports: [],
     templateUrl: './basic-area-chart.component.html',
     styleUrl: './basic-area-chart.component.scss'

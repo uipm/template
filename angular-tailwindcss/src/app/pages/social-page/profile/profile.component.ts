@@ -4,7 +4,6 @@ import { NgIf } from '@angular/common';
 
 @Component({
     selector: 'app-profile',
-    standalone: true,
     imports: [RouterLink, RouterLinkActive, NgIf, RouterOutlet],
     templateUrl: './profile.component.html',
     styleUrl: './profile.component.scss'

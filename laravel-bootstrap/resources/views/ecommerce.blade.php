@@ -113,7 +113,7 @@
 									>
 										<h3 class="mb-0">Total Sales</h3>
 										<select
-											class="form-select month-selecet form-control"
+											class="form-select month-select form-control"
 											aria-label="Default select example"
 										>
 											<option selected>Monthly</option>
@@ -630,7 +630,7 @@
 											Top Selling Products
 										</h3>
 										<select
-											class="form-select month-selecet form-control"
+											class="form-select month-select form-control"
 											aria-label="Default select example"
 										>
 											<option selected>Today</option>
@@ -932,7 +932,7 @@
 												>
 											</form>
 											<select
-												class="form-select month-selecet form-control"
+												class="form-select month-select form-control"
 												aria-label="Default select example"
 											>
 												<option selected>
@@ -1225,7 +1225,7 @@
 									>
 										<h3 class="mb-0">Order Summary</h3>
 										<select
-											class="form-select month-selecet form-control"
+											class="form-select month-select form-control"
 											aria-label="Default select example"
 										>
 											<option selected>Today</option>
@@ -1582,7 +1582,7 @@
 											Returning Customer Rate
 										</h3>
 										<select
-											class="form-select month-selecet form-control"
+											class="form-select month-select form-control"
 											aria-label="Default select example"
 										>
 											<option selected>Month</option>

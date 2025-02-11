@@ -4,7 +4,6 @@ import { RouterLink } from '@angular/router';
 
 @Component({
     selector: 'app-p-user-profile',
-    standalone: true,
     imports: [RouterLink, NgIf],
     templateUrl: './p-user-profile.component.html',
     styleUrl: './p-user-profile.component.scss'

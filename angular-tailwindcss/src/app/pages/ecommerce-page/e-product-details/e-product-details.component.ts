@@ -7,7 +7,6 @@ import { NgClass, NgFor, NgIf } from '@angular/common';
 
 @Component({
     selector: 'app-e-product-details',
-    standalone: true,
     imports: [RouterLink, QuantityCounterComponent, CarouselModule, NgIf, NgFor, NgClass, PdManageReviewsComponent],
     templateUrl: './e-product-details.component.html',
     styleUrl: './e-product-details.component.scss'

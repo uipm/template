@@ -4,7 +4,6 @@ import { RouterLink } from '@angular/router';
 
 @Component({
     selector: 'app-bt-performance-of-agents',
-    standalone: true,
     imports: [RouterLink, NgIf],
     templateUrl: './bt-performance-of-agents.component.html',
     styleUrl: './bt-performance-of-agents.component.scss'

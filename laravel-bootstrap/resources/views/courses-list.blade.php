@@ -45,7 +45,7 @@
                             <div class="p-4">
                                 <div class="d-flex justify-content-between align-items-center flex-wrap gap-3">
                                     <h3 class="mb-0">Courses</h3>
-                                    <select class="form-select month-selecet form-control p-0 h-auto border-0 w-90" style="background-position: right 0 center;" aria-label="Default select example">
+                                    <select class="form-select month-select form-control p-0 h-auto border-0 w-90" style="background-position: right 0 center;" aria-label="Default select example">
                                         <option selected>All Courses</option>
                                         <option value="1">UI/UX</option>
                                         <option value="2">Wordpress</option>

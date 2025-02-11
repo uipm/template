@@ -7,29 +7,19 @@ import { isPlatformBrowser } from '@angular/common';
 export class NewTicketsSolvedTicketsService {
 
     private isBrowser: boolean;
+    private chartInstance: any;
 
     constructor(@Inject(PLATFORM_ID) private platformId: any) {
         this.isBrowser = isPlatformBrowser(this.platformId);
     }
 
-    async loadChart(): Promise<void> {
+    async loadChart(series: any[], categories: string[]): Promise<void> {
         if (this.isBrowser) {
             try {
-                // Dynamically import ApexCharts
                 const ApexCharts = (await import('apexcharts')).default;
 
-                // Define chart options
                 const options = {
-                    series: [
-                        {
-                            name: "New Tickets",
-                            data: [25, 70, 25, 45, 60, 55, 70]
-                        },
-                        {
-                            name: "Solved Tickets",
-                            data: [65, 45, 65, 30, 75, 24, 50]
-                        }
-                    ],
+                    series: series,
                     chart: {
                         type: "area",
                         height: 475,
@@ -64,15 +54,7 @@ export class NewTicketsSolvedTicketsService {
                         }
                     },
                     xaxis: {
-                        categories: [
-                            "Mon",
-                            "Tue",
-                            "Wed",
-                            "Thu",
-                            "Fri",
-                            "Sat",
-                            "Sun"
-                        ],
+                        categories: categories,
                         axisTicks: {
                             show: false,
                             color: '#ECEEF2'
@@ -90,8 +72,8 @@ export class NewTicketsSolvedTicketsService {
                         }
                     },
                     yaxis: {
-                        tickAmount: 4,
-                        max: 80,
+                        // tickAmount: 4,
+                        // max: 80,
                         min: 0,
                         labels: {
                             style: {
@@ -129,12 +111,20 @@ export class NewTicketsSolvedTicketsService {
                     }
                 };
 
-                // Initialize and render the chart
-                const chart = new ApexCharts(document.querySelector('#hd_new_tickets_solved_tickets_chart'), options);
-                chart.render();
+                this.chartInstance = new ApexCharts(document.querySelector('#hd_new_tickets_solved_tickets_chart'), options);
+                this.chartInstance.render();
             } catch (error) {
                 console.error('Error loading ApexCharts:', error);
             }
+        }
+    }
+
+    updateChart(series: any[], categories: string[]): void {
+        if (this.chartInstance) {
+            this.chartInstance.updateOptions({
+                series: series,
+                xaxis: { categories: categories }
+            });
         }
     }
 

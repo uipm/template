@@ -4,7 +4,6 @@ import { MatTableDataSource, MatTableModule } from '@angular/material/table';
 
 @Component({
     selector: 'app-table-with-pagination',
-    standalone: true,
     imports: [MatTableModule, MatPaginatorModule],
     templateUrl: './table-with-pagination.component.html',
     styleUrl: './table-with-pagination.component.scss'

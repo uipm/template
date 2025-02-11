@@ -9,7 +9,6 @@ import { MatNativeDateModule } from '@angular/material/core';
 
 @Component({
     selector: 'app-accordion-expand-collapse-toggles',
-    standalone: true,
     imports: [
         MatButtonModule,
         MatExpansionModule,

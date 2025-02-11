@@ -1,12 +1,11 @@
 import { Component, HostListener } from '@angular/core';
 import { RouterLink } from '@angular/router';
-import { NgClass, NgIf } from '@angular/common';
+import { NgIf } from '@angular/common';
 import { FileUploadModule } from '@iplab/ngx-file-upload';
 
 @Component({
     selector: 'app-c-customers',
-    standalone: true,
-    imports: [RouterLink, NgIf, NgClass, FileUploadModule],
+    imports: [RouterLink, NgIf, FileUploadModule],
     templateUrl: './c-customers.component.html',
     styleUrl: './c-customers.component.scss'
 })

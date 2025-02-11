@@ -46,7 +46,7 @@
                                 <div class="card-body p-4">
                                     <div class="d-flex justify-content-between align-items-center flex-wrap gap-3 pb-4">
                                         <h3 class="mb-0">New vs Solved</h3>
-                                        <select class="form-select month-selecet form-control p-0 h-auto border-0 w-99" style="background-position: right 0 center;" aria-label="Default select example">
+                                        <select class="form-select month-select form-control p-0 h-auto border-0 w-99" style="background-position: right 0 center;" aria-label="Default select example">
                                             <option selected>Last 7 Days</option>
                                             <option value="1">Last 30 Days</option>
                                             <option value="2">Last 50 Days</option>
@@ -66,7 +66,7 @@
                                         <div class="card-body p-4">
                                             <div class="d-flex justify-content-between align-items-center flex-wrap gap-3 mb-3 mb-lg-4">
                                                 <h3 class="mb-0">Tickets Status</h3>
-                                                <select class="form-select month-selecet form-control p-0 h-auto border-0 w-90 d-sm-none" style="background-position: right 0 center;" aria-label="Default select example">
+                                                <select class="form-select month-select form-control p-0 h-auto border-0 w-90 d-sm-none" style="background-position: right 0 center;" aria-label="Default select example">
                                                     <option selected>This Week</option>
                                                     <option value="1">This Month</option>
                                                     <option value="2">This Year</option>
@@ -81,7 +81,7 @@
                                     <div class="card bg-white border-0 rounded-3 rounded-start-0 position-relative border-start h-100">
                                         <div class="card-body p-4">
                                             <div class="d-flex justify-content-end mb-3 mb-lg-4 d-none d-sm-block">
-                                                <select class="form-select month-selecet form-control p-0 h-auto border-0 w-90" style="background-position: right 0 center;" aria-label="Default select example">
+                                                <select class="form-select month-select form-control p-0 h-auto border-0 w-90" style="background-position: right 0 center;" aria-label="Default select example">
                                                     <option selected>This Week</option>
                                                     <option value="1">This Month</option>
                                                     <option value="2">This Year</option>
@@ -132,7 +132,7 @@
                                 <div class="card-body p-4">
                                     <div class="d-flex justify-content-between align-items-center flex-wrap gap-3 mb-3 mb-lg-4">
                                         <h3 class="mb-0">Tasks Overview</h3>
-                                        <select class="form-select month-selecet form-control p-0 h-auto border-0 w-90" style="background-position: right 0 center;" aria-label="Default select example">
+                                        <select class="form-select month-select form-control p-0 h-auto border-0 w-90" style="background-position: right 0 center;" aria-label="Default select example">
                                             <option selected>Last 7 Days</option>
                                             <option value="1">This Month</option>
                                             <option value="2">This Year</option>
@@ -148,7 +148,7 @@
                                 <div class="card-body p-4">
                                     <div class="d-flex justify-content-between align-items-center flex-wrap gap-3 mb-3 mb-lg-4">
                                         <h3 class="mb-0 text-white">Customer Satisfaction</h3>
-                                        <select class="form-select month-selecet form-control p-0 h-auto border-0 w-90 text-white bg-transparent" style="background-position: right 0 center; color: #fff !important;" aria-label="Default select example">
+                                        <select class="form-select month-select form-control p-0 h-auto border-0 w-90 text-white bg-transparent" style="background-position: right 0 center; color: #fff !important;" aria-label="Default select example">
                                             <option class="text-secondary" selected>Last Month</option>
                                             <option class="text-secondary" value="1">Last Year</option>
                                         </select>
@@ -166,7 +166,7 @@
                                 <div class="card-body p-0">
                                     <div class="d-flex justify-content-between align-items-center flex-wrap gap-3 p-4 pb-0">
                                         <h3 class="mb-0">Response Time</h3>
-                                        <select class="form-select month-selecet form-control p-0 h-auto border-0 w-99" style="background-position: right 0 center;" aria-label="Default select example">
+                                        <select class="form-select month-select form-control p-0 h-auto border-0 w-99" style="background-position: right 0 center;" aria-label="Default select example">
                                             <option selected>Last 30 Days</option>
                                             <option value="1">Last 40 Days</option>
                                             <option value="2">Last 50 Days</option>
@@ -186,7 +186,7 @@
                             <div class="p-4">
                                 <div class="d-flex justify-content-between align-items-center flex-wrap gap-3">
                                     <h3 class="mb-0">Performance of Agents</h3>
-                                    <select class="form-select month-selecet form-control p-0 h-auto border-0 w-110" style="background-position: right 0 center;" aria-label="Default select example">
+                                    <select class="form-select month-select form-control p-0 h-auto border-0 w-110" style="background-position: right 0 center;" aria-label="Default select example">
                                         <option selected>Last 30 Days</option>
                                         <option value="1">Last 60 Days</option>
                                         <option value="2">Last 90 Days</option>

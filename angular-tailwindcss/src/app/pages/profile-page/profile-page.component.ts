@@ -3,7 +3,6 @@ import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 
 @Component({
     selector: 'app-profile-page',
-    standalone: true,
     imports: [RouterLink, RouterOutlet, RouterLinkActive],
     templateUrl: './profile-page.component.html',
     styleUrl: './profile-page.component.scss'

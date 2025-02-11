@@ -4,7 +4,6 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
 
 @Component({
     selector: 'app-fp-navbar',
-    standalone: true,
     imports: [RouterLink, RouterLinkActive, NgClass],
     templateUrl: './fp-navbar.component.html',
     styleUrl: './fp-navbar.component.scss'

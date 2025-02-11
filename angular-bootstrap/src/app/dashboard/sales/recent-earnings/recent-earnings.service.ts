@@ -7,12 +7,13 @@ import { isPlatformBrowser } from '@angular/common';
 export class RecentEarningsService {
 
     private isBrowser: boolean;
+    private chartInstance: any;
 
     constructor(@Inject(PLATFORM_ID) private platformId: any) {
         this.isBrowser = isPlatformBrowser(this.platformId);
     }
 
-    async loadChart(): Promise<void> {
+    async loadChart(series: any[], categories: string[]): Promise<void> {
         if (this.isBrowser) {
             try {
                 // Dynamically import ApexCharts
@@ -20,20 +21,7 @@ export class RecentEarningsService {
 
                 // Define chart options
                 const options = {
-                    series: [
-                        {
-                            name: "Gross Earnings",
-                            data: [44, 60, 41, 67, 22, 43]
-                        },
-                        {
-                            name: "Tax Withheld",
-                            data: [13, 30, 20, 8, 13, 27]
-                        },
-                        {
-                            name: "Net Earnings",
-                            data: [11, 20, 15, 15, 21, 14]
-                        },
-                    ],
+                    series: series,
                     chart: {
                         type: "bar",
                         height: 388,
@@ -60,14 +48,7 @@ export class RecentEarningsService {
                         "#605DFF", "#9CAAFF", "#DDE4FF"
                     ],
                     xaxis: {
-                        categories: [
-                            "Sun",
-                            "Mon",
-                            "Tue",
-                            "Wed",
-                            "Thu",
-                            "Fri"
-                        ],
+                        categories: categories,
                         axisTicks: {
                             show: false,
                             color: '#ECEEF2'
@@ -85,8 +66,8 @@ export class RecentEarningsService {
                         }
                     },
                     yaxis: {
-                        tickAmount: 5,
-                        max: 125,
+                        // tickAmount: 5,
+                        // max: 125,
                         min: 0,
                         labels: {
                             formatter: (val:any) => {
@@ -136,11 +117,22 @@ export class RecentEarningsService {
                 };
 
                 // Initialize and render the chart
-                const chart = new ApexCharts(document.querySelector('#recent_earnings_chart'), options);
-                chart.render();
+                this.chartInstance = new ApexCharts(document.querySelector('#recent_earnings_chart'), options);
+                this.chartInstance.render();
             } catch (error) {
                 console.error('Error loading ApexCharts:', error);
             }
+        }
+    }
+
+    updateChartData(series: any[], categories: string[]): void {
+        if (this.chartInstance) {
+            this.chartInstance.updateOptions({
+                series: series,
+                xaxis: {
+                    categories: categories
+                }
+            });
         }
     }
 

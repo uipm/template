@@ -5,7 +5,6 @@ import { MatCardModule } from '@angular/material/card';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatPaginatorModule, MatPaginator } from '@angular/material/paginator';
 import { MatTableModule, MatTableDataSource } from '@angular/material/table';
-import { RouterLink } from '@angular/router';
 import { CustomizerSettingsService } from '../../../customizer-settings/customizer-settings.service';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatDatepickerModule } from '@angular/material/datepicker';
@@ -18,8 +17,7 @@ const year = today.getFullYear();
 
 @Component({
     selector: 'app-patient-appointments',
-    standalone: true,
-    imports: [RouterLink, MatCardModule, MatButtonModule, MatMenuModule, MatTableModule, MatPaginatorModule, NgIf, MatFormFieldModule, MatDatepickerModule, ReactiveFormsModule, FormsModule],
+    imports: [MatCardModule, MatButtonModule, MatMenuModule, MatTableModule, MatPaginatorModule, NgIf, MatFormFieldModule, MatDatepickerModule, ReactiveFormsModule, FormsModule],
     providers: [provideNativeDateAdapter()],
     templateUrl: './patient-appointments.component.html',
     styleUrl: './patient-appointments.component.scss'
@@ -36,16 +34,9 @@ export class PatientAppointmentsComponent {
         end: new FormControl(new Date(year, month, 19)),
     });
 
-    // isToggled
-    isToggled = false;
-
     constructor(
         public themeService: CustomizerSettingsService
-    ) {
-        this.themeService.isToggled$.subscribe(isToggled => {
-            this.isToggled = isToggled;
-        });
-    }
+    ) {}
 
     displayedColumns: string[] = ['patient_name', 'date', 'time', 'assigned', 'department', 'status'];
     dataSource = new MatTableDataSource<PeriodicElement>(ELEMENT_DATA);

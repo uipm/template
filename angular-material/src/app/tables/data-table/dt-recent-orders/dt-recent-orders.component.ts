@@ -1,5 +1,4 @@
 import { Component, ViewChild } from '@angular/core';
-import { RouterLink } from '@angular/router';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatMenuModule } from '@angular/material/menu';
@@ -10,8 +9,7 @@ import { CustomizerSettingsService } from '../../../customizer-settings/customiz
 
 @Component({
     selector: 'app-dt-recent-orders',
-    standalone: true,
-    imports: [RouterLink, MatCardModule, MatButtonModule, MatMenuModule, MatTableModule, MatPaginatorModule, NgIf],
+    imports: [MatCardModule, MatButtonModule, MatMenuModule, MatTableModule, MatPaginatorModule, NgIf],
     templateUrl: './dt-recent-orders.component.html',
     styleUrl: './dt-recent-orders.component.scss'
 })
@@ -32,16 +30,9 @@ export class DtRecentOrdersComponent {
         this.dataSource.filter = filterValue.trim().toLowerCase();
     }
 
-    // isToggled
-    isToggled = false;
-
     constructor(
         public themeService: CustomizerSettingsService
-    ) {
-        this.themeService.isToggled$.subscribe(isToggled => {
-            this.isToggled = isToggled;
-        });
-    }
+    ) {}
 
 }
 

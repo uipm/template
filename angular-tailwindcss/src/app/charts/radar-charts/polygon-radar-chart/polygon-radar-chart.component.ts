@@ -3,7 +3,6 @@ import { PolygonRadarChartService } from './polygon-radar-chart.service';
 
 @Component({
     selector: 'app-polygon-radar-chart',
-    standalone: true,
     imports: [],
     templateUrl: './polygon-radar-chart.component.html',
     styleUrl: './polygon-radar-chart.component.scss'

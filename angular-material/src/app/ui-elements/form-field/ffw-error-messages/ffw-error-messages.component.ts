@@ -6,7 +6,6 @@ import { MatCardModule } from '@angular/material/card';
 
 @Component({
     selector: 'app-ffw-error-messages',
-    standalone: true,
     imports: [MatFormFieldModule, MatInputModule, FormsModule, ReactiveFormsModule, MatCardModule],
     templateUrl: './ffw-error-messages.component.html',
     styleUrl: './ffw-error-messages.component.scss'

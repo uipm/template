@@ -4,7 +4,6 @@ import { CustomizerSettingsService } from '../../../customizer-settings/customiz
 
 @Component({
     selector: 'app-table-with-sticky-columns',
-    standalone: true,
     imports: [MatTableModule],
     templateUrl: './table-with-sticky-columns.component.html',
     styleUrl: './table-with-sticky-columns.component.scss'
@@ -35,16 +34,9 @@ export class TableWithStickyColumnsComponent {
     ];
     dataSource = ELEMENT_DATA;
 
-    // isToggled
-    isToggled = false;
-
     constructor(
         public themeService: CustomizerSettingsService
-    ) {
-        this.themeService.isToggled$.subscribe(isToggled => {
-            this.isToggled = isToggled;
-        });
-    }
+    ) {}
 
 }
 

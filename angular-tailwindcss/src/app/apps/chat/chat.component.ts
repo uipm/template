@@ -4,7 +4,6 @@ import { NgClass, NgIf } from '@angular/common';
 
 @Component({
     selector: 'app-chat',
-    standalone: true,
     imports: [RouterLink, NgClass, NgIf],
     templateUrl: './chat.component.html',
     styleUrl: './chat.component.scss'

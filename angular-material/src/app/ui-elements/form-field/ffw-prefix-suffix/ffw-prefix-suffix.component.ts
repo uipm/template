@@ -6,7 +6,6 @@ import { MatCardModule } from '@angular/material/card';
 
 @Component({
     selector: 'app-ffw-prefix-suffix',
-    standalone: true,
     imports: [MatFormFieldModule, MatInputModule, MatButtonModule, MatCardModule],
     templateUrl: './ffw-prefix-suffix.component.html',
     styleUrl: './ffw-prefix-suffix.component.scss'

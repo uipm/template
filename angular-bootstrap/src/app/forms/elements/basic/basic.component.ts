@@ -5,23 +5,15 @@ import { NgClass } from '@angular/common';
 
 @Component({
     selector: 'app-basic',
-    standalone: true,
     imports: [RouterLink, NgClass],
     templateUrl: './basic.component.html',
     styleUrl: './basic.component.scss'
 })
 export class BasicComponent {
 
-    // isToggled
-    isToggled = false;
-
     constructor(
         public themeService: CustomizerSettingsService
-    ) {
-        this.themeService.isToggled$.subscribe(isToggled => {
-            this.isToggled = isToggled;
-        });
-    }
+    ) {}
 
     // Password Show/Hide
     password: string = '';

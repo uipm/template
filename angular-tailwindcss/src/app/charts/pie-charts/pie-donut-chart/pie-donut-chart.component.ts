@@ -3,7 +3,6 @@ import { PieDonutChartService } from './pie-donut-chart.service';
 
 @Component({
     selector: 'app-pie-donut-chart',
-    standalone: true,
     imports: [],
     templateUrl: './pie-donut-chart.component.html',
     styleUrl: './pie-donut-chart.component.scss'

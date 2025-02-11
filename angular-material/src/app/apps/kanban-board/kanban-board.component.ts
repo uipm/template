@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { MatMenuModule } from '@angular/material/menu';
-import { NgClass, NgIf } from '@angular/common';
+import { NgClass } from '@angular/common';
 import { RouterLink } from '@angular/router';
 import {
     CdkDragDrop,
@@ -21,8 +21,7 @@ import { CustomizerSettingsService } from '../../customizer-settings/customizer-
 
 @Component({
     selector: 'app-kanban-board',
-    standalone: true,
-    imports: [RouterLink, MatCardModule, MatButtonModule, MatMenuModule, CdkDropList, CdkDrag, CdkDropListGroup, NgIf, NgClass, MatFormFieldModule, MatInputModule, MatSelectModule, MatDatepickerModule, MatNativeDateModule],
+    imports: [RouterLink, MatCardModule, MatButtonModule, MatMenuModule, CdkDropList, CdkDrag, CdkDropListGroup, NgClass, MatFormFieldModule, MatInputModule, MatSelectModule, MatDatepickerModule, MatNativeDateModule],
     templateUrl: './kanban-board.component.html',
     styleUrl: './kanban-board.component.scss'
 })
@@ -240,15 +239,8 @@ export class KanbanBoardComponent {
         this.classApplied = !this.classApplied;
     }
 
-    // isToggled
-    isToggled = false;
-
     constructor(
         public themeService: CustomizerSettingsService
-    ) {
-        this.themeService.isToggled$.subscribe(isToggled => {
-            this.isToggled = isToggled;
-        });
-    }
+    ) {}
 
 }

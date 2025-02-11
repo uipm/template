@@ -11,7 +11,6 @@ import { MatCardModule } from '@angular/material/card';
 
 @Component({
     selector: 'app-dialog-launched-from-menu',
-    standalone: true,
     imports: [MatButtonModule, MatMenuModule, MatCardModule],
     templateUrl: './dialog-launched-from-menu.component.html',
     styleUrl: './dialog-launched-from-menu.component.scss'
@@ -39,7 +38,6 @@ export class DialogLaunchedFromMenuComponent {
 @Component({
     selector: 'dialog-from-menu-dialog',
     templateUrl: 'dialog-from-menu-example-dialog.html',
-    standalone: true,
-    imports: [MatDialogContent, MatDialogActions, MatDialogClose, MatButtonModule],
+    imports: [MatDialogContent, MatDialogActions, MatDialogClose, MatButtonModule]
 })
 export class DialogFromMenuExampleDialog {}

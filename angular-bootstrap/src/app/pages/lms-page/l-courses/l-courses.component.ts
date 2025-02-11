@@ -1,11 +1,10 @@
 import { Component, HostListener } from '@angular/core';
 import { RouterLink } from '@angular/router';
-import { NgFor, NgIf } from '@angular/common';
+import { NgIf } from '@angular/common';
 
 @Component({
     selector: 'app-l-courses',
-    standalone: true,
-    imports: [RouterLink, NgIf, NgFor],
+    imports: [RouterLink, NgIf],
     templateUrl: './l-courses.component.html',
     styleUrl: './l-courses.component.scss'
 })

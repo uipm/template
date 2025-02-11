@@ -13,7 +13,6 @@ import { ReturningCustomerRateComponent } from './returning-customer-rate/return
 
 @Component({
     selector: 'app-ecommerce',
-    standalone: true,
     imports: [WelcomeComponent, TotalOrdersComponent, TotalSalesComponent, TotalCustomersComponent, TotalRevenueComponent, SalesByLocationsComponent, TopSellingProductsComponent, RecentOrdersComponent, OrderSummaryComponent, RecentTransactionsComponent, ReturningCustomerRateComponent],
     templateUrl: './ecommerce.component.html',
     styleUrl: './ecommerce.component.scss'

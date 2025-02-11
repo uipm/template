@@ -1,7 +1,6 @@
 import {Component, ViewChild} from '@angular/core';
 import {CdkDragDrop, CdkDropList, CdkDrag, moveItemInArray} from '@angular/cdk/drag-drop';
 import {MatTable, MatTableModule} from '@angular/material/table';
-import { RouterLink } from '@angular/router';
 import { MatCardModule } from '@angular/material/card';
 import { CustomizerSettingsService } from '../../../customizer-settings/customizer-settings.service';
 
@@ -28,8 +27,7 @@ export const ELEMENT_DATA: PeriodicElement[] = [
 
 @Component({
     selector: 'app-dd-table',
-    standalone: true,
-    imports: [CdkDropList, RouterLink, MatCardModule, CdkDrag, MatTableModule],
+    imports: [CdkDropList, MatCardModule, CdkDrag, MatTableModule],
     templateUrl: './dd-table.component.html',
     styleUrl: './dd-table.component.scss'
 })
@@ -47,15 +45,8 @@ export class DdTableComponent {
         this.table.renderRows();
     }
 
-    // isToggled
-    isToggled = false;
-
     constructor(
         public themeService: CustomizerSettingsService
-    ) {
-        this.themeService.isToggled$.subscribe(isToggled => {
-            this.isToggled = isToggled;
-        });
-    }
+    ) {}
 
 }

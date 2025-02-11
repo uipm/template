@@ -52,6 +52,33 @@ def sales(request):
 def hospital(request):
     return render(request, 'hospital.html', {})
 
+def marketing(request):
+    return render(request, 'marketing.html', {})
+
+def nft(request):
+    return render(request, 'nft.html', {})
+
+def saas(request):
+    return render(request, 'saas.html', {})
+
+def real_estate(request):
+    return render(request, 'real-estate.html', {})
+
+def shipment(request):
+    return render(request, 'shipment.html', {})
+
+def finance(request):
+    return render(request, 'finance.html', {})
+
+def hrm(request):
+    return render(request, 'hrm.html', {})
+
+def school(request):
+    return render(request, 'school.html', {})
+
+def call_center(request):
+    return render(request, 'call-center.html', {})
+
 def calendar(request):
     return render(request, 'calendar.html', {})
 
@@ -444,9 +471,6 @@ def toasts(request):
 
 def check_radio(request):
     return render(request, 'check-radio.html', {})
-
-def sweet_alarts(request):
-    return render(request, 'sweet-alarts.html', {})
 
 def select(request):
     return render(request, 'select.html', {})

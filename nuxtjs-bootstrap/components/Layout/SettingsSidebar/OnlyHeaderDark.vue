@@ -1,12 +1,60 @@
 <template>
-  <button
-    class="header-light-dark settings-btn header-dark-btn"
-    id="header-light-dark"
-    @click="toggleOnlyHeaderDarkMode"
+  <div
+    class="d-flex align-items-center position-relative settings-box-wrap for-header-dark"
+    style="gap: 25px"
   >
-    Click To <span class="dark2">Dark</span>
-    <span class="light2">Light</span>
-  </button>
+    <div class="cursor position-relative active-wrap2" @click="setLightMode">
+      <div class="settings-box" :class="{ 'active-light': !isDarkMode }">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="d-flex align-items-center" style="gap: 5px; margin-top: 10px">
+        <i
+          class="ri-checkbox-circle-fill position-relative top-1 fs-18 text-primary"
+          :class="{ 'opacity-1': !isDarkMode, 'opacity-0': isDarkMode }"
+        ></i>
+        <i
+          class="ri-checkbox-blank-circle-line position-relative fs-18 text-light-40 position-absolute start-0 bottom-0"
+          :class="{ 'opacity-0': !isDarkMode, 'opacity-1': isDarkMode }"
+        ></i>
+        <span class="fw-semibold">Light</span>
+      </div>
+    </div>
+
+    <div class="cursor position-relative active-wrap1" @click="setDarkMode">
+      <div class="settings-box" :class="{ 'active-dark': isDarkMode }">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="d-flex align-items-center" style="gap: 5px; margin-top: 10px">
+        <i
+          class="ri-checkbox-circle-fill position-relative top-1 fs-18 text-primary"
+          :class="{ 'opacity-1': isDarkMode, 'opacity-0': !isDarkMode }"
+        ></i>
+        <i
+          class="ri-checkbox-blank-circle-line position-relative fs-18 text-light-40 position-absolute start-0 bottom-0"
+          :class="{ 'opacity-0': isDarkMode, 'opacity-1': !isDarkMode }"
+        ></i>
+        <span class="fw-semibold">Dark</span>
+      </div>
+    </div>
+
+    <button
+      class="header-light-dark settings-btn"
+      id="header-light-dark"
+      @click="toggleOnlyHeaderDarkMode"
+    ></button>
+  </div>
 </template>
 
 <script lang="ts">
@@ -19,31 +67,36 @@ export default defineComponent({
 
     const toggleOnlyHeaderDarkMode = () => {
       isDarkMode.value = !isDarkMode.value;
-      const body = document.body;
+      updateBodyClass();
+      localStorage.setItem("header-dark", String(isDarkMode.value));
+    };
 
-      if (body) {
-        // Toggle the class on the element
-        body.classList.toggle("header-dark", isDarkMode.value);
-      }
+    const setDarkMode = () => {
+      isDarkMode.value = true;
+      updateBodyClass();
+      localStorage.setItem("header-dark", "true");
+    };
 
-      localStorage.setItem("header-dark", isDarkMode.value.toString());
+    const setLightMode = () => {
+      isDarkMode.value = false;
+      updateBodyClass();
+      localStorage.setItem("header-dark", "false");
+    };
+
+    const updateBodyClass = () => {
+      document.body.classList.toggle("header-dark", isDarkMode.value);
     };
 
     onMounted(() => {
-      const storedDarkMode = localStorage.getItem("header-dark");
-      if (storedDarkMode) {
-        isDarkMode.value = storedDarkMode === "true";
-        const body = document.body;
-        if (body) {
-          // Toggle the class on the element
-          body.classList.toggle("header-dark", isDarkMode.value);
-        }
-      }
+      isDarkMode.value = localStorage.getItem("header-dark") === "true";
+      updateBodyClass();
     });
 
     return {
       isDarkMode,
       toggleOnlyHeaderDarkMode,
+      setDarkMode,
+      setLightMode,
     };
   },
 });

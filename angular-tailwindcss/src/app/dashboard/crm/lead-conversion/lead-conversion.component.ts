@@ -3,7 +3,6 @@ import { LeadConversionService } from './lead-conversion.service';
 
 @Component({
     selector: 'app-lead-conversion',
-    standalone: true,
     imports: [],
     templateUrl: './lead-conversion.component.html',
     styleUrl: './lead-conversion.component.scss'

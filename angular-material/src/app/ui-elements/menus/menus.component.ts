@@ -6,7 +6,6 @@ import { MatCardModule } from '@angular/material/card';
 
 @Component({
     selector: 'app-menus',
-    standalone: true,
     imports: [RouterLink, MatCardModule, MatButtonModule, MatMenuModule],
     templateUrl: './menus.component.html',
     styleUrl: './menus.component.scss'

@@ -5,7 +5,6 @@ import { NgxEditorModule, Editor, Toolbar } from 'ngx-editor';
 
 @Component({
     selector: 'app-rich-text-editor',
-    standalone: true,
     imports: [RouterLink, NgxEditorModule, NgIf],
     templateUrl: './rich-text-editor.component.html',
     styleUrl: './rich-text-editor.component.scss'

@@ -4,7 +4,6 @@ import { ProjectAnalysisService } from './project-analysis.service';
 
 @Component({
     selector: 'app-project-analysis:not(1)',
-    standalone: true,
     imports: [NgIf],
     templateUrl: './project-analysis.component.html',
     styleUrl: './project-analysis.component.scss'

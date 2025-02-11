@@ -7,6 +7,7 @@ import { VTimePicker } from "vuetify/labs/VTimePicker";
 
 import "@mdi/font/css/materialdesignicons.css";
 import "vuetify/styles";
+import "../assets/scss/styles.css";
 
 export default defineNuxtPlugin((app) => {
   const vuetify = createVuetify({

@@ -1,12 +1,10 @@
 import { Component } from '@angular/core';
 import { MatCardModule } from '@angular/material/card';
-import { RouterLink } from '@angular/router';
 import { TicketsNewOpenService } from './tickets-new-open.service';
 
 @Component({
     selector: 'app-tickets-new-open',
-    standalone: true,
-    imports: [RouterLink, MatCardModule],
+    imports: [MatCardModule],
     templateUrl: './tickets-new-open.component.html',
     styleUrl: './tickets-new-open.component.scss'
 })

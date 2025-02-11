@@ -8,7 +8,7 @@
   >
     <div class="logo bg-white">
       <NuxtLink to="/dashboard" class="d-flex align-items-center">
-        <v-img src="~/assets/images/logo-icon.png" alt="logo" />
+        <v-img src="@/assets/images/logo-icon.png" alt="logo" />
         <span class="fw-bold text-black position-relative">Trezo</span>
       </NuxtLink>
     </div>
@@ -23,14 +23,14 @@
     <div class="virtual-scroll">
       <div class="sidebar-inner">
         <div class="sidebar-menu">
-          <LayoutLeftSidebarAccordionSlot>
+          <AccordionSlot>
             <span class="sub-title">MAIN</span>
-            <LayoutLeftSidebarAccordionItem>
+            <AccordionItem>
               <template v-slot:accordion-trigger>
-                <div class="title-header">
+                <div class="title-header d-flex align-items-center ga-2">
                   <span class="material-symbols-outlined">dashboard</span>
                   <span class="title">Dashboard</span>
-                  <span class="badge rounded-circle">9</span>
+                  <span class="badge rounded-circle">20</span>
                   <i class="arrow-right ri-arrow-right-s-line"></i>
                 </div>
               </template>
@@ -78,26 +78,71 @@
                   <li class="sidemenu-item">
                     <NuxtLink to="/dashboard/analytics" class="sidemenu-link">
                       Analytics
-                      <span
-                        class="trezo-badge d-inline-block position-relative"
-                      >
-                        New
-                      </span>
                     </NuxtLink>
                   </li>
                   <li class="sidemenu-item">
                     <NuxtLink to="/dashboard/crypto" class="sidemenu-link">
                       Crypto
-                      <span
-                        class="trezo-badge d-inline-block position-relative"
-                      >
-                        New
-                      </span>
                     </NuxtLink>
                   </li>
                   <li class="sidemenu-item">
                     <NuxtLink to="/dashboard/sales" class="sidemenu-link">
                       Sales
+                    </NuxtLink>
+                  </li>
+                  <li class="sidemenu-item">
+                    <NuxtLink to="/dashboard/hospital" class="sidemenu-link">
+                      Hospital
+                    </NuxtLink>
+                  </li>
+                  <li class="sidemenu-item">
+                    <NuxtLink to="/dashboard/marketing" class="sidemenu-link">
+                      Marketing
+                    </NuxtLink>
+                  </li>
+                  <li class="sidemenu-item">
+                    <NuxtLink to="/dashboard/nft" class="sidemenu-link">
+                      NFT
+                    </NuxtLink>
+                  </li>
+                  <li class="sidemenu-item">
+                    <NuxtLink to="/dashboard/saas" class="sidemenu-link">
+                      SaaS
+                    </NuxtLink>
+                  </li>
+                  <li class="sidemenu-item">
+                    <NuxtLink to="/dashboard/real-estate" class="sidemenu-link">
+                      Real Estate
+                    </NuxtLink>
+                  </li>
+                  <li class="sidemenu-item">
+                    <NuxtLink to="/dashboard/shipment" class="sidemenu-link">
+                      Shipment
+                    </NuxtLink>
+                  </li>
+                  <li class="sidemenu-item">
+                    <NuxtLink to="/dashboard/finance" class="sidemenu-link">
+                      Finance
+                    </NuxtLink>
+                  </li>
+                  <li class="sidemenu-item">
+                    <NuxtLink to="/dashboard/hrm" class="sidemenu-link">
+                      HRM
+                    </NuxtLink>
+                  </li>
+                  <li class="sidemenu-item">
+                    <NuxtLink to="/dashboard/school" class="sidemenu-link">
+                      School
+                    </NuxtLink>
+                  </li>
+                  <li class="sidemenu-item">
+                    <NuxtLink to="/dashboard/call-center" class="sidemenu-link">
+                      Call Center
+                    </NuxtLink>
+                  </li>
+                  <li class="sidemenu-item">
+                    <NuxtLink to="/dashboard/pos-system" class="sidemenu-link">
+                      POS System
                       <span
                         class="trezo-badge d-inline-block position-relative"
                       >
@@ -106,8 +151,8 @@
                     </NuxtLink>
                   </li>
                   <li class="sidemenu-item">
-                    <NuxtLink to="/dashboard/hospital" class="sidemenu-link">
-                      Hospital
+                    <NuxtLink to="/dashboard/podcast" class="sidemenu-link">
+                      Podcast
                       <span
                         class="trezo-badge d-inline-block position-relative"
                       >
@@ -117,10 +162,10 @@
                   </li>
                 </ul>
               </template>
-            </LayoutLeftSidebarAccordionItem>
-            <LayoutLeftSidebarAccordionItem>
+            </AccordionItem>
+            <AccordionItem>
               <template v-slot:accordion-trigger>
-                <div class="title-header">
+                <div class="title-header d-flex align-items-center ga-2">
                   <span class="material-symbols-outlined">note_stack</span>
                   <span class="title">Front Pages</span>
                   <i class="arrow-right ri-arrow-right-s-line"></i>
@@ -152,7 +197,7 @@
                   </li>
                 </ul>
               </template>
-            </LayoutLeftSidebarAccordionItem>
+            </AccordionItem>
             <span class="sub-title">APPS</span>
             <NuxtLink to="/apps/to-do-list" class="sidebar-menu-link">
               <span class="material-symbols-outlined">
@@ -172,9 +217,9 @@
               <span class="material-symbols-outlined">chat</span>
               <span class="title">Chat</span>
             </NuxtLink>
-            <LayoutLeftSidebarAccordionItem>
+            <AccordionItem>
               <template v-slot:accordion-trigger>
-                <div class="title-header">
+                <div class="title-header d-flex align-items-center ga-2">
                   <span class="material-symbols-outlined">mail</span>
                   <span class="title">Email</span>
                   <span class="badge rounded-circle two">3</span>
@@ -201,14 +246,14 @@
                   </li>
                 </ul>
               </template>
-            </LayoutLeftSidebarAccordionItem>
+            </AccordionItem>
             <NuxtLink to="/apps/kanban-board" class="sidebar-menu-link">
               <span class="material-symbols-outlined">team_dashboard</span>
               <span class="title">Kanban Board</span>
             </NuxtLink>
-            <LayoutLeftSidebarAccordionItem>
+            <AccordionItem>
               <template v-slot:accordion-trigger>
-                <div class="title-header">
+                <div class="title-header d-flex align-items-center ga-2">
                   <span class="material-symbols-outlined">folder_open</span>
                   <span class="title">File Manager</span>
                   <span class="badge rounded-circle three">7</span>
@@ -276,11 +321,11 @@
                   </li>
                 </ul>
               </template>
-            </LayoutLeftSidebarAccordionItem>
+            </AccordionItem>
             <span class="sub-title">PAGES</span>
-            <LayoutLeftSidebarAccordionItem>
+            <AccordionItem>
               <template v-slot:accordion-trigger>
-                <div class="title-header">
+                <div class="title-header d-flex align-items-center ga-2">
                   <span class="material-symbols-outlined">shopping_cart</span>
                   <span class="title">eCommerce</span>
                   <i class="arrow-right ri-arrow-right-s-line"></i>
@@ -419,10 +464,10 @@
                   </li>
                 </ul>
               </template>
-            </LayoutLeftSidebarAccordionItem>
-            <LayoutLeftSidebarAccordionItem>
+            </AccordionItem>
+            <AccordionItem>
               <template v-slot:accordion-trigger>
-                <div class="title-header">
+                <div class="title-header d-flex align-items-center ga-2">
                   <span class="material-symbols-outlined">handshake</span>
                   <span class="title">CRM</span>
                   <i class="arrow-right ri-arrow-right-s-line"></i>
@@ -453,10 +498,10 @@
                   </li>
                 </ul>
               </template>
-            </LayoutLeftSidebarAccordionItem>
-            <LayoutLeftSidebarAccordionItem>
+            </AccordionItem>
+            <AccordionItem>
               <template v-slot:accordion-trigger>
-                <div class="title-header">
+                <div class="title-header d-flex align-items-center ga-2">
                   <span class="material-symbols-outlined">description</span>
                   <span class="title">Project Management</span>
                   <i class="arrow-right ri-arrow-right-s-line"></i>
@@ -523,10 +568,10 @@
                   </li>
                 </ul>
               </template>
-            </LayoutLeftSidebarAccordionItem>
-            <LayoutLeftSidebarAccordionItem>
+            </AccordionItem>
+            <AccordionItem>
               <template v-slot:accordion-trigger>
-                <div class="title-header">
+                <div class="title-header d-flex align-items-center ga-2">
                   <span class="material-symbols-outlined">auto_stories</span>
                   <span class="title">LMS</span>
                   <i class="arrow-right ri-arrow-right-s-line"></i>
@@ -567,10 +612,10 @@
                   </li>
                 </ul>
               </template>
-            </LayoutLeftSidebarAccordionItem>
-            <LayoutLeftSidebarAccordionItem>
+            </AccordionItem>
+            <AccordionItem>
               <template v-slot:accordion-trigger>
-                <div class="title-header">
+                <div class="title-header d-flex align-items-center ga-2">
                   <span class="material-symbols-outlined">support</span>
                   <span class="title">Help Desk</span>
                   <i class="arrow-right ri-arrow-right-s-line"></i>
@@ -604,10 +649,173 @@
                   </li>
                 </ul>
               </template>
-            </LayoutLeftSidebarAccordionItem>
-            <LayoutLeftSidebarAccordionItem>
+            </AccordionItem>
+            <AccordionItem>
               <template v-slot:accordion-trigger>
-                <div class="title-header">
+                <div class="title-header d-flex align-items-center ga-2">
+                  <span class="material-symbols-outlined">store</span>
+                  <span class="title">NFT Marketplace</span>
+                  <i class="arrow-right ri-arrow-right-s-line"></i>
+                </div>
+              </template>
+
+              <template v-slot:accordion-content>
+                <ul class="sidebar-sub-menu">
+                  <li class="sidemenu-item">
+                    <NuxtLink
+                      to="/nft-marketplace/marketplace"
+                      class="sidemenu-link"
+                    >
+                      Marketplace
+                    </NuxtLink>
+                  </li>
+                  <li class="sidemenu-item">
+                    <NuxtLink
+                      to="/nft-marketplace/explore-all"
+                      class="sidemenu-link"
+                    >
+                      Explore All
+                    </NuxtLink>
+                  </li>
+                  <li class="sidemenu-item">
+                    <NuxtLink
+                      to="/nft-marketplace/live-auction"
+                      class="sidemenu-link"
+                    >
+                      Live Auction
+                    </NuxtLink>
+                  </li>
+                  <li class="sidemenu-item">
+                    <NuxtLink
+                      to="/nft-marketplace/nft-details"
+                      class="sidemenu-link"
+                    >
+                      NFT Details
+                    </NuxtLink>
+                  </li>
+                  <li class="sidemenu-item">
+                    <NuxtLink
+                      to="/nft-marketplace/creators"
+                      class="sidemenu-link"
+                    >
+                      Creators
+                    </NuxtLink>
+                  </li>
+                  <li class="sidemenu-item">
+                    <NuxtLink
+                      to="/nft-marketplace/creator-details"
+                      class="sidemenu-link"
+                    >
+                      Creator Details
+                    </NuxtLink>
+                  </li>
+                  <li class="sidemenu-item">
+                    <NuxtLink
+                      to="/nft-marketplace/wallet-connect"
+                      class="sidemenu-link"
+                    >
+                      Wallet Connect
+                    </NuxtLink>
+                  </li>
+                </ul>
+              </template>
+            </AccordionItem>
+            <AccordionItem>
+              <template v-slot:accordion-trigger>
+                <div class="title-header d-flex align-items-center ga-2">
+                  <span class="material-symbols-outlined">
+                    real_estate_agent
+                  </span>
+                  <span class="title">Real Estate</span>
+                  <i class="arrow-right ri-arrow-right-s-line"></i>
+                </div>
+              </template>
+
+              <template v-slot:accordion-content>
+                <ul class="sidebar-sub-menu">
+                  <li class="sidemenu-item">
+                    <NuxtLink
+                      to="/real-estate/real-estate-customers"
+                      class="sidemenu-link"
+                    >
+                      Real Estate Customers
+                    </NuxtLink>
+                  </li>
+                  <li class="sidemenu-item">
+                    <NuxtLink
+                      to="/real-estate/property-list"
+                      class="sidemenu-link"
+                    >
+                      Property List
+                    </NuxtLink>
+                  </li>
+                  <li class="sidemenu-item">
+                    <NuxtLink
+                      to="/real-estate/property-overview"
+                      class="sidemenu-link"
+                    >
+                      Property Overview
+                    </NuxtLink>
+                  </li>
+                  <li class="sidemenu-item">
+                    <NuxtLink
+                      to="/real-estate/add-property"
+                      class="sidemenu-link"
+                    >
+                      Add Property
+                    </NuxtLink>
+                  </li>
+                  <li class="sidemenu-item">
+                    <NuxtLink
+                      to="/real-estate/agent-list"
+                      class="sidemenu-link"
+                    >
+                      Agent list
+                    </NuxtLink>
+                  </li>
+                  <li class="sidemenu-item">
+                    <NuxtLink
+                      to="/real-estate/agent-overview"
+                      class="sidemenu-link"
+                    >
+                      Agent Overview
+                    </NuxtLink>
+                  </li>
+                  <li class="sidemenu-item">
+                    <NuxtLink to="/real-estate/add-agent" class="sidemenu-link">
+                      Add Agent
+                    </NuxtLink>
+                  </li>
+                </ul>
+              </template>
+            </AccordionItem>
+            <AccordionItem>
+              <template v-slot:accordion-trigger>
+                <div class="title-header d-flex align-items-center ga-2">
+                  <span class="material-symbols-outlined">support</span>
+                  <span class="title">Finance</span>
+                  <i class="arrow-right ri-arrow-right-s-line"></i>
+                </div>
+              </template>
+
+              <template v-slot:accordion-content>
+                <ul class="sidebar-sub-menu">
+                  <li class="sidemenu-item">
+                    <NuxtLink to="/finance/wallet" class="sidemenu-link">
+                      Wallet
+                    </NuxtLink>
+                  </li>
+                  <li class="sidemenu-item">
+                    <NuxtLink to="/finance/transaction" class="sidemenu-link">
+                      Transaction
+                    </NuxtLink>
+                  </li>
+                </ul>
+              </template>
+            </AccordionItem>
+            <AccordionItem>
+              <template v-slot:accordion-trigger>
+                <div class="title-header d-flex align-items-center ga-2">
                   <span class="material-symbols-outlined">local_activity</span>
                   <span class="title">Events</span>
                   <i class="arrow-right ri-arrow-right-s-line"></i>
@@ -646,10 +854,10 @@
                   </li>
                 </ul>
               </template>
-            </LayoutLeftSidebarAccordionItem>
-            <LayoutLeftSidebarAccordionItem>
+            </AccordionItem>
+            <AccordionItem>
               <template v-slot:accordion-trigger>
-                <div class="title-header">
+                <div class="title-header d-flex align-items-center ga-2">
                   <span class="material-symbols-outlined">share</span>
                   <span class="title">Social</span>
                   <i class="arrow-right ri-arrow-right-s-line"></i>
@@ -670,10 +878,10 @@
                   </li>
                 </ul>
               </template>
-            </LayoutLeftSidebarAccordionItem>
-            <LayoutLeftSidebarAccordionItem>
+            </AccordionItem>
+            <AccordionItem>
               <template v-slot:accordion-trigger>
-                <div class="title-header">
+                <div class="title-header d-flex align-items-center ga-2">
                   <span class="material-symbols-outlined">content_paste</span>
                   <span class="title">Invoices</span>
                   <i class="arrow-right ri-arrow-right-s-line"></i>
@@ -710,10 +918,10 @@
                   </li>
                 </ul>
               </template>
-            </LayoutLeftSidebarAccordionItem>
-            <LayoutLeftSidebarAccordionItem>
+            </AccordionItem>
+            <AccordionItem>
               <template v-slot:accordion-trigger>
-                <div class="title-header">
+                <div class="title-header d-flex align-items-center ga-2">
                   <span class="material-symbols-outlined">person</span>
                   <span class="title">Users</span>
                   <i class="arrow-right ri-arrow-right-s-line"></i>
@@ -739,10 +947,10 @@
                   </li>
                 </ul>
               </template>
-            </LayoutLeftSidebarAccordionItem>
-            <LayoutLeftSidebarAccordionItem>
+            </AccordionItem>
+            <AccordionItem>
               <template v-slot:accordion-trigger>
-                <div class="title-header">
+                <div class="title-header d-flex align-items-center ga-2">
                   <span class="material-symbols-outlined">account_box</span>
                   <span class="title">Profile</span>
                   <i class="arrow-right ri-arrow-right-s-line"></i>
@@ -768,16 +976,16 @@
                   </li>
                 </ul>
               </template>
-            </LayoutLeftSidebarAccordionItem>
+            </AccordionItem>
             <NuxtLink to="/starter" class="sidebar-menu-link">
               <span class="material-symbols-outlined">star_border</span>
               <span class="title">Starter</span>
             </NuxtLink>
 
             <span class="sub-title">MODULES</span>
-            <LayoutLeftSidebarAccordionItem>
+            <AccordionItem>
               <template v-slot:accordion-trigger>
-                <div class="title-header">
+                <div class="title-header d-flex align-items-center ga-2">
                   <span class="material-symbols-outlined">emoji_emotions</span>
                   <span class="title">Icons</span>
                   <i class="arrow-right ri-arrow-right-s-line"></i>
@@ -801,10 +1009,10 @@
                   </li>
                 </ul>
               </template>
-            </LayoutLeftSidebarAccordionItem>
-            <LayoutLeftSidebarAccordionItem>
+            </AccordionItem>
+            <AccordionItem>
               <template v-slot:accordion-trigger>
-                <div class="title-header">
+                <div class="title-header d-flex align-items-center ga-2">
                   <span class="material-symbols-outlined">qr_code_scanner</span>
                   <span class="title">UI Elements</span>
                   <i class="arrow-right ri-arrow-right-s-line"></i>
@@ -1060,10 +1268,10 @@
                   </li>
                 </ul>
               </template>
-            </LayoutLeftSidebarAccordionItem>
-            <LayoutLeftSidebarAccordionItem>
+            </AccordionItem>
+            <AccordionItem>
               <template v-slot:accordion-trigger>
-                <div class="title-header">
+                <div class="title-header d-flex align-items-center ga-2">
                   <span class="material-symbols-outlined">table_chart</span>
                   <span class="title">Tables</span>
                   <i class="arrow-right ri-arrow-right-s-line"></i>
@@ -1084,10 +1292,10 @@
                   </li>
                 </ul>
               </template>
-            </LayoutLeftSidebarAccordionItem>
-            <LayoutLeftSidebarAccordionItem>
+            </AccordionItem>
+            <AccordionItem>
               <template v-slot:accordion-trigger>
-                <div class="title-header">
+                <div class="title-header d-flex align-items-center ga-2">
                   <span class="material-symbols-outlined">forum</span>
                   <span class="title">Forms</span>
                   <i class="arrow-right ri-arrow-right-s-line"></i>
@@ -1121,10 +1329,10 @@
                   </li>
                 </ul>
               </template>
-            </LayoutLeftSidebarAccordionItem>
-            <LayoutLeftSidebarAccordionItem>
+            </AccordionItem>
+            <AccordionItem>
               <template v-slot:accordion-trigger>
-                <div class="title-header">
+                <div class="title-header d-flex align-items-center ga-2">
                   <span class="material-symbols-outlined">pie_chart</span>
                   <span class="title">Charts</span>
                   <i class="arrow-right ri-arrow-right-s-line"></i>
@@ -1183,10 +1391,10 @@
                   </li>
                 </ul>
               </template>
-            </LayoutLeftSidebarAccordionItem>
-            <LayoutLeftSidebarAccordionItem>
+            </AccordionItem>
+            <AccordionItem>
               <template v-slot:accordion-trigger>
-                <div class="title-header">
+                <div class="title-header d-flex align-items-center ga-2">
                   <span class="material-symbols-outlined">lock_open</span>
                   <span class="title">Authentication</span>
                   <i class="arrow-right ri-arrow-right-s-line"></i>
@@ -1250,10 +1458,10 @@
                   </li>
                 </ul>
               </template>
-            </LayoutLeftSidebarAccordionItem>
-            <LayoutLeftSidebarAccordionItem>
+            </AccordionItem>
+            <AccordionItem>
               <template v-slot:accordion-trigger>
-                <div class="title-header">
+                <div class="title-header d-flex align-items-center ga-2">
                   <span class="material-symbols-outlined">content_copy</span>
                   <span class="title">Extra Pages</span>
                   <i class="arrow-right ri-arrow-right-s-line"></i>
@@ -1313,10 +1521,10 @@
                   </li>
                 </ul>
               </template>
-            </LayoutLeftSidebarAccordionItem>
-            <LayoutLeftSidebarAccordionItem>
+            </AccordionItem>
+            <AccordionItem>
               <template v-slot:accordion-trigger>
-                <div class="title-header">
+                <div class="title-header d-flex align-items-center ga-2">
                   <span class="material-symbols-outlined">error</span>
                   <span class="title">Errors</span>
                   <i class="arrow-right ri-arrow-right-s-line"></i>
@@ -1337,7 +1545,7 @@
                   </li>
                 </ul>
               </template>
-            </LayoutLeftSidebarAccordionItem>
+            </AccordionItem>
             <NuxtLink to="/widgets" class="sidebar-menu-link">
               <span class="material-symbols-outlined">widgets</span>
               <span class="title">Widgets</span>
@@ -1360,9 +1568,9 @@
               <span class="material-symbols-outlined">account_circle</span>
               <span class="title">My Profile</span>
             </NuxtLink>
-            <LayoutLeftSidebarAccordionItem>
+            <AccordionItem>
               <template v-slot:accordion-trigger>
-                <div class="title-header">
+                <div class="title-header d-flex align-items-center ga-2">
                   <span class="material-symbols-outlined">settings</span>
                   <span class="title">Settings</span>
                   <i class="arrow-right ri-arrow-right-s-line"></i>
@@ -1410,10 +1618,10 @@
                   </li>
                 </ul>
               </template>
-            </LayoutLeftSidebarAccordionItem>
-            <LayoutLeftSidebarAccordionItem>
+            </AccordionItem>
+            <AccordionItem>
               <template v-slot:accordion-trigger>
-                <div class="title-header">
+                <div class="title-header d-flex align-items-center ga-2">
                   <span class="material-symbols-outlined">unfold_more</span>
                   <span class="title">Multi Level Menu</span>
                   <i class="arrow-right ri-arrow-right-s-line"></i>
@@ -1428,10 +1636,12 @@
                     </a>
                   </li>
                   <li class="sidemenu-item">
-                    <LayoutLeftSidebarAccordionSlot>
-                      <LayoutLeftSidebarAccordionItem>
+                    <AccordionSlot>
+                      <AccordionItem>
                         <template v-slot:accordion-trigger>
-                          <div class="title-header">
+                          <div
+                            class="title-header d-flex align-items-center ga-2"
+                          >
                             <span class="title">Second</span>
                             <i class="arrow-right ri-arrow-right-s-line"></i>
                           </div>
@@ -1447,10 +1657,12 @@
                               </a>
                             </li>
                             <li class="sidemenu-item">
-                              <LayoutLeftSidebarAccordionSlot>
-                                <LayoutLeftSidebarAccordionItem>
+                              <AccordionSlot>
+                                <AccordionItem>
                                   <template v-slot:accordion-trigger>
-                                    <div class="title-header">
+                                    <div
+                                      class="title-header d-flex align-items-center ga-2"
+                                    >
                                       <span class="title">Second 2</span>
                                       <i
                                         class="arrow-right ri-arrow-right-s-line"
@@ -1469,13 +1681,13 @@
                                       </li>
                                     </ul>
                                   </template>
-                                </LayoutLeftSidebarAccordionItem>
-                              </LayoutLeftSidebarAccordionSlot>
+                                </AccordionItem>
+                              </AccordionSlot>
                             </li>
                           </ul>
                         </template>
-                      </LayoutLeftSidebarAccordionItem>
-                    </LayoutLeftSidebarAccordionSlot>
+                      </AccordionItem>
+                    </AccordionSlot>
                   </li>
                   <li class="sidemenu-item">
                     <a href="javascript:void(0)" class="sidemenu-link">
@@ -1484,12 +1696,12 @@
                   </li>
                 </ul>
               </template>
-            </LayoutLeftSidebarAccordionItem>
+            </AccordionItem>
             <NuxtLink to="/authentication/logout" class="sidebar-menu-link">
               <span class="material-symbols-outlined">logout</span>
               <span class="title">Logout</span>
             </NuxtLink>
-          </LayoutLeftSidebarAccordionSlot>
+          </AccordionSlot>
         </div>
       </div>
     </div>
@@ -1498,10 +1710,17 @@
 
 <script>
 import { defineComponent } from "vue";
-import stateStore from "~/utils/store";
+import stateStore from "@/utils/store";
+
+import AccordionSlot from "./AccordionSlot.vue";
+import AccordionItem from "./AccordionItem.vue";
 
 export default defineComponent({
   name: "LeftSidebar",
+  components: {
+    AccordionSlot,
+    AccordionItem,
+  },
   setup() {
     const stateStoreInstance = stateStore;
 
@@ -1633,22 +1852,22 @@ export default defineComponent({
         height: auto;
         font-size: var(--fontSize);
         font-weight: 500;
-        padding: 8px 20px 8px 40px;
+        padding: 10px;
         cursor: pointer;
-        i,
-        .material-symbols-outlined {
+
+        display: flex;
+        margin-right: 0;
+        white-space: nowrap;
+        align-items: center;
+        color: var(--blackColor);
+        transition: var(--transition);
+        i.arrow-right {
           transition: var(--transition);
-          transform: translateY(-50%);
           color: var(--bodyColor);
-          position: absolute;
           font-size: 22px;
           line-height: 1;
-          left: 12px;
-          top: 50%;
 
           &.arrow-right {
-            left: auto;
-            right: 5px;
             font-size: 19px;
             margin-top: 0;
             color: rgba(0, 0, 0, 0.54);
@@ -1656,17 +1875,17 @@ export default defineComponent({
           }
         }
         .badge {
-          top: 50%;
-          right: 34px;
+          top: 1px;
           width: 20px;
           height: 20px;
           font-size: 12px;
           color: #fd5812;
           line-height: 20px;
-          position: absolute;
-          transform: translateY(-50%);
           background-color: #fff5ed;
-          padding: 0 6px;
+          padding: 0 3px;
+          position: relative;
+          margin-left: auto;
+
           &.two {
             color: #00b69b;
             background: #00b69b12;
@@ -1679,6 +1898,19 @@ export default defineComponent({
         &:hover {
           color: var(--blackColor);
           background-color: #f6f7f9;
+        }
+      }
+      i.arrow-right {
+        transition: var(--transition);
+        color: var(--bodyColor);
+        font-size: 22px;
+        line-height: 1;
+
+        &.arrow-right {
+          font-size: 19px;
+          margin-top: 0;
+          color: rgba(0, 0, 0, 0.54);
+          line-height: 0.8;
         }
       }
       .accordion__trigger {
@@ -1719,6 +1951,7 @@ export default defineComponent({
               font-size: var(--fontSize);
               font-weight: 500;
               padding: 8px 10px 8px 38px;
+              white-space: nowrap;
               &::after {
                 top: 50%;
                 left: 18px;
@@ -1960,12 +2193,7 @@ export default defineComponent({
           .title-header {
             width: auto;
             height: auto;
-            padding: {
-              bottom: 14px;
-              right: 60px;
-              left: 37px;
-              top: 14px;
-            }
+            padding: 10px;
             .arrow-right {
               display: block;
             }

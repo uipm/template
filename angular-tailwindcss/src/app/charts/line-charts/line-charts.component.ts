@@ -10,7 +10,6 @@ import { SyncingLineChartComponent } from './syncing-line-chart/syncing-line-cha
 
 @Component({
     selector: 'app-line-charts',
-    standalone: true,
     imports: [RouterLink, BasicLineChartComponent, ZoomableLineChartComponent, GradientLineChartComponent, DashedLineChartComponent, SteplineLineChartComponent, BrushLineChartComponent, SyncingLineChartComponent],
     templateUrl: './line-charts.component.html',
     styleUrl: './line-charts.component.scss'

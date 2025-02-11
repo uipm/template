@@ -5,23 +5,15 @@ import { CustomizerSettingsService } from '../../../customizer-settings/customiz
 
 @Component({
     selector: 'app-my-tasks',
-    standalone: true,
     imports: [RouterLink, NgIf],
     templateUrl: './my-tasks.component.html',
     styleUrl: './my-tasks.component.scss'
 })
 export class MyTasksComponent {
 
-	// isToggled
-    isToggled = false;
-
     constructor(
         public themeService: CustomizerSettingsService
-    ) {
-        this.themeService.isToggled$.subscribe(isToggled => {
-            this.isToggled = isToggled;
-        });
-    }
+    ) {}
 
     // Card Header Menu
     isCardHeaderOpen = false;

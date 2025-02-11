@@ -30,7 +30,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, ref, onMounted, watchEffect } from "vue";
+import { defineComponent, ref, onMounted, watchEffect, computed } from "vue";
 import { useRoute } from "vue-router";
 import stateStore from "~/utils/store";
 

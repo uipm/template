@@ -9,7 +9,6 @@ import { MatNativeDateModule } from '@angular/material/core';
 
 @Component({
     selector: 'app-expansion-as-accordion',
-    standalone: true,
     imports: [
         MatExpansionModule,
         MatFormFieldModule,

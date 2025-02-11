@@ -7,22 +7,14 @@ import { CustomizerSettingsService } from '../../../customizer-settings/customiz
 
 @Component({
     selector: 'app-events-grid',
-    standalone: true,
     imports: [RouterLink, MatCardModule, MatButtonModule, MatProgressBarModule],
     templateUrl: './events-grid.component.html',
     styleUrl: './events-grid.component.scss'
 })
 export class EventsGridComponent {
 
-    // isToggled
-    isToggled = false;
-
     constructor(
         public themeService: CustomizerSettingsService
-    ) {
-        this.themeService.isToggled$.subscribe(isToggled => {
-            this.isToggled = isToggled;
-        });
-    }
+    ) {}
 
 }

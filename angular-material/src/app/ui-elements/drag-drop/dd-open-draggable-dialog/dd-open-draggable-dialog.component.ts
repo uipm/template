@@ -11,7 +11,6 @@ import { MatButtonModule } from '@angular/material/button';
 
 @Component({
     selector: 'app-dd-open-draggable-dialog',
-    standalone: true,
     imports: [CdkDrag, MatButtonModule],
     templateUrl: './dd-open-draggable-dialog.component.html',
     styleUrl: './dd-open-draggable-dialog.component.scss'

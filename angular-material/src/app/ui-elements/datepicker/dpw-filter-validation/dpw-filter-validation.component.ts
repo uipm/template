@@ -7,7 +7,6 @@ import { MatCardModule } from '@angular/material/card';
 
 @Component({
     selector: 'app-dpw-filter-validation',
-    standalone: true,
     imports: [MatFormFieldModule, MatInputModule, MatDatepickerModule, MatNativeDateModule, MatCardModule],
     templateUrl: './dpw-filter-validation.component.html',
     styleUrl: './dpw-filter-validation.component.scss'

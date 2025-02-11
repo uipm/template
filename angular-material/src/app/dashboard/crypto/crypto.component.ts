@@ -9,7 +9,6 @@ import { RankingsComponent } from './rankings/rankings.component';
 
 @Component({
     selector: 'app-crypto',
-    standalone: true,
     imports: [MatCardModule, WatchlistComponent, PriceStatisticsComponent, ExchangeComponent, TransactionsHistoryComponent, PortfolioComponent, RankingsComponent],
     templateUrl: './crypto.component.html',
     styleUrl: './crypto.component.scss'

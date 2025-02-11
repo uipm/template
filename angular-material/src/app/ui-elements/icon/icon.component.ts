@@ -17,7 +17,6 @@ const THUMBUP_ICON =
 
 @Component({
     selector: 'app-icon',
-    standalone: true,
     imports: [RouterLink, MatCardModule, MatIconModule, MatButtonModule],
     templateUrl: './icon.component.html',
     styleUrl: './icon.component.scss'

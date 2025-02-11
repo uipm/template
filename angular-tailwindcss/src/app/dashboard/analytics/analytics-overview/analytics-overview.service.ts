@@ -7,37 +7,20 @@ import { isPlatformBrowser } from '@angular/common';
 export class AnalyticsOverviewService {
 
     private isBrowser: boolean;
+    private chartInstance: any;
 
     constructor(@Inject(PLATFORM_ID) private platformId: any) {
         this.isBrowser = isPlatformBrowser(this.platformId);
     }
 
-    async loadChart(): Promise<void> {
+    async initializeChart(initialData: { series: any[]; categories: string[] }): Promise<void> {
         if (this.isBrowser) {
             try {
-                // Dynamically import ApexCharts
                 const ApexCharts = (await import('apexcharts')).default;
 
                 // Define chart options
                 const options = {
-                    series: [
-                        {
-                            name: "New users",
-                            data: [28, 50, 90, 95, 20, 70, 35]
-                        },
-                        {
-                            name: "Page Views",
-                            data: [80, 60, 70, 30, 45, 20, 80]
-                        },
-                        {
-                            name: "Page Sessions",
-                            data: [32, 23, 78, 35, 65, 35, 15]
-                        },
-                        {
-                            name: "Bounce Rate",
-                            data: [60, 25, 80, 25, 15, 40, 15]
-                        }
-                    ],
+                    series: initialData.series,
                     chart: {
                         type: "bar",
                         height: 350,
@@ -67,15 +50,7 @@ export class AnalyticsOverviewService {
                         colors: ["transparent"]
                     },
                     xaxis: {
-                        categories: [
-                            "Mon",
-                            "Tue",
-                            "Wed",
-                            "Thu",
-                            "Fri",
-                            "Sat",
-                            "Sun"
-                        ],
+                        categories: initialData.categories,
                         axisTicks: {
                             show: false,
                             color: '#ECEEF2'
@@ -93,8 +68,8 @@ export class AnalyticsOverviewService {
                         }
                     },
                     yaxis: {
-                        tickAmount: 5,
-                        max: 100,
+                        // tickAmount: 5,
+                        // max: 100,
                         min: 0,
                         labels: {
                             style: {
@@ -131,13 +106,21 @@ export class AnalyticsOverviewService {
                         }
                     }
                 };
-
                 // Initialize and render the chart
-                const chart = new ApexCharts(document.querySelector('#analytics_overview_chart'), options);
-                chart.render();
+                this.chartInstance = new ApexCharts(document.querySelector('#analytics_overview_chart'), options);
+                this.chartInstance.render();
             } catch (error) {
-                console.error('Error loading ApexCharts:', error);
+                console.error('Error initializing ApexCharts:', error);
             }
+        }
+    }
+
+    updateChartData(series: any[], categories: string[]): void {
+        if (this.chartInstance) {
+            this.chartInstance.updateOptions({
+                series: series,
+                xaxis: { categories: categories }
+            });
         }
     }
 

@@ -3,7 +3,6 @@ import { RouterLink } from '@angular/router';
 
 @Component({
     selector: 'app-utilities',
-    standalone: true,
     imports: [RouterLink],
     templateUrl: './utilities.component.html',
     styleUrl: './utilities.component.scss'

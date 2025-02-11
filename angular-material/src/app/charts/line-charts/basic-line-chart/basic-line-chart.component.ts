@@ -1,12 +1,10 @@
 import { Component } from "@angular/core";
 import { MatCardModule } from "@angular/material/card";
-import { RouterLink } from "@angular/router";
 import { BasicLineChartService } from "./basic-line-chart.service";
 
 @Component({
     selector: 'app-basic-line-chart',
-    standalone: true,
-    imports: [MatCardModule, RouterLink],
+    imports: [MatCardModule],
     templateUrl: './basic-line-chart.component.html',
     styleUrl: './basic-line-chart.component.scss'
 })

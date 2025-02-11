@@ -4,7 +4,6 @@ import { NgIf } from '@angular/common';
 
 @Component({
     selector: 'app-recent-leads',
-    standalone: true,
     imports: [RouterLink, NgIf],
     templateUrl: './recent-leads.component.html',
     styleUrl: './recent-leads.component.scss'

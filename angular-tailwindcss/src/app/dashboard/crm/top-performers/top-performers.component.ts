@@ -4,7 +4,6 @@ import { NgIf } from '@angular/common';
 
 @Component({
     selector: 'app-top-performers',
-    standalone: true,
     imports: [RouterLink, NgIf],
     templateUrl: './top-performers.component.html',
     styleUrl: './top-performers.component.scss'

@@ -8,7 +8,6 @@ import { SbwConfigurablePositionComponent } from './sbw-configurable-position/sb
 
 @Component({
     selector: 'app-snackbar',
-    standalone: true,
     imports: [RouterLink, MatCardModule, BasicSnackbarComponent, SbwaAnnotatedCustomComponentComponent, SbwaCustomComponentComponent, SbwConfigurablePositionComponent],
     templateUrl: './snackbar.component.html',
     styleUrl: './snackbar.component.scss'

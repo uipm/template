@@ -8,23 +8,15 @@ import { MatTableDataSource, MatTableModule } from '@angular/material/table';
 
 @Component({
     selector: 'app-portfolio',
-    standalone: true,
     imports: [RouterLink, MatCardModule, MatButtonModule, MatMenuModule, MatTableModule],
     templateUrl: './portfolio.component.html',
     styleUrl: './portfolio.component.scss'
 })
 export class PortfolioComponent {
 
-    // isToggled
-    isToggled = false;
-
     constructor(
         public themeService: CustomizerSettingsService
-    ) {
-        this.themeService.isToggled$.subscribe(isToggled => {
-            this.isToggled = isToggled;
-        });
-    }
+    ) {}
 
     displayedColumns: string[] = ['coin', 'amount', 'total_value'];
     dataSource = new MatTableDataSource<PeriodicElement>(ELEMENT_DATA);

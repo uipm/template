@@ -10,22 +10,14 @@ import { CustomizerSettingsService } from '../../customizer-settings/customizer-
 
 @Component({
     selector: 'app-chat',
-    standalone: true,
     imports: [RouterLink, MatCardModule, MatTabsModule, MatButtonModule, MatMenuModule, MatFormFieldModule, MatInputModule],
     templateUrl: './chat.component.html',
     styleUrl: './chat.component.scss'
 })
 export class ChatComponent {
 
-    // isToggled
-    isToggled = false;
-
     constructor(
         public themeService: CustomizerSettingsService
-    ) {
-        this.themeService.isToggled$.subscribe(isToggled => {
-            this.isToggled = isToggled;
-        });
-    }
+    ) {}
 
 }

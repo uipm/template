@@ -360,6 +360,16 @@
                         .accordion-button {
                             color: var(--whiteColor);
                             
+                            .trezo-badge {
+                                background-color: rgba(255, 255, 255, 0.08);
+                                
+                                &.style-two {
+                                    background: rgba(255, 255, 255, 0.08);
+                                }
+                                &.style-three {
+                                    background: rgba(255, 255, 255, 0.08);
+                                }
+                            }
                             &.open, &:hover {
                                 color: var(--whiteColor);
                                 background-color: #15203c;
@@ -386,6 +396,20 @@
                         .accordion-collapse {
                             .accordion-body {
                                 .accordion-button {
+                                    .trezo-badge {
+                                        background-color: rgba(255, 255, 255, 0.08);
+                                        
+                                        &::before {
+                                            background-color: rgba(255, 255, 255, 0.08);
+                                        }
+                                        &.style-two {
+                                            background: rgba(255, 255, 255, 0.08);
+                                        
+                                            &::before {
+                                                background-color: rgba(255, 255, 255, 0.08);
+                                            }
+                                        }
+                                    }
                                     &:hover, &.active {
                                         background-color: #15203c;
                                     }
@@ -393,6 +417,20 @@
                                 .sidebar-sub-menu {
                                     .sidemenu-item {
                                         .sidemenu-link {
+                                            .trezo-badge {
+                                                background-color: rgba(255, 255, 255, 0.08);
+                                                
+                                                &::before {
+                                                    background-color: rgba(255, 255, 255, 0.08);
+                                                }
+                                                &.style-two {
+                                                    background: rgba(255, 255, 255, 0.08);
+                                                
+                                                    &::before {
+                                                        background-color: rgba(255, 255, 255, 0.08);
+                                                    }
+                                                }
+                                            }
                                             &:hover, &.active {
                                                 background-color: #15203c;
                                             }
@@ -444,6 +482,16 @@
                         .accordion-button {
                             color: var(--whiteColor);
                             
+                            .trezo-badge {
+                                background-color: rgba(255, 255, 255, 0.08);
+                                
+                                &.style-two {
+                                    background: rgba(255, 255, 255, 0.08);
+                                }
+                                &.style-three {
+                                    background: rgba(255, 255, 255, 0.08);
+                                }
+                            }
                             &.open, &:hover {
                                 color: var(--whiteColor);
                                 background-color: #15203c;
@@ -470,6 +518,20 @@
                         .accordion-collapse {
                             .accordion-body {
                                 .accordion-button {
+                                    .trezo-badge {
+                                        background-color: rgba(255, 255, 255, 0.08);
+                                        
+                                        &::before {
+                                            background-color: rgba(255, 255, 255, 0.08);
+                                        }
+                                        &.style-two {
+                                            background: rgba(255, 255, 255, 0.08);
+                                        
+                                            &::before {
+                                                background-color: rgba(255, 255, 255, 0.08);
+                                            }
+                                        }
+                                    }
                                     &:hover, &.active {
                                         background-color: #15203c;
                                     }
@@ -477,6 +539,20 @@
                                 .sidebar-sub-menu {
                                     .sidemenu-item {
                                         .sidemenu-link {
+                                            .trezo-badge {
+                                                background-color: rgba(255, 255, 255, 0.08);
+                                                
+                                                &::before {
+                                                    background-color: rgba(255, 255, 255, 0.08);
+                                                }
+                                                &.style-two {
+                                                    background: rgba(255, 255, 255, 0.08);
+                                                
+                                                    &::before {
+                                                        background-color: rgba(255, 255, 255, 0.08);
+                                                    }
+                                                }
+                                            }
                                             &:hover, &.active {
                                                 background-color: #15203c;
                                             }

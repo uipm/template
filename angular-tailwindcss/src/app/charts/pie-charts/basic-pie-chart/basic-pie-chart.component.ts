@@ -3,7 +3,6 @@ import { BasicPieChartService } from './basic-pie-chart.service';
 
 @Component({
     selector: 'app-basic-pie-chart',
-    standalone: true,
     imports: [],
     templateUrl: './basic-pie-chart.component.html',
     styleUrl: './basic-pie-chart.component.scss'

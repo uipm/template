@@ -43,7 +43,7 @@
                                     Dashboard
                                 </span>
                                 <span class="trezo-badge rounded-circle fw-medium d-inline-block text-center">
-                                    9
+                                    18
                                 </span>
                             </mat-panel-title>
                         </mat-expansion-panel-header>
@@ -69,9 +69,6 @@
                             <li class="sidemenu-item">
                                 <a routerLink="/dashboard/lms" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link">
                                     LMS
-                                    <span class="trezo-badge d-inline-block position-relative style-two">
-                                        Top
-                                    </span>
                                 </a>
                             </li>
                             <li class="sidemenu-item">
@@ -106,6 +103,78 @@
                             <li class="sidemenu-item">
                                 <a routerLink="/dashboard/hospital" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link">
                                     Hospital
+                                    <span class="trezo-badge d-inline-block position-relative">
+                                        New
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="sidemenu-item">
+                                <a routerLink="/dashboard/hrm" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link">
+                                    HRM
+                                    <span class="trezo-badge d-inline-block position-relative">
+                                        New
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="sidemenu-item">
+                                <a routerLink="/dashboard/school" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link">
+                                    School
+                                    <span class="trezo-badge d-inline-block position-relative">
+                                        New
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="sidemenu-item">
+                                <a routerLink="/dashboard/call-center" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link">
+                                    Call Center
+                                    <span class="trezo-badge d-inline-block position-relative">
+                                        New
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="sidemenu-item">
+                                <a routerLink="/dashboard/marketing" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link">
+                                    Marketing
+                                    <span class="trezo-badge d-inline-block position-relative">
+                                        New
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="sidemenu-item">
+                                <a routerLink="/dashboard/nft" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link">
+                                    NFT
+                                    <span class="trezo-badge d-inline-block position-relative">
+                                        New
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="sidemenu-item">
+                                <a routerLink="/dashboard/saas" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link">
+                                    SaaS
+                                    <span class="trezo-badge d-inline-block position-relative">
+                                        New
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="sidemenu-item">
+                                <a routerLink="/dashboard/real-estate" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link">
+                                    Real Estate
+                                    <span class="trezo-badge d-inline-block position-relative">
+                                        New
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="sidemenu-item">
+                                <a routerLink="/dashboard/shipment" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link">
+                                    Shipment
+                                    <span class="trezo-badge d-inline-block position-relative">
+                                        New
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="sidemenu-item">
+                                <a routerLink="/dashboard/finance" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link">
+                                    Finance
                                     <span class="trezo-badge d-inline-block position-relative">
                                         New
                                     </span>
@@ -548,6 +617,133 @@
                             <li class="sidemenu-item">
                                 <a routerLink="/dashboard/helpdesk-page/reports" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link">
                                     Reports
+                                </a>
+                            </li>
+                        </ul>
+                    </mat-expansion-panel>
+                    <mat-expansion-panel (opened)="panelOpenState.set(true)" (closed)="panelOpenState.set(false)">
+                        <mat-expansion-panel-header>
+                            <mat-panel-title>
+                                <i class="material-symbols-outlined">
+                                    store
+                                </i>
+                                <span class="title">
+                                    NFT Marketplace
+                                </span>
+                            </mat-panel-title>
+                        </mat-expansion-panel-header>
+                        <ul class="sidebar-sub-menu">
+                            <li class="sidemenu-item">
+                                <a routerLink="/dashboard/nft-marketplace-page" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link">
+                                    Marketplace
+                                </a>
+                            </li>
+                            <li class="sidemenu-item">
+                                <a routerLink="/dashboard/nft-marketplace-page/explore-all" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link">
+                                    Explore All
+                                </a>
+                            </li>
+                            <li class="sidemenu-item">
+                                <a routerLink="/dashboard/nft-marketplace-page/live-auction" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link">
+                                    Live Auction
+                                </a>
+                            </li>
+                            <li class="sidemenu-item">
+                                <a routerLink="/dashboard/nft-marketplace-page/nft-details" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link">
+                                    NFT Details
+                                </a>
+                            </li>
+                            <li class="sidemenu-item">
+                                <a routerLink="/dashboard/nft-marketplace-page/creators" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link">
+                                    Creators
+                                </a>
+                            </li>
+                            <li class="sidemenu-item">
+                                <a routerLink="/dashboard/nft-marketplace-page/creator-details" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link">
+                                    Creator Details
+                                </a>
+                            </li>
+                            <li class="sidemenu-item">
+                                <a routerLink="/dashboard/nft-marketplace-page/wallet-connect" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link">
+                                    Wallet Connect
+                                </a>
+                            </li>
+                            <li class="sidemenu-item">
+                                <a routerLink="/dashboard/nft-marketplace-page/create-nft" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link">
+                                    Create NFT
+                                </a>
+                            </li>
+                        </ul>
+                    </mat-expansion-panel>
+                    <mat-expansion-panel (opened)="panelOpenState.set(true)" (closed)="panelOpenState.set(false)">
+                        <mat-expansion-panel-header>
+                            <mat-panel-title>
+                                <i class="material-symbols-outlined">
+                                    real_estate_agent
+                                </i>
+                                <span class="title">
+                                    Real Estate
+                                </span>
+                            </mat-panel-title>
+                        </mat-expansion-panel-header>
+                        <ul class="sidebar-sub-menu">
+                            <li class="sidemenu-item">
+                                <a routerLink="/dashboard/real-estate-page" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link">
+                                    Property List
+                                </a>
+                            </li>
+                            <li class="sidemenu-item">
+                                <a routerLink="/dashboard/real-estate-page/property-details" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link">
+                                    Property Details
+                                </a>
+                            </li>
+                            <li class="sidemenu-item">
+                                <a routerLink="/dashboard/real-estate-page/add-property" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link">
+                                    Add Property
+                                </a>
+                            </li>
+                            <li class="sidemenu-item">
+                                <a routerLink="/dashboard/real-estate-page/agents" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link">
+                                    Agents
+                                </a>
+                            </li>
+                            <li class="sidemenu-item">
+                                <a routerLink="/dashboard/real-estate-page/agent-details" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link">
+                                    Agent Details
+                                </a>
+                            </li>
+                            <li class="sidemenu-item">
+                                <a routerLink="/dashboard/real-estate-page/add-agent" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link">
+                                    Add Agent
+                                </a>
+                            </li>
+                            <li class="sidemenu-item">
+                                <a routerLink="/dashboard/real-estate-page/customers" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link">
+                                    Customers
+                                </a>
+                            </li>
+                        </ul>
+                    </mat-expansion-panel>
+                    <mat-expansion-panel (opened)="panelOpenState.set(true)" (closed)="panelOpenState.set(false)">
+                        <mat-expansion-panel-header>
+                            <mat-panel-title>
+                                <i class="material-symbols-outlined">
+                                    calculate
+                                </i>
+                                <span class="title">
+                                    Finance
+                                </span>
+                            </mat-panel-title>
+                        </mat-expansion-panel-header>
+                        <ul class="sidebar-sub-menu">
+                            <li class="sidemenu-item">
+                                <a routerLink="/dashboard/finance-page" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link">
+                                    Wallet
+                                </a>
+                            </li>
+                            <li class="sidemenu-item">
+                                <a routerLink="/dashboard/finance-page/transactions" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link">
+                                    Transactions
                                 </a>
                             </li>
                         </ul>

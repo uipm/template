@@ -12,7 +12,6 @@ import { TasksOverviewComponent } from './tasks-overview/tasks-overview.componen
 
 @Component({
     selector: 'app-project-management',
-    standalone: true,
     imports: [ProjectsOverviewComponent, ProjectsRoadmapComponent, ProjectsProgressComponent, MyTasksComponent, AllProjectsComponent, ProjectAnalysisComponent, TeamMembersComponent, WorkingScheduleComponent, ToDoListComponent, TasksOverviewComponent],
     templateUrl: './project-management.component.html',
     styleUrl: './project-management.component.scss'

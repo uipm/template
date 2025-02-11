@@ -7,7 +7,6 @@ import { CustomizerSettingsService } from '../../../../customizer-settings/custo
 
 @Component({
     selector: 'app-tables-of-content',
-    standalone: true,
     imports: [RouterLink, MatCardModule, MatButtonModule, MatExpansionModule],
     templateUrl: './tables-of-content.component.html',
     styleUrl: './tables-of-content.component.scss'
@@ -17,15 +16,8 @@ export class TablesOfContentComponent {
     // Expansion
     readonly panelOpenState = signal(false);
 
-    // isToggled
-    isToggled = false;
-
     constructor(
         public themeService: CustomizerSettingsService
-    ) {
-        this.themeService.isToggled$.subscribe(isToggled => {
-            this.isToggled = isToggled;
-        });
-    }
+    ) {}
 
 }

@@ -11,7 +11,6 @@ export interface Tile {
 
 @Component({
     selector: 'app-dynamic-grid-list',
-    standalone: true,
     imports: [MatGridListModule, MatCardModule],
     templateUrl: './dynamic-grid-list.component.html',
     styleUrl: './dynamic-grid-list.component.scss'

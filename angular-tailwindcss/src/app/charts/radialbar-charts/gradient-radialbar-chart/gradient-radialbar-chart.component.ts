@@ -3,7 +3,6 @@ import { GradientRadialbarChartService } from './gradient-radialbar-chart.servic
 
 @Component({
     selector: 'app-gradient-radialbar-chart',
-    standalone: true,
     imports: [],
     templateUrl: './gradient-radialbar-chart.component.html',
     styleUrl: './gradient-radialbar-chart.component.scss'

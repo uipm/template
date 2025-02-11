@@ -3,7 +3,6 @@ import { SemiCircularGaugeRadialbarChartService } from './semi-circular-gauge-ra
 
 @Component({
     selector: 'app-semi-circular-gauge-radialbar-chart',
-    standalone: true,
     imports: [],
     templateUrl: './semi-circular-gauge-radialbar-chart.component.html',
     styleUrl: './semi-circular-gauge-radialbar-chart.component.scss'

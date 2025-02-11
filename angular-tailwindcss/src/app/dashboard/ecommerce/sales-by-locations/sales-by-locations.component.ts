@@ -3,7 +3,6 @@ import { NgIf } from '@angular/common';
 
 @Component({
     selector: 'app-sales-by-locations',
-    standalone: true,
     imports: [NgIf],
     templateUrl: './sales-by-locations.component.html',
     styleUrl: './sales-by-locations.component.scss'

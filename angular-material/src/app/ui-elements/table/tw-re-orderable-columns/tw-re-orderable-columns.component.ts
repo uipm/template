@@ -4,7 +4,6 @@ import { MatTableModule } from '@angular/material/table';
 
 @Component({
     selector: 'app-tw-re-orderable-columns',
-    standalone: true,
     imports: [MatTableModule, CdkDropList, CdkDrag],
     templateUrl: './tw-re-orderable-columns.component.html',
     styleUrl: './tw-re-orderable-columns.component.scss'

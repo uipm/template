@@ -3,7 +3,6 @@ import { MultipleRadarChartService } from './multiple-radar-chart.service';
 
 @Component({
     selector: 'app-multiple-radar-chart',
-    standalone: true,
     imports: [],
     templateUrl: './multiple-radar-chart.component.html',
     styleUrl: './multiple-radar-chart.component.scss'

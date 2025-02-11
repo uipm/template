@@ -4,19 +4,42 @@ import { NgIf } from '@angular/common';
 
 @Component({
     selector: 'app-emergency-room-visits',
-    standalone: true,
     imports: [NgIf],
     templateUrl: './emergency-room-visits.component.html',
     styleUrl: './emergency-room-visits.component.scss'
 })
 export class EmergencyRoomVisitsComponent {
 
+    selectedTimeframe: string = 'Last Day';
+    chartData: { [key: string]: any[] };
+
     constructor(
         private emergencyRoomVisitsService: EmergencyRoomVisitsService
-    ) {}
+    ) {
+        // Define data for each timeframe
+        this.chartData = {
+            'Last Day': this.generateSeries(14, { min: 0, max: 90 }),
+            'Last Week': this.generateSeries(7, { min: 0, max: 120 }),
+            'Last Month': this.generateSeries(30, { min: 0, max: 150 }),
+            'Last Year': this.generateSeries(12, { min: 0, max: 200 })
+        };
+    }
 
     ngOnInit(): void {
-        this.emergencyRoomVisitsService.loadChart();
+        // Load the default chart
+        this.emergencyRoomVisitsService.loadChart(this.chartData[this.selectedTimeframe]);
+    }
+
+    onTimeframeChange(timeframe: string): void {
+        this.selectedTimeframe = timeframe; // Update the button text
+        this.emergencyRoomVisitsService.updateChartData(this.chartData[timeframe]);
+    }
+
+    generateSeries(count: number, yrange: { min: number, max: number }): any[] {
+        return Array.from({ length: 7 }, (_, i) => ({
+            name: `${9 + i} AM`,
+            data: this.emergencyRoomVisitsService.generateData(count, yrange)
+        }));
     }
 
     // Card Header Menu

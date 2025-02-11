@@ -4,7 +4,6 @@ import { ToggleService } from '../../common/header/toggle.service';
 
 @Component({
     selector: 'app-logout',
-    standalone: true,
     imports: [RouterLink],
     templateUrl: './logout.component.html',
     styleUrl: './logout.component.scss'

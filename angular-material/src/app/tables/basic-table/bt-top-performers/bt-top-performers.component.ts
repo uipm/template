@@ -7,22 +7,14 @@ import { CustomizerSettingsService } from '../../../customizer-settings/customiz
 
 @Component({
     selector: 'app-bt-top-performers',
-    standalone: true,
     imports: [RouterLink, MatCardModule, MatButtonModule, MatMenuModule],
     templateUrl: './bt-top-performers.component.html',
     styleUrl: './bt-top-performers.component.scss'
 })
 export class BtTopPerformersComponent {
 
-    // isToggled
-    isToggled = false;
-
     constructor(
         public themeService: CustomizerSettingsService
-    ) {
-        this.themeService.isToggled$.subscribe(isToggled => {
-            this.isToggled = isToggled;
-        });
-    }
+    ) {}
 
 }

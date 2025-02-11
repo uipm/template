@@ -1,11 +1,9 @@
 import { Component } from '@angular/core';
-import { RouterLink } from '@angular/router';
 import { TicketsInProgressService } from './tickets-in-progress.service';
 
 @Component({
     selector: 'app-tickets-in-progress:not(1)',
-    standalone: true,
-    imports: [RouterLink],
+    imports: [],
     templateUrl: './tickets-in-progress.component.html',
     styleUrl: './tickets-in-progress.component.scss'
 })

@@ -4,22 +4,14 @@ import { CustomizerSettingsService } from '../../customizer-settings/customizer-
 
 @Component({
     selector: 'app-shadows',
-    standalone: true,
     imports: [RouterLink],
     templateUrl: './shadows.component.html',
     styleUrl: './shadows.component.scss'
 })
 export class ShadowsComponent {
 
-    // isToggled
-    isToggled = false;
-
     constructor(
         public themeService: CustomizerSettingsService
-    ) {
-        this.themeService.isToggled$.subscribe(isToggled => {
-            this.isToggled = isToggled;
-        });
-    }
+    ) {}
 
 }

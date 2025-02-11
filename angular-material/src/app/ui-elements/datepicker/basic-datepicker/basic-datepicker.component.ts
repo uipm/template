@@ -7,7 +7,6 @@ import { MatNativeDateModule } from '@angular/material/core';
 
 @Component({
     selector: 'app-basic-datepicker',
-    standalone: true,
     imports: [MatCardModule, MatFormFieldModule, MatInputModule, MatDatepickerModule, MatNativeDateModule],
     templateUrl: './basic-datepicker.component.html',
     styleUrl: './basic-datepicker.component.scss'

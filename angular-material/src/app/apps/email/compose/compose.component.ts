@@ -1,4 +1,4 @@
-import { NgFor, isPlatformBrowser, NgIf } from '@angular/common';
+import { isPlatformBrowser, NgIf } from '@angular/common';
 import { Component, Inject, PLATFORM_ID } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { MatCardModule } from '@angular/material/card';
@@ -14,8 +14,7 @@ import { CustomizerSettingsService } from '../../../customizer-settings/customiz
 
 @Component({
     selector: 'app-compose',
-    standalone: true,
-    imports: [RouterLink, SidebarComponent, MatCardModule, MatFormFieldModule, MatInputModule, MatSelectModule, MatButtonModule, ReactiveFormsModule, FormsModule, NgFor, NgIf, NgxEditorModule, MatMenuModule],
+    imports: [RouterLink, SidebarComponent, MatCardModule, MatFormFieldModule, MatInputModule, MatSelectModule, MatButtonModule, ReactiveFormsModule, FormsModule, NgIf, NgxEditorModule, MatMenuModule],
     templateUrl: './compose.component.html',
     styleUrl: './compose.component.scss'
 })
@@ -51,16 +50,9 @@ export class ComposeComponent {
     emails = new FormControl('');
     emailList: string[] = ['james@trezo.com', 'andy@trezo.com', 'mateo@trezo.com', 'luca@trezo.com', 'luca@trezo.com', 'tomato@trezo.com'];
 
-	// isToggled
-    isToggled = false;
-
     constructor(
         @Inject(PLATFORM_ID) private platformId: Object,
         public themeService: CustomizerSettingsService
-    ) {
-        this.themeService.isToggled$.subscribe(isToggled => {
-            this.isToggled = isToggled;
-        });
-    }
+    ) {}
 
 }

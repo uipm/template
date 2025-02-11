@@ -1,12 +1,10 @@
 import { Component, Input } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { RouterLink } from '@angular/router';
 import { CustomizerSettingsService } from '../../../../customizer-settings/customizer-settings.service';
 
 @Component({
     selector: 'app-quantity-counter',
-    standalone: true,
-    imports: [RouterLink, FormsModule],
+    imports: [FormsModule],
     templateUrl: './quantity-counter.component.html',
     styleUrl: './quantity-counter.component.scss'
 })
@@ -29,15 +27,8 @@ export class QuantityCounterComponent {
         }
     }
 
-    // isToggled
-    isToggled = false;
-
     constructor(
         public themeService: CustomizerSettingsService
-    ) {
-        this.themeService.isToggled$.subscribe(isToggled => {
-            this.isToggled = isToggled;
-        });
-    }
+    ) {}
 
 }

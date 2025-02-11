@@ -219,16 +219,12 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1, .display-6, .display-5, .d
 
 /** Card */
 .trezo-card {
-    .trezo-card-header {
-        .trezo-card-subtitle {
-            .trezo-card-dropdown {
-                .trezo-card-dropdown-menu {
-                    @apply opacity-0 invisible;
-                }
-                &:has(.active) > .trezo-card-dropdown-menu {
-                    @apply opacity-100 visible;
-                }
-            }
+    .trezo-card-dropdown {
+        .trezo-card-dropdown-menu {
+            @apply opacity-0 invisible;
+        }
+        &:has(.active) > .trezo-card-dropdown-menu {
+            @apply opacity-100 visible;
         }
     }
     .trezo-card-content {
@@ -259,23 +255,6 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1, .display-6, .display-5, .d
             }
             &:has(.active) > .trezo-card-dropdown-menu {
                 @apply opacity-100 visible;
-            }
-        }
-        .chat-sidebar-navs {
-            .nav-item {
-                .nav-link {
-                    &::before {
-                        content: '';
-                        @apply absolute ltr:left-0 rtl:right-0 w-[0] bottom-0 h-[2px] transition-all bg-primary-500;
-                    }
-                    &.active, &:hover {
-                        @apply text-primary-500;
-
-                        &::before {
-                            @apply w-full;
-                        }
-                    }
-                }
             }
         }
         .chat-sidebar-tab-content {
@@ -319,12 +298,24 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1, .display-6, .display-5, .d
         abbr {
             @apply cursor-help;
         }
-    }
-    .products-list-navs {
-        .nav-item {
-            .nav-link {
-                &:hover, &.active {
-                    @apply bg-primary-500 text-white;
+        .line-numbers {
+            &.language-markup {
+                text-shadow: unset;
+                @apply rtl:text-right dark:bg-dark dark:text-white;
+
+                .language-markup {
+                    text-shadow: unset;
+                    @apply dark:text-white;
+                }
+            }
+        }
+        .nft-card {
+            .bid-btn {
+                @apply opacity-0;
+            }
+            &:hover {
+                .bid-btn {
+                    @apply opacity-100;
                 }
             }
         }
@@ -385,8 +376,55 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1, .display-6, .display-5, .d
             }
         }
     }
-    &.welcome-card {
-        background: linear-gradient(81deg, #605DFF 3.39%, #9747FF 93.3%);
+    #schoolUpcomingEventsSlides {
+        .swiper-pagination {
+            @apply w-auto bottom-auto -top-[36px] md:-top-[40px] ltr:left-auto ltr:right-0 rtl:left-0 rtl:right-auto;
+
+            .swiper-pagination-bullet {
+                @apply w-[5px] h-[5px] transition-all rounded-full bg-primary-100 mt-0 mb-0 ltr:ml-0 rtl:mr-0 ltr:mr-[5px] rtl:ml-[5px] opacity-100;
+
+                &.swiper-pagination-bullet-active {
+                    @apply bg-primary-500 w-[24px];
+                }
+            }
+        }
+    }
+    #topCollectionsSlides {
+        .swiper {
+            .swiper-pagination {
+                @apply mt-[15px] w-auto relative top-0 bottom-0 left-0 ltr:text-left rtl:text-right;
+
+                .swiper-pagination-bullet {
+                    @apply w-[8px] h-[8px] transition-all rounded-full bg-gray-200 dark:bg-gray-800 mt-0 mb-0 ltr:ml-0 rtl:mr-0 ltr:mr-[5px] rtl:ml-[5px] opacity-100;
+
+                    &.swiper-pagination-bullet-active {
+                        @apply bg-orange-300;
+                    }
+                }
+            }
+        }
+    }
+    &#featuredNftArtworksSlides, #featuredNftArtworksSlides {
+        .swiper-button-next, .swiper-button-prev {
+            &::after {
+                @apply hidden;
+            }
+        }
+    }
+    #recentPropertySlides, #customerReviewsSlides {
+        .swiper {
+            .swiper-pagination {
+                @apply mt-[15px] w-auto relative top-0 bottom-0 left-0 ltr:text-left rtl:text-right;
+
+                .swiper-pagination-bullet {
+                    @apply w-[8px] h-[8px] transition-all rounded-full bg-gray-200 dark:bg-gray-800 mt-0 mb-0 ltr:ml-0 rtl:mr-0 ltr:mr-[5px] rtl:ml-[5px] opacity-100;
+
+                    &.swiper-pagination-bullet-active {
+                        @apply bg-primary-500;
+                    }
+                }
+            }
+        }
     }
 }
 .toc-accordion {
@@ -631,11 +669,23 @@ html[dir="rtl"] {
             @apply dark:stroke-[#172036];
         }
     }
+    .apexcharts-radialbar-hollow {
+        @apply dark:fill-[#0a0e19];
+    }
 }
 #ecommerceTotalOrdersChart, #ecommerceTotalCustomersChart, #ecommerceTotalRevenueChart {
     .apexcharts-grid-borders {
         line {
             @apply dark:stroke-[#0c1427];
+        }
+    }
+}
+#marketingPerformanceOverviewChart {
+    .apexcharts-canvas {
+        .apexcharts-tooltip-series-group {
+            &.apexcharts-active {
+                @apply pb-[8px];
+            }
         }
     }
 }
@@ -696,7 +746,7 @@ html[dir="rtl"] {
 /** Add New Popup */
 .add-new-popup {
     background-color: rgba(0, 0, 0, 0.5);
-    @apply opacity-0 invisible;
+    @apply opacity-0 invisible ltr:md:-mr-[15px] rtl:md:-ml-[15px];
 
     .popup-dialog {
         @apply -translate-y-[20px];
@@ -867,7 +917,7 @@ html[dir="rtl"] {
     @apply relative;
 
     .tooltip-text {
-        @apply invisible w-auto bg-black text-white text-center rounded-sm p-[5px] absolute z-[1] bottom-[127%] ltr:left-1/2 rtl:right-1/2 opacity-0 transition ltr:-translate-x-1/2 rtl:translate-x-1/2 text-sm font-medium;
+        @apply invisible w-auto bg-black text-white text-center rounded-sm py-[5px] px-[10px] absolute z-[1] bottom-[127%] ltr:left-1/2 rtl:right-1/2 opacity-0 transition ltr:-translate-x-1/2 rtl:translate-x-1/2 text-sm font-medium whitespace-nowrap;
 
         &::after {
             content: "";
@@ -875,23 +925,72 @@ html[dir="rtl"] {
             @apply absolute top-full left-1/2 ltr:-ml-[5px] rtl:-mr-[5px] border-[5px];
         }
     }
+    &.bottom-tooltip {
+        .tooltip-text {
+            @apply top-[127%] bottom-auto;
+    
+            &::after {
+                border-color: transparent transparent #3A4252 transparent;
+                @apply top-auto bottom-full;
+            }
+        }
+    }
+}
+
+/** Custom Popover */
+.custom-popover {
+    @apply relative;
+
+    .popover-text {
+        @apply invisible w-auto bg-black text-white text-center rounded-sm py-[5px] px-[10px] absolute z-[1] bottom-[127%] ltr:left-1/2 rtl:right-1/2 opacity-0 transition ltr:-translate-x-1/2 rtl:translate-x-1/2 text-sm font-medium whitespace-nowrap;
+
+        &::after {
+            content: "";
+            border-color: #3A4252 transparent transparent transparent;
+            @apply absolute top-full left-1/2 ltr:-ml-[5px] rtl:-mr-[5px] border-[5px];
+        }
+    }
+    &:focus {
+        .popover-text {
+            @apply opacity-100 visible;
+        }
+    }
+    &.bottom-popover {
+        .popover-text {
+            @apply top-[127%] bottom-auto;
+    
+            &::after {
+                border-color: transparent transparent #3A4252 transparent;
+                @apply top-auto bottom-full;
+            }
+        }
+    }
 }
 
 /** Product Details Tabs */
-.product-details-tabs {
+.trezo-tabs {
     .navs {
         .nav-item {
             .nav-link {
                 &::before {
                     content: '';
-                    @apply left-0 right-0 bottom-0 h-[1px] absolute transition-all bg-primary-500 opacity-0;
+                    @apply left-0 right-0 bottom-0 h-[2px] absolute transition-all bg-primary-500 opacity-0;
                 }
                 &.active {
-                    @apply bg-white text-black dark:text-white dark:bg-[#15203c];
+                    @apply text-primary-500;
 
                     &::before {
                         @apply opacity-100;
                     }
+                }
+            }
+        }
+    }
+    .products-list-navs {
+        .nav-item {
+            .nav-link {
+                &:hover, &.active {
+                    @apply bg-primary-500 text-white;
                 }
             }
         }
@@ -902,6 +1001,96 @@ html[dir="rtl"] {
             
             &.active {
                 @apply block;
+            }
+        }
+    }
+    &.product-details-tabs {
+        .navs {
+            .nav-item {
+                .nav-link {
+                    &::before {
+                        @apply h-[1px];
+                    }
+                    &.active {
+                        @apply bg-white text-black dark:text-white dark:bg-[#15203c];
+                    }
+                }
+            }
+        }
+    }
+    .chat-sidebar-navs {
+        .nav-item {
+            .nav-link {
+                &::before {
+                    content: '';
+                    @apply absolute ltr:left-0 rtl:right-0 w-[0] bottom-0 h-[2px] transition-all bg-primary-500;
+                }
+                &.active, &:hover {
+                    @apply text-primary-500;
+
+                    &::before {
+                        @apply w-full;
+                    }
+                }
+            }
+        }
+    }
+    .overview-navs {
+        .nav-item {
+            .nav-link {
+                &.active {
+                    @apply bg-primary-500 text-white;
+
+                    h5 {
+                        @apply text-white;
+                    }
+                    span {
+                        @apply text-white;
+
+                        i {
+                            @apply text-white;
+                        }
+                    }
+                    img {
+                        @apply hidden;
+
+                        &:last-child {
+                            @apply block;
+                        }
+                    }
+                }
+            }
+            &:nth-child(2) {
+                .nav-link {
+                    &.active {
+                        @apply bg-purple-500;
+                    }
+                }
+            }
+            &:nth-child(3) {
+                .nav-link {
+                    &.active {
+                        @apply bg-orange-500;
+                    }
+                }
+            }
+        }
+    }
+    .campaigns-navs {
+        .nav-item {
+            .nav-link {
+                &.active, &:hover {
+                    @apply text-primary-600;
+                }
+            }
+        }
+    }
+    .nfts-navs {
+        .nav-item {
+            .nav-link {
+                &.active, &:hover {
+                    @apply text-primary-600;
+                }
             }
         }
     }
@@ -923,7 +1112,7 @@ html[dir="rtl"] {
 /** Front Page Navbar */
 #navbar {
     &.is-sticky {
-        @apply z-[999] bg-white;
+        @apply z-[999] bg-white dark:bg-dark;
     }
     #navbar-burger-menu {
         &.active {
@@ -956,4 +1145,72 @@ html[dir="rtl"] {
             @apply hidden;
         }
     }
+}
+
+/** Click to See/Hide Code */
+.click-to-show-hide-code {
+    @apply hidden;
+
+    &.active {
+        @apply block;
+    }
+}
+
+/** Pagination */
+#dataTablePagination {
+    li {
+        button {
+            &.active {
+                @apply bg-primary-500 text-white border-primary-500;
+            }
+            &.disabled {
+                @apply pointer-events-none opacity-50;
+            }
+        }
+    }
+}
+
+/** Price Range Slider */
+.range-slider, .range-slider2 {
+    .number-group, .number-group2 {
+		.number-input, .number-input2 {
+			&::-webkit-outer-spin-button,
+			&::-webkit-inner-spin-button {
+                @apply appearance-none;
+			}
+		}
+	}
+	.range-group, .range-group2 {
+		.range-input, .range-input2 {
+            @apply w-full absolute ltr:left-0 rtl:right-0 bottom-0 appearance-none focus:outline-0;
+
+			&::-webkit-slider-runnable-track {
+				animation: .2s; 
+                @apply bg-gray-100 dark:bg-[#0a0e19] w-full h-[3px] cursor-pointer shadow-none border-0;
+			}
+			&::-webkit-slider-thumb {
+                @apply w-[18px] h-[18px] relative z-[2] rounded-full cursor-pointer -mt-[8px] bg-primary-500 appearance-none;
+			}
+			&::-moz-range-track {
+				animation: .2s; 
+                @apply w-full h-[3px] cursor-pointer bg-gray-100 dark:bg-[#0a0e19] shadow-none border-0;
+			}
+			&::-moz-range-thumb {
+                @apply w-[18px] h-[18px] relative z-[2] rounded-full cursor-pointer -mt-[8px] bg-primary-500 appearance-none border border-primary-500;
+			}
+			&::-ms-track {
+				animation: .2s;
+				color: transparent;
+				background: transparent;
+				border-color: transparent;
+                @apply w-full h-[5px] cursor-pointer;
+			}
+			&::-ms-fill-lower, &::-ms-fill-upper {
+                @apply bg-primary-500 border-0 shadow-none;
+			}
+			&::-ms-thumb {
+                @apply cursor-pointer bg-primary-500 rounded-full w-[18px] h-[18px] relative z-[2];
+			}
+		}
+	}
 }

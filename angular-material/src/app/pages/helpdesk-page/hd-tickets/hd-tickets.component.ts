@@ -18,7 +18,6 @@ import { MatNativeDateModule } from '@angular/material/core';
 
 @Component({
     selector: 'app-hd-tickets',
-    standalone: true,
     imports: [RouterLink, TicketsResolvedComponent, TicketsInProgressComponent, TicketsDueComponent, TicketsNewOpenComponent, MatCardModule, MatButtonModule, MatMenuModule, MatPaginatorModule, MatTableModule, NgIf, MatFormFieldModule, MatInputModule, MatSelectModule, MatDatepickerModule, MatNativeDateModule],
     templateUrl: './hd-tickets.component.html',
     styleUrl: './hd-tickets.component.scss'

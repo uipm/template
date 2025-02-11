@@ -4,7 +4,6 @@ import { NgIf } from '@angular/common';
 
 @Component({
     selector: 'app-price-statistics',
-    standalone: true,
     imports: [NgIf],
     templateUrl: './price-statistics.component.html',
     styleUrl: './price-statistics.component.scss'

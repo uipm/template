@@ -3,7 +3,6 @@ import { BasicTreemapChartService } from './basic-treemap-chart.service';
 
 @Component({
     selector: 'app-basic-treemap-chart',
-    standalone: true,
     imports: [],
     templateUrl: './basic-treemap-chart.component.html',
     styleUrl: './basic-treemap-chart.component.scss'

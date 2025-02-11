@@ -12,22 +12,22 @@
             <div class="trezo-card-header-menu position-relative">
                 <button class="menu-btn transition d-inline-block bg-transparent border-radius" (click)="toggleCardHeaderMenu()">
                     <span class="d-block position-relative">
-                        Current Year
+                        {{ selectedTimeframe }}
                     </span>
                 </button>
                 <ul class="dropdown-menu border-radius border-0 show" *ngIf="isCardHeaderOpen">
                     <li>
-                        <button type="button" class="dropdown-item d-block w-100 position-relative transition">
+                        <button type="button" class="dropdown-item d-block w-100 position-relative transition" (click)="onTimeframeChange('Current Week')">
                             Current Week
                         </button>
                     </li>
                     <li>
-                        <button type="button" class="dropdown-item d-block w-100 position-relative transition">
+                        <button type="button" class="dropdown-item d-block w-100 position-relative transition" (click)="onTimeframeChange('Current Month')">
                             Current Month
                         </button>
                     </li>
                     <li>
-                        <button type="button" class="dropdown-item d-block w-100 position-relative transition">
+                        <button type="button" class="dropdown-item d-block w-100 position-relative transition" (click)="onTimeframeChange('Current Year')">
                             Current Year
                         </button>
                     </li>

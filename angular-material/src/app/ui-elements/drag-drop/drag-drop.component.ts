@@ -17,7 +17,6 @@ import { DdTableComponent } from './dd-table/dd-table.component';
 
 @Component({
     selector: 'app-drag-drop',
-    standalone: true,
     imports: [RouterLink, MatCardModule, CdkDrag, CdkDragHandle, DdConnectedSortingGroupComponent, DdConnectedSortingComponent, DdCustomPlaceholderComponent, DdCustomPreviewComponent, DdDisabledSortingComponent, DdEnterPredicateComponent, DdHorizontalSortingComponent, DdOpenDraggableDialogComponent, DdSortingComponent, DdDisabledComponent, DdProgrammaticallyComponent, DdTableComponent],
     templateUrl: './drag-drop.component.html',
     styleUrl: './drag-drop.component.scss'

@@ -3,7 +3,6 @@ import { ClicksService } from './clicks.service';
 
 @Component({
     selector: 'app-clicks',
-    standalone: true,
     imports: [],
     templateUrl: './clicks.component.html',
     styleUrl: './clicks.component.scss'

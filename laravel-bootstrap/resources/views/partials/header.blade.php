@@ -67,7 +67,7 @@
                                         class="dropdown-item p-0 text-center"
                                     >
                                         <img
-                                            src="assets/images/figma.svg"
+                                            src="/assets/images/figma.svg"
                                             class="wh-25"
                                             alt="united-states"
                                         />
@@ -79,7 +79,7 @@
                                         class="dropdown-item p-0 text-center"
                                     >
                                         <img
-                                            src="assets/images/dribbble.svg"
+                                            src="/assets/images/dribbble.svg"
                                             class="wh-25"
                                             alt="united-states"
                                         />
@@ -91,7 +91,7 @@
                                         class="dropdown-item p-0 text-center"
                                     >
                                         <img
-                                            src="assets/images/spotify.svg"
+                                            src="/assets/images/spotify.svg"
                                             class="wh-25"
                                             alt="united-states"
                                         />
@@ -103,7 +103,7 @@
                                         class="dropdown-item p-0 text-center"
                                     >
                                         <img
-                                            src="assets/images/github.svg"
+                                            src="/assets/images/github.svg"
                                             class="wh-25"
                                             alt="united-states"
                                         />
@@ -115,7 +115,7 @@
                                         class="dropdown-item p-0 text-center"
                                     >
                                         <img
-                                            src="assets/images/gdrive.svg"
+                                            src="/assets/images/gdrive.svg"
                                             class="wh-25"
                                             alt="united-states"
                                         />
@@ -127,7 +127,7 @@
                                         class="dropdown-item p-0 text-center"
                                     >
                                         <img
-                                            src="assets/images/trello.svg"
+                                            src="/assets/images/trello.svg"
                                             class="wh-25"
                                             alt="united-states"
                                         />
@@ -139,7 +139,7 @@
                                         class="dropdown-item p-0 text-center"
                                     >
                                         <img
-                                            src="assets/images/slak.svg"
+                                            src="/assets/images/slak.svg"
                                             class="wh-25"
                                             alt="united-states"
                                         />
@@ -151,7 +151,7 @@
                                         class="dropdown-item p-0 text-center"
                                     >
                                         <img
-                                            src="assets/images/pinterest.svg"
+                                            src="/assets/images/pinterest.svg"
                                             class="wh-25"
                                             alt="united-states"
                                         />
@@ -163,7 +163,7 @@
                                         class="dropdown-item p-0 text-center"
                                     >
                                         <img
-                                            src="assets/images/facebook.svg"
+                                            src="/assets/images/facebook.svg"
                                             class="wh-25"
                                             alt="united-states"
                                         />
@@ -175,7 +175,7 @@
                                         class="dropdown-item p-0 text-center"
                                     >
                                         <img
-                                            src="assets/images/linkedin.svg"
+                                            src="/assets/images/linkedin.svg"
                                             class="wh-25"
                                             alt="united-states"
                                         />
@@ -255,7 +255,7 @@
                                                     class="flex-shrink-0"
                                                 >
                                                     <img
-                                                        src="assets/images/usa.svg"
+                                                        src="/assets/images/usa.svg"
                                                         class="wh-30 rounded-circle"
                                                         alt="united-states"
                                                     />
@@ -285,7 +285,7 @@
                                                     class="flex-shrink-0"
                                                 >
                                                     <img
-                                                        src="assets/images/canada.svg"
+                                                        src="/assets/images/canada.svg"
                                                         class="wh-30 rounded-circle"
                                                         alt="spain"
                                                     />
@@ -315,7 +315,7 @@
                                                     class="flex-shrink-0"
                                                 >
                                                     <img
-                                                        src="assets/images/germany.svg"
+                                                        src="/assets/images/germany.svg"
                                                         class="wh-30 rounded-circle"
                                                         alt="spain"
                                                     />
@@ -345,7 +345,7 @@
                                                     class="flex-shrink-0"
                                                 >
                                                     <img
-                                                        src="assets/images/portugal.svg"
+                                                        src="/assets/images/portugal.svg"
                                                         class="wh-30 rounded-circle"
                                                         alt="portugal"
                                                     />
@@ -375,7 +375,7 @@
                                                     class="flex-shrink-0"
                                                 >
                                                     <img
-                                                        src="assets/images/spain.svg"
+                                                        src="/assets/images/spain.svg"
                                                         class="wh-30 rounded-circle"
                                                         alt="spain"
                                                     />
@@ -450,7 +450,7 @@
                                         class="notification-menu"
                                     >
                                         <a
-                                            href="notification.html"
+                                            href="/notification"
                                             class="dropdown-item"
                                         >
                                             <div
@@ -489,7 +489,7 @@
                                         class="notification-menu unseen"
                                     >
                                         <a
-                                            href="notification.html"
+                                            href="/notification"
                                             class="dropdown-item"
                                         >
                                             <div
@@ -525,7 +525,7 @@
                                         class="notification-menu"
                                     >
                                         <a
-                                            href="notification.html"
+                                            href="/notification"
                                             class="dropdown-item"
                                         >
                                             <div
@@ -564,7 +564,7 @@
                                         class="notification-menu"
                                     >
                                         <a
-                                            href="notification.html"
+                                            href="/notification"
                                             class="dropdown-item"
                                         >
                                             <div
@@ -603,7 +603,7 @@
                                         class="notification-menu unseen"
                                     >
                                         <a
-                                            href="notification.html"
+                                            href="/notification"
                                             class="dropdown-item"
                                         >
                                             <div
@@ -639,7 +639,7 @@
                                         class="notification-menu"
                                     >
                                         <a
-                                            href="notification.html"
+                                            href="/notification"
                                             class="dropdown-item"
                                         >
                                             <div
@@ -677,7 +677,7 @@
                                 </div>
 
                                 <a
-                                    href="notification.html"
+                                    href="/notification"
                                     class="dropdown-item text-center text-primary d-block view-all fw-medium rounded-bottom-3"
                                 >
                                     <span
@@ -748,7 +748,7 @@
                                     <li>
                                         <a
                                             class="dropdown-item d-flex align-items-center text-body"
-                                            href="my-profile.html"
+                                            href="/my-profile"
                                         >
                                             <i
                                                 class="material-symbols-outlined"
@@ -763,7 +763,7 @@
                                     <li>
                                         <a
                                             class="dropdown-item d-flex align-items-center text-body"
-                                            href="chat.html"
+                                            href="/chat"
                                         >
                                             <i
                                                 class="material-symbols-outlined"
@@ -777,7 +777,7 @@
                                     <li>
                                         <a
                                             class="dropdown-item d-flex align-items-center text-body"
-                                            href="to-do-list.html"
+                                            href="/to-do-list"
                                         >
                                             <i
                                                 class="material-symbols-outlined"
@@ -791,7 +791,7 @@
                                     <li>
                                         <a
                                             class="dropdown-item d-flex align-items-center text-body"
-                                            href="my-profile.html"
+                                            href="/my-profile"
                                         >
                                             <i
                                                 class="material-symbols-outlined"
@@ -809,7 +809,7 @@
                                     <li>
                                         <a
                                             class="dropdown-item d-flex align-items-center text-body"
-                                            href="settings.html"
+                                            href="/settings"
                                         >
                                             <i
                                                 class="material-symbols-outlined"
@@ -823,7 +823,7 @@
                                     <li>
                                         <a
                                             class="dropdown-item d-flex align-items-center text-body"
-                                            href="tickets.html"
+                                            href="/tickets"
                                         >
                                             <i
                                                 class="material-symbols-outlined"
@@ -837,7 +837,7 @@
                                     <li>
                                         <a
                                             class="dropdown-item d-flex align-items-center text-body"
-                                            href="lock-screen.html"
+                                            href="/lock-screen"
                                         >
                                             <i
                                                 class="material-symbols-outlined"
@@ -852,7 +852,7 @@
                                     <li>
                                         <a
                                             class="dropdown-item d-flex align-items-center text-body"
-                                            href="login.html"
+                                            href="/login"
                                         >
                                             <i
                                                 class="material-symbols-outlined"

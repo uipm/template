@@ -47,7 +47,6 @@ const NAMES: string[] = [
 
 @Component({
     selector: 'app-dtw-sorting-pagination-filtering',
-    standalone: true,
     imports: [MatFormFieldModule, MatInputModule, MatTableModule, MatSortModule, MatPaginatorModule],
     templateUrl: './dtw-sorting-pagination-filtering.component.html',
     styleUrl: './dtw-sorting-pagination-filtering.component.scss'

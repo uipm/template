@@ -87,21 +87,6 @@
                 }
             }
         }
-        &.table-style-two {
-            .trezo-card-content {
-                .basic-table {
-                    .table, table {
-                        thead {
-                            tr {
-                                th {
-                                    background-color: #15203c;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
     }
     .card {
         --bs-card-bg: #0C1427;
@@ -234,6 +219,10 @@
                         .assignees {
                             div {
                                 border-color: #0C1427;
+
+                                &.bg-black {
+                                    background-color: #0C1427 !important;
+                                }
                             }
                         }
                         .group-lesson {
@@ -241,6 +230,36 @@
                                 div {
                                     border-color: #0C1427;
                                 }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .table-style-two {
+        .basic-table {
+            .table, table {
+                thead {
+                    tr {
+                        th {
+                            background-color: #15203c;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .table-style-four {
+        .basic-table {
+            .table, table {
+                tbody {
+                    tr {
+                        td {
+                            background-color: #0a0e19;
+                            
+                            &::after {
+                                background: #0c1427;
                             }
                         }
                     }
@@ -292,6 +311,79 @@
                 }
             }
         }
+        &.style-two {
+            .popup-dialog {
+                .trezo-card {
+                    .trezo-card-content {
+                        .tab-pane {
+                            .form-group {
+                                .icon {
+                                    .icon-inner {
+                                        background-color: #15203c;
+                                    }
+                                }
+                            }
+                            .items-list {
+                                .item {
+                                    button {
+                                        background-color: #15203c;
+                                    }
+                                }
+                            }
+                            .range-slider {
+                                .range-group {
+                                    input {
+                                        &::-webkit-slider-runnable-track {
+                                            background-color: #15203c;
+                                        }
+                                        &::-moz-range-track {
+                                            background-color: #15203c;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &.style-three {
+            .popup-dialog {
+                .trezo-card {
+                    .trezo-card-header {
+                        .trezo-card-title {
+                            .icon {
+                                background-color: #0a0e19;
+                            }
+                        }
+                    }
+                    .trezo-card-content {
+                        .trezo-card {
+                            background-color: #0a0e19;
+    
+                            .trezo-card-content {
+                                .team-members-list {
+                                    .item {
+                                        background-color: #0c1427;
+                                    }
+                                }
+                                .uploaded-files-list {
+                                    .item {
+                                        button {
+                                            background-color: #0c1427;
+
+                                            &:hover {
+                                                background-color: var(--primaryColor);
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 
     // Form Control
@@ -331,6 +423,9 @@
 
         &:focus {
             border-color: var(--primaryColor);
+        }
+        &.style-two {
+            color: var(--whiteColor);
         }
     }
 
@@ -424,6 +519,10 @@
         }
         file-upload-icon {
             border-color: var(--borderColor);
+        }
+        &.style-two {
+            border-color: var(--primaryColor) !important;
+            background-color: #0a0e19 !important;
         }
     }
 

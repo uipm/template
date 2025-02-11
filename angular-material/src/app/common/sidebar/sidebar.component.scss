@@ -401,7 +401,7 @@
                                 }
                             }
                         }
-                        &:has(> .mat-expansion-panel-content > .mat-expansion-panel-body > .sidebar-sub-menu > .sidemenu-item > .sidemenu-link.active) {
+                        &:has(> .mat-expansion-panel-content-wrapper > .mat-expansion-panel-content > .mat-expansion-panel-body > .sidebar-sub-menu > .sidemenu-item > .sidemenu-link.active) {
                             .mat-expansion-panel-header {
                                 color: var(--blackColor);
                                 background-color: #F6F7F9;
@@ -482,6 +482,16 @@
                                         color: var(--whiteColor);
                                     }
                                 }
+                                .trezo-badge {
+                                    background: rgba(255, 255, 255, 0.08);
+                                    
+                                    &.style-two {
+                                        background: rgba(255, 255, 255, 0.08);
+                                    }
+                                    &.style-three {
+                                        background: rgba(255, 255, 255, 0.08);
+                                    }
+                                }
                                 &.mat-expanded {
                                     color: var(--whiteColor);
                                     background-color: #15203c;
@@ -531,6 +541,20 @@
                                 .sidebar-sub-menu {
                                     .sidemenu-item {
                                         .sidemenu-link {
+                                            .trezo-badge {
+                                                background: rgba(255, 255, 255, 0.08);
+                                                
+                                                &::before {
+                                                    background: rgba(255, 255, 255, 0.08);
+                                                }
+                                                &.style-two {
+                                                    background: rgba(255, 255, 255, 0.08);
+    
+                                                    &::before {
+                                                        background: rgba(255, 255, 255, 0.08);
+                                                    }
+                                                }
+                                            }
                                             &:hover, &.active {
                                                 background-color: #15203c;
                                             }
@@ -538,7 +562,7 @@
                                     }
                                 }
                             }
-                            &:has(> .mat-expansion-panel-content > .mat-expansion-panel-body > .sidebar-sub-menu > .sidemenu-item > .sidemenu-link.active) {
+                            &:has(> .mat-expansion-panel-content-wrapper > .mat-expansion-panel-content > .mat-expansion-panel-body > .sidebar-sub-menu > .sidemenu-item > .sidemenu-link.active) {
                                 .mat-expansion-panel-header {
                                     color: var(--whiteColor);
                                     background-color: #15203c;
@@ -606,6 +630,16 @@
                                         color: var(--whiteColor);
                                     }
                                 }
+                                .trezo-badge {
+                                    background: rgba(255, 255, 255, 0.08);
+                                    
+                                    &.style-two {
+                                        background: rgba(255, 255, 255, 0.08);
+                                    }
+                                    &.style-three {
+                                        background: rgba(255, 255, 255, 0.08);
+                                    }
+                                }
                                 &.mat-expanded {
                                     color: var(--whiteColor);
                                     background-color: #15203c;
@@ -655,6 +689,20 @@
                                 .sidebar-sub-menu {
                                     .sidemenu-item {
                                         .sidemenu-link {
+                                            .trezo-badge {
+                                                background: rgba(255, 255, 255, 0.08);
+                                                
+                                                &::before {
+                                                    background: rgba(255, 255, 255, 0.08);
+                                                }
+                                                &.style-two {
+                                                    background: rgba(255, 255, 255, 0.08);
+    
+                                                    &::before {
+                                                        background: rgba(255, 255, 255, 0.08);
+                                                    }
+                                                }
+                                            }
                                             &:hover, &.active {
                                                 background-color: #15203c;
                                             }
@@ -662,7 +710,7 @@
                                     }
                                 }
                             }
-                            &:has(> .mat-expansion-panel-content > .mat-expansion-panel-body > .sidebar-sub-menu > .sidemenu-item > .sidemenu-link.active) {
+                            &:has(> .mat-expansion-panel-content-wrapper > .mat-expansion-panel-content > .mat-expansion-panel-body > .sidebar-sub-menu > .sidemenu-item > .sidemenu-link.active) {
                                 .mat-expansion-panel-header {
                                     color: var(--whiteColor);
                                     background-color: #15203c;
@@ -711,6 +759,10 @@
 
             .logo {
                 a {
+                    img {
+                        left: auto;
+                        right: 0;
+                    }
                     span {
                         margin: {
                             left: 0;
@@ -761,6 +813,11 @@
 
                                     &::before {
                                         content: "\ea64";
+                                    }
+                                }
+                                .mat-content {
+                                    .mat-expansion-panel-header-title, .mat-expansion-panel-header-description {
+                                        margin-left: 0;
                                     }
                                 }
                                 .trezo-badge {
@@ -1259,6 +1316,14 @@
             }
             &.component-rtl-enabled {
                 &.active, &.hide-sidebar {
+                    .logo {
+                        a {
+                            img {
+                                left: auto;
+                                right: 11px;
+                            }
+                        }
+                    }
                     .sidebar-inner {
                         .sidebar-menu {
                             .mat-accordion {
@@ -1280,6 +1345,14 @@
                         }
                     }
                     &:hover {
+                        .logo {
+                            a {
+                                img {
+                                    left: auto;
+                                    right: 0;
+                                }
+                            }
+                        }
                         .sidebar-inner {
                             .sidebar-menu {
                                 .mat-accordion {

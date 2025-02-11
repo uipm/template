@@ -3,7 +3,6 @@ import { RotatedLabelsColumnChartService } from './rotated-labels-column-chart.s
 
 @Component({
     selector: 'app-rotated-labels-column-chart',
-    standalone: true,
     imports: [],
     templateUrl: './rotated-labels-column-chart.component.html',
     styleUrl: './rotated-labels-column-chart.component.scss'

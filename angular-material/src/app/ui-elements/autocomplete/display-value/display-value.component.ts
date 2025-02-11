@@ -14,7 +14,6 @@ export interface User {
 
 @Component({
     selector: 'app-display-value',
-    standalone: true,
     imports: [
         MatCardModule,
         FormsModule,

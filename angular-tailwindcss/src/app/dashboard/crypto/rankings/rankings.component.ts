@@ -4,7 +4,6 @@ import { NgIf } from '@angular/common';
 
 @Component({
     selector: 'app-rankings',
-    standalone: true,
     imports: [RouterLink, NgIf],
     templateUrl: './rankings.component.html',
     styleUrl: './rankings.component.scss'

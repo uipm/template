@@ -1,12 +1,10 @@
 import { Component } from '@angular/core';
-import { RouterLink } from '@angular/router';
 import { MatCardModule } from '@angular/material/card';
 import { MatTableDataSource, MatTableModule } from '@angular/material/table';
 
 @Component({
     selector: 'app-enrolled-students',
-    standalone: true,
-    imports: [RouterLink, MatCardModule, MatTableModule],
+    imports: [MatCardModule, MatTableModule],
     templateUrl: './enrolled-students.component.html',
     styleUrl: './enrolled-students.component.scss'
 })

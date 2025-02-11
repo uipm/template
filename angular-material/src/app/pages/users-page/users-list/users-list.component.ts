@@ -1,4 +1,3 @@
-import { NgIf } from '@angular/common';
 import { Component, ViewChild } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
@@ -8,8 +7,7 @@ import { RouterLink } from '@angular/router';
 
 @Component({
     selector: 'app-users-list',
-    standalone: true,
-    imports: [RouterLink, MatCardModule, MatButtonModule, MatTableModule, MatPaginatorModule, NgIf],
+    imports: [RouterLink, MatCardModule, MatButtonModule, MatTableModule, MatPaginatorModule],
     templateUrl: './users-list.component.html',
     styleUrl: './users-list.component.scss'
 })

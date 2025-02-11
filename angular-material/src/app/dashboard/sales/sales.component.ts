@@ -11,7 +11,6 @@ import { MatCardModule } from '@angular/material/card';
 
 @Component({
     selector: 'app-sales',
-    standalone: true,
     imports: [MatCardModule, StatsComponent, RecentEarningsComponent, SalesByLocationsComponent, TransactionHistoryComponent, RecentOrdersComponent, RealTimeSalesComponent, SalesOverviewComponent, GrossEarningsComponent],
     templateUrl: './sales.component.html',
     styleUrl: './sales.component.scss'

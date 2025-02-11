@@ -15,7 +15,6 @@ import { TotalCoursesComponent } from './total-courses/total-courses.component';
 
 @Component({
     selector: 'app-lms',
-    standalone: true,
     imports: [WelcomeComponent, TotalCoursesComponent, TotalEnrolledComponent, TotalMentorsComponent, StudentsInterestedTopicsComponent, TopInstructorsComponent, StudentsProgressComponent, GroupLessonsComponent, EnrolledByCountriesComponent, CoursesComponent, CoursesSalesComponent, TimeSpentComponent, OurTopCoursesComponent],
     templateUrl: './lms.component.html',
     styleUrl: './lms.component.scss'

@@ -4,22 +4,14 @@ import { CustomizerSettingsService } from '../../customizer-settings/customizer-
 
 @Component({
     selector: 'app-ratio',
-    standalone: true,
     imports: [RouterLink],
     templateUrl: './ratio.component.html',
     styleUrl: './ratio.component.scss'
 })
 export class RatioComponent {
 
-    // isToggled
-    isToggled = false;
-
     constructor(
         public themeService: CustomizerSettingsService
-    ) {
-        this.themeService.isToggled$.subscribe(isToggled => {
-            this.isToggled = isToggled;
-        });
-    }
+    ) {}
 
 }

@@ -13,7 +13,6 @@ import { MpOverviewComponent } from './mp-overview/mp-overview.component';
 
 @Component({
     selector: 'app-my-profile',
-    standalone: true,
     imports: [RouterLink, MpWelcomeComponent, MpTotalProjectsComponent, MpTotalOrdersComponent, MpTotalRevenueComponent, MpProfileIntroComponent, MpProfileInformationComponent, MpAdditionalInformationComponent, MpRecentActivityComponent, MpToDoListComponent, MpOverviewComponent],
     templateUrl: './my-profile.component.html',
     styleUrl: './my-profile.component.scss'

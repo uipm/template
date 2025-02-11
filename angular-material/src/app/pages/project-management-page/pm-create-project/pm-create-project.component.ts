@@ -13,7 +13,6 @@ import { MatButtonModule } from '@angular/material/button';
 
 @Component({
     selector: 'app-pm-create-project',
-    standalone: true,
     imports: [RouterLink, MatCardModule, MatButtonModule, MatFormFieldModule, MatInputModule, MatSelectModule, MatDatepickerModule, FileUploadModule, NgxEditorModule, MatNativeDateModule, NgIf],
     templateUrl: './pm-create-project.component.html',
     styleUrl: './pm-create-project.component.scss'

@@ -32,7 +32,7 @@ export class TotalRevenueService {
                     ],
                     chart: {
                         type: "bar",
-                        height: 100,
+                        height: 110,
                         stacked: true,
                         toolbar: {
                             show: false

@@ -7,7 +7,6 @@ import { MatCardModule } from '@angular/material/card';
 
 @Component({
     selector: 'app-disabled-datepicker',
-    standalone: true,
     imports: [MatFormFieldModule, MatInputModule, MatDatepickerModule, MatNativeDateModule, MatCardModule],
     templateUrl: './disabled-datepicker.component.html',
     styleUrl: './disabled-datepicker.component.scss'

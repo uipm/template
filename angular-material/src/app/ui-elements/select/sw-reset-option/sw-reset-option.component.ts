@@ -6,7 +6,6 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 
 @Component({
     selector: 'app-sw-reset-option',
-    standalone: true,
     imports: [MatFormFieldModule, MatSelectModule, MatInputModule, FormsModule],
     templateUrl: './sw-reset-option.component.html',
     styleUrl: './sw-reset-option.component.scss'

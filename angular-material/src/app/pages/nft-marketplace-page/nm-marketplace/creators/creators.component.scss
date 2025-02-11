@@ -1,0 +1,112 @@
+.top-creators-card {
+    &.component-card-borderd {
+        border-width: 0 !important;
+    }
+    &.component-card-with-box-shadow {
+        box-shadow: unset !important;
+    }
+}
+.creator-card {
+    padding: 10px;
+
+    .mat-mdc-card-content {
+        .content {
+            margin-top: -34px;
+
+            .author {
+                margin-bottom: 15px;
+
+                img {
+                    margin-bottom: -3px;
+                }
+                .verified {
+                    right: 0;
+                    bottom: 0;
+                    position: absolute;
+                }
+            }
+            h5 {
+                font-size: 16px;
+                margin-bottom: 8px;
+            }
+            span {
+                font-size: 12px;
+            }
+            .border-top {
+                border-color: var(--borderColor) !important;
+                padding-top: 15px;
+                margin-top: 15px;
+            }
+            .mat-mdc-button {
+                padding: 8px 17px;
+                display: inline-block;
+                color: var(--whiteColor);
+                background-color: var(--primaryColor);
+                font: {
+                    size: 16px;
+                    weight: 500;
+                };
+                &.mat-warn {
+                    background-color: #8695aa;
+                }
+            }
+        }
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    .creator-card {
+        .mat-mdc-card-content {
+            .content {
+                .mat-mdc-button {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+    .creators-filter-card {
+        padding-bottom: 2px !important;
+
+        .mat-mdc-card-content {
+            .form-group {
+                margin-bottom: 15px !important;
+            }
+        }
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width : 576px) and (max-width : 767px) {
+
+    .creators-filter-card {
+        padding-bottom: 5px !important;
+    }
+
+}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    .creator-card {
+        .mat-mdc-card-content {
+            .content {
+                .mat-mdc-button {
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width : 992px) and (max-width : 1199px) {}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {}
+
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {}

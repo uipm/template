@@ -10,7 +10,6 @@ import { LbwReactiveFormsComponent } from './lbw-reactive-forms/lbw-reactive-for
 
 @Component({
     selector: 'app-listbox',
-    standalone: true,
     imports: [RouterLink, MatCardModule, CdkListbox, CdkOption, LbwComplexObjectAsValuesComponent, LbwDisabledOptionsComponent, LbwFormsValidationComponent, HorizontalListboxComponent, LbwReactiveFormsComponent],
     templateUrl: './listbox.component.html',
     styleUrl: './listbox.component.scss'

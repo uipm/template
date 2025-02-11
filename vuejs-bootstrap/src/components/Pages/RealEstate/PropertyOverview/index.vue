@@ -11,13 +11,16 @@
               Sale
             </span>
           </div>
+
           <h3 class="mb-3 text-danger">$250,000</h3>
+
           <div class="d-flex align-items-center mb-3">
             <span class="material-symbols-outlined fs-20 text-primary">
               location_on
             </span>
             <span class="ms-1">Largo Prazeres 32</span>
           </div>
+
           <div
             class="border-top border-bottom py-2 mb-4 d-flex justify-content-between align-items-center gap-2 mb-4"
           >
@@ -79,76 +82,76 @@
 
           <h3 class="mb-3">Features</h3>
           <ul class="ps-0 mb-md-5 mb-4 list-unstyled">
-            <li class="mb-2">
+            <li class="mb-2 d-flex align-items-center gap-2">
               <span
                 class="d-inline-block rounded-circle"
                 style="width: 7px; height: 7px; background-color: #605dff"
               ></span>
-              <span class="ms-1">Spacious living room with natural light</span>
+              <span>Spacious living room with natural light</span>
             </li>
-            <li class="mb-2">
+            <li class="mb-2 d-flex align-items-center gap-2">
               <span
                 class="d-inline-block rounded-circle"
                 style="width: 7px; height: 7px; background-color: #605dff"
               ></span>
-              <span class="ms-1">Modern kitchen with granite countertops</span>
+              <span>Modern kitchen with granite countertops</span>
             </li>
-            <li class="mb-2">
+            <li class="mb-2 d-flex align-items-center gap-2">
               <span
                 class="d-inline-block rounded-circle"
                 style="width: 7px; height: 7px; background-color: #605dff"
               ></span>
-              <span class="ms-1">Master bedroom with en-suite bathroom</span>
+              <span>Master bedroom with en-suite bathroom</span>
             </li>
-            <li class="mb-2">
+            <li class="mb-2 d-flex align-items-center gap-2">
               <span
                 class="d-inline-block rounded-circle"
                 style="width: 7px; height: 7px; background-color: #605dff"
               ></span>
-              <span class="ms-1">Private backyard with deck</span>
+              <span>Private backyard with deck</span>
             </li>
-            <li class="mb-2">
+            <li class="mb-2 d-flex align-items-center gap-2">
               <span
                 class="d-inline-block rounded-circle"
                 style="width: 7px; height: 7px; background-color: #605dff"
               ></span>
-              <span class="ms-1">2-car garage</span>
+              <span>2-car garage</span>
             </li>
-            <li class="mb-2">
+            <li class="mb-2 d-flex align-items-center gap-2">
               <span
                 class="d-inline-block rounded-circle"
                 style="width: 7px; height: 7px; background-color: #605dff"
               ></span>
-              <span class="ms-1">Central heating and air conditioning</span>
+              <span>Central heating and air conditioning</span>
             </li>
           </ul>
 
           <h3 class="mb-3">Neighborhood</h3>
           <ul class="ps-0 mb-md-5 mb-4 list-unstyled">
-            <li class="mb-2">
+            <li class="mb-2 d-flex align-items-center gap-2">
               <span
                 class="d-inline-block rounded-circle"
                 style="width: 7px; height: 7px; background-color: #605dff"
               ></span>
-              <span class="ms-1">
+              <span>
                 Located in a quiet residential area with nearby parks
               </span>
             </li>
-            <li class="mb-2">
+            <li class="mb-2 d-flex align-items-center gap-2">
               <span
                 class="d-inline-block rounded-circle"
                 style="width: 7px; height: 7px; background-color: #605dff"
               ></span>
-              <span class="ms-1">
+              <span>
                 Close to schools, shopping centers, and public transportation
               </span>
             </li>
-            <li class="mb-2">
+            <li class="mb-2 d-flex align-items-center gap-2">
               <span
                 class="d-inline-block rounded-circle"
                 style="width: 7px; height: 7px; background-color: #605dff"
               ></span>
-              <span class="ms-1">Safe and family-friendly community</span>
+              <span>Safe and family-friendly community</span>
             </li>
           </ul>
 
@@ -161,135 +164,46 @@
 
           <h3 class="mb-3">Recent Renovations</h3>
           <ul class="ps-0 mb-0 list-unstyled">
-            <li class="mb-2">
+            <li class="mb-2 d-flex align-items-center gap-2">
               <span
                 class="d-inline-block rounded-circle"
                 style="width: 7px; height: 7px; background-color: #605dff"
               ></span>
-              <span class="ms-1">New roof installed in 2023</span>
+              <span>New roof installed in 2023</span>
             </li>
-            <li class="mb-2">
+            <li class="mb-2 d-flex align-items-center gap-2">
               <span
                 class="d-inline-block rounded-circle"
                 style="width: 7px; height: 7px; background-color: #605dff"
               ></span>
-              <span class="ms-1">
-                Fresh paint throughout the interior in 2024
-              </span>
+              <span> Fresh paint throughout the interior in 2024 </span>
             </li>
-            <li class="mb-0">
+            <li class="mb-0 d-flex align-items-center gap-2">
               <span
                 class="d-inline-block rounded-circle"
                 style="width: 7px; height: 7px; background-color: #605dff"
               ></span>
-              <span class="ms-1">Updated appliances in the kitchen</span>
+              <span>Updated appliances in the kitchen</span>
             </li>
           </ul>
         </div>
       </div>
     </div>
+
     <div class="col-lg-4">
-      <div
-        class="card border-0 rounded-3 bg-white mb-4 text-center position-relative z-1 overflow-hidden"
-      >
-        <span
-          class="bg-danger rounded-top-3 position-absolute z-n1 top-0 d-block w-100"
-          style="height: 120px"
-        ></span>
-        <img
-          src="@/assets/images/shape-9.png"
-          class="position-absolute top-0 start-0"
-          alt="shape"
-        />
-        <div class="card-body px-4 pb-4" style="padding-top: 35px">
-          <img
-            src="@/assets/images/user-70.png"
-            class="rounded-circle mb-4"
-            style="width: 160px; height: 160px"
-            alt="user"
-          />
-
-          <h3 class="fs-16 mb-0">Harold Cook</h3>
-          <span>Owner</span>
-
-          <ul
-            class="ps-0 my-4 list-unstyled d-flex flex-wrap justify-content-center gap-3"
-          >
-            <li>
-              <a
-                href="https://www.facebook.com/"
-                target="_blank"
-                class="d-inline-block text-center rounded-circle text-decoration-none text-white"
-                style="
-                  width: 30px;
-                  height: 30px;
-                  line-height: 30px;
-                  background-color: #3a559f;
-                "
-              >
-                <i class="ri-facebook-fill"></i>
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.twitter.com/"
-                target="_blank"
-                class="d-inline-block text-center rounded-circle text-decoration-none text-white"
-                style="
-                  width: 30px;
-                  height: 30px;
-                  line-height: 30px;
-                  background-color: #03a9f4;
-                "
-              >
-                <i class="ri-twitter-x-line"></i>
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.facebook.com/"
-                target="_blank"
-                class="d-inline-block text-center rounded-circle text-decoration-none text-white"
-                style="
-                  width: 30px;
-                  height: 30px;
-                  line-height: 30px;
-                  background-color: #007ab9;
-                "
-              >
-                <i class="ri-linkedin-fill"></i>
-              </a>
-            </li>
-          </ul>
-
-          <ul class="ps-0 mb-0 list-unstyled">
-            <li class="d-flex justify-content-between align-items-center mb-3">
-              <span class="text-secondary">Property ID:</span>
-              <span>P1001</span>
-            </li>
-            <li class="d-flex justify-content-between align-items-center mb-3">
-              <span class="text-secondary">Year Built:</span>
-              <span>2010</span>
-            </li>
-            <li class="d-flex justify-content-between align-items-center mb-3">
-              <span class="text-secondary">Property Type:</span>
-              <span>Residential</span>
-            </li>
-            <li class="d-flex justify-content-between align-items-center mb-0">
-              <span class="text-secondary">Listing Date:</span>
-              <span>Sep 15, 2024</span>
-            </li>
-          </ul>
-        </div>
-      </div>
+      <Profile />
     </div>
   </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from "vue";
+import Profile from "./Profile/index.vue";
 
 export default defineComponent({
   name: "PropertyOverview",
+  components: {
+    Profile,
+  },
 });
 </script>

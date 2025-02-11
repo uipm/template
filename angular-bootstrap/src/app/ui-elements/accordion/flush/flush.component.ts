@@ -1,11 +1,9 @@
 import { NgClass } from '@angular/common';
 import { Component } from '@angular/core';
-import { RouterLink } from '@angular/router';
 
 @Component({
     selector: 'app-flush',
-    standalone: true,
-    imports: [RouterLink, NgClass],
+    imports: [NgClass],
     templateUrl: './flush.component.html',
     styleUrl: './flush.component.scss'
 })

@@ -3,7 +3,6 @@ import { DataLabelsColumnChartService } from './data-labels-column-chart.service
 
 @Component({
     selector: 'app-data-labels-column-chart',
-    standalone: true,
     imports: [],
     templateUrl: './data-labels-column-chart.component.html',
     styleUrl: './data-labels-column-chart.component.scss'

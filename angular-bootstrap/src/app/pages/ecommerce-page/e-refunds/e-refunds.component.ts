@@ -1,11 +1,10 @@
 import { RouterLink } from '@angular/router';
-import { NgClass, NgIf } from '@angular/common';
+import { NgIf } from '@angular/common';
 import { Component, HostListener } from '@angular/core';
 
 @Component({
     selector: 'app-e-refunds',
-    standalone: true,
-    imports: [RouterLink, NgIf, NgClass],
+    imports: [RouterLink, NgIf],
     templateUrl: './e-refunds.component.html',
     styleUrl: './e-refunds.component.scss'
 })

@@ -1,12 +1,10 @@
 import { Component } from '@angular/core';
 import { MatCardModule } from '@angular/material/card';
-import { RouterLink } from '@angular/router';
 import { BasicBoxplotChartService } from './basic-boxplot-chart.service';
 
 @Component({
     selector: 'app-basic-boxplot-chart',
-    standalone: true,
-    imports: [RouterLink, MatCardModule],
+    imports: [MatCardModule],
     templateUrl: './basic-boxplot-chart.component.html',
     styleUrl: './basic-boxplot-chart.component.scss'
 })

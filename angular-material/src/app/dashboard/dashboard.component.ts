@@ -10,18 +10,17 @@ import { CustomizerSettingsService } from '../customizer-settings/customizer-set
 
 @Component({
     selector: 'app-dashboard',
-    standalone: true,
     imports: [RouterOutlet, NgClass, HeaderComponent, SidebarComponent, FooterComponent, CustomizerSettingsComponent],
     templateUrl: './dashboard.component.html',
     styleUrl: './dashboard.component.scss'
 })
 export class DashboardComponent {
 
-    // isSidebarToggled
-    isSidebarToggled = false;
-
     // isToggled
     isToggled = false;
+
+    // isSidebarToggled
+    isSidebarToggled = false;
 
     constructor(
         private toggleService: ToggleService,

@@ -4,7 +4,6 @@ import { NgIf } from '@angular/common';
 
 @Component({
     selector: 'app-hd-agents',
-    standalone: true,
     imports: [RouterLink, NgIf],
     templateUrl: './hd-agents.component.html',
     styleUrl: './hd-agents.component.scss'

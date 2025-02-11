@@ -4,22 +4,14 @@ import { CustomizerSettingsService } from '../customizer-settings/customizer-set
 
 @Component({
     selector: 'app-settings',
-    standalone: true,
     imports: [RouterOutlet, RouterLink, RouterLinkActive],
     templateUrl: './settings.component.html',
     styleUrl: './settings.component.scss'
 })
 export class SettingsComponent {
 
-    // isToggled
-    isToggled = false;
-
     constructor(
         public themeService: CustomizerSettingsService
-    ) {
-        this.themeService.isToggled$.subscribe(isToggled => {
-            this.isToggled = isToggled;
-        });
-    }
+    ) {}
 
 }

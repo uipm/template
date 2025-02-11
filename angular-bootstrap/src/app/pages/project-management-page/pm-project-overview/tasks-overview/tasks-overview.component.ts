@@ -1,11 +1,9 @@
 import { Component } from '@angular/core';
-import { RouterLink } from '@angular/router';
 import { TasksOverviewService } from './tasks-overview.service';
 
 @Component({
     selector: 'app-tasks-overview',
-    standalone: true,
-    imports: [RouterLink],
+    imports: [],
     templateUrl: './tasks-overview.component.html',
     styleUrl: './tasks-overview.component.scss'
 })

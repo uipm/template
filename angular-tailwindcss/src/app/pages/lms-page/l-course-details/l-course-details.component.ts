@@ -7,7 +7,6 @@ import { EnrolledStudentsComponent } from './enrolled-students/enrolled-students
 
 @Component({
     selector: 'app-l-course-details',
-    standalone: true,
     imports: [RouterLink, TablesOfContentComponent, CourseInstructorComponent, EnrolledStudentsComponent, ReviewsComponent],
     templateUrl: './l-course-details.component.html',
     styleUrl: './l-course-details.component.scss'

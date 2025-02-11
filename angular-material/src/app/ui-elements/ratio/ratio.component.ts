@@ -4,7 +4,6 @@ import { RouterLink } from '@angular/router';
 
 @Component({
     selector: 'app-ratio',
-    standalone: true,
     imports: [RouterLink, MatCardModule],
     templateUrl: './ratio.component.html',
     styleUrl: './ratio.component.scss'

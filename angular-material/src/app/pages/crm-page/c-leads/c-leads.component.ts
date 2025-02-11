@@ -8,7 +8,7 @@ import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatTableDataSource, MatTableModule } from '@angular/material/table';
-import { NgClass, NgIf } from '@angular/common';
+import { NgIf } from '@angular/common';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { SelectionModel } from '@angular/cdk/collections';
 import { MatPaginator, MatPaginatorModule } from '@angular/material/paginator';
@@ -21,8 +21,7 @@ import { FileUploadModule } from '@iplab/ngx-file-upload';
 
 @Component({
     selector: 'app-c-leads',
-    standalone: true,
-    imports: [RouterLink, RevenueGrowthComponent, LeadConversionComponent, TotalOrdersComponent, AnnualProfitComponent, MatCardModule, MatButtonModule, MatMenuModule, NgClass, NgIf, MatTableModule, MatPaginatorModule, MatCheckboxModule, MatFormFieldModule, MatInputModule, MatSelectModule, MatDatepickerModule, MatNativeDateModule, FileUploadModule],
+    imports: [RouterLink, RevenueGrowthComponent, LeadConversionComponent, TotalOrdersComponent, AnnualProfitComponent, MatCardModule, MatButtonModule, MatMenuModule, NgIf, MatTableModule, MatPaginatorModule, MatCheckboxModule, MatFormFieldModule, MatInputModule, MatSelectModule, MatDatepickerModule, MatNativeDateModule, FileUploadModule],
     templateUrl: './c-leads.component.html',
     styleUrl: './c-leads.component.scss'
 })

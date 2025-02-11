@@ -512,7 +512,12 @@
     }
     .accordion {
       .sidebar-menu-link {
-        color: var(--whiteColor);
+        color: var(--whiteColor) !important;
+
+        .material-symbols-outlined,
+        i.arrow-right {
+          color: var(--whiteColor) !important;
+        }
         &.router-link-active,
         &:hover {
           background-color: #15203c;
@@ -528,14 +533,14 @@
           .title-header {
             .material-symbols-outlined,
             i.arrow-right {
-              color: var(--whiteColor);
+              color: var(--whiteColor) !important;
             }
           }
         }
         .title-header {
           color: var(--whiteColor);
           i.arrow-right {
-            color: var(--whiteColor);
+            color: var(--whiteColor) !important;
           }
           &:hover {
             background-color: #15203c;
@@ -1788,6 +1793,200 @@
           }
         }
       }
+    }
+  }
+  .border-bottom {
+    border-color: #172036 !important;
+  }
+  .create-dialog-box {
+    .title {
+      background-color: #172036;
+      .close-btn {
+        color: var(--whiteColor) !important;
+      }
+    }
+  }
+  .text-black {
+    color: var(--whiteColor) !important;
+  }
+  .form-control {
+    background-color: var(--blackColor) !important;
+    color: var(--bodyColor) !important;
+  }
+  &.pos-system-page,
+  &.podcast-page,
+  &.call-center-page,
+  &.school-page {
+    &.bg-white {
+      background-color: #0a0e19 !important;
+    }
+    .sidebar-area {
+      .logo {
+        &.bg-white {
+          background-color: #0c1427 !important;
+        }
+      }
+    }
+  }
+  &.bg-white {
+    .sidebar-area {
+      border-right: 1px solid #172036 !important;
+    }
+    .footer-area {
+      border: 1px solid #0c1427 !important;
+    }
+  }
+  .bg-body-bg {
+    background-color: #0a0e19 !important;
+  }
+  .border-top {
+    border-color: #172036 !important;
+  }
+  .border {
+    border-color: #172036 !important;
+  }
+  .for-dark-rounded-bg {
+    .bg-white {
+      background-color: #172036 !important;
+    }
+  }
+  .categories-tabs {
+    .nav-item {
+      .nav-link {
+        border-color: #172036 !important;
+        &.active {
+          border-color: #605dff !important;
+        }
+      }
+    }
+  }
+  .pagination {
+    .page-item {
+      .page-link {
+        background: #15203c;
+        border-color: #15203c;
+        color: #fff;
+        &.active {
+          background-color: var(--primaryColor);
+          color: var(--whiteColor);
+          z-index: 0 !important;
+        }
+        &:hover {
+          background-color: var(--primaryColor);
+          color: var(--whiteColor);
+        }
+      }
+    }
+  }
+  .product-quantity {
+    .add-to-cart-counter {
+      input {
+        background-color: #15203c;
+        border-color: #15203c;
+        color: #fff;
+      }
+    }
+  }
+  .order-details-card {
+    .text-secondary {
+      color: #ffffff !important;
+    }
+  }
+  .payment-method {
+    .btn {
+      background-color: #0a0e19 !important;
+      border-color: #172036 !important;
+    }
+    .btn-check:checked + .btn,
+    :not(.btn-check) + .btn:active,
+    .btn:first-child:active,
+    .btn.active,
+    .btn.show {
+      border-color: #605dff !important;
+      background-color: transparent !important;
+    }
+  }
+  .overview-card,
+  .agent-avg-earnings-card,
+  .agents-performance-overview-card,
+  .call-center-geography-card,
+  .inbound-calls-card,
+  .outbound-calls-card,
+  .recent-calls-card,
+  .attendance-analytics-card,
+  .new-admissions-card,
+  .notice-board-card,
+  .students-list-card,
+  .students-overview-card,
+  .teachers-card {
+    &.border {
+      border: 1px solid #172036 !important;
+    }
+  }
+  .card-group {
+    .border-border-color {
+      border: 1px solid #172036 !important;
+    }
+  }
+  .default-table-area.agents-performance-overview.style-three
+    .table-responsive
+    .table
+    tbody
+    tr
+    td {
+    background-color: #0a0e19;
+  }
+  .default-table-area {
+    .table-responsive {
+      .table thead {
+        tr {
+          th {
+            background-color: #15203c;
+            color: #fff;
+            border-color: #172036;
+          }
+        }
+      }
+    }
+    &.recent-calls,
+    &.employee-list {
+      .table-responsive {
+        .table {
+          thead {
+            tr {
+              th {
+                border-top: 1px solid #172036 !important;
+              }
+            }
+          }
+        }
+      }
+    }
+    &.top-nfts-table,
+    &.campaigns-table {
+      &.style-two {
+        .table-responsive {
+          .table {
+            thead {
+              tr {
+                th {
+                  &.border-bottom {
+                    border-bottom: 1px solid #172036 !important;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .card {
+    background-color: #0c1427 !important;
+  }
+  .call-overview-tabs {
+    .card {
+      background-color: #0a0e19 !important;
     }
   }
 }

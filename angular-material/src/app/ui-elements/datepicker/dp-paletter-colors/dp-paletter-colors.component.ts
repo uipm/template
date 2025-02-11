@@ -7,7 +7,6 @@ import { MatCardModule } from '@angular/material/card';
 
 @Component({
     selector: 'app-dp-paletter-colors',
-    standalone: true,
     imports: [MatFormFieldModule, MatInputModule, MatDatepickerModule, MatNativeDateModule, MatCardModule],
     templateUrl: './dp-paletter-colors.component.html',
     styleUrl: './dp-paletter-colors.component.scss'

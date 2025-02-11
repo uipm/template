@@ -10,7 +10,6 @@ const year = today.getFullYear();
 
 @Component({
     selector: 'app-drp-comparison-ranges',
-    standalone: true,
     imports: [MatFormFieldModule, MatDatepickerModule, FormsModule, ReactiveFormsModule, MatCardModule],
     templateUrl: './drp-comparison-ranges.component.html',
     styleUrl: './drp-comparison-ranges.component.scss'

@@ -4,7 +4,6 @@ import { FileUploadModule } from '@iplab/ngx-file-upload';
 
 @Component({
     selector: 'app-my-drive',
-    standalone: true,
     imports: [RouterLink, FileUploadModule],
     templateUrl: './my-drive.component.html',
     styleUrl: './my-drive.component.scss'

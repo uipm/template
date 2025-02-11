@@ -3,7 +3,6 @@ import { MonochromePolarChartService } from './monochrome-polar-chart.service';
 
 @Component({
     selector: 'app-monochrome-polar-chart',
-    standalone: true,
     imports: [],
     templateUrl: './monochrome-polar-chart.component.html',
     styleUrl: './monochrome-polar-chart.component.scss'

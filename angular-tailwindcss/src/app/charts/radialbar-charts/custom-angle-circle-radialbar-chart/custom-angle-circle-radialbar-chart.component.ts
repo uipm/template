@@ -3,7 +3,6 @@ import { CustomAngleCircleRadialbarChartService } from './custom-angle-circle-ra
 
 @Component({
     selector: 'app-custom-angle-circle-radialbar-chart',
-    standalone: true,
     imports: [],
     templateUrl: './custom-angle-circle-radialbar-chart.component.html',
     styleUrl: './custom-angle-circle-radialbar-chart.component.scss'

@@ -13,7 +13,6 @@ import { NgIf, isPlatformBrowser } from '@angular/common';
 
 @Component({
     selector: 'app-create-an-event',
-    standalone: true,
     imports: [RouterLink, MatCardModule, MatButtonModule, MatFormFieldModule, MatInputModule, MatSelectModule, MatDatepickerModule, FileUploadModule, NgxEditorModule, MatNativeDateModule, NgIf],
     templateUrl: './create-an-event.component.html',
     styleUrl: './create-an-event.component.scss'

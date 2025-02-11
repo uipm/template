@@ -7,7 +7,6 @@ import { MatCardModule } from '@angular/material/card';
 
 @Component({
     selector: 'app-dpw-custom-date-classes',
-    standalone: true,
     encapsulation: ViewEncapsulation.None,
     imports: [MatFormFieldModule, MatInputModule, MatDatepickerModule, MatNativeDateModule, MatCardModule],
     templateUrl: './dpw-custom-date-classes.component.html',

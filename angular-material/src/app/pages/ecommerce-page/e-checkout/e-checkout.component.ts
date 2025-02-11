@@ -8,7 +8,6 @@ import { MatButtonModule } from '@angular/material/button';
 
 @Component({
     selector: 'app-e-checkout',
-    standalone: true,
     imports: [RouterLink, MatCardModule, MatButtonModule, MatFormFieldModule, MatInputModule, MatSelectModule],
     templateUrl: './e-checkout.component.html',
     styleUrl: './e-checkout.component.scss'

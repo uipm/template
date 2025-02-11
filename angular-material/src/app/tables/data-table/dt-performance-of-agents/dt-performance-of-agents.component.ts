@@ -1,17 +1,15 @@
 import { Component, ViewChild } from '@angular/core';
-import { RouterLink } from '@angular/router';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatTableDataSource, MatTableModule } from '@angular/material/table';
-import { NgFor, NgIf } from '@angular/common';
+import { NgIf } from '@angular/common';
 import { MatPaginator, MatPaginatorModule } from '@angular/material/paginator';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 
 @Component({
     selector: 'app-dt-performance-of-agents',
-    standalone: true,
-    imports: [RouterLink, MatCardModule, MatButtonModule, MatMenuModule, MatTableModule, MatPaginatorModule, NgIf, NgFor, MatProgressSpinnerModule],
+    imports: [MatCardModule, MatButtonModule, MatMenuModule, MatTableModule, MatPaginatorModule, NgIf, MatProgressSpinnerModule],
     templateUrl: './dt-performance-of-agents.component.html',
     styleUrl: './dt-performance-of-agents.component.scss'
 })

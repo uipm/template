@@ -68,7 +68,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <img src="assets/images/welcome-2.gif" class="welcome-2 d-none d-sm-block" alt="welcome">
+                                <img src="/assets/images/welcome-2.gif" class="welcome-2 d-none d-sm-block" alt="welcome">
                             </div>
                         </div>
                         <div class="col-lg-6">
@@ -137,7 +137,7 @@
         
                                             <div class="d-flex align-items-center mb-4">
                                                 <div class="flex-shrink-0">
-                                                    <img src="assets/images/user-70.png" class="rounded-circle border border-2 wh-75" alt="user">
+                                                    <img src="/assets/images/user-70.png" class="rounded-circle border border-2 wh-75" alt="user">
                                                 </div>
                                                 <div class="flex-grow-1 ms-3">
                                                     <h4 class="fs-17 mb-1 fw-semibold">Olivia John</h4>
@@ -242,7 +242,7 @@
                                 <div class="card-body p-4">
                                     <div class="d-flex justify-content-between align-items-center flex-wrap gap-3 mb-3 mb-lg-4">
                                         <h3 class="mb-0">Project Analysis</h3>
-                                        <select class="form-select month-selecet form-control p-0 h-auto border-0 w-90" style="background-position: right 0 center;" aria-label="Default select example">
+                                        <select class="form-select month-select form-control p-0 h-auto border-0 w-90" style="background-position: right 0 center;" aria-label="Default select example">
                                             <option selected>Last 7 Days</option>
                                             <option value="1">This Month</option>
                                             <option value="2">This Year</option>

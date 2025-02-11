@@ -8,7 +8,6 @@ import { CustomizerSettingsService } from '../../../../customizer-settings/custo
 
 @Component({
     selector: 'app-promotions-emails',
-    standalone: true,
     imports: [RouterLink, MatTableModule, MatCheckboxModule, MatPaginatorModule],
     templateUrl: './promotions-emails.component.html',
     styleUrl: './promotions-emails.component.scss'
@@ -49,16 +48,9 @@ export class PromotionsEmailsComponent {
         return `${this.selection.isSelected(row) ? 'deselect' : 'select'} row ${row.title + 1}`;
     }
 
-    // isToggled
-    isToggled = false;
-
     constructor(
         public themeService: CustomizerSettingsService
-    ) {
-        this.themeService.isToggled$.subscribe(isToggled => {
-            this.isToggled = isToggled;
-        });
-    }
+    ) {}
 
 }
 

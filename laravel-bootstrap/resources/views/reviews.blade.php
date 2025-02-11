@@ -47,7 +47,7 @@
                                     <input type="text" class="form-control" placeholder="Search here">
                                     <i class="material-symbols-outlined position-absolute top-50 start-0 translate-middle-y">search</i>
                                 </form>
-                                <select class="form-select month-selecet form-control" aria-label="Default select example">
+                                <select class="form-select month-select form-control" aria-label="Default select example">
                                     <option selected>Show All</option>
                                     <option value="1">Weekly</option>
                                     <option value="2">Monthly</option>

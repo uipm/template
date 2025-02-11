@@ -4,29 +4,20 @@ import { MatCardModule } from '@angular/material/card';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatPaginatorModule, MatPaginator } from '@angular/material/paginator';
 import { MatTableDataSource, MatTableModule } from '@angular/material/table';
-import { RouterLink } from '@angular/router';
 import { CustomizerSettingsService } from '../../../customizer-settings/customizer-settings.service';
 import { NgIf } from '@angular/common';
 
 @Component({
     selector: 'app-rankings',
-    standalone: true,
-    imports: [RouterLink, MatCardModule, MatButtonModule, MatMenuModule, MatPaginatorModule, MatTableModule, NgIf],
+    imports: [MatCardModule, MatButtonModule, MatMenuModule, MatPaginatorModule, MatTableModule, NgIf],
     templateUrl: './rankings.component.html',
     styleUrl: './rankings.component.scss'
 })
 export class RankingsComponent {
 
-    // isToggled
-    isToggled = false;
-
     constructor(
         public themeService: CustomizerSettingsService
-    ) {
-        this.themeService.isToggled$.subscribe(isToggled => {
-            this.isToggled = isToggled;
-        });
-    }
+    ) {}
 
     displayedColumns: string[] = ['rank', 'cryptocurrency', 'market_cap', 'price', 'change_24h', 'change_7d', 'value_24h', 'circulating_supply'];
     dataSource = new MatTableDataSource<PeriodicElement>(ELEMENT_DATA);

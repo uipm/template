@@ -4,7 +4,6 @@ import { NgFor, NgIf } from '@angular/common';
 
 @Component({
     selector: 'app-bt-group-lessons',
-    standalone: true,
     imports: [RouterLink, NgIf],
     templateUrl: './bt-group-lessons.component.html',
     styleUrl: './bt-group-lessons.component.scss'

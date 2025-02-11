@@ -4,7 +4,6 @@ import { NgClass, NgFor, NgIf } from '@angular/common';
 
 @Component({
     selector: 'app-working-schedule',
-    standalone: true,
     imports: [CarouselModule, NgFor, NgIf, NgClass],
     templateUrl: './working-schedule.component.html',
     styleUrl: './working-schedule.component.scss'

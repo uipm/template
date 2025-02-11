@@ -8,22 +8,14 @@ import { CustomizerSettingsService } from '../../../customizer-settings/customiz
 
 @Component({
     selector: 'app-read',
-    standalone: true,
     imports: [RouterLink, SidebarComponent, MatButtonModule, MatMenuModule, MatCardModule],
     templateUrl: './read.component.html',
     styleUrl: './read.component.scss'
 })
 export class ReadComponent {
 
-    // isToggled
-    isToggled = false;
-
     constructor(
         public themeService: CustomizerSettingsService
-    ) {
-        this.themeService.isToggled$.subscribe(isToggled => {
-            this.isToggled = isToggled;
-        });
-    }
+    ) {}
 
 }

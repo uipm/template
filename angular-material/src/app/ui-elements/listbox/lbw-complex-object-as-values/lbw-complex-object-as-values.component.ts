@@ -14,7 +14,6 @@ const formatter = new Intl.DateTimeFormat(undefined, {
 
 @Component({
     selector: 'app-lbw-complex-object-as-values',
-    standalone: true,
     imports: [CdkListbox, CdkOption, JsonPipe],
     templateUrl: './lbw-complex-object-as-values.component.html',
     styleUrl: './lbw-complex-object-as-values.component.scss'

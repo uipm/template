@@ -3,7 +3,6 @@ import { SessionsService } from './sessions.service';
 
 @Component({
     selector: 'app-sessions',
-    standalone: true,
     imports: [],
     templateUrl: './sessions.component.html',
     styleUrl: './sessions.component.scss'

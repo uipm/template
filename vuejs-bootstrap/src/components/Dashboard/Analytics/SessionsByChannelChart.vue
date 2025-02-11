@@ -16,7 +16,6 @@
       </div>
 
       <div style="margin-top: -10px; margin-bottom: 10px">
-        <div id="sessions_by_channel"></div>
         <apexchart
           v-if="isClient"
           type="donut"

@@ -5,7 +5,6 @@ import { CustomizerSettingsService } from '../../../customizer-settings/customiz
 
 @Component({
     selector: 'app-fp-navbar',
-    standalone: true,
     imports: [RouterLink, RouterLinkActive, NgClass],
     templateUrl: './fp-navbar.component.html',
     styleUrl: './fp-navbar.component.scss'
@@ -30,15 +29,8 @@ export class FpNavbarComponent {
         }
     }
 
-    // isToggled
-    isToggled = false;
-
     constructor(
         public themeService: CustomizerSettingsService
-    ) {
-        this.themeService.isToggled$.subscribe(isToggled => {
-            this.isToggled = isToggled;
-        });
-    }
+    ) {}
 
 }

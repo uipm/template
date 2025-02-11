@@ -4,13 +4,12 @@ import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatTableDataSource, MatTableModule } from '@angular/material/table';
-import { NgFor, NgIf } from '@angular/common';
+import { NgIf } from '@angular/common';
 import { MatPaginator, MatPaginatorModule } from '@angular/material/paginator';
 
 @Component({
     selector: 'app-e-customers',
-    standalone: true,
-    imports: [RouterLink, MatCardModule, MatButtonModule, MatMenuModule, MatTableModule, MatPaginatorModule, NgIf, NgFor],
+    imports: [RouterLink, MatCardModule, MatButtonModule, MatMenuModule, MatTableModule, MatPaginatorModule, NgIf],
     templateUrl: './e-customers.component.html',
     styleUrl: './e-customers.component.scss'
 })

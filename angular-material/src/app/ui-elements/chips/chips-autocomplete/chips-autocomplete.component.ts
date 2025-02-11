@@ -8,7 +8,6 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 
 @Component({
     selector: 'app-chips-autocomplete',
-    standalone: true,
     imports: [MatFormFieldModule, MatChipsModule, MatAutocompleteModule, FormsModule],
     templateUrl: './chips-autocomplete.component.html',
     styleUrl: './chips-autocomplete.component.scss'

@@ -1,0 +1,17 @@
+import { Component } from '@angular/core';
+import { MatCardModule } from '@angular/material/card';
+import { CustomizerSettingsService } from '../../../customizer-settings/customizer-settings.service';
+
+@Component({
+    selector: 'app-highlights',
+    imports: [MatCardModule],
+    templateUrl: './highlights.component.html',
+    styleUrl: './highlights.component.scss'
+})
+export class HighlightsComponent {
+
+    constructor(
+        public themeService: CustomizerSettingsService
+    ) {}
+
+}

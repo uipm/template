@@ -11,22 +11,14 @@ import { CustomizerSettingsService } from '../../../customizer-settings/customiz
 
 @Component({
     selector: 'app-inbox',
-    standalone: true,
     imports: [RouterLink, SidebarComponent, MatCardModule, MatButtonModule, MatMenuModule, MatCheckboxModule, MatTooltipModule, MatTabsModule, RouterOutlet, RouterLinkActive],
     templateUrl: './inbox.component.html',
     styleUrl: './inbox.component.scss'
 })
 export class InboxComponent {
 
-    // isToggled
-    isToggled = false;
-
     constructor(
         public themeService: CustomizerSettingsService
-    ) {
-        this.themeService.isToggled$.subscribe(isToggled => {
-            this.isToggled = isToggled;
-        });
-    }
+    ) {}
 
 }

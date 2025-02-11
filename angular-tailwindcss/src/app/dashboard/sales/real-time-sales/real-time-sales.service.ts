@@ -7,12 +7,13 @@ import { isPlatformBrowser } from '@angular/common';
 export class RealTimeSalesService {
 
     private isBrowser: boolean;
+    private chartInstance: any;
 
     constructor(@Inject(PLATFORM_ID) private platformId: any) {
         this.isBrowser = isPlatformBrowser(this.platformId);
     }
 
-    async loadChart(): Promise<void> {
+    async loadChart(series: any[], categories: string[]): Promise<void> {
         if (this.isBrowser) {
             try {
                 // Dynamically import ApexCharts
@@ -20,12 +21,7 @@ export class RealTimeSalesService {
 
                 // Define chart options
                 const options = {
-                    series: [
-                        {
-                            name: "Sales",
-                            data: [2.3, 3.1, 4.0, 10.1, 4.0, 3.6, 3.2, 2.3]
-                        }
-                    ],
+                    series: series,
                     chart: {
                         height: 240,
                         type: "bar",
@@ -58,16 +54,7 @@ export class RealTimeSalesService {
                     },
                     xaxis: {
                         show: false,
-                        categories: [
-                            "Sun",
-                            "Mon",
-                            "Tue",
-                            "Wed",
-                            "Thu",
-                            "Fri",
-                            "Sat",
-                            "Sun"
-                        ],
+                        categories: categories,
                         axisTicks: {
                             show: false,
                             color: '#ECEEF2'
@@ -88,9 +75,9 @@ export class RealTimeSalesService {
                         "#3584FC"
                     ],
                     yaxis: {
-                        tickAmount: 5,
+                        // tickAmount: 5,
                         show: false,
-                        max: 11,
+                        // max: 11,
                         min: 0,
                         labels: {
                             formatter: (val:any) => {
@@ -117,11 +104,22 @@ export class RealTimeSalesService {
                 };
 
                 // Initialize and render the chart
-                const chart = new ApexCharts(document.querySelector('#real_time_sales_chart'), options);
-                chart.render();
+                this.chartInstance = new ApexCharts(document.querySelector('#real_time_sales_chart'), options);
+                this.chartInstance.render();
             } catch (error) {
                 console.error('Error loading ApexCharts:', error);
             }
+        }
+    }
+
+    updateChartData(series: any[], categories: string[]): void {
+        if (this.chartInstance) {
+            this.chartInstance.updateOptions({
+                series: series,
+                xaxis: {
+                    categories: categories
+                }
+            });
         }
     }
 

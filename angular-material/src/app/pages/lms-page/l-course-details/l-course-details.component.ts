@@ -4,7 +4,6 @@ import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatTableDataSource, MatTableModule } from '@angular/material/table';
-import { NgFor, NgIf } from '@angular/common';
 import { TablesOfContentComponent } from './tables-of-content/tables-of-content.component';
 import { CourseInstructorComponent } from './course-instructor/course-instructor.component';
 import { EnrolledStudentsComponent } from './enrolled-students/enrolled-students.component';
@@ -12,8 +11,7 @@ import { ReviewsComponent } from './reviews/reviews.component';
 
 @Component({
     selector: 'app-l-course-details',
-    standalone: true,
-    imports: [RouterLink, MatCardModule, MatButtonModule, MatMenuModule, MatTableModule, NgIf, NgFor, TablesOfContentComponent, CourseInstructorComponent, EnrolledStudentsComponent, ReviewsComponent],
+    imports: [RouterLink, MatCardModule, MatButtonModule, MatMenuModule, MatTableModule, TablesOfContentComponent, CourseInstructorComponent, EnrolledStudentsComponent, ReviewsComponent],
     templateUrl: './l-course-details.component.html',
     styleUrl: './l-course-details.component.scss'
 })

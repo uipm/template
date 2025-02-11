@@ -6,7 +6,6 @@ import { SidebarComponent } from '../sidebar/sidebar.component';
 
 @Component({
     selector: 'app-compose',
-    standalone: true,
     imports: [RouterLink, SidebarComponent, NgIf, NgxEditorModule],
     templateUrl: './compose.component.html',
     styleUrl: './compose.component.scss'

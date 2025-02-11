@@ -96,6 +96,8 @@
 				position: 'top',
 				fontSize: '12px',
 				horizontalAlign: 'left',
+				fontFamily: "Inter",
+				fontWeight: 400,
 				itemMargin: {
 					horizontal: 8,
 					vertical: 0
@@ -209,6 +211,8 @@
 				fontSize: '12px',
 				position: 'bottom',
 				horizontalAlign: 'center',
+				fontFamily: "Inter",
+				fontWeight: 400,
 				itemMargin: {
 					horizontal: 8,
 					vertical: 0
@@ -244,7 +248,7 @@
 				}
 			],
 			chart: {
-				height: 140,
+				height: 150,
 				type: "line",
 				zoom: {
 					enabled: false
@@ -5648,7 +5652,7 @@
 			],
 			chart: {
 				type: "area",
-				height: 120,
+				height: 116,
 				zoom: {
 					enabled: false
 				},
@@ -9656,7 +9660,8 @@
 				position: 'bottom',
 				fontSize: '12px',
 				horizontalAlign: 'center',
-				fontFamily: 'Inter',
+				fontFamily: "Inter",
+				fontWeight: 400,
 				offsetY: 10,
 				itemMargin: {
 					horizontal: 8,
@@ -9894,6 +9899,8 @@
 				position: 'top',
 				fontSize: '12px',
 				horizontalAlign: 'left',
+				fontFamily: "Inter",
+				fontWeight: 400,
 				itemMargin: {
 					horizontal: 8,
 					vertical: 0
@@ -10074,7 +10081,8 @@
 				position: 'bottom',
 				fontSize: '12px',
 				horizontalAlign: 'center',
-				fontFamily: 'Inter',
+				fontFamily: "Inter",
+				fontWeight: 400,
 				offsetY: 10,
 				itemMargin: {
 					horizontal: 8,
@@ -10211,6 +10219,8 @@
 				position: 'top',
 				fontSize: '12px',
 				horizontalAlign: 'left',
+				fontFamily: "Inter",
+				fontWeight: 400,
 				itemMargin: {
 					horizontal: 8,
 					vertical: 0
@@ -10348,6 +10358,8 @@
 				horizontalAlign: 'bottom',
 				offsetX: -12,
 				offsetY: 0,
+				fontFamily: "Inter",
+				fontWeight: 400,
 				itemMargin: {
 					horizontal: 0,
 					vertical: 4
@@ -10418,6 +10430,8 @@
 				horizontalAlign: 'bottom',
 				offsetX: -12,
 				offsetY: 0,
+				fontFamily: "Inter",
+				fontWeight: 400,
 				itemMargin: {
 					horizontal: 0,
 					vertical: 4
@@ -10576,6 +10590,8 @@
 				horizontalAlign: 'bottom',
 				offsetX: -25,
 				offsetY: 109,
+				fontFamily: "Inter",
+				fontWeight: 400,
 				itemMargin: {
 					horizontal: 0,
 					vertical: 4
@@ -10691,7 +10707,7 @@
 			tooltip: {
 				y: {
 					formatter: function(val) {
-						return "$" + val + "k";
+						return "$" + val + "";
 					}
 				}
 			},
@@ -10702,6 +10718,8 @@
 				horizontalAlign: 'center',
 				fontFamily: 'Inter',
 				offsetY: 10,
+				fontFamily: "Inter",
+				fontWeight: 400,
 				itemMargin: {
 					horizontal: 8,
 					vertical: 10
@@ -10802,6 +10820,8 @@
 				position: 'top',
 				fontSize: '12px',
 				horizontalAlign: 'left',
+				fontFamily: "Inter",
+				fontWeight: 400,
 				itemMargin: {
 					horizontal: 8,
 					vertical: 0
@@ -10943,6 +10963,8 @@
 				position: 'top',
 				fontSize: '12px',
 				horizontalAlign: 'left',
+				fontFamily: "Inter",
+				fontWeight: 400,
 				itemMargin: {
 					horizontal: 8,
 					vertical: 0
@@ -11057,6 +11079,8 @@
 				position: 'top',
 				fontSize: '12px',
 				horizontalAlign: 'left',
+				fontFamily: "Inter",
+				fontWeight: 400,
 				itemMargin: {
 					horizontal: 8,
 					vertical: 0
@@ -11245,7 +11269,7 @@
 			],
 			chart: {
 				type: "area",
-				height: 382,
+				height: 388,
 				zoom: {
 					enabled: false
 				},
@@ -11332,7 +11356,8 @@
 				position: 'bottom',
 				fontSize: '12px',
 				horizontalAlign: 'center',
-				fontFamily: 'Inter',
+				fontFamily: "Inter",
+				fontWeight: 400,
 				offsetY: 10,
 				itemMargin: {
 					horizontal: 8,
@@ -11361,7 +11386,7 @@
 		var options = {
 			series: [120, 160, 50, 20],
 			chart: {
-				height: 256,
+				height: 255,
 				type: "donut"
 			},
 			labels: [
@@ -11380,6 +11405,8 @@
 				position: 'top',
 				fontSize: '12px',
 				horizontalAlign: 'center',
+				fontFamily: "Inter",
+				fontWeight: 400,
 				itemMargin: {
 					horizontal: 8,
 					vertical: 0
@@ -11444,7 +11471,7 @@
 			],
 			chart: {
 				type: "bar",
-				height: 263,
+				height: 274,
 				toolbar: {
 					show: false
 				}
@@ -11454,7 +11481,7 @@
 			],
 			plotOptions: {
 				bar: {
-					columnWidth: "40%",
+					columnWidth: "52%",
 					borderRadius: 4,
 				}
 			},
@@ -11537,6 +11564,8 @@
 				position: 'top',
 				fontSize: '12px',
 				horizontalAlign: 'left',
+				fontFamily: "Inter",
+				fontWeight: 400,
 				itemMargin: {
 					horizontal: 8,
 					vertical: 0
@@ -11590,7 +11619,7 @@
 			],
 			chart: {
 				type: "bar",
-				height: 365,
+				height: 347,
 				stacked: true,
 				toolbar: {
 					show: false
@@ -11668,6 +11697,9 @@
 				position: 'top',
 				fontSize: '12px',
 				horizontalAlign: 'left',
+				fontFamily: "Inter",
+				fontWeight: 400,
+				offsetY: -1,
 				itemMargin: {
 					horizontal: 8,
 					vertical: 0
@@ -11760,6 +11792,8 @@
 				position: 'top',
 				fontSize: '12px',
 				horizontalAlign: 'left',
+				fontFamily: "Inter",
+				fontWeight: 400,
 				itemMargin: {
 					horizontal: 8,
 					vertical: 0
@@ -11809,7 +11843,7 @@
 			tooltip: {
 				y: {
 					formatter: function (val) {
-						return "Status " + val + " K"
+						return "Status " + val + ""
 					}
 				}
 			},
@@ -11844,6 +11878,8 @@
 				position: 'top',
 				fontSize: '12px',
 				horizontalAlign: 'center',
+				fontFamily: "Inter",
+				fontWeight: 400,
 				itemMargin: {
 					horizontal: 8,
 					vertical: 0
@@ -11902,9 +11938,9 @@
 	//**<---- Dashboard Call Center ---->**//
 
 
-	/* Call Overview JS*/
-	const getCallOverviewId = document.getElementById('call_overview');
-	if (getCallOverviewId) {
+	/* Total Calls JS*/
+	const getTotalCallsId = document.getElementById('total_calls');
+	if (getTotalCallsId) {
 		var options = {
 			series: [
 				{
@@ -11914,7 +11950,7 @@
 			],
 			chart: {
 				type: "area",
-				height: 324,
+				height: 325,
 				zoom: {
 					enabled: false
 				},
@@ -11991,6 +12027,8 @@
 				position: 'top',
 				fontSize: '12px',
 				horizontalAlign: 'left',
+				fontFamily: "Inter",
+				fontWeight: 400,
 				itemMargin: {
 					horizontal: 8,
 					vertical: 0
@@ -12008,7 +12046,231 @@
 				}
 			},
 		};
-		var chart = new ApexCharts(document.querySelector("#call_overview"), options);
+		var chart = new ApexCharts(document.querySelector("#total_calls"), options);
+		chart.render();
+	}
+
+	/* Answered Calls JS*/
+	const getAnsweredCallsId = document.getElementById('answered_calls');
+	if (getAnsweredCallsId) {
+		var options = {
+			series: [
+				{
+					name: "Total Calls",
+					data: [800, 150, 700, 250, 500, 400, 700, 300, 900, 800, 1200, 600]
+				},
+			],
+			chart: {
+				type: "area",
+				height: 325,
+				zoom: {
+					enabled: false
+				},
+				toolbar: {
+					show: false
+				}
+			},
+			colors: [
+				"#9135E8", "#9135E8"
+			],
+			dataLabels: {
+				enabled: false
+			},
+			stroke: {
+				curve: "smooth",
+				width: [2, 2, 0],
+				dashArray: [0, 6, 0],
+			},
+			grid: {
+				borderColor: "#ffffff"
+			},
+			fill: {
+				type: 'gradient',
+				gradient: {
+					stops: [0, 90, 100],
+					shadeIntensity: 1,
+					opacityFrom: 0,
+					opacityTo: 0.5
+				}
+			},
+			xaxis: {
+				categories: [
+					"Jan",
+					"Feb",
+					"Mar",
+					"Apr",
+					"May",
+					"Jun",
+					"Jul",
+					"Aug",
+					"Sep",
+					"Oct",
+					"Nov",
+					"Dec"
+				],
+				axisTicks: {
+					show: false,
+					color: '#B1BBC8'
+				},
+				axisBorder: {
+					show: false,
+					color: '#B1BBC8'
+				},
+				labels: {
+					style: {
+						colors: "#8695AA",
+						fontSize: "12px"
+					}
+				}
+			},
+			yaxis: {
+				tickAmount: 5,
+				max: 1800,
+				min: 0,
+				labels: {
+					style: {
+						colors: "#8695AA",
+						fontSize: "12px"
+					}
+				}
+			},
+			legend: {
+				show: true,
+				position: 'top',
+				fontSize: '12px',
+				horizontalAlign: 'left',
+				fontFamily: "Inter",
+				fontWeight: 400,
+				itemMargin: {
+					horizontal: 8,
+					vertical: 0
+				},
+				labels: {
+					colors: '#64748B'
+				},
+				markers: {
+					width: 9,
+					height: 9,
+					offsetX: -2,
+					offsetY: -.5,
+					radius: 2,
+					shape: "diamond",
+				}
+			},
+		};
+		var chart = new ApexCharts(document.querySelector("#answered_calls"), options);
+		chart.render();
+	}
+
+	/* Missed Calls JS*/
+	const getMissedCallsId = document.getElementById('missed_calls');
+	if (getMissedCallsId) {
+		var options = {
+			series: [
+				{
+					name: "Total Calls",
+					data: [200, 150, 500, 250, 500, 400, 700, 600, 900, 800, 600, 1300]
+				},
+			],
+			chart: {
+				type: "area",
+				height: 325,
+				zoom: {
+					enabled: false
+				},
+				toolbar: {
+					show: false
+				}
+			},
+			colors: [
+				"#EE3E08", "#EE3E08"
+			],
+			dataLabels: {
+				enabled: false
+			},
+			stroke: {
+				curve: "smooth",
+				width: [2, 2, 0],
+				dashArray: [0, 6, 0],
+			},
+			grid: {
+				borderColor: "#ffffff"
+			},
+			fill: {
+				type: 'gradient',
+				gradient: {
+					stops: [0, 90, 100],
+					shadeIntensity: 1,
+					opacityFrom: 0,
+					opacityTo: 0.5
+				}
+			},
+			xaxis: {
+				categories: [
+					"Jan",
+					"Feb",
+					"Mar",
+					"Apr",
+					"May",
+					"Jun",
+					"Jul",
+					"Aug",
+					"Sep",
+					"Oct",
+					"Nov",
+					"Dec"
+				],
+				axisTicks: {
+					show: false,
+					color: '#B1BBC8'
+				},
+				axisBorder: {
+					show: false,
+					color: '#B1BBC8'
+				},
+				labels: {
+					style: {
+						colors: "#8695AA",
+						fontSize: "12px"
+					}
+				}
+			},
+			yaxis: {
+				tickAmount: 5,
+				max: 1800,
+				min: 0,
+				labels: {
+					style: {
+						colors: "#8695AA",
+						fontSize: "12px"
+					}
+				}
+			},
+			legend: {
+				show: true,
+				position: 'top',
+				fontSize: '12px',
+				horizontalAlign: 'left',
+				fontFamily: "Inter",
+				fontWeight: 400,
+				itemMargin: {
+					horizontal: 8,
+					vertical: 0
+				},
+				labels: {
+					colors: '#64748B'
+				},
+				markers: {
+					width: 9,
+					height: 9,
+					offsetX: -2,
+					offsetY: -.5,
+					radius: 2,
+					shape: "diamond",
+				}
+			},
+		};
+		var chart = new ApexCharts(document.querySelector("#missed_calls"), options);
 		chart.render();
 	}
 
@@ -12122,6 +12384,8 @@
 				position: 'top',
 				fontSize: '12px',
 				horizontalAlign: 'center',
+				fontFamily: "Inter",
+				fontWeight: 400,
 				itemMargin: {
 					horizontal: 8,
 					vertical: 0
@@ -12253,6 +12517,8 @@
 				position: 'top',
 				fontSize: '12px',
 				horizontalAlign: 'center',
+				fontFamily: "Inter",
+				fontWeight: 400,
 				itemMargin: {
 					horizontal: 8,
 					vertical: 0
@@ -12286,7 +12552,7 @@
 			],
 			chart: {
 				type: "area",
-				height: 275,
+				height: 260,
 				zoom: {
 					enabled: false
 				},
@@ -12377,6 +12643,8 @@
 				position: 'top',
 				fontSize: '12px',
 				horizontalAlign: 'center',
+				fontFamily: "Inter",
+				fontWeight: 400,
 				itemMargin: {
 					horizontal: 8,
 					vertical: 0
@@ -12409,7 +12677,7 @@
 			],
 			chart: {
 				type: "area",
-				height: 275,
+				height: 260,
 				zoom: {
 					enabled: false
 				},
@@ -12500,6 +12768,8 @@
 				position: 'top',
 				fontSize: '12px',
 				horizontalAlign: 'center',
+				fontFamily: "Inter",
+				fontWeight: 400,
 				itemMargin: {
 					horizontal: 8,
 					vertical: 0
@@ -12532,7 +12802,7 @@
 			],
 			chart: {
 				type: "area",
-				height: 275,
+				height: 260,
 				zoom: {
 					enabled: false
 				},
@@ -12623,6 +12893,8 @@
 				position: 'top',
 				fontSize: '12px',
 				horizontalAlign: 'center',
+				fontFamily: "Inter",
+				fontWeight: 400,
 				itemMargin: {
 					horizontal: 8,
 					vertical: 0
@@ -12655,7 +12927,7 @@
 			],
 			chart: {
 				type: "area",
-				height: 275,
+				height: 260,
 				zoom: {
 					enabled: false
 				},
@@ -12746,6 +13018,8 @@
 				position: 'top',
 				fontSize: '12px',
 				horizontalAlign: 'center',
+				fontFamily: "Inter",
+				fontWeight: 400,
 				itemMargin: {
 					horizontal: 8,
 					vertical: 0
@@ -12778,7 +13052,7 @@
 			],
 			chart: {
 				type: "area",
-				height: 275,
+				height: 260,
 				zoom: {
 					enabled: false
 				},
@@ -12869,6 +13143,8 @@
 				position: 'top',
 				fontSize: '12px',
 				horizontalAlign: 'center',
+				fontFamily: "Inter",
+				fontWeight: 400,
 				itemMargin: {
 					horizontal: 8,
 					vertical: 0
@@ -12889,7 +13165,2000 @@
 		chart.render();
 	}
 
+
+	//**<---- Dashboard Doctor ---->**//
+
+
+	/* Patient Retention JS*/
+	const getPatientRetentionId = document.getElementById('patient_retention');
+	if (getPatientRetentionId) {
+		var options = {
+			series: [
+				{
+					name: "Old Patient",
+					data: [35, 50, 55, 60, 50, 60, 55, 60, 78, 40, 30]
+				},
+				{
+					name: "New Patient",
+					data: [70, 50, 40, 40, 62, 52, 80, 40, 60, 53, 40]
+				},
+			],
+			chart: {
+				type: "area",
+				height: 335,
+				zoom: {
+					enabled: false
+				},
+				toolbar: {
+					show: false,
+				}
+			},
+			colors: [
+				"#00E396", "#26A0FC" 
+			],
+			dataLabels: {
+				enabled: false
+			},
+			stroke: {
+				curve: "straight",
+				width: [4, 4, 0],
+				dashArray: [6, 0, 0],
+			},
+			grid: {
+				borderColor: "#ECF0FF"
+			},
+			fill: {
+				type: 'gradient',
+				gradient: {
+					stops: [0, 90, 100],
+					shadeIntensity: 1,
+					opacityFrom: 0,
+					opacityTo: 0
+				}
+			},
+			xaxis: {
+				categories: [
+					"Oct",
+					"02",
+					"03",
+					"04",
+					"05",
+					"06",
+					"07",
+					"08",
+					"09",
+					"10",
+					"11",
+				],
+				axisTicks: {
+					show: true,
+					color: '#E0E0E0'
+				},
+				axisBorder: {
+					show: true,
+					color: '#E0E0E0'
+				},
+				labels: {
+					style: {
+						colors: "#8695AA",
+						fontSize: "12px"
+					}
+				}
+			},
+			yaxis: {
+				tickAmount: 5,
+				max: 150,
+				min: 0,
+				axisBorder: {
+					show: true,
+					color: '#E0E0E0'
+				},
+				labels: {
+					formatter: (val) => {
+						return '' + val / 1 + 'K'
+					},
+					style: {
+						colors: "#8695AA",
+						fontSize: "12px"
+					}
+				}
+			},
+			legend: {
+				show: true,
+				position: 'bottom',
+				fontSize: '12px',
+				horizontalAlign: 'center',
+				fontFamily: "Inter",
+				fontWeight: 400,
+				offsetY: 10,
+				itemMargin: {
+					horizontal: 8,
+					vertical: 10
+				},
+				labels: {
+					colors: '#64748B'
+				},
+				markers: {
+					width: 9,
+					height: 9,
+					offsetX: -2,
+					offsetY: -.5,
+					radius: 2,
+					shape: "diamond",
+				}
+			},
+			tooltip: {
+				y: {
+					formatter: function(val) {
+					return "" + val + "K";
+					}
+				}
+			}
+		};
+		var chart = new ApexCharts(document.querySelector("#patient_retention"), options);
+		chart.render();
+	}
+
+	/* Patient Distribution JS*/
+	const getPatientDistributionId = document.getElementById('patient_distribution');
+	if (getPatientDistributionId) {
+		var options = {
+			series: [24.5, 23.5, 24.5],
+			chart: {
+				height: 314,
+				type: "donut"
+			},
+			labels: [
+				"Male", "Female", "Children"
+			],
+			colors: [
+				"#605DFF", "#58F229", "#5DA8FF"
+			],
+			stroke: {
+				width: 5,
+				show: true,
+				colors: ["#ffffff"],
+				lineCap: 'round'
+			},
+			legend: {
+				show: true,
+				position: 'bottom',
+				fontSize: '12px',
+				horizontalAlign: 'center',
+				fontFamily: "Inter",
+				fontWeight: 400,
+				offsetY: 10,
+				itemMargin: {
+					horizontal: 8,
+					vertical: 10
+				},
+				labels: {
+					colors: '#64748B'
+				},
+				markers: {
+					width: 9,
+					height: 9,
+					offsetX: -2,
+					offsetY: -.5,
+					radius: 2,
+					shape: "diamond",
+				}
+			},
+			plotOptions: {
+				pie: {
+					expandOnClick: false,
+					donut: {
+						size: '62%',
+						labels: {
+							show: true,
+							name: {
+								color: '#64748B'
+							},
+							value: {
+								show: true,
+								color: '#000',
+								fontSize: '36px',
+								fontWeight: '700',
+								offsetY: 10,
+								formatter: (val) => {
+									return '' + val / 1 + 'K'
+								},
+							},
+							total: {
+								show: true,
+								color: '#64748B',
+								fontSize: '14px',
+								fontWeight: '400',
+								
+							}
+						}
+					}
+				}
+			},
+			dataLabels: {
+				enabled: false
+			},
+			tooltip: {
+				enabled: true,
+				y: {
+					formatter: (val) => {
+						return '' + val / 1 + 'K'
+					},
+				}
+			}
+		}
+		var chart = new ApexCharts(document.querySelector("#patient_distribution"), options);
+		chart.render();
+	}
+
+	/* Income Vs Expense JS*/
+	const getIncomeVsExpenseId = document.getElementById('income_vs_expense');
+	if (getIncomeVsExpenseId) {
+		var options = {
+			series: [
+				{
+					name: "Income",
+					data: [70, 42, 70, 120, 40, 70, 90, 20, 60],
+				},
+				{
+					name: "Expense",
+					data: [-70, -44, -70, -120, -40, -70, -90, -20, -40],
+				},
+			],
+			colors: ['#605DFF', '#C2CDFF'],
+			chart: {
+				type: 'bar',
+				height: 386,
+				stacked: true,
+				toolbar: {
+					show: false,
+				}
+			},
+			plotOptions: {
+				bar: {
+					columnWidth: '30%',
+					borderRadius: 2,
+					borderRadiusApplication: "end",
+					borderRadiusWhenStacked: "all",
+				},
+			},
+			  dataLabels: {
+				enabled: false,
+			},
+			grid: {
+				borderColor: '#ECF0FF', 
+				xaxis: {
+					lines: {
+						show: false
+					}
+				},
+				yaxis: {
+					lines: {
+						show: true
+					}
+				},
+			},
+			legend: {
+				show: true,
+				position: 'bottom',
+				fontSize: '12px',
+				horizontalAlign: 'center',
+				fontFamily: "Inter",
+				fontWeight: 400,
+				offsetY: 10,
+				itemMargin: {
+					horizontal: 8,
+					vertical: 10
+				},
+				labels: {
+					colors: '#64748B'
+				},
+				markers: {
+					width: 9,
+					height: 9,
+					offsetX: -2,
+					offsetY: -.5,
+					radius: 2,
+					shape: "diamond",
+				}
+			},
+			xaxis: {
+				categories: [
+					"Oct 01",
+					"Oct 02",
+					"Oct 03",
+					"Oct 04",
+					"Oct 05",
+					"Oct 06",
+					"Oct 07",
+					"Oct 08",
+					"Oct 09",
+				],
+				axisTicks: {
+					show: false,
+					color: '#8695AA'
+				},
+				axisBorder: {
+					show: false,
+					color: '#8695AA'
+				},
+				labels: {
+					show: true,
+					style: {
+						colors: "#8695AA",
+						fontSize: "12px"
+					}
+				}
+			},
+			yaxis: {
+				show: true,
+				labels: {
+					formatter: function (val) {
+						return " " + val + " K"
+					},
+					style: {
+						colors: "#8695AA",
+						fontSize: "12px"
+					}
+				}
+				
+			},
+			fill: {
+				opacity: 1
+			},
+			tooltip: {
+				y: {
+					formatter: function (val) {
+						return "" + val + "K"
+					}
+				}
+			},
+		};
+		var chart = new ApexCharts(document.querySelector("#income_vs_expense"), options);
+		chart.render();
+	}
+
+
+	//**<---- Dashboard Beauty Salon ---->**//
+
+
+	/* Customer Satisfaction Rate JS */ 
+	const getCustomerSatisfactionRateId = document.getElementById('customer_satisfaction_rate');
+	if (getCustomerSatisfactionRateId) {
+		var options = {
+
+			series: [
+				85, 15,
+			],
+			chart: {
+				height: 202,
+				type: "pie",
+			},
+			labels: [
+				"Positive", "Negative"
+			],
+			colors: [
+				"#9CAAFF", "#FFAA72"
+			],
+			dataLabels: {
+				enabled: false,
+				style: {
+					fontSize: '10px',
+					fontFamily: 'Inter',
+					colors: ['#fff']
+				},
+				dropShadow: {
+					enabled: true,
+					top: 0,
+					left: 0,
+					blur: 0,
+					color: '#000',
+					opacity: 0
+				}
+			},
+			plotOptions: {
+				pie: {
+					expandOnClick: false,
+				},
+				
+			},
+			tooltip: {
+				y: {
+					formatter: function(val) {
+						return val + "%";
+					}
+				}
+			},
+			stroke: {
+				width: 1,
+				show: true,
+				colors: ["#ffffff"]
+			},
+			legend: {
+				position: 'bottom',
+				horizontalAlign: 'center', 
+				fontWeight: 400,
+				fontFamily: 'Inter',
+				fontSize: '12',
+				offsetY: 0,
+				labels: {
+					colors: ['#64748B', '#64748B'],
+				},
+				itemMargin: {
+					horizontal: 10,
+					vertical: 5,
+				},
+				markers: {
+					width: 9,
+					height: 9,
+					offsetX: -2,
+					offsetY: -.5,
+					radius: 2,
+					shape: "diamond",
+				}
+			},
+		};
+		var chart = new ApexCharts(document.querySelector("#customer_satisfaction_rate"), options);
+		chart.render();
+	}
+
+	/* Revenue By Services JS */ 
+	const getRevenueByServicesId = document.getElementById('revenue_by_services');
+	if (getRevenueByServicesId) {
+
+		var options = {
+			series: [{
+				name: 'Facial',
+				data: [44, 22, 7, 57, 44, 57, 18, 43, 24]
+		  	}, {
+				name: 'Manicure',
+				data: [13, 23, 10, 13, 13, 13, 13, 13, 13]
+		  	}, {
+				name: 'Pedicure',
+				data: [11, 17, 6, 15, 11, 15, 11, 11, 11]
+		  	}, {
+				name: 'Hair Cut',
+				data: [21, 7, 25, 21, 21, 21, 21, 21, 21]
+		  	}],
+			chart: {
+				type: 'bar',
+				height: 321,
+				stacked: true,
+				toolbar: {
+					show: false
+				},
+				zoom: {
+					enabled: true
+				}
+		  	},
+			colors: ['#82FC5A', '#D7B5FD', '#90C7FF', '#9CAAFF'],
+			dataLabels: {
+				style: {
+					fontSize: '10px',
+					fontFamily: 'Inter',
+					fontWeight: '700',
+					colors: ['#343A46']
+				},
+			},
+			plotOptions: {
+				bar: {
+				horizontal: false,
+				columnWidth: '55%',
+				borderRadius: 6,
+				borderRadiusApplication: 'end', // 'around', 'end'
+				borderRadiusWhenStacked: 'last', // 'all', 'last'
+				dataLabels: {
+						total: {
+							enabled: false,
+						}
+					}
+				},
+			},
+			xaxis: {
+				show: true,
+				categories: [
+					"Oct 01",
+					"Oct 02",
+					"Oct 03",
+					"Oct 04",
+					"Oct 05",
+					"Oct 06",
+					"Oct 07",
+					"Oct 08",
+					"Oct 09",
+				],
+				axisTicks: {
+					show: false,
+					color: '#B1BBC8'
+				},
+				axisBorder: {
+					show: false,
+					color: '#B1BBC8'
+				},
+				labels: {
+					show: true,
+					style: {
+						colors: "#8695AA",
+						fontSize: "12px"
+					}
+				}
+			},
+			yaxis: {
+				show: true,
+				tickAmount: 6,
+				//max: 100,
+				min: 0,
+				labels: {
+					style: {
+						colors: "#8695AA", 
+						fontSize: "12px"
+					}
+				}
+			},
+		  	grid: {
+				borderColor: "#ECF0FF"
+			},
+			legend: {
+				show: true,
+				position: 'bottom',
+				fontSize: '12px',
+				horizontalAlign: 'center',
+				fontFamily: "Inter",
+				fontWeight: 400,
+				offsetY: 10,
+				itemMargin: {
+					horizontal: 8,
+					vertical: 10
+				},
+				labels: {
+					colors: '#64748B'
+				},
+				markers: {
+					width: 9,
+					height: 9,
+					offsetX: -2,
+					offsetY: -.5,
+					radius: 2,
+					shape: "diamond",
+				}
+			},
+			fill: {
+				opacity: 1
+			}
+		};
+		var chart = new ApexCharts(document.querySelector("#revenue_by_services"), options);
+		chart.render();
+	}
+
+
+	//**<---- Dashboard Store Analytics ---->**//
+
+	/* Gross Revenue JS*/
+	const getGrossRevenue2Id = document.getElementById('gross_revenue2');
+	if (getGrossRevenue2Id) {
+		var options = {
+			series: [
+				{
+					name: "Sales Revenue",
+					data: [35, 50, 55, 60, 50, 60, 55, 60, 78, 40]
+				},
+				
+				{
+					name: "Sales Volume",
+					data: [80, 60, 50, 50, 72, 65, 90, 50, 70, 63]
+				},
+				{
+					name: "Order Value",
+					data: [70, 50, 40, 40, 95, 52, 80, 40, 60, 53]
+				},
+			],
+			chart: {
+				type: "area",
+				height: 339,
+				zoom: {
+					enabled: false
+				},
+				toolbar: {
+					show: false,
+				}
+			},
+			colors: [
+				"#757DFF", "#E9D5FF", "#37D80A"
+			],
+			dataLabels: {
+				enabled: false
+			},
+			stroke: {
+				curve: "straight",
+				width: [3, 3, 3],
+				dashArray: [0, 6, 6],
+			},
+			grid: {
+				borderColor: "#ECF0FF"
+			},
+			fill: {
+				type: 'gradient',
+				gradient: {
+					stops: [0, 90, 100],
+					shadeIntensity: 1,
+					opacityFrom: 0,
+					opacityTo: 0
+				}
+			},
+			xaxis: {
+				categories: [
+					"Oct 01",
+					"Oct 04",
+					"Oct 08",
+					"Oct 12",
+					"Oct 16",
+					"Oct 20",
+					"Oct 24",
+					"Oct 28",
+					"Nov 02",
+					"Nov 06",
+				],
+				axisTicks: {
+					show: false,
+					color: '#B1BBC8'
+				},
+				axisBorder: {
+					show: false,
+					color: '#B1BBC8'
+				},
+				labels: {
+					style: {
+						colors: "#8695AA",
+						fontSize: "12px",
+						fontFamily: 'Inter',
+					}
+				}
+			},
+			yaxis: {
+				tickAmount: 5,
+				max: 100,
+				min: 0,
+				labels: {
+					formatter: (val) => {
+						return '$' + val / 1 + 'K'
+					},
+					style: {
+						colors: "#8695AA",
+						fontSize: "12px",
+						fontFamily: 'Inter',
+					}
+				}
+			},
+			legend: {
+				show: true,
+				position: 'bottom',
+				fontSize: '12px',
+				horizontalAlign: 'center',
+				fontFamily: "Inter",
+				fontWeight: 400,
+				offsetY: 10,
+				itemMargin: {
+					horizontal: 8,
+					vertical: 10
+				},
+				labels: {
+					colors: '#64748B'
+				},
+				markers: {
+					width: 9,
+					height: 9,
+					offsetX: -2,
+					offsetY: -.5,
+					radius: 2,
+					shape: "diamond",
+				}
+			},
+			tooltip: {
+				y: {
+					formatter: function(val) {
+					return "$" + val + "k";
+					}
+				}
+			}
+		};
+		var chart = new ApexCharts(document.querySelector("#gross_revenue2"), options);
+		chart.render();
+	}
+
+	/* Sales By Gender JS*/
+	const getSalesByGenderId = document.getElementById('sales_by_gender');
+	if (getSalesByGenderId) {
+		var options = {
+			series: [70, 30],
+			chart: {
+				height: 110,
+				type: "donut"
+			},
+			labels: [
+				"Male", "Female",
+			],
+			colors: [
+				"#605DFF", "#AD63F6"
+			],
+			stroke: {
+				width: 5,
+				show: true,
+				colors: ["#ffffff"],
+				lineCap: 'round'
+			},
+			legend: {
+				show: true,
+				position: 'right',
+				fontSize: '12px',
+				horizontalAlign: 'center',
+				fontFamily: "Inter",
+				fontWeight: 400,
+				offsetY: 10,
+				itemMargin: {
+					horizontal: 0,
+					vertical: 5
+				},
+				labels: {
+					colors: '#64748B'
+				},
+				markers: {
+					width: 9,
+					height: 9,
+					offsetX: -2,
+					offsetY: -.5,
+					radius: 2,
+					shape: "diamond",
+				}
+			},
+			plotOptions: {
+				pie: {
+					expandOnClick: false,
+					donut: {
+						size: '60%',
+						labels: {
+							show: false,
+							name: {
+								color: '#64748B'
+							},
+							value: {
+								show: false,
+								color: '#000',
+								fontSize: '36px',
+								fontWeight: '700',
+								offsetY: 10,
+								formatter: (val) => {
+									return '' + val / 1 + '%'
+								},
+							},
+							total: {
+								show: false,
+								color: '#64748B',
+								fontSize: '14px',
+								fontWeight: '400',
+								
+							}
+						}
+					}
+				}
+			},
+			dataLabels: {
+				enabled: false
+			},
+			tooltip: {
+				enabled: true,
+				y: {
+					formatter: (val) => {
+						return '' + val / 1 + '%'
+					},
+				}
+			}
+		}
+		var chart = new ApexCharts(document.querySelector("#sales_by_gender"), options);
+		chart.render();
+	}
+
+	/* Sales This Month JS */ 
+	const getSalesThisMonthId = document.getElementById('sales_this_month');
+	if (getSalesThisMonthId) {
+		var options = {
+			series: [{
+				name: "Sales This Month",
+				data: [10, 31, 25, 40, 50, 50, 100, 90, 90]
+			}],
+			chart: {
+				height: 170,
+				type: 'line',
+				zoom: {
+					enabled: false
+				},
+				toolbar: {
+					show: false
+				},
+			},
+			markers: {
+				size: 0,
+				strokeWidth: 0,
+				hover: {
+				  size: 0
+				}
+			},
+			colors: ['#37D80A'],
+			dataLabels: {
+				enabled: false
+			},
+			stroke: {
+				curve: 'straight',
+				width: 6,
+			},
+			grid: {
+				borderColor: "#ECF0FF"
+			},
+			xaxis: {
+				show: false,
+				categories: [
+					"3am",
+					"6am",
+					"9am",
+					"12pm",
+					"3pm",
+					"6pm",
+					"9pm",
+					"12am",
+				],
+				axisTicks: {
+					show: false,
+					color: '#B1BBC8'
+				},
+				axisBorder: {
+					show: false,
+					color: '#B1BBC8'
+				},
+				labels: {
+					show: false,
+					style: {
+						colors: "#8695AA",
+						fontSize: "12px",
+						fontFamily: 'Inter',
+					}
+				}
+			},
+			yaxis: {
+				show: false,
+				tickAmount: 3,
+				labels: {
+					style: {
+						colors: "#8695AA", 
+						fontSize: "12px"
+					}
+				}
+			},
+			tooltip: {
+				y: {
+					formatter: (val) => {
+						return '$' + val + 'K'
+					},
+				}
+			},
+		};
+		var chart = new ApexCharts(document.querySelector("#sales_this_month"), options);
+		chart.render();
+	}
+
+	/* Sales By Category JS */
+	const getSalesByCategoryId = document.getElementById('sales_by_category');
+	if (getSalesByCategoryId) {
+		var options = {
+			series: [
+				{
+					name: 'Electronics',
+					data: [50, 60, 80, 25, 10, 80],
+				}, 
+				{
+					name: 'Non-electronics',
+					data: [20, 100, 40, 30, 80, 33],
+				},
+			],
+			chart: {
+				height: 399,
+				type: 'radar',
+				toolbar: {
+					show: false,
+				}
+			},
+			dataLabels: {
+				enabled: true
+			},
+			legend: {
+				position: 'bottom',
+				horizontalAlign: 'center', 
+				fontWeight: 400,
+				fontFamily: 'Inter',
+				fontSize: '12',
+				offsetY: 0,
+				labels: {
+					colors: ['#64748B', '#64748B'],
+				},
+				itemMargin: {
+					horizontal: 10,
+					vertical: 5,
+				},
+				markers: {
+					width: 9,
+					height: 9,
+					offsetX: -2,
+					offsetY: -.5,
+					radius: 2,
+					shape: "diamond",
+				}
+			},
+			plotOptions: {
+				radar: {
+				size: 115,
+				polygons: {
+					strokeColors: '#E9E9E9',
+					fill: {
+						colors: ['#F8F8F8', '#ffffff']
+					}
+				}
+				}
+			},
+			colors: ['#757DFF', '#FC6829'],
+			tooltip: {
+				y: {
+					formatter: function(val) {
+						return val
+					}
+				}
+			},
+			xaxis: {
+				categories: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
+				labels: {
+					style: {
+						colors: "#A8A8A8",
+						fontSize: "11px",
+						fontFamily: 'Inter',
+						fontWeight: 400,
+					}
+				}
+			},
+			yaxis: {
+				tickAmount: 5,
+				labels: {
+				formatter: function(val, i) 
+					{
+						if (i % 2 === 0) {
+							return val
+						} else {
+							return ''
+						}
+					}
+				}
+			}
+		};
+		var chart = new ApexCharts(document.querySelector("#sales_by_category"), options);
+		chart.render();
+	}
+
+
+	//**<---- Dashboard Social ---->**//
 	
+
+	/* Linkedin Net Followers JS*/
+	const getLinkedinNetFollowersId = document.getElementById('linkedin_net_followers');
+	if (getLinkedinNetFollowersId) {
+		var options = {
+			series: [
+				{
+					name: "Followers",
+					data: [250, 150, 250, 120, 350, 150, 250]
+				},
+			],
+			chart: {
+				type: "area",
+				height: 293,
+				zoom: {
+					enabled: false
+				},
+				toolbar: {
+					show: false
+				},
+				dropShadow: {
+					enabled: true,
+					enabledOnSeries: [0], // Apply shadow to the correct series index
+					top: 5,
+					left: 5,
+					blur: 3,
+					opacity: 0.6,
+					color: "#605DFF" // Custom color for the shadow
+				}
+			},
+			colors: [
+				"#605DFF", "#DDE4FF"
+			],
+			dataLabels: {
+				enabled: false
+			},
+			stroke: {
+				curve: "smooth",
+				width: [1],
+			},
+			grid: {
+				borderColor: '#ECEEF2',
+				strokeDashArray: 8,
+				xaxis: {
+					lines: {
+						show: false,
+					}
+				},
+			},
+			fill: {
+				type: 'gradient',
+				gradient: {
+					stops: [0, 90, 100],
+					shadeIntensity: 1,
+					opacityFrom: 0.4,
+					opacityTo: 0.0
+				}
+			},
+			xaxis: {
+				categories: [
+					"Mon",
+					"Tue",
+					"Wed",
+					"Thu",
+					"Fri",
+					"Sat",
+					"Sun",
+				],
+				axisTicks: {
+					show: false,
+					color: '#B1BBC8'
+				},
+				axisBorder: {
+					show: true,
+					color: '#D5D9E2'
+				},
+				labels: {
+					style: {
+						colors: "#8695AA",
+						fontSize: "12px"
+					}
+				}
+			},
+			yaxis: {
+				tickAmount: 5,
+				max: 450,
+				min: 0,
+				axisBorder: {
+					show: true,
+					color: '#D5D9E2'
+				},
+				labels: {
+					style: {
+						colors: "#8695AA",
+						fontSize: "12px"
+					}
+				}
+			},
+			legend: {
+				show: true,
+				position: 'top',
+				fontSize: '12px',
+				horizontalAlign: 'left',
+				fontFamily: "Inter",
+				fontWeight: 400,
+				itemMargin: {
+					horizontal: 8,
+					vertical: 0
+				},
+				labels: {
+					colors: '#64748B'
+				},
+				markers: {
+					width: 9,
+					height: 9,
+					offsetX: -2,
+					offsetY: -.5,
+					radius: 2,
+					shape: "diamond",
+				}
+			},
+		};
+		var chart = new ApexCharts(document.querySelector("#linkedin_net_followers"), options);
+		chart.render();
+		
+	}
+
+	/* Followers by Gender JS */ 
+	const getFollowersByGenderId = document.getElementById('followers_by_gender');
+	if (getFollowersByGenderId) {
+		var options = {
+
+			series: [
+				55, 45,
+			],
+			chart: {
+				height: 192,
+				type: "pie",
+			},
+			labels: [
+				"Female Followers", "Male Followers"
+			],
+			colors: [
+				"#605DFF", "#AD63F6"
+			],
+			dataLabels: {
+				enabled: false,
+				style: {
+					fontSize: '10px',
+					fontFamily: 'Inter',
+					colors: ['#fff']
+				},
+				dropShadow: {
+					enabled: true,
+					top: 0,
+					left: 0,
+					blur: 0,
+					color: '#000',
+					opacity: 0
+				}
+			},
+			plotOptions: {
+				pie: {
+					expandOnClick: false,
+				},
+				
+			},
+			tooltip: {
+				y: {
+					formatter: function(val) {
+						return val + "%";
+					}
+				}
+			},
+			stroke: {
+				width: 1,
+				show: true,
+				colors: ["#ffffff"]
+			},
+			legend: {
+				show: false,
+				position: 'bottom',
+				horizontalAlign: 'center', 
+				fontWeight: 400,
+				fontFamily: 'Inter',
+				fontSize: '12',
+				offsetY: 0,
+				labels: {
+					colors: ['#64748B', '#64748B'],
+				},
+				itemMargin: {
+					horizontal: 10,
+					vertical: 5,
+				},
+				markers: {
+					width: 9,
+					height: 9,
+					offsetX: -2,
+					offsetY: -.5,
+					radius: 2,
+					shape: "diamond",
+				}
+			},
+		};
+		var chart = new ApexCharts(document.querySelector("#followers_by_gender"), options);
+		chart.render();
+	}
+
+	// Facebook Campaign Overview JS
+	const getFacebookCampaignOverviewId = document.getElementById('facebook_campaign_overview');
+	if (getFacebookCampaignOverviewId) {
+		var options = {
+			series: [
+				{
+					name: 'Impressions',
+					type: 'column',
+					data: [400, 600, 300, 700, 450, 400, 600]
+				},
+				{
+					name: 'Cost per Conversion',
+					type: 'line',
+					data: [500, 700, 600, 900, 700, 800, 950]
+				},
+				{
+					name: 'Clicks',
+					type: 'column',
+					data: [500, 380, 500, 600, 340, 400, 250]
+				},
+				{
+					name: 'CTR',
+					type: 'column',
+					data: [400, 350, 300, 250, 500, 600, 400]
+				},
+			],
+			chart: {
+				type: 'line',
+				height: 292,
+				toolbar: {
+					show: false,
+				},
+			},
+			colors: ["#605DFF", '#BF85FB', '#37D80A', '#FD5812'],
+			grid: {
+				borderColor: '#ECEEF2',
+				strokeDashArray: 8,
+				xaxis: {
+					lines: {
+						show: false,
+					}
+				},
+			},
+			dataLabels: {
+				enabled: false
+			},
+			stroke: {
+				width: [2, 2.1],
+				curve: ['straight', 'smooth'],
+			},
+			xaxis: {
+				categories: [
+					"Jan",
+					"Feb",
+					"Mar",
+					"Apr",
+					"May",
+					"Jun",
+					"July"
+				],
+				axisTicks: {
+					show: false,
+					color: '#ECEEF2'
+				},
+				axisBorder: {
+					show: true,
+					color: '#D5D9E2'
+				},
+				labels: {
+					show: true,
+					style: {
+						colors: "#64748B",
+						fontSize: "12px",
+						fontWeight: 400,
+						fontFamily: 'Inter',
+					}
+				}
+			},
+			yaxis: {
+				tickAmount: 5,
+				max: 1000,
+				min: 0,
+				labels: {
+					style: {
+						colors: "#64748B",
+						fontSize: "12px",
+						fontWeight: 400,
+						fontFamily: 'Inter',
+					},
+					formatter: (val) => {
+						return '$' + val + ''
+					},
+				},
+				axisBorder: {
+					show: true,
+					color: '#D5D9E2'
+				},
+				axisTicks: {
+					show: false,
+					color: '#ECEEF2'
+				}
+			},
+			legend: {
+				show: false,
+			},
+			plotOptions: {
+				bar: {
+					columnWidth: "25%",
+					borderRadius: 2
+				},
+			},
+			tooltip: {
+				y: {
+					formatter: (val) => {
+						return '$' + val + ''
+					},
+				}
+			},
+		};
+		var chart = new ApexCharts(document.querySelector("#facebook_campaign_overview"), options);
+		chart.render();
+	}
+
+
+	//**<---- Dashboard POS System ---->**//
+
+
+	/* Sales Over Time JS */
+	const getSalesOverTimeId = document.getElementById('sales_over_time');
+	if (getSalesOverTimeId) {
+		var options = {
+			series: [
+				{
+					name: "Sales Over Time",
+					data: [60, 80, 50, 60, 70, 40, 80]
+				}
+			],
+			chart: {
+				type: "bar",
+				height: 197,
+				toolbar: {
+					show: false
+				}
+			},
+			colors: [
+				"#C2CDFF"
+			],
+			plotOptions: {
+				bar: {
+					columnWidth: "30%",
+					borderRadius: 4,
+				}
+			},
+			fill: {
+				opacity: [0.85, 0.25, 1],
+				gradient: {
+					inverseColors: false,
+					shade: 'light',
+					type: "vertical",
+					opacityFrom: 0.85,
+					opacityTo: 0.55,
+					stops: [0, 100, 100, 100]
+				}
+			},
+			grid: {
+				show: false,
+				borderColor: "#ECEEF2"
+			},
+			dataLabels: {
+				enabled: false
+			},
+			stroke: {
+				width: 0,
+				show: true,
+				colors: ["transparent"]
+			},
+			xaxis: {
+				categories: [
+					"Sun",
+					"Mon",
+					"Tue",
+					"Wed",
+					"Thu",
+					"Fri",
+					"Sat",
+				],
+				axisTicks: {
+					show: false,
+					color: '#ECEEF2'
+				},
+				axisBorder: {
+					show: false,
+					color: '#ECEEF2'
+				},
+				labels: {
+					show: true,
+					style: {
+						colors: "#8695AA",
+						fontSize: "12px",
+						fontFamily: 'Inter',
+					}
+				}
+			},
+			yaxis: {
+				show: false,
+				tickAmount: 4,
+				labels: {
+					style: {
+						colors: "#8695AA",
+						fontSize: "12px",
+						fontFamily: 'Inter',
+					},
+				},
+				axisBorder: {
+					show: false,
+					color: '#ECEEF2'
+				},
+				axisTicks: {
+					show: false,
+					color: '#ECEEF2'
+				},
+			},
+			tooltip: {
+				y: {
+					formatter: (val) => {
+						return '$' + val + 'K'
+					},
+				}
+			},
+			legend: {
+				show: true,
+				position: 'top',
+				fontSize: '12px',
+				horizontalAlign: 'left',
+				fontFamily: "Inter",
+				fontWeight: 400,
+				itemMargin: {
+					horizontal: 8,
+					vertical: 0
+				},
+				labels: {
+					colors: '#64748B'
+				},
+				markers: {
+					width: 9,
+					height: 9,
+					offsetX: -2,
+					offsetY: -.5,
+					radius: 2,
+					shape: "diamond",
+				}
+			},
+			states: {
+				hover: {
+					filter: {
+						type: 'darken',
+						value: 0.1,
+					}
+				},
+			}
+		};
+		var chart = new ApexCharts(document.querySelector("#sales_over_time"), options);
+		chart.render();
+	}
+
+	/* Sales By Category/Products JS */
+	const getSalesByCategoryProductsId = document.getElementById('sales_by_category_products');
+	if (getSalesByCategoryProductsId) {
+
+		var options = {
+			series: [35000, 25000, 18000],
+			chart: {
+				type: 'donut',
+				height: 178,
+		  	},
+			  labels: [
+				"Electronics", "Clothing", "Home Goods"
+			],
+			colors: [
+				"#AD63F6", "#37D80A", "#3584FC"
+			],
+			plotOptions: {
+				pie: {
+					startAngle: -90,
+					endAngle: 90,
+					offsetY: 10
+				}
+			},
+			grid: {
+				padding: {
+					bottom: -80
+				}
+			},
+			responsive: [{
+				breakpoint: 480,
+				options: {
+					chart: {
+						width: 200
+					},
+					legend: {
+						position: 'bottom'
+					}
+				}
+			}],
+			legend: {
+				show: false,
+			},
+			dataLabels: {
+				enabled: false
+			},
+			tooltip: {
+				enabled: true,
+				y: {
+					formatter: (val) => {
+						return '$' + val / 1 + ''
+					},
+				}
+			},
+			stroke: {
+				width: 2,
+				show: true,
+				colors: ["#ffffff"],
+				lineCap: 'round'
+			},
+		};
+  
+		var chart = new ApexCharts(document.querySelector("#sales_by_category_products"), options);
+		chart.render();
+
+	}
+
+	/* Customer Segmentation JS*/
+	const getCustomerSegmentationId = document.getElementById('customer_segmentation');
+	if (getCustomerSegmentationId) {
+		var options = {
+			series: [1200, 1800],
+			chart: {
+				height: 213,
+				type: "donut"
+			},
+			labels: [
+				"New Customers", "Returning Customers",
+			],
+			colors: [
+				"#3584FC", "#AD63F6"
+			],
+			stroke: {
+				width: 1,
+				show: true,
+				colors: ["#ffffff"]
+			},
+			legend: {
+				show: false,
+				position: 'top',
+				fontSize: '12px',
+				horizontalAlign: 'center',
+				fontFamily: "Inter",
+				fontWeight: 400,
+				itemMargin: {
+					horizontal: 8,
+					vertical: 0
+				},
+				labels: {
+					colors: '#64748B'
+				},
+				markers: {
+					width: 9,
+					height: 9,
+					offsetX: -2,
+					offsetY: -.5,
+					shape: 'diamond',
+				}
+			},
+			plotOptions: {
+				pie: {
+					expandOnClick: false,
+					donut: {
+						size: '80%',
+						labels: {
+							show: true,
+							name: {
+								color: '#64748B'
+							},
+							value: {
+								show: true,
+								color: '#64748B',
+								fontSize: '24px',
+								fontWeight: '600',
+								offsetY: -0,
+							},
+							total: {
+								show: true,
+								color: '#64748B',
+								fontSize: '14px',
+								fontWeight: '400',
+								
+							}
+						}
+					}
+				}
+			},
+			dataLabels: {
+				enabled: false
+			},
+			tooltip: {
+				enabled: false
+			}
+		}
+		var chart = new ApexCharts(document.querySelector("#customer_segmentation"), options);
+		chart.render();
+	}
+
+
+	//**<---- Dashboard Podcast ---->**//
+
+
+	/* Outbound Calls JS*/
+	const getTodaysEarningsId = document.getElementById('todays_earnings');
+	if (getTodaysEarningsId) {
+		var options = {
+			series: [
+				{
+					name: "Today’s Earnings",
+					data: [100, 130, 115, 170, 110, 120, 85, 140, 150, 100, 110, 90, 160, 125, 105, 130, 145, 120, 150, 155, 220, 165]
+				}
+			],
+			chart: {
+				type: "area",
+				height: 164,
+				zoom: {
+					enabled: false
+				},
+				toolbar: {
+					show: false
+				}
+			},
+			dataLabels: {
+				enabled: false
+			},
+			stroke: {
+				curve: "smooth", // ['straight', 'smooth', 'monotoneCubic', 'stepline']
+				width: 1
+			},
+			colors: [
+				"#9135E8"
+			],
+			fill: {
+				type: 'gradient',
+				gradient: {
+					stops: [0, 100, 100],
+					shadeIntensity: 1,
+					opacityFrom: 0.5,
+					opacityTo: 0.6
+				}
+			},
+			xaxis: {
+				categories: [
+					"01 Jan",
+					"02 Jan",
+					"03 Jan",
+					"04 Jan",
+					"05 Jan",
+					"06 Jan",
+					"07 Jan",
+					"08 Jan",
+					"09 Jan",
+					"10 Jan",
+					"11 Jan",
+					"12 Jan",
+					"13 Jan",
+					"14 Jan",
+					"15 Jan",
+					"16 Jan",
+					"17 Jan",
+					"18 Jan",
+					"19 Jan",
+					"20 Jan",
+					"21 Jan",
+					"22 Jan",
+				],
+				axisTicks: {
+					show: false,
+					color: '#ECEEF2'
+				},
+				axisBorder: {
+					show: false,
+					color: '#ECEEF2'
+				},
+				labels: {
+					show: false,
+					style: {
+						colors: "#8695AA",
+						fontSize: "12px",
+						fontFamily: 'Inter',
+					}
+				}
+			},
+			yaxis: {
+				tickAmount: 5,
+				show: false,
+				max: 250,
+				min: 0,
+				labels: {
+					show: true,
+					style: {
+						colors: "#64748B",
+						fontSize: "12px",
+						fontFamily: 'Inter',
+					},
+				},
+				axisBorder: {
+					show: true,
+					color: '#ECEEF2'
+				},
+				axisTicks: {
+					show: true,
+					color: '#ECEEF2'
+				}
+			},
+			grid: {
+				show: false,
+				borderColor: "#ECEEF2"
+			},
+			legend: {
+				show: true,
+				position: 'top',
+				fontSize: '12px',
+				horizontalAlign: 'center',
+				fontFamily: "Inter",
+				fontWeight: 400,
+				itemMargin: {
+					horizontal: 8,
+					vertical: 0
+				},
+				labels: {
+					colors: '#64748B'
+				},
+				markers: {
+					width: 9,
+					height: 9,
+					offsetX: -2,
+					offsetY: -.5,
+					radius: 2,
+					shape: "diamond",
+				}
+			},
+			tooltip: {
+				enabled: true,
+				y: {
+					formatter: (val) => {
+						return '$' + val / 1 + ''
+					},
+				}
+			},
+		};
+		var chart = new ApexCharts(document.querySelector("#todays_earnings"), options);
+		chart.render();
+	}
+
+	// Listener Analytics JS
+	const getListenerAnalyticsId = document.getElementById('listener_analytics');
+	if (getListenerAnalyticsId) {
+		var options = {
+			series: [
+				{
+					name: "Men",
+					data: [50, 30, 40, 35, 30,]
+				},
+				{
+					name: "Woman",
+					data: [25, 40, 30, 45, 25,]
+				},
+			],
+			chart: {
+				type: "bar",
+				height: 376,
+				toolbar: {
+					show: false
+				}
+			},
+			colors: [
+				"#605DFF", "#9CAAFF",
+			],
+			plotOptions: {
+				bar: {
+					columnWidth: "32%",
+					borderRadius: 6,
+					borderRadiusApplication: "end",
+				}
+			},
+			fill: {
+				type: ['gradient', 'solid'], // Apply gradient only to the first series
+				gradient: {
+					shade: 'light',
+					type: 'vertical',
+					shadeIntensity: 0.5,
+					gradientToColors: ["#9747FF"], // End color for the gradient
+					inverseColors: false,
+					opacityFrom: 1,
+					opacityTo: 1,
+					stops: [0, 100]
+				}
+			},
+			grid: {
+				borderColor: '#ECEEF2',
+				strokeDashArray: 8,
+				xaxis: {
+					lines: {
+						show: false,
+					}
+				},
+			},
+			dataLabels: {
+				enabled: false
+			},
+			stroke: {
+				width: 3,
+				show: true,
+				colors: ["transparent"]
+			},
+			xaxis: {
+				categories: [
+					"18-24",
+					"25-34",
+					"35-44",
+					"45-65",
+					"65+",
+				],
+				axisTicks: {
+					show: false,
+					color: '#ECEEF2'
+				},
+				axisBorder: {
+					show: false,
+					color: '#ECEEF2'
+				},
+				labels: {
+					show: true,
+					style: {
+						colors: "#8695AA",
+						fontSize: "12px",
+						fontFamily: 'Inter',
+					}
+				}
+			},
+			yaxis: {
+				tickAmount: 3,
+				max: 60,
+				min: 0,
+				labels: {
+					style: {
+						colors: "#64748B",
+						fontSize: "12px",
+						fontFamily: 'Inter',
+					},
+					formatter: (val) => {
+						return '' + val / 1 + '%'
+					}
+				},
+				axisBorder: {
+					show: false,
+					color: '#ECEEF2'
+				},
+				axisTicks: {
+					show: false,
+					color: '#ECEEF2'
+				}
+			},
+			legend: {
+				show: true,
+				position: 'top',
+				fontSize: '12px',
+				horizontalAlign: 'left',
+				fontFamily: "Inter",
+				fontWeight: 400,
+				offsetY: 10,
+				itemMargin: {
+					horizontal: 8,
+					vertical: 60
+				},
+				labels: {
+					colors: '#3A4252'
+				},
+				markers: {
+					width: 9,
+					height: 9,
+					offsetX: -2,
+					offsetY: -.5,
+					radius: 2,
+					shape: "diamond",
+				}
+			},
+		};
+		var chart = new ApexCharts(document.querySelector("#listener_analytics"), options);
+		chart.render();
+	}
+
+	/* Listener Analytics 2 JS*/
+	const getSalesByGender2Id = document.getElementById('sales_by_gender_2');
+	if (getSalesByGender2Id) {
+		var options = {
+			series: [70, 30],
+			chart: {
+				height: 60,
+				type: "donut"
+			},
+			labels: [
+				"Men", "Woman",
+			],
+			colors: [
+				"#605DFF", "#AD63F6"
+			],
+			stroke: {
+				width: 0,
+				show: true,
+				colors: ["#ffffff"],
+				lineCap: 'round'
+			},
+			legend: {
+				show: false,
+				position: 'right',
+				fontSize: '12px',
+				horizontalAlign: 'center',
+				fontFamily: "Inter",
+				fontWeight: 400,
+				offsetY: 10,
+				itemMargin: {
+					horizontal: 0,
+					vertical: 5
+				},
+				labels: {
+					colors: '#64748B'
+				},
+				markers: {
+					width: 9,
+					height: 9,
+					offsetX: -2,
+					offsetY: -.5,
+					radius: 2,
+					shape: "diamond",
+				}
+			},
+			plotOptions: {
+				pie: {
+					expandOnClick: false,
+					donut: {
+						size: '80%',
+						labels: {
+							show: false,
+							name: {
+								color: '#64748B'
+							},
+							value: {
+								show: false,
+								color: '#000',
+								fontSize: '36px',
+								fontWeight: '700',
+								fontFamily: 'Inter',
+								offsetY: 10,
+								formatter: (val) => {
+									return '' + val / 1 + '%'
+								},
+							},
+							total: {
+								show: false,
+								color: '#64748B',
+								fontSize: '14px',
+								fontWeight: '400',
+								fontFamily: 'Inter',
+							}
+						}
+					}
+				}
+			},
+			dataLabels: {
+				enabled: false
+			},
+			tooltip: {
+				enabled: true,
+				y: {
+					formatter: (val) => {
+						return '' + val / 1 + '%'
+					},
+				}
+			}
+		}
+		var chart = new ApexCharts(document.querySelector("#sales_by_gender_2"), options);
+		chart.render();
+	}
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 	//**<---- Others All Charts ---->**//
 
@@ -13014,7 +15283,9 @@
 				horizontalAlign: 'right',
 				floating: true,
 				offsetY: -25,
-				offsetX: -5
+				offsetX: -5,
+				fontFamily: "Inter",
+				fontWeight: 400,
 			}
 		};
 		var chart = new ApexCharts(document.querySelector("#average_high_low_temperature"), options);

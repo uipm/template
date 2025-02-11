@@ -5,7 +5,6 @@ import { FileUploadModule } from '@iplab/ngx-file-upload';
 
 @Component({
     selector: 'app-add-user',
-    standalone: true,
     imports: [RouterLink, NgxEditorModule, FileUploadModule],
     templateUrl: './add-user.component.html',
     styleUrl: './add-user.component.scss'

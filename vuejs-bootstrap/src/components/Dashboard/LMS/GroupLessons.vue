@@ -129,7 +129,7 @@ import feather from "feather-icons";
 import PaginationTwo from "../../Common/PaginationTwo.vue";
 
 export default defineComponent({
-  title: "GroupLessons",
+  name: "GroupLessons",
   components: {
     PaginationTwo,
   },

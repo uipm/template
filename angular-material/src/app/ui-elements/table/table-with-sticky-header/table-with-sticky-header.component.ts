@@ -4,7 +4,6 @@ import { CustomizerSettingsService } from '../../../customizer-settings/customiz
 
 @Component({
     selector: 'app-table-with-sticky-header',
-    standalone: true,
     imports: [MatTableModule],
     templateUrl: './table-with-sticky-header.component.html',
     styleUrl: './table-with-sticky-header.component.scss'
@@ -14,16 +13,9 @@ export class TableWithStickyHeaderComponent {
     displayedColumns = ['position', 'name', 'weight', 'symbol'];
     dataSource = ELEMENT_DATA;
 
-    // isToggled
-    isToggled = false;
-
     constructor(
         public themeService: CustomizerSettingsService
-    ) {
-        this.themeService.isToggled$.subscribe(isToggled => {
-            this.isToggled = isToggled;
-        });
-    }
+    ) {}
 
 }
 

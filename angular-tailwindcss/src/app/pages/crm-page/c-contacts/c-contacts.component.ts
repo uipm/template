@@ -4,7 +4,6 @@ import { FileUploadModule } from '@iplab/ngx-file-upload';
 
 @Component({
     selector: 'app-c-contacts',
-    standalone: true,
     imports: [RouterLink, FileUploadModule],
     templateUrl: './c-contacts.component.html',
     styleUrl: './c-contacts.component.scss'

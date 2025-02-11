@@ -8,7 +8,6 @@ import {
 
 @Component({
     selector: 'app-st-with-forms',
-    standalone: true,
     imports: [
         MatSlideToggleModule,
         FormsModule,

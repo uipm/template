@@ -6,22 +6,14 @@ import { CustomizerSettingsService } from '../customizer-settings/customizer-set
 
 @Component({
     selector: 'app-front-pages',
-    standalone: true,
     imports: [RouterOutlet, FpNavbarComponent, FpFooterComponent],
     templateUrl: './front-pages.component.html',
     styleUrl: './front-pages.component.scss'
 })
 export class FrontPagesComponent {
 
-    // isToggled
-    isToggled = false;
-
     constructor(
         public themeService: CustomizerSettingsService
-    ) {
-        this.themeService.isToggled$.subscribe(isToggled => {
-            this.isToggled = isToggled;
-        });
-    }
+    ) {}
 
 }

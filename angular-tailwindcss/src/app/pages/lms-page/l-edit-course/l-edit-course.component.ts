@@ -6,7 +6,6 @@ import { NgxEditorModule, Editor, Toolbar } from 'ngx-editor';
 
 @Component({
     selector: 'app-l-edit-course',
-    standalone: true,
     imports: [RouterLink, FileUploadModule, NgxEditorModule, NgIf],
     templateUrl: './l-edit-course.component.html',
     styleUrl: './l-edit-course.component.scss'

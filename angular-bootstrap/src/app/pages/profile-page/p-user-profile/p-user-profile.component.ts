@@ -1,27 +1,19 @@
-import { NgFor, NgIf } from '@angular/common';
+import { NgIf } from '@angular/common';
 import { Component, HostListener } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { CustomizerSettingsService } from '../../../customizer-settings/customizer-settings.service';
 
 @Component({
     selector: 'app-p-user-profile',
-    standalone: true,
-    imports: [RouterLink, NgIf, NgFor],
+    imports: [RouterLink, NgIf],
     templateUrl: './p-user-profile.component.html',
     styleUrl: './p-user-profile.component.scss'
 })
 export class PUserProfileComponent {
 
-    // isToggled
-    isToggled = false;
-
     constructor(
         public themeService: CustomizerSettingsService
-    ) {
-        this.themeService.isToggled$.subscribe(isToggled => {
-            this.isToggled = isToggled;
-        });
-    }
+    ) {}
 
     // Card Header Menu
     isCardHeaderOpen = false;

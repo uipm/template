@@ -8,7 +8,6 @@ import { PerformanceOfAgentsComponent } from '../../../dashboard/helpdesk/perfor
 
 @Component({
     selector: 'app-hd-reports',
-    standalone: true,
     imports: [RouterLink, TicketsStatusComponent, CustomerSatisfactionComponent, ResponseTimeComponent, NewTicketsSolvedTicketsComponent, PerformanceOfAgentsComponent],
     templateUrl: './hd-reports.component.html',
     styleUrl: './hd-reports.component.scss'

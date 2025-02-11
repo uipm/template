@@ -35,7 +35,7 @@
         <apexchart
           v-if="isClient"
           type="donut"
-          height="225"
+          height="200"
           :options="customerSatisfaction"
           :series="satisfaction"
         ></apexchart>
@@ -65,7 +65,7 @@ export default defineComponent({
     const satisfaction = ref([50, 15, 75, 50]);
     const customerSatisfaction = ref({
       chart: {
-        height: 225,
+        height: 200,
         type: "donut",
       },
       labels: ["Highly Satisfied", "Satisfied", "Low Satisfied", "Unsatisfied"],

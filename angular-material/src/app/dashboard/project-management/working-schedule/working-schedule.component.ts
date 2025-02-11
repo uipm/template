@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { RouterLink } from '@angular/router';
 import { MatCardModule } from '@angular/material/card';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { CarouselModule, OwlOptions } from 'ngx-owl-carousel-o';
@@ -8,8 +7,7 @@ import { CustomizerSettingsService } from '../../../customizer-settings/customiz
 
 @Component({
     selector: 'app-working-schedule',
-    standalone: true,
-    imports: [RouterLink, MatCardModule, MatDatepickerModule, CarouselModule, MatNativeDateModule],
+    imports: [MatCardModule, MatDatepickerModule, CarouselModule, MatNativeDateModule],
     templateUrl: './working-schedule.component.html',
     styleUrl: './working-schedule.component.scss'
 })
@@ -22,7 +20,7 @@ export class WorkingScheduleComponent {
 		loop: true,
 		margin: 25,
 		dots: true,
-		autoplay: false,
+		autoplay: true,
 		smartSpeed: 500,
 		autoplayHoverPause: true,
 		navText: [
@@ -31,15 +29,8 @@ export class WorkingScheduleComponent {
 		]
     }
 
-	// isToggled
-    isToggled = false;
-
     constructor(
         public themeService: CustomizerSettingsService
-    ) {
-        this.themeService.isToggled$.subscribe(isToggled => {
-            this.isToggled = isToggled;
-        });
-    }
+    ) {}
 
 }

@@ -1,11 +1,9 @@
 import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
-import { NgClass, NgIf } from '@angular/common';
 
 @Component({
     selector: 'app-published',
-    standalone: true,
-    imports: [RouterLink, NgIf, NgClass],
+    imports: [RouterLink],
     templateUrl: './published.component.html',
     styleUrl: './published.component.scss'
 })

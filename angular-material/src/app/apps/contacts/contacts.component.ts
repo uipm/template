@@ -11,7 +11,6 @@ import { MatPaginator, MatPaginatorModule } from '@angular/material/paginator';
 
 @Component({
     selector: 'app-contacts',
-    standalone: true,
     imports: [RouterLink, MatCardModule, MatButtonModule, MatMenuModule, MatTableModule, NgIf, MatCheckboxModule, MatPaginatorModule],
     templateUrl: './contacts.component.html',
     styleUrl: './contacts.component.scss'

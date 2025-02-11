@@ -14,7 +14,6 @@ import { DtToDoListComponent } from './dt-to-do-list/dt-to-do-list.component';
 
 @Component({
     selector: 'app-data-table',
-    standalone: true,
     imports: [RouterLink, DtTopSellingProductsComponent, DtRecentOrdersComponent, DtTopPerformersComponent, DtRecentLeadsComponent, DtMyTasksComponent, DtAllProjectsComponent, DtStudentsProgressComponent, DtGroupLessonsComponent, DtPerformanceOfAgentsComponent, DtRecentCustomerRatingsComponent, DtToDoListComponent],
     templateUrl: './data-table.component.html',
     styleUrl: './data-table.component.scss'

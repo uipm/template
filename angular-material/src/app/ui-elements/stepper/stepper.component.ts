@@ -12,7 +12,6 @@ import { StepperVerticalComponent } from './stepper-vertical/stepper-vertical.co
 
 @Component({
     selector: 'app-stepper',
-    standalone: true,
     imports: [RouterLink, MatCardModule, StepperOverviewComponent, StepperAnimationsComponent, StDisplaysErrorsItStepsComponent, StepperHeaderPositionComponent, StepperLabelBottomPositionComponent, StepperResponsiveComponent, StepperVerticalComponent, SwRequiredStepsComponent],
     templateUrl: './stepper.component.html',
     styleUrl: './stepper.component.scss'

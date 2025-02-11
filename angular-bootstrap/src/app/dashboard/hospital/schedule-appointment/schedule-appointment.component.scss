@@ -2,20 +2,22 @@
     --purpleColor: #7C24CC;
 
     .trezo-card-content {
-        text-align: center;
-
+        padding: {
+            top: 2px;
+            bottom: 2px;
+        };
         h3 {
             font-size: 24px;
-            margin-bottom: 9px;
+            margin-bottom: 10px;
         }
         p {
             max-width: 275px;
-            line-height: 1.6;
-            margin-bottom: 22px;
+            line-height: 1.7;
+            margin-bottom: 25px;
         }
         .button {
             font-size: 16px;
-            margin-top: 22px;
+            margin-top: 25px;
             padding: 6px 17px;
         }
     }
@@ -26,6 +28,10 @@
 
     .schedule-appointment-card {
         .trezo-card-content {
+            padding: {
+                top: 0;
+                bottom: 0;
+            };
             h3 {
                 font-size: 20px;
             }
@@ -33,7 +39,7 @@
                 max-width: 100%;
                 margin-bottom: 17px;
             }
-            .mat-mdc-button {
+            .button {
                 margin-top: 20px;
                 font-size: 14px;
             }

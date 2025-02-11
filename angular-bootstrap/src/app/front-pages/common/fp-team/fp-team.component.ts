@@ -1,12 +1,10 @@
 import { Component } from '@angular/core';
-import { RouterLink } from '@angular/router';
 import { CarouselModule, OwlOptions } from 'ngx-owl-carousel-o';
 import { CustomizerSettingsService } from '../../../customizer-settings/customizer-settings.service';
 
 @Component({
     selector: 'app-fp-team',
-    standalone: true,
-    imports: [RouterLink, CarouselModule],
+    imports: [CarouselModule],
     templateUrl: './fp-team.component.html',
     styleUrl: './fp-team.component.scss'
 })
@@ -44,15 +42,8 @@ export class FpTeamComponent {
         }
     }
 
-    // isToggled
-    isToggled = false;
-
     constructor(
         public themeService: CustomizerSettingsService
-    ) {
-        this.themeService.isToggled$.subscribe(isToggled => {
-            this.isToggled = isToggled;
-        });
-    }
+    ) {}
 
 }

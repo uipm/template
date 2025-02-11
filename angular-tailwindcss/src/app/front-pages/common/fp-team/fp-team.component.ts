@@ -3,7 +3,6 @@ import { CarouselModule, OwlOptions } from 'ngx-owl-carousel-o';
 
 @Component({
     selector: 'app-fp-team',
-    standalone: true,
     imports: [CarouselModule],
     templateUrl: './fp-team.component.html',
     styleUrl: './fp-team.component.scss'

@@ -11,7 +11,6 @@ import { BasicTreemapChartComponent } from './basic-treemap-chart/basic-treemap-
 
 @Component({
     selector: 'app-more-charts',
-    standalone: true,
     imports: [RouterLink, BasicRangeAreaChartComponent, BasicTimelineChartComponent, BasicCandlestickChartComponent, BasicBoxplotChartComponent, BasicBubbleChartComponent, BasicScatterChartComponent, BasicHeatmapChartComponent, BasicTreemapChartComponent],
     templateUrl: './more-charts.component.html',
     styleUrl: './more-charts.component.scss'

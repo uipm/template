@@ -4,7 +4,6 @@ import { NgClass } from '@angular/common';
 
 @Component({
     selector: 'app-lock-screen',
-    standalone: true,
     imports: [NgClass],
     templateUrl: './lock-screen.component.html',
     styleUrl: './lock-screen.component.scss'

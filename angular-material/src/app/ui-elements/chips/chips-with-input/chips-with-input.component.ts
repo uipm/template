@@ -10,7 +10,6 @@ export interface Fruit {
 
 @Component({
     selector: 'app-chips-with-input',
-    standalone: true,
     imports: [MatFormFieldModule, MatChipsModule],
     templateUrl: './chips-with-input.component.html',
     styleUrl: './chips-with-input.component.scss'

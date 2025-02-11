@@ -3,7 +3,6 @@ import { NgIf } from '@angular/common';
 
 @Component({
     selector: 'app-exchange',
-    standalone: true,
     imports: [NgIf],
     templateUrl: './exchange.component.html',
     styleUrl: './exchange.component.scss'

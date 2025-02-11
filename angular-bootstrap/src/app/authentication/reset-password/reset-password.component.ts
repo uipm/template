@@ -5,23 +5,15 @@ import { CustomizerSettingsService } from '../../customizer-settings/customizer-
 
 @Component({
     selector: 'app-reset-password',
-    standalone: true,
     imports: [RouterLink, NgClass],
     templateUrl: './reset-password.component.html',
     styleUrl: './reset-password.component.scss'
 })
 export class ResetPasswordComponent {
 
-    // isToggled
-    isToggled = false;
-
     constructor(
         public themeService: CustomizerSettingsService
-    ) {
-        this.themeService.isToggled$.subscribe(isToggled => {
-            this.isToggled = isToggled;
-        });
-    }
+    ) {}
 
     // Password Show/Hide
     password1: string = '';

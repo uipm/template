@@ -10,16 +10,16 @@
       <ModulesUIElementsAvatarSingleUserWithBadgeExample />
     </div>
     <div class="col-lg-6 overflow-hidden">
-      <LazyModulesUIElementsAvatarSizeRoundedCircleExample />
+      <ModulesUIElementsAvatarSizeRoundedCircleExample />
     </div>
     <div class="col-lg-6 overflow-hidden">
-      <LazyModulesUIElementsAvatarSizeSimpleRoundedExample />
+      <ModulesUIElementsAvatarSizeSimpleRoundedExample />
     </div>
     <div class="col-lg-6 overflow-hidden">
-      <LazyModulesUIElementsAvatarTextAvatarSizeRoundedCircleExample />
+      <ModulesUIElementsAvatarTextAvatarSizeRoundedCircleExample />
     </div>
     <div class="col-lg-6 overflow-hidden">
-      <LazyModulesUIElementsAvatarTextAvatarSizeSimpleRoundedExample />
+      <ModulesUIElementsAvatarTextAvatarSizeSimpleRoundedExample />
     </div>
   </div>
 </template>

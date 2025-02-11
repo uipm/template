@@ -5,7 +5,6 @@ import { MultipleFuComponent } from './multiple-fu/multiple-fu.component';
 
 @Component({
     selector: 'app-file-uploader',
-    standalone: true,
     imports: [RouterLink, SimpleFuComponent, MultipleFuComponent],
     templateUrl: './file-uploader.component.html',
     styleUrl: './file-uploader.component.scss'

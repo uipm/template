@@ -11,7 +11,6 @@ import { CustomizerSettingsService } from '../../../customizer-settings/customiz
 
 @Component({
     selector: 'app-edit-invoice',
-    standalone: true,
     imports: [RouterLink, MatCardModule, MatFormFieldModule, MatInputModule, MatDatepickerModule, MatNativeDateModule, MatSelectModule, MatButtonModule],
     templateUrl: './edit-invoice.component.html',
     styleUrl: './edit-invoice.component.scss'
@@ -21,15 +20,8 @@ export class EditInvoiceComponent {
     // Select Value
     statusSelected = 'option1';
 
-    // isToggled
-    isToggled = false;
-
     constructor(
         public themeService: CustomizerSettingsService
-    ) {
-        this.themeService.isToggled$.subscribe(isToggled => {
-            this.isToggled = isToggled;
-        });
-    }
+    ) {}
 
 }

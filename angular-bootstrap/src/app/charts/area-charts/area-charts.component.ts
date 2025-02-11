@@ -10,7 +10,6 @@ import { GithubStyleAreaChartComponent } from './github-style-area-chart/github-
 
 @Component({
     selector: 'app-area-charts',
-    standalone: true,
     imports: [RouterLink, BasicAreaChartComponent, SplineAreaChartComponent, DatetimeAreaChartComponent, NegativeValuesAreaChartComponent, StackedAreaChartComponent, MissingNullValuesAreaChartComponent, GithubStyleAreaChartComponent],
     templateUrl: './area-charts.component.html',
     styleUrl: './area-charts.component.scss'

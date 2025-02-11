@@ -1,11 +1,9 @@
-import { NgClass, NgIf } from '@angular/common';
 import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
 @Component({
     selector: 'app-offcanvas',
-    standalone: true,
-    imports: [RouterLink, NgIf, NgClass],
+    imports: [RouterLink],
     templateUrl: './offcanvas.component.html',
     styleUrl: './offcanvas.component.scss'
 })

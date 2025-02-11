@@ -37,7 +37,6 @@ export default defineNuxtConfig({
   ],
 
   plugins: ["~/plugins/apexcharts.client.ts", "~/plugins/vue-quill.js"],
-
   modules: ["@bootstrap-vue-next/nuxt", "nuxt-swiper", "nuxt-feather-icons"],
 
   vue: {
@@ -45,6 +44,7 @@ export default defineNuxtConfig({
       isCustomElement: (tag) => tag.toLowerCase() === "script",
     },
   },
+
   nitro: {
     output: {
       dir: "dist",
@@ -53,4 +53,5 @@ export default defineNuxtConfig({
   },
 
   components: true,
+  compatibilityDate: "2025-01-31",
 });

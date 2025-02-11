@@ -6,7 +6,6 @@ import { ToggleService } from '../common/header/toggle.service';
 
 @Component({
     selector: 'app-front-pages',
-    standalone: true,
     imports: [RouterOutlet, FpNavbarComponent, FpFooterComponent],
     templateUrl: './front-pages.component.html',
     styleUrl: './front-pages.component.scss'

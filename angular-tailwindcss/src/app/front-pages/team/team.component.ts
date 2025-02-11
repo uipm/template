@@ -4,7 +4,6 @@ import { FpCtaComponent } from '../common/fp-cta/fp-cta.component';
 
 @Component({
     selector: 'app-team',
-    standalone: true,
     imports: [FpTeamComponent, FpCtaComponent],
     templateUrl: './team.component.html',
     styleUrl: './team.component.scss'

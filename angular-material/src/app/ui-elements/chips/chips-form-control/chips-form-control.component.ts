@@ -7,7 +7,6 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 
 @Component({
     selector: 'app-chips-form-control',
-    standalone: true,
     imports: [
         MatButtonModule,
         MatFormFieldModule,

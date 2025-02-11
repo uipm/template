@@ -4,22 +4,14 @@ import { CustomizerSettingsService } from '../../../customizer-settings/customiz
 
 @Component({
     selector: 'app-p-teams',
-    standalone: true,
     imports: [RouterLink],
     templateUrl: './p-teams.component.html',
     styleUrl: './p-teams.component.scss'
 })
 export class PTeamsComponent {
 
-    // isToggled
-    isToggled = false;
-
     constructor(
         public themeService: CustomizerSettingsService
-    ) {
-        this.themeService.isToggled$.subscribe(isToggled => {
-            this.isToggled = isToggled;
-        });
-    }
+    ) {}
 
 }

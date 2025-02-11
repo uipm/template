@@ -3,7 +3,6 @@ import { OverallVisitorsService } from './overall-visitors.service';
 
 @Component({
     selector: 'app-overall-visitors',
-    standalone: true,
     imports: [],
     templateUrl: './overall-visitors.component.html',
     styleUrl: './overall-visitors.component.scss'

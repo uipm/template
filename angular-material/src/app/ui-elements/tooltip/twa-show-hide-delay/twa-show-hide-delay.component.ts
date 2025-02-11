@@ -15,10 +15,9 @@ export const myCustomTooltipDefaults: MatTooltipDefaultOptions = {
 
 @Component({
     selector: 'app-twa-show-hide-delay',
-    standalone: true,
     imports: [MatButtonModule, MatTooltipModule],
     templateUrl: './twa-show-hide-delay.component.html',
     styleUrl: './twa-show-hide-delay.component.scss',
-    providers: [{provide: MAT_TOOLTIP_DEFAULT_OPTIONS, useValue: myCustomTooltipDefaults}],
+    providers: [{ provide: MAT_TOOLTIP_DEFAULT_OPTIONS, useValue: myCustomTooltipDefaults }]
 })
 export class TwaShowHideDelayComponent {}

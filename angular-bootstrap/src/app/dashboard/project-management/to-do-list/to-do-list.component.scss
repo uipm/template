@@ -29,14 +29,12 @@
             }
         }
         .add-new-task-btn {
+            margin-top: 15px;
             padding: 6px 13px;
             color: var(--primaryColor);
             background-color: transparent;
             border: 1px solid var(--primaryColor);
-            margin: {
-                top: 15px;
-                right: 25px;
-            };
+            
             span {
                 padding-left: 22px;
 
@@ -58,10 +56,6 @@
     &.component-rtl-enabled {
         .trezo-card-content {
             .add-new-task-btn {
-                margin: {
-                    right: 0;
-                    left: 25px;
-                };
                 span {
                     padding: {
                         left: 0;
@@ -126,11 +120,6 @@
                 margin-top: 12px;
             }
         }
-        .trezo-card-content {
-            .add-new-task-btn {
-                margin-right: 17px;
-            }
-        }
         &.component-rtl-enabled {
             .trezo-card-content {
                 .basic-table {
@@ -168,11 +157,6 @@
                             }
                         }
                     }
-                }
-                .add-new-task-btn {
-                    margin: {
-                        left: 17px;
-                    };
                 }
             }
         }
@@ -189,11 +173,6 @@
                 margin-top: 0;
             }
         }
-        .trezo-card-content {
-            .add-new-task-btn {
-                margin-right: 20px;
-            }
-        }
         &.component-rtl-enabled {
             .trezo-card-content {
                 .basic-table {
@@ -231,11 +210,6 @@
                             }
                         }
                     }
-                }
-                .add-new-task-btn {
-                    margin: {
-                        left: 20px;
-                    };
                 }
             }
         }

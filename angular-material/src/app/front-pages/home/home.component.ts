@@ -10,7 +10,6 @@ import { FpBannerComponent } from '../common/fp-banner/fp-banner.component';
 
 @Component({
     selector: 'app-home',
-    standalone: true,
     imports: [FpBannerComponent, FpKeyFeaturesComponent, FpWidgetsComponent, FpTestimonialsComponent, FpTeamComponent, FpFaqComponent, FpContactComponent, FpCtaComponent],
     templateUrl: './home.component.html',
     styleUrl: './home.component.scss'

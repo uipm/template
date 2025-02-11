@@ -24,7 +24,6 @@ const ELEMENT_DATA: PeriodicElement[] = [
 
 @Component({
     selector: 'app-dynamically-changing-columns-displayed',
-    standalone: true,
     imports: [MatButtonModule, MatTableModule],
     templateUrl: './dynamically-changing-columns-displayed.component.html',
     styleUrl: './dynamically-changing-columns-displayed.component.scss'

@@ -3,7 +3,6 @@ import { NgIf } from '@angular/common';
 
 @Component({
     selector: 'app-team-members',
-    standalone: true,
     imports: [NgIf],
     templateUrl: './team-members.component.html',
     styleUrl: './team-members.component.scss'

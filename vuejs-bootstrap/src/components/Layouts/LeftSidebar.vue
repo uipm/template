@@ -30,7 +30,7 @@
           >
             <span class="material-symbols-outlined menu-icon">dashboard</span>
             <span class="title">Dashboard</span>
-            <span class="count">15</span>
+            <span class="count">18</span>
           </a>
 
           <ul class="menu-sub" v-show="isOpen('dashboard')">
@@ -64,60 +64,77 @@
             <li class="menu-item mb-0">
               <RouterLink to="/dashboard/analytics" class="menu-link">
                 Analytics
-                <span class="hot tag">New</span>
               </RouterLink>
             </li>
             <li class="menu-item mb-0">
               <RouterLink to="/dashboard/crypto" class="menu-link">
                 Crypto
-                <span class="hot tag">New</span>
               </RouterLink>
             </li>
             <li class="menu-item mb-0">
               <RouterLink to="/dashboard/sales" class="menu-link">
                 Sales
-                <span class="hot tag">New</span>
               </RouterLink>
             </li>
             <li class="menu-item mb-0">
               <RouterLink to="/dashboard/hospital" class="menu-link">
                 Hospital
-                <span class="hot tag">New</span>
               </RouterLink>
             </li>
             <li class="menu-item mb-0">
               <RouterLink to="/dashboard/marketing" class="menu-link">
                 Marketing
-                <span class="hot tag">New</span>
               </RouterLink>
             </li>
             <li class="menu-item mb-0">
               <RouterLink to="/dashboard/nft" class="menu-link">
                 NFT
-                <span class="hot tag">New</span>
               </RouterLink>
             </li>
             <li class="menu-item mb-0">
               <RouterLink to="/dashboard/saas" class="menu-link">
                 SaaS
-                <span class="hot tag">New</span>
               </RouterLink>
             </li>
             <li class="menu-item mb-0">
               <RouterLink to="/dashboard/real-estate" class="menu-link">
                 Real Estate
-                <span class="hot tag">New</span>
               </RouterLink>
             </li>
             <li class="menu-item mb-0">
               <RouterLink to="/dashboard/shipment" class="menu-link">
                 Shipment
-                <span class="hot tag">New</span>
               </RouterLink>
             </li>
             <li class="menu-item mb-0">
               <RouterLink to="/dashboard/finance" class="menu-link">
                 Finance
+              </RouterLink>
+            </li>
+            <li class="menu-item mb-0">
+              <RouterLink to="/dashboard/hrm" class="menu-link">
+                HRM
+              </RouterLink>
+            </li>
+            <li class="menu-item mb-0">
+              <RouterLink to="/dashboard/school" class="menu-link">
+                School
+              </RouterLink>
+            </li>
+            <li class="menu-item mb-0">
+              <RouterLink to="/dashboard/call-center" class="menu-link">
+                Call Center
+              </RouterLink>
+            </li>
+            <li class="menu-item mb-0">
+              <RouterLink to="/dashboard/pos-system" class="menu-link">
+                POS System
+                <span class="hot tag">New</span>
+              </RouterLink>
+            </li>
+            <li class="menu-item mb-0">
+              <RouterLink to="/dashboard/podcast" class="menu-link">
+                Podcast
                 <span class="hot tag">New</span>
               </RouterLink>
             </li>
@@ -665,9 +682,9 @@
             class="menu-link menu-toggle active"
             @click="toggleMenu('realEstate')"
           >
-            <span class="material-symbols-outlined menu-icon"
-              >real_estate_agent</span
-            >
+            <span class="material-symbols-outlined menu-icon">
+              real_estate_agent
+            </span>
             <span class="title">Real Estate</span>
           </a>
 
@@ -1383,39 +1400,6 @@
             <span class="title">Logout</span>
           </RouterLink>
         </li>
-
-        <!-- <li class="menu-item" :class="{ open: isOpen('multiLevelMenu') }">
-          <a
-            href="javascript:void(0);"
-            class="menu-link menu-toggle active"
-            @click="toggleMenu('multiLevelMenu')"
-          >
-            <span class="material-symbols-outlined menu-icon">
-              keyboard_arrow_down
-            </span>
-            <span class="title">Multi Level Menu</span>
-          </a>
-
-          <ul class="menu-sub" v-show="isOpen('multiLevelMenu')">
-            <li
-              class="menu-item after-sub-menu menu-level"
-              :class="{ open: isOpen('levelOne') }"
-            >
-              <a
-                href="javascript:void(0);"
-                class="menu-link menu-toggle"
-                @click="toggleMenu('levelOne')"
-              >
-                <span class="title">Level One</span>
-              </a>
-              <ul class="menu-sub" v-show="isOpen('levelOne')">
-                <li class="menu-item">
-                  <RouterLink to="/#" class="menu-link"> Level Three </RouterLink>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </li> -->
       </ul>
     </div>
   </div>

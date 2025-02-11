@@ -14,7 +14,6 @@ import { BtToDoListComponent } from './bt-to-do-list/bt-to-do-list.component';
 
 @Component({
     selector: 'app-basic-table',
-    standalone: true,
     imports: [RouterLink, BtTopSellingProductsComponent, BtRecentOrdersComponent, BtTopPerformersComponent, BtRecentLeadsComponent, BtAllProjectsComponent, BtMyTasksComponent, BtStudentsProgressComponent, BtGroupLessonsComponent, BtPerformanceOfAgentsComponent, BtRecentCustomerRatingsComponent, BtToDoListComponent],
     templateUrl: './basic-table.component.html',
     styleUrl: './basic-table.component.scss'

@@ -15,7 +15,6 @@ import { DownloadableTableComponent } from './downloadable-table/downloadable-ta
 
 @Component({
     selector: 'app-tables',
-    standalone: true,
     imports: [RouterLink, BtTopSellingProductsComponent, BtRecentOrdersComponent, BtTopPerformersComponent, BtRecentLeadsComponent, BtAllProjectsComponent, BtMyTasksComponent, BtStudentsProgressComponent, BtGroupLessonsComponent, BtPerformanceOfAgentsComponent, BtRecentCustomerRatingsComponent, BtToDoListComponent, DownloadableTableComponent],
     templateUrl: './tables.component.html',
     styleUrl: './tables.component.scss'

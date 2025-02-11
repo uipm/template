@@ -99,15 +99,8 @@
 
 <script lang="ts">
 import { defineComponent } from "vue";
-import stateStore from "~/utils/store";
 
 export default defineComponent({
   name: "CreateTaskModal",
-  setup() {
-    const stateStoreInstance = stateStore;
-    return {
-      stateStoreInstance,
-    };
-  },
 });
 </script>

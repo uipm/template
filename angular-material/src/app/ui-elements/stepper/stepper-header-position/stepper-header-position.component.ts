@@ -7,7 +7,6 @@ import { MatStepperModule } from '@angular/material/stepper';
 
 @Component({
     selector: 'app-stepper-header-position',
-    standalone: true,
     imports: [
         MatStepperModule,
         FormsModule,

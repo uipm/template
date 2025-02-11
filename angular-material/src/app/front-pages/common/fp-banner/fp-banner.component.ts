@@ -5,22 +5,14 @@ import { CustomizerSettingsService } from '../../../customizer-settings/customiz
 
 @Component({
     selector: 'app-fp-banner',
-    standalone: true,
     imports: [RouterLink, MatButtonModule],
     templateUrl: './fp-banner.component.html',
     styleUrl: './fp-banner.component.scss'
 })
 export class FpBannerComponent {
 
-    // isToggled
-    isToggled = false;
-
     constructor(
         public themeService: CustomizerSettingsService
-    ) {
-        this.themeService.isToggled$.subscribe(isToggled => {
-            this.isToggled = isToggled;
-        });
-    }
+    ) {}
 
 }

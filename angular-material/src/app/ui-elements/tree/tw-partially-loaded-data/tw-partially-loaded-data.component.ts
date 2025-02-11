@@ -95,7 +95,6 @@ export class LoadmoreDatabase {
 
 @Component({
     selector: 'app-tw-partially-loaded-data',
-    standalone: true,
     imports: [MatTreeModule, MatButtonModule],
     providers: [LoadmoreDatabase],
     templateUrl: './tw-partially-loaded-data.component.html',

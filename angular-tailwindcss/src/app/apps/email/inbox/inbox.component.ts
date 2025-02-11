@@ -5,7 +5,6 @@ import { NgIf } from '@angular/common';
 
 @Component({
     selector: 'app-inbox',
-    standalone: true,
     imports: [RouterLink, NgIf, SidebarComponent, RouterOutlet, RouterLinkActive],
     templateUrl: './inbox.component.html',
     styleUrl: './inbox.component.scss'

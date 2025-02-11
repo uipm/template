@@ -13,7 +13,6 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 
 @Component({
     selector: 'app-sbwa-annotated-custom-component',
-    standalone: true,
     imports: [MatFormFieldModule, FormsModule, MatInputModule, MatButtonModule],
     templateUrl: './sbwa-annotated-custom-component.component.html',
     styleUrl: './sbwa-annotated-custom-component.component.scss'
@@ -47,8 +46,7 @@ export class SbwaAnnotatedCustomComponentComponent {
             }
         `,
     ],
-    standalone: true,
-    imports: [MatButtonModule, MatSnackBarLabel, MatSnackBarActions, MatSnackBarAction],
+    imports: [MatButtonModule, MatSnackBarLabel, MatSnackBarActions, MatSnackBarAction]
 })
 export class PizzaPartyAnnotatedComponent {
     snackBarRef = inject(MatSnackBarRef);

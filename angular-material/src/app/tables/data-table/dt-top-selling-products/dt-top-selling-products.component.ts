@@ -9,7 +9,6 @@ import { MatPaginator, MatPaginatorModule } from '@angular/material/paginator';
 
 @Component({
     selector: 'app-dt-top-selling-products',
-    standalone: true,
     imports: [RouterLink, MatCardModule, MatButtonModule, MatMenuModule, MatTableModule, MatPaginatorModule, NgClass],
     templateUrl: './dt-top-selling-products.component.html',
     styleUrl: './dt-top-selling-products.component.scss'

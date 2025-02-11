@@ -7,12 +7,13 @@ import { isPlatformBrowser } from '@angular/common';
 export class BedOccupancyRateService {
 
     private isBrowser: boolean;
+    private chartInstance: any;
 
     constructor(@Inject(PLATFORM_ID) private platformId: any) {
         this.isBrowser = isPlatformBrowser(this.platformId);
     }
 
-    async loadChart(): Promise<void> {
+    async loadChart(seriesData: number[]): Promise<void> {
         if (this.isBrowser) {
             try {
                 // Dynamically import ApexCharts
@@ -20,7 +21,7 @@ export class BedOccupancyRateService {
 
                 // Define chart options
                 const options = {
-                    series: [1275, 825, 450],
+                    series: seriesData,
                     chart: {
                         height: 141,
                         type: "donut"
@@ -87,11 +88,17 @@ export class BedOccupancyRateService {
                 };
 
                 // Initialize and render the chart
-                const chart = new ApexCharts(document.querySelector('#bed_occupancy_rate_chart'), options);
-                chart.render();
+                this.chartInstance = new ApexCharts(document.querySelector('#bed_occupancy_rate_chart'), options);
+                this.chartInstance.render();
             } catch (error) {
                 console.error('Error loading ApexCharts:', error);
             }
+        }
+    }
+
+    updateChartData(seriesData: number[]): void {
+        if (this.chartInstance) {
+            this.chartInstance.updateSeries(seriesData);
         }
     }
 

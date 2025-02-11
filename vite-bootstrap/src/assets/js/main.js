@@ -13,7 +13,6 @@ import "./apexcharts.min";
 import "./echarts";
 import "./rangeslider.min";
 import "./quill.min";
-import "./sweetalert";
 import "./custom/apexcharts";
 import "./custom/echarts";
 import "./custom/custom";

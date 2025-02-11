@@ -11,7 +11,6 @@ import { RequireOptionSelectedComponent } from './require-option-selected/requir
 
 @Component({
     selector: 'app-autocomplete',
-    standalone: true,
     imports: [RouterLink, SimpleAutocompleteComponent, HighlightFirstOptionComponent, DisplayValueComponent, FilterOptionsComponent, OptionGroupsComponent, OverviewComponent, PlainInputComponent, RequireOptionSelectedComponent],
     templateUrl: './autocomplete.component.html',
     styleUrl: './autocomplete.component.scss'

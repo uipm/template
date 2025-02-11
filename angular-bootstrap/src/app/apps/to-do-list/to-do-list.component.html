@@ -23,7 +23,7 @@
 
 <!-- To Do List -->
 <div
-    class="apps-to-do-list-card trezo-card table-style-two mb-25 border-radius d-block bg-white border-0 shadow-none"
+    class="apps-to-do-list-card trezo-card mb-25 border-radius d-block bg-white border-0 shadow-none"
     [class.component-rtl-enabled]="themeService.isRTLEnabled()"
 >
     <div class="trezo-card-header d-sm-flex align-items-center justify-content-between">
@@ -49,377 +49,379 @@
         </div>
     </div>
     <div class="trezo-card-content">
-        <div class="basic-table table-responsive">
-            <table class="table mb-0">
-                <thead>
-                    <tr>
-                        <th scope="col" class="fw-medium">
-                            <div class="form-check mb-0">
-                                <input class="form-check-input" type="checkbox">
-                            </div>
-                        </th>
-                        <th scope="col" class="fw-medium">
-                            ID
-                        </th>
-                        <th scope="col" class="fw-medium">
-                            Task Title
-                        </th>
-                        <th scope="col" class="fw-medium">
-                            Assigned To
-                        </th>
-                        <th scope="col" class="fw-medium">
-                            Due Date
-                        </th>
-                        <th scope="col" class="fw-medium">
-                            Priority
-                        </th>
-                        <th scope="col" class="fw-medium">
-                            Status
-                        </th>
-                        <th scope="col" class="fw-medium">
-                            Action
-                        </th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>
-                            <div class="form-check mb-0">
-                                <input class="form-check-input" type="checkbox">
-                            </div>
-                        </td>
-                        <td class="text-body">
-                            #854
-                        </td>
-                        <td>
-                            <span class="d-block fw-medium text-body">
-                                Network Infrastructure
-                            </span>
-                        </td>
-                        <td>
-                            Oliver Clark
-                        </td>
-                        <td class="text-body">
-                            30 Apr 2024
-                        </td>
-                        <td class="text-body">
-                            High
-                        </td>
-                        <td>
-                            <span class="trezo-badge">
-                                Finished
-                            </span>
-                        </td>
-                        <td>
-                            <div class="action-buttons d-flex align-items-center">
-                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
-                                    <i class="material-symbols-outlined"> visibility </i>
-                                </button>
-                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
-                                    <i class="material-symbols-outlined"> edit </i>
-                                </button>
-                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
-                                    <i class="material-symbols-outlined"> delete </i>
-                                </button>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="form-check mb-0">
-                                <input class="form-check-input" type="checkbox">
-                            </div>
-                        </td>
-                        <td class="text-body">
-                            #853
-                        </td>
-                        <td>
-                            <span class="d-block fw-medium text-body">
-                                Cloud Migration
-                            </span>
-                        </td>
-                        <td>
-                            Ethan Baker
-                        </td>
-                        <td class="text-body">
-                            25 Apr 2024
-                        </td>
-                        <td class="text-body">
-                            Low
-                        </td>
-                        <td>
-                            <span class="trezo-badge pending">
-                                Pending
-                            </span>
-                        </td>
-                        <td>
-                            <div class="action-buttons d-flex align-items-center">
-                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
-                                    <i class="material-symbols-outlined"> visibility </i>
-                                </button>
-                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
-                                    <i class="material-symbols-outlined"> edit </i>
-                                </button>
-                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
-                                    <i class="material-symbols-outlined"> delete </i>
-                                </button>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="form-check mb-0">
-                                <input class="form-check-input" type="checkbox">
-                            </div>
-                        </td>
-                        <td class="text-body">
-                            #852
-                        </td>
-                        <td>
-                            <span class="d-block fw-medium text-body">
-                                Website Revamp
-                            </span>
-                        </td>
-                        <td>
-                            Sophia Carter
-                        </td>
-                        <td class="text-body">
-                            20 Apr 2024
-                        </td>
-                        <td class="text-body">
-                            Medium
-                        </td>
-                        <td>
-                            <span class="trezo-badge inProgress">
-                                In Progress
-                            </span>
-                        </td>
-                        <td>
-                            <div class="action-buttons d-flex align-items-center">
-                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
-                                    <i class="material-symbols-outlined"> visibility </i>
-                                </button>
-                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
-                                    <i class="material-symbols-outlined"> edit </i>
-                                </button>
-                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
-                                    <i class="material-symbols-outlined"> delete </i>
-                                </button>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="form-check mb-0">
-                                <input class="form-check-input" type="checkbox">
-                            </div>
-                        </td>
-                        <td class="text-body"> #851 </td>
-                        <td>
-                            <span class="d-block fw-medium text-body"> Mobile Application </span>
-                        </td>
-                        <td> Ava Cooper </td>
-                        <td class="text-body"> 15 Apr 2024 </td>
-                        <td class="text-body"> High </td>
-                        <td>
-                            <span class="trezo-badge"> Finished </span>
-                        </td>
-                        <td>
-                            <div class="action-buttons d-flex align-items-center">
-                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
-                                    <i class="material-symbols-outlined"> visibility </i>
-                                </button>
-                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
-                                    <i class="material-symbols-outlined"> edit </i>
-                                </button>
-                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
-                                    <i class="material-symbols-outlined"> delete </i>
-                                </button>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="form-check mb-0">
-                                <input class="form-check-input" type="checkbox">
-                            </div>
-                        </td>
-                        <td class="text-body"> #850 </td>
-                        <td>
-                            <span class="d-block fw-medium text-body"> System Deployment </span>
-                        </td>
-                        <td> Isabella Evans </td>
-                        <td class="text-body"> 10 Apr 2024 </td>
-                        <td class="text-body"> Low </td>
-                        <td>
-                            <span class="trezo-badge cancelled"> Cancelled </span>
-                        </td>
-                        <td>
-                            <div class="action-buttons d-flex align-items-center">
-                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
-                                    <i class="material-symbols-outlined"> visibility </i>
-                                </button>
-                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
-                                    <i class="material-symbols-outlined"> edit </i>
-                                </button>
-                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
-                                    <i class="material-symbols-outlined"> delete </i>
-                                </button>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="form-check mb-0">
-                                <input class="form-check-input" type="checkbox">
-                            </div>
-                        </td>
-                        <td class="text-body"> #849 </td>
-                        <td>
-                            <span class="d-block fw-medium text-body"> Hotel Management System </span>
-                        </td>
-                        <td> Shawn Kennedy </td>
-                        <td class="text-body"> 30 Apr 2024 </td>
-                        <td class="text-body"> High </td>
-                        <td>
-                            <span class="trezo-badge"> Finished </span>
-                        </td>
-                        <td>
-                            <div class="action-buttons d-flex align-items-center">
-                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
-                                    <i class="material-symbols-outlined"> visibility </i>
-                                </button>
-                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
-                                    <i class="material-symbols-outlined"> edit </i>
-                                </button>
-                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
-                                    <i class="material-symbols-outlined"> delete </i>
-                                </button>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="form-check mb-0">
-                                <input class="form-check-input" type="checkbox">
-                            </div>
-                        </td>
-                        <td class="text-body"> #848 </td>
-                        <td>
-                            <span class="d-block fw-medium text-body"> Send Proposal to APR Ltd </span>
-                        </td>
-                        <td> Roberto Cruz </td>
-                        <td class="text-body"> 25 Apr 2024 </td>
-                        <td class="text-body"> Low </td>
-                        <td>
-                            <span class="trezo-badge pending"> Pending </span>
-                        </td>
-                        <td>
-                            <div class="action-buttons d-flex align-items-center">
-                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
-                                    <i class="material-symbols-outlined"> visibility </i>
-                                </button>
-                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
-                                    <i class="material-symbols-outlined"> edit </i>
-                                </button>
-                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
-                                    <i class="material-symbols-outlined"> delete </i>
-                                </button>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="form-check mb-0">
-                                <input class="form-check-input" type="checkbox">
-                            </div>
-                        </td>
-                        <td class="text-body"> #847 </td>
-                        <td>
-                            <span class="d-block fw-medium text-body"> Python Upgrade </span>
-                        </td>
-                        <td> Juli Johnson </td>
-                        <td class="text-body"> 20 Apr 2024 </td>
-                        <td class="text-body"> Medium </td>
-                        <td>
-                            <span class="trezo-badge inProgress"> In Progress </span>
-                        </td>
-                        <td>
-                            <div class="action-buttons d-flex align-items-center">
-                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
-                                    <i class="material-symbols-outlined"> visibility </i>
-                                </button>
-                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
-                                    <i class="material-symbols-outlined"> edit </i>
-                                </button>
-                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
-                                    <i class="material-symbols-outlined"> delete </i>
-                                </button>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="form-check mb-0">
-                                <input class="form-check-input" type="checkbox">
-                            </div>
-                        </td>
-                        <td class="text-body"> #846 </td>
-                        <td>
-                            <span class="d-block fw-medium text-body"> Schedule meeting with Trezo </span>
-                        </td>
-                        <td> Catalina Engles </td>
-                        <td class="text-body"> 15 Apr 2024 </td>
-                        <td class="text-body"> High </td>
-                        <td>
-                            <span class="trezo-badge"> Finished </span>
-                        </td>
-                        <td>
-                            <div class="action-buttons d-flex align-items-center">
-                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
-                                    <i class="material-symbols-outlined"> visibility </i>
-                                </button>
-                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
-                                    <i class="material-symbols-outlined"> edit </i>
-                                </button>
-                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
-                                    <i class="material-symbols-outlined"> delete </i>
-                                </button>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="form-check mb-0">
-                                <input class="form-check-input" type="checkbox">
-                            </div>
-                        </td>
-                        <td class="text-body"> #845 </td>
-                        <td>
-                            <span class="d-block fw-medium text-body"> Engineering Lite Touch </span>
-                        </td>
-                        <td> Louis Nagle </td>
-                        <td class="text-body"> 10 Apr 2024 </td>
-                        <td class="text-body"> Low </td>
-                        <td>
-                            <span class="trezo-badge cancelled"> Cancelled </span>
-                        </td>
-                        <td>
-                            <div class="action-buttons d-flex align-items-center">
-                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
-                                    <i class="material-symbols-outlined"> visibility </i>
-                                </button>
-                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
-                                    <i class="material-symbols-outlined"> edit </i>
-                                </button>
-                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
-                                    <i class="material-symbols-outlined"> delete </i>
-                                </button>
-                            </div>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+        <div class="table-style-two">
+            <div class="basic-table table-responsive">
+                <table class="table mb-0">
+                    <thead>
+                        <tr>
+                            <th scope="col" class="fw-medium">
+                                <div class="form-check mb-0">
+                                    <input class="form-check-input" type="checkbox">
+                                </div>
+                            </th>
+                            <th scope="col" class="fw-medium">
+                                ID
+                            </th>
+                            <th scope="col" class="fw-medium">
+                                Task Title
+                            </th>
+                            <th scope="col" class="fw-medium">
+                                Assigned To
+                            </th>
+                            <th scope="col" class="fw-medium">
+                                Due Date
+                            </th>
+                            <th scope="col" class="fw-medium">
+                                Priority
+                            </th>
+                            <th scope="col" class="fw-medium">
+                                Status
+                            </th>
+                            <th scope="col" class="fw-medium">
+                                Action
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="form-check mb-0">
+                                    <input class="form-check-input" type="checkbox">
+                                </div>
+                            </td>
+                            <td class="text-body">
+                                #854
+                            </td>
+                            <td>
+                                <span class="d-block fw-medium text-body">
+                                    Network Infrastructure
+                                </span>
+                            </td>
+                            <td>
+                                Oliver Clark
+                            </td>
+                            <td class="text-body">
+                                30 Apr 2025
+                            </td>
+                            <td class="text-body">
+                                High
+                            </td>
+                            <td>
+                                <span class="trezo-badge">
+                                    Finished
+                                </span>
+                            </td>
+                            <td>
+                                <div class="action-buttons d-flex align-items-center">
+                                    <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                        <i class="material-symbols-outlined"> visibility </i>
+                                    </button>
+                                    <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                        <i class="material-symbols-outlined"> edit </i>
+                                    </button>
+                                    <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                        <i class="material-symbols-outlined"> delete </i>
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="form-check mb-0">
+                                    <input class="form-check-input" type="checkbox">
+                                </div>
+                            </td>
+                            <td class="text-body">
+                                #853
+                            </td>
+                            <td>
+                                <span class="d-block fw-medium text-body">
+                                    Cloud Migration
+                                </span>
+                            </td>
+                            <td>
+                                Ethan Baker
+                            </td>
+                            <td class="text-body">
+                                25 Apr 2025
+                            </td>
+                            <td class="text-body">
+                                Low
+                            </td>
+                            <td>
+                                <span class="trezo-badge pending">
+                                    Pending
+                                </span>
+                            </td>
+                            <td>
+                                <div class="action-buttons d-flex align-items-center">
+                                    <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                        <i class="material-symbols-outlined"> visibility </i>
+                                    </button>
+                                    <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                        <i class="material-symbols-outlined"> edit </i>
+                                    </button>
+                                    <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                        <i class="material-symbols-outlined"> delete </i>
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="form-check mb-0">
+                                    <input class="form-check-input" type="checkbox">
+                                </div>
+                            </td>
+                            <td class="text-body">
+                                #852
+                            </td>
+                            <td>
+                                <span class="d-block fw-medium text-body">
+                                    Website Revamp
+                                </span>
+                            </td>
+                            <td>
+                                Sophia Carter
+                            </td>
+                            <td class="text-body">
+                                20 Apr 2025
+                            </td>
+                            <td class="text-body">
+                                Medium
+                            </td>
+                            <td>
+                                <span class="trezo-badge inProgress">
+                                    In Progress
+                                </span>
+                            </td>
+                            <td>
+                                <div class="action-buttons d-flex align-items-center">
+                                    <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                        <i class="material-symbols-outlined"> visibility </i>
+                                    </button>
+                                    <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                        <i class="material-symbols-outlined"> edit </i>
+                                    </button>
+                                    <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                        <i class="material-symbols-outlined"> delete </i>
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="form-check mb-0">
+                                    <input class="form-check-input" type="checkbox">
+                                </div>
+                            </td>
+                            <td class="text-body"> #851 </td>
+                            <td>
+                                <span class="d-block fw-medium text-body"> Mobile Application </span>
+                            </td>
+                            <td> Ava Cooper </td>
+                            <td class="text-body"> 15 Apr 2025 </td>
+                            <td class="text-body"> High </td>
+                            <td>
+                                <span class="trezo-badge"> Finished </span>
+                            </td>
+                            <td>
+                                <div class="action-buttons d-flex align-items-center">
+                                    <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                        <i class="material-symbols-outlined"> visibility </i>
+                                    </button>
+                                    <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                        <i class="material-symbols-outlined"> edit </i>
+                                    </button>
+                                    <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                        <i class="material-symbols-outlined"> delete </i>
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="form-check mb-0">
+                                    <input class="form-check-input" type="checkbox">
+                                </div>
+                            </td>
+                            <td class="text-body"> #850 </td>
+                            <td>
+                                <span class="d-block fw-medium text-body"> System Deployment </span>
+                            </td>
+                            <td> Isabella Evans </td>
+                            <td class="text-body"> 10 Apr 2025 </td>
+                            <td class="text-body"> Low </td>
+                            <td>
+                                <span class="trezo-badge cancelled"> Cancelled </span>
+                            </td>
+                            <td>
+                                <div class="action-buttons d-flex align-items-center">
+                                    <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                        <i class="material-symbols-outlined"> visibility </i>
+                                    </button>
+                                    <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                        <i class="material-symbols-outlined"> edit </i>
+                                    </button>
+                                    <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                        <i class="material-symbols-outlined"> delete </i>
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="form-check mb-0">
+                                    <input class="form-check-input" type="checkbox">
+                                </div>
+                            </td>
+                            <td class="text-body"> #849 </td>
+                            <td>
+                                <span class="d-block fw-medium text-body"> Hotel Management System </span>
+                            </td>
+                            <td> Shawn Kennedy </td>
+                            <td class="text-body"> 30 Apr 2025 </td>
+                            <td class="text-body"> High </td>
+                            <td>
+                                <span class="trezo-badge"> Finished </span>
+                            </td>
+                            <td>
+                                <div class="action-buttons d-flex align-items-center">
+                                    <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                        <i class="material-symbols-outlined"> visibility </i>
+                                    </button>
+                                    <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                        <i class="material-symbols-outlined"> edit </i>
+                                    </button>
+                                    <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                        <i class="material-symbols-outlined"> delete </i>
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="form-check mb-0">
+                                    <input class="form-check-input" type="checkbox">
+                                </div>
+                            </td>
+                            <td class="text-body"> #848 </td>
+                            <td>
+                                <span class="d-block fw-medium text-body"> Send Proposal to APR Ltd </span>
+                            </td>
+                            <td> Roberto Cruz </td>
+                            <td class="text-body"> 25 Apr 2025 </td>
+                            <td class="text-body"> Low </td>
+                            <td>
+                                <span class="trezo-badge pending"> Pending </span>
+                            </td>
+                            <td>
+                                <div class="action-buttons d-flex align-items-center">
+                                    <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                        <i class="material-symbols-outlined"> visibility </i>
+                                    </button>
+                                    <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                        <i class="material-symbols-outlined"> edit </i>
+                                    </button>
+                                    <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                        <i class="material-symbols-outlined"> delete </i>
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="form-check mb-0">
+                                    <input class="form-check-input" type="checkbox">
+                                </div>
+                            </td>
+                            <td class="text-body"> #847 </td>
+                            <td>
+                                <span class="d-block fw-medium text-body"> Python Upgrade </span>
+                            </td>
+                            <td> Juli Johnson </td>
+                            <td class="text-body"> 20 Apr 2025 </td>
+                            <td class="text-body"> Medium </td>
+                            <td>
+                                <span class="trezo-badge inProgress"> In Progress </span>
+                            </td>
+                            <td>
+                                <div class="action-buttons d-flex align-items-center">
+                                    <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                        <i class="material-symbols-outlined"> visibility </i>
+                                    </button>
+                                    <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                        <i class="material-symbols-outlined"> edit </i>
+                                    </button>
+                                    <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                        <i class="material-symbols-outlined"> delete </i>
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="form-check mb-0">
+                                    <input class="form-check-input" type="checkbox">
+                                </div>
+                            </td>
+                            <td class="text-body"> #846 </td>
+                            <td>
+                                <span class="d-block fw-medium text-body"> Schedule meeting with Trezo </span>
+                            </td>
+                            <td> Catalina Engles </td>
+                            <td class="text-body"> 15 Apr 2025 </td>
+                            <td class="text-body"> High </td>
+                            <td>
+                                <span class="trezo-badge"> Finished </span>
+                            </td>
+                            <td>
+                                <div class="action-buttons d-flex align-items-center">
+                                    <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                        <i class="material-symbols-outlined"> visibility </i>
+                                    </button>
+                                    <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                        <i class="material-symbols-outlined"> edit </i>
+                                    </button>
+                                    <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                        <i class="material-symbols-outlined"> delete </i>
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="form-check mb-0">
+                                    <input class="form-check-input" type="checkbox">
+                                </div>
+                            </td>
+                            <td class="text-body"> #845 </td>
+                            <td>
+                                <span class="d-block fw-medium text-body"> Engineering Lite Touch </span>
+                            </td>
+                            <td> Louis Nagle </td>
+                            <td class="text-body"> 10 Apr 2025 </td>
+                            <td class="text-body"> Low </td>
+                            <td>
+                                <span class="trezo-badge cancelled"> Cancelled </span>
+                            </td>
+                            <td>
+                                <div class="action-buttons d-flex align-items-center">
+                                    <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                        <i class="material-symbols-outlined"> visibility </i>
+                                    </button>
+                                    <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                        <i class="material-symbols-outlined"> edit </i>
+                                    </button>
+                                    <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                        <i class="material-symbols-outlined"> delete </i>
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
     </div>
 </div>

@@ -10,7 +10,6 @@ export interface Task {
 
 @Component({
     selector: 'app-parent-checkboxes',
-    standalone: true,
     imports: [MatCheckboxModule, FormsModule],
     templateUrl: './parent-checkboxes.component.html',
     styleUrl: './parent-checkboxes.component.scss'

@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { RouterLink } from '@angular/router';
 import { CarouselModule, OwlOptions } from 'ngx-owl-carousel-o';
 import { BitcoinService } from './bitcoin.service';
 import { SolanaService } from './solana.service';
@@ -10,15 +9,11 @@ import { CustomizerSettingsService } from '../../../customizer-settings/customiz
 
 @Component({
     selector: 'app-watchlist',
-    standalone: true,
-    imports: [RouterLink, CarouselModule],
+    imports: [CarouselModule],
     templateUrl: './watchlist.component.html',
     styleUrl: './watchlist.component.scss'
 })
 export class WatchlistComponent {
-
-    // isToggled
-    isToggled = false;
 
     constructor(
         private bitcoinService: BitcoinService,
@@ -27,11 +22,7 @@ export class WatchlistComponent {
         private cardanoService: CardanoService,
         private binanceService: BinanceService,
         public themeService: CustomizerSettingsService
-    ) {
-        this.themeService.isToggled$.subscribe(isToggled => {
-            this.isToggled = isToggled;
-        });
-	}
+    ) {}
 
     ngOnInit(): void {
         this.bitcoinService.loadChart();

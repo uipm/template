@@ -121,7 +121,7 @@
                   <input
                     class="form-check-input"
                     type="radio"
-                    style="width: 20px; height: 20px"
+                    style="width: 20px; height: 20px; line-height: 20px"
                     name="flexRadioDefault"
                     id="flexRadioDefault1"
                     checked
@@ -141,7 +141,7 @@
                   <input
                     class="form-check-input"
                     type="radio"
-                    style="width: 20px; height: 20px"
+                    style="width: 20px; height: 20px; line-height: 20px"
                     name="flexRadioDefault"
                     id="flexRadioDefault2"
                   />
@@ -160,7 +160,7 @@
                   <input
                     class="form-check-input"
                     type="radio"
-                    style="width: 20px; height: 20px"
+                    style="width: 20px; height: 20px; line-height: 20px"
                     name="flexRadioDefault"
                     id="flexRadioDefault3"
                   />

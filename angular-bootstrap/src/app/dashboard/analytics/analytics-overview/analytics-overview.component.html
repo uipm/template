@@ -10,13 +10,13 @@
             </h5>
         </div>
         <div class="trezo-card-subtitle">
-            <button type="button">
+            <button type="button" [class.active]="selectedTimeframe === 'Day'" (click)="onTimeframeChange('Day')">
                 Day
             </button>
-            <button type="button" class="active">
+            <button type="button" [class.active]="selectedTimeframe === 'Week'" (click)="onTimeframeChange('Week')">
                 Week
             </button>
-            <button type="button">
+            <button type="button" [class.active]="selectedTimeframe === 'Month'" (click)="onTimeframeChange('Month')">
                 Month
             </button>
         </div>

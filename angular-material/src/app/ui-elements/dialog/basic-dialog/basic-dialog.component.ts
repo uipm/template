@@ -21,7 +21,6 @@ export interface DialogData {
 
 @Component({
     selector: 'app-basic-dialog',
-    standalone: true,
     imports: [MatFormFieldModule, MatInputModule, FormsModule, MatButtonModule, MatCardModule],
     templateUrl: './basic-dialog.component.html',
     styleUrl: './basic-dialog.component.scss'
@@ -52,7 +51,6 @@ export class BasicDialogComponent {
 @Component({
     selector: 'dialog-overview-example-dialog',
     templateUrl: 'dialog-overview-example-dialog.html',
-    standalone: true,
     imports: [
         MatFormFieldModule,
         MatInputModule,

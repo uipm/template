@@ -4,15 +4,11 @@ import { CustomizerSettingsService } from '../../../customizer-settings/customiz
 
 @Component({
     selector: 'app-top-browsing-pages',
-    standalone: true,
     imports: [RouterLink],
     templateUrl: './top-browsing-pages.component.html',
     styleUrl: './top-browsing-pages.component.scss'
 })
 export class TopBrowsingPagesComponent {
-
-    // isToggled
-    isToggled = false;
 
     constructor(
         public themeService: CustomizerSettingsService

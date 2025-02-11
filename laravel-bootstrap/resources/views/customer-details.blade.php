@@ -46,7 +46,7 @@
                                 <div class="card-body p-4">
                                     <div class="d-flex justify-content-between align-items-center flex-wrap gap-3 mb-3 mb-lg-4">
                                         <h3 class="mb-0">Transactions History</h3>
-                                        <select class="form-select month-selecet form-control p-0 h-auto border-0 w-90" style="background-position: right 0 center;" aria-label="Default select example">
+                                        <select class="form-select month-select form-control p-0 h-auto border-0 w-90" style="background-position: right 0 center;" aria-label="Default select example">
                                             <option selected="">Last Month</option>
                                             <option value="1">Last Month</option>
                                             <option value="2">Last Year</option>

@@ -17,7 +17,6 @@ interface PokemonGroup {
 
 @Component({
     selector: 'app-sw-option-groups',
-    standalone: true,
     imports: [MatFormFieldModule, MatSelectModule, FormsModule, ReactiveFormsModule, MatInputModule],
     templateUrl: './sw-option-groups.component.html',
     styleUrl: './sw-option-groups.component.scss'

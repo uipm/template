@@ -136,7 +136,7 @@
                                 <div class="card-body p-4">
                                     <div class="d-flex justify-content-between align-items-center flex-wrap gap-3 mb-3 mb-lg-4">
                                         <h3 class="mb-0">Projects Roadmap</h3>
-                                        <select class="form-select month-selecet form-control p-0 h-auto border-0 w-90" style="background-position: right 0 center;" aria-label="Default select example">
+                                        <select class="form-select month-select form-control p-0 h-auto border-0 w-90" style="background-position: right 0 center;" aria-label="Default select example">
                                             <option selected>This Week</option>
                                             <option value="1">This Month</option>
                                             <option value="2">This Year</option>
@@ -157,7 +157,7 @@
                                 <div class="card-body p-4">
                                     <div class="d-flex justify-content-between align-items-center flex-wrap gap-3 mb-3 mb-lg-4">
                                         <h3 class="mb-0">Projects Progress</h3>
-                                        <select class="form-select month-selecet form-control p-0 h-auto border-0 w-110" style="background-position: right 0 center;" aria-label="Default select example">
+                                        <select class="form-select month-select form-control p-0 h-auto border-0 w-110" style="background-position: right 0 center;" aria-label="Default select example">
                                             <option selected>Last 6 Month</option>
                                             <option value="1">Last 8 Month</option>
                                             <option value="2">Last 12 Month</option>
@@ -176,7 +176,7 @@
                                     <div class="p-4">
                                         <div class="d-flex justify-content-between align-items-center flex-wrap gap-3">
                                             <h3 class="mb-0">My Tasks</h3>
-                                            <select class="form-select month-selecet form-control p-0 h-auto border-0 w-90" style="background-position: right 0 center;" aria-label="Default select example">
+                                            <select class="form-select month-select form-control p-0 h-auto border-0 w-90" style="background-position: right 0 center;" aria-label="Default select example">
                                                 <option selected>All Tasks</option>
                                                 <option value="1">This Month</option>
                                                 <option value="2">This Year</option>
@@ -286,7 +286,7 @@
                             <div class="p-4">
                                 <div class="d-flex justify-content-between align-items-center flex-wrap gap-3">
                                     <h3 class="mb-0">All Projects</h3>
-                                    <select class="form-select month-selecet form-control p-0 h-auto border-0 w-90" style="background-position: right 0 center;" aria-label="Default select example">
+                                    <select class="form-select month-select form-control p-0 h-auto border-0 w-90" style="background-position: right 0 center;" aria-label="Default select example">
                                         <option selected>This Week</option>
                                         <option value="1">This Month</option>
                                         <option value="2">This Year</option>
@@ -594,7 +594,7 @@
                                 <div class="card-body p-4">
                                     <div class="d-flex justify-content-between align-items-center flex-wrap gap-3 mb-3 mb-lg-4">
                                         <h3 class="mb-0">Project Analysis</h3>
-                                        <select class="form-select month-selecet form-control p-0 h-auto border-0 w-90" style="background-position: right 0 center;" aria-label="Default select example">
+                                        <select class="form-select month-select form-control p-0 h-auto border-0 w-90" style="background-position: right 0 center;" aria-label="Default select example">
                                             <option selected>Last 7 Days</option>
                                             <option value="1">This Month</option>
                                             <option value="2">This Year</option>
@@ -1039,7 +1039,7 @@
                                 <div class="card-body p-4">
                                     <div class="d-flex justify-content-between align-items-center flex-wrap gap-3 mb-3 mb-lg-4">
                                         <h3 class="mb-0">Tasks Overview</h3>
-                                        <select class="form-select month-selecet form-control p-0 h-auto border-0 w-90" style="background-position: right 0 center;" aria-label="Default select example">
+                                        <select class="form-select month-select form-control p-0 h-auto border-0 w-90" style="background-position: right 0 center;" aria-label="Default select example">
                                             <option selected>Last 7 Days</option>
                                             <option value="1">This Month</option>
                                             <option value="2">This Year</option>

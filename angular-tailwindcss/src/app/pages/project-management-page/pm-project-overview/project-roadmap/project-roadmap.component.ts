@@ -3,7 +3,6 @@ import { ProjectRoadmapService } from './project-roadmap.service';
 
 @Component({
     selector: 'app-project-roadmap',
-    standalone: true,
     imports: [],
     templateUrl: './project-roadmap.component.html',
     styleUrl: './project-roadmap.component.scss'

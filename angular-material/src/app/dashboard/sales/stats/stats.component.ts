@@ -2,7 +2,6 @@ import { Component } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { MatMenuModule } from '@angular/material/menu';
-import { RouterLink } from '@angular/router';
 import { TotalSalesComponent } from './total-sales/total-sales.component';
 import { TotalOrdersComponent } from './total-orders/total-orders.component';
 import { TotalProfitComponent } from './total-profit/total-profit.component';
@@ -19,8 +18,7 @@ const year = today.getFullYear();
 
 @Component({
     selector: 'app-stats',
-    standalone: true,
-    imports: [RouterLink, MatCardModule, MatButtonModule, MatMenuModule, TotalSalesComponent, TotalOrdersComponent, TotalProfitComponent, TotalRevenueComponent, MatFormFieldModule, MatDatepickerModule, FormsModule, ReactiveFormsModule],
+    imports: [MatCardModule, MatButtonModule, MatMenuModule, TotalSalesComponent, TotalOrdersComponent, TotalProfitComponent, TotalRevenueComponent, MatFormFieldModule, MatDatepickerModule, FormsModule, ReactiveFormsModule],
     providers: [provideNativeDateAdapter()],
     templateUrl: './stats.component.html',
     styleUrl: './stats.component.scss'
@@ -37,15 +35,8 @@ export class StatsComponent {
         end: new FormControl(new Date(year, month, 19)),
     });
 
-    // isToggled
-    isToggled = false;
-
     constructor(
         public themeService: CustomizerSettingsService
-    ) {
-        this.themeService.isToggled$.subscribe(isToggled => {
-            this.isToggled = isToggled;
-        });
-    }
+    ) {}
 
 }

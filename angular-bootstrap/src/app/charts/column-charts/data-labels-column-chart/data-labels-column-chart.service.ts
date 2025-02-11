@@ -123,7 +123,7 @@ export class DataLabelsColumnChartService {
                         }
                     },
                     title: {
-                        text: "Monthly Inflation in Brazil, 2024",
+                        text: "Monthly Inflation in Brazil, 2025",
                         align: "left",
                         offsetX: -9,
                         style: {

@@ -10,7 +10,6 @@ import { TasksOverviewComponent } from './tasks-overview/tasks-overview.componen
 
 @Component({
     selector: 'app-pm-project-overview',
-    standalone: true,
     imports: [RouterLink, ProductDevelopmentComponent, ProjectRoadmapComponent, RecentActivityComponent, ProjectOverviewComponent, TeamMembersComponent, ToDoListComponent, TasksOverviewComponent],
     templateUrl: './pm-project-overview.component.html',
     styleUrl: './pm-project-overview.component.scss'

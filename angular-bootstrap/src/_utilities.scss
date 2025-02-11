@@ -268,6 +268,11 @@
     font-size: 16px !important;
 }
 
+// Cursor
+.cursor-pointer {
+    cursor: pointer !important;
+}
+
 /* Min width 1600px */
 @media (min-width: 1600px) {
 
@@ -323,6 +328,44 @@
     .col-xxxl-1 {
         flex: 0 0 auto;
         width: 8.33333333%;
+    }
+
+    // Orders
+    .order-xxxl-1 {
+        order: 1 !important;
+    }
+    .order-xxxl-2 {
+        order: 2 !important;
+    }
+    .order-xxxl-3 {
+        order: 3 !important;
+    }
+    .order-xxxl-4 {
+        order: 4 !important;
+    }
+    .order-xxxl-5 {
+        order: 5 !important;
+    }
+    .order-xxxl-6 {
+        order: 6 !important;
+    }
+    .order-xxxl-7 {
+        order: 7 !important;
+    }
+    .order-xxxl-8 {
+        order: 8 !important;
+    }
+    .order-xxxl-9 {
+        order: 9 !important;
+    }
+    .order-xxxl-10 {
+        order: 10 !important;
+    }
+    .order-xxxl-11 {
+        order: 11 !important;
+    }
+    .order-xxxl-12 {
+        order: 12 !important;
     }
 
 }

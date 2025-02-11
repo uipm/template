@@ -7,7 +7,6 @@ import { MatButtonModule } from '@angular/material/button';
 
 @Component({
     selector: 'app-sw-required-steps',
-    standalone: true,
     imports: [
         MatButtonModule,
         MatStepperModule,

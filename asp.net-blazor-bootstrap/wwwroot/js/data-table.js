@@ -12,7 +12,7 @@ class RdataTB {
         ShowSearch: true,
         ShowSelect: true,
         ShowPaginate: true,
-        SelectionNumber: [10, 15, 20, 50],
+        SelectionNumber: [5, 15, 20, 50],
         HideColumn: [],
         ShowHighlight: false,
         fixedTable: false,
@@ -25,7 +25,7 @@ class RdataTB {
         this.DataTable = [];
         this.DataSorted = [];
         this.DataToRender = [];
-        this.PageSize = 10;
+        this.PageSize = 5;
         this.Assc = false;
         this.DataSearch = [];
         this.i = 0;
@@ -106,22 +106,15 @@ class RdataTB {
           text-decoration: none;
           transition: background-color .3s;
           font-size:12px;
+          cursor: pointer;
         }
         .tablesorter-header-asc::after {
-            content: '\\EA74';
-            top: calc(50% - 0.75em);
-            float: right;
+            content: "\\f326";
             font-family: remixicon!important;
-            position:absolute;
-            right: 0;
         }
         .tablesorter-header-desc::after {
-            content: '\\EA74';
-            top: calc(50% - 0.75em);
-            float: right;
+            content: "\\f326";
             font-family: remixicon!important;
-            position:absolute;
-            right: 0
         }
         .pagination a:hover:not(.active) {background-color: #ddd;}
         .blink_me {
@@ -200,7 +193,28 @@ class RdataTB {
         this.RenderToHTML(this.COntrolDataArr);
     }
     paginateRender() {
-        const k = ` <div class="pagination justify-content-end overflow-hidden" style=" margin-top: 24px;" id="pgN"><a id="x__PREV__X" style="cursor:pointer;user-select: none;">&laquo;</a><div id="PF"></div><a id="x__NEXT__X" style="cursor:pointer;user-select: none;">&raquo;</a></div>`;
+        const k = `
+        <div class="d-flex justify-content-center justify-content-sm-between align-items-center text-center flex-wrap gap-2 custom-padding-30 pt-4">
+            <div class="fs-12 fw-medium" id="PF"></div>
+            
+            <div class="pagination overflow-hidden" id="pgN">
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination mb-0 justify-content-center align-items-center">
+                        <li class="page-item">
+                            <a class="page-link icon" aria-label="Previous" id="x__PREV__X">
+                                <i class="material-symbols-outlined">keyboard_arrow_left</i>
+                            </a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link icon" aria-label="Next" id="x__NEXT__X">
+                                <i class="material-symbols-outlined">keyboard_arrow_right</i>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        `;
         const span = document.createElement('span');
         span.innerHTML = k;
         span.className = 'asterisk';
@@ -315,7 +329,7 @@ class RdataTB {
             cv.onclick = () => {
                 this.sort(this.HeaderDataTable[n]);
                 let GetElsHeaderList = document.getElementById(`${this.HeaderDataTable[n]}_header`);
-                document.getElementById(`${this.HeaderDataTable[n]}_header`).style.opacity = '60%';
+                document.getElementById(`${this.HeaderDataTable[n]}_header`).style.opacity = '100%';
                 if (this.Assc) {
                     GetElsHeaderList.classList.remove('tablesorter-header-asc');
                     GetElsHeaderList.classList.add('tablesorter-header-desc');

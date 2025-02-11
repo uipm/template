@@ -1,12 +1,66 @@
 <template>
-  <button
-    class="card-bg settings-btn card-bg-style-btn"
-    id="card-bg"
-    @click="toggleCardStyleBG"
+  <div
+    class="d-flex align-items-center position-relative settings-box-wrap for-card-bg-gray"
+    style="gap: 25px"
   >
-    Click To <span class="white">White</span>
-    <span class="gray">Gray</span>
-  </button>
+    <!-- White Background Option -->
+    <div class="cursor position-relative active-wrap2" @click="setWhite">
+      <div
+        class="settings-box bg-light-40"
+        :class="{ 'white-style': !isGrayBg }"
+      >
+        <span class="bg-white"></span><span class="bg-white"></span
+        ><span class="bg-white"></span> <span class="bg-white"></span
+        ><span class="bg-white"></span><span class="bg-white"></span>
+        <span class="bg-white"></span><span class="rounded-3 bg-white"></span
+        ><span class="rounded-3 bg-white"></span>
+        <span class="rounded-3 bg-white"></span
+        ><span class="rounded-3 bg-white"></span>
+        <span class="rounded-3 bg-white"></span
+        ><span class="rounded-3 bg-white"></span>
+      </div>
+      <div class="d-flex align-items-center" style="gap: 5px; margin-top: 10px">
+        <i
+          class="ri-checkbox-circle-fill position-relative top-1 fs-18 text-primary"
+          :class="{ 'opacity-1': !isGrayBg, 'opacity-0': isGrayBg }"
+        ></i>
+        <i
+          class="ri-checkbox-blank-circle-line position-relative fs-18 text-light-40 position-absolute start-0 bottom-0"
+          :class="{ 'opacity-0': !isGrayBg, 'opacity-1': isGrayBg }"
+        ></i>
+        <span class="fw-semibold">White</span>
+      </div>
+    </div>
+
+    <!-- Gray Background Option -->
+    <div class="cursor position-relative active-wrap1" @click="setGray">
+      <div class="settings-box" :class="{ 'gray-style': isGrayBg }">
+        <span></span><span></span><span></span><span></span><span></span
+        ><span></span><span></span> <span class="rounded-3"></span
+        ><span class="rounded-3"></span><span class="rounded-3"></span>
+        <span class="rounded-3"></span><span class="rounded-3"></span
+        ><span class="rounded-3"></span>
+      </div>
+      <div class="d-flex align-items-center" style="gap: 5px; margin-top: 10px">
+        <i
+          class="ri-checkbox-circle-fill position-relative top-1 fs-18 text-primary"
+          :class="{ 'opacity-1': isGrayBg, 'opacity-0': !isGrayBg }"
+        ></i>
+        <i
+          class="ri-checkbox-blank-circle-line position-relative fs-18 text-light-40 position-absolute start-0 bottom-0"
+          :class="{ 'opacity-0': isGrayBg, 'opacity-1': !isGrayBg }"
+        ></i>
+        <span class="fw-semibold">Gray</span>
+      </div>
+    </div>
+
+    <!-- Toggle Button -->
+    <button
+      class="card-bg settings-btn"
+      id="card-bg"
+      @click="toggleCardStyleBG"
+    ></button>
+  </div>
 </template>
 
 <script lang="ts">
@@ -15,35 +69,45 @@ import { defineComponent, ref, onMounted } from "vue";
 export default defineComponent({
   name: "CardStyleBG",
   setup() {
-    const isDarkMode = ref(false);
+    const isGrayBg = ref(false);
 
+    // Toggle between White and Gray
     const toggleCardStyleBG = () => {
-      isDarkMode.value = !isDarkMode.value;
-      const body = document.body;
-
-      if (body) {
-        // Toggle the class on the element
-        body.classList.toggle("card-bg-gray", isDarkMode.value);
-      }
-
-      localStorage.setItem("card-bg-gray", isDarkMode.value.toString());
+      isGrayBg.value = !isGrayBg.value;
+      updateBodyClass();
+      localStorage.setItem("card-bg-gray", String(isGrayBg.value));
     };
 
+    // Explicitly set White Background
+    const setWhite = () => {
+      isGrayBg.value = false;
+      updateBodyClass();
+      localStorage.setItem("card-bg-gray", "false");
+    };
+
+    // Explicitly set Gray Background
+    const setGray = () => {
+      isGrayBg.value = true;
+      updateBodyClass();
+      localStorage.setItem("card-bg-gray", "true");
+    };
+
+    // Update Body Class
+    const updateBodyClass = () => {
+      document.body.classList.toggle("card-bg-gray", isGrayBg.value);
+    };
+
+    // Initialize state from localStorage
     onMounted(() => {
-      const storedDarkMode = localStorage.getItem("card-bg-gray");
-      if (storedDarkMode) {
-        isDarkMode.value = storedDarkMode === "true";
-        const body = document.body;
-        if (body) {
-          // Toggle the class on the element
-          body.classList.toggle("card-bg-gray", isDarkMode.value);
-        }
-      }
+      isGrayBg.value = localStorage.getItem("card-bg-gray") === "true";
+      updateBodyClass();
     });
 
     return {
-      isDarkMode,
+      isGrayBg,
       toggleCardStyleBG,
+      setWhite,
+      setGray,
     };
   },
 });

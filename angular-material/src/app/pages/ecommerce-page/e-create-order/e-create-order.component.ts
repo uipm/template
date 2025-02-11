@@ -8,7 +8,6 @@ import { MatButtonModule } from '@angular/material/button';
 
 @Component({
     selector: 'app-e-create-order',
-    standalone: true,
     imports: [RouterLink, MatCardModule, MatButtonModule, MatFormFieldModule, MatInputModule, MatSelectModule],
     templateUrl: './e-create-order.component.html',
     styleUrl: './e-create-order.component.scss'

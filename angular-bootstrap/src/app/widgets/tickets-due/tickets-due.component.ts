@@ -1,11 +1,9 @@
 import { Component } from '@angular/core';
-import { RouterLink } from '@angular/router';
 import { TicketsDueService } from './tickets-due.service';
 
 @Component({
     selector: 'app-tickets-due:not(1)',
-    standalone: true,
-    imports: [RouterLink],
+    imports: [],
     templateUrl: './tickets-due.component.html',
     styleUrl: './tickets-due.component.scss'
 })

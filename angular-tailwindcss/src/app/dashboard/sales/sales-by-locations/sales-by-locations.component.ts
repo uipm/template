@@ -3,7 +3,6 @@ import { Component, HostListener } from '@angular/core';
 
 @Component({
     selector: 'app-sales-by-locations',
-    standalone: true,
     imports: [NgIf],
     templateUrl: './sales-by-locations.component.html',
     styleUrl: './sales-by-locations.component.scss'

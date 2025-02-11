@@ -7,7 +7,6 @@ import { MatCardModule } from '@angular/material/card';
 
 @Component({
     selector: 'app-dp-start-date',
-    standalone: true,
     imports: [MatFormFieldModule, MatInputModule, MatDatepickerModule, MatNativeDateModule, MatCardModule],
     templateUrl: './dp-start-date.component.html',
     styleUrl: './dp-start-date.component.scss'

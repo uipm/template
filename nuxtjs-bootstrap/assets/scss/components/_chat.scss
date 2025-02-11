@@ -9,7 +9,7 @@
   right: -2px;
 }
 .chat-tabs {
-  .nav-tabs {
+  &.nav-tabs {
     margin-bottom: 1.5rem !important;
     justify-content: space-between !important;
     .nav-item {
@@ -33,7 +33,7 @@
         }
         &.active {
           color: $primary !important;
-          background-color: transparent;
+          background-color: transparent !important;
           &::before {
             width: 100%;
             right: auto;

@@ -3,7 +3,6 @@ import { NgIf } from '@angular/common';
 
 @Component({
     selector: 'app-enrolled-by-countries',
-    standalone: true,
     imports: [NgIf],
     templateUrl: './enrolled-by-countries.component.html',
     styleUrl: './enrolled-by-countries.component.scss'

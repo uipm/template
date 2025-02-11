@@ -31,7 +31,7 @@ export class TotalCustomersService {
                         }
                     ],
                     chart: {
-                        height: 140,
+                        height: 150,
                         type: "line",
                         zoom: {
                             enabled: false

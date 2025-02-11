@@ -7,12 +7,13 @@ import { isPlatformBrowser } from '@angular/common';
 export class PatientByAgeService {
 
     private isBrowser: boolean;
+    private chartInstance: any;
 
     constructor(@Inject(PLATFORM_ID) private platformId: any) {
         this.isBrowser = isPlatformBrowser(this.platformId);
     }
 
-    async loadChart(): Promise<void> {
+    async loadChart(seriesData: number[]): Promise<void> {
         if (this.isBrowser) {
             try {
                 // Dynamically import ApexCharts
@@ -20,9 +21,7 @@ export class PatientByAgeService {
 
                 // Define chart options
                 const options = {
-                    series: [
-                        30, 40, 20, 10
-                    ],
+                    series: seriesData,
                     chart: {
                         height: 295,
                         type: "pie"
@@ -90,11 +89,17 @@ export class PatientByAgeService {
                 };
 
                 // Initialize and render the chart
-                const chart = new ApexCharts(document.querySelector('#patient_by_age_chart'), options);
-                chart.render();
+                this.chartInstance = new ApexCharts(document.querySelector('#patient_by_age_chart'), options);
+                this.chartInstance.render();
             } catch (error) {
                 console.error('Error loading ApexCharts:', error);
             }
+        }
+    }
+
+    updateChartData(seriesData: number[]): void {
+        if (this.chartInstance) {
+            this.chartInstance.updateSeries(seriesData);
         }
     }
 

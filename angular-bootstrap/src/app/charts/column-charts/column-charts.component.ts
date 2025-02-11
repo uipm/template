@@ -9,7 +9,6 @@ import { DistributedColumnChartComponent } from './distributed-column-chart/dist
 
 @Component({
     selector: 'app-column-charts',
-    standalone: true,
     imports: [RouterLink, BasicColumnChartComponent, DataLabelsColumnChartComponent, StackedColumnChartComponent, RangeColumnChartComponent, RotatedLabelsColumnChartComponent, DistributedColumnChartComponent],
     templateUrl: './column-charts.component.html',
     styleUrl: './column-charts.component.scss'

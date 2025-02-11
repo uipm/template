@@ -10,7 +10,6 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 
 @Component({
     selector: 'app-filter-options',
-    standalone: true,
     imports: [
         FormsModule,
         MatFormFieldModule,

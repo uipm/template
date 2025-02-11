@@ -4,22 +4,14 @@ import { CustomizerSettingsService } from '../../customizer-settings/customizer-
 
 @Component({
     selector: 'app-remixicon',
-    standalone: true,
     imports: [RouterLink],
     templateUrl: './remixicon.component.html',
     styleUrl: './remixicon.component.scss'
 })
 export class RemixiconComponent {
 
-    // isToggled
-    isToggled = false;
-
     constructor(
         public themeService: CustomizerSettingsService
-    ) {
-        this.themeService.isToggled$.subscribe(isToggled => {
-            this.isToggled = isToggled;
-        });
-    }
+    ) {}
 
 }

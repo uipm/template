@@ -8,7 +8,6 @@ import { UtwaCustomLabelTemplateComponent } from './utwa-custom-label-template/u
 
 @Component({
     selector: 'app-tabs',
-    standalone: true,
     imports: [RouterLink, MatCardModule, MatTabsModule, TgwAsynchronouslyLoadingTcComponent, UtwaCustomLabelTemplateComponent, DatePipe],
     templateUrl: './tabs.component.html',
     styleUrl: './tabs.component.scss'

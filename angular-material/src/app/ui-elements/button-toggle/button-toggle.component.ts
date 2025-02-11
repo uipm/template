@@ -7,7 +7,6 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
 
 @Component({
     selector: 'app-button-toggle',
-    standalone: true,
     imports: [RouterLink, MatCardModule, MatButtonToggleModule, FormsModule, ReactiveFormsModule, MatCheckboxModule],
     templateUrl: './button-toggle.component.html',
     styleUrl: './button-toggle.component.scss'

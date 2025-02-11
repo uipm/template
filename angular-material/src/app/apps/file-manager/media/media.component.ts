@@ -10,7 +10,6 @@ import { RouterLink } from '@angular/router';
 
 @Component({
     selector: 'app-media',
-    standalone: true,
     imports: [RouterLink, MatCardModule, MatButtonModule, MatMenuModule, MatCheckboxModule, MatTableModule, MatPaginatorModule, MatTooltipModule],
     templateUrl: './media.component.html',
     styleUrl: './media.component.scss'

@@ -7,23 +7,15 @@ import { CustomizerSettingsService } from '../../../../customizer-settings/custo
 
 @Component({
     selector: 'app-products',
-    standalone: true,
     imports: [RouterLink, NgIf, NgClass, PublishedComponent, DraftComponent],
     templateUrl: './products.component.html',
     styleUrl: './products.component.scss'
 })
 export class ProductsComponent {
 
-    // isToggled
-    isToggled = false;
-
     constructor(
         public themeService: CustomizerSettingsService
-    ) {
-        this.themeService.isToggled$.subscribe(isToggled => {
-            this.isToggled = isToggled;
-        });
-    }
+    ) {}
 
     // Tabs
     currentTab = 'tab1';

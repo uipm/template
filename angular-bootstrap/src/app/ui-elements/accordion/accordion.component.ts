@@ -6,7 +6,6 @@ import { CustomizerSettingsService } from '../../customizer-settings/customizer-
 
 @Component({
     selector: 'app-accordion',
-    standalone: true,
     imports: [RouterLink, NgClass, FlushComponent],
     templateUrl: './accordion.component.html',
     styleUrl: './accordion.component.scss'
@@ -26,15 +25,8 @@ export class AccordionComponent {
         return this.openSectionIndex === index;
     }
 
-    // isToggled
-    isToggled = false;
-
     constructor(
         public themeService: CustomizerSettingsService
-    ) {
-        this.themeService.isToggled$.subscribe(isToggled => {
-            this.isToggled = isToggled;
-        });
-    }
+    ) {}
 
 }

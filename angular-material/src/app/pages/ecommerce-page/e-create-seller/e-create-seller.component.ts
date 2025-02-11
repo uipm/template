@@ -13,7 +13,6 @@ import { MatButtonModule } from '@angular/material/button';
 
 @Component({
     selector: 'app-e-create-seller',
-    standalone: true,
     imports: [RouterLink, MatCardModule, MatButtonModule, MatFormFieldModule, MatInputModule, MatSelectModule, MatDatepickerModule, FileUploadModule, NgxEditorModule, MatNativeDateModule, NgIf],
     templateUrl: './e-create-seller.component.html',
     styleUrl: './e-create-seller.component.scss'

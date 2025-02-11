@@ -7,7 +7,6 @@ import { LineColumnAreaChartComponent } from './line-column-area-chart/line-colu
 
 @Component({
     selector: 'app-mixed-charts',
-    standalone: true,
     imports: [RouterLink, LineColumnChartComponent, MultipleYaxisChartComponent, LineAreaChartComponent, LineColumnAreaChartComponent],
     templateUrl: './mixed-charts.component.html',
     styleUrl: './mixed-charts.component.scss'

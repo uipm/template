@@ -3,28 +3,19 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatTableDataSource, MatTableModule } from '@angular/material/table';
-import { RouterLink } from '@angular/router';
 import { CustomizerSettingsService } from '../../../customizer-settings/customizer-settings.service';
 
 @Component({
     selector: 'app-browser-used-by-users',
-    standalone: true,
-    imports: [RouterLink, MatCardModule, MatButtonModule, MatMenuModule, MatTableModule],
+    imports: [MatCardModule, MatButtonModule, MatMenuModule, MatTableModule],
     templateUrl: './browser-used-by-users.component.html',
     styleUrl: './browser-used-by-users.component.scss'
 })
 export class BrowserUsedByUsersComponent {
 
-    // isToggled
-    isToggled = false;
-
     constructor(
         public themeService: CustomizerSettingsService
-    ) {
-        this.themeService.isToggled$.subscribe(isToggled => {
-            this.isToggled = isToggled;
-        });
-    }
+    ) {}
 
     displayedColumns: string[] = ['browser', 'users', 'sessions', 'bounce_rate', 'avgs_duration'];
     dataSource = new MatTableDataSource<PeriodicElement>(ELEMENT_DATA);

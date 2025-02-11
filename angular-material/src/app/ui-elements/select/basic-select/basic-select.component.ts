@@ -11,7 +11,6 @@ interface Food {
 
 @Component({
     selector: 'app-basic-select',
-    standalone: true,
     imports: [MatFormFieldModule, MatSelectModule, MatInputModule, FormsModule],
     templateUrl: './basic-select.component.html',
     styleUrl: './basic-select.component.scss'

@@ -12,22 +12,14 @@ import { CustomizerSettingsService } from '../../../customizer-settings/customiz
 
 @Component({
     selector: 'app-e-seller-details',
-    standalone: true,
     imports: [RouterLink, SellerOverviewComponent, RevenueComponent, MatCardModule, MatMenuModule, MatButtonModule, MatFormFieldModule, MatInputModule, ProductsComponent],
     templateUrl: './e-seller-details.component.html',
     styleUrl: './e-seller-details.component.scss'
 })
 export class ESellerDetailsComponent {
 
-    // isToggled
-    isToggled = false;
-
     constructor(
         public themeService: CustomizerSettingsService
-    ) {
-        this.themeService.isToggled$.subscribe(isToggled => {
-            this.isToggled = isToggled;
-        });
-    }
+    ) {}
 
 }

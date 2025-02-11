@@ -1,11 +1,10 @@
 import { Component, HostListener } from '@angular/core';
 import { RouterLink } from '@angular/router';
-import { NgFor, NgIf } from '@angular/common';
+import { NgIf } from '@angular/common';
 
 @Component({
     selector: 'app-performance-of-agents',
-    standalone: true,
-    imports: [RouterLink, NgIf, NgFor],
+    imports: [RouterLink, NgIf],
     templateUrl: './performance-of-agents.component.html',
     styleUrl: './performance-of-agents.component.scss'
 })

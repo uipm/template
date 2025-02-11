@@ -4,7 +4,6 @@ import { RouterLink } from '@angular/router';
 
 @Component({
     selector: 'app-recent-customer-ratings',
-    standalone: true,
     imports: [NgIf, RouterLink],
     templateUrl: './recent-customer-ratings.component.html',
     styleUrl: './recent-customer-ratings.component.scss'

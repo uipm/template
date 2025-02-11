@@ -7,12 +7,13 @@ import { isPlatformBrowser } from '@angular/common';
 export class PatientAdmissionsDischargesService {
 
     private isBrowser: boolean;
+    private chartInstance: any;
 
     constructor(@Inject(PLATFORM_ID) private platformId: any) {
         this.isBrowser = isPlatformBrowser(this.platformId);
     }
 
-    async loadChart(): Promise<void> {
+    async loadChart(series: any[], categories: string[]): Promise<void> {
         if (this.isBrowser) {
             try {
                 // Dynamically import ApexCharts
@@ -20,16 +21,7 @@ export class PatientAdmissionsDischargesService {
 
                 // Define chart options
                 const options = {
-                    series: [
-                        {
-                            name: "Admissions",
-                            data: [170, 420, 300, 550, 550, 650, 820]
-                        },
-                        {
-                            name: "Discharges",
-                            data: [320, 300, 650, 400, 750, 650, 600]
-                        }
-                    ],
+                    series: series,
                     chart: {
                         type: "area",
                         height: 338,
@@ -70,15 +62,7 @@ export class PatientAdmissionsDischargesService {
                         }
                     },
                     xaxis: {
-                        categories: [
-                            "Sun",
-                            "Mon",
-                            "Tue",
-                            "Wed",
-                            "Thu",
-                            "Fri",
-                            "Sat"
-                        ],
+                        categories: categories,
                         axisTicks: {
                             show: false,
                             color: '#ECEEF2'
@@ -96,8 +80,8 @@ export class PatientAdmissionsDischargesService {
                         }
                     },
                     yaxis: {
-                        tickAmount: 5,
-                        max: 1000,
+                        // tickAmount: 5,
+                        // max: 1000,
                         min: 0,
                         labels: {
                             style: {
@@ -136,11 +120,22 @@ export class PatientAdmissionsDischargesService {
                 };
 
                 // Initialize and render the chart
-                const chart = new ApexCharts(document.querySelector('#patient_admissions_discharges_chart'), options);
-                chart.render();
+                this.chartInstance = new ApexCharts(document.querySelector('#patient_admissions_discharges_chart'), options);
+                this.chartInstance.render();
             } catch (error) {
                 console.error('Error loading ApexCharts:', error);
             }
+        }
+    }
+
+    updateChartData(series: any[], categories: string[]): void {
+        if (this.chartInstance) {
+            this.chartInstance.updateOptions({
+                series: series,
+                xaxis: {
+                    categories: categories
+                }
+            });
         }
     }
 

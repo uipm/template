@@ -1,11 +1,9 @@
 import { Component } from '@angular/core';
-import { RouterLink } from '@angular/router';
 import { CustomAngleCircleRadialbarChartService } from './custom-angle-circle-radialbar-chart.service';
 
 @Component({
     selector: 'app-custom-angle-circle-radialbar-chart',
-    standalone: true,
-    imports: [RouterLink],
+    imports: [],
     templateUrl: './custom-angle-circle-radialbar-chart.component.html',
     styleUrl: './custom-angle-circle-radialbar-chart.component.scss'
 })

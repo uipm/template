@@ -208,6 +208,18 @@
                         height: 6px;
                         position: absolute;
                         background: var(--orangeColor);
+
+                        &::before {
+                            top: 0;
+                            left: 0;
+                            right: 0;
+                            bottom: 0;
+                            content: '';
+                            border-radius: 50%;
+                            position: absolute;
+                            background: var(--orangeColor);
+                            animation: ripple 1.2s ease-out infinite;
+                        }
                     }
                     &:hover {
                         color: var(--primaryColor);
@@ -316,6 +328,14 @@
                     top: 2px;
                     color: var(--bodyColor);
 
+                    i {
+                        animation: {
+                            duration: 1s;
+                            name: rotateme;
+                            timing-function: linear;
+                            iteration-count: infinite;
+                        };
+                    }
                     &:hover {
                         color: var(--primaryColor);
                     }

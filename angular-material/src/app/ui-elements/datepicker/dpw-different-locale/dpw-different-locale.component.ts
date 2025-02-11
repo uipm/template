@@ -10,15 +10,14 @@ import { MatCardModule } from '@angular/material/card';
 
 @Component({
     selector: 'app-dpw-different-locale',
-    standalone: true,
     imports: [MatFormFieldModule, MatInputModule, MatDatepickerModule, MatButtonModule, MatNativeDateModule, MatCardModule],
     templateUrl: './dpw-different-locale.component.html',
     styleUrl: './dpw-different-locale.component.scss',
     providers: [
         // The locale would typically be provided on the root module of your application. We do it at
         // the component level here, due to limitations of our example generation script.
-        {provide: MAT_DATE_LOCALE, useValue: 'ja-JP'},
-    ],
+        { provide: MAT_DATE_LOCALE, useValue: 'ja-JP' },
+    ]
 })
 export class DpwDifferentLocaleComponent {
 

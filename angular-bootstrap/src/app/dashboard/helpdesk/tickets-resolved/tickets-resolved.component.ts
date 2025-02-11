@@ -1,11 +1,9 @@
 import { Component } from '@angular/core';
-import { RouterLink } from '@angular/router';
 import { TicketsResolvedService } from './tickets-resolved.service';
 
 @Component({
     selector: 'app-tickets-resolved',
-    standalone: true,
-    imports: [RouterLink],
+    imports: [],
     templateUrl: './tickets-resolved.component.html',
     styleUrl: './tickets-resolved.component.scss'
 })

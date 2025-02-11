@@ -5,23 +5,15 @@ import { CustomizerSettingsService } from '../../../customizer-settings/customiz
 
 @Component({
     selector: 'app-e-customer-details',
-    standalone: true,
     imports: [RouterLink, NgIf],
     templateUrl: './e-customer-details.component.html',
     styleUrl: './e-customer-details.component.scss'
 })
 export class ECustomerDetailsComponent {
 
-    // isToggled
-    isToggled = false;
-
     constructor(
         public themeService: CustomizerSettingsService
-    ) {
-        this.themeService.isToggled$.subscribe(isToggled => {
-            this.isToggled = isToggled;
-        });
-    }
+    ) {}
 
     // Card Header Menu
     isCardHeaderOpen = false;

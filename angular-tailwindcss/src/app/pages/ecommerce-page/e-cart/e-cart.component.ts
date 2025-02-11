@@ -4,7 +4,6 @@ import { QuantityCounterComponent } from './quantity-counter/quantity-counter.co
 
 @Component({
     selector: 'app-e-cart',
-    standalone: true,
     imports: [RouterLink, QuantityCounterComponent],
     templateUrl: './e-cart.component.html',
     styleUrl: './e-cart.component.scss'

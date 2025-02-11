@@ -5,23 +5,15 @@ import { NgIf } from '@angular/common';
 
 @Component({
     selector: 'app-profile',
-    standalone: true,
     imports: [RouterLink, RouterLinkActive, NgIf, RouterOutlet],
     templateUrl: './profile.component.html',
     styleUrl: './profile.component.scss'
 })
 export class ProfileComponent {
 
-	// isToggled
-    isToggled = false;
-
     constructor(
         public themeService: CustomizerSettingsService
-    ) {
-        this.themeService.isToggled$.subscribe(isToggled => {
-            this.isToggled = isToggled;
-        });
-    }
+    ) {}
 
     // Dropdown Menu
     isUpdateCoverPhotoMenuOpen = false;

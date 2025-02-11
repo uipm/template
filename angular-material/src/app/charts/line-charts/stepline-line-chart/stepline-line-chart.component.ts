@@ -5,8 +5,7 @@ import { SteplineLineChartService } from './stepline-line-chart.service';
 
 @Component({
     selector: 'app-stepline-line-chart',
-    standalone: true,
-    imports: [RouterLink, MatCardModule],
+    imports: [MatCardModule],
     templateUrl: './stepline-line-chart.component.html',
     styleUrl: './stepline-line-chart.component.scss'
 })

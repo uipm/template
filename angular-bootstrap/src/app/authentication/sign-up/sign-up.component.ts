@@ -5,23 +5,15 @@ import { NgClass } from '@angular/common';
 
 @Component({
     selector: 'app-sign-up',
-    standalone: true,
     imports: [RouterLink, NgClass],
     templateUrl: './sign-up.component.html',
     styleUrl: './sign-up.component.scss'
 })
 export class SignUpComponent {
 
-    // isToggled
-    isToggled = false;
-
     constructor(
         public themeService: CustomizerSettingsService
-    ) {
-        this.themeService.isToggled$.subscribe(isToggled => {
-            this.isToggled = isToggled;
-        });
-    }
+    ) {}
 
     // Password Show/Hide
     password: string = '';

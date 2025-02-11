@@ -5,7 +5,6 @@ import { RouterLink } from '@angular/router';
 
 @Component({
     selector: 'app-accordion',
-    standalone: true,
     imports: [RouterLink, MatCardModule, CdkAccordionModule],
     templateUrl: './accordion.component.html',
     styleUrl: './accordion.component.scss'

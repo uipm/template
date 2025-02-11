@@ -8,7 +8,6 @@ import { CustomizerSettingsService } from '../../../../customizer-settings/custo
 
 @Component({
     selector: 'app-primary-emails',
-    standalone: true,
     imports: [RouterLink, MatTableModule, MatCheckboxModule, MatPaginatorModule],
     templateUrl: './primary-emails.component.html',
     styleUrl: './primary-emails.component.scss'
@@ -49,16 +48,9 @@ export class PrimaryEmailsComponent {
         return `${this.selection.isSelected(row) ? 'deselect' : 'select'} row ${row.title + 1}`;
     }
 
-    // isToggled
-    isToggled = false;
-
     constructor(
         public themeService: CustomizerSettingsService
-    ) {
-        this.themeService.isToggled$.subscribe(isToggled => {
-            this.isToggled = isToggled;
-        });
-    }
+    ) {}
 
 }
 

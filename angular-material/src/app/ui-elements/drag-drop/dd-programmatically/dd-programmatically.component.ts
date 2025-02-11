@@ -4,7 +4,6 @@ import { MatButtonModule } from '@angular/material/button';
 
 @Component({
     selector: 'app-dd-programmatically',
-    standalone: true,
     imports: [CdkDrag, MatButtonModule],
     templateUrl: './dd-programmatically.component.html',
     styleUrl: './dd-programmatically.component.scss'

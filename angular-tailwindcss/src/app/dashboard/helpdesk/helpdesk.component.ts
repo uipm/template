@@ -15,7 +15,6 @@ import { TicketsInProgressComponent } from './tickets-in-progress/tickets-in-pro
 
 @Component({
     selector: 'app-helpdesk',
-    standalone: true,
     imports: [CongratulationsComponent, TicketsStatusComponent, TicketsResolvedComponent, TicketsInProgressComponent, TicketsDueComponent, TicketsNewOpenComponent, CustomerSatisfactionComponent, ResponseTimeComponent, PerformanceOfAgentsComponent, NewTicketsSolvedTicketsComponent, RecentCustomerRatingsComponent, ToDoListComponent, SupportOverviewComponent],
     templateUrl: './helpdesk.component.html',
     styleUrl: './helpdesk.component.scss'

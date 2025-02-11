@@ -7,7 +7,6 @@ import { CustomizerSettingsService } from '../../../customizer-settings/customiz
 
 @Component({
     selector: 'app-our-top-courses',
-    standalone: true,
     imports: [RouterLink, MatCardModule, CarouselModule, MatButtonModule],
     templateUrl: './our-top-courses.component.html',
     styleUrl: './our-top-courses.component.scss'
@@ -32,15 +31,8 @@ export class OurTopCoursesComponent {
 		]
     }
 
-    // isToggled
-    isToggled = false;
-
     constructor(
         public themeService: CustomizerSettingsService
-    ) {
-        this.themeService.isToggled$.subscribe(isToggled => {
-            this.isToggled = isToggled;
-        });
-    }
+    ) {}
 
 }

@@ -10,8 +10,9 @@
             <input type="text" class="form-control" placeholder="Search here" />
             <i
               class="material-symbols-outlined position-absolute top-50 start-0 translate-middle-y"
-              >search</i
             >
+              search
+            </i>
           </form>
           <select
             class="form-select month-select form-control"
@@ -41,7 +42,7 @@
               <tr>
                 <td>#JAN-2345</td>
                 <td>
-                  <a href="my-profile.html" class="d-flex align-items-center">
+                  <NuxtLink to="/my-profile" class="d-flex align-items-center">
                     <img
                       src="~/assets/images/user-1.jpg"
                       class="wh-40 rounded-3"
@@ -50,21 +51,22 @@
                     <div class="ms-2 ps-1">
                       <h6 class="fw-medium fs-14">Sarah Johnson</h6>
                     </div>
-                  </a>
+                  </NuxtLink>
                 </td>
                 <td>12 Jan, 2024</td>
                 <td>$10,490</td>
                 <td>
                   <span
                     class="badge bg-success bg-opacity-10 text-success p-2 fs-12 fw-normal"
-                    >Shipped</span
                   >
+                    Shipped
+                  </span>
                 </td>
               </tr>
               <tr>
                 <td>#JAN-1323</td>
                 <td>
-                  <a href="my-profile.html" class="d-flex align-items-center">
+                  <NuxtLink to="/my-profile" class="d-flex align-items-center">
                     <img
                       src="~/assets/images/user-2.jpg"
                       class="wh-40 rounded-3"
@@ -73,21 +75,22 @@
                     <div class="ms-2 ps-1">
                       <h6 class="fw-medium fs-14">Michael Smith</h6>
                     </div>
-                  </a>
+                  </NuxtLink>
                 </td>
                 <td>08 Jan, 2024</td>
                 <td>$6,575</td>
                 <td>
                   <span
                     class="badge bg-info bg-opacity-10 text-info p-2 fs-12 fw-normal"
-                    >Confirmed</span
                   >
+                    Confirmed
+                  </span>
                 </td>
               </tr>
               <tr>
                 <td>#DEC-1234</td>
                 <td>
-                  <a href="my-profile.html" class="d-flex align-items-center">
+                  <NuxtLink to="/my-profile" class="d-flex align-items-center">
                     <img
                       src="~/assets/images/user-3.jpg"
                       class="wh-40 rounded-3"
@@ -96,21 +99,22 @@
                     <div class="ms-2 ps-1">
                       <h6 class="fw-medium fs-14">Emily Brown</h6>
                     </div>
-                  </a>
+                  </NuxtLink>
                 </td>
                 <td>13 Dec, 2023</td>
                 <td>$12,870</td>
                 <td>
                   <span
                     class="badge bg-danger bg-opacity-10 text-danger p-2 fs-12 fw-normal"
-                    >Pending</span
                   >
+                    Pending
+                  </span>
                 </td>
               </tr>
               <tr>
                 <td>#DEC-3567</td>
                 <td>
-                  <a href="my-profile.html" class="d-flex align-items-center">
+                  <NuxtLink to="/my-profile" class="d-flex align-items-center">
                     <img
                       src="~/assets/images/user-4.jpg"
                       class="wh-40 rounded-3"
@@ -119,21 +123,22 @@
                     <div class="ms-2 ps-1">
                       <h6 class="fw-medium fs-14">Jason Lee</h6>
                     </div>
-                  </a>
+                  </NuxtLink>
                 </td>
                 <td>05 Dec, 2023</td>
                 <td>$7,895</td>
                 <td>
                   <span
                     class="badge bg-success bg-opacity-10 text-success p-2 fs-12 fw-normal"
-                    >Shipped</span
                   >
+                    Shipped
+                  </span>
                 </td>
               </tr>
               <tr>
                 <td>#DEC-1098</td>
                 <td>
-                  <a href="my-profile.html" class="d-flex align-items-center">
+                  <NuxtLink to="/my-profile" class="d-flex align-items-center">
                     <img
                       src="~/assets/images/user-5.jpg"
                       class="wh-40 rounded-3"
@@ -142,15 +147,16 @@
                     <div class="ms-2 ps-1">
                       <h6 class="fw-medium fs-14">Ashley Davis</h6>
                     </div>
-                  </a>
+                  </NuxtLink>
                 </td>
                 <td>01 Dec, 2023</td>
                 <td>$4,680</td>
                 <td>
                   <span
                     class="badge bg-danger bg-opacity-10 text-danger p-2 fs-12 fw-normal"
-                    >Rejected</span
                   >
+                    Rejected
+                  </span>
                 </td>
               </tr>
             </tbody>

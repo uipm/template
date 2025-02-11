@@ -5,23 +5,15 @@ import { NgIf } from '@angular/common';
 
 @Component({
     selector: 'app-rankings',
-    standalone: true,
     imports: [RouterLink, NgIf],
     templateUrl: './rankings.component.html',
     styleUrl: './rankings.component.scss'
 })
 export class RankingsComponent {
 
-    // isToggled
-    isToggled = false;
-
     constructor(
         public themeService: CustomizerSettingsService
-    ) {
-        this.themeService.isToggled$.subscribe(isToggled => {
-            this.isToggled = isToggled;
-        });
-    }
+    ) {}
 
     // Card Header Menu
     isCardHeaderOpen = false;

@@ -7,29 +7,20 @@ import { isPlatformBrowser } from '@angular/common';
 export class ReturningCustomerRateService {
 
     private isBrowser: boolean;
+    private chartInstance: any;
 
     constructor(@Inject(PLATFORM_ID) private platformId: any) {
         this.isBrowser = isPlatformBrowser(this.platformId);
     }
 
-    async loadChart(): Promise<void> {
+    async loadChart(series: { name: string; data: number[] }[], categories: string[]): Promise<void> {
         if (this.isBrowser) {
             try {
-                // Dynamically import ApexCharts
                 const ApexCharts = (await import('apexcharts')).default;
 
                 // Define chart options
                 const options = {
-                    series: [
-                        {
-                            name: "Fifth Time",
-                            data: [70, 23, 40, 30, 62, 52, 90, 20, 60, 53]
-                        },
-                        {
-                            name: "Fourth Time",
-                            data: [15, 58, 45, 38, 70, 50, 55, 60, 78, 40]
-                        }
-                    ],
+                    series: series,
                     chart: {
                         height: 321,
                         type: "line",
@@ -63,18 +54,7 @@ export class ReturningCustomerRateService {
                         }
                     },
                     xaxis: {
-                        categories: [
-                            "Jan",
-                            "Feb",
-                            "Mar",
-                            "Apr",
-                            "May",
-                            "Jun",
-                            "Jul",
-                            "Aug",
-                            "Sep",
-                            "Oct"
-                        ],
+                        categories: categories,
                         axisTicks: {
                             show: false,
                             color: '#ECEEF2'
@@ -92,8 +72,8 @@ export class ReturningCustomerRateService {
                         }
                     },
                     yaxis: {
-                        tickAmount: 5,
-                        max: 100,
+                        // tickAmount: 5,
+                        // max: 100,
                         min: 0,
                         labels: {
                             formatter: (val:any) => {
@@ -133,13 +113,17 @@ export class ReturningCustomerRateService {
                         }
                     }
                 };
-
-                // Initialize and render the chart
-                const chart = new ApexCharts(document.querySelector('#ecommerce_returning_customer_rate_chart'), options);
-                chart.render();
+                this.chartInstance = new ApexCharts(document.querySelector('#ecommerce_returning_customer_rate_chart'), options);
+                this.chartInstance.render();
             } catch (error) {
                 console.error('Error loading ApexCharts:', error);
             }
+        }
+    }
+
+    updateChart(series: { name: string; data: number[] }[], categories: string[]): void {
+        if (this.chartInstance) {
+            this.chartInstance.updateOptions({ series, xaxis: { categories } });
         }
     }
 

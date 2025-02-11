@@ -7,7 +7,6 @@ import { ParentCheckboxesComponent } from './parent-checkboxes/parent-checkboxes
 
 @Component({
     selector: 'app-checkbox',
-    standalone: true,
     imports: [RouterLink, MatCardModule, MatCheckboxModule, ParentCheckboxesComponent, CheckboxesWithFormsComponent],
     templateUrl: './checkbox.component.html',
     styleUrl: './checkbox.component.scss'

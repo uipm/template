@@ -5,7 +5,7 @@
     <div class="v-card-header">
       <h5 class="mb-0">Cryptocurrency Watchlist</h5>
       <div>
-        <div class="cryptocurrency-controller d-flex gap-1">
+        <div class="cryptocurrency-controller d-flex ga-1">
           <div class="controller-icon prev">
             <i class="ri-arrow-left-s-line"></i>
           </div>

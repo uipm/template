@@ -4,22 +4,14 @@ import { CustomizerSettingsService } from '../../customizer-settings/customizer-
 
 @Component({
     selector: 'app-logout',
-    standalone: true,
     imports: [RouterLink],
     templateUrl: './logout.component.html',
     styleUrl: './logout.component.scss'
 })
 export class LogoutComponent {
 
-    // isToggled
-    isToggled = false;
-
     constructor(
         public themeService: CustomizerSettingsService
-    ) {
-        this.themeService.isToggled$.subscribe(isToggled => {
-            this.isToggled = isToggled;
-        });
-    }
+    ) {}
 
 }

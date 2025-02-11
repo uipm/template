@@ -1,0 +1,51 @@
+<!-- Breadcrumb -->
+<div class="breadcrumb-card mb-25 d-md-flex align-items-center justify-content-between">
+    <h5 class="mb-0">
+        Marketplace
+    </h5>
+    <ol class="breadcrumb list-unstyled mt-0 mb-0 p-0">
+        <li class="breadcrumb-item d-inline-block position-relative">
+            <a routerLink="/dashboard" class="d-inline-block position-relative">
+                <i class="material-symbols-outlined">
+                    home
+                </i>
+                Dashboard
+            </a>
+        </li>
+        <li class="breadcrumb-item d-inline-block position-relative">
+            NFT
+        </li>
+        <li class="breadcrumb-item d-inline-block position-relative">
+            Marketplace
+        </li>
+    </ol>
+</div>
+
+<!-- Marketplace -->
+<mat-card
+    class="manage-nft-card border-radius bg-transparent mb-25 d-block border-0 shadow-none"
+    [class.component-rtl-enabled]="themeService.isRTLEnabled()"
+>
+    <mat-card-content>
+       <div class="d-lg-flex align-items-center justify-content-between">
+            <div>
+                <h5 class="fw-semibold text-white">
+                    Manage Your NFT From One Place
+                </h5>
+                <p>
+                    The world’s first and largest digital marketplace for discover, collect, sell and create your own NFTs.
+                </p>
+            </div>
+            <a routerLink="/dashboard/nft-marketplace-page/create-nft" mat-button>
+                Create NFT
+            </a>
+       </div>
+    </mat-card-content>
+    <div class="shape">
+        <img src="images/nfts/shape.png" alt="shape">
+    </div>
+</mat-card>
+
+<app-featured />
+
+<app-creators />

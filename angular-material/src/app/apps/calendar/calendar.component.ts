@@ -9,7 +9,6 @@ import { CustomizerSettingsService } from '../../customizer-settings/customizer-
 
 @Component({
     selector: 'app-calendar',
-    standalone: true,
     imports: [RouterLink, MatCardModule, FullCalendarModule, WorkingScheduleComponent],
     templateUrl: './calendar.component.html',
     styleUrl: './calendar.component.scss'
@@ -130,15 +129,8 @@ export class CalendarComponent {
         plugins: [dayGridPlugin]
     };
 
-    // isToggled
-    isToggled = false;
-
     constructor(
         public themeService: CustomizerSettingsService
-    ) {
-        this.themeService.isToggled$.subscribe(isToggled => {
-            this.isToggled = isToggled;
-        });
-    }
+    ) {}
 
 }

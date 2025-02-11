@@ -4,7 +4,6 @@ import { RouterLink } from '@angular/router';
 
 @Component({
     selector: 'app-media',
-    standalone: true,
     imports: [RouterLink, NgIf],
     templateUrl: './media.component.html',
     styleUrl: './media.component.scss'

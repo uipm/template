@@ -8,7 +8,6 @@ import { FileUploadModule } from '@iplab/ngx-file-upload';
 
 @Component({
     selector: 'app-c-leads',
-    standalone: true,
     imports: [RouterLink, RevenueGrowthComponent, LeadConversionComponent, TotalOrdersComponent, AnnualProfitComponent, FileUploadModule],
     templateUrl: './c-leads.component.html',
     styleUrl: './c-leads.component.scss'

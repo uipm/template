@@ -107,62 +107,64 @@
                     <td>
                       <span
                         class="d-inline-block py-1 px-2 bg-danger bg-opacity-10 rounded-2 text-danger"
-                        >Live Now</span
                       >
+                        Live Now
+                      </span>
                     </td>
                     <td>
                       <ul
                         class="ps-0 mb-0 list-unstyled d-flex align-items-center"
                       >
                         <li>
-                          <a href="my-profile.html">
+                          <RouterLink to="/my-profile">
                             <img
                               src="@/assets/images/user-16.jpg"
                               class="wh-34 lh-34 rounded-circle border border-1 border-color-white"
                               alt="user"
                             />
-                          </a>
+                          </RouterLink>
                         </li>
                         <li class="ms-m-15">
-                          <a href="my-profile.html">
+                          <RouterLink to="/my-profile">
                             <img
                               src="@/assets/images/user-17.jpg"
                               class="wh-34 lh-34 rounded-circle border border-1 border-color-white"
                               alt="user"
                             />
-                          </a>
+                          </RouterLink>
                         </li>
                         <li class="ms-m-15">
-                          <a href="my-profile.html">
+                          <RouterLink to="/my-profile">
                             <img
                               src="@/assets/images/user-18.jpg"
                               class="wh-34 lh-34 rounded-circle border border-1 border-color-white"
                               alt="user"
                             />
-                          </a>
+                          </RouterLink>
                         </li>
                         <li class="ms-m-15">
-                          <a href="my-profile.html">
+                          <RouterLink to="/my-profile">
                             <img
                               src="@/assets/images/user-19.jpg"
                               class="wh-34 lh-34 rounded-circle border border-1 border-color-white"
                               alt="user"
                             />
-                          </a>
+                          </RouterLink>
                         </li>
                         <li class="ms-m-15">
-                          <a
-                            href="users-list.html"
+                          <RouterLink
+                            to="/users/users-list"
                             class="wh-34 lh-34 rounded-circle d-block text-center text-decoration-none text-white fs-12 fw-medium border border-1 border-color-white"
                             style="background-color: #3a4252"
-                            >+3</a
                           >
+                            +3
+                          </RouterLink>
                         </li>
                       </ul>
                     </td>
                     <td>
-                      <a
-                        href="nft-details.html"
+                      <RouterLink
+                        to="/nft-marketplace/nft-details"
                         class="rounded-circle d-inline-block text-center fs-18 hover-bg for-dark-read"
                         style="
                           background-color: #eceef2;
@@ -172,7 +174,7 @@
                         "
                       >
                         <i class="ri-arrow-right-line"></i>
-                      </a>
+                      </RouterLink>
                     </td>
                   </tr>
                   <tr>
@@ -207,37 +209,37 @@
                         class="ps-0 mb-0 list-unstyled d-flex align-items-center"
                       >
                         <li>
-                          <a href="my-profile.html">
+                          <RouterLink to="/my-profile">
                             <img
                               src="@/assets/images/user-25.jpg"
                               class="wh-34 lh-34 rounded-circle border border-1 border-color-white"
                               alt="user"
                             />
-                          </a>
+                          </RouterLink>
                         </li>
                         <li class="ms-m-15">
-                          <a href="my-profile.html">
+                          <RouterLink to="/my-profile">
                             <img
                               src="@/assets/images/user-26.jpg"
                               class="wh-34 lh-34 rounded-circle border border-1 border-color-white"
                               alt="user"
                             />
-                          </a>
+                          </RouterLink>
                         </li>
                         <li class="ms-m-15">
-                          <a href="my-profile.html">
+                          <RouterLink to="/my-profile">
                             <img
                               src="@/assets/images/user-27.jpg"
                               class="wh-34 lh-34 rounded-circle border border-1 border-color-white"
                               alt="user"
                             />
-                          </a>
+                          </RouterLink>
                         </li>
                       </ul>
                     </td>
                     <td>
-                      <a
-                        href="nft-details.html"
+                      <RouterLink
+                        to="/nft-marketplace/nft-details"
                         class="rounded-circle d-inline-block text-center fs-18 hover-bg for-dark-read"
                         style="
                           background-color: #eceef2;
@@ -247,7 +249,7 @@
                         "
                       >
                         <i class="ri-arrow-right-line"></i>
-                      </a>
+                      </RouterLink>
                     </td>
                   </tr>
                   <tr>
@@ -283,28 +285,28 @@
                         class="ps-0 mb-0 list-unstyled d-flex align-items-center"
                       >
                         <li>
-                          <a href="my-profile.html">
+                          <RouterLink to="/my-profile">
                             <img
                               src="@/assets/images/user-25.jpg"
                               class="wh-34 lh-34 rounded-circle border border-1 border-color-white"
                               alt="user"
                             />
-                          </a>
+                          </RouterLink>
                         </li>
                         <li class="ms-m-15">
-                          <a href="my-profile.html">
+                          <RouterLink to="/my-profile">
                             <img
                               src="@/assets/images/user-28.jpg"
                               class="wh-34 lh-34 rounded-circle border border-1 border-color-white"
                               alt="user"
                             />
-                          </a>
+                          </RouterLink>
                         </li>
                       </ul>
                     </td>
                     <td>
-                      <a
-                        href="nft-details.html"
+                      <RouterLink
+                        to="/nft-marketplace/nft-details"
                         class="rounded-circle d-inline-block text-center fs-18 hover-bg for-dark-read"
                         style="
                           background-color: #eceef2;
@@ -314,7 +316,7 @@
                         "
                       >
                         <i class="ri-arrow-right-line"></i>
-                      </a>
+                      </RouterLink>
                     </td>
                   </tr>
                   <tr>
@@ -342,37 +344,37 @@
                         class="ps-0 mb-0 list-unstyled d-flex align-items-center"
                       >
                         <li>
-                          <a href="my-profile.html">
+                          <RouterLink to="/my-profile">
                             <img
                               src="@/assets/images/user-30.jpg"
                               class="wh-34 lh-34 rounded-circle border border-1 border-color-white"
                               alt="user"
                             />
-                          </a>
+                          </RouterLink>
                         </li>
                         <li class="ms-m-15">
-                          <a href="my-profile.html">
+                          <RouterLink to="/my-profile">
                             <img
                               src="@/assets/images/user-31.jpg"
                               class="wh-34 lh-34 rounded-circle border border-1 border-color-white"
                               alt="user"
                             />
-                          </a>
+                          </RouterLink>
                         </li>
                         <li class="ms-m-15">
-                          <a href="my-profile.html">
+                          <RouterLink to="/my-profile">
                             <img
                               src="@/assets/images/user-32.jpg"
                               class="wh-34 lh-34 rounded-circle border border-1 border-color-white"
                               alt="user"
                             />
-                          </a>
+                          </RouterLink>
                         </li>
                       </ul>
                     </td>
                     <td>
-                      <a
-                        href="nft-details.html"
+                      <RouterLink
+                        to="/nft-marketplace/nft-details"
                         class="rounded-circle d-inline-block text-center fs-18 hover-bg for-dark-read"
                         style="
                           background-color: #eceef2;
@@ -382,7 +384,7 @@
                         "
                       >
                         <i class="ri-arrow-right-line"></i>
-                      </a>
+                      </RouterLink>
                     </td>
                   </tr>
                   <tr>
@@ -424,37 +426,37 @@
                         class="ps-0 mb-0 list-unstyled d-flex align-items-center"
                       >
                         <li>
-                          <a href="my-profile.html">
+                          <RouterLink to="/my-profile">
                             <img
                               src="@/assets/images/user-16.jpg"
                               class="wh-34 lh-34 rounded-circle border border-1 border-color-white"
                               alt="user"
                             />
-                          </a>
+                          </RouterLink>
                         </li>
                         <li class="ms-m-15">
-                          <a href="my-profile.html">
+                          <RouterLink to="/my-profile">
                             <img
                               src="@/assets/images/user-17.jpg"
                               class="wh-34 lh-34 rounded-circle border border-1 border-color-white"
                               alt="user"
                             />
-                          </a>
+                          </RouterLink>
                         </li>
                         <li class="ms-m-15">
-                          <a href="my-profile.html">
+                          <RouterLink to="/my-profile">
                             <img
                               src="@/assets/images/user-18.jpg"
                               class="wh-34 lh-34 rounded-circle border border-1 border-color-white"
                               alt="user"
                             />
-                          </a>
+                          </RouterLink>
                         </li>
                       </ul>
                     </td>
                     <td>
-                      <a
-                        href="nft-details.html"
+                      <RouterLink
+                        to="/nft-marketplace/nft-details"
                         class="rounded-circle d-inline-block text-center fs-18 hover-bg for-dark-read"
                         style="
                           background-color: #eceef2;
@@ -464,7 +466,7 @@
                         "
                       >
                         <i class="ri-arrow-right-line"></i>
-                      </a>
+                      </RouterLink>
                     </td>
                   </tr>
                 </tbody>
@@ -516,28 +518,28 @@
                         class="ps-0 mb-0 list-unstyled d-flex align-items-center"
                       >
                         <li>
-                          <a href="my-profile.html">
+                          <RouterLink to="/my-profile">
                             <img
                               src="@/assets/images/user-25.jpg"
                               class="wh-34 lh-34 rounded-circle border border-1 border-color-white"
                               alt="user"
                             />
-                          </a>
+                          </RouterLink>
                         </li>
                         <li class="ms-m-15">
-                          <a href="my-profile.html">
+                          <RouterLink to="/my-profile">
                             <img
                               src="@/assets/images/user-28.jpg"
                               class="wh-34 lh-34 rounded-circle border border-1 border-color-white"
                               alt="user"
                             />
-                          </a>
+                          </RouterLink>
                         </li>
                       </ul>
                     </td>
                     <td>
-                      <a
-                        href="nft-details.html"
+                      <RouterLink
+                        to="/nft-marketplace/nft-details"
                         class="rounded-circle d-inline-block text-center fs-18 hover-bg for-dark-read"
                         style="
                           background-color: #eceef2;
@@ -547,7 +549,7 @@
                         "
                       >
                         <i class="ri-arrow-right-line"></i>
-                      </a>
+                      </RouterLink>
                     </td>
                   </tr>
                   <tr>
@@ -575,37 +577,37 @@
                         class="ps-0 mb-0 list-unstyled d-flex align-items-center"
                       >
                         <li>
-                          <a href="my-profile.html">
+                          <RouterLink to="/my-profile">
                             <img
                               src="@/assets/images/user-30.jpg"
                               class="wh-34 lh-34 rounded-circle border border-1 border-color-white"
                               alt="user"
                             />
-                          </a>
+                          </RouterLink>
                         </li>
                         <li class="ms-m-15">
-                          <a href="my-profile.html">
+                          <RouterLink to="/my-profile">
                             <img
                               src="@/assets/images/user-31.jpg"
                               class="wh-34 lh-34 rounded-circle border border-1 border-color-white"
                               alt="user"
                             />
-                          </a>
+                          </RouterLink>
                         </li>
                         <li class="ms-m-15">
-                          <a href="my-profile.html">
+                          <RouterLink to="/my-profile">
                             <img
                               src="@/assets/images/user-32.jpg"
                               class="wh-34 lh-34 rounded-circle border border-1 border-color-white"
                               alt="user"
                             />
-                          </a>
+                          </RouterLink>
                         </li>
                       </ul>
                     </td>
                     <td>
-                      <a
-                        href="nft-details.html"
+                      <RouterLink
+                        to="/nft-marketplace/nft-details"
                         class="rounded-circle d-inline-block text-center fs-18 hover-bg for-dark-read"
                         style="
                           background-color: #eceef2;
@@ -615,7 +617,7 @@
                         "
                       >
                         <i class="ri-arrow-right-line"></i>
-                      </a>
+                      </RouterLink>
                     </td>
                   </tr>
                   <tr>
@@ -657,37 +659,37 @@
                         class="ps-0 mb-0 list-unstyled d-flex align-items-center"
                       >
                         <li>
-                          <a href="my-profile.html">
+                          <RouterLink to="/my-profile">
                             <img
                               src="@/assets/images/user-16.jpg"
                               class="wh-34 lh-34 rounded-circle border border-1 border-color-white"
                               alt="user"
                             />
-                          </a>
+                          </RouterLink>
                         </li>
                         <li class="ms-m-15">
-                          <a href="my-profile.html">
+                          <RouterLink to="/my-profile">
                             <img
                               src="@/assets/images/user-17.jpg"
                               class="wh-34 lh-34 rounded-circle border border-1 border-color-white"
                               alt="user"
                             />
-                          </a>
+                          </RouterLink>
                         </li>
                         <li class="ms-m-15">
-                          <a href="my-profile.html">
+                          <RouterLink to="/my-profile">
                             <img
                               src="@/assets/images/user-18.jpg"
                               class="wh-34 lh-34 rounded-circle border border-1 border-color-white"
                               alt="user"
                             />
-                          </a>
+                          </RouterLink>
                         </li>
                       </ul>
                     </td>
                     <td>
-                      <a
-                        href="nft-details.html"
+                      <RouterLink
+                        to="/nft-marketplace/nft-details"
                         class="rounded-circle d-inline-block text-center fs-18 hover-bg for-dark-read"
                         style="
                           background-color: #eceef2;
@@ -697,7 +699,7 @@
                         "
                       >
                         <i class="ri-arrow-right-line"></i>
-                      </a>
+                      </RouterLink>
                     </td>
                   </tr>
                   <tr>
@@ -737,54 +739,55 @@
                         class="ps-0 mb-0 list-unstyled d-flex align-items-center"
                       >
                         <li>
-                          <a href="my-profile.html">
+                          <RouterLink to="/my-profile">
                             <img
                               src="@/assets/images/user-16.jpg"
                               class="wh-34 lh-34 rounded-circle border border-1 border-color-white"
                               alt="user"
                             />
-                          </a>
+                          </RouterLink>
                         </li>
                         <li class="ms-m-15">
-                          <a href="my-profile.html">
+                          <RouterLink to="/my-profile">
                             <img
                               src="@/assets/images/user-17.jpg"
                               class="wh-34 lh-34 rounded-circle border border-1 border-color-white"
                               alt="user"
                             />
-                          </a>
+                          </RouterLink>
                         </li>
                         <li class="ms-m-15">
-                          <a href="my-profile.html">
+                          <RouterLink to="/my-profile">
                             <img
                               src="@/assets/images/user-18.jpg"
                               class="wh-34 lh-34 rounded-circle border border-1 border-color-white"
                               alt="user"
                             />
-                          </a>
+                          </RouterLink>
                         </li>
                         <li class="ms-m-15">
-                          <a href="my-profile.html">
+                          <RouterLink to="/my-profile">
                             <img
                               src="@/assets/images/user-19.jpg"
                               class="wh-34 lh-34 rounded-circle border border-1 border-color-white"
                               alt="user"
                             />
-                          </a>
+                          </RouterLink>
                         </li>
                         <li class="ms-m-15">
-                          <a
-                            href="users-list.html"
+                          <RouterLink
+                            to="/users/users-list"
                             class="wh-34 lh-34 rounded-circle d-block text-center text-decoration-none text-white fs-12 fw-medium border border-1 border-color-white"
                             style="background-color: #3a4252"
-                            >+3</a
                           >
+                            +3
+                          </RouterLink>
                         </li>
                       </ul>
                     </td>
                     <td>
-                      <a
-                        href="nft-details.html"
+                      <RouterLink
+                        to="/nft-marketplace/nft-details"
                         class="rounded-circle d-inline-block text-center fs-18 hover-bg for-dark-read"
                         style="
                           background-color: #eceef2;
@@ -794,7 +797,7 @@
                         "
                       >
                         <i class="ri-arrow-right-line"></i>
-                      </a>
+                      </RouterLink>
                     </td>
                   </tr>
                   <tr>
@@ -829,37 +832,37 @@
                         class="ps-0 mb-0 list-unstyled d-flex align-items-center"
                       >
                         <li>
-                          <a href="my-profile.html">
+                          <RouterLink to="/my-profile">
                             <img
                               src="@/assets/images/user-25.jpg"
                               class="wh-34 lh-34 rounded-circle border border-1 border-color-white"
                               alt="user"
                             />
-                          </a>
+                          </RouterLink>
                         </li>
                         <li class="ms-m-15">
-                          <a href="my-profile.html">
+                          <RouterLink to="/my-profile">
                             <img
                               src="@/assets/images/user-26.jpg"
                               class="wh-34 lh-34 rounded-circle border border-1 border-color-white"
                               alt="user"
                             />
-                          </a>
+                          </RouterLink>
                         </li>
                         <li class="ms-m-15">
-                          <a href="my-profile.html">
+                          <RouterLink to="/my-profile">
                             <img
                               src="@/assets/images/user-27.jpg"
                               class="wh-34 lh-34 rounded-circle border border-1 border-color-white"
                               alt="user"
                             />
-                          </a>
+                          </RouterLink>
                         </li>
                       </ul>
                     </td>
                     <td>
-                      <a
-                        href="nft-details.html"
+                      <RouterLink
+                        to="/nft-marketplace/nft-details"
                         class="rounded-circle d-inline-block text-center fs-18 hover-bg for-dark-read"
                         style="
                           background-color: #eceef2;
@@ -869,7 +872,7 @@
                         "
                       >
                         <i class="ri-arrow-right-line"></i>
-                      </a>
+                      </RouterLink>
                     </td>
                   </tr>
                 </tbody>
@@ -925,54 +928,55 @@
                         class="ps-0 mb-0 list-unstyled d-flex align-items-center"
                       >
                         <li>
-                          <a href="my-profile.html">
+                          <RouterLink to="/my-profile">
                             <img
                               src="@/assets/images/user-16.jpg"
                               class="wh-34 lh-34 rounded-circle border border-1 border-color-white"
                               alt="user"
                             />
-                          </a>
+                          </RouterLink>
                         </li>
                         <li class="ms-m-15">
-                          <a href="my-profile.html">
+                          <RouterLink to="/my-profile">
                             <img
                               src="@/assets/images/user-17.jpg"
                               class="wh-34 lh-34 rounded-circle border border-1 border-color-white"
                               alt="user"
                             />
-                          </a>
+                          </RouterLink>
                         </li>
                         <li class="ms-m-15">
-                          <a href="my-profile.html">
+                          <RouterLink to="/my-profile">
                             <img
                               src="@/assets/images/user-18.jpg"
                               class="wh-34 lh-34 rounded-circle border border-1 border-color-white"
                               alt="user"
                             />
-                          </a>
+                          </RouterLink>
                         </li>
                         <li class="ms-m-15">
-                          <a href="my-profile.html">
+                          <RouterLink to="/my-profile">
                             <img
                               src="@/assets/images/user-19.jpg"
                               class="wh-34 lh-34 rounded-circle border border-1 border-color-white"
                               alt="user"
                             />
-                          </a>
+                          </RouterLink>
                         </li>
                         <li class="ms-m-15">
-                          <a
-                            href="users-list.html"
+                          <RouterLink
+                            to="/users/users-list"
                             class="wh-34 lh-34 rounded-circle d-block text-center text-decoration-none text-white fs-12 fw-medium border border-1 border-color-white"
                             style="background-color: #3a4252"
-                            >+3</a
                           >
+                            +3
+                          </RouterLink>
                         </li>
                       </ul>
                     </td>
                     <td>
-                      <a
-                        href="nft-details.html"
+                      <RouterLink
+                        to="/nft-marketplace/nft-details"
                         class="rounded-circle d-inline-block text-center fs-18 hover-bg for-dark-read"
                         style="
                           background-color: #eceef2;
@@ -982,7 +986,7 @@
                         "
                       >
                         <i class="ri-arrow-right-line"></i>
-                      </a>
+                      </RouterLink>
                     </td>
                   </tr>
                   <tr>
@@ -1017,37 +1021,37 @@
                         class="ps-0 mb-0 list-unstyled d-flex align-items-center"
                       >
                         <li>
-                          <a href="my-profile.html">
+                          <RouterLink to="/my-profile">
                             <img
                               src="@/assets/images/user-25.jpg"
                               class="wh-34 lh-34 rounded-circle border border-1 border-color-white"
                               alt="user"
                             />
-                          </a>
+                          </RouterLink>
                         </li>
                         <li class="ms-m-15">
-                          <a href="my-profile.html">
+                          <RouterLink to="/my-profile">
                             <img
                               src="@/assets/images/user-26.jpg"
                               class="wh-34 lh-34 rounded-circle border border-1 border-color-white"
                               alt="user"
                             />
-                          </a>
+                          </RouterLink>
                         </li>
                         <li class="ms-m-15">
-                          <a href="my-profile.html">
+                          <RouterLink to="/my-profile">
                             <img
                               src="@/assets/images/user-27.jpg"
                               class="wh-34 lh-34 rounded-circle border border-1 border-color-white"
                               alt="user"
                             />
-                          </a>
+                          </RouterLink>
                         </li>
                       </ul>
                     </td>
                     <td>
-                      <a
-                        href="nft-details.html"
+                      <RouterLink
+                        to="/nft-marketplace/nft-details"
                         class="rounded-circle d-inline-block text-center fs-18 hover-bg for-dark-read"
                         style="
                           background-color: #eceef2;
@@ -1057,7 +1061,7 @@
                         "
                       >
                         <i class="ri-arrow-right-line"></i>
-                      </a>
+                      </RouterLink>
                     </td>
                   </tr>
                   <tr>
@@ -1093,28 +1097,28 @@
                         class="ps-0 mb-0 list-unstyled d-flex align-items-center"
                       >
                         <li>
-                          <a href="my-profile.html">
+                          <RouterLink to="/my-profile">
                             <img
                               src="@/assets/images/user-25.jpg"
                               class="wh-34 lh-34 rounded-circle border border-1 border-color-white"
                               alt="user"
                             />
-                          </a>
+                          </RouterLink>
                         </li>
                         <li class="ms-m-15">
-                          <a href="my-profile.html">
+                          <RouterLink to="/my-profile">
                             <img
                               src="@/assets/images/user-28.jpg"
                               class="wh-34 lh-34 rounded-circle border border-1 border-color-white"
                               alt="user"
                             />
-                          </a>
+                          </RouterLink>
                         </li>
                       </ul>
                     </td>
                     <td>
-                      <a
-                        href="nft-details.html"
+                      <RouterLink
+                        to="/nft-marketplace/nft-details"
                         class="rounded-circle d-inline-block text-center fs-18 hover-bg for-dark-read"
                         style="
                           background-color: #eceef2;
@@ -1124,7 +1128,7 @@
                         "
                       >
                         <i class="ri-arrow-right-line"></i>
-                      </a>
+                      </RouterLink>
                     </td>
                   </tr>
                   <tr>
@@ -1152,37 +1156,37 @@
                         class="ps-0 mb-0 list-unstyled d-flex align-items-center"
                       >
                         <li>
-                          <a href="my-profile.html">
+                          <RouterLink to="/my-profile">
                             <img
                               src="@/assets/images/user-30.jpg"
                               class="wh-34 lh-34 rounded-circle border border-1 border-color-white"
                               alt="user"
                             />
-                          </a>
+                          </RouterLink>
                         </li>
                         <li class="ms-m-15">
-                          <a href="my-profile.html">
+                          <RouterLink to="/my-profile">
                             <img
                               src="@/assets/images/user-31.jpg"
                               class="wh-34 lh-34 rounded-circle border border-1 border-color-white"
                               alt="user"
                             />
-                          </a>
+                          </RouterLink>
                         </li>
                         <li class="ms-m-15">
-                          <a href="my-profile.html">
+                          <RouterLink to="/my-profile">
                             <img
                               src="@/assets/images/user-32.jpg"
                               class="wh-34 lh-34 rounded-circle border border-1 border-color-white"
                               alt="user"
                             />
-                          </a>
+                          </RouterLink>
                         </li>
                       </ul>
                     </td>
                     <td>
-                      <a
-                        href="nft-details.html"
+                      <RouterLink
+                        to="/nft-marketplace/nft-details"
                         class="rounded-circle d-inline-block text-center fs-18 hover-bg for-dark-read"
                         style="
                           background-color: #eceef2;
@@ -1192,7 +1196,7 @@
                         "
                       >
                         <i class="ri-arrow-right-line"></i>
-                      </a>
+                      </RouterLink>
                     </td>
                   </tr>
                   <tr>
@@ -1234,37 +1238,37 @@
                         class="ps-0 mb-0 list-unstyled d-flex align-items-center"
                       >
                         <li>
-                          <a href="my-profile.html">
+                          <RouterLink to="/my-profile">
                             <img
                               src="@/assets/images/user-16.jpg"
                               class="wh-34 lh-34 rounded-circle border border-1 border-color-white"
                               alt="user"
                             />
-                          </a>
+                          </RouterLink>
                         </li>
                         <li class="ms-m-15">
-                          <a href="my-profile.html">
+                          <RouterLink to="/my-profile">
                             <img
                               src="@/assets/images/user-17.jpg"
                               class="wh-34 lh-34 rounded-circle border border-1 border-color-white"
                               alt="user"
                             />
-                          </a>
+                          </RouterLink>
                         </li>
                         <li class="ms-m-15">
-                          <a href="my-profile.html">
+                          <RouterLink to="/my-profile">
                             <img
                               src="@/assets/images/user-18.jpg"
                               class="wh-34 lh-34 rounded-circle border border-1 border-color-white"
                               alt="user"
                             />
-                          </a>
+                          </RouterLink>
                         </li>
                       </ul>
                     </td>
                     <td>
-                      <a
-                        href="nft-details.html"
+                      <RouterLink
+                        to="/nft-marketplace/nft-details"
                         class="rounded-circle d-inline-block text-center fs-18 hover-bg for-dark-read"
                         style="
                           background-color: #eceef2;
@@ -1274,7 +1278,7 @@
                         "
                       >
                         <i class="ri-arrow-right-line"></i>
-                      </a>
+                      </RouterLink>
                     </td>
                   </tr>
                 </tbody>

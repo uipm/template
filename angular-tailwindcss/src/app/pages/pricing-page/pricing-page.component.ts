@@ -6,7 +6,6 @@ import { Style3Component } from './style-3/style-3.component';
 
 @Component({
     selector: 'app-pricing-page',
-    standalone: true,
     imports: [RouterLink, Style1Component, Style2Component, Style3Component],
     templateUrl: './pricing-page.component.html',
     styleUrl: './pricing-page.component.scss'

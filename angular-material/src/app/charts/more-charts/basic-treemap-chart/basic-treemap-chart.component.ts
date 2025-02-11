@@ -1,12 +1,10 @@
 import { Component } from '@angular/core';
 import { MatCardModule } from '@angular/material/card';
-import { RouterLink } from '@angular/router';
 import { BasicTreemapChartService } from './basic-treemap-chart.service';
 
 @Component({
     selector: 'app-basic-treemap-chart',
-    standalone: true,
-    imports: [RouterLink, MatCardModule],
+    imports: [MatCardModule],
     templateUrl: './basic-treemap-chart.component.html',
     styleUrl: './basic-treemap-chart.component.scss'
 })

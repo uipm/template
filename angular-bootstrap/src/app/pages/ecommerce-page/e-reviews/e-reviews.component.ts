@@ -1,11 +1,10 @@
 import { RouterLink } from '@angular/router';
-import { NgClass, NgIf } from '@angular/common';
+import { NgIf } from '@angular/common';
 import { Component, HostListener } from '@angular/core';
 
 @Component({
     selector: 'app-e-reviews',
-    standalone: true,
-    imports: [RouterLink, NgIf, NgClass],
+    imports: [RouterLink, NgIf],
     templateUrl: './e-reviews.component.html',
     styleUrl: './e-reviews.component.scss'
 })

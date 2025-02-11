@@ -3,7 +3,6 @@ import { NgIf } from '@angular/common';
 
 @Component({
     selector: 'app-browser-used-by-users',
-    standalone: true,
     imports: [NgIf],
     templateUrl: './browser-used-by-users.component.html',
     styleUrl: './browser-used-by-users.component.scss'

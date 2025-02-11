@@ -4,22 +4,14 @@ import { CustomizerSettingsService } from '../../customizer-settings/customizer-
 
 @Component({
     selector: 'app-spinners',
-    standalone: true,
     imports: [RouterLink],
     templateUrl: './spinners.component.html',
     styleUrl: './spinners.component.scss'
 })
 export class SpinnersComponent {
 
-    // isToggled
-    isToggled = false;
-
     constructor(
         public themeService: CustomizerSettingsService
-    ) {
-        this.themeService.isToggled$.subscribe(isToggled => {
-            this.isToggled = isToggled;
-        });
-    }
+    ) {}
 
 }

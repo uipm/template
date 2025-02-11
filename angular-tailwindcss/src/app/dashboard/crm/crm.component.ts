@@ -12,7 +12,6 @@ import { TopProductsBySalesComponent } from './top-products-by-sales/top-product
 
 @Component({
     selector: 'app-crm',
-    standalone: true,
     imports: [RevenueGrowthComponent, LeadConversionComponent, TotalOrdersComponent, AnnualProfitComponent, BalanceOverviewComponent, LeadsBySourceComponent, TopPerformersComponent, RecentLeadsComponent, SalesReportComponent, TopProductsBySalesComponent],
     templateUrl: './crm.component.html',
     styleUrl: './crm.component.scss'

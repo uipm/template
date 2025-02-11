@@ -3,7 +3,6 @@ import { NegativeValuesAreaChartService } from './negative-values-area-chart.ser
 
 @Component({
     selector: 'app-negative-values-area-chart',
-    standalone: true,
     imports: [],
     templateUrl: './negative-values-area-chart.component.html',
     styleUrl: './negative-values-area-chart.component.scss'

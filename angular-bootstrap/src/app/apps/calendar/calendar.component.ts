@@ -8,7 +8,6 @@ import { CustomizerSettingsService } from '../../customizer-settings/customizer-
 
 @Component({
     selector: 'app-calendar',
-    standalone: true,
     imports: [RouterLink, FullCalendarModule, WorkingScheduleComponent],
     templateUrl: './calendar.component.html',
     styleUrl: './calendar.component.scss'
@@ -22,122 +21,115 @@ export class CalendarComponent {
         weekends: true,
         events: [
             {
-                title: 'Annual Conference 2024',
-                date: '2024-06-01'
+                title: 'Annual Conference 2025',
+                date: '2025-01-01'
             },
             {
-                title: 'Product Lunch Webinar 2024 & Meet With Trezo Angular',
-                start: '2024-06-02',
-                end: '2024-06-04'
+                title: 'Product Lunch Webinar 2025 & Meet With Trezo Angular',
+                start: '2025-01-02',
+                end: '2025-01-04'
             },
             {
-                title: 'Tech Summit 2024',
-                date: '2024-06-14'
+                title: 'Tech Summit 2025',
+                date: '2025-01-14'
             },
             {
                 title: 'Web Development Seminar',
-                date: '2024-06-17'
+                date: '2025-01-17'
             },
             {
                 title: 'Meeting with UI/UX Designers',
-                date: '2024-06-26'
+                date: '2025-01-26'
             },
             {
                 title: 'Meeting with Developers',
-                date: '2024-06-30'
+                date: '2025-01-30'
             },
             {
-                title: 'Annual Conference 2024',
-                date: '2024-07-10'
+                title: 'Annual Conference 2025',
+                date: '2025-02-10'
             },
             {
-                title: 'Product Lunch Webinar 2024 & Meet With Trezo Angular',
-                start: '2024-07-14',
-                end: '2024-07-16'
+                title: 'Product Lunch Webinar 2025 & Meet With Trezo Angular',
+                start: '2025-02-14',
+                end: '2025-02-16'
             },
             {
-                title: 'Tech Summit 2024',
-                date: '2024-07-24'
-            },
-            {
-                title: 'Meeting with UI/UX Designers',
-                date: '2024-07-26'
-            },
-            {
-                title: 'Web Development Seminar',
-                date: '2024-07-28'
-            },
-            {
-                title: 'Annual Conference 2024',
-                date: '2024-08-21'
-            },
-            {
-                title: 'Product Lunch Webinar 2024 & Meet With Trezo Angular',
-                start: '2024-08-05',
-                end: '2024-08-08'
-            },
-            {
-                title: 'Tech Summit 2024',
-                date: '2024-08-14'
-            },
-            {
-                title: 'Web Development Seminar',
-                date: '2024-08-17'
+                title: 'Tech Summit 2025',
+                date: '2025-02-24'
             },
             {
                 title: 'Meeting with UI/UX Designers',
-                date: '2024-08-26'
+                date: '2025-02-26'
+            },
+            {
+                title: 'Web Development Seminar',
+                date: '2025-02-28'
+            },
+            {
+                title: 'Annual Conference 2025',
+                date: '2025-03-21'
+            },
+            {
+                title: 'Product Lunch Webinar 2025 & Meet With Trezo Angular',
+                start: '2025-03-05',
+                end: '2025-03-08'
+            },
+            {
+                title: 'Tech Summit 2025',
+                date: '2025-03-14'
+            },
+            {
+                title: 'Web Development Seminar',
+                date: '2025-03-17'
+            },
+            {
+                title: 'Meeting with UI/UX Designers',
+                date: '2025-03-26'
             },
             {
                 title: 'Meeting with Developers',
-                date: '2024-08-30'
+                date: '2025-03-30'
             },
             {
-                title: 'Annual Conference 2024',
-                date: '2024-09-05'
+                title: 'Annual Conference 2025',
+                date: '2025-04-05'
             },
             {
-                title: 'Product Lunch Webinar 2024 & Meet With Trezo Angular',
-                start: '2024-09-09',
-                end: '2024-09-11'
+                title: 'Product Lunch Webinar 2025 & Meet With Trezo Angular',
+                start: '2025-04-09',
+                end: '2025-04-11'
             },
             {
-                title: 'Tech Summit 2024',
-                date: '2024-09-20'
+                title: 'Tech Summit 2025',
+                date: '2025-04-20'
             },
             {
                 title: 'Meeting with UI/UX Designers',
-                date: '2024-09-26'
+                date: '2025-04-26'
             },
             {
                 title: 'Web Development Seminar',
-                date: '2024-09-29'
+                date: '2025-04-29'
             },
             {
                 title: 'Web Development Seminar',
-                date: '2024-10-20'
+                date: '2025-05-20'
             },
             {
                 title: 'Web Development Seminar',
-                date: '2024-11-20'
+                date: '2025-05-20'
             },
             {
                 title: 'Web Development Seminar',
-                date: '2024-12-20'
+                date: '2025-05-20'
             }
         ],
         plugins: [dayGridPlugin]
     };
 
-    // isToggled
-    isToggled = false;
-
     constructor(
         public themeService: CustomizerSettingsService
-    ) {
-        this.themeService.isToggled$.subscribe(isToggled => {
-            this.isToggled = isToggled;
-        });
-    }
+    ) {}
 
 }

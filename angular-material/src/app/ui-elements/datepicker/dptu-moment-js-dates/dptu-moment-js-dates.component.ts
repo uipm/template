@@ -18,7 +18,6 @@ const moment = _rollupMoment || _moment;
 
 @Component({
     selector: 'app-dptu-moment-js-dates',
-    standalone: true,
     imports: [
         MatFormFieldModule,
         MatInputModule,
@@ -31,9 +30,9 @@ const moment = _rollupMoment || _moment;
     templateUrl: './dptu-moment-js-dates.component.html',
     styleUrl: './dptu-moment-js-dates.component.scss',
     providers: [
-        // Moment can be provided globally to your app by adding `provideMomentDateAdapter`
-        // to your app config. We provide it at the component level here, due to limitations
-        // of our example generation script.
+    // Moment can be provided globally to your app by adding `provideMomentDateAdapter`
+    // to your app config. We provide it at the component level here, due to limitations
+    // of our example generation script.
     ]
 })
 export class DptuMomentJsDatesComponent {

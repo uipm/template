@@ -9,7 +9,6 @@ import { ChipsFormControlComponent } from './chips-form-control/chips-form-contr
 
 @Component({
     selector: 'app-chips',
-    standalone: true,
     imports: [RouterLink, MatCardModule, MatChipsModule, ChipsWithInputComponent, ChipsDragDropComponent, ChipsAutocompleteComponent, ChipsFormControlComponent],
     templateUrl: './chips.component.html',
     styleUrl: './chips.component.scss'

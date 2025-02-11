@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { RouterLink } from '@angular/router';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
@@ -9,8 +8,7 @@ import { NgIf } from '@angular/common';
 
 @Component({
     selector: 'app-team-members:not(1)',
-    standalone: true,
-    imports: [RouterLink, MatCardModule, MatButtonModule, MatMenuModule, MatTableModule, MatProgressBarModule, NgIf],
+    imports: [MatCardModule, MatButtonModule, MatMenuModule, MatTableModule, MatProgressBarModule, NgIf],
     templateUrl: './team-members.component.html',
     styleUrl: './team-members.component.scss'
 })

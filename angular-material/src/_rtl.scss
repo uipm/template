@@ -18,6 +18,30 @@
                             }
                         }
                     }
+                    &.date-btn {
+                        .mdc-button__label {
+                            padding: {
+                                left: 0;
+                                right: 24px;
+                            };
+                            i {
+                                left: auto;
+                                right: 0;
+                            }
+                        }
+                    }
+                    &.view-all-btn {
+                        .mdc-button__label {
+                            padding: {
+                                right: 0;
+                                left: 15px;
+                            };
+                            i {
+                                right: auto;
+                                left: -7px;
+                            }
+                        }
+                    }
                 }
                 .mat-mdc-card-subtitle {
                     .mat-mdc-button {
@@ -96,52 +120,6 @@
                     }
                     &:last-child {
                         margin-left: 0;
-                    }
-                }
-            }
-        }
-        &.table-style-two {
-            .mat-mdc-card-content {
-                .mat-mdc-table {
-                    &.mdc-data-table__table {
-                        .mat-mdc-header-row {
-                            .mat-mdc-header-cell {
-                                &:first-child {
-                                    border-top-right-radius: 0;
-                                    padding: {
-                                        left: 20px;
-                                        right: 25px;
-                                    };
-                                }
-                                &:last-child {
-                                    border-top-left-radius: 0;
-                                    padding: {
-                                        right: 20px;
-                                        left: 25px;
-                                    };
-                                }
-                            }
-                        }
-                        .mdc-data-table__content {
-                            .mat-mdc-row {
-                                .mat-mdc-cell {
-                                    &:first-child {
-                                        border-right-width: 0;
-                                        padding: {
-                                            left: 20px;
-                                            right: 25px;
-                                        };
-                                    }
-                                    &:last-child {
-                                        border-left-width: 0;
-                                        padding: {
-                                            right: 20px;
-                                            left: 25px;
-                                        };
-                                    }
-                                }
-                            }
-                        }
                     }
                 }
             }
@@ -340,6 +318,38 @@
                                 right: 0;
                             }
                         }
+                        .notice-info {
+                            div {
+                                .date {
+                                    padding: {
+                                        left: 0;
+                                        right: 16px;
+                                    };
+                                    i {
+                                        left: auto;
+                                        right: 0;
+                                    }
+                                }
+                            }
+                        }
+                        .caller-info {
+                            div {
+                                .dot {
+                                    left: auto;
+                                    right: -15px;
+                                }
+                            }
+                        }
+                        .campaign-info {
+                            padding: {
+                                left: 0;
+                                right: 13px;
+                            };
+                            &::before {
+                                left: auto;
+                                right: 0;
+                            }
+                        }
                         &:first-child {
                             border: {
                                 left-width: 0;
@@ -368,6 +378,94 @@
                             right-width: 0;
                             left: 1px solid var(--borderColor);
                         };
+                    }
+                }
+            }
+        }
+    }
+    .table-style-two {
+        .mat-mdc-table {
+            &.mdc-data-table__table {
+                .mat-mdc-header-row {
+                    .mat-mdc-header-cell {
+                        &:first-child {
+                            border-top-right-radius: 0;
+                            padding: {
+                                left: 20px;
+                                right: 25px;
+                            };
+                        }
+                        &:last-child {
+                            border-top-left-radius: 0;
+                            padding: {
+                                right: 20px;
+                                left: 25px;
+                            };
+                        }
+                    }
+                }
+                .mdc-data-table__content {
+                    .mat-mdc-row {
+                        .mat-mdc-cell {
+                            &:first-child {
+                                border-right-width: 0;
+                                padding: {
+                                    left: 20px;
+                                    right: 25px;
+                                };
+                            }
+                            &:last-child {
+                                border-left-width: 0;
+                                padding: {
+                                    right: 20px;
+                                    left: 25px;
+                                };
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .table-style-three {
+        .mat-mdc-table {
+            &.mdc-data-table__table {
+                .mat-mdc-header-row {
+                    .mat-mdc-header-cell {
+                        &:first-child {
+                            border-top-right-radius: 0;
+                            padding: {
+                                left: 20px;
+                                right: 25px;
+                            };
+                        }
+                        &:last-child {
+                            border-top-left-radius: 0;
+                            padding: {
+                                right: 20px;
+                                left: 25px;
+                            };
+                        }
+                    }
+                }
+                .mdc-data-table__content {
+                    .mat-mdc-row {
+                        .mat-mdc-cell {
+                            &:first-child {
+                                border-right-width: 0;
+                                padding: {
+                                    left: 20px;
+                                    right: 25px;
+                                };
+                            }
+                            &:last-child {
+                                border-left-width: 0;
+                                padding: {
+                                    right: 20px;
+                                    left: 25px;
+                                };
+                            }
+                        }
                     }
                 }
             }
@@ -525,6 +623,38 @@
                                 right: 0;
                             }
                         }
+                        .notice-info {
+                            div {
+                                .date {
+                                    padding: {
+                                        left: 0;
+                                        right: 16px;
+                                    };
+                                    i {
+                                        left: auto;
+                                        right: 0;
+                                    }
+                                }
+                            }
+                        }
+                        .caller-info {
+                            div {
+                                .dot {
+                                    left: auto;
+                                    right: -15px;
+                                }
+                            }
+                        }
+                        .campaign-info {
+                            padding: {
+                                left: 0;
+                                right: 13px;
+                            };
+                            &::before {
+                                left: auto;
+                                right: 0;
+                            }
+                        }
                         &:first-child {
                             border: {
                                 left-width: 0;
@@ -638,7 +768,11 @@
 
     // Add New Popup
     .add-new-popup {
+        direction: ltr;
+        
         .popup-dialog {
+            direction: rtl;
+
             .mat-mdc-card {
                 .mat-mdc-card-content {
                     .btn-box {
@@ -661,6 +795,100 @@
                             }
                             &:last-child {
                                 margin-left: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &.style-two {
+            .popup-dialog {
+                .mat-mdc-card {
+                    .mat-mdc-card-content {
+                        .mat-horizontal-stepper-wrapper {
+                            .mat-horizontal-content-container {
+                                .form-group {
+                                    .icon {
+                                        padding: {
+                                            right: 0;
+                                            left: 15px;
+                                        };
+                                        .plus-icon {
+                                            left: 0;
+                                            right: auto;
+                                        }
+                                    }
+                                }
+                                .mat-mdc-radio-group {
+                                    .mat-mdc-radio-button {
+                                        margin: {
+                                            left: 0;
+                                        };
+                                        .mat-internal-form-field {
+                                            padding: {
+                                                left: 0;
+                                                right: 35px;
+                                            };
+                                            .mdc-radio {
+                                                left: auto;
+                                                right: -10px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &.style-three {
+            .popup-dialog {
+                .mat-mdc-card {
+                    .mat-mdc-card-header {
+                        .mat-mdc-card-header-text {
+                            padding: {
+                                left: 0;
+                                right: 45px;
+                            };
+                        }
+                    }
+                    .mat-mdc-card-content {
+                        padding: {
+                            left: 0;
+                            right: 45px;
+                        };
+                        .mat-mdc-card {
+                            .mat-mdc-card-header {
+                                .mat-mdc-card-header-text {
+                                    padding-right: 0;
+                                }
+                            }
+                            .mat-mdc-card-content {
+                                .team-members-list {
+                                    .item {
+                                        padding: {
+                                            right: 7px;
+                                            left: 20px;
+                                        };
+                                        margin: {
+                                            right: 0;
+                                            left: 8px;
+                                        };
+                                    }
+                                }
+                                .uploaded-files-list {
+                                    .item {
+                                        img {
+                                            left: auto;
+                                            right: 0;
+                                        }
+                                        .mat-mdc-button {
+                                            right: auto;
+                                            left: 0;
+                                        }
+                                    }
+                                }
                             }
                         }
                     }
@@ -1219,48 +1447,6 @@
                     }
                 }
             }
-            &.table-style-two {
-                .mat-mdc-card-content {
-                    .mat-mdc-table {
-                        &.mdc-data-table__table {
-                            .mat-mdc-header-row {
-                                .mat-mdc-header-cell {
-                                    &:first-child {
-                                        padding: {
-                                            left: 17px;
-                                            right: 17px;
-                                        };
-                                    }
-                                    &:last-child {
-                                        padding: {
-                                            right: 17px;
-                                            left: 17px;
-                                        };
-                                    }
-                                }
-                            }
-                            .mdc-data-table__content {
-                                .mat-mdc-row {
-                                    .mat-mdc-cell {
-                                        &:first-child {
-                                            padding: {
-                                                left: 17px;
-                                                right: 17px;
-                                            };
-                                        }
-                                        &:last-child {
-                                            padding: {
-                                                right: 17px;
-                                                left: 17px;
-                                            };
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
         }
 
         // Table
@@ -1306,6 +1492,104 @@
                 }
             }
         }
+        .table-style-two {
+            .mat-mdc-table {
+                &.mdc-data-table__table {
+                    .mat-mdc-header-row {
+                        .mat-mdc-header-cell {
+                            &:first-child {
+                                padding: {
+                                    left: 17px;
+                                    right: 17px;
+                                };
+                            }
+                            &:last-child {
+                                padding: {
+                                    right: 17px;
+                                    left: 17px;
+                                };
+                            }
+                        }
+                    }
+                    .mdc-data-table__content {
+                        .mat-mdc-row {
+                            .mat-mdc-cell {
+                                &:first-child {
+                                    padding: {
+                                        left: 17px;
+                                        right: 17px;
+                                    };
+                                }
+                                &:last-child {
+                                    padding: {
+                                        right: 17px;
+                                        left: 17px;
+                                    };
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .table-style-three {
+            .mat-mdc-table {
+                &.mdc-data-table__table {
+                    .mat-mdc-header-row {
+                        .mat-mdc-header-cell {
+                            &:first-child {
+                                padding: {
+                                    left: 17px;
+                                    right: 17px;
+                                };
+                            }
+                            &:last-child {
+                                padding: {
+                                    right: 17px;
+                                    left: 17px;
+                                };
+                            }
+                        }
+                    }
+                    .mdc-data-table__content {
+                        .mat-mdc-row {
+                            .mat-mdc-cell {
+                                &:first-child {
+                                    padding: {
+                                        left: 17px;
+                                        right: 17px;
+                                    };
+                                }
+                                &:last-child {
+                                    padding: {
+                                        right: 17px;
+                                        left: 17px;
+                                    };
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        // Add New Popup
+        .add-new-popup {
+            &.style-three {
+                .popup-dialog {
+                    .mat-mdc-card {
+                        .mat-mdc-card-header {
+                            .mat-mdc-card-header-text {
+                                padding-right: 0;
+                            }
+                        }
+                        .mat-mdc-card-content {
+                            padding-right: 0;
+                        }
+                    }
+                }
+            }
+        }
 
     }
 
@@ -1316,44 +1600,80 @@
 
     .rtl-enabled {
 
-        // Card
-        .mat-mdc-card {
-            &.table-style-two {
-                .mat-mdc-card-content {
-                    .mat-mdc-table {
-                        &.mdc-data-table__table {
-                            .mat-mdc-header-row {
-                                .mat-mdc-header-cell {
-                                    &:first-child {
-                                        padding: {
-                                            left: 20px;
-                                            right: 20px;
-                                        };
-                                    }
-                                    &:last-child {
-                                        padding: {
-                                            right: 20px;
-                                            left: 20px;
-                                        };
-                                    }
+        // Table
+        .table-style-two {
+            .mat-mdc-table {
+                &.mdc-data-table__table {
+                    .mat-mdc-header-row {
+                        .mat-mdc-header-cell {
+                            &:first-child {
+                                padding: {
+                                    left: 20px;
+                                    right: 20px;
+                                };
+                            }
+                            &:last-child {
+                                padding: {
+                                    right: 20px;
+                                    left: 20px;
+                                };
+                            }
+                        }
+                    }
+                    .mdc-data-table__content {
+                        .mat-mdc-row {
+                            .mat-mdc-cell {
+                                &:first-child {
+                                    padding: {
+                                        left: 20px;
+                                        right: 20px;
+                                    };
+                                }
+                                &:last-child {
+                                    padding: {
+                                        right: 20px;
+                                        left: 20px;
+                                    };
                                 }
                             }
-                            .mdc-data-table__content {
-                                .mat-mdc-row {
-                                    .mat-mdc-cell {
-                                        &:first-child {
-                                            padding: {
-                                                left: 20px;
-                                                right: 20px;
-                                            };
-                                        }
-                                        &:last-child {
-                                            padding: {
-                                                right: 20px;
-                                                left: 20px;
-                                            };
-                                        }
-                                    }
+                        }
+                    }
+                }
+            }
+        }
+        .table-style-three {
+            .mat-mdc-table {
+                &.mdc-data-table__table {
+                    .mat-mdc-header-row {
+                        .mat-mdc-header-cell {
+                            &:first-child {
+                                padding: {
+                                    left: 20px;
+                                    right: 20px;
+                                };
+                            }
+                            &:last-child {
+                                padding: {
+                                    right: 20px;
+                                    left: 20px;
+                                };
+                            }
+                        }
+                    }
+                    .mdc-data-table__content {
+                        .mat-mdc-row {
+                            .mat-mdc-cell {
+                                &:first-child {
+                                    padding: {
+                                        left: 20px;
+                                        right: 20px;
+                                    };
+                                }
+                                &:last-child {
+                                    padding: {
+                                        right: 20px;
+                                        left: 20px;
+                                    };
                                 }
                             }
                         }
@@ -1362,6 +1682,29 @@
             }
         }
 
+    }
+
+}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    // Add New Popup
+    .add-new-popup {
+        &.style-three {
+            .popup-dialog {
+                .mat-mdc-card {
+                    .mat-mdc-card-header {
+                        .mat-mdc-card-header-text {
+                            padding-right: 0;
+                        }
+                    }
+                    .mat-mdc-card-content {
+                        padding-right: 0;
+                    }
+                }
+            }
+        }
     }
 
 }

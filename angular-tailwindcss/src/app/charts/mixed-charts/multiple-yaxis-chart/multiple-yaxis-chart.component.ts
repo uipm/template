@@ -3,7 +3,6 @@ import { MultipleYaxisChartService } from './multiple-yaxis-chart.service';
 
 @Component({
     selector: 'app-multiple-yaxis-chart',
-    standalone: true,
     imports: [],
     templateUrl: './multiple-yaxis-chart.component.html',
     styleUrl: './multiple-yaxis-chart.component.scss'

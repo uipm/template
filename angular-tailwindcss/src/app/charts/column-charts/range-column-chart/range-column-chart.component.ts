@@ -3,7 +3,6 @@ import { RangeColumnChartService } from './range-column-chart.service';
 
 @Component({
     selector: 'app-range-column-chart',
-    standalone: true,
     imports: [],
     templateUrl: './range-column-chart.component.html',
     styleUrl: './range-column-chart.component.scss'

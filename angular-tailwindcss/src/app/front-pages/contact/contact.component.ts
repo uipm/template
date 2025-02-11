@@ -4,7 +4,6 @@ import { FpCtaComponent } from '../common/fp-cta/fp-cta.component';
 
 @Component({
     selector: 'app-contact',
-    standalone: true,
     imports: [FpContactComponent, FpCtaComponent],
     templateUrl: './contact.component.html',
     styleUrl: './contact.component.scss'

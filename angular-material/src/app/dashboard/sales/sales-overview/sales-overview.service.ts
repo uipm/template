@@ -7,12 +7,13 @@ import { isPlatformBrowser } from '@angular/common';
 export class SalesOverviewService {
 
     private isBrowser: boolean;
+    private chartInstance: any;
 
     constructor(@Inject(PLATFORM_ID) private platformId: any) {
         this.isBrowser = isPlatformBrowser(this.platformId);
     }
 
-    async loadChart(): Promise<void> {
+    async loadChart(series: any[], categories: string[]): Promise<void> {
         if (this.isBrowser) {
             try {
                 // Dynamically import ApexCharts
@@ -20,20 +21,7 @@ export class SalesOverviewService {
 
                 // Define chart options
                 const options = {
-                    series: [
-                        {
-                            name: "Sales",
-                            data: [80, 50, 30, 40, 100, 20]
-                        },
-                        {
-                            name: "Sales",
-                            data: [20, 30, 40, 80, 20, 80]
-                        },
-                        {
-                            name: "Sales",
-                            data: [30, 70, 80, 15, 45, 10]
-                        },
-                    ],
+                    series: series,
                     chart: {
                         height: 340,
                         type: "radar",
@@ -45,7 +33,7 @@ export class SalesOverviewService {
                         enabled: false
                     },
                     xaxis: {
-                        categories: ["2019", "2020", "2021", "2022", "2023", "2024"],
+                        categories: categories,
                         labels: {
                             show: true,
                             style: {
@@ -93,11 +81,22 @@ export class SalesOverviewService {
                 };
 
                 // Initialize and render the chart
-                const chart = new ApexCharts(document.querySelector('#sales_overview_chart'), options);
-                chart.render();
+                this.chartInstance = new ApexCharts(document.querySelector('#sales_overview_chart'), options);
+                this.chartInstance.render();
             } catch (error) {
                 console.error('Error loading ApexCharts:', error);
             }
+        }
+    }
+
+    updateChartData(series: any[], categories: string[]): void {
+        if (this.chartInstance) {
+            this.chartInstance.updateOptions({
+                series: series,
+                xaxis: {
+                    categories: categories
+                }
+            });
         }
     }
 

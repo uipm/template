@@ -6,7 +6,6 @@ import { RouterLink } from '@angular/router';
 
 @Component({
     selector: 'app-pagination',
-    standalone: true,
     imports: [RouterLink, MatCardModule, MatButtonModule, MatPaginatorModule],
     templateUrl: './pagination.component.html',
     styleUrl: './pagination.component.scss'

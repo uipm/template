@@ -9,7 +9,6 @@ import { MatPaginator, MatPaginatorModule } from '@angular/material/paginator';
 
 @Component({
     selector: 'app-e-orders',
-    standalone: true,
     imports: [RouterLink, MatCardModule, MatButtonModule, MatMenuModule, MatTableModule, MatPaginatorModule, NgIf],
     templateUrl: './e-orders.component.html',
     styleUrl: './e-orders.component.scss'

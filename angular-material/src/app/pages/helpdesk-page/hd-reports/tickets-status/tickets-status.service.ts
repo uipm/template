@@ -7,37 +7,20 @@ import { isPlatformBrowser } from '@angular/common';
 export class TicketsStatusService {
 
     private isBrowser: boolean;
+    private chartInstance: any;
 
     constructor(@Inject(PLATFORM_ID) private platformId: any) {
         this.isBrowser = isPlatformBrowser(this.platformId);
     }
 
-    async loadChart(): Promise<void> {
+    async loadChart(series: { name: string; data: number[] }[], categories: string[]): Promise<void> {
         if (this.isBrowser) {
             try {
-                // Dynamically import ApexCharts
                 const ApexCharts = (await import('apexcharts')).default;
 
                 // Define chart options
                 const options = {
-                    series: [
-                        {
-                            name: "Solved",
-                            data: [28, 50, 90, 95, 20, 70, 35]
-                        },
-                        {
-                            name: "In Progress",
-                            data: [80, 60, 70, 30, 45, 20, 80]
-                        },
-                        {
-                            name: "Pending",
-                            data: [32, 23, 78, 35, 65, 35, 15]
-                        },
-                        {
-                            name: "Others",
-                            data: [60, 25, 80, 25, 15, 40, 15]
-                        }
-                    ],
+                    series: series,
                     chart: {
                         type: "bar",
                         height: 392,
@@ -66,15 +49,7 @@ export class TicketsStatusService {
                         colors: ["transparent"]
                     },
                     xaxis: {
-                        categories: [
-                            "Mon",
-                            "Tue",
-                            "Wed",
-                            "Thu",
-                            "Fri",
-                            "Sat",
-                            "Sun"
-                        ],
+                        categories: categories,
                         axisTicks: {
                             show: false,
                             color: '#ECEEF2'
@@ -92,8 +67,8 @@ export class TicketsStatusService {
                         }
                     },
                     yaxis: {
-                        tickAmount: 5,
-                        max: 100,
+                        // tickAmount: 5,
+                        // max: 100,
                         min: 0,
                         labels: {
                             style: {
@@ -139,11 +114,20 @@ export class TicketsStatusService {
                 };
 
                 // Initialize and render the chart
-                const chart = new ApexCharts(document.querySelector('#hdp_tickets_status_chart'), options);
-                chart.render();
+                this.chartInstance = new ApexCharts(document.querySelector('#hdp_tickets_status_chart'), options);
+                this.chartInstance.render();
             } catch (error) {
                 console.error('Error loading ApexCharts:', error);
             }
+        }
+    }
+
+    updateChart(series: { name: string; data: number[] }[], categories: string[]): void {
+        if (this.chartInstance) {
+            this.chartInstance.updateOptions({
+                series: series,
+                xaxis: { categories: categories }
+            });
         }
     }
 

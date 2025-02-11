@@ -9,7 +9,6 @@ import {
 
 @Component({
     selector: 'app-dd-enter-predicate',
-    standalone: true,
     imports: [CdkDropList, CdkDrag],
     templateUrl: './dd-enter-predicate.component.html',
     styleUrl: './dd-enter-predicate.component.scss'

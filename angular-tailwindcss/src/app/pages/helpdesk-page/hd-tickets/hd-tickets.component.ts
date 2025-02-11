@@ -7,7 +7,6 @@ import { TicketsNewOpenComponent } from '../../../dashboard/helpdesk/tickets-new
 
 @Component({
     selector: 'app-hd-tickets',
-    standalone: true,
     imports: [RouterLink, TicketsResolvedComponent, TicketsInProgressComponent, TicketsDueComponent, TicketsNewOpenComponent],
     templateUrl: './hd-tickets.component.html',
     styleUrl: './hd-tickets.component.scss'

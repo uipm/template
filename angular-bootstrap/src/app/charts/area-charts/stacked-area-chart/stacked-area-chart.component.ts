@@ -1,11 +1,9 @@
 import { Component } from '@angular/core';
-import { RouterLink } from '@angular/router';
 import { StackedAreaChartService } from './stacked-area-chart.service';
 
 @Component({
     selector: 'app-stacked-area-chart',
-    standalone: true,
-    imports: [RouterLink],
+    imports: [],
     templateUrl: './stacked-area-chart.component.html',
     styleUrl: './stacked-area-chart.component.scss'
 })

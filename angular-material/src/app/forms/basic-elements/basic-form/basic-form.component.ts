@@ -11,7 +11,6 @@ import { CustomizerSettingsService } from '../../../customizer-settings/customiz
 
 @Component({
     selector: 'app-basic-form',
-    standalone: true,
     imports: [RouterLink, MatCardModule, MatInputModule, MatFormFieldModule, MatSelectModule, MatNativeDateModule, MatCheckboxModule, MatButtonModule],
     templateUrl: './basic-form.component.html',
     styleUrl: './basic-form.component.scss'
@@ -21,15 +20,8 @@ export class BasicFormComponent {
     // Password Hide
     hide = true;
 
-    // isToggled
-    isToggled = false;
-
     constructor(
         public themeService: CustomizerSettingsService
-    ) {
-        this.themeService.isToggled$.subscribe(isToggled => {
-            this.isToggled = isToggled;
-        });
-    }
+    ) {}
 
 }

@@ -9,28 +9,23 @@
             <div class="trezo-card-header-menu position-relative">
                 <button class="menu-btn without-border transition d-inline-block bg-transparent border-radius" (click)="toggleCardHeaderMenu()">
                     <span class="d-block position-relative">
-                        This Year
+                        {{ selectedTimeframe }}
                     </span>
                 </button>
                 <ul class="dropdown-menu border-radius border-0 show" *ngIf="isCardHeaderOpen">
                     <li>
-                        <button type="button" class="dropdown-item d-block w-100 position-relative transition">
-                            This Day
+                        <button type="button" class="dropdown-item d-block w-100 position-relative transition" (click)="onTimeframeChange('Weekly')">
+                            Weekly
                         </button>
                     </li>
                     <li>
-                        <button type="button" class="dropdown-item d-block w-100 position-relative transition">
-                            This Week
+                        <button type="button" class="dropdown-item d-block w-100 position-relative transition" (click)="onTimeframeChange('Monthly')">
+                            Monthly
                         </button>
                     </li>
                     <li>
-                        <button type="button" class="dropdown-item d-block w-100 position-relative transition">
-                            This Month
-                        </button>
-                    </li>
-                    <li>
-                        <button type="button" class="dropdown-item d-block w-100 position-relative transition">
-                            This Year
+                        <button type="button" class="dropdown-item d-block w-100 position-relative transition" (click)="onTimeframeChange('Yearly')">
+                            Yearly
                         </button>
                     </li>
                 </ul>

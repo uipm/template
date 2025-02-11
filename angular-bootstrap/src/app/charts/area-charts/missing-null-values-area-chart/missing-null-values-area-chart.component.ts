@@ -1,11 +1,9 @@
 import { Component } from '@angular/core';
-import { RouterLink } from '@angular/router';
 import { MissingNullValuesAreaChartService } from './missing-null-values-area-chart.service';
 
 @Component({
     selector: 'app-missing-null-values-area-chart',
-    standalone: true,
-    imports: [RouterLink],
+    imports: [],
     templateUrl: './missing-null-values-area-chart.component.html',
     styleUrl: './missing-null-values-area-chart.component.scss'
 })

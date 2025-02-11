@@ -5,23 +5,15 @@ import { CustomizerSettingsService } from '../../customizer-settings/customizer-
 
 @Component({
     selector: 'app-chat',
-    standalone: true,
     imports: [RouterLink, NgClass, NgIf],
     templateUrl: './chat.component.html',
     styleUrl: './chat.component.scss'
 })
 export class ChatComponent {
 
-    // isToggled
-    isToggled = false;
-
     constructor(
         public themeService: CustomizerSettingsService
-    ) {
-        this.themeService.isToggled$.subscribe(isToggled => {
-            this.isToggled = isToggled;
-        });
-    }
+    ) {}
 
     // Tabs
     currentTab = 'tab1';

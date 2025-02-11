@@ -7,7 +7,6 @@ import { NgClass, NgIf } from '@angular/common';
 
 @Component({
     selector: 'app-advanced',
-    standalone: true,
     imports: [RouterLink, NgClass, ReactiveFormsModule, NgIf],
     templateUrl: './advanced.component.html',
     styleUrl: './advanced.component.scss'
@@ -25,9 +24,6 @@ export class AdvancedComponent {
             email: ['', [Validators.required, Validators.email]],
             password: ['', [Validators.required, Validators.minLength(8)]],
         });
-        this.themeService.isToggled$.subscribe(isToggled => {
-            this.isToggled = isToggled;
-        });
     }
     onSubmit() {
         if (this.authForm.valid) {
@@ -36,9 +32,6 @@ export class AdvancedComponent {
             console.log('Form is invalid. Please check the fields.');
         }
     }
-
-    // isToggled
-    isToggled = false;
 
     // Password Show/Hide
     password: string = '';

@@ -7,7 +7,6 @@ import { CdkListbox, CdkOption } from '@angular/cdk/listbox';
 
 @Component({
     selector: 'app-lbw-forms-validation',
-    standalone: true,
     imports: [CdkListbox, FormsModule, ReactiveFormsModule, CdkOption, AsyncPipe, JsonPipe],
     templateUrl: './lbw-forms-validation.component.html',
     styleUrl: './lbw-forms-validation.component.scss'

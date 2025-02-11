@@ -1,29 +1,20 @@
 import { Component, HostListener } from '@angular/core';
-import { RouterLink } from '@angular/router';
 import { PriceStatisticsService } from './price-statistics.service';
 import { CustomizerSettingsService } from '../../../customizer-settings/customizer-settings.service';
 import { NgIf } from '@angular/common';
 
 @Component({
     selector: 'app-price-statistics',
-    standalone: true,
-    imports: [RouterLink, NgIf],
+    imports: [NgIf],
     templateUrl: './price-statistics.component.html',
     styleUrl: './price-statistics.component.scss'
 })
 export class PriceStatisticsComponent {
 
-    // isToggled
-    isToggled = false;
-
     constructor(
         public themeService: CustomizerSettingsService,
         private priceStatisticsService: PriceStatisticsService
-    ) {
-        this.themeService.isToggled$.subscribe(isToggled => {
-            this.isToggled = isToggled;
-        });
-    }
+    ) {}
 
     ngOnInit(): void {
         this.priceStatisticsService.loadChart();

@@ -9,7 +9,6 @@ interface Transaction {
 
 @Component({
     selector: 'app-footer-row-table',
-    standalone: true,
     imports: [MatTableModule, CurrencyPipe],
     templateUrl: './footer-row-table.component.html',
     styleUrl: './footer-row-table.component.scss'

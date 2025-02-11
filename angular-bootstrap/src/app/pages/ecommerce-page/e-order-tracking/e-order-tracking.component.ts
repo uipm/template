@@ -4,22 +4,14 @@ import { CustomizerSettingsService } from '../../../customizer-settings/customiz
 
 @Component({
     selector: 'app-e-order-tracking',
-    standalone: true,
     imports: [RouterLink],
     templateUrl: './e-order-tracking.component.html',
     styleUrl: './e-order-tracking.component.scss'
 })
 export class EOrderTrackingComponent {
 
-    // isToggled
-    isToggled = false;
-
     constructor(
         public themeService: CustomizerSettingsService
-    ) {
-        this.themeService.isToggled$.subscribe(isToggled => {
-            this.isToggled = isToggled;
-        });
-    }
+    ) {}
 
 }

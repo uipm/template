@@ -1,0 +1,150 @@
+<!-- Breadcrumb -->
+<div class="breadcrumb-card mb-25 d-md-flex align-items-center justify-content-between">
+    <h5 class="mb-0">
+        Create NFT
+    </h5>
+    <ol class="breadcrumb list-unstyled mt-0 mb-0 p-0">
+        <li class="breadcrumb-item d-inline-block position-relative">
+            <a routerLink="/dashboard" class="d-inline-block position-relative">
+                <i class="material-symbols-outlined">
+                    home
+                </i>
+                Dashboard
+            </a>
+        </li>
+        <li class="breadcrumb-item d-inline-block position-relative">
+            NFT
+        </li>
+        <li class="breadcrumb-item d-inline-block position-relative">
+            Create NFT
+        </li>
+    </ol>
+</div>
+
+<!-- Create NFT -->
+<form>
+    <mat-card class="create-nft-card mb-25 border-radius d-block bg-white border-0 shadow-none">
+        <mat-card-header>
+            <mat-card-title>
+                <h5 class="mb-0">
+                    Upload Image, Video, Audio, or 3D Model
+                </h5>
+            </mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="form-group">
+                        <file-upload class="file-uploader style-two" [multiple]="multiple"></file-upload>
+                    </div>
+                </div>
+                <div class="col-sm-12">
+                    <div class="form-group">
+                        <label class="main-label d-block fw-semibold">
+                            Product Name <span class="text-danger">*</span>
+                        </label>
+                        <mat-form-field class="style-two">
+                            <mat-label>
+                                Enter product name
+                            </mat-label>
+                            <input matInput placeholder="E.g. Christmas Eve">
+                        </mat-form-field>
+                    </div>
+                </div>
+                <div class="col-sm-12">
+                    <div class="form-group">
+                        <label class="main-label d-block fw-semibold">
+                            Description
+                        </label>
+                        <mat-form-field class="style-two">
+                            <mat-label>Type here....</mat-label>
+                            <textarea matInput></textarea>
+                        </mat-form-field>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <label class="main-label d-block fw-semibold">
+                            Item Price
+                        </label>
+                        <mat-form-field class="style-two">
+                            <mat-label>
+                                Enter item price
+                            </mat-label>
+                            <input matInput placeholder="E.g. 12.50 ETH">
+                        </mat-form-field>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <label class="main-label d-block fw-semibold">
+                            Size
+                        </label>
+                        <mat-form-field class="style-two">
+                            <mat-label>
+                                Enter size
+                            </mat-label>
+                            <input matInput placeholder="E.g. 2.50 MB">
+                        </mat-form-field>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <label class="main-label d-block fw-semibold">
+                            Properties
+                        </label>
+                        <mat-form-field class="style-two">
+                            <mat-label>
+                                Enter properties
+                            </mat-label>
+                            <input matInput>
+                        </mat-form-field>
+                    </div>
+                </div>
+                <div class="col-sm-12">
+                    <div class="form-group">
+                        <label class="main-label d-block fw-semibold">
+                            External Link
+                        </label>
+                        <mat-form-field class="style-two">
+                            <mat-label>
+                                Enter external link
+                            </mat-label>
+                            <input matInput>
+                        </mat-form-field>
+                    </div>
+                </div>
+                <div class="col-sm-12">
+                    <div class="form-group mb-0">
+                        <mat-radio-group>
+                            <mat-radio-button value="1" checked>
+                                Put On Sale
+                            </mat-radio-button>
+                            <mat-radio-button value="2">
+                                Instant Sale Price
+                            </mat-radio-button>
+                            <mat-radio-button value="3">
+                                Unlock One Purchased
+                            </mat-radio-button>
+                        </mat-radio-group>
+                    </div>
+                </div>
+            </div>
+        </mat-card-content>
+    </mat-card>
+    <mat-card class="mb-25 border-radius d-block bg-transparent p-0 border-0 shadow-none">
+        <mat-card-content>
+            <div class="form-btn-box">
+                <button type="button" mat-button color="warn">
+                    Cancel
+                </button>
+                <button type="button" mat-button color="primary">
+                    <i class="material-symbols-outlined">
+                        add
+                    </i>
+                    Create NFT
+                </button>
+            </div>
+        </mat-card-content>
+    </mat-card>
+</form>

@@ -1,11 +1,9 @@
 import { Component } from '@angular/core';
-import { RouterLink } from '@angular/router';
 import { MultipleRadarChartService } from './multiple-radar-chart.service';
 
 @Component({
     selector: 'app-multiple-radar-chart',
-    standalone: true,
-    imports: [RouterLink],
+    imports: [],
     templateUrl: './multiple-radar-chart.component.html',
     styleUrl: './multiple-radar-chart.component.scss'
 })

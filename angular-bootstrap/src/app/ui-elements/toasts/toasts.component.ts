@@ -3,7 +3,6 @@ import { RouterLink } from '@angular/router';
 
 @Component({
     selector: 'app-toasts',
-    standalone: true,
     imports: [RouterLink],
     templateUrl: './toasts.component.html',
     styleUrl: './toasts.component.scss'

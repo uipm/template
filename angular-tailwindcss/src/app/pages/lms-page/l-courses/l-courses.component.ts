@@ -4,7 +4,6 @@ import { NgIf } from '@angular/common';
 
 @Component({
     selector: 'app-l-courses',
-    standalone: true,
     imports: [RouterLink, NgIf],
     templateUrl: './l-courses.component.html',
     styleUrl: './l-courses.component.scss'

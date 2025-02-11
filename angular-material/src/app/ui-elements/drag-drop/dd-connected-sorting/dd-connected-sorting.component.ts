@@ -9,7 +9,6 @@ import {
 
 @Component({
     selector: 'app-dd-connected-sorting',
-    standalone: true,
     imports: [CdkDropList, CdkDrag],
     templateUrl: './dd-connected-sorting.component.html',
     styleUrl: './dd-connected-sorting.component.scss'

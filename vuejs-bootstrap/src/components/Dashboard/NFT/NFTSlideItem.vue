@@ -43,7 +43,7 @@
     <SwiperSlide v-for="nft in nftItem" :key="nft.id">
       <div class="bg-white rounded-3 border-0 p-3 place-bid for-dark-card">
         <RouterLink
-          to="/nft-details"
+          to="/nft-marketplace/nft-details"
           class="d-block mb-3 text-decoration-none position-relative"
         >
           <img :src="nft.image" class="rounded-3" alt="nft" />
@@ -58,7 +58,7 @@
           class="d-flex justify-content-between align-items-center border-bottom pb-3 mb-3"
         >
           <RouterLink
-            to="/creator-details"
+            to="/nft-marketplace/creator-details"
             class="d-flex align-items-center text-decoration-none"
           >
             <div class="flex-shrink-0">
@@ -88,7 +88,7 @@
 
         <div class="d-flex justify-content-between align-items-center">
           <RouterLink
-            to="/nft-details"
+            to="/nft-marketplace/nft-details"
             class="d-flex align-items-center text-decoration-none"
           >
             <div class="flex-grow-1">

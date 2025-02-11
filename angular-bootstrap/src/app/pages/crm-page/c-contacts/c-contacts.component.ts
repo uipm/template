@@ -1,12 +1,10 @@
 import { RouterLink } from '@angular/router';
-import { NgClass, NgIf } from '@angular/common';
 import { Component } from '@angular/core';
 import { FileUploadModule } from '@iplab/ngx-file-upload';
 
 @Component({
     selector: 'app-c-contacts',
-    standalone: true,
-    imports: [RouterLink, NgIf, NgClass, FileUploadModule],
+    imports: [RouterLink, FileUploadModule],
     templateUrl: './c-contacts.component.html',
     styleUrl: './c-contacts.component.scss'
 })

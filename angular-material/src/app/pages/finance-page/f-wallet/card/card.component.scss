@@ -1,0 +1,95 @@
+.f-finance-card {
+    .mat-mdc-card-content {
+        .card-item {
+            padding: 25px;
+            margin-bottom: 25px;
+            background: {
+                position: center center;
+                repeat: no-repeat;
+                size: cover;
+            };
+            .title {
+                margin-bottom: 10px;
+            }
+            .text-xs {
+                font-size: 12px;
+            }
+            h5 {
+                word-spacing: 4px;
+                margin: {
+                    top: 15px;
+                    bottom: 50px;
+                };
+            }
+        }
+    }
+}
+::ng-deep {
+    .f-finance-card {
+        .mat-mdc-card-content {
+            .add-btn {
+                height: auto;
+                min-width: auto;
+                font-weight: 500;
+                padding: 8px 13px;
+                border-radius: 7px;
+                line-height: initial;
+                display: inline-block;
+                color: var(--primaryColor);
+                border: 1px solid var(--primaryColor);
+        
+                .mdc-button__label {
+                    display: inline-block;
+                    padding-left: 22px;
+        
+                    i {
+                        top: 50%;
+                        left: -4px;
+                        font-size: 22px;
+                        position: absolute;
+                        transform: translateY(-50%);
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    .f-finance-card {
+        .mat-mdc-card-content {
+            .card-item {
+                margin-bottom: 17px;
+                padding: 20px;
+            }
+        }
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width : 576px) and (max-width : 767px) {
+
+    .f-finance-card {
+        .mat-mdc-card-content {
+            .card-item {
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width : 992px) and (max-width : 1199px) {}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {}
+
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {}

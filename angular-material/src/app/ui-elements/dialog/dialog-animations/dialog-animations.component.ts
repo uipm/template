@@ -12,7 +12,6 @@ import {
 
 @Component({
     selector: 'app-dialog-animations',
-    standalone: true,
     imports: [MatButtonModule, MatCardModule],
     templateUrl: './dialog-animations.component.html',
     styleUrl: './dialog-animations.component.scss'
@@ -37,8 +36,7 @@ export class DialogAnimationsComponent {
 @Component({
     selector: 'dialog-animations-example-dialog',
     templateUrl: 'dialog-animations-example-dialog.html',
-    standalone: true,
-    imports: [MatButtonModule, MatDialogActions, MatDialogClose, MatDialogTitle, MatDialogContent],
+    imports: [MatButtonModule, MatDialogActions, MatDialogClose, MatDialogTitle, MatDialogContent]
 })
 export class DialogAnimationsExampleDialog {
 

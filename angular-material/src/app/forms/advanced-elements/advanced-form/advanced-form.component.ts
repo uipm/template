@@ -11,7 +11,6 @@ import { CustomizerSettingsService } from '../../../customizer-settings/customiz
 
 @Component({
     selector: 'app-advanced-form',
-    standalone: true,
     imports: [RouterLink, MatFormFieldModule, MatInputModule, MatButtonModule, MatCheckboxModule, ReactiveFormsModule, NgIf],
     templateUrl: './advanced-form.component.html',
     styleUrl: './advanced-form.component.scss'
@@ -32,9 +31,6 @@ export class AdvancedFormComponent {
             email: ['', [Validators.required, Validators.email]],
             password: ['', [Validators.required, Validators.minLength(8)]],
         });
-        this.themeService.isToggled$.subscribe(isToggled => {
-            this.isToggled = isToggled;
-        });
     }
     onSubmit() {
         if (this.authForm.valid) {
@@ -43,8 +39,5 @@ export class AdvancedFormComponent {
             console.log('Form is invalid. Please check the fields.');
         }
     }
-
-    // isToggled
-    isToggled = false;
 
 }

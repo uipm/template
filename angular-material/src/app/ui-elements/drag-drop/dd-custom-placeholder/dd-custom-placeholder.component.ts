@@ -9,7 +9,6 @@ import {
 
 @Component({
     selector: 'app-dd-custom-placeholder',
-    standalone: true,
     imports: [CdkDropList, CdkDrag, CdkDragPlaceholder],
     templateUrl: './dd-custom-placeholder.component.html',
     styleUrl: './dd-custom-placeholder.component.scss'

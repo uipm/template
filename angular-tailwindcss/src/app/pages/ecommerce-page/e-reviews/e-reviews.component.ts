@@ -4,7 +4,6 @@ import { Component, HostListener } from '@angular/core';
 
 @Component({
     selector: 'app-e-reviews',
-    standalone: true,
     imports: [RouterLink, NgIf],
     templateUrl: './e-reviews.component.html',
     styleUrl: './e-reviews.component.scss'

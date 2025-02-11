@@ -7,27 +7,25 @@ import { isPlatformBrowser } from '@angular/common';
 export class SessionsByChannelService {
 
     private isBrowser: boolean;
+    private chartInstance: any;
 
     constructor(@Inject(PLATFORM_ID) private platformId: any) {
         this.isBrowser = isPlatformBrowser(this.platformId);
     }
 
-    async loadChart(): Promise<void> {
+    async initializeChart(initialData: { series: number[]; labels: string[] }): Promise<void> {
         if (this.isBrowser) {
             try {
-                // Dynamically import ApexCharts
                 const ApexCharts = (await import('apexcharts')).default;
 
                 // Define chart options
                 const options = {
-                    series: [976, 651, 818, 459, 320, 209],
+                    series: initialData.series,
                     chart: {
                         height: 256,
                         type: "donut"
                     },
-                    labels: [
-                        "Email", "Organic Search", "Direct Browse", "Paid Search", "Social", "Referral"
-                    ],
+                    labels: initialData.labels,
                     colors: [
                         "#3584FC", "#37D80A", "#BF85FB", "#90C7FF", "#605DFF", "#FE7A36"
                     ],
@@ -85,13 +83,20 @@ export class SessionsByChannelService {
                         enabled: false
                     }
                 };
-
-                // Initialize and render the chart
-                const chart = new ApexCharts(document.querySelector('#sessions_by_channel_chart'), options);
-                chart.render();
+                this.chartInstance = new ApexCharts(document.querySelector('#sessions_by_channel_chart'), options);
+                this.chartInstance.render();
             } catch (error) {
-                console.error('Error loading ApexCharts:', error);
+                console.error('Error initializing ApexCharts:', error);
             }
+        }
+    }
+
+    updateChartData(series: number[], labels: string[]): void {
+        if (this.chartInstance) {
+            this.chartInstance.updateOptions({
+                series: series,
+                labels: labels
+            });
         }
     }
 

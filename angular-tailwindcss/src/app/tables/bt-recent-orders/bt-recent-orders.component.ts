@@ -4,7 +4,6 @@ import { RouterLink } from '@angular/router';
 
 @Component({
     selector: 'app-bt-recent-orders',
-    standalone: true,
     imports: [RouterLink, NgIf],
     templateUrl: './bt-recent-orders.component.html',
     styleUrl: './bt-recent-orders.component.scss'

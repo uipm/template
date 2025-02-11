@@ -14,7 +14,6 @@ import { UsersByCountryComponent } from './users-by-country/users-by-country.com
 
 @Component({
     selector: 'app-analytics',
-    standalone: true,
     imports: [AnalyticsOverviewComponent, StatsComponent, RealtimeActiveUsersComponent, BrowserUsedByUsersComponent, DeviceSessionsComponent, ClicksComponent, ImpressionsComponent, SessionsComponent, SessionsByChannelComponent, ClicksByKeywordsComponent, TopBrowsingPagesComponent, UsersByCountryComponent],
     templateUrl: './analytics.component.html',
     styleUrl: './analytics.component.scss'

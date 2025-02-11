@@ -3,7 +3,6 @@ import { TotalRevenueService } from './total-revenue.service';
 
 @Component({
     selector: 'app-total-revenue:not(1)',
-    standalone: true,
     imports: [],
     templateUrl: './total-revenue.component.html',
     styleUrl: './total-revenue.component.scss'

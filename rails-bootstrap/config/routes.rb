@@ -12,7 +12,6 @@ Rails.application.routes.draw do
     get "/typography", to: "typography#index"
     get "/scrollbar", to: "scrollbar#index"
     get "/select", to: "select#index"
-    get "/sweet_alarts", to: "sweet_alarts#index"
     get "/check_radio", to: "check_radio#index"
     get "/toasts", to: "toasts#index"
     get "/ratings", to: "ratings#index"

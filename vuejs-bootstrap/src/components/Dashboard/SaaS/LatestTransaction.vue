@@ -235,3 +235,9 @@ export default defineComponent({
   },
 });
 </script>
+
+<style lang="scss" scoped>
+.bg-opacity-10 {
+  --bs-bg-opacity: 0.1 !important;
+}
+</style>

@@ -8,7 +8,6 @@ import { RouterLink } from '@angular/router';
 
 @Component({
     selector: 'app-important',
-    standalone: true,
     imports: [RouterLink, MatCardModule, MatButtonModule, MatMenuModule, MatCheckboxModule, MatTableModule],
     templateUrl: './important.component.html',
     styleUrl: './important.component.scss'

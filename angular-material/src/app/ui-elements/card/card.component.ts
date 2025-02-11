@@ -6,7 +6,6 @@ import { RouterLink } from '@angular/router';
 
 @Component({
     selector: 'app-card',
-    standalone: true,
     imports: [RouterLink, MatCardModule, MatButtonModule, MatTooltipModule],
     templateUrl: './card.component.html',
     styleUrl: './card.component.scss'

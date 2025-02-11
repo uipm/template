@@ -3,7 +3,6 @@ import { StackedColumnChartService } from './stacked-column-chart.service';
 
 @Component({
     selector: 'app-stacked-column-chart',
-    standalone: true,
     imports: [],
     templateUrl: './stacked-column-chart.component.html',
     styleUrl: './stacked-column-chart.component.scss'

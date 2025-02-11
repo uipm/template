@@ -3,7 +3,6 @@ import { TicketsResolvedService } from './tickets-resolved.service';
 
 @Component({
     selector: 'app-tickets-resolved:not(1)',
-    standalone: true,
     imports: [],
     templateUrl: './tickets-resolved.component.html',
     styleUrl: './tickets-resolved.component.scss'

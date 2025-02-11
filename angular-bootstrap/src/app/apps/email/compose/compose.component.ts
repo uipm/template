@@ -1,4 +1,4 @@
-import { NgFor, isPlatformBrowser, NgIf } from '@angular/common';
+import { isPlatformBrowser, NgIf } from '@angular/common';
 import { Component, HostListener, Inject, PLATFORM_ID } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { NgxEditorModule, Editor, Toolbar } from 'ngx-editor';
@@ -7,8 +7,7 @@ import { CustomizerSettingsService } from '../../../customizer-settings/customiz
 
 @Component({
     selector: 'app-compose',
-    standalone: true,
-    imports: [RouterLink, SidebarComponent, NgIf, NgFor, NgxEditorModule],
+    imports: [RouterLink, SidebarComponent, NgIf, NgxEditorModule],
     templateUrl: './compose.component.html',
     styleUrl: './compose.component.scss'
 })
@@ -40,17 +39,10 @@ export class ComposeComponent {
         }
     }
 
-	// isToggled
-    isToggled = false;
-
     constructor(
         @Inject(PLATFORM_ID) private platformId: Object,
         public themeService: CustomizerSettingsService
-    ) {
-        this.themeService.isToggled$.subscribe(isToggled => {
-            this.isToggled = isToggled;
-        });
-    }
+    ) {}
 
     // Card Header Menu
     isCardHeaderOpen = false;

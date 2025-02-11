@@ -5,23 +5,15 @@ import { CustomizerSettingsService } from '../../../customizer-settings/customiz
 
 @Component({
     selector: 'app-recent-orders',
-    standalone: true,
     imports: [RouterLink, NgIf],
     templateUrl: './recent-orders.component.html',
     styleUrl: './recent-orders.component.scss'
 })
 export class RecentOrdersComponent {
 
-    // isToggled
-    isToggled = false;
-
     constructor(
         public themeService: CustomizerSettingsService
-    ) {
-        this.themeService.isToggled$.subscribe(isToggled => {
-            this.isToggled = isToggled;
-        });
-    }
+    ) {}
 
     // Card Header Menu
     isCardHeaderOpen = false;

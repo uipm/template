@@ -133,7 +133,7 @@
                                 <div class="card-body p-4">
                                     <div class="d-flex justify-content-between align-items-center flex-wrap gap-3 mb-3 mb-lg-4">
                                         <h3 class="mb-0">Important</h3>
-                                        <select class="form-select month-selecet form-control" aria-label="Default select example">
+                                        <select class="form-select month-select form-control" aria-label="Default select example">
                                             <option selected>Today</option>
                                             <option value="1">Weekly</option>
                                             <option value="2">Monthly</option>

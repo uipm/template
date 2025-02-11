@@ -12,7 +12,6 @@ import { CustomizerSettingsService } from '../../../customizer-settings/customiz
 
 @Component({
     selector: 'app-dt-my-tasks',
-    standalone: true,
     imports: [RouterLink, MatCardModule, MatButtonModule, MatMenuModule, MatTableModule, MatPaginatorModule, NgIf, MatCheckboxModule],
     templateUrl: './dt-my-tasks.component.html',
     styleUrl: './dt-my-tasks.component.scss'
@@ -53,16 +52,9 @@ export class DtMyTasksComponent {
         return `${this.selection.isSelected(row) ? 'deselect' : 'select'} row ${row.projectName + 1}`;
     }
 
-    // isToggled
-    isToggled = false;
-
     constructor(
         public themeService: CustomizerSettingsService
-    ) {
-        this.themeService.isToggled$.subscribe(isToggled => {
-            this.isToggled = isToggled;
-        });
-    }
+    ) {}
 
 }
 

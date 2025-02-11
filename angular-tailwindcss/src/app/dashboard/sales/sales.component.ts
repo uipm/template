@@ -10,7 +10,6 @@ import { GrossEarningsComponent } from './gross-earnings/gross-earnings.componen
 
 @Component({
     selector: 'app-sales',
-    standalone: true,
     imports: [StatsComponent, RecentEarningsComponent, SalesByLocationsComponent, TransactionHistoryComponent, RecentOrdersComponent, RealTimeSalesComponent, SalesOverviewComponent, GrossEarningsComponent],
     templateUrl: './sales.component.html',
     styleUrl: './sales.component.scss'

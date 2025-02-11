@@ -8,7 +8,6 @@ import { MatInputModule } from '@angular/material/input';
 
 @Component({
     selector: 'app-datepicker-action-buttons',
-    standalone: true,
     imports: [MatFormFieldModule, MatInputModule, MatDatepickerModule, MatButtonModule, MatCardModule, MatNativeDateModule],
     templateUrl: './datepicker-action-buttons.component.html',
     styleUrl: './datepicker-action-buttons.component.scss'

@@ -3,7 +3,6 @@ import { BasicColumnChartService } from './basic-column-chart.service';
 
 @Component({
     selector: 'app-basic-column-chart',
-    standalone: true,
     imports: [],
     templateUrl: './basic-column-chart.component.html',
     styleUrl: './basic-column-chart.component.scss'

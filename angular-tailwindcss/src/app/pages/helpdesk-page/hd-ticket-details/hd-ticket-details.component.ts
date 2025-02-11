@@ -6,7 +6,6 @@ import { AttachmentsComponent } from './attachments/attachments.component';
 
 @Component({
     selector: 'app-hd-ticket-details',
-    standalone: true,
     imports: [RouterLink, NgIf, AttachmentsComponent, NgxEditorModule, NgIf],
     templateUrl: './hd-ticket-details.component.html',
     styleUrl: './hd-ticket-details.component.scss'

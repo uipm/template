@@ -353,6 +353,18 @@
                                     color: $primary;
                                 }
                             }
+                            &.active {
+                                background-color: transparent;
+                                &::before {
+                                    transform: scaleY(1);
+                                }
+                                span {
+                                    color: $primary;
+                                }
+                                i {
+                                    color: $primary;
+                                }
+                            }
                         }
                         &:last-child {
                             margin-bottom: 0;

@@ -6,13 +6,13 @@
             </h5>
         </div>
         <div class="trezo-card-subtitle mt-[13px] sm:mt-0">
-            <button type="button" class="inline-block border border-gray-100 dark:border-[#172036] px-[15.5px] py-[1.5px] transition-all hover:bg-primary-50 dark:hover:bg-[#15203c] -mx-[3px] ltr:first:rounded-l-md rtl:first:rounded-r-lg ltr:last:rounded-r-md rtl:last:rounded-l-md">
+            <button type="button" class="inline-block border border-gray-100 dark:border-[#172036] px-[15.5px] py-[1.5px] transition-all hover:bg-primary-50 dark:hover:bg-[#15203c] -mx-[.5px] ltr:first:rounded-l-md rtl:first:rounded-r-lg ltr:last:rounded-r-md rtl:last:rounded-l-md" [class.active]="selectedTimeframe === 'Day'" (click)="onTimeframeChange('Day')">
                 Day
             </button>
-            <button type="button" class="inline-block border border-gray-100 dark:border-[#172036] px-[15.5px] py-[1.5px] transition-all bg-primary-50 dark:bg-[#15203c] hover:bg-primary-50 dark:hover:bg-[#15203c] -mx-[3px] ltr:first:rounded-l-md rtl:first:rounded-r-lg ltr:last:rounded-r-md rtl:last:rounded-l-md">
+            <button type="button" class="inline-block border border-gray-100 dark:border-[#172036] px-[15.5px] py-[1.5px] transition-all hover:bg-primary-50 dark:hover:bg-[#15203c] -mx-[.5px] ltr:first:rounded-l-md rtl:first:rounded-r-lg ltr:last:rounded-r-md rtl:last:rounded-l-md" [class.active]="selectedTimeframe === 'Week'" (click)="onTimeframeChange('Week')">
                 Week
             </button>
-            <button type="button" class="inline-block border border-gray-100 dark:border-[#172036] px-[15.5px] py-[1.5px] transition-all hover:bg-primary-50 dark:hover:bg-[#15203c] -mx-[3px] ltr:first:rounded-l-md rtl:first:rounded-r-lg ltr:last:rounded-r-md rtl:last:rounded-l-md">
+            <button type="button" class="inline-block border border-gray-100 dark:border-[#172036] px-[15.5px] py-[1.5px] transition-all hover:bg-primary-50 dark:hover:bg-[#15203c] -mx-[.5px] ltr:first:rounded-l-md rtl:first:rounded-r-lg ltr:last:rounded-r-md rtl:last:rounded-l-md" [class.active]="selectedTimeframe === 'Month'" (click)="onTimeframeChange('Month')">
                 Month
             </button>
         </div>

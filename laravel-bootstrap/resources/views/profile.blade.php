@@ -94,7 +94,7 @@
                                             <div class="p-4 pb-2">
                                                 <div class="d-flex justify-content-between align-items-center flex-wrap gap-3 mb-4">
                                                     <h3 class="mb-0">Friends</h3>
-                                                    <select class="form-select month-selecet form-control p-0 h-auto border-0 w-90" style="background-position: right 0 center;" aria-label="Default select example">
+                                                    <select class="form-select month-select form-control p-0 h-auto border-0 w-90" style="background-position: right 0 center;" aria-label="Default select example">
                                                         <option selected="">This Month</option>
                                                         <option value="1">Last Month</option>
                                                         <option value="2">Last Year</option>
@@ -877,7 +877,7 @@
                                             <div class="p-4">
                                                 <div class="d-flex justify-content-between align-items-center flex-wrap gap-3">
                                                     <h3 class="mb-0">Followers</h3>
-                                                    <select class="form-select month-selecet form-control p-0 h-auto border-0 w-90" style="background-position: right 0 center;" aria-label="Default select example">
+                                                    <select class="form-select month-select form-control p-0 h-auto border-0 w-90" style="background-position: right 0 center;" aria-label="Default select example">
                                                         <option selected="">This Month</option>
                                                         <option value="1">Last Month</option>
                                                         <option value="2">Last Year</option>
@@ -992,7 +992,7 @@
                                             <div class="p-4">
                                                 <div class="d-flex justify-content-between align-items-center flex-wrap gap-3">
                                                     <h3 class="mb-0">Following</h3>
-                                                    <select class="form-select month-selecet form-control p-0 h-auto border-0 w-90" style="background-position: right 0 center;" aria-label="Default select example">
+                                                    <select class="form-select month-select form-control p-0 h-auto border-0 w-90" style="background-position: right 0 center;" aria-label="Default select example">
                                                         <option selected="">This Month</option>
                                                         <option value="1">Last Month</option>
                                                         <option value="2">Last Year</option>

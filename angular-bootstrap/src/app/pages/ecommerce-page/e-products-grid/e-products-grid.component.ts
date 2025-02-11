@@ -5,23 +5,15 @@ import { NgIf } from '@angular/common';
 
 @Component({
     selector: 'app-e-products-grid',
-    standalone: true,
     imports: [RouterLink, NgIf],
     templateUrl: './e-products-grid.component.html',
     styleUrl: './e-products-grid.component.scss'
 })
 export class EProductsGridComponent {
 
-    // isToggled
-    isToggled = false;
-
     constructor(
         public themeService: CustomizerSettingsService
-    ) {
-        this.themeService.isToggled$.subscribe(isToggled => {
-            this.isToggled = isToggled;
-        });
-    }
+    ) {}
 
     // Card Header Menu
     isCardHeaderOpen = false;

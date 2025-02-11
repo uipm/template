@@ -3,7 +3,6 @@ import { CdkDragDrop, CdkDrag, CdkDropList, moveItemInArray } from '@angular/cdk
 
 @Component({
     selector: 'app-dd-horizontal-sorting',
-    standalone: true,
     imports: [CdkDropList, CdkDrag],
     templateUrl: './dd-horizontal-sorting.component.html',
     styleUrl: './dd-horizontal-sorting.component.scss'

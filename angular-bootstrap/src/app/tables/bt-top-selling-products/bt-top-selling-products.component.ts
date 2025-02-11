@@ -1,11 +1,10 @@
-import { NgClass, NgIf } from '@angular/common';
+import { NgIf } from '@angular/common';
 import { Component, HostListener } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
 @Component({
     selector: 'app-bt-top-selling-products',
-    standalone: true,
-    imports: [RouterLink, NgClass, NgIf],
+    imports: [RouterLink, NgIf],
     templateUrl: './bt-top-selling-products.component.html',
     styleUrl: './bt-top-selling-products.component.scss'
 })

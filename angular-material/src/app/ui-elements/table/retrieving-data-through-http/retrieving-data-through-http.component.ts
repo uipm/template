@@ -10,7 +10,6 @@ import { DatePipe } from '@angular/common';
 
 @Component({
     selector: 'app-retrieving-data-through-http',
-    standalone: true,
     imports: [MatProgressSpinnerModule, MatTableModule, MatSortModule, MatPaginatorModule, DatePipe, HttpClientModule],
     templateUrl: './retrieving-data-through-http.component.html',
     styleUrl: './retrieving-data-through-http.component.scss'

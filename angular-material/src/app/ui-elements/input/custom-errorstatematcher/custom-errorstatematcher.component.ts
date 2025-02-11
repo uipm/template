@@ -21,7 +21,6 @@ export class MyErrorStateMatcher implements ErrorStateMatcher {
 
 @Component({
     selector: 'app-custom-errorstatematcher',
-    standalone: true,
     imports: [FormsModule, MatFormFieldModule, MatInputModule, ReactiveFormsModule],
     templateUrl: './custom-errorstatematcher.component.html',
     styleUrl: './custom-errorstatematcher.component.scss'

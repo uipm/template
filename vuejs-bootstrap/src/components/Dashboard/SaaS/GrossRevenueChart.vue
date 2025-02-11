@@ -3,7 +3,7 @@
     <div
       class="d-flex flex-wrap gap-2 justify-content-between align-items-center mb-1"
     >
-      <span class="d-block mb-1">Gross Revenue</span>
+      <h3 class="d-block mb-1">Gross Revenue</h3>
       <select
         class="form-select month-select form-control w-135 bg-border-color border-color"
         aria-label="Default select example"

@@ -5,7 +5,6 @@ import { FileUploadModule } from '@iplab/ngx-file-upload';
 
 @Component({
     selector: 'app-c-customers',
-    standalone: true,
     imports: [RouterLink, NgIf, FileUploadModule],
     templateUrl: './c-customers.component.html',
     styleUrl: './c-customers.component.scss'

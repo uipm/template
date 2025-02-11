@@ -12,7 +12,6 @@ import { CustomizerSettingsService } from '../../../customizer-settings/customiz
 
 @Component({
     selector: 'app-my-tasks',
-    standalone: true,
     imports: [RouterLink, MatCardModule, MatButtonModule, MatMenuModule, MatTableModule, MatPaginatorModule, NgIf, MatCheckboxModule],
     templateUrl: './my-tasks.component.html',
     styleUrl: './my-tasks.component.scss'
@@ -53,16 +52,9 @@ export class MyTasksComponent {
         return `${this.selection.isSelected(row) ? 'deselect' : 'select'} row ${row.projectName + 1}`;
     }
 
-	// isToggled
-    isToggled = false;
-
     constructor(
         public themeService: CustomizerSettingsService
-    ) {
-        this.themeService.isToggled$.subscribe(isToggled => {
-            this.isToggled = isToggled;
-        });
-    }
+    ) {}
 
 }
 

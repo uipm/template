@@ -1,5 +1,4 @@
 import { RouterLink } from '@angular/router';
-import { NgClass, NgIf } from '@angular/common';
 import { Component, ViewChild } from '@angular/core';
 import { MatCardModule } from '@angular/material/card';
 import { MatMenuModule } from '@angular/material/menu';
@@ -10,8 +9,7 @@ import { MatPaginator, MatPaginatorModule } from '@angular/material/paginator';
 
 @Component({
     selector: 'app-e-refunds',
-    standalone: true,
-    imports: [RouterLink, MatCardModule, MatButtonModule, MatMenuModule, MatTableModule, NgIf, NgClass, MatPaginatorModule],
+    imports: [RouterLink, MatCardModule, MatButtonModule, MatMenuModule, MatTableModule, MatPaginatorModule],
     templateUrl: './e-refunds.component.html',
     styleUrl: './e-refunds.component.scss'
 })

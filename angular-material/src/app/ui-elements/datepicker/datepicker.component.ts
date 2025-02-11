@@ -23,7 +23,6 @@ import { DpeaYearMonthPickerComponent } from './dpea-year-month-picker/dpea-year
 
 @Component({
     selector: 'app-datepicker',
-    standalone: true,
     imports: [RouterLink, BasicDatepickerComponent, DrpComparisonRangesComponent, DrpFormsIntegrationComponent, DrpwcaSelectionStrategyComponent, DatepickerActionButtonsComponent, DatepickerOpenMethodComponent, DpPaletterColorsComponent, DpwCustomIconComponent, DpwCustomDateClassesComponent, DisabledDatepickerComponent, DpwFilterValidationComponent, DpwCustomFormatsComponent, DpInlineCalendarComponent, DpwDifferentLocaleComponent, DpwMinMaxValidationComponent, DptuMomentJsDatesComponent, DpStartDateComponent, DpTouchUiComponent, DpSelectedValueComponent, DpeaYearMonthPickerComponent],
     templateUrl: './datepicker.component.html',
     styleUrl: './datepicker.component.scss'

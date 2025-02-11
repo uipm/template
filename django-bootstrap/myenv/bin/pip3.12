@@ -1,4 +1,4 @@
-#!/Users/shabbir/JS/trezo_django/myenv/bin/python3.12
+#!/Users/shabbir/JS/trezo-django/myenv/bin/python3.12
 # -*- coding: utf-8 -*-
 import re
 import sys

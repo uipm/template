@@ -7,7 +7,6 @@ import { TwaShowHideDelayComponent } from './twa-show-hide-delay/twa-show-hide-d
 
 @Component({
     selector: 'app-tooltip',
-    standalone: true,
     imports: [RouterLink, MatCardModule, MatTooltipModule, MatButtonModule, TwaShowHideDelayComponent],
     templateUrl: './tooltip.component.html',
     styleUrl: './tooltip.component.scss',

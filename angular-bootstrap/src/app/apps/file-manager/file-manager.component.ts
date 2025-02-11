@@ -4,7 +4,6 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 
 @Component({
     selector: 'app-file-manager',
-    standalone: true,
     imports: [RouterOutlet, RouterLink, SidebarComponent],
     templateUrl: './file-manager.component.html',
     styleUrl: './file-manager.component.scss'

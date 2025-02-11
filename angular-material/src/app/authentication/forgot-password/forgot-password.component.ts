@@ -7,22 +7,14 @@ import { CustomizerSettingsService } from '../../customizer-settings/customizer-
 
 @Component({
     selector: 'app-forgot-password',
-    standalone: true,
     imports: [RouterLink, MatButtonModule, MatFormFieldModule, MatInputModule],
     templateUrl: './forgot-password.component.html',
     styleUrl: './forgot-password.component.scss'
 })
 export class ForgotPasswordComponent {
 
-    // isToggled
-    isToggled = false;
-
     constructor(
         public themeService: CustomizerSettingsService
-    ) {
-        this.themeService.isToggled$.subscribe(isToggled => {
-            this.isToggled = isToggled;
-        });
-    }
+    ) {}
     
 }

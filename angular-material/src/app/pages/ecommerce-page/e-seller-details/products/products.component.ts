@@ -13,7 +13,6 @@ import { CustomizerSettingsService } from '../../../../customizer-settings/custo
 
 @Component({
     selector: 'app-products',
-    standalone: true,
     imports: [RouterLink, MatCardModule, MatButtonModule, MatMenuModule, MatTabsModule, MatTableModule, NgIf, NgClass, MatPaginatorModule, PublishedComponent, DraftComponent],
     templateUrl: './products.component.html',
     styleUrl: './products.component.scss'
@@ -35,16 +34,9 @@ export class ProductsComponent {
         this.dataSource.filter = filterValue.trim().toLowerCase();
     }
 
-    // isToggled
-    isToggled = false;
-
     constructor(
         public themeService: CustomizerSettingsService
-    ) {
-        this.themeService.isToggled$.subscribe(isToggled => {
-            this.isToggled = isToggled;
-        });
-    }
+    ) {}
 
 }
 

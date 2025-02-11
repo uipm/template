@@ -140,12 +140,12 @@
                     class="d-flex align-items-center text-decoration-none"
                   >
                     <div class="flex-grow-1">
-                      <span class="fs-12 d-block mb-1"
-                        >Highest Bid:
-                        <span class="fw-semibold text-secondary"
-                          >9.75 ETH</span
-                        ></span
-                      >
+                      <span class="fs-12 d-block mb-1">
+                        Highest Bid:
+                        <span class="fw-semibold text-secondary">
+                          9.75 ETH
+                        </span>
+                      </span>
                       <h4 class="fw-semibold fs-14 mb-0">5.50 ETH</h4>
                     </div>
                   </RouterLink>
@@ -154,9 +154,10 @@
                       class="ri-heart-fill fs-20 position-relative top-2"
                       style="color: #ee3e08"
                     ></i>
-                    <span class="text-secondary fs-12 fw-semibold"
-                      >9.2<span class="text-body">/10</span></span
-                    >
+                    <span class="text-secondary fs-12 fw-semibold">
+                      9.2
+                      <span class="text-body">/10</span>
+                    </span>
                   </button>
                 </div>
 
@@ -649,8 +650,8 @@
                       class="ri-heart-fill fs-20 position-relative top-2"
                       style="color: #ee3e08"
                     ></i>
-                    <span class="text-secondary fs-12 fw-semibold"
-                      >9.7<span class="text-body">/10</span></span
+                    <span class="text-secondary fs-12 fw-semibold">
+                      9.7<span class="text-body">/10</span></span
                     >
                   </button>
                 </div>
@@ -676,50 +677,7 @@
               </div>
             </div>
             <div class="col-lg-12">
-              <div
-                class="d-flex justify-content-center justify-content-sm-between align-items-center text-center flex-wrap gap-2 showing-wrap mb-4"
-              >
-                <span class="fs-12 fw-medium">Showing 6 of 30 Results</span>
-
-                <nav aria-label="Page navigation example">
-                  <ul class="pagination mb-0 justify-content-center">
-                    <li class="page-item">
-                      <a
-                        class="page-link icon"
-                        href="live-auction.html"
-                        aria-label="Previous"
-                      >
-                        <i class="material-symbols-outlined"
-                          >keyboard_arrow_left</i
-                        >
-                      </a>
-                    </li>
-                    <li class="page-item">
-                      <a class="page-link active" href="live-auction.html">1</a>
-                    </li>
-                    <li class="page-item">
-                      <a class="page-link" href="live-auction.html">2</a>
-                    </li>
-                    <li class="page-item">
-                      <a class="page-link" href="live-auction.html">3</a>
-                    </li>
-                    <li class="page-item">
-                      <a class="page-link" href="live-auction.html">4</a>
-                    </li>
-                    <li class="page-item">
-                      <a
-                        class="page-link icon"
-                        href="live-auction.html"
-                        aria-label="Next"
-                      >
-                        <i class="material-symbols-outlined"
-                          >keyboard_arrow_right</i
-                        >
-                      </a>
-                    </li>
-                  </ul>
-                </nav>
-              </div>
+              <Pagination items="6" total="30" class="mb-4" />
             </div>
           </div>
         </div>
@@ -1326,42 +1284,7 @@
               </div>
             </div>
             <div class="col-lg-12">
-              <div
-                class="d-flex justify-content-center justify-content-sm-between align-items-center text-center flex-wrap gap-2 showing-wrap mb-4"
-              >
-                <span class="fs-12 fw-medium">Showing 6 of 30 Results</span>
-
-                <nav aria-label="Page navigation example">
-                  <ul class="pagination mb-0 justify-content-center">
-                    <li class="page-item">
-                      <a class="page-link icon" href="#" aria-label="Previous">
-                        <i class="material-symbols-outlined"
-                          >keyboard_arrow_left</i
-                        >
-                      </a>
-                    </li>
-                    <li class="page-item">
-                      <a class="page-link active" href="#">1</a>
-                    </li>
-                    <li class="page-item">
-                      <a class="page-link" href="#">2</a>
-                    </li>
-                    <li class="page-item">
-                      <a class="page-link" href="#">3</a>
-                    </li>
-                    <li class="page-item">
-                      <a class="page-link" href="#">4</a>
-                    </li>
-                    <li class="page-item">
-                      <a class="page-link icon" href="#" aria-label="Next">
-                        <i class="material-symbols-outlined"
-                          >keyboard_arrow_right</i
-                        >
-                      </a>
-                    </li>
-                  </ul>
-                </nav>
-              </div>
+              <Pagination items="6" total="30" class="mb-4" />
             </div>
           </div>
         </div>
@@ -1968,42 +1891,7 @@
               </div>
             </div>
             <div class="col-lg-12">
-              <div
-                class="d-flex justify-content-center justify-content-sm-between align-items-center text-center flex-wrap gap-2 showing-wrap mb-4"
-              >
-                <span class="fs-12 fw-medium">Showing 6 of 30 Results</span>
-
-                <nav aria-label="Page navigation example">
-                  <ul class="pagination mb-0 justify-content-center">
-                    <li class="page-item">
-                      <a class="page-link icon" href="#" aria-label="Previous">
-                        <i class="material-symbols-outlined"
-                          >keyboard_arrow_left</i
-                        >
-                      </a>
-                    </li>
-                    <li class="page-item">
-                      <a class="page-link active" href="#">1</a>
-                    </li>
-                    <li class="page-item">
-                      <a class="page-link" href="#">2</a>
-                    </li>
-                    <li class="page-item">
-                      <a class="page-link" href="#">3</a>
-                    </li>
-                    <li class="page-item">
-                      <a class="page-link" href="#">4</a>
-                    </li>
-                    <li class="page-item">
-                      <a class="page-link icon" href="#" aria-label="Next">
-                        <i class="material-symbols-outlined"
-                          >keyboard_arrow_right</i
-                        >
-                      </a>
-                    </li>
-                  </ul>
-                </nav>
-              </div>
+              <Pagination items="6" total="30" class="mb-4" />
             </div>
           </div>
         </div>
@@ -2610,42 +2498,7 @@
               </div>
             </div>
             <div class="col-lg-12">
-              <div
-                class="d-flex justify-content-center justify-content-sm-between align-items-center text-center flex-wrap gap-2 showing-wrap mb-4"
-              >
-                <span class="fs-12 fw-medium">Showing 6 of 30 Results</span>
-
-                <nav aria-label="Page navigation example">
-                  <ul class="pagination mb-0 justify-content-center">
-                    <li class="page-item">
-                      <a class="page-link icon" href="#" aria-label="Previous">
-                        <i class="material-symbols-outlined">
-                          keyboard_arrow_left
-                        </i>
-                      </a>
-                    </li>
-                    <li class="page-item">
-                      <a class="page-link active" href="#">1</a>
-                    </li>
-                    <li class="page-item">
-                      <a class="page-link" href="#">2</a>
-                    </li>
-                    <li class="page-item">
-                      <a class="page-link" href="#">3</a>
-                    </li>
-                    <li class="page-item">
-                      <a class="page-link" href="#">4</a>
-                    </li>
-                    <li class="page-item">
-                      <a class="page-link icon" href="#" aria-label="Next">
-                        <i class="material-symbols-outlined">
-                          keyboard_arrow_right
-                        </i>
-                      </a>
-                    </li>
-                  </ul>
-                </nav>
-              </div>
+              <Pagination items="6" total="30" class="mb-4" />
             </div>
           </div>
         </div>
@@ -2664,6 +2517,7 @@ import { defineComponent } from "vue";
 import NewMobileApp from "./NewMobileApp.vue";
 import HistoryOfBids from "./HistoryOfBids.vue";
 import CountdownTimer from "./CountdownTimer.vue";
+import Pagination from "@/components/Common/Pagination.vue";
 
 export default defineComponent({
   name: "LiveAuction",
@@ -2671,6 +2525,7 @@ export default defineComponent({
     NewMobileApp,
     HistoryOfBids,
     CountdownTimer,
+    Pagination,
   },
 });
 </script>

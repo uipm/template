@@ -6,7 +6,6 @@ import { PublishedComponent } from './published/published.component';
 
 @Component({
     selector: 'app-e-products-list',
-    standalone: true,
     imports: [RouterLink, NgIf, NgClass, PublishedComponent, DraftComponent],
     templateUrl: './e-products-list.component.html',
     styleUrl: './e-products-list.component.scss'

@@ -5,7 +5,6 @@ import { AdvancedComponent } from './advanced/advanced.component';
 
 @Component({
     selector: 'app-timeline-page',
-    standalone: true,
     imports: [RouterLink, BasicComponent, AdvancedComponent],
     templateUrl: './timeline-page.component.html',
     styleUrl: './timeline-page.component.scss'

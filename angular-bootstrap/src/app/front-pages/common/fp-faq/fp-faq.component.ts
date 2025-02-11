@@ -1,12 +1,10 @@
 import { Component } from '@angular/core';
-import { RouterLink } from '@angular/router';
 import { CustomizerSettingsService } from '../../../customizer-settings/customizer-settings.service';
 import { NgClass } from '@angular/common';
 
 @Component({
     selector: 'app-fp-faq',
-    standalone: true,
-    imports: [RouterLink, NgClass],
+    imports: [NgClass],
     templateUrl: './fp-faq.component.html',
     styleUrl: './fp-faq.component.scss'
 })
@@ -25,15 +23,8 @@ export class FpFaqComponent {
         return this.openSectionIndex === index;
     }
 
-    // isToggled
-    isToggled = false;
-
     constructor(
         public themeService: CustomizerSettingsService
-    ) {
-        this.themeService.isToggled$.subscribe(isToggled => {
-            this.isToggled = isToggled;
-        });
-    }
+    ) {}
 
 }

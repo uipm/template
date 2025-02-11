@@ -10,7 +10,6 @@ export interface ExampleTab {
 
 @Component({
     selector: 'app-tgw-asynchronously-loading-tc',
-    standalone: true,
     imports: [MatTabsModule, AsyncPipe],
     templateUrl: './tgw-asynchronously-loading-tc.component.html',
     styleUrl: './tgw-asynchronously-loading-tc.component.scss'

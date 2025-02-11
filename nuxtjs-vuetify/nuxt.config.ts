@@ -19,6 +19,10 @@ export default defineNuxtConfig({
     },
   },
 
+  build: {
+    transpile: ["vuetify"],
+  },
+
   css: [
     "@mdi/font/css/materialdesignicons.css",
     "swiper/css",
@@ -26,7 +30,6 @@ export default defineNuxtConfig({
     "swiper/css/navigation",
     "quill/dist/quill.snow.css",
     "remixicon/fonts/remixicon.css",
-    "/assets/scss/styles.css",
   ],
 
   plugins: [
@@ -34,10 +37,6 @@ export default defineNuxtConfig({
     "~/plugins/apexcharts.client.ts",
     "~/plugins/vue-quill.js",
   ],
-
-  build: {
-    transpile: ["vuetify"],
-  },
 
   modules: [
     (

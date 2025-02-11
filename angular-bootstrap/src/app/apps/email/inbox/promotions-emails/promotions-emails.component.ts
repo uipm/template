@@ -4,22 +4,14 @@ import { CustomizerSettingsService } from '../../../../customizer-settings/custo
 
 @Component({
     selector: 'app-promotions-emails',
-    standalone: true,
     imports: [RouterLink],
     templateUrl: './promotions-emails.component.html',
     styleUrl: './promotions-emails.component.scss'
 })
 export class PromotionsEmailsComponent {
 
-    // isToggled
-    isToggled = false;
-
     constructor(
         public themeService: CustomizerSettingsService
-    ) {
-        this.themeService.isToggled$.subscribe(isToggled => {
-            this.isToggled = isToggled;
-        });
-    }
+    ) {}
 
 }

@@ -7,7 +7,6 @@ import { CustomizerSettingsService } from '../../customizer-settings/customizer-
 
 @Component({
     selector: 'app-reset-password',
-    standalone: true,
     imports: [RouterLink, MatButtonModule, MatFormFieldModule, MatInputModule],
     templateUrl: './reset-password.component.html',
     styleUrl: './reset-password.component.scss'
@@ -19,15 +18,8 @@ export class ResetPasswordComponent {
     hide2 = true;
     hide3 = true;
 
-    // isToggled
-    isToggled = false;
-
     constructor(
         public themeService: CustomizerSettingsService
-    ) {
-        this.themeService.isToggled$.subscribe(isToggled => {
-            this.isToggled = isToggled;
-        });
-    }
+    ) {}
 
 }

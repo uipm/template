@@ -248,6 +248,9 @@
             color: var(--whiteColor);
             background-color: #15203c;
         }
+        .apexcharts-radialbar-hollow {
+            fill: #15203c;
+        }
     }
 
     // Table
@@ -287,6 +290,45 @@
                 .mat-mdc-footer-cell {
                     &.mat-mdc-table-sticky {
                         background-color: #0C1427;
+                    }
+                }
+            }
+        }
+    }
+    .table-style-two {
+        .mat-mdc-table {
+            &.mdc-data-table__table {
+                .mat-mdc-header-row {
+                    .mat-mdc-header-cell {
+                        background-color: #15203c;
+                    }
+                }
+            }
+        }
+    }
+    .table-style-three {
+        .mat-mdc-table {
+            &.mdc-data-table__table {
+                .mat-mdc-header-row {
+                    .mat-mdc-header-cell {
+                        background-color: transparent;
+                    }
+                }
+            }
+        }
+    }
+    .table-style-four {
+        .mat-mdc-table {
+            &.mdc-data-table__table {
+                .mdc-data-table__content {
+                    .mat-mdc-row {
+                        .mat-mdc-cell {
+                            background-color: #0A0E19;
+    
+                            &::after {
+                                background: #0C1427;
+                            }
+                        }
                     }
                 }
             }
@@ -337,6 +379,12 @@
     .mat-mdc-card {
         .mat-mdc-card-header {
             .mat-mdc-card-header-text {
+                .mat-mdc-button {
+                    &.date-btn {
+                        border-color: #121d37;
+                        background-color: #0A0E19;
+                    }
+                }
                 .mat-mdc-card-subtitle {
                     .buttons-list {
                         .mat-mdc-button {
@@ -345,16 +393,10 @@
                             }
                         }
                     }
-                }
-            }
-        }
-        &.table-style-two {
-            .mat-mdc-card-content {
-                .mat-mdc-table {
-                    &.mdc-data-table__table {
-                        .mat-mdc-header-row {
-                            .mat-mdc-header-cell {
-                                background-color: #15203c;
+                    .mat-mdc-button {
+                        &.card-header-menu {
+                            &.style-two {
+                                background-color: #0A0E19;
                             }
                         }
                     }
@@ -380,6 +422,84 @@
                 }
             }
         }
+        &.style-two {
+            .popup-dialog {
+                .mat-mdc-card {
+                    .mat-mdc-card-header {
+                        background-color: transparent;
+                    }
+                    .mat-mdc-card-content {
+                        .mat-horizontal-stepper-wrapper {
+                            .mat-horizontal-content-container {
+                                .form-group {
+                                    .icon {
+                                        .icon-inner {
+                                            background-color: #0A0E19;
+                                        }
+                                    }
+                                }
+                                .items-list {
+                                    .item {
+                                        .mat-mdc-button {
+                                            background-color: #0A0E19;
+                                        }
+                                    }
+                                }
+                                .mat-mdc-form-field {
+                                    .mdc-text-field--filled {
+                                        &:not(.mdc-text-field--disabled) {
+                                            background-color: #0A0E19;
+                                        }
+                                    }
+                                }
+                                .mat-mdc-form-field-type-mat-select {
+                                    .mdc-floating-label {
+                                        color: var(--whiteColor);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &.style-three {
+            .popup-dialog {
+                .mat-mdc-card {
+                    .mat-mdc-card-header {
+                        background-color: transparent;
+    
+                        .mat-mdc-card-header-text {
+                            .mat-mdc-card-title {
+                                .icon {
+                                    background-color: #0A0E19;
+                                }
+                            }
+                        }
+                    }
+                    .mat-mdc-card-content {
+                        .mat-mdc-card {
+                            background-color: #0A0E19;
+    
+                            .mat-mdc-card-content {
+                                .team-members-list {
+                                    .item {
+                                        background-color: #0C1427;
+                                    }
+                                }
+                                .uploaded-files-list {
+                                    .item {
+                                        .mat-mdc-button {
+                                            background-color: #0C1427;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 
     // Form Field
@@ -392,6 +512,11 @@
         }
         .mat-mdc-form-field-text-prefix {
             color: var(--whiteColor);
+        }
+        &.style-two {
+            .mdc-text-field {
+                background-color: #0a0e19;
+            }
         }
     }
 
@@ -485,6 +610,9 @@
         }
         file-upload-icon {
             border-color: var(--borderColor);
+        }
+        &.style-two {
+            background-color: #0a0e19 !important;
         }
     }
 

@@ -26,7 +26,6 @@ const ELEMENT_DATA: PeriodicElement[] = [
 
 @Component({
     selector: 'app-ar-data-wua-observable-based-datasource',
-    standalone: true,
     imports: [MatButtonModule, MatTableModule],
     templateUrl: './ar-data-wua-observable-based-datasource.component.html',
     styleUrl: './ar-data-wua-observable-based-datasource.component.scss'

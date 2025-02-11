@@ -1,27 +1,18 @@
 import { Component, HostListener } from '@angular/core';
-import { RouterLink } from '@angular/router';
 import { CustomizerSettingsService } from '../../../customizer-settings/customizer-settings.service';
 import { NgIf } from '@angular/common';
 
 @Component({
     selector: 'app-exchange',
-    standalone: true,
-    imports: [RouterLink, NgIf],
+    imports: [NgIf],
     templateUrl: './exchange.component.html',
     styleUrl: './exchange.component.scss'
 })
 export class ExchangeComponent {
 
-    // isToggled
-    isToggled = false;
-
     constructor(
         public themeService: CustomizerSettingsService
-    ) {
-        this.themeService.isToggled$.subscribe(isToggled => {
-            this.isToggled = isToggled;
-        });
-    }
+    ) {}
 
     // Card Header Menu
     isCryptocurrencyTypesOpen1 = false;

@@ -4,7 +4,6 @@ import { RouterLink } from '@angular/router';
 
 @Component({
     selector: 'app-bt-students-progress',
-    standalone: true,
     imports: [RouterLink, NgIf],
     templateUrl: './bt-students-progress.component.html',
     styleUrl: './bt-students-progress.component.scss'

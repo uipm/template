@@ -9,7 +9,6 @@ import {
 
 @Component({
     selector: 'app-dd-custom-preview',
-    standalone: true,
     imports: [CdkDropList, CdkDrag, CdkDragPreview],
     templateUrl: './dd-custom-preview.component.html',
     styleUrl: './dd-custom-preview.component.scss'

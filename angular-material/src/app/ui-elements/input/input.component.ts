@@ -9,7 +9,6 @@ import { CustomErrorstatematcherComponent } from './custom-errorstatematcher/cus
 
 @Component({
     selector: 'app-input',
-    standalone: true,
     imports: [RouterLink, FormsModule, MatFormFieldModule, MatInputModule, MatCardModule, MatButtonModule, CustomErrorstatematcherComponent, ReactiveFormsModule],
     templateUrl: './input.component.html',
     styleUrl: './input.component.scss'

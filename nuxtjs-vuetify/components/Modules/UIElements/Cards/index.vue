@@ -1,7 +1,5 @@
 <template>
   <ModulesUIElementsCardsContent />
-  <ModulesUIElementsBreadCrumb />
-  <ModulesUIElementsMaterialCardsContent />
 </template>
 
 <script>

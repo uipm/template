@@ -6,7 +6,6 @@ import { NgxEditorModule, Editor, Toolbar } from 'ngx-editor';
 
 @Component({
     selector: 'app-edit-an-event',
-    standalone: true,
     imports: [RouterLink, FileUploadModule, NgxEditorModule, NgIf],
     templateUrl: './edit-an-event.component.html',
     styleUrl: './edit-an-event.component.scss'

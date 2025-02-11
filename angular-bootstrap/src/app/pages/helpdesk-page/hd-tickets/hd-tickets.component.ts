@@ -4,12 +4,10 @@ import { TicketsResolvedComponent } from '../../../dashboard/helpdesk/tickets-re
 import { TicketsInProgressComponent } from '../../../dashboard/helpdesk/tickets-in-progress/tickets-in-progress.component';
 import { TicketsDueComponent } from '../../../dashboard/helpdesk/tickets-due/tickets-due.component';
 import { TicketsNewOpenComponent } from '../../../dashboard/helpdesk/tickets-new-open/tickets-new-open.component';
-import { NgIf } from '@angular/common';
 
 @Component({
     selector: 'app-hd-tickets',
-    standalone: true,
-    imports: [RouterLink, TicketsResolvedComponent, TicketsInProgressComponent, TicketsDueComponent, TicketsNewOpenComponent, NgIf],
+    imports: [RouterLink, TicketsResolvedComponent, TicketsInProgressComponent, TicketsDueComponent, TicketsNewOpenComponent],
     templateUrl: './hd-tickets.component.html',
     styleUrl: './hd-tickets.component.scss'
 })

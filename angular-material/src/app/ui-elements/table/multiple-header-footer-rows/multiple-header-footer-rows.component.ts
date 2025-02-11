@@ -9,7 +9,6 @@ interface Transaction {
 
 @Component({
     selector: 'app-multiple-header-footer-rows',
-    standalone: true,
     imports: [MatTableModule, CurrencyPipe],
     templateUrl: './multiple-header-footer-rows.component.html',
     styleUrl: './multiple-header-footer-rows.component.scss'

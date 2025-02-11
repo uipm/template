@@ -8,7 +8,6 @@ import { CardanoService } from './cardano.service';
 
 @Component({
     selector: 'app-watchlist',
-    standalone: true,
     imports: [CarouselModule],
     templateUrl: './watchlist.component.html',
     styleUrl: './watchlist.component.scss'

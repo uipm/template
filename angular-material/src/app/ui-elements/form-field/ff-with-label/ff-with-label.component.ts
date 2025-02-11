@@ -10,7 +10,6 @@ import { CustomizerSettingsService } from '../../../customizer-settings/customiz
 
 @Component({
     selector: 'app-ff-with-label',
-    standalone: true,
     imports: [
         FormsModule,
         ReactiveFormsModule,
@@ -37,17 +36,10 @@ export class FfWithLabelComponent {
     constructor(
         private _formBuilder: FormBuilder,
         public themeService: CustomizerSettingsService
-    ) {
-        this.themeService.isToggled$.subscribe(isToggled => {
-            this.isToggled = isToggled;
-        });
-    }
+    ) {}
 
     getFloatLabelValue(): FloatLabelType {
         return this.floatLabelControl.value || 'auto';
     }
-
-    // isToggled
-    isToggled = false;
 
 }

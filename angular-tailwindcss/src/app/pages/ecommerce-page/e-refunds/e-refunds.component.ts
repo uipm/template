@@ -4,7 +4,6 @@ import { Component, HostListener } from '@angular/core';
 
 @Component({
     selector: 'app-e-refunds',
-    standalone: true,
     imports: [RouterLink, NgIf],
     templateUrl: './e-refunds.component.html',
     styleUrl: './e-refunds.component.scss'

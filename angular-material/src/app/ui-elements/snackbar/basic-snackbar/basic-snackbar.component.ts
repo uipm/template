@@ -6,7 +6,6 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 
 @Component({
     selector: 'app-basic-snackbar',
-    standalone: true,
     imports: [MatFormFieldModule, MatInputModule, MatButtonModule],
     templateUrl: './basic-snackbar.component.html',
     styleUrl: './basic-snackbar.component.scss'

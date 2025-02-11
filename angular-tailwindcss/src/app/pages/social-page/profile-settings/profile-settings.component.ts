@@ -4,7 +4,6 @@ import { FileUploadModule } from '@iplab/ngx-file-upload';
 
 @Component({
     selector: 'app-profile-settings',
-    standalone: true,
     imports: [RouterLink, FileUploadModule],
     templateUrl: './profile-settings.component.html',
     styleUrl: './profile-settings.component.scss'

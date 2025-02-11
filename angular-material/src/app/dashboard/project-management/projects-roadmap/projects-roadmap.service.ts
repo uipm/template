@@ -7,12 +7,13 @@ import { isPlatformBrowser } from '@angular/common';
 export class ProjectsRoadmapService {
 
     private isBrowser: boolean;
+    private chartInstance: any;
 
     constructor(@Inject(PLATFORM_ID) private platformId: any) {
         this.isBrowser = isPlatformBrowser(this.platformId);
     }
 
-    async loadChart(): Promise<void> {
+    async loadChart(series: { name: string; data: number[] }[], categories: string[]): Promise<void> {
         if (this.isBrowser) {
             try {
                 // Dynamically import ApexCharts
@@ -20,12 +21,7 @@ export class ProjectsRoadmapService {
 
                 // Define chart options
                 const options = {
-                    series: [
-                        {
-                            name: "Projects",
-                            data: [400, 550, 600, 700, 1000, 1100, 1200]
-                        }
-                    ],
+                    series: series,
                     chart: {
                         type: "bar",
                         height: 334,
@@ -49,15 +45,7 @@ export class ProjectsRoadmapService {
                         enabled: false
                     },
                     xaxis: {
-                        categories: [
-                            "Project Planning",
-                            "Research",
-                            "Design",
-                            "Front-end",
-                            "Development",
-                            "Review & QA",
-                            "Launch"
-                        ],
+                        categories: categories,
                         axisTicks: {
                             show: true,
                             color: '#ECEEF2'
@@ -91,13 +79,23 @@ export class ProjectsRoadmapService {
                         }
                     }
                 };
-
                 // Initialize and render the chart
-                const chart = new ApexCharts(document.querySelector('#pm_projects_roadmap_chart'), options);
-                chart.render();
+                this.chartInstance = new ApexCharts(document.querySelector('#pm_projects_roadmap_chart'), options);
+                this.chartInstance.render();
             } catch (error) {
                 console.error('Error loading ApexCharts:', error);
             }
+        }
+    }
+
+    updateChart(series: { name: string; data: number[] }[], categories: string[]): void {
+        if (this.chartInstance) {
+            this.chartInstance.updateOptions({
+                series: series,
+                xaxis: {
+                    categories: categories
+                }
+            });
         }
     }
 

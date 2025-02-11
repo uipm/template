@@ -3,7 +3,6 @@ import { BasicRangeAreaChartService } from './basic-range-area-chart.service';
 
 @Component({
     selector: 'app-basic-range-area-chart',
-    standalone: true,
     imports: [],
     templateUrl: './basic-range-area-chart.component.html',
     styleUrl: './basic-range-area-chart.component.scss'

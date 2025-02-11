@@ -6,23 +6,15 @@ import { NgIf } from '@angular/common';
 
 @Component({
     selector: 'app-read',
-    standalone: true,
     imports: [RouterLink, SidebarComponent, NgIf],
     templateUrl: './read.component.html',
     styleUrl: './read.component.scss'
 })
 export class ReadComponent {
 
-    // isToggled
-    isToggled = false;
-
     constructor(
         public themeService: CustomizerSettingsService
-    ) {
-        this.themeService.isToggled$.subscribe(isToggled => {
-            this.isToggled = isToggled;
-        });
-    }
+    ) {}
 
     // Card Header Menu
     isCardHeaderOpen = false;

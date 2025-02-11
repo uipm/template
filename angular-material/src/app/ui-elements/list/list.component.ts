@@ -8,7 +8,6 @@ import { ListWithSingleSelectionComponent } from './list-with-single-selection/l
 
 @Component({
     selector: 'app-list',
-    standalone: true,
     imports: [RouterLink, MatCardModule, MatListModule, ListWithSectionsComponent, ListWithSelectionComponent, ListWithSingleSelectionComponent],
     templateUrl: './list.component.html',
     styleUrl: './list.component.scss'

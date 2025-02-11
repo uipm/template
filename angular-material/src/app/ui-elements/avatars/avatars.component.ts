@@ -4,7 +4,6 @@ import { RouterLink } from '@angular/router';
 
 @Component({
     selector: 'app-avatars',
-    standalone: true,
     imports: [RouterLink, MatCardModule],
     templateUrl: './avatars.component.html',
     styleUrl: './avatars.component.scss'

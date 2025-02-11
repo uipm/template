@@ -3,7 +3,6 @@ import { BasicRadialbarChartService } from './basic-radialbar-chart.service';
 
 @Component({
     selector: 'app-basic-radialbar-chart',
-    standalone: true,
     imports: [],
     templateUrl: './basic-radialbar-chart.component.html',
     styleUrl: './basic-radialbar-chart.component.scss'

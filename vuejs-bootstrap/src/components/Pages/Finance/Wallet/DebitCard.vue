@@ -131,7 +131,8 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from "vue";
+import { defineComponent, onMounted } from "vue";
+import feather from "feather-icons";
 
 export default defineComponent({
   name: "DebitCard",
@@ -140,6 +141,11 @@ export default defineComponent({
     const image = require("@/assets/images/debit-card.png");
     // eslint-disable-next-line @typescript-eslint/no-var-requires
     const image2 = require("@/assets/images/virtual-card.png");
+
+    onMounted(() => {
+      feather.replace();
+    });
+
     return {
       image,
       image2,

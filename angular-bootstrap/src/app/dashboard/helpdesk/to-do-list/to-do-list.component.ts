@@ -5,8 +5,7 @@ import { CustomizerSettingsService } from '../../../customizer-settings/customiz
 
 @Component({
     selector: 'app-to-do-list:not(1)',
-    standalone: true,
-    imports: [RouterLink, NgIf, NgClass],
+    imports: [RouterLink],
     templateUrl: './to-do-list.component.html',
     styleUrl: './to-do-list.component.scss'
 })
@@ -18,15 +17,8 @@ export class ToDoListComponent {
         this.classApplied = !this.classApplied;
     }
 
-	// isToggled
-    isToggled = false;
-
     constructor(
         public themeService: CustomizerSettingsService
-    ) {
-        this.themeService.isToggled$.subscribe(isToggled => {
-            this.isToggled = isToggled;
-        });
-    }
+    ) {}
 
 }

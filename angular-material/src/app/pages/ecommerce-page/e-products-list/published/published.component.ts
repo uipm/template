@@ -10,7 +10,6 @@ import { MatTabsModule } from '@angular/material/tabs';
 
 @Component({
     selector: 'app-published:not(2)',
-    standalone: true,
     imports: [RouterLink, MatCardModule, MatButtonModule, MatMenuModule, MatTabsModule, MatTableModule, NgIf, NgClass, MatPaginatorModule],
     templateUrl: './published.component.html',
     styleUrl: './published.component.scss'

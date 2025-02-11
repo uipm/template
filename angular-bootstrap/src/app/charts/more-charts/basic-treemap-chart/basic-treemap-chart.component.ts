@@ -1,11 +1,9 @@
 import { Component } from '@angular/core';
-import { RouterLink } from '@angular/router';
 import { BasicTreemapChartService } from './basic-treemap-chart.service';
 
 @Component({
     selector: 'app-basic-treemap-chart',
-    standalone: true,
-    imports: [RouterLink],
+    imports: [],
     templateUrl: './basic-treemap-chart.component.html',
     styleUrl: './basic-treemap-chart.component.scss'
 })

@@ -9,7 +9,7 @@
           class="form-select month-select form-control w-135 bg-border-color border-color bg-transparent"
           aria-label="Default select example"
         >
-          <option selected="">Last 30 days</option>
+          <option selected>Last 30 days</option>
           <option value="1">Last 90 days</option>
           <option value="1">Last 1 year</option>
         </select>
@@ -58,7 +58,10 @@
                   </div>
                 </td>
                 <td>
-                  <a href="my-profile.html" class="d-flex align-items-center">
+                  <RouterLink
+                    to="/my-profile"
+                    class="d-flex align-items-center"
+                  >
                     <img
                       src="@/assets/images/user-1.jpg"
                       class="wh-44 rounded-2"
@@ -67,7 +70,7 @@
                     <div class="ms-2">
                       <h6 class="fw-medium fs-14">Sarah Johnson</h6>
                     </div>
-                  </a>
+                  </RouterLink>
                 </td>
                 <td>Industrial</td>
                 <td>2024-10-01</td>
@@ -120,7 +123,10 @@
                   </div>
                 </td>
                 <td>
-                  <a href="my-profile.html" class="d-flex align-items-center">
+                  <RouterLink
+                    to="/my-profile"
+                    class="d-flex align-items-center"
+                  >
                     <img
                       src="@/assets/images/user-2.jpg"
                       class="wh-44 rounded-2"
@@ -129,7 +135,7 @@
                     <div class="ms-2">
                       <h6 class="fw-medium fs-14">Michael Smith</h6>
                     </div>
-                  </a>
+                  </RouterLink>
                 </td>
                 <td>Office</td>
                 <td>2024-09-28</td>
@@ -182,7 +188,10 @@
                   </div>
                 </td>
                 <td>
-                  <a href="my-profile.html" class="d-flex align-items-center">
+                  <RouterLink
+                    to="/my-profile"
+                    class="d-flex align-items-center"
+                  >
                     <img
                       src="@/assets/images/user-3.jpg"
                       class="wh-44 rounded-2"
@@ -191,7 +200,7 @@
                     <div class="ms-2">
                       <h6 class="fw-medium fs-14">Emily Brown</h6>
                     </div>
-                  </a>
+                  </RouterLink>
                 </td>
                 <td>Multi-Family</td>
                 <td>2024-09-25</td>
@@ -244,7 +253,10 @@
                   </div>
                 </td>
                 <td>
-                  <a href="my-profile.html" class="d-flex align-items-center">
+                  <RouterLink
+                    to="/my-profile"
+                    class="d-flex align-items-center"
+                  >
                     <img
                       src="@/assets/images/user-4.jpg"
                       class="wh-44 rounded-2"
@@ -253,7 +265,7 @@
                     <div class="ms-2">
                       <h6 class="fw-medium fs-14">Jason Lee</h6>
                     </div>
-                  </a>
+                  </RouterLink>
                 </td>
                 <td>Residential</td>
                 <td>2024-09-22</td>
@@ -306,7 +318,10 @@
                   </div>
                 </td>
                 <td>
-                  <a href="my-profile.html" class="d-flex align-items-center">
+                  <RouterLink
+                    to="/my-profile"
+                    class="d-flex align-items-center"
+                  >
                     <img
                       src="@/assets/images/user-5.jpg"
                       class="wh-44 rounded-2"
@@ -315,7 +330,7 @@
                     <div class="ms-2">
                       <h6 class="fw-medium fs-14">Ashley Davis</h6>
                     </div>
-                  </a>
+                  </RouterLink>
                 </td>
                 <td>Commercial</td>
                 <td>2024-09-20</td>

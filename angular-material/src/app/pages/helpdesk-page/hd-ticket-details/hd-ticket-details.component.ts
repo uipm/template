@@ -11,7 +11,6 @@ import { CustomizerSettingsService } from '../../../customizer-settings/customiz
 
 @Component({
     selector: 'app-hd-ticket-details',
-    standalone: true,
     imports: [RouterLink, MatCardModule, MatButtonModule, MatMenuModule, MatTableModule, NgIf, AttachmentsComponent, NgxEditorModule],
     templateUrl: './hd-ticket-details.component.html',
     styleUrl: './hd-ticket-details.component.scss'
@@ -47,17 +46,10 @@ export class HdTicketDetailsComponent {
         }
     }
 
-    // isToggled
-    isToggled = false;
-
     constructor(
         public themeService: CustomizerSettingsService,
         @Inject(PLATFORM_ID) private platformId: Object
-    ) {
-        this.themeService.isToggled$.subscribe(isToggled => {
-            this.isToggled = isToggled;
-        });
-    }
+    ) {}
 
 }
 

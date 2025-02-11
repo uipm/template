@@ -10,7 +10,6 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 
 @Component({
     selector: 'app-sbw-configurable-position',
-    standalone: true,
     imports: [MatFormFieldModule, MatSelectModule, MatButtonModule],
     templateUrl: './sbw-configurable-position.component.html',
     styleUrl: './sbw-configurable-position.component.scss'

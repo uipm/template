@@ -6,7 +6,6 @@ import { RadiosWithNgmodelComponent } from './radios-with-ngmodel/radios-with-ng
 
 @Component({
     selector: 'app-radio',
-    standalone: true,
     imports: [RouterLink, MatCardModule, MatRadioModule, RadiosWithNgmodelComponent],
     templateUrl: './radio.component.html',
     styleUrl: './radio.component.scss'

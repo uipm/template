@@ -7,7 +7,6 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 
 @Component({
     selector: 'app-sbwa-custom-component',
-    standalone: true,
     imports: [MatFormFieldModule, FormsModule, MatInputModule, MatButtonModule],
     templateUrl: './sbwa-custom-component.component.html',
     styleUrl: './sbwa-custom-component.component.scss'

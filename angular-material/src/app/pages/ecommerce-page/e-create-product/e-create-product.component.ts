@@ -13,7 +13,6 @@ import { FileUploadModule } from '@iplab/ngx-file-upload';
 
 @Component({
     selector: 'app-e-create-product',
-    standalone: true,
     imports: [RouterLink, NgIf, MatCardModule, MatButtonModule, MatFormFieldModule, MatInputModule, MatSelectModule, NgxEditorModule, FileUploadModule, MatDatepickerModule, MatNativeDateModule],
     templateUrl: './e-create-product.component.html',
     styleUrl: './e-create-product.component.scss'

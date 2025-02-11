@@ -7,7 +7,6 @@ import { CustomizerSettingsService } from '../../customizer-settings/customizer-
 
 @Component({
     selector: 'app-sign-up',
-    standalone: true,
     imports: [RouterLink, MatButtonModule, MatFormFieldModule, MatInputModule],
     templateUrl: './sign-up.component.html',
     styleUrl: './sign-up.component.scss'
@@ -17,15 +16,8 @@ export class SignUpComponent {
     // Password Hide
     hide = true;
 
-    // isToggled
-    isToggled = false;
-
     constructor(
         public themeService: CustomizerSettingsService
-    ) {
-        this.themeService.isToggled$.subscribe(isToggled => {
-            this.isToggled = isToggled;
-        });
-    }
+    ) {}
 
 }

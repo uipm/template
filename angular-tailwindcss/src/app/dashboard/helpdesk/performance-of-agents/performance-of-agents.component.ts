@@ -4,7 +4,6 @@ import { RouterLink } from '@angular/router';
 
 @Component({
     selector: 'app-performance-of-agents',
-    standalone: true,
     imports: [NgIf, RouterLink],
     templateUrl: './performance-of-agents.component.html',
     styleUrl: './performance-of-agents.component.scss'

@@ -23,7 +23,6 @@ const ELEMENT_DATA: PeriodicElement[] = [
 
 @Component({
     selector: 'app-basic-table',
-    standalone: true,
     imports: [MatTableModule],
     templateUrl: './basic-table.component.html',
     styleUrl: './basic-table.component.scss'

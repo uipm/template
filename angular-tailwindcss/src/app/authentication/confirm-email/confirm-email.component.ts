@@ -4,7 +4,6 @@ import { ToggleService } from '../../common/header/toggle.service';
 
 @Component({
     selector: 'app-confirm-email',
-    standalone: true,
     imports: [RouterLink],
     templateUrl: './confirm-email.component.html',
     styleUrl: './confirm-email.component.scss'

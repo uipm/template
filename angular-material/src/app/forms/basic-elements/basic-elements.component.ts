@@ -8,7 +8,6 @@ import { BasicFormComponent } from './basic-form/basic-form.component';
 
 @Component({
     selector: 'app-basic-elements',
-    standalone: true,
     imports: [RouterLink, MatCardModule, MatInputModule, MatFormFieldModule, MatSelectModule, BasicFormComponent],
     templateUrl: './basic-elements.component.html',
     styleUrl: './basic-elements.component.scss'

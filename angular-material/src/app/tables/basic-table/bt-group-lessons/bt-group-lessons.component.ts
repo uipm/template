@@ -7,22 +7,14 @@ import { CustomizerSettingsService } from '../../../customizer-settings/customiz
 
 @Component({
     selector: 'app-bt-group-lessons',
-    standalone: true,
     imports: [RouterLink, MatCardModule, MatButtonModule, MatMenuModule],
     templateUrl: './bt-group-lessons.component.html',
     styleUrl: './bt-group-lessons.component.scss'
 })
 export class BtGroupLessonsComponent {
 
-    // isToggled
-    isToggled = false;
-
     constructor(
         public themeService: CustomizerSettingsService
-    ) {
-        this.themeService.isToggled$.subscribe(isToggled => {
-            this.isToggled = isToggled;
-        });
-    }
+    ) {}
 
 }

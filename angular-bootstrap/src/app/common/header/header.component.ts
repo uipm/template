@@ -7,7 +7,6 @@ import { filter } from 'rxjs/operators';
 
 @Component({
     selector: 'app-header',
-    standalone: true,
     imports: [RouterLink, NgClass, NgIf],
     templateUrl: './header.component.html',
     styleUrl: './header.component.scss'

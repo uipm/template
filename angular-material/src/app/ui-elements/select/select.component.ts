@@ -11,7 +11,6 @@ import { SwResetOptionComponent } from './sw-reset-option/sw-reset-option.compon
 
 @Component({
     selector: 'app-select',
-    standalone: true,
     imports: [RouterLink, MatCardModule, BasicSelectComponent, SelectMultipleSelectionComponent, SelectCustomTriggerTextComponent, DisabledSelectComponent, SwacErrorstatematcherComponent, SwOptionGroupsComponent, SwResetOptionComponent],
     templateUrl: './select.component.html',
     styleUrl: './select.component.scss'

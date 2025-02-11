@@ -3,7 +3,6 @@ import { TicketsDueService } from './tickets-due.service';
 
 @Component({
     selector: 'app-tickets-due',
-    standalone: true,
     imports: [],
     templateUrl: './tickets-due.component.html',
     styleUrl: './tickets-due.component.scss'

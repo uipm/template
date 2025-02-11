@@ -10,7 +10,6 @@ import { FfThemingComponent } from './ff-theming/ff-theming.component';
 
 @Component({
     selector: 'app-form-field',
-    standalone: true,
     imports: [RouterLink, SimpleFormFieldComponent, FormFieldAppearanceVariantsComponent, FfwErrorMessagesComponent, FfWithHintsComponent, FfWithLabelComponent, FfwPrefixSuffixComponent, FfThemingComponent],
     templateUrl: './form-field.component.html',
     styleUrl: './form-field.component.scss'

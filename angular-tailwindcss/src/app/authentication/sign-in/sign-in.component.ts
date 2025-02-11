@@ -5,7 +5,6 @@ import { ToggleService } from '../../common/header/toggle.service';
 
 @Component({
     selector: 'app-sign-in',
-    standalone: true,
     imports: [RouterLink, NgClass],
     templateUrl: './sign-in.component.html',
     styleUrl: './sign-in.component.scss'

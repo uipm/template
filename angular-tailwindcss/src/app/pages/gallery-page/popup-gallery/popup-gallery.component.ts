@@ -4,7 +4,6 @@ import { Lightbox, LightboxModule } from 'ngx-lightbox';
 
 @Component({
     selector: 'app-popup-gallery',
-    standalone: true,
     imports: [LightboxModule, NgFor],
     templateUrl: './popup-gallery.component.html',
     styleUrl: './popup-gallery.component.scss'

@@ -6,7 +6,6 @@ import { AccordionExpandCollapseTogglesComponent } from './accordion-expand-coll
 
 @Component({
     selector: 'app-expansion',
-    standalone: true,
     imports: [RouterLink, BasicExpansionComponent, ExpansionAsAccordionComponent, AccordionExpandCollapseTogglesComponent],
     templateUrl: './expansion.component.html',
     styleUrl: './expansion.component.scss'

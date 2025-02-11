@@ -6,7 +6,6 @@ import { SidebarComponent } from '../common/sidebar/sidebar.component';
 
 @Component({
     selector: 'app-dashboard',
-    standalone: true,
     imports: [RouterOutlet, HeaderComponent, SidebarComponent, FooterComponent],
     templateUrl: './dashboard.component.html',
     styleUrl: './dashboard.component.scss'

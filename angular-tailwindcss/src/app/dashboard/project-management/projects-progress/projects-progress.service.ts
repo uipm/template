@@ -7,12 +7,13 @@ import { isPlatformBrowser } from '@angular/common';
 export class ProjectsProgressService {
 
     private isBrowser: boolean;
+    private chartInstance: any;
 
     constructor(@Inject(PLATFORM_ID) private platformId: any) {
         this.isBrowser = isPlatformBrowser(this.platformId);
     }
 
-    async loadChart(): Promise<void> {
+    async loadChart(series: { name: string; data: number[] }[], categories: string[]): Promise<void> {
         if (this.isBrowser) {
             try {
                 // Dynamically import ApexCharts
@@ -20,24 +21,7 @@ export class ProjectsProgressService {
 
                 // Define chart options
                 const options = {
-                    series: [
-                        {
-                            name: "Completed",
-                            data: [70, 23, 45, 30, 62, 70]
-                        },
-                        {
-                            name: "In Progress",
-                            data: [15, 40, 37, 38, 80, 45]
-                        },
-                        {
-                            name: "Not Start Yet",
-                            data: [50, 11, 60, 15, 31, 30]
-                        },
-                        {
-                            name: "Cancelled",
-                            data: [30, 60, 25, 22, 50, 15]
-                        }
-                    ],
+                    series: series,
                     chart: {
                         height: 325,
                         type: "line",
@@ -71,14 +55,7 @@ export class ProjectsProgressService {
                         }
                     },
                     xaxis: {
-                        categories: [
-                            "Jan",
-                            "Feb",
-                            "Mar",
-                            "Apr",
-                            "May",
-                            "Jun"
-                        ],
+                        categories: categories,
                         axisTicks: {
                             show: false,
                             color: '#ECEEF2'
@@ -96,8 +73,8 @@ export class ProjectsProgressService {
                         }
                     },
                     yaxis: {
-                        tickAmount: 5,
-                        max: 100,
+                        // tickAmount: 5,
+                        // max: 100,
                         min: 0,
                         labels: {
                             formatter: (val:any) => {
@@ -137,13 +114,20 @@ export class ProjectsProgressService {
                         }
                     }
                 };
-
-                // Initialize and render the chart
-                const chart = new ApexCharts(document.querySelector('#pm_projects_progress_chart'), options);
-                chart.render();
+                this.chartInstance = new ApexCharts(document.querySelector('#pm_projects_progress_chart'), options);
+                this.chartInstance.render();
             } catch (error) {
                 console.error('Error loading ApexCharts:', error);
             }
+        }
+    }
+
+    updateChart(series: { name: string; data: number[] }[], categories: string[]): void {
+        if (this.chartInstance) {
+            this.chartInstance.updateOptions({
+                series: series,
+                xaxis: { categories: categories }
+            });
         }
     }
 

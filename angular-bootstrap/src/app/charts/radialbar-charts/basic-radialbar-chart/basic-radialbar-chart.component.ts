@@ -1,11 +1,9 @@
 import { Component } from '@angular/core';
-import { RouterLink } from '@angular/router';
 import { BasicRadialbarChartService } from './basic-radialbar-chart.service';
 
 @Component({
     selector: 'app-basic-radialbar-chart',
-    standalone: true,
-    imports: [RouterLink],
+    imports: [],
     templateUrl: './basic-radialbar-chart.component.html',
     styleUrl: './basic-radialbar-chart.component.scss'
 })

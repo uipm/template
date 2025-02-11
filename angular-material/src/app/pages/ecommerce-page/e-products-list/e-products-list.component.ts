@@ -13,7 +13,6 @@ import { CustomizerSettingsService } from '../../../customizer-settings/customiz
 
 @Component({
     selector: 'app-e-products-list',
-    standalone: true,
     imports: [RouterLink, MatCardModule, MatButtonModule, MatMenuModule, MatTabsModule, MatTableModule, NgIf, NgClass, MatPaginatorModule, PublishedComponent, DraftComponent],
     templateUrl: './e-products-list.component.html',
     styleUrl: './e-products-list.component.scss'
@@ -35,16 +34,9 @@ export class EProductsListComponent {
         this.dataSource.filter = filterValue.trim().toLowerCase();
     }
 
-    // isToggled
-    isToggled = false;
-
     constructor(
         public themeService: CustomizerSettingsService
-    ) {
-        this.themeService.isToggled$.subscribe(isToggled => {
-            this.isToggled = isToggled;
-        });
-    }
+    ) {}
 
 }
 

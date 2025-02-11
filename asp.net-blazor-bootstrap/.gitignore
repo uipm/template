@@ -61,6 +61,7 @@ publish/
 out/
 
 # Ignore logs
+node_modules/
 logs/
 *.log
 

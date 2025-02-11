@@ -1,5 +1,5 @@
 import { RouterLink } from '@angular/router';
-import { NgClass, NgIf } from '@angular/common';
+import { NgIf } from '@angular/common';
 import { Component, ViewChild } from '@angular/core';
 import { MatCardModule } from '@angular/material/card';
 import { MatMenuModule } from '@angular/material/menu';
@@ -11,8 +11,7 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 
 @Component({
     selector: 'app-e-reviews',
-    standalone: true,
-    imports: [RouterLink, MatCardModule, MatButtonModule, MatMenuModule, MatTableModule, NgIf, NgClass, MatPaginatorModule, MatTooltipModule],
+    imports: [RouterLink, MatCardModule, MatButtonModule, MatMenuModule, MatTableModule, NgIf, MatPaginatorModule, MatTooltipModule],
     templateUrl: './e-reviews.component.html',
     styleUrl: './e-reviews.component.scss'
 })

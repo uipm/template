@@ -4,7 +4,6 @@ import { MatRadioModule } from '@angular/material/radio';
 
 @Component({
     selector: 'app-radios-with-ngmodel',
-    standalone: true,
     imports: [MatRadioModule, FormsModule],
     templateUrl: './radios-with-ngmodel.component.html',
     styleUrl: './radios-with-ngmodel.component.scss'

@@ -1,27 +1,18 @@
 import { Component, HostListener } from '@angular/core';
-import { RouterLink } from '@angular/router';
 import { CustomizerSettingsService } from '../../../customizer-settings/customizer-settings.service';
 import { NgIf } from '@angular/common';
 
 @Component({
     selector: 'app-recent-transactions',
-    standalone: true,
-    imports: [RouterLink, NgIf],
+    imports: [NgIf],
     templateUrl: './recent-transactions.component.html',
     styleUrl: './recent-transactions.component.scss'
 })
 export class RecentTransactionsComponent {
 
-    // isToggled
-    isToggled = false;
-
     constructor(
         public themeService: CustomizerSettingsService
-    ) {
-        this.themeService.isToggled$.subscribe(isToggled => {
-            this.isToggled = isToggled;
-        });
-    }
+    ) {}
 
     // Card Header Menu
     isCardHeaderOpen = false;

@@ -162,3 +162,9 @@ export default defineComponent({
   name: "ProjectsOverview",
 });
 </script>
+
+<style lang="scss" scoped>
+.bg-opacity-10 {
+  --bs-bg-opacity: 0.1;
+}
+</style>

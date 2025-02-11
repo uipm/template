@@ -10,7 +10,6 @@ export interface Section {
 
 @Component({
     selector: 'app-list-with-sections',
-    standalone: true,
     imports: [MatListModule, MatDividerModule, DatePipe],
     templateUrl: './list-with-sections.component.html',
     styleUrl: './list-with-sections.component.scss'

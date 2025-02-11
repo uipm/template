@@ -1,13 +1,11 @@
 import { Component } from '@angular/core';
 import { CustomizerSettingsService } from './customizer-settings.service';
-import { RouterLink } from '@angular/router';
 import { NgClass } from '@angular/common';
 import { NgScrollbarModule } from 'ngx-scrollbar';
 
 @Component({
     selector: 'app-customizer-settings',
-    standalone: true,
-    imports: [RouterLink, NgClass, NgScrollbarModule],
+    imports: [NgClass, NgScrollbarModule],
     templateUrl: './customizer-settings.component.html',
     styleUrl: './customizer-settings.component.scss'
 })

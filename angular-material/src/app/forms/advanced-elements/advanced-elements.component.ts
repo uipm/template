@@ -13,7 +13,6 @@ import { NgxMaterialTimepickerModule } from 'ngx-material-timepicker';
 
 @Component({
     selector: 'app-advanced-elements',
-    standalone: true,
     imports: [RouterLink, MatCardModule, MatInputModule, MatFormFieldModule, MatSelectModule, MatDatepickerModule, MatNativeDateModule, FormsModule, ReactiveFormsModule, MatButtonModule, AdvancedFormComponent, NgxMaterialTimepickerModule],
     templateUrl: './advanced-elements.component.html',
     styleUrl: './advanced-elements.component.scss'

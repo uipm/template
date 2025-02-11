@@ -3,7 +3,6 @@ import { LineColumnAreaChartService } from './line-column-area-chart.service';
 
 @Component({
     selector: 'app-line-column-area-chart',
-    standalone: true,
     imports: [],
     templateUrl: './line-column-area-chart.component.html',
     styleUrl: './line-column-area-chart.component.scss'

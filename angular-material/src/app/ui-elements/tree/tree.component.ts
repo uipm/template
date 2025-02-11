@@ -8,7 +8,6 @@ import { TwPartiallyLoadedDataComponent } from './tw-partially-loaded-data/tw-pa
 
 @Component({
     selector: 'app-tree',
-    standalone: true,
     imports: [RouterLink, MatCardModule, TwFlatNodesComponent, TwNestedNodesComponent, TwDynamicDataComponent, TwPartiallyLoadedDataComponent],
     templateUrl: './tree.component.html',
     styleUrl: './tree.component.scss'

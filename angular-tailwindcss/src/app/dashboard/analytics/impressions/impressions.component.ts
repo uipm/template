@@ -3,7 +3,6 @@ import { ImpressionsService } from './impressions.service';
 
 @Component({
     selector: 'app-impressions',
-    standalone: true,
     imports: [],
     templateUrl: './impressions.component.html',
     styleUrl: './impressions.component.scss'

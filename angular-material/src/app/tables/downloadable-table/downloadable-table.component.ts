@@ -9,7 +9,6 @@ import * as XLSX from 'xlsx';
 
 @Component({
     selector: 'app-downloadable-table',
-    standalone: true,
     imports: [RouterLink, MatCardModule, MatButtonModule, MatMenuModule],
     templateUrl: './downloadable-table.component.html',
     styleUrl: './downloadable-table.component.scss'

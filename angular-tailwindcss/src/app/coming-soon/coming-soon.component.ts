@@ -3,7 +3,6 @@ import { ToggleService } from '../common/header/toggle.service';
 
 @Component({
     selector: 'app-coming-soon',
-    standalone: true,
     imports: [],
     templateUrl: './coming-soon.component.html',
     styleUrl: './coming-soon.component.scss'

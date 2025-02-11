@@ -6,7 +6,6 @@ import { FileUploadModule } from '@iplab/ngx-file-upload';
 
 @Component({
     selector: 'app-e-create-product',
-    standalone: true,
     imports: [RouterLink, NgxEditorModule, FileUploadModule, NgIf],
     templateUrl: './e-create-product.component.html',
     styleUrl: './e-create-product.component.scss'

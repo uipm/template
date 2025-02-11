@@ -25,47 +25,49 @@
 </div>
 
 <!-- Ticket -->
-<div class="trezo-card table-style-two mb-25 border-radius d-block bg-white border-0 shadow-none">
+<div class="trezo-card mb-25 border-radius d-block bg-white border-0 shadow-none">
     <div class="trezo-card-content">
-        <div class="basic-table table-responsive">
-            <table class="table mb-0">
-                <thead>
-                    <tr>
-                        <th scope="col" class="fw-medium"> ID </th>
-                        <th scope="col" class="fw-medium"> Ticket Title </th>
-                        <th scope="col" class="fw-medium"> Requester </th>
-                        <th scope="col" class="fw-medium"> Assigned To </th>
-                        <th scope="col" class="fw-medium"> Created Date </th>
-                        <th scope="col" class="fw-medium"> Due Date </th>
-                        <th scope="col" class="fw-medium"> Priority </th>
-                        <th scope="col" class="fw-medium"> Status </th>
-                        <th scope="col" class="fw-medium"> Action </th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td class="text-body"> #JAN-854 </td>
-                        <td>
-                            <a routerLink="/dashboard/helpdesk-page/ticket-details" class="project-name fw-medium"> Network Infrastructure </a>
-                        </td>
-                        <td> Walter Frazier </td>
-                        <td> Oliver Clark </td>
-                        <td class="text-body"> 20 Apr 2024 </td>
-                        <td class="text-body"> 30 Apr 2024 </td>
-                        <td class="text-body"> High </td>
-                        <td>
-                            <span class="trezo-badge"> Finished </span>
-                        </td>
-                        <td>
-                            <div class="action-buttons d-flex align-items-center">
-                                <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
-                                    <i class="material-symbols-outlined"> edit </i>
-                                </button>
-                            </div>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+        <div class="table-style-two">
+            <div class="basic-table table-responsive">
+                <table class="table mb-0">
+                    <thead>
+                        <tr>
+                            <th scope="col" class="fw-medium"> ID </th>
+                            <th scope="col" class="fw-medium"> Ticket Title </th>
+                            <th scope="col" class="fw-medium"> Requester </th>
+                            <th scope="col" class="fw-medium"> Assigned To </th>
+                            <th scope="col" class="fw-medium"> Created Date </th>
+                            <th scope="col" class="fw-medium"> Due Date </th>
+                            <th scope="col" class="fw-medium"> Priority </th>
+                            <th scope="col" class="fw-medium"> Status </th>
+                            <th scope="col" class="fw-medium"> Action </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="text-body"> #JAN-854 </td>
+                            <td>
+                                <a routerLink="/dashboard/helpdesk-page/ticket-details" class="project-name fw-medium"> Network Infrastructure </a>
+                            </td>
+                            <td> Walter Frazier </td>
+                            <td> Oliver Clark </td>
+                            <td class="text-body"> 20 Apr 2025 </td>
+                            <td class="text-body"> 30 Apr 2025 </td>
+                            <td class="text-body"> High </td>
+                            <td>
+                                <span class="trezo-badge"> Finished </span>
+                            </td>
+                            <td>
+                                <div class="action-buttons d-flex align-items-center">
+                                    <button type="button" class="p-0 bg-transparent d-inline-block lh-1 border-0">
+                                        <i class="material-symbols-outlined"> edit </i>
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
     </div>
 </div>
@@ -120,7 +122,7 @@
             [class.component-rtl-enabled]="themeService.isRTLEnabled()"
         >
             <div class="trezo-card-content">
-                <ul class="comments mt-0 mb-0 pl-0 pr-0 list-unstyled">
+                <ul class="comments mt-0 mb-0 ps-0 pe-0 list-unstyled">
                     <li>
                         <div class="info d-flex align-items-center">
                             <div class="d-flex align-items-center">

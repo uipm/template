@@ -1,11 +1,10 @@
-import { NgFor, NgIf } from '@angular/common';
+import { NgIf } from '@angular/common';
 import { Component, HostListener } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
 @Component({
     selector: 'app-bt-recent-customer-ratings',
-    standalone: true,
-    imports: [RouterLink, NgIf, NgFor],
+    imports: [RouterLink, NgIf],
     templateUrl: './bt-recent-customer-ratings.component.html',
     styleUrl: './bt-recent-customer-ratings.component.scss'
 })

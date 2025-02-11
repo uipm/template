@@ -25,7 +25,6 @@ const ELEMENT_DATA: PeriodicElement[] = [
 
 @Component({
     selector: 'app-table-with-selection',
-    standalone: true,
     imports: [MatTableModule, MatCheckboxModule],
     templateUrl: './table-with-selection.component.html',
     styleUrl: './table-with-selection.component.scss'

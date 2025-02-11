@@ -4,7 +4,6 @@ import { ToggleService } from '../../common/header/toggle.service';
 
 @Component({
     selector: 'app-forgot-password',
-    standalone: true,
     imports: [RouterLink],
     templateUrl: './forgot-password.component.html',
     styleUrl: './forgot-password.component.scss'

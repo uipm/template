@@ -7,12 +7,13 @@ import { isPlatformBrowser } from '@angular/common';
 export class OrderSummaryService {
 
     private isBrowser: boolean;
+    private chartInstance: any;
 
     constructor(@Inject(PLATFORM_ID) private platformId: any) {
         this.isBrowser = isPlatformBrowser(this.platformId);
     }
 
-    async loadChart(): Promise<void> {
+    async loadChart(series: number[], labels: string[]): Promise<void> {
         if (this.isBrowser) {
             try {
                 // Dynamically import ApexCharts
@@ -20,14 +21,12 @@ export class OrderSummaryService {
 
                 // Define chart options
                 const options = {
-                    series: [60, 30, 10],
+                    series: series,
                     chart: {
-                        height: 293,
+                        height: 294,
                         type: "donut"
                     },
-                    labels: [
-                        "Completed", "New Order", "Pending"
-                    ],
+                    labels: labels,
                     colors: [
                         "#37D80A", "#605DFF", "#AD63F6"
                     ],
@@ -44,23 +43,31 @@ export class OrderSummaryService {
                             colors: '#64748B'
                         },
                         markers: {
-                            size: 7,
+                            size: 6,
                             offsetX: -2,
                             offsetY: -.5,
-                            shape: 'diamond'
+                            shape: 'circle'
                         }
                     },
                     dataLabels: {
                         enabled: false
                     }
                 };
-
                 // Initialize and render the chart
-                const chart = new ApexCharts(document.querySelector('#ecommerce_order_summary_chart'), options);
-                chart.render();
+                this.chartInstance = new ApexCharts(document.querySelector('#ecommerce_order_summary_chart'), options);
+                this.chartInstance.render();
             } catch (error) {
                 console.error('Error loading ApexCharts:', error);
             }
+        }
+    }
+
+    updateChart(series: number[], labels: string[]): void {
+        if (this.chartInstance) {
+            this.chartInstance.updateOptions({
+                series: series,
+                labels: labels
+            });
         }
     }
 

@@ -1,4 +1,4 @@
-import { NgFor, NgIf } from '@angular/common';
+import { NgIf } from '@angular/common';
 import { Component, ViewChild } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
@@ -7,13 +7,11 @@ import { MatPaginatorModule, MatPaginator } from '@angular/material/paginator';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatTableModule, MatTableDataSource } from '@angular/material/table';
 import { MatTooltipModule } from '@angular/material/tooltip';
-import { RouterLink } from '@angular/router';
 import { CustomizerSettingsService } from '../../../../customizer-settings/customizer-settings.service';
 
 @Component({
     selector: 'app-reviews',
-    standalone: true,
-    imports: [RouterLink, MatCardModule, MatButtonModule, MatMenuModule, MatProgressBarModule, MatTableModule, MatPaginatorModule, NgIf, NgFor, MatTooltipModule],
+    imports: [MatCardModule, MatButtonModule, MatMenuModule, MatProgressBarModule, MatTableModule, MatPaginatorModule, NgIf, MatTooltipModule],
     templateUrl: './reviews.component.html',
     styleUrl: './reviews.component.scss'
 })
@@ -28,16 +26,9 @@ export class ReviewsComponent {
         this.dataSource.paginator = this.paginator;
     }
 
-    // isToggled
-    isToggled = false;
-
     constructor(
         public themeService: CustomizerSettingsService
-    ) {
-        this.themeService.isToggled$.subscribe(isToggled => {
-            this.isToggled = isToggled;
-        });
-    }
+    ) {}
 
 }
 

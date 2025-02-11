@@ -8,7 +8,6 @@ export interface Vegetable {
 
 @Component({
     selector: 'app-chips-drag-drop',
-    standalone: true,
     imports: [MatChipsModule, CdkDropList, CdkDrag],
     templateUrl: './chips-drag-drop.component.html',
     styleUrl: './chips-drag-drop.component.scss'

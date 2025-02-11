@@ -6,7 +6,6 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 
 @Component({
     selector: 'app-dwe-backdrop-setting',
-    standalone: true,
     imports: [MatSidenavModule, MatFormFieldModule, MatSelectModule, MatButtonModule],
     templateUrl: './dwe-backdrop-setting.component.html',
     styleUrl: './dwe-backdrop-setting.component.scss'

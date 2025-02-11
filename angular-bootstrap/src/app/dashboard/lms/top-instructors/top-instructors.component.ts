@@ -1,11 +1,10 @@
 import { Component, HostListener } from '@angular/core';
 import { RouterLink } from '@angular/router';
-import { NgFor, NgIf } from '@angular/common';
+import { NgIf } from '@angular/common';
 
 @Component({
     selector: 'app-top-instructors',
-    standalone: true,
-    imports: [RouterLink, NgFor, NgIf],
+    imports: [RouterLink, NgIf],
     templateUrl: './top-instructors.component.html',
     styleUrl: './top-instructors.component.scss'
 })

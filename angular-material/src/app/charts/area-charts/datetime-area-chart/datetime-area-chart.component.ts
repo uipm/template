@@ -5,8 +5,7 @@ import { DatetimeAreaChartService } from './datetime-area-chart.service';
 
 @Component({
     selector: 'app-datetime-area-chart',
-    standalone: true,
-    imports: [RouterLink, MatCardModule],
+    imports: [MatCardModule],
     templateUrl: './datetime-area-chart.component.html',
     styleUrl: './datetime-area-chart.component.scss'
 })

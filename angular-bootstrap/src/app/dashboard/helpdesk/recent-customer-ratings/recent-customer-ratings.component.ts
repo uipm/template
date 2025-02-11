@@ -1,11 +1,10 @@
 import { Component, HostListener } from '@angular/core';
 import { RouterLink } from '@angular/router';
-import { NgFor, NgIf } from '@angular/common';
+import { NgIf } from '@angular/common';
 
 @Component({
     selector: 'app-recent-customer-ratings',
-    standalone: true,
-    imports: [RouterLink, NgFor, NgIf],
+    imports: [RouterLink, NgIf],
     templateUrl: './recent-customer-ratings.component.html',
     styleUrl: './recent-customer-ratings.component.scss'
 })

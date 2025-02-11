@@ -1,11 +1,10 @@
-import { NgFor, NgIf } from '@angular/common';
+import { NgIf } from '@angular/common';
 import { Component, HostListener } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
 @Component({
     selector: 'app-bt-performance-of-agents',
-    standalone: true,
-    imports: [RouterLink, NgIf, NgFor],
+    imports: [RouterLink, NgIf],
     templateUrl: './bt-performance-of-agents.component.html',
     styleUrl: './bt-performance-of-agents.component.scss'
 })

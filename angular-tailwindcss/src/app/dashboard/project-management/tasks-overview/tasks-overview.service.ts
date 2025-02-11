@@ -7,12 +7,13 @@ import { isPlatformBrowser } from '@angular/common';
 export class TasksOverviewService {
 
     private isBrowser: boolean;
+    private chartInstance: any;
 
     constructor(@Inject(PLATFORM_ID) private platformId: any) {
         this.isBrowser = isPlatformBrowser(this.platformId);
     }
 
-    async loadChart(): Promise<void> {
+    async loadChart(series: number[], labels: string[]): Promise<void> {
         if (this.isBrowser) {
             try {
                 // Dynamically import ApexCharts
@@ -20,16 +21,12 @@ export class TasksOverviewService {
 
                 // Define chart options
                 const options = {
-                    series: [
-                        55, 44, 30, 12, 22
-                    ],
+                    series: series,
                     chart: {
                         height: 382,
                         type: "pie"
                     },
-                    labels: [
-                        "Completed", "In Progress", "Pending", "Active", "Cancelled"
-                    ],
+                    labels: labels,
                     colors: [
                         "#37D80A", "#605DFF", "#AD63F6", "#3584FC", "#FD5812"
                     ],
@@ -66,13 +63,21 @@ export class TasksOverviewService {
                         }
                     }
                 };
-
                 // Initialize and render the chart
-                const chart = new ApexCharts(document.querySelector('#pm_tasks_overview_chart'), options);
-                chart.render();
+                this.chartInstance = new ApexCharts(document.querySelector('#pm_tasks_overview_chart'), options);
+                this.chartInstance.render();
             } catch (error) {
                 console.error('Error loading ApexCharts:', error);
             }
+        }
+    }
+
+    updateChart(series: number[], labels: string[]): void {
+        if (this.chartInstance) {
+            this.chartInstance.updateOptions({
+                series: series,
+                labels: labels
+            });
         }
     }
 

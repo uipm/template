@@ -1,19 +1,14 @@
 import { Component, HostListener } from '@angular/core';
-import { RouterLink } from '@angular/router';
 import { CustomizerSettingsService } from '../../../customizer-settings/customizer-settings.service';
 import { NgIf } from '@angular/common';
 
 @Component({
     selector: 'app-users-by-country',
-    standalone: true,
-    imports: [RouterLink, NgIf],
+    imports: [NgIf],
     templateUrl: './users-by-country.component.html',
     styleUrl: './users-by-country.component.scss'
 })
 export class UsersByCountryComponent {
-
-    // isToggled
-    isToggled = false;
 
     constructor(
         public themeService: CustomizerSettingsService

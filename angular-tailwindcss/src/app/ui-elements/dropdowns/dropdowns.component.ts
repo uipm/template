@@ -4,7 +4,6 @@ import { RouterLink } from '@angular/router';
 
 @Component({
     selector: 'app-dropdowns',
-    standalone: true,
     imports: [RouterLink, NgIf],
     templateUrl: './dropdowns.component.html',
     styleUrl: './dropdowns.component.scss'

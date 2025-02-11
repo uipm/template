@@ -17,7 +17,6 @@ export interface State {
 
 @Component({
     selector: 'app-overview',
-    standalone: true,
     imports: [
         MatCardModule,
         FormsModule,

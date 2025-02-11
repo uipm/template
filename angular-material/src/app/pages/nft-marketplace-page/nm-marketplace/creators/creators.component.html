@@ -1,0 +1,115 @@
+<mat-card
+    class="top-creators-card p-0 bg-transparent d-block border-0 shadow-none"
+    [class.component-card-borderd]="themeService.isCardBordered()"
+    [class.component-card-with-box-shadow]="themeService.isCardWithBoxShadow()"
+>
+    <mat-card-header>
+        <mat-card-title>
+            <h5 class="mb-0 fw-semibold">
+                Top Creators
+            </h5>
+        </mat-card-title>
+        <mat-card-subtitle>
+            <a routerLink="/dashboard/nft-marketplace-page/creators" mat-button class="view-all-btn p-0 d-inline-block">
+                Browse All
+                <i class="ri-arrow-right-s-line"></i>
+            </a>
+        </mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+        <div class="row">
+            <div class="col-xxl-3 col-lg-4 col-sm-6">
+                <mat-card class="creator-card text-center mb-25 border-radius d-block bg-white border-0 shadow-none">
+                    <mat-card-content>
+                        <img src="images/nfts/creator1.jpg" class="border-radius" alt="creator-image">
+                        <div class="content">
+                            <div class="author position-relative d-inline-block">
+                                <img src="images/nfts/user.gif" class="rounded-circle" width="68" alt="user-image">
+                                <img src="images/nfts/verified2.svg" width="20" class="verified mb-0" alt="verified">
+                            </div>
+                            <h5 class="fw-semibold">
+                                Hunny Bunny
+                            </h5>
+                            <span class="d-block">
+                                ITEMS: 3204
+                            </span>
+                            <div class="border-top"></div>
+                            <button mat-button type="button">
+                                Follow
+                            </button>
+                        </div>
+                    </mat-card-content>
+                </mat-card>
+            </div>
+            <div class="col-xxl-3 col-lg-4 col-sm-6">
+                <mat-card class="creator-card text-center mb-25 border-radius d-block bg-white border-0 shadow-none">
+                    <mat-card-content>
+                        <img src="images/nfts/creator2.jpg" class="border-radius" alt="creator-image">
+                        <div class="content">
+                            <div class="author position-relative d-inline-block">
+                                <img src="images/nfts/user.gif" class="rounded-circle" width="68" alt="user-image">
+                                <img src="images/nfts/verified2.svg" width="20" class="verified mb-0" alt="verified">
+                            </div>
+                            <h5 class="fw-semibold">
+                                Aristocrat
+                            </h5>
+                            <span class="d-block">
+                                ITEMS: 5301
+                            </span>
+                            <div class="border-top"></div>
+                            <button mat-button type="button">
+                                Follow
+                            </button>
+                        </div>
+                    </mat-card-content>
+                </mat-card>
+            </div>
+            <div class="col-xxl-3 col-lg-4 col-sm-6">
+                <mat-card class="creator-card text-center mb-25 border-radius d-block bg-white border-0 shadow-none">
+                    <mat-card-content>
+                        <img src="images/nfts/creator3.jpg" class="border-radius" alt="creator-image">
+                        <div class="content">
+                            <div class="author position-relative d-inline-block">
+                                <img src="images/nfts/user.gif" class="rounded-circle" width="68" alt="user-image">
+                                <img src="images/nfts/verified2.svg" width="20" class="verified mb-0" alt="verified">
+                            </div>
+                            <h5 class="fw-semibold">
+                                Hooman Robotic
+                            </h5>
+                            <span class="d-block">
+                                ITEMS: 4213
+                            </span>
+                            <div class="border-top"></div>
+                            <button mat-button type="button" color="warn">
+                                Unfollow
+                            </button>
+                        </div>
+                    </mat-card-content>
+                </mat-card>
+            </div>
+            <div class="col-xxl-3 col-lg-4 col-sm-6">
+                <mat-card class="creator-card text-center mb-25 border-radius d-block bg-white border-0 shadow-none">
+                    <mat-card-content>
+                        <img src="images/nfts/creator4.jpg" class="border-radius" alt="creator-image">
+                        <div class="content">
+                            <div class="author position-relative d-inline-block">
+                                <img src="images/nfts/user.gif" class="rounded-circle" width="68" alt="user-image">
+                                <img src="images/nfts/verified2.svg" width="20" class="verified mb-0" alt="verified">
+                            </div>
+                            <h5 class="fw-semibold">
+                                Colorful Life
+                            </h5>
+                            <span class="d-block">
+                                ITEMS: 2314
+                            </span>
+                            <div class="border-top"></div>
+                            <button mat-button type="button">
+                                Follow
+                            </button>
+                        </div>
+                    </mat-card-content>
+                </mat-card>
+            </div>
+        </div>
+    </mat-card-content>
+</mat-card>

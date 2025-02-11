@@ -30,7 +30,7 @@
           >
             <span class="material-symbols-outlined menu-icon">dashboard</span>
             <span class="title">Dashboard</span>
-            <span class="count">9</span>
+            <span class="count">20</span>
           </a>
 
           <ul class="menu-sub" v-show="isOpen('dashboard')">
@@ -62,24 +62,72 @@
             <li class="menu-item mb-0">
               <NuxtLink to="/dashboard/analytics" class="menu-link">
                 Analytics
-                <span class="hot tag">New</span>
               </NuxtLink>
             </li>
             <li class="menu-item mb-0">
               <NuxtLink to="/dashboard/crypto" class="menu-link">
                 Crypto
-                <span class="hot tag">New</span>
               </NuxtLink>
             </li>
             <li class="menu-item mb-0">
               <NuxtLink to="/dashboard/sales" class="menu-link">
                 Sales
-                <span class="hot tag">New</span>
               </NuxtLink>
             </li>
             <li class="menu-item mb-0">
               <NuxtLink to="/dashboard/hospital" class="menu-link">
                 Hospital
+              </NuxtLink>
+            </li>
+
+            <li class="menu-item mb-0">
+              <NuxtLink to="/dashboard/marketing" class="menu-link">
+                Marketing
+              </NuxtLink>
+            </li>
+            <li class="menu-item mb-0">
+              <NuxtLink to="/dashboard/nft" class="menu-link"> NFT </NuxtLink>
+            </li>
+            <li class="menu-item mb-0">
+              <NuxtLink to="/dashboard/saas" class="menu-link"> SaaS </NuxtLink>
+            </li>
+            <li class="menu-item mb-0">
+              <NuxtLink to="/dashboard/real-estate" class="menu-link">
+                Real Estate
+              </NuxtLink>
+            </li>
+            <li class="menu-item mb-0">
+              <NuxtLink to="/dashboard/shipment" class="menu-link">
+                Shipment
+              </NuxtLink>
+            </li>
+            <li class="menu-item mb-0">
+              <NuxtLink to="/dashboard/finance" class="menu-link">
+                Finance
+              </NuxtLink>
+            </li>
+            <li class="menu-item mb-0">
+              <NuxtLink to="/dashboard/hrm" class="menu-link"> HRM </NuxtLink>
+            </li>
+            <li class="menu-item mb-0">
+              <NuxtLink to="/dashboard/school" class="menu-link">
+                School
+              </NuxtLink>
+            </li>
+            <li class="menu-item mb-0">
+              <NuxtLink to="/dashboard/call-center" class="menu-link">
+                Call Center
+              </NuxtLink>
+            </li>
+            <li class="menu-item mb-0">
+              <NuxtLink to="/dashboard/pos-system" class="menu-link">
+                POS System
+                <span class="hot tag">New</span>
+              </NuxtLink>
+            </li>
+            <li class="menu-item mb-0">
+              <NuxtLink to="/dashboard/podcast" class="menu-link">
+                Podcast
                 <span class="hot tag">New</span>
               </NuxtLink>
             </li>
@@ -546,6 +594,133 @@
             <li class="menu-item">
               <NuxtLink to="/help-desk/reports" class="menu-link">
                 Reports
+              </NuxtLink>
+            </li>
+          </ul>
+        </li>
+
+        <li class="menu-item" :class="{ open: isOpen('nftMarketplace') }">
+          <a
+            href="javascript:void(0);"
+            class="menu-link menu-toggle active"
+            @click="toggleMenu('nftMarketplace')"
+          >
+            <span class="material-symbols-outlined menu-icon">store</span>
+            <span class="title">NFT Marketplace</span>
+          </a>
+
+          <ul class="menu-sub" v-show="isOpen('nftMarketplace')">
+            <li class="menu-item">
+              <NuxtLink to="/nft-marketplace/marketplace" class="menu-link">
+                Marketplace
+              </NuxtLink>
+            </li>
+            <li class="menu-item">
+              <NuxtLink to="/nft-marketplace/explore-all" class="menu-link">
+                Explore All
+              </NuxtLink>
+            </li>
+            <li class="menu-item">
+              <NuxtLink to="/nft-marketplace/live-auction" class="menu-link">
+                Live Auction
+              </NuxtLink>
+            </li>
+            <li class="menu-item">
+              <NuxtLink to="/nft-marketplace/nft-details" class="menu-link">
+                NFT Details
+              </NuxtLink>
+            </li>
+            <li class="menu-item">
+              <NuxtLink to="/nft-marketplace/creators" class="menu-link">
+                Creators
+              </NuxtLink>
+            </li>
+            <li class="menu-item">
+              <NuxtLink to="/nft-marketplace/creator-details" class="menu-link">
+                Creator Details
+              </NuxtLink>
+            </li>
+            <li class="menu-item">
+              <NuxtLink to="/nft-marketplace/wallet-connect" class="menu-link">
+                Wallet Connect
+              </NuxtLink>
+            </li>
+          </ul>
+        </li>
+
+        <li class="menu-item" :class="{ open: isOpen('realEstate') }">
+          <a
+            href="javascript:void(0);"
+            class="menu-link menu-toggle active"
+            @click="toggleMenu('realEstate')"
+          >
+            <span class="material-symbols-outlined menu-icon">
+              real_estate_agent
+            </span>
+            <span class="title">Real Estate</span>
+          </a>
+
+          <ul class="menu-sub" v-show="isOpen('realEstate')">
+            <li class="menu-item">
+              <NuxtLink
+                to="/real-estate/real-estate-customers"
+                class="menu-link"
+              >
+                Real Estate Customers
+              </NuxtLink>
+            </li>
+            <li class="menu-item">
+              <NuxtLink to="/real-estate/property-list" class="menu-link">
+                Property List
+              </NuxtLink>
+            </li>
+            <li class="menu-item">
+              <NuxtLink to="/real-estate/property-overview" class="menu-link">
+                Property Overview
+              </NuxtLink>
+            </li>
+            <li class="menu-item">
+              <NuxtLink to="/real-estate/add-property" class="menu-link">
+                Add Property
+              </NuxtLink>
+            </li>
+            <li class="menu-item">
+              <NuxtLink to="/real-estate/agent-list" class="menu-link">
+                Agent list
+              </NuxtLink>
+            </li>
+            <li class="menu-item">
+              <NuxtLink to="/real-estate/agent-overview" class="menu-link">
+                Agent Overview
+              </NuxtLink>
+            </li>
+            <li class="menu-item">
+              <NuxtLink to="/real-estate/add-agent" class="menu-link">
+                Add Agent
+              </NuxtLink>
+            </li>
+          </ul>
+        </li>
+
+        <li class="menu-item" :class="{ open: isOpen('finance') }">
+          <a
+            href="javascript:void(0);"
+            class="menu-link menu-toggle active"
+            @click="toggleMenu('finance')"
+          >
+            <span class="material-symbols-outlined menu-icon">support</span>
+            <span class="title">Finance</span>
+          </a>
+
+          <ul class="menu-sub" v-show="isOpen('finance')">
+            <li class="menu-item">
+              <NuxtLink to="/finance/wallet" class="menu-link">
+                Wallet
+              </NuxtLink>
+            </li>
+            <li class="menu-item">
+              <NuxtLink to="/finance/transaction" class="menu-link">
+                Transaction
               </NuxtLink>
             </li>
           </ul>

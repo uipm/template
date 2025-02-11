@@ -3,7 +3,6 @@ import { AnnualProfitService } from './annual-profit.service';
 
 @Component({
     selector: 'app-annual-profit',
-    standalone: true,
     imports: [],
     templateUrl: './annual-profit.component.html',
     styleUrl: './annual-profit.component.scss'

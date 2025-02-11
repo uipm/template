@@ -3,7 +3,6 @@ import { BasicPolarChartService } from './basic-polar-chart.service';
 
 @Component({
     selector: 'app-basic-polar-chart',
-    standalone: true,
     imports: [],
     templateUrl: './basic-polar-chart.component.html',
     styleUrl: './basic-polar-chart.component.scss'

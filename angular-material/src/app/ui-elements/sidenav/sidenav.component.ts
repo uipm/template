@@ -7,7 +7,6 @@ import { DweBackdropSettingComponent } from './dwe-backdrop-setting/dwe-backdrop
 
 @Component({
     selector: 'app-sidenav',
-    standalone: true,
     imports: [RouterLink, MatCardModule, AutosizeSidenavComponent, BasicDrawerComponent, DweBackdropSettingComponent],
     templateUrl: './sidenav.component.html',
     styleUrl: './sidenav.component.scss'

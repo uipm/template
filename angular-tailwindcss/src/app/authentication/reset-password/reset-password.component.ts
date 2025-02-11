@@ -5,7 +5,6 @@ import { ToggleService } from '../../common/header/toggle.service';
 
 @Component({
     selector: 'app-reset-password',
-    standalone: true,
     imports: [RouterLink, NgClass],
     templateUrl: './reset-password.component.html',
     styleUrl: './reset-password.component.scss'

@@ -3,7 +3,6 @@ import { StrockedCircularGaugeRadialbarChartService } from './strocked-circular-
 
 @Component({
     selector: 'app-strocked-circular-gauge-radialbar-chart',
-    standalone: true,
     imports: [],
     templateUrl: './strocked-circular-gauge-radialbar-chart.component.html',
     styleUrl: './strocked-circular-gauge-radialbar-chart.component.scss'

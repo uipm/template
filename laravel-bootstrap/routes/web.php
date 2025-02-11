@@ -38,6 +38,42 @@ Route::get('/hospital', function () {
     return view('hospital');
 });
 
+Route::get('/marketing', function () {
+    return view('marketing');
+});
+
+Route::get('/nft', function () {
+    return view('nft');
+});
+
+Route::get('/saas', function () {
+    return view('saas');
+});
+
+Route::get('/real-estate', function () {
+    return view('real-estate');
+});
+
+Route::get('/shipment', function () {
+    return view('shipment');
+});
+
+Route::get('/finance', function () {
+    return view('finance');
+});
+
+Route::get('/hrm', function () {
+    return view('hrm');
+});
+
+Route::get('/school', function () {
+    return view('school');
+});
+
+Route::get('/call-center', function () {
+    return view('call-center');
+});
+
 Route::get('/landing-page', function () {
     return view('landing-page');
 });
@@ -435,9 +471,6 @@ Route::get('/toasts', function () {
 Route::get('/check-radio', function () {
     return view('check-radio');
 });
-Route::get('/sweet-alarts', function () {
-    return view('sweet-alarts');
-});
 Route::get('/select', function () {
     return view('select');
 });
@@ -455,4 +488,40 @@ Route::get('/search', function () {
 });
 Route::get('/my-profile', function () {
     return view('my-profile');
+});
+
+
+
+Route::get('/404-error-page', function () {
+    return view('404-error-page');
+});
+Route::get('/internal-error', function () {
+    return view('internal-error');
+});
+Route::get('/widgets', function () {
+    return view('widgets');
+});
+Route::get('/google-map', function () {
+    return view('google-map');
+});
+Route::get('/notification', function () {
+    return view('notification');
+});
+Route::get('/account-settings', function () {
+    return view('account-settings');
+});
+Route::get('/change-password', function () {
+    return view('change-password');
+});
+Route::get('/connections', function () {
+    return view('connections');
+});
+Route::get('/privacy-policy', function () {
+    return view('privacy-policy');
+});
+Route::get('/terms-conditions', function () {
+    return view('terms-conditions');
+});
+Route::get('/members', function () {
+    return view('members');
 });

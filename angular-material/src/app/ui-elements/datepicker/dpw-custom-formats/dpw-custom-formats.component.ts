@@ -32,7 +32,6 @@ export const MY_FORMATS = {
 
 @Component({
     selector: 'app-dpw-custom-formats',
-    standalone: true,
     imports: [
         MatFormFieldModule,
         MatInputModule,

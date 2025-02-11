@@ -208,27 +208,7 @@
           </div>
           <div class="text-center">
             <span class="fs-12 d-block mb-1 text-body">Auction End In:</span>
-            <div
-              class="clockdiv position-static bg-transparent p-0 m-0"
-              data-date="December 14, 2024 21:14:01"
-            >
-              <ul
-                class="ps-0 mb-0 list-unstyled d-flex align-items-center gap-3 justify-content-center"
-              >
-                <li class="time">
-                  <span class="days"></span>
-                </li>
-                <li class="time">
-                  <span class="hours"></span>
-                </li>
-                <li class="time">
-                  <span class="minutes"></span>
-                </li>
-                <li class="time">
-                  <span class="seconds"></span>
-                </li>
-              </ul>
-            </div>
+            <CountdownTimer endDate="December 14, 2026 21:14:01" />
           </div>
         </div>
 
@@ -652,8 +632,12 @@
 
 <script lang="ts">
 import { defineComponent } from "vue";
+import CountdownTimer from "./CountdownTimer.vue";
 
 export default defineComponent({
   name: "NFTDetails",
+  components: {
+    CountdownTimer,
+  },
 });
 </script>

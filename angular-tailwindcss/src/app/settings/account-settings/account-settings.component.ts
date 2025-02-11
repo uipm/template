@@ -3,7 +3,6 @@ import { FileUploadModule } from '@iplab/ngx-file-upload';
 
 @Component({
     selector: 'app-account-settings',
-    standalone: true,
     imports: [FileUploadModule],
     templateUrl: './account-settings.component.html',
     styleUrl: './account-settings.component.scss'

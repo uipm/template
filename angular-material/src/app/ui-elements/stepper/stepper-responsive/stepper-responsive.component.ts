@@ -11,7 +11,6 @@ import {AsyncPipe} from '@angular/common';
 
 @Component({
     selector: 'app-stepper-responsive',
-    standalone: true,
     imports: [
         MatStepperModule,
         FormsModule,

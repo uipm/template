@@ -5,7 +5,6 @@ import { DynamicGridListComponent } from './dynamic-grid-list/dynamic-grid-list.
 
 @Component({
     selector: 'app-grid-list',
-    standalone: true,
     imports: [RouterLink, BasicGridListComponent, DynamicGridListComponent],
     templateUrl: './grid-list.component.html',
     styleUrl: './grid-list.component.scss'

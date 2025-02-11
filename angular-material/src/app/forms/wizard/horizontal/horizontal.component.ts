@@ -7,7 +7,6 @@ import { MatButtonModule } from '@angular/material/button';
 
 @Component({
     selector: 'app-horizontal',
-    standalone: true,
     imports: [
         MatButtonModule,
         MatStepperModule,

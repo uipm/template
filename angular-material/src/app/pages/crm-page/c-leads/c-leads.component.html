@@ -50,7 +50,7 @@
 </div>
 
 <!-- Leads -->
-<mat-card class="crm-leads-card table-style-two mb-25 border-radius d-block bg-white border-0 shadow-none">
+<mat-card class="crm-leads-card mb-25 border-radius d-block bg-white border-0 shadow-none">
     <mat-card-header>
         <mat-card-title>
             <button class="add-btn" type="button" mat-button (click)="toggleClass()">
@@ -72,166 +72,168 @@
         </mat-card-subtitle>
     </mat-card-header>
     <mat-card-content>
-        <div class="table-responsive">
-            <table mat-table [dataSource]="dataSource">
+        <div class="table-style-two">
+            <div class="table-responsive">
+                <table mat-table [dataSource]="dataSource">
 
-                <!-- Checkbox Column -->
-                <ng-container matColumnDef="select">
-                    <th mat-header-cell *matHeaderCellDef>
-                        <mat-checkbox
-                            (change)="$event ? toggleAllRows() : null"
-                            [checked]="selection.hasValue() && isAllSelected()"
-                            [indeterminate]="selection.hasValue() && !isAllSelected()"
-                            [aria-label]="checkboxLabel()"
-                        >
-                        </mat-checkbox>
-                    </th>
-                    <td mat-cell *matCellDef="let row">
-                        <mat-checkbox
-                            (click)="$event.stopPropagation()"
-                            (change)="$event ? selection.toggle(row) : null"
-                            [checked]="selection.isSelected(row)"
-                            [aria-label]="checkboxLabel(row)"
-                        >
-                        </mat-checkbox>
-                    </td>
-                </ng-container>
+                    <!-- Checkbox Column -->
+                    <ng-container matColumnDef="select">
+                        <th mat-header-cell *matHeaderCellDef>
+                            <mat-checkbox
+                                (change)="$event ? toggleAllRows() : null"
+                                [checked]="selection.hasValue() && isAllSelected()"
+                                [indeterminate]="selection.hasValue() && !isAllSelected()"
+                                [aria-label]="checkboxLabel()"
+                            >
+                            </mat-checkbox>
+                        </th>
+                        <td mat-cell *matCellDef="let row">
+                            <mat-checkbox
+                                (click)="$event.stopPropagation()"
+                                (change)="$event ? selection.toggle(row) : null"
+                                [checked]="selection.isSelected(row)"
+                                [aria-label]="checkboxLabel(row)"
+                            >
+                            </mat-checkbox>
+                        </td>
+                    </ng-container>
 
-                <!-- ID Column -->
-                <ng-container matColumnDef="id">
-                    <th mat-header-cell *matHeaderCellDef>
-                        ID
-                    </th>
-                    <td mat-cell *matCellDef="let element" class="text-body">
-                        {{element.id}}
-                    </td>
-                </ng-container>
+                    <!-- ID Column -->
+                    <ng-container matColumnDef="id">
+                        <th mat-header-cell *matHeaderCellDef>
+                            ID
+                        </th>
+                        <td mat-cell *matCellDef="let element" class="text-body">
+                            {{element.id}}
+                        </td>
+                    </ng-container>
 
-                <!-- Customer Column -->
-                <ng-container matColumnDef="customer">
-                    <th mat-header-cell *matHeaderCellDef>
-                        Customer
-                    </th>
-                    <td mat-cell *matCellDef="let element">
-                        <div class="customer-info d-flex align-items-center">
-                            <div class="img">
-                                <img [src]="element.customer.img" class="rounded-circle" alt="customer-image">
+                    <!-- Customer Column -->
+                    <ng-container matColumnDef="customer">
+                        <th mat-header-cell *matHeaderCellDef>
+                            Customer
+                        </th>
+                        <td mat-cell *matCellDef="let element">
+                            <div class="customer-info d-flex align-items-center">
+                                <div class="img">
+                                    <img [src]="element.customer.img" class="rounded-circle" alt="customer-image">
+                                </div>
+                                <span class="d-block text-black fw-medium">
+                                    {{element.customer.name}}
+                                </span>
                             </div>
-                            <span class="d-block text-black fw-medium">
-                                {{element.customer.name}}
+                        </td>
+                    </ng-container>
+
+                    <!-- Email Column -->
+                    <ng-container matColumnDef="email">
+                        <th mat-header-cell *matHeaderCellDef>
+                            Email
+                        </th>
+                        <td mat-cell *matCellDef="let element">
+                            {{element.email}}
+                        </td>
+                    </ng-container>
+
+                    <!-- Phone Column -->
+                    <ng-container matColumnDef="phone">
+                        <th mat-header-cell *matHeaderCellDef>
+                            Phone
+                        </th>
+                        <td mat-cell *matCellDef="let element" class="text-body">
+                            {{element.phone}}
+                        </td>
+                    </ng-container>
+
+                    <!-- Created Date Column -->
+                    <ng-container matColumnDef="createdDate">
+                        <th mat-header-cell *matHeaderCellDef>
+                            Created Date
+                        </th>
+                        <td mat-cell *matCellDef="let element" class="text-body">
+                            {{element.createdDate}}
+                        </td>
+                    </ng-container>
+
+                    <!-- Company Column -->
+                    <ng-container matColumnDef="company">
+                        <th mat-header-cell *matHeaderCellDef>
+                            Company
+                        </th>
+                        <td mat-cell *matCellDef="let element" class="text-body">
+                            {{element.company}}
+                        </td>
+                    </ng-container>
+
+                    <!-- Lead Source Column -->
+                    <ng-container matColumnDef="leadSource">
+                        <th mat-header-cell *matHeaderCellDef>
+                            Lead Source
+                        </th>
+                        <td mat-cell *matCellDef="let element" class="text-body">
+                            {{element.leadSource}}
+                        </td>
+                    </ng-container>
+
+                    <!-- Status Column -->
+                    <ng-container matColumnDef="status">
+                        <th mat-header-cell *matHeaderCellDef>
+                            Status
+                        </th>
+                        <td mat-cell *matCellDef="let element">
+                            <span class="trezo-badge" *ngIf="element.status.confirmed">
+                                Confirmed
                             </span>
-                        </div>
-                    </td>
-                </ng-container>
+                            <span class="trezo-badge inProgress" *ngIf="element.status.inProgress">
+                                In Progress
+                            </span>
+                            <span class="trezo-badge pending" *ngIf="element.status.pending">
+                                Pending
+                            </span>
+                            <span class="trezo-badge rejected" *ngIf="element.status.rejected">
+                                Rejected
+                            </span>
+                        </td>
+                    </ng-container>
 
-                <!-- Email Column -->
-                <ng-container matColumnDef="email">
-                    <th mat-header-cell *matHeaderCellDef>
-                        Email
-                    </th>
-                    <td mat-cell *matCellDef="let element">
-                        {{element.email}}
-                    </td>
-                </ng-container>
+                    <!-- Action Column -->
+                    <ng-container matColumnDef="action">
+                        <th mat-header-cell *matHeaderCellDef>
+                            Action
+                        </th>
+                        <td mat-cell *matCellDef="let element">
+                            <div class="action-buttons d-flex align-items-center">
+                                <button type="button" mat-button>
+                                    <i class="material-symbols-outlined">
+                                        {{element.action.view}}
+                                    </i>
+                                </button>
+                                <button type="button" mat-button (click)="toggleClass2()">
+                                    <i class="material-symbols-outlined">
+                                        {{element.action.edit}}
+                                    </i>
+                                </button>
+                                <button type="button" mat-button>
+                                    <i class="material-symbols-outlined">
+                                        {{element.action.delete}}
+                                    </i>
+                                </button>
+                            </div>
+                        </td>
+                    </ng-container>
 
-                <!-- Phone Column -->
-                <ng-container matColumnDef="phone">
-                    <th mat-header-cell *matHeaderCellDef>
-                        Phone
-                    </th>
-                    <td mat-cell *matCellDef="let element" class="text-body">
-                        {{element.phone}}
-                    </td>
-                </ng-container>
+                    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
 
-                <!-- Created Date Column -->
-                <ng-container matColumnDef="createdDate">
-                    <th mat-header-cell *matHeaderCellDef>
-                        Created Date
-                    </th>
-                    <td mat-cell *matCellDef="let element" class="text-body">
-                        {{element.createdDate}}
-                    </td>
-                </ng-container>
+                    <!-- Row shown when there is no matching data. -->
+                    <tr class="mat-row" *matNoDataRow>
+                        <td class="mat-cell" colspan="4">No data matching the filter "{{input.value}}"</td>
+                    </tr>
 
-                <!-- Company Column -->
-                <ng-container matColumnDef="company">
-                    <th mat-header-cell *matHeaderCellDef>
-                        Company
-                    </th>
-                    <td mat-cell *matCellDef="let element" class="text-body">
-                        {{element.company}}
-                    </td>
-                </ng-container>
-
-                <!-- Lead Source Column -->
-                <ng-container matColumnDef="leadSource">
-                    <th mat-header-cell *matHeaderCellDef>
-                        Lead Source
-                    </th>
-                    <td mat-cell *matCellDef="let element" class="text-body">
-                        {{element.leadSource}}
-                    </td>
-                </ng-container>
-
-                <!-- Status Column -->
-                <ng-container matColumnDef="status">
-                    <th mat-header-cell *matHeaderCellDef>
-                        Status
-                    </th>
-                    <td mat-cell *matCellDef="let element">
-                        <span class="trezo-badge" *ngIf="element.status.confirmed">
-                            Confirmed
-                        </span>
-                        <span class="trezo-badge inProgress" *ngIf="element.status.inProgress">
-                            In Progress
-                        </span>
-                        <span class="trezo-badge pending" *ngIf="element.status.pending">
-                            Pending
-                        </span>
-                        <span class="trezo-badge rejected" *ngIf="element.status.rejected">
-                            Rejected
-                        </span>
-                    </td>
-                </ng-container>
-
-                <!-- Action Column -->
-                <ng-container matColumnDef="action">
-                    <th mat-header-cell *matHeaderCellDef>
-                        Action
-                    </th>
-                    <td mat-cell *matCellDef="let element">
-                        <div class="action-buttons d-flex align-items-center">
-                            <button type="button" mat-button>
-                                <i class="material-symbols-outlined">
-                                    {{element.action.view}}
-                                </i>
-                            </button>
-                            <button type="button" mat-button (click)="toggleClass2()">
-                                <i class="material-symbols-outlined">
-                                    {{element.action.edit}}
-                                </i>
-                            </button>
-                            <button type="button" mat-button>
-                                <i class="material-symbols-outlined">
-                                    {{element.action.delete}}
-                                </i>
-                            </button>
-                        </div>
-                    </td>
-                </ng-container>
-
-                <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-                <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
-
-                <!-- Row shown when there is no matching data. -->
-                <tr class="mat-row" *matNoDataRow>
-                    <td class="mat-cell" colspan="4">No data matching the filter "{{input.value}}"</td>
-                </tr>
-
-            </table>
+                </table>
+            </div>
+            <mat-paginator [pageSizeOptions]="[10]" showFirstLastButtons></mat-paginator>
         </div>
-        <mat-paginator [pageSizeOptions]="[10]" showFirstLastButtons></mat-paginator>
     </mat-card-content>
 </mat-card>
 

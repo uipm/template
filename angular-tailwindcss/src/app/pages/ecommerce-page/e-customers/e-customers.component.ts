@@ -4,7 +4,6 @@ import { RouterLink } from '@angular/router';
 
 @Component({
     selector: 'app-e-customers',
-    standalone: true,
     imports: [RouterLink, NgIf],
     templateUrl: './e-customers.component.html',
     styleUrl: './e-customers.component.scss'

@@ -1,11 +1,9 @@
 import { Component } from '@angular/core';
-import { RouterLink } from '@angular/router';
 import { DataLabelsColumnChartService } from './data-labels-column-chart.service';
 
 @Component({
     selector: 'app-data-labels-column-chart',
-    standalone: true,
-    imports: [RouterLink],
+    imports: [],
     templateUrl: './data-labels-column-chart.component.html',
     styleUrl: './data-labels-column-chart.component.scss'
 })

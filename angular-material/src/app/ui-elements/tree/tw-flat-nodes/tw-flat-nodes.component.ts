@@ -41,7 +41,6 @@ interface ExampleFlatNode {
 
 @Component({
     selector: 'app-tw-flat-nodes',
-    standalone: true,
     imports: [MatTreeModule, MatButtonModule],
     templateUrl: './tw-flat-nodes.component.html',
     styleUrl: './tw-flat-nodes.component.scss'

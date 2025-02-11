@@ -1,5 +1,4 @@
 import { Component, ViewChild } from '@angular/core';
-import { RouterLink } from '@angular/router';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatMenuModule } from '@angular/material/menu';
@@ -10,8 +9,7 @@ import { MatProgressBarModule } from '@angular/material/progress-bar';
 
 @Component({
     selector: 'app-dt-students-progress',
-    standalone: true,
-    imports: [RouterLink, MatCardModule, MatButtonModule, MatMenuModule, MatTableModule, MatPaginatorModule, MatProgressBarModule, NgIf],
+    imports: [MatCardModule, MatButtonModule, MatMenuModule, MatTableModule, MatPaginatorModule, MatProgressBarModule, NgIf],
     templateUrl: './dt-students-progress.component.html',
     styleUrl: './dt-students-progress.component.scss'
 })

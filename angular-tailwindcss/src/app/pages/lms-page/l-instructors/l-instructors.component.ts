@@ -4,7 +4,6 @@ import { FileUploadModule } from '@iplab/ngx-file-upload';
 
 @Component({
     selector: 'app-l-instructors',
-    standalone: true,
     imports: [RouterLink, FileUploadModule],
     templateUrl: './l-instructors.component.html',
     styleUrl: './l-instructors.component.scss'

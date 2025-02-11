@@ -3,7 +3,6 @@ import { CriticalPatientsService } from './critical-patients.service';
 
 @Component({
     selector: 'app-critical-patients',
-    standalone: true,
     imports: [],
     templateUrl: './critical-patients.component.html',
     styleUrl: './critical-patients.component.scss'

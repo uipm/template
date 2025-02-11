@@ -4,7 +4,6 @@ import { Component, HostListener } from '@angular/core';
 
 @Component({
     selector: 'app-clicks-by-keywords',
-    standalone: true,
     imports: [RouterLink, NgIf],
     templateUrl: './clicks-by-keywords.component.html',
     styleUrl: './clicks-by-keywords.component.scss'

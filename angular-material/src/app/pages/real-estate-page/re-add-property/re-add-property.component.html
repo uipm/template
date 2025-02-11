@@ -1,0 +1,216 @@
+<!-- Breadcrumb -->
+<div class="breadcrumb-card mb-25 d-md-flex align-items-center justify-content-between">
+    <h5 class="mb-0">
+        Add Property
+    </h5>
+    <ol class="breadcrumb list-unstyled mt-0 mb-0 p-0">
+        <li class="breadcrumb-item d-inline-block position-relative">
+            <a routerLink="/dashboard" class="d-inline-block position-relative">
+                <i class="material-symbols-outlined">
+                    home
+                </i>
+                Dashboard
+            </a>
+        </li>
+        <li class="breadcrumb-item d-inline-block position-relative">
+            Real Estate
+        </li>
+        <li class="breadcrumb-item d-inline-block position-relative">
+            Property List
+        </li>
+        <li class="breadcrumb-item d-inline-block position-relative">
+            Add Property
+        </li>
+    </ol>
+</div>
+
+<!-- Add Property -->
+<form>
+    <mat-card class="mb-25 border-radius d-block bg-white border-0 shadow-none">
+        <mat-card-content>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label class="main-label d-block fw-medium text-black">
+                            Property Name
+                        </label>
+                        <mat-form-field>
+                            <mat-label>
+                                Enter property name
+                            </mat-label>
+                            <input matInput>
+                        </mat-form-field>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label class="main-label d-block fw-medium text-black">
+                            Property Status
+                        </label>
+                        <mat-form-field>
+                            <mat-label>
+                                Select
+                            </mat-label>
+                            <mat-select>
+                                <mat-option value="option1">
+                                    Rent
+                                </mat-option>
+                                <mat-option value="option2">
+                                    Active
+                                </mat-option>
+                                <mat-option value="option3">
+                                    Expired
+                                </mat-option>
+                                <mat-option value="option4">
+                                    Withdrawn
+                                </mat-option>
+                                <mat-option value="option5">
+                                    Cancelled
+                                </mat-option>
+                                <mat-option value="option6">
+                                    Pending
+                                </mat-option>
+                                <mat-option value="option7">
+                                    Closed
+                                </mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label class="main-label d-block fw-medium text-black">
+                            Property Price
+                        </label>
+                        <mat-form-field>
+                            <mat-label>
+                                Enter property price
+                            </mat-label>
+                            <input matInput>
+                        </mat-form-field>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label class="main-label d-block fw-medium text-black">
+                            Property Type
+                        </label>
+                        <mat-form-field>
+                            <mat-label>
+                                Select
+                            </mat-label>
+                            <mat-select>
+                                <mat-option value="option1">
+                                    Townhouse
+                                </mat-option>
+                                <mat-option value="option2">
+                                    Condominium
+                                </mat-option>
+                                <mat-option value="option3">
+                                    Detached House
+                                </mat-option>
+                                <mat-option value="option4">
+                                    Multifamily
+                                </mat-option>
+                                <mat-option value="option5">
+                                    Bungalow
+                                </mat-option>
+                                <mat-option value="option6">
+                                    Commercial
+                                </mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label class="main-label d-block fw-medium text-black">
+                            Beds
+                        </label>
+                        <mat-form-field>
+                            <mat-label>
+                                Enter no. of beds
+                            </mat-label>
+                            <input matInput>
+                        </mat-form-field>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label class="main-label d-block fw-medium text-black">
+                            Baths
+                        </label>
+                        <mat-form-field>
+                            <mat-label>
+                                Enter no. of baths
+                            </mat-label>
+                            <input matInput>
+                        </mat-form-field>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label class="main-label d-block fw-medium text-black">
+                            Area
+                        </label>
+                        <mat-form-field>
+                            <mat-label>
+                                Enter area as a sqft
+                            </mat-label>
+                            <input matInput>
+                        </mat-form-field>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label class="main-label d-block fw-medium text-black">
+                            Address
+                        </label>
+                        <mat-form-field>
+                            <mat-label>
+                                Enter address
+                            </mat-label>
+                            <input matInput>
+                        </mat-form-field>
+                    </div>
+                </div>
+                <div class="col-sm-12">
+                    <div class="form-group">
+                        <label class="main-label d-block fw-medium text-black">
+                            Description
+                        </label>
+                        <div class="NgxEditor__Wrapper">
+                            <ng-container *ngIf="editor">
+                                <ngx-editor-menu [editor]="editor" [toolbar]="toolbar"></ngx-editor-menu>
+                                <ngx-editor [editor]="editor"></ngx-editor>
+                            </ng-container>
+                        </div>
+                        <!-- <mat-form-field>
+                            <mat-label>Type here....</mat-label>
+                            <textarea matInput></textarea>
+                        </mat-form-field> -->
+                    </div>
+                </div>
+                <div class="col-sm-12">
+                    <div class="form-group">
+                        <label class="main-label d-block fw-medium text-black">
+                            Add Property Photo
+                        </label>
+                        <file-upload class="file-uploader"></file-upload>
+                    </div>
+                </div>
+            </div>
+            <div class="form-btn-box">
+                <button type="button" mat-button color="warn">
+                    Cancel
+                </button>
+                <button type="button" mat-button color="primary">
+                    <i class="material-symbols-outlined">
+                        add
+                    </i>
+                    Create Property
+                </button>
+            </div>
+        </mat-card-content>
+    </mat-card>
+</form>

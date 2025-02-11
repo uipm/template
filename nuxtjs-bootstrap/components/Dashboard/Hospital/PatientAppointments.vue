@@ -5,18 +5,12 @@
         class="d-flex justify-content-between align-items-center flex-wrap gap-3 pb-3"
       >
         <h3 class="mb-0">Patient Appointments</h3>
-        <select
-          class="form-select month-select form-control h-auto pe-5 pt-2 w-auto"
-          style="
-            background-position: right 15px center;
-            color: #64748b !important;
-          "
-          aria-label="Default select example"
-        >
-          <option>July 01 - July 31, 2024</option>
-          <option value="1">August 01 - August 31, 2024</option>
-          <option selected value="2">September 01 - September 31, 2024</option>
-        </select>
+        <div class="position-relative">
+          <DashboardHospitalDateRangePicker />
+          <i
+            class="ri-calendar-line position-absolute top-50 start-0 translate-middle-y ps-3 fs-15"
+          ></i>
+        </div>
       </div>
 
       <div class="default-table-area style-two patient-table">

@@ -1,0 +1,246 @@
+.nft-item {
+    padding: 10px;
+
+    .image {
+        img {
+            margin-bottom: -3px;
+        }
+        .mat-mdc-button {
+            top: 50%;
+            left: 50%;
+            opacity: 0;
+            padding: 9px 20px;
+            visibility: hidden;
+            border-radius: 4px;
+            position: absolute;
+            display: inline-block;
+            color: var(--whiteColor);
+            transition: var(--transition);
+            background-color: var(--primaryColor);
+            transform: translateX(-50%) translateY(-50%);
+            font: {
+                size: 16px;
+                weight: 500;
+            };
+        }
+    }
+    .content {
+        margin-top: 13px;
+
+        .title {
+            gap: 10px;
+
+            img {
+                width: 27px;
+            }
+            span {
+                font-size: 12px;
+                margin-bottom: 3px;
+            }
+        }
+        .verified {
+            width: 20px;
+        }
+        .bid {
+            font-size: 12px;
+            padding-top: 13px;
+            border-top: 1px solid var(--borderColor);
+            margin: {
+                top: 12px;
+                bottom: 8px;
+            };
+            span {
+                margin-left: 2px;
+            }
+        }
+        .info {
+            margin-bottom: 8px;
+
+            .rating {
+                font-size: 12px;
+                padding-left: 22px;
+
+                i {
+                    left: 0;
+                    top: 50%;
+                    font-size: 18px;
+                    color: #ee3e08;
+                    position: absolute;
+                    transform: translateY(-50%);
+                }
+            }
+        }
+    }
+    &:hover {
+        .image {
+            .mat-mdc-button {
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+    }
+}
+.component-rtl-enabled {
+    .nft-item {
+        .content {
+            .bid {
+                span {
+                    margin: {
+                        left: 0;
+                        right: 2px;
+                    };
+                }
+            }
+            .info {
+                .rating {
+                    padding: {
+                        left: 0;
+                        right: 22px;
+                    };
+                    i {
+                        left: auto;
+                        right: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+.nfts-filter-card {
+    .mat-mdc-card-content {
+        .mat-mdc-button {
+            background-color: var(--primaryColor);
+            color: var(--whiteColor);
+            display: inline-block;
+            padding: 8px 53px;
+            font: {
+                size: 16px;
+                weight: 500;
+            };
+        }
+        .range-slider {
+            padding-left: 65px;
+
+            .title {
+                left: 0;
+                top: 50%;
+                margin-top: 4px;
+                position: absolute;
+                transform: translateY(-50%);
+            }
+            .values {
+                margin-top: -35px;
+            }
+            .thumb-value {
+                font-size: 16px;
+            }
+            .custom-slider {
+                margin-top: -5px;
+                padding: {
+                    left: 40px;
+                    right: 60px;
+                };
+            }
+            .mat-mdc-slider {
+                width: 100%;
+            }
+        }
+    }
+    &.component-rtl-enabled {
+        .mat-mdc-card-content {
+            .range-slider {
+                padding: {
+                    left: 0;
+                    right: 65px;
+                };
+                .title {
+                    left: auto;
+                    right: 0;
+                }
+                .custom-slider {
+                    padding: {
+                        right: 40px;
+                        left: 60px;
+                    };
+                }
+            }
+        }
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    .nfts-filter-card {
+        .mat-mdc-card-content {
+            .mat-mdc-button {
+                padding: 8px 30px;
+                font-size: 14px;
+            }
+            .range-slider {
+                padding-left: 0;
+                margin-bottom: 20px;
+    
+                .title {
+                    top: 0;
+                    position: relative;
+                    transform: translateY(0);
+                    margin: {
+                        top: 0;
+                        bottom: 10px;
+                    };
+                }
+                .thumb-value {
+                    font-size: 14px;
+                }
+                .custom-slider {
+                    padding: {
+                        left: 40px;
+                        right: 55px;
+                    };
+                }
+            }
+        }
+        &.component-rtl-enabled {
+            .mat-mdc-card-content {
+                .range-slider {
+                    padding-right: 0;
+        
+                    .custom-slider {
+                        padding: {
+                            right: 40px;
+                            left: 55px;
+                        };
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width : 576px) and (max-width : 767px) {}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    .nfts-filter-card {
+        .mat-mdc-card-content {
+            .mat-mdc-button {
+                padding: 8px 40px;
+                font-size: 15px;
+            }
+        }
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width : 992px) and (max-width : 1199px) {}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {}
+
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {}

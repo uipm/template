@@ -7,25 +7,20 @@ import { isPlatformBrowser } from '@angular/common';
 export class CoursesSalesService {
 
     private isBrowser: boolean;
+    private chartInstance: any;
 
     constructor(@Inject(PLATFORM_ID) private platformId: any) {
         this.isBrowser = isPlatformBrowser(this.platformId);
     }
 
-    async loadChart(): Promise<void> {
+    async loadChart(series: { name: string; data: number[] }[], categories: string[]): Promise<void> {
         if (this.isBrowser) {
             try {
-                // Dynamically import ApexCharts
                 const ApexCharts = (await import('apexcharts')).default;
 
                 // Define chart options
                 const options = {
-                    series: [
-                        {
-                            name: "Sales",
-                            data: [100, 130, 115, 170, 110, 120, 85, 140, 150, 100, 110, 90, 160, 125, 105, 130, 145, 120, 150, 155, 220, 165]
-                        }
-                    ],
+                    series: series,
                     chart: {
                         type: "area",
                         height: 270,
@@ -56,30 +51,7 @@ export class CoursesSalesService {
                         }
                     },
                     xaxis: {
-                        categories: [
-                            "01 Jan",
-                            "02 Jan",
-                            "03 Jan",
-                            "04 Jan",
-                            "05 Jan",
-                            "06 Jan",
-                            "07 Jan",
-                            "08 Jan",
-                            "09 Jan",
-                            "10 Jan",
-                            "11 Jan",
-                            "12 Jan",
-                            "13 Jan",
-                            "14 Jan",
-                            "15 Jan",
-                            "16 Jan",
-                            "17 Jan",
-                            "18 Jan",
-                            "19 Jan",
-                            "20 Jan",
-                            "21 Jan",
-                            "22 Jan",
-                        ],
+                        categories: categories,
                         axisTicks: {
                             show: false,
                             color: '#ECEEF2'
@@ -97,9 +69,9 @@ export class CoursesSalesService {
                         }
                     },
                     yaxis: {
-                        tickAmount: 5,
+                        // tickAmount: 5,
                         show: false,
-                        max: 250,
+                        // max: 250,
                         min: 0,
                         labels: {
                             show: true,
@@ -144,13 +116,20 @@ export class CoursesSalesService {
                         }
                     }
                 };
-
-                // Initialize and render the chart
-                const chart = new ApexCharts(document.querySelector('#lms_courses_sales_chart'), options);
-                chart.render();
+                this.chartInstance = new ApexCharts(document.querySelector('#lms_courses_sales_chart'), options);
+                this.chartInstance.render();
             } catch (error) {
                 console.error('Error loading ApexCharts:', error);
             }
+        }
+    }
+
+    updateChart(series: { name: string; data: number[] }[], categories: string[]): void {
+        if (this.chartInstance) {
+            this.chartInstance.updateOptions({
+                series: series,
+                xaxis: { categories: categories }
+            });
         }
     }
 

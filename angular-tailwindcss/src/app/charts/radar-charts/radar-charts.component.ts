@@ -6,7 +6,6 @@ import { PolygonRadarChartComponent } from './polygon-radar-chart/polygon-radar-
 
 @Component({
     selector: 'app-radar-charts',
-    standalone: true,
     imports: [RouterLink, BasicRadarChartComponent, MultipleRadarChartComponent, PolygonRadarChartComponent],
     templateUrl: './radar-charts.component.html',
     styleUrl: './radar-charts.component.scss'

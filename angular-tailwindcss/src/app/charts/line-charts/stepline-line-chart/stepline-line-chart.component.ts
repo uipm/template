@@ -3,7 +3,6 @@ import { SteplineLineChartService } from './stepline-line-chart.service';
 
 @Component({
     selector: 'app-stepline-line-chart',
-    standalone: true,
     imports: [],
     templateUrl: './stepline-line-chart.component.html',
     styleUrl: './stepline-line-chart.component.scss'

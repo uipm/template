@@ -2,7 +2,6 @@ import { Component } from '@angular/core';
 
 @Component({
     selector: 'app-bt-to-do-list',
-    standalone: true,
     imports: [],
     templateUrl: './bt-to-do-list.component.html',
     styleUrl: './bt-to-do-list.component.scss'

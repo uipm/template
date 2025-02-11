@@ -5,7 +5,6 @@ import { NgClass } from '@angular/common';
 
 @Component({
     selector: 'app-sign-up',
-    standalone: true,
     imports: [RouterLink, NgClass],
     templateUrl: './sign-up.component.html',
     styleUrl: './sign-up.component.scss'

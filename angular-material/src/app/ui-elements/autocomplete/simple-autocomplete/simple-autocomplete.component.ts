@@ -7,7 +7,6 @@ import { MatCardModule } from '@angular/material/card';
 
 @Component({
     selector: 'app-simple-autocomplete',
-    standalone: true,
     imports: [FormsModule, MatFormFieldModule, MatInputModule, MatAutocompleteModule, ReactiveFormsModule, MatCardModule],
     templateUrl: './simple-autocomplete.component.html',
     styleUrl: './simple-autocomplete.component.scss'

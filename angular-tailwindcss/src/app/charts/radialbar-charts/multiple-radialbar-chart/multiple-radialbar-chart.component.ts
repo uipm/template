@@ -3,7 +3,6 @@ import { MultipleRadialbarChartService } from './multiple-radialbar-chart.servic
 
 @Component({
     selector: 'app-multiple-radialbar-chart',
-    standalone: true,
     imports: [],
     templateUrl: './multiple-radialbar-chart.component.html',
     styleUrl: './multiple-radialbar-chart.component.scss'

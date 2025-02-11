@@ -30,7 +30,6 @@ export class FiveDayRangeSelectionStrategy<D> implements MatDateRangeSelectionSt
 
 @Component({
     selector: 'app-drpwca-selection-strategy',
-    standalone: true,
     providers: [
         {
             provide: MAT_DATE_RANGE_SELECTION_STRATEGY,

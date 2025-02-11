@@ -1,0 +1,361 @@
+<!-- Breadcrumb -->
+<div class="breadcrumb-card mb-25 d-md-flex align-items-center justify-content-between">
+    <h5 class="mb-0">
+        Customers
+    </h5>
+    <ol class="breadcrumb list-unstyled mt-0 mb-0 p-0">
+        <li class="breadcrumb-item d-inline-block position-relative">
+            <a routerLink="/dashboard" class="d-inline-block position-relative">
+                <i class="material-symbols-outlined">
+                    home
+                </i>
+                Dashboard
+            </a>
+        </li>
+        <li class="breadcrumb-item d-inline-block position-relative">
+            Real Estate
+        </li>
+        <li class="breadcrumb-item d-inline-block position-relative">
+            Customers
+        </li>
+    </ol>
+</div>
+
+<!-- Customers -->
+<mat-card class="re-customers-card mb-25 border-radius d-block bg-white border-0 shadow-none">
+    <mat-card-header>
+        <mat-card-title>
+            <button class="add-btn" type="button" mat-button (click)="toggleClass()">
+                <i class="material-symbols-outlined">
+                    add
+                </i>
+                Add New Customer
+            </button>
+        </mat-card-title>
+        <mat-card-subtitle>
+            <form class="search-box position-relative">
+                <label>
+                    <i class="material-symbols-outlined">
+                        search
+                    </i>
+                </label>
+                <input type="text" class="input-search" placeholder="Search customer here....." (keyup)="applyFilter($event)" #input>
+            </form>
+        </mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+        <div class="table-style-two">
+            <div class="table-responsive">
+                <table mat-table [dataSource]="dataSource">
+
+                    <!-- Customer ID Column -->
+                    <ng-container matColumnDef="customerID">
+                        <th mat-header-cell *matHeaderCellDef>
+                            Customer ID
+                        </th>
+                        <td mat-cell *matCellDef="let element" class="text-body">
+                            <div class="d-flex align-items-center g-15">
+                                <mat-checkbox></mat-checkbox>
+                                <span class="d-block position-relative" style="top: 2px;">
+                                    {{element.customerID}}
+                                </span>
+                            </div>
+                        </td>
+                    </ng-container>
+
+                    <!-- Customer Column -->
+                    <ng-container matColumnDef="customer">
+                        <th mat-header-cell *matHeaderCellDef>
+                            Customer
+                        </th>
+                        <td mat-cell *matCellDef="let element">
+                            <div class="customer-info d-flex align-items-center">
+                                <div class="img">
+                                    <img [src]="element.customer.img" alt="user-image">
+                                </div>
+                                <span class="d-block fw-medium">
+                                    {{element.customer.name}}
+                                </span>
+                            </div>
+                        </td>
+                    </ng-container>
+
+                    <!-- Location Column -->
+                    <ng-container matColumnDef="location">
+                        <th mat-header-cell *matHeaderCellDef>
+                            Location
+                        </th>
+                        <td mat-cell *matCellDef="let element" style="white-space: normal;">
+                            <span class="d-block fw-medium text-body" style="width: 120px;">
+                                {{element.location}}
+                            </span>
+                        </td>
+                    </ng-container>
+
+                    <!-- Join Date Column -->
+                    <ng-container matColumnDef="joinDate">
+                        <th mat-header-cell *matHeaderCellDef>
+                            Join Date
+                        </th>
+                        <td mat-cell *matCellDef="let element" class="text-body">
+                            {{element.joinDate}}
+                        </td>
+                    </ng-container>
+
+                    <!-- Phone Number Column -->
+                    <ng-container matColumnDef="phoneNumber">
+                        <th mat-header-cell *matHeaderCellDef>
+                            Phone Number
+                        </th>
+                        <td mat-cell *matCellDef="let element">
+                            {{element.phoneNumber}}
+                        </td>
+                    </ng-container>
+
+                    <!-- Email Address Column -->
+                    <ng-container matColumnDef="emailAddress">
+                        <th mat-header-cell *matHeaderCellDef>
+                            Email Address
+                        </th>
+                        <td mat-cell *matCellDef="let element" class="text-primary">
+                            {{element.emailAddress}}
+                        </td>
+                    </ng-container>
+
+                    <!-- Customer Type Column -->
+                    <ng-container matColumnDef="customerType">
+                        <th mat-header-cell *matHeaderCellDef>
+                            Customer Type
+                        </th>
+                        <td mat-cell *matCellDef="let element" class="text-body">
+                            {{element.customerType}}
+                        </td>
+                    </ng-container>
+
+                    <!-- Action Column -->
+                    <ng-container matColumnDef="action">
+                        <th mat-header-cell *matHeaderCellDef>
+                            Action
+                        </th>
+                        <td mat-cell *matCellDef="let element">
+                            <div class="action-buttons d-flex align-items-center">
+                                <button type="button" mat-button>
+                                    <i class="material-symbols-outlined">
+                                        {{element.action.view}}
+                                    </i>
+                                </button>
+                                <button type="button" mat-button>
+                                    <i class="material-symbols-outlined">
+                                        {{element.action.edit}}
+                                    </i>
+                                </button>
+                                <button type="button" mat-button>
+                                    <i class="material-symbols-outlined">
+                                        {{element.action.delete}}
+                                    </i>
+                                </button>
+                            </div>
+                        </td>
+                    </ng-container>
+
+                    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+
+                    <!-- Row shown when there is no matching data. -->
+                    <tr class="mat-row" *matNoDataRow>
+                        <td class="mat-cell" colspan="4">No data matching the filter "{{input.value}}"</td>
+                    </tr>
+
+                </table>
+            </div>
+            <mat-paginator [pageSizeOptions]="[8]" showFirstLastButtons></mat-paginator>
+        </div>
+    </mat-card-content>
+</mat-card>
+
+<!-- Add New Popup -->
+<div
+    class="add-new-popup"
+    [class.active]="classApplied"
+>
+    <div class="popup-dialog">
+        <mat-card class="border-radius d-block bg-white border-0 shadow-none">
+            <mat-card-header>
+                <mat-card-title>
+                    <h5 class="mb-0">
+                        Add New Customer
+                    </h5>
+                </mat-card-title>
+                <mat-card-subtitle>
+                    <button
+                        mat-button
+                        (click)="toggleClass()"
+                    >
+                        <i class="ri-close-fill"></i>
+                    </button>
+                </mat-card-subtitle>
+            </mat-card-header>
+            <mat-card-content>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label class="main-label d-block fw-medium text-black">
+                                Customer Name
+                            </label>
+                            <mat-form-field>
+                                <mat-label>
+                                    Enter name
+                                </mat-label>
+                                <input matInput placeholder="E.g. Sarah Johnson">
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="main-label d-block fw-medium text-black">
+                                Customer Email
+                            </label>
+                            <mat-form-field>
+                                <mat-label>
+                                    Enter email
+                                </mat-label>
+                                <input matInput placeholder="E.g. hello@trezo.com">
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="main-label d-block fw-medium text-black">
+                                Customer Number
+                            </label>
+                            <mat-form-field>
+                                <mat-label>
+                                    Enter number
+                                </mat-label>
+                                <input matInput placeholder="E.g. (123) 456-7890">
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="main-label d-block fw-medium text-black">
+                                Customer Address
+                            </label>
+                            <mat-form-field>
+                                <mat-label>
+                                    Enter address
+                                </mat-label>
+                                <input matInput placeholder="E.g. 74 Grim Avenue, San Diego">
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="main-label d-block fw-medium text-black">
+                                Country
+                            </label>
+                            <mat-form-field>
+                                <mat-label>
+                                    Select
+                                </mat-label>
+                                <mat-select>
+                                    <mat-option value="option1">
+                                        Switzerland
+                                    </mat-option>
+                                    <mat-option value="option2">
+                                        New Zealand
+                                    </mat-option>
+                                    <mat-option value="option3">
+                                        Germany
+                                    </mat-option>
+                                    <mat-option value="option4">
+                                        United States
+                                    </mat-option>
+                                    <mat-option value="option5">
+                                        Japan
+                                    </mat-option>
+                                    <mat-option value="option6">
+                                        Netherlands
+                                    </mat-option>
+                                    <mat-option value="option7">
+                                        Sweden
+                                    </mat-option>
+                                    <mat-option value="option8">
+                                        Canada
+                                    </mat-option>
+                                    <mat-option value="option9">
+                                        United Kingdom
+                                    </mat-option>
+                                    <mat-option value="option10">
+                                        Australia
+                                    </mat-option>
+                                </mat-select>
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="main-label d-block fw-medium text-black">
+                                Customer Type
+                            </label>
+                            <mat-form-field>
+                                <mat-label>
+                                    Select
+                                </mat-label>
+                                <mat-select>
+                                    <mat-option value="option1">
+                                        Buyer
+                                    </mat-option>
+                                    <mat-option value="option2">
+                                        Seller
+                                    </mat-option>
+                                    <mat-option value="option3">
+                                        Commercial
+                                    </mat-option>
+                                    <mat-option value="option4">
+                                        Investor
+                                    </mat-option>
+                                    <mat-option value="option5">
+                                        Industrial
+                                    </mat-option>
+                                </mat-select>
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="main-label d-block fw-medium text-black">
+                                Joining Date
+                            </label>
+                            <mat-form-field>
+                                <mat-label>Choose a date</mat-label>
+                                <input matInput [matDatepicker]="dueDatePicker">
+                                <!-- <mat-hint>MM/DD/YYYY</mat-hint> -->
+                                <mat-datepicker-toggle matIconSuffix [for]="dueDatePicker"></mat-datepicker-toggle>
+                                <mat-datepicker #dueDatePicker></mat-datepicker>
+                            </mat-form-field>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-box">
+                    <button
+                        mat-button
+                        (click)="toggleClass()"
+                        color="warn"
+                    >
+                        Cancel
+                    </button>
+                    <button
+                        mat-button
+                        color="primary"
+                    >
+                        <i class="material-symbols-outlined">
+                            add
+                        </i>
+                        Create
+                    </button>
+                </div>
+            </mat-card-content>
+        </mat-card>
+    </div>
+</div>

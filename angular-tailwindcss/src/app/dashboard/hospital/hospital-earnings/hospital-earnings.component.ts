@@ -4,7 +4,6 @@ import { NgIf } from '@angular/common';
 
 @Component({
     selector: 'app-hospital-earnings',
-    standalone: true,
     imports: [NgIf],
     templateUrl: './hospital-earnings.component.html',
     styleUrl: './hospital-earnings.component.scss'

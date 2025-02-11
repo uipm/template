@@ -142,12 +142,10 @@
 
 <script lang="ts">
 import { defineComponent, ref, computed } from "vue";
-import stateStore from "~/utils/store";
 
 export default defineComponent({
   name: "ToDoList",
   setup() {
-    const stateStoreInstance = stateStore;
     const items = ref([
       {
         id: "#854",
@@ -262,7 +260,6 @@ export default defineComponent({
       searchTerm,
       filteredItems,
       computeClass,
-      stateStoreInstance,
     };
   },
 });

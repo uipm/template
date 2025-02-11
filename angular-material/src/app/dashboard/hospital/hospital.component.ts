@@ -13,7 +13,6 @@ import { ScheduleAppointmentComponent } from './schedule-appointment/schedule-ap
 
 @Component({
     selector: 'app-hospital',
-    standalone: true,
     imports: [WelcomeComponent, OverallVisitorsComponent, PatientsLast7DaysComponent, PatientAdmissionsDischargesComponent, EmergencyRoomVisitsComponent, CriticalPatientsComponent, BedOccupancyRateComponent, PatientAppointmentsComponent, ScheduleAppointmentComponent, PatientByAgeComponent, HospitalEarningsComponent],
     templateUrl: './hospital.component.html',
     styleUrl: './hospital.component.scss'

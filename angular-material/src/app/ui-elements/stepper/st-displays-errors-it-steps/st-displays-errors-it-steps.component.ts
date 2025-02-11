@@ -8,7 +8,6 @@ import { MatStepperModule } from '@angular/material/stepper';
 
 @Component({
     selector: 'app-st-displays-errors-it-steps',
-    standalone: true,
     imports: [
         MatStepperModule,
         FormsModule,
@@ -22,7 +21,7 @@ import { MatStepperModule } from '@angular/material/stepper';
     providers: [
         {
             provide: STEPPER_GLOBAL_OPTIONS,
-            useValue: {showError: true},
+            useValue: { showError: true },
         },
     ]
 })

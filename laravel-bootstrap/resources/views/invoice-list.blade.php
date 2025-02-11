@@ -47,7 +47,7 @@
                                     <input type="text" class="form-control" placeholder="Search here">
                                     <i class="material-symbols-outlined position-absolute top-50 start-0 translate-middle-y">search</i>
                                 </form>
-                                <select class="form-select month-selecet form-control p-0 h-auto border-0 w-90" style="background-position: right 0 center;" aria-label="Default select example">
+                                <select class="form-select month-select form-control p-0 h-auto border-0 w-90" style="background-position: right 0 center;" aria-label="Default select example">
                                     <option selected>This Month</option>
                                     <option value="1">Last Month</option>
                                     <option value="2">Last Year</option>

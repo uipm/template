@@ -15,6 +15,11 @@ import SaaSPage from "../pages/Dashboard/SaaSPage.vue";
 import RealEstatePage from "../pages/Dashboard/RealEstatePage.vue";
 import ShipmentPage from "../pages/Dashboard/ShipmentPage.vue";
 import FinancePage from "../pages/Dashboard/FinancePage.vue";
+import HRMPage from "../pages/Dashboard/HRMPage.vue";
+import SchoolPage from "../pages/Dashboard/SchoolPage.vue";
+import CallCenterPage from "../pages/Dashboard/CallCenterPage.vue";
+import POSSystemPage from "../pages/Dashboard/POSSystemPage.vue";
+import PodcastPage from "../pages/Dashboard/PodcastPage.vue";
 import HomePage from "../pages/HomePage.vue";
 import FeaturesPage from "../pages/FeaturesPage.vue";
 import OurTeamPage from "../pages/OurTeamPage.vue";
@@ -263,6 +268,31 @@ const routes: Array<RouteRecordRaw> = [
     path: "/dashboard/finance",
     name: "FinancePage",
     component: FinancePage,
+  },
+  {
+    path: "/dashboard/hrm",
+    name: "HRMPage",
+    component: HRMPage,
+  },
+  {
+    path: "/dashboard/school",
+    name: "SchoolPage",
+    component: SchoolPage,
+  },
+  {
+    path: "/dashboard/call-center",
+    name: "CallCenterPage",
+    component: CallCenterPage,
+  },
+  {
+    path: "/dashboard/pos-system",
+    name: "POSSystemPage",
+    component: POSSystemPage,
+  },
+  {
+    path: "/dashboard/podcast",
+    name: "PodcastPage",
+    component: PodcastPage,
   },
   {
     path: "/",

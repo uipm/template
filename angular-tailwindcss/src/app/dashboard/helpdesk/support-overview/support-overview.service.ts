@@ -7,22 +7,19 @@ import { isPlatformBrowser } from '@angular/common';
 export class SupportOverviewService {
 
     private isBrowser: boolean;
+    private chartInstance: any;
 
     constructor(@Inject(PLATFORM_ID) private platformId: any) {
         this.isBrowser = isPlatformBrowser(this.platformId);
     }
 
-    async loadChart(): Promise<void> {
+    async loadChart(series: number[]): Promise<void> {
         if (this.isBrowser) {
             try {
-                // Dynamically import ApexCharts
                 const ApexCharts = (await import('apexcharts')).default;
 
-                // Define chart options
                 const options = {
-                    series: [
-                        55, 44, 30, 12
-                    ],
+                    series: series,
                     chart: {
                         height: 382,
                         type: "pie"
@@ -67,12 +64,17 @@ export class SupportOverviewService {
                     }
                 };
 
-                // Initialize and render the chart
-                const chart = new ApexCharts(document.querySelector('#hd_support_overview_chart'), options);
-                chart.render();
+                this.chartInstance = new ApexCharts(document.querySelector('#hd_support_overview_chart'), options);
+                this.chartInstance.render();
             } catch (error) {
                 console.error('Error loading ApexCharts:', error);
             }
+        }
+    }
+
+    updateChart(series: number[]): void {
+        if (this.chartInstance) {
+            this.chartInstance.updateSeries(series);
         }
     }
 

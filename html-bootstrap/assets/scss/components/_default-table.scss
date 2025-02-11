@@ -705,6 +705,106 @@
         .Selc {
             display: none;
         }
+        .tablesorter-header {
+            font-weight: 400 !important;
+            font-size: 14px !important;
+        }
+    }
+    &.popular-hosts {
+        .table-responsive {
+            .table {
+                tbody {
+                    tr {
+                        td {
+                            border-color: #F6F7F9;
+                            padding-left: 12px;
+                            padding-right: 12px;
+                        }
+                        &:last-child {
+                            td {
+                                border: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &.recently-played {
+        .table-responsive {
+            .table {
+                tbody {
+                    tr {
+                        td {
+                            border-color: #F6F7F9;
+                            padding: 12px 12px;
+                        }
+                        &:last-child {
+                            td {
+                                border: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &.top-podcasts {
+        .table-responsive {
+            .table {
+                thead {
+                    tr {
+                        th {
+                            padding-left: 18px;
+                            padding-right: 18px;
+                        }
+                    }
+                }
+                tbody {
+                    tr {
+                        td {
+                            border-color: #F6F7F9;
+                            padding-left: 18px;
+                            padding-right: 18px;
+                        }
+                        &:last-child {
+                            td {
+                                border: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &.type-prescription {
+        &.style-three {
+            .table-responsive {
+                .table {
+                    tbody {
+                        tr {
+                            td {
+                                padding-top: 24px;
+                                padding-bottom: 24px;
+                                border: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &.teachers-table {
+        &.style-three {
+            .table-responsive .table tbody tr  {
+                &:last-child {
+                    td {
+                        border: none;
+                        padding-bottom: 0;
+                    }
+                }
+            }
+        }
     }
 }
 .table-src-form {
@@ -788,6 +888,15 @@
                 }
             }
         }
+        &.recent-calls {
+            &.style-three {
+                .table-responsive {
+                    .table {
+                        width: 741px !important;
+                    } 
+                }
+            }
+        }
     }
 }
 
@@ -806,6 +915,13 @@
                             }
                         }
                     }
+                }
+            }
+        }
+        &.popular-hosts {
+            .table-responsive {
+                .table {
+                    width: 392px !important;
                 }
             }
         }
@@ -971,6 +1087,11 @@
             width: 704px !important;
         }
     }
+    .recently-played {
+        table {
+            width: 742px !important;
+        }
+    }
 
 }
 
@@ -1039,6 +1160,16 @@
                 width: 522px;
             }
         }
+        &.top-podcasts {
+            .table {
+                width: 550px;
+            }
+        }
+        &.type-prescription {
+            .table {
+                width: 552px;
+            }
+        }
     }
     .table-src-form {
         margin-right: 10px;
@@ -1077,18 +1208,38 @@
                 }
             }
         }
-        &.recent-calls {
-            &.style-three {
-                .table-responsive {
+    }
+
+}
+
+@media only screen and (max-width : 900px) {
+    .default-table-area {
+        &.campaigns-table {
+            &.style-two {
+                &.top-customers-table {
                     .table {
-                        width: 659px;
-                    } 
+                        width: 836px !important;
+                    }
                 }
             }
         }
     }
-
 }
+
+@media only screen and (min-width : 992px) and (max-width : 1405px) {
+
+    .default-table-area {
+        &.style-three {
+            &.recently-played {
+                .table {
+                    width: 730px;
+                }
+            }
+        }
+    }
+    
+}
+
 
 /* Max width 490px */
 @media only screen and (max-width: 1550px) {

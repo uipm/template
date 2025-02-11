@@ -5853,7 +5853,7 @@
                 "doctrine/orm": "Required to use Faker\\ORM\\Doctrine",
                 "ext-curl": "Required by Faker\\Provider\\Image to download images.",
                 "ext-dom": "Required by Faker\\Provider\\HtmlLorem for generating random HTML.",
-                "ext-iconv": "Required by Faker\\Provider\\ru_RU\\Text::realText() for generating real Russian text.",
+                "ext-iconv": "Required by Faker\\Provider\\ru_RU\\Text::realText() for generating real text.",
                 "ext-mbstring": "Required for multibyte Unicode string functionality."
             },
             "type": "library",

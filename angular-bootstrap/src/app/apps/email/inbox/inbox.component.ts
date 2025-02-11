@@ -6,23 +6,15 @@ import { NgIf } from '@angular/common';
 
 @Component({
     selector: 'app-inbox',
-    standalone: true,
     imports: [RouterLink, NgIf, SidebarComponent, RouterOutlet, RouterLinkActive],
     templateUrl: './inbox.component.html',
     styleUrl: './inbox.component.scss'
 })
 export class InboxComponent {
 
-    // isToggled
-    isToggled = false;
-
     constructor(
         public themeService: CustomizerSettingsService
-    ) {
-        this.themeService.isToggled$.subscribe(isToggled => {
-            this.isToggled = isToggled;
-        });
-    }
+    ) {}
 
     // Card Header Menu
     isCardHeaderOpen = false;

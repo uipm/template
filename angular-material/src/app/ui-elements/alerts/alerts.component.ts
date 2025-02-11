@@ -5,7 +5,6 @@ import { RouterLink } from '@angular/router';
 
 @Component({
     selector: 'app-alerts',
-    standalone: true,
     imports: [RouterLink, MatCardModule, NgIf],
     templateUrl: './alerts.component.html',
     styleUrl: './alerts.component.scss'

@@ -7,37 +7,18 @@ import { isPlatformBrowser } from '@angular/common';
 export class RevenueService {
 
     private isBrowser: boolean;
+    private chart: any;
 
     constructor(@Inject(PLATFORM_ID) private platformId: any) {
         this.isBrowser = isPlatformBrowser(this.platformId);
     }
 
-    async loadChart(): Promise<void> {
+    async loadChart(series: { name: string; data: number[] }[], categories: string[]): Promise<void> {
         if (this.isBrowser) {
             try {
-                // Dynamically import ApexCharts
                 const ApexCharts = (await import('apexcharts')).default;
-
-                // Define chart options
                 const options = {
-                    series: [
-                        {
-                            name: "Orders",
-                            data: [28, 50, 90, 95, 20, 70, 35]
-                        },
-                        {
-                            name: "Earnings",
-                            data: [80, 60, 70, 30, 45, 20, 80]
-                        },
-                        {
-                            name: "Refunds",
-                            data: [32, 23, 78, 35, 65, 35, 15]
-                        },
-                        {
-                            name: "Conversion Rate",
-                            data: [60, 25, 80, 25, 15, 40, 15]
-                        }
-                    ],
+                    series: series,
                     chart: {
                         type: "bar",
                         height: 430,
@@ -66,15 +47,7 @@ export class RevenueService {
                         colors: ["transparent"]
                     },
                     xaxis: {
-                        categories: [
-                            "Mon",
-                            "Tue",
-                            "Wed",
-                            "Thu",
-                            "Fri",
-                            "Sat",
-                            "Sun"
-                        ],
+                        categories: categories,
                         axisTicks: {
                             show: false,
                             color: '#ECEEF2'
@@ -92,8 +65,8 @@ export class RevenueService {
                         }
                     },
                     yaxis: {
-                        tickAmount: 5,
-                        max: 100,
+                        // tickAmount: 5,
+                        // max: 100,
                         min: 0,
                         labels: {
                             style: {
@@ -131,12 +104,22 @@ export class RevenueService {
                     }
                 };
 
-                // Initialize and render the chart
-                const chart = new ApexCharts(document.querySelector('#ep_revenue_chart'), options);
-                chart.render();
+                this.chart = new ApexCharts(document.querySelector('#ep_revenue_chart'), options);
+                this.chart.render();
             } catch (error) {
                 console.error('Error loading ApexCharts:', error);
             }
+        }
+    }
+
+    updateChart(series: { name: string; data: number[] }[], categories: string[]): void {
+        if (this.chart) {
+            this.chart.updateOptions({
+                series: series,
+                xaxis: {
+                    categories: categories
+                }
+            });
         }
     }
 

@@ -12,7 +12,6 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 
 @Component({
     selector: 'app-events-list',
-    standalone: true,
     imports: [MatCardModule, MatMenuModule, MatButtonModule, RouterLink, MatTableModule, MatPaginatorModule, NgIf, MatCheckboxModule, MatTooltipModule],
     templateUrl: './events-list.component.html',
     styleUrl: './events-list.component.scss'

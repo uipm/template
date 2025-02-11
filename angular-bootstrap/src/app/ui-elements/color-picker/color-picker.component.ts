@@ -5,7 +5,6 @@ import { CustomizerSettingsService } from '../../customizer-settings/customizer-
 
 @Component({
     selector: 'app-color-picker',
-    standalone: true,
     imports: [RouterLink, ColorPickerModule],
     templateUrl: './color-picker.component.html',
     styleUrl: './color-picker.component.scss'
@@ -25,15 +24,8 @@ export class ColorPickerComponent {
     color10: any;
     color11: any;
 
-    // isToggled
-    isToggled = false;
-
     constructor(
         public themeService: CustomizerSettingsService
-    ) {
-        this.themeService.isToggled$.subscribe(isToggled => {
-            this.isToggled = isToggled;
-        });
-    }
+    ) {}
 
 }

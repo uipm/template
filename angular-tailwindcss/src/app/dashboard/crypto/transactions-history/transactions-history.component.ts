@@ -4,7 +4,6 @@ import { NgIf } from '@angular/common';
 
 @Component({
     selector: 'app-transactions-history',
-    standalone: true,
     imports: [RouterLink, NgIf],
     templateUrl: './transactions-history.component.html',
     styleUrl: './transactions-history.component.scss'

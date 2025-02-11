@@ -4,7 +4,6 @@ import { NgIf } from '@angular/common';
 
 @Component({
     selector: 'app-contacts',
-    standalone: true,
     imports: [RouterLink, NgIf],
     templateUrl: './contacts.component.html',
     styleUrl: './contacts.component.scss'

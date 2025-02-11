@@ -8,21 +8,20 @@ import { CustomizerSettingsService } from '../../customizer-settings/customizer-
 
 @Component({
     selector: 'app-sidebar',
-    standalone: true,
     imports: [NgScrollbarModule, MatExpansionModule, RouterLinkActive, RouterLink, NgClass],
     templateUrl: './sidebar.component.html',
     styleUrl: './sidebar.component.scss'
 })
 export class SidebarComponent {
 
+    // isToggled
+    isToggled = false;
+
     // Mat Expansion
     readonly panelOpenState = signal(false);
 
     // isSidebarToggled
     isSidebarToggled = false;
-
-    // isToggled
-    isToggled = false;
 
     constructor(
         private toggleService: ToggleService,

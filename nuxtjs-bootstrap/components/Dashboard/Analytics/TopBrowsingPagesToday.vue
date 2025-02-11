@@ -9,8 +9,9 @@
           <input type="text" class="form-control" placeholder="Search here" />
           <i
             class="material-symbols-outlined position-absolute top-50 start-0 translate-middle-y"
-            >search</i
           >
+            search
+          </i>
         </form>
       </div>
 
@@ -31,9 +32,7 @@
             <tbody>
               <tr>
                 <td class="fw-medium">
-                  <a href="analytics.html" class="text-primary"
-                    >/dashboard-overview</a
-                  >
+                  <a href="#" class="text-primary"> /dashboard-overview </a>
                 </td>
                 <td class="fw-medium">Organic</td>
                 <td class="fw-medium">3m 45s</td>
@@ -42,9 +41,9 @@
               </tr>
               <tr>
                 <td class="fw-medium">
-                  <a href="analytics.html" class="text-primary"
-                    >/custom-reports/generate</a
-                  >
+                  <a href="#" class="text-primary">
+                    /custom-reports/generate
+                  </a>
                 </td>
                 <td class="fw-medium">Paid</td>
                 <td class="fw-medium">7m 00s</td>
@@ -53,7 +52,7 @@
               </tr>
               <tr>
                 <td class="fw-medium">
-                  <a href="analytics.html" class="text-primary">/export-data</a>
+                  <a href="#" class="text-primary">/export-data</a>
                 </td>
                 <td class="fw-medium">Direct</td>
                 <td class="fw-medium">2m 30s</td>
@@ -62,9 +61,7 @@
               </tr>
               <tr>
                 <td class="fw-medium">
-                  <a href="analytics.html" class="text-primary"
-                    >/realtime-users</a
-                  >
+                  <a href="#" class="text-primary"> /realtime-users </a>
                 </td>
                 <td class="fw-medium">Referral</td>
                 <td class="fw-medium">3m 00s</td>
@@ -73,9 +70,7 @@
               </tr>
               <tr>
                 <td class="fw-medium">
-                  <a href="analytics.html" class="text-primary"
-                    >/account-preferences</a
-                  >
+                  <a href="#" class="text-primary"> /account-preferences </a>
                 </td>
                 <td class="fw-medium">Organic</td>
                 <td class="fw-medium">2m 50s</td>
@@ -84,9 +79,7 @@
               </tr>
               <tr>
                 <td class="fw-medium">
-                  <a href="analytics.html" class="text-primary"
-                    >/apis-and-reports</a
-                  >
+                  <a href="#" class="text-primary"> /apis-and-reports </a>
                 </td>
                 <td class="fw-medium">Paid</td>
                 <td class="fw-medium">4m 15s</td>

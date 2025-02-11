@@ -10,13 +10,13 @@
             </h5>
         </mat-card-title>
         <mat-card-subtitle>
-            <button type="button" mat-button>
+            <button type="button" mat-button [class.active]="selectedTimeframe === 'Day'" (click)="onTimeframeChange('Day')">
                 Day
             </button>
-            <button type="button" color="active" mat-button>
+            <button type="button" mat-button [class.active]="selectedTimeframe === 'Week'" (click)="onTimeframeChange('Week')">
                 Week
             </button>
-            <button type="button" mat-button>
+            <button type="button" mat-button [class.active]="selectedTimeframe === 'Month'" (click)="onTimeframeChange('Month')">
                 Month
             </button>
         </mat-card-subtitle>

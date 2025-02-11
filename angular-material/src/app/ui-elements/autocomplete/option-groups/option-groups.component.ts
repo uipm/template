@@ -20,7 +20,6 @@ export const _filter = (opt: string[], value: string): string[] => {
 
 @Component({
     selector: 'app-option-groups',
-    standalone: true,
     imports: [
         FormsModule,
         ReactiveFormsModule,

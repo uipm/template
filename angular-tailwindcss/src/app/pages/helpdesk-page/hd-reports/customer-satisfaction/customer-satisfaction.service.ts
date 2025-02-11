@@ -7,27 +7,24 @@ import { isPlatformBrowser } from '@angular/common';
 export class CustomerSatisfactionService {
 
     private isBrowser: boolean;
+    private chartInstance: any;
 
     constructor(@Inject(PLATFORM_ID) private platformId: any) {
         this.isBrowser = isPlatformBrowser(this.platformId);
     }
 
-    async loadChart(): Promise<void> {
+    async loadChart(series: number[], labels: string[]): Promise<void> {
         if (this.isBrowser) {
             try {
-                // Dynamically import ApexCharts
                 const ApexCharts = (await import('apexcharts')).default;
 
-                // Define chart options
                 const options = {
-                    series: [50, 15, 75, 50],
+                    series: series,
                     chart: {
                         height: 201,
                         type: "donut"
                     },
-                    labels: [
-                        "Highly Satisfied", "Satisfied", "Low Satisfied", "Unsatisfied"
-                    ],
+                    labels: labels,
                     colors: [
                         "#AD63F6", "#C2CDFF", "#FFAA72", "#0dcaf0"
                     ],
@@ -92,12 +89,20 @@ export class CustomerSatisfactionService {
                     }
                 };
 
-                // Initialize and render the chart
-                const chart = new ApexCharts(document.querySelector('#hdp_customer_satisfaction_chart'), options);
-                chart.render();
+                this.chartInstance = new ApexCharts(document.querySelector('#hdp_customer_satisfaction_chart'), options);
+                this.chartInstance.render();
             } catch (error) {
                 console.error('Error loading ApexCharts:', error);
             }
+        }
+    }
+
+    updateChart(series: number[], labels: string[]): void {
+        if (this.chartInstance) {
+            this.chartInstance.updateOptions({
+                series: series,
+                labels: labels
+            });
         }
     }
 

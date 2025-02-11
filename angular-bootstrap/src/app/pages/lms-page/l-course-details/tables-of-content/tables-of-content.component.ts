@@ -5,7 +5,6 @@ import { NgClass } from '@angular/common';
 
 @Component({
     selector: 'app-tables-of-content',
-    standalone: true,
     imports: [RouterLink, NgClass],
     templateUrl: './tables-of-content.component.html',
     styleUrl: './tables-of-content.component.scss'
@@ -25,15 +24,8 @@ export class TablesOfContentComponent {
         return this.openSectionIndex === index;
     }
 
-    // isToggled
-    isToggled = false;
-
     constructor(
         public themeService: CustomizerSettingsService
-    ) {
-        this.themeService.isToggled$.subscribe(isToggled => {
-            this.isToggled = isToggled;
-        });
-    }
+    ) {}
 
 }

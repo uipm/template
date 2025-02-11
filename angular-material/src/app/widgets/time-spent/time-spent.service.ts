@@ -7,25 +7,20 @@ import { isPlatformBrowser } from '@angular/common';
 export class TimeSpentService {
 
     private isBrowser: boolean;
+    private chartInstance: any;
 
     constructor(@Inject(PLATFORM_ID) private platformId: any) {
         this.isBrowser = isPlatformBrowser(this.platformId);
     }
 
-    async loadChart(): Promise<void> {
+    async loadChart(series: { name: string; data: number[] }[], categories: string[]): Promise<void> {
         if (this.isBrowser) {
             try {
-                // Dynamically import ApexCharts
                 const ApexCharts = (await import('apexcharts')).default;
 
                 // Define chart options
                 const options = {
-                    series: [
-                        {
-                            name: "Time Spent",
-                            data: [30, 70, 80, 95, 90, 20, 40]
-                        }
-                    ],
+                    series: series,
                     chart: {
                         type: "bar",
                         height: 250,
@@ -54,15 +49,7 @@ export class TimeSpentService {
                         colors: ["transparent"]
                     },
                     xaxis: {
-                        categories: [
-                            "Mon",
-                            "Tue",
-                            "Wed",
-                            "Thu",
-                            "Fri",
-                            "Sat",
-                            "Sun"
-                        ],
+                        categories: categories,
                         axisTicks: {
                             show: false,
                             color: '#ECEEF2'
@@ -80,8 +67,8 @@ export class TimeSpentService {
                         }
                     },
                     yaxis: {
-                        tickAmount: 4,
-                        max: 100,
+                        // tickAmount: 4,
+                        // max: 100,
                         min: 0,
                         labels: {
                             // formatter: (val) => {
@@ -128,13 +115,20 @@ export class TimeSpentService {
                         }
                     }
                 };
-
-                // Initialize and render the chart
-                const chart = new ApexCharts(document.querySelector('#widgets_time_spent_chart'), options);
-                chart.render();
+                this.chartInstance = new ApexCharts(document.querySelector('#widgets_time_spent_chart'), options);
+                this.chartInstance.render();
             } catch (error) {
                 console.error('Error loading ApexCharts:', error);
             }
+        }
+    }
+
+    updateChart(series: { name: string; data: number[] }[], categories: string[]): void {
+        if (this.chartInstance) {
+            this.chartInstance.updateOptions({
+                series: series,
+                xaxis: { categories: categories }
+            });
         }
     }
 

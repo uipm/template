@@ -3,7 +3,6 @@ import { RouterLink } from '@angular/router';
 
 @Component({
     selector: 'app-pm-users',
-    standalone: true,
     imports: [RouterLink],
     templateUrl: './pm-users.component.html',
     styleUrl: './pm-users.component.scss'

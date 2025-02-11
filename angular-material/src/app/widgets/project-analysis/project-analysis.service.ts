@@ -7,12 +7,13 @@ import { isPlatformBrowser } from '@angular/common';
 export class ProjectAnalysisService {
 
     private isBrowser: boolean;
+    private chartInstance: any;
 
     constructor(@Inject(PLATFORM_ID) private platformId: any) {
         this.isBrowser = isPlatformBrowser(this.platformId);
     }
 
-    async loadChart(): Promise<void> {
+    async loadChart(series: { name: string; data: number[] }[], categories: string[]): Promise<void> {
         if (this.isBrowser) {
             try {
                 // Dynamically import ApexCharts
@@ -20,20 +21,7 @@ export class ProjectAnalysisService {
 
                 // Define chart options
                 const options = {
-                    series: [
-                        {
-                            name: "Budgets",
-                            data: [40, 60, 55, 30, 60, 130, 63]
-                        },
-                        {
-                            name: "Expenses",
-                            data: [15, 65, 100, 40, 90, 90, 91]
-                        },
-                        {
-                            name: "Revenue",
-                            data: [55, 70, 30, 50, 110, 60, 52]
-                        }
-                    ],
+                    series: series,
                     chart: {
                         type: "bar",
                         height: 408,
@@ -62,15 +50,7 @@ export class ProjectAnalysisService {
                         colors: ["transparent"]
                     },
                     xaxis: {
-                        categories: [
-                            "Mon",
-                            "Tue",
-                            "Wed",
-                            "Thu",
-                            "Fri",
-                            "Sat",
-                            "Sun"
-                        ],
+                        categories: categories,
                         axisTicks: {
                             show: false,
                             color: '#ECEEF2'
@@ -88,8 +68,8 @@ export class ProjectAnalysisService {
                         }
                     },
                     yaxis: {
-                        tickAmount: 6,
-                        max: 150,
+                        // tickAmount: 6,
+                        // max: 150,
                         min: 0,
                         labels: {
                             // formatter: (val:any) => {
@@ -136,13 +116,20 @@ export class ProjectAnalysisService {
                         }
                     }
                 };
-
-                // Initialize and render the chart
-                const chart = new ApexCharts(document.querySelector('#widgets_project_analysis_chart'), options);
-                chart.render();
+                this.chartInstance = new ApexCharts(document.querySelector('#widgets_project_analysis_chart'), options);
+                this.chartInstance.render();
             } catch (error) {
                 console.error('Error loading ApexCharts:', error);
             }
+        }
+    }
+
+    updateChart(series: { name: string; data: number[] }[], categories: string[]): void {
+        if (this.chartInstance) {
+            this.chartInstance.updateOptions({
+                series: series,
+                xaxis: { categories: categories }
+            });
         }
     }
 

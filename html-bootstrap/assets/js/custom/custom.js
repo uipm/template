@@ -20,6 +20,16 @@
 		}
 
 		// Header Sticky
+		const getHeaderNavStickyId = document.getElementById("for-header-nav-sticky");
+		if (getHeaderNavStickyId) {
+			window.addEventListener('scroll', event => {
+				const height = 150;
+				const { scrollTop } = event.target.scrollingElement;
+				document.querySelector('#for-header-nav-sticky').classList.toggle('sticky', scrollTop >= height);
+			});
+		}
+
+		// Header Sticky
 		const getNavbarId = document.getElementById("navbar");
 		if (getNavbarId) {
 			window.addEventListener('scroll', event => {
@@ -201,160 +211,6 @@
 			toastBootstrap.show()
 		})
 	}
-
-	// Sweetalert JS
-	try {
-		document.getElementById("sweetalert_1").addEventListener("click", function (e) {
-			Swal.fire("Good job!");
-		});
-
-		document.getElementById('sweetalert_2').addEventListener('click', function (e) {
-			Swal.fire("Here's the title!", "...and here's the text!");
-		});
-
-		document.getElementById('sweetalert_3').addEventListener('click', function (e) {
-			Swal.fire("Good job!", "You clicked the button!", "warning");
-		});
-
-		document.getElementById('sweetalert_4').addEventListener('click', function (e) {
-			Swal.fire("Good job!", "You clicked the button!", "error");
-		});
-
-		document.getElementById('sweetalert_5').addEventListener('click', function (e) {
-			Swal.fire("Good job!", "You clicked the button!", "success");
-		});
-
-		document.getElementById('sweetalert_6').addEventListener('click', function (e) {
-			Swal.fire("Good job!", "You clicked the button!", "info");
-		});
-
-		document.getElementById('sweetalert_7').addEventListener('click', function (e) {
-			Swal.fire("Good job!", "You clicked the button!", "question");
-		});
-
-		document.getElementById('sweetalert_8').addEventListener('click', function (e) {
-			Swal.fire({
-				title: "Good job!",
-				text: "You clicked the button!",
-				icon: "success",
-				buttonsStyling: false,
-				confirmButtonText: "Confirm me!",
-				customClass: {
-					confirmButton: "btn btn-primary"
-				}
-			});
-		});
-
-		document.getElementById('sweetalert_9').addEventListener('click', function (e) {
-			Swal.fire({
-				title: "Good job!",
-				text: "You clicked the button!",
-				icon: "success",
-				buttonsStyling: false,
-				confirmButtonText: "<i class='la la-headphones'></i> I am game!",
-				showCancelButton: true,
-				cancelButtonText: "<i class='la la-thumbs-down'></i> No, thanks",
-				customClass: {
-					confirmButton: "btn btn-danger",
-					cancelButton: "btn btn-default"
-				}
-			});
-		});
-
-		document.getElementById('sweetalert_10').addEventListener('click', function (e) {
-			Swal.fire({
-				position: "top-right",
-				icon: "success",
-				title: "Your work has been saved",
-				showConfirmButton: false,
-				timer: 1500
-			});
-		});
-
-		document.getElementById('sweetalert_11').addEventListener('click', function (e) {
-			Swal.fire({
-				title: 'jQuery HTML example',
-				showClass: {
-					popup: 'animate__animated animate__fadeInDown'
-				},
-				hideClass: {
-					popup: 'animate__animated animate__fadeOutUp'
-				}
-			});
-		});
-
-		document.getElementById('sweetalert_12').addEventListener('click', function (e) {
-			Swal.fire({
-				title: "Are you sure?",
-				text: "You won to be able to revert this!",
-				icon: "warning",
-				showCancelButton: true,
-				confirmButtonText: "Yes, delete it!"
-			}).then(function (result) {
-				if (result.value) {
-					Swal.fire(
-						"Deleted!",
-						"Your file has been deleted.",
-						"success"
-					);
-				}
-			});
-		});
-
-		document.getElementById('sweetalert_13').addEventListener('click', function (e) {
-			Swal.fire({
-				title: "Are you sure?",
-				text: "You won to be able to revert this!",
-				icon: "warning",
-				showCancelButton: true,
-				confirmButtonText: "Yes, delete it!",
-				cancelButtonText: "No, cancel!",
-				reverseButtons: true
-			}).then(function (result) {
-				if (result.value) {
-					Swal.fire(
-						"Deleted!",
-						"Your file has been deleted.",
-						"success"
-					);
-				} else if (result.dismiss === "cancel") {
-					Swal.fire(
-						"Cancelled",
-						"Your imaginary file is safe :)",
-						"error"
-					);
-				}
-			});
-		});
-
-		document.getElementById('sweetalert_14').addEventListener('click', function (e) {
-			Swal.fire({
-				title: "Sweet!",
-				text: "Modal with a custom image.",
-				imageUrl: "https://camo.envatousercontent.com/5b57b814db32f74f4ce750680390a407898cc665/68747470733a2f2f696d616765732e656e76797468656d652e636f6d2f72656163742d76657273696f6e2d617661696c61626c652e6a7067",
-				imageWidth: 400,
-				imageHeight: 200,
-				imageAlt: "Custom image",
-				animation: false
-			});
-		});
-
-		document.getElementById('sweetalert_15').addEventListener('click', function (e) {
-			Swal.fire({
-				title: "Auto close alert!",
-				text: "I will close in 5 seconds.",
-				timer: 5000,
-				onOpen: function () {
-					Swal.showLoading();
-				}
-			}).then(function (result) {
-				if (result.dismiss === "timer") {
-					console.log("I was closed by the timer");
-				}
-			});
-		});
-	} catch (err) { }
-
 
 	// Password JS
 	try {
@@ -1036,6 +892,24 @@
 		},
     });
 
+	// Mastering Digital Marketing JS
+	var swiper = new Swiper(".mastering-digital-marketing-slide", {
+        slidesPerView: 1,
+        spaceBetween: 25,
+		centeredSlides: false,
+		preventClicks: true,
+		loop: false, 
+		autoplay: {
+			delay: 15000,
+			disableOnInteraction: true,
+			pauseOnMouseEnter: true,
+		},
+		pagination: {
+			clickable: true,
+			el: ".swiper-pagination-mastering-digital-marketing",
+		},
+    });
+
 	// Thumb Images Upload JS
 	const getImagePreviewId = document.getElementById('imagePreview');
 	if (getImagePreviewId) {
@@ -1622,6 +1496,22 @@
 		setInterval(updateDate, 1000);
 	}
 
+	//  Digital Date Schedule
+	const getDigitalDateScheduleId = document.getElementById('digital_date_schedule');
+	if (getDigitalDateScheduleId) {
+		function updateDate() {
+			var now = new Date();
+			var date = now.getDate();
+			var monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun",
+				"Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+			var month = monthNames[now.getMonth()];
+			var year = now.getFullYear();
+			var digitalDate = document.getElementById("digital_date_schedule");
+			digitalDate.innerHTML =  date + " " + month + ", " + year;
+		}
+		setInterval(updateDate, 1000);
+	}
+
 	// Upcoming Events JS
 	var swiper = new Swiper(".upcoming-events-slide-two", {
         slidesPerView: 1,
@@ -1638,6 +1528,172 @@
 			clickable: true,
 			el: ".swiper-pagination-upcoming-events",
 		},
+    });
+
+	// Simple Calendar JS
+	const getCalendarBodyId = document.getElementById('calendarBody');
+	if (getCalendarBodyId) {
+
+		const calendarBody = document.getElementById('calendarBody');
+		const monthSelect = document.getElementById('monthSelect');
+		const yearSelect = document.getElementById('yearSelect');
+		const prevMonthBtn = document.getElementById('prevMonth');
+		const nextMonthBtn = document.getElementById('nextMonth');
+
+		const currentDate = new Date();
+		let selectedMonth = currentDate.getMonth();
+		let selectedYear = currentDate.getFullYear();
+
+		const monthNames = [
+			"January", "February", "March", "April", "May", "June",
+			"July", "August", "September", "October", "November", "December"
+		];
+
+		function populateMonthAndYearSelectors() {
+			// Populate month select
+			monthNames.forEach((month, index) => {
+				const option = document.createElement('option');
+				option.value = index;
+				option.textContent = month;
+				monthSelect.appendChild(option);
+			});
+
+			// Populate year select (20 years before and after current year)
+			for (let i = currentDate.getFullYear() - 20; i <= currentDate.getFullYear() + 20; i++) {
+				const option = document.createElement('option');
+				option.value = i;
+				option.textContent = i;
+				yearSelect.appendChild(option);
+			}
+		}
+
+		function generateCalendar(month, year) {
+			calendarBody.innerHTML = ''; // Clear previous calendar
+			const firstDayOfMonth = new Date(year, month, 1).getDay();
+			const daysInMonth = new Date(year, month + 1, 0).getDate();
+			const daysInPrevMonth = new Date(year, month, 0).getDate();
+
+			let date = 1;
+			let prevMonthDate = daysInPrevMonth - firstDayOfMonth + 1;
+			let nextMonthDate = 1;
+			const today = new Date();
+
+			for (let i = 0; i < 5; i++) {
+				const row = document.createElement('tr');
+
+				for (let j = 0; j < 7; j++) {
+				const cell = document.createElement('td');
+
+				if (i === 0 && j < firstDayOfMonth) {
+					cell.textContent = prevMonthDate++;
+					cell.classList.add('prev-month');
+				} else if (date > daysInMonth) {
+					cell.textContent = nextMonthDate++;
+					cell.classList.add('next-month');
+				} else {
+					cell.textContent = date;
+					if (
+					year === today.getFullYear() &&
+					month === today.getMonth() &&
+					date === today.getDate()
+					) {
+					cell.classList.add('current-day');
+					}
+					date++;
+				}
+				row.appendChild(cell);
+				}
+				calendarBody.appendChild(row);
+
+				if (date > daysInMonth && nextMonthDate > 7) {
+				break;
+				}
+			}
+		}
+
+		function updateCalendar() {
+			generateCalendar(selectedMonth, selectedYear);
+			monthSelect.value = selectedMonth;
+			yearSelect.value = selectedYear;
+		}
+
+		monthSelect.addEventListener('change', (e) => {
+			selectedMonth = parseInt(e.target.value);
+			updateCalendar();
+		});
+
+		yearSelect.addEventListener('change', (e) => {
+			selectedYear = parseInt(e.target.value);
+			updateCalendar();
+		});
+
+		prevMonthBtn.addEventListener('click', () => {
+			if (selectedMonth === 0) {
+				selectedMonth = 11;
+				selectedYear--;
+			} else {
+				selectedMonth--;
+			}
+			updateCalendar();
+		});
+
+		nextMonthBtn.addEventListener('click', () => {
+			if (selectedMonth === 11) {
+				selectedMonth = 0;
+				selectedYear++;
+			} else {
+				selectedMonth++;
+			}
+			updateCalendar();
+		});
+
+		// Initialize the calendar
+		populateMonthAndYearSelectors();
+		updateCalendar();
+	}
+
+	// Top Selling Products JS
+	var swiper = new Swiper(".top-selling-products-slide", {
+        slidesPerView: 1,
+        spaceBetween: 25,
+		centeredSlides: false,
+		preventClicks: true,
+		loop: false, 
+		autoplay: {
+			delay: 8000,
+			disableOnInteraction: false,
+			pauseOnMouseEnter: true,
+		},
+		navigation: {
+			nextEl: ".prev",
+          	prevEl: ".next",
+		},
+		pagination: {
+			clickable: true,
+		},
+		breakpoints: {
+			0: {
+				slidesPerView: 2,
+			},
+			576: {
+				slidesPerView: 3,
+			},
+			768: {
+				slidesPerView: 4,
+			},
+			992: {
+				slidesPerView: 4,
+			},
+			1199: {
+				slidesPerView: 4,
+			},
+			1440: {
+				slidesPerView: 5,
+			},
+			1600: {
+				slidesPerView: 6,
+			},
+		}
     });
 	
 	// Theme Settings
@@ -1756,23 +1812,23 @@
 	}
 
 	// Only Fluid & Boxed Style
-	const getBoxedToggleId = document.getElementById('boxed-style');
-	if (getBoxedToggleId) {
-		const switchtoggle = document.querySelector(".boxed-style");
-		const savedTheme = localStorage.getItem("trezo_theme");
-		if (savedTheme) {
-			document.body.setAttribute("boxed-style-data-theme", savedTheme);
-		}
-		switchtoggle.addEventListener("click", function () {
-			if (document.body.getAttribute("boxed-style-data-theme") === "boxed-style-fluid") {
-				document.body.setAttribute("boxed-style-data-theme", "boxed-style-boxed");
-				localStorage.setItem("trezo_theme", "boxed-style-boxed");
-			} else {
-				document.body.setAttribute("boxed-style-data-theme", "boxed-style-fluid");
-				localStorage.setItem("trezo_theme", "boxed-style-fluid");
-			}
-		});
-	}
+	// const getBoxedToggleId = document.getElementById('boxed-style');
+	// if (getBoxedToggleId) {
+	// 	const switchtoggle = document.querySelector(".boxed-style");
+	// 	const savedTheme = localStorage.getItem("trezo_theme");
+	// 	if (savedTheme) {
+	// 		document.body.setAttribute("boxed-style-data-theme", savedTheme);
+	// 	}
+	// 	switchtoggle.addEventListener("click", function () {
+	// 		if (document.body.getAttribute("boxed-style-data-theme") === "boxed-style-fluid") {
+	// 			document.body.setAttribute("boxed-style-data-theme", "boxed-style-boxed");
+	// 			localStorage.setItem("trezo_theme", "boxed-style-boxed");
+	// 		} else {
+	// 			document.body.setAttribute("boxed-style-data-theme", "boxed-style-fluid");
+	// 			localStorage.setItem("trezo_theme", "boxed-style-fluid");
+	// 		}
+	// 	});
+	// }
 
 	// Back to Top JS
 	const getId = document.getElementById("backtotop");
@@ -1816,6 +1872,415 @@
             });
         });
     });
+
+	// Select all buttons with the class 'follow-button'
+	document.querySelectorAll('.follow-button').forEach(button => {
+		// Add click event listener to each button
+		button.addEventListener('click', () => {
+		// Toggle 'followed' class
+		button.classList.toggle('followed');
+		
+		// Find the span with the 'follow-text' class inside this button
+		const followText = button.querySelector('.follow-text');
+		
+		// Update button text
+		followText.textContent = button.classList.contains('followed') ? 'Following' : 'Follow';
+		});
+	});
+
+	// Audio Player JS
+	const audioPlayers = document.querySelectorAll(".track"); // Select all audio elements
+	if (audioPlayers.length > 0) {
+		// Loop through all audio elements
+		audioPlayers.forEach((audioElement, index) => {
+			const playPauseButton = audioElement.closest("button").querySelector(".play-pause");
+
+			function playPause() {
+				if (audioElement.paused) {
+					// Pause all other audio players
+					audioPlayers.forEach((otherAudio, otherIndex) => {
+						if (otherIndex !== index) {
+							otherAudio.pause();
+							otherAudio.closest("button").querySelector(".play-pause").className = "play-pause play";
+						}
+					});
+					audioElement.play();
+					playPauseButton.className = "play-pause pause";
+				} else {
+					audioElement.pause();
+					playPauseButton.className = "play-pause play";
+				}
+			}
+
+			playPauseButton.addEventListener("click", playPause);
+
+			// Reset the play button when the audio ends
+			audioElement.addEventListener("ended", function () {
+				playPauseButton.className = "play-pause play";
+			});
+		});
+	}
+
+	// Audio Player JS
+	var selector = document.querySelectorAll('.single-play');
+
+	selector.forEach(function(item) {
+		item.addEventListener('click', function() {
+			// Remove the 'active' class from all items
+			selector.forEach(function(el) {
+				el.classList.remove('active');
+			});
+			// Add the 'active' class to the clicked item
+			this.classList.add('active');
+		});
+	});
+
+	// Select all buttons with the class 'like-button' Favorite Button
+	document.querySelectorAll('.favorite-button').forEach(button => {
+		// Add click event listener to each button
+		button.addEventListener('click', () => {
+		// Toggle 'liked' class
+			button.classList.toggle('favorite-d');
+		});
+	});
+
+	// Audio Control JS
+	const getAudioControlId = document.getElementById('audio_control');
+	if (getAudioControlId) {
+		const audio = document.getElementById('audio');
+		const playPauseButton = document.getElementById('play-pause');
+		const progressBar = document.getElementById('progress-bar');
+		const progressContainer = document.querySelector('.progress');
+		const currentTimeDisplay = document.getElementById('current-time');
+		const durationDisplay = document.getElementById('duration');
+		
+		document.getElementById('rewind').addEventListener('click', () => {
+			audio.currentTime = Math.max(audio.currentTime - 10, 0);
+		});
+		
+		document.getElementById('fast-forward').addEventListener('click', () => {
+			audio.currentTime = Math.min(audio.currentTime + 10, audio.duration);
+		});
+		
+		document.getElementById('restart').addEventListener('click', () => {
+			audio.currentTime = 0;
+			audio.play();
+		});
+		
+		document.getElementById('play-pause').addEventListener('click', () => {
+			if (audio.paused) {
+			audio.play();
+			playPauseButton.innerHTML = '<i class="ri-pause-fill fs-18"></i>';
+			} else {
+			audio.pause();
+			playPauseButton.innerHTML = '<i class="ri-play-fill fs-18"></i>';
+			}
+		});
+		
+		progressContainer.addEventListener('click', (event) => {
+			const rect = progressContainer.getBoundingClientRect();
+			const clickX = event.clientX - rect.left;
+			const newTime = (clickX / rect.width) * audio.duration;
+			audio.currentTime = newTime;
+		});
+		
+		audio.addEventListener('loadedmetadata', () => {
+			durationDisplay.textContent = formatTime(audio.duration);
+		});
+		
+		audio.addEventListener('timeupdate', () => {
+			const progress = (audio.currentTime / audio.duration) * 100;
+			progressBar.style.width = `${progress}%`;
+			currentTimeDisplay.textContent = formatTime(audio.currentTime);
+		});
+		
+		function formatTime(seconds) {
+			const minutes = Math.floor(seconds / 60);
+			const secs = Math.floor(seconds % 60);
+			return `${minutes}:${secs < 10 ? '0' : ''}${secs}`;
+		}
+	}
+
+	// Audio Control 2 JS
+	const getAudioControl2Id = document.getElementById('audio_control2');
+	if (getAudioControl2Id) {
+
+		document.addEventListener("DOMContentLoaded", () => {
+			const playButton = document.querySelector(".play-button");
+			const playIcon = document.querySelector(".play-icon");
+			const audio = document.querySelector(".audio-element");
+			const waveBars = document.querySelectorAll(".wave-bar");
+			const progressBar = document.querySelector(".progress-bar");
+			const durationLabel = document.querySelector(".duration");
+		
+			let isPlaying = false;
+		
+			// Toggle Play/Pause
+			playButton.addEventListener("click", () => {
+				if (isPlaying) {
+					audio.pause();
+				} else {
+					audio.play();
+				}
+			});
+		
+			// Play event
+			audio.addEventListener("play", () => {
+				isPlaying = true;
+				playIcon.classList.replace("ri-play-large-fill", "ri-pause-fill");
+				waveBars.forEach(bar => (bar.style.animationPlayState = "running"));
+			});
+		
+			// Pause event
+			audio.addEventListener("pause", () => {
+				isPlaying = false;
+				playIcon.classList.replace("ri-pause-fill", "ri-play-large-fill");
+				waveBars.forEach(bar => (bar.style.animationPlayState = "paused"));
+			});
+		
+			// Update Progress Bar and Duration
+			audio.addEventListener("timeupdate", () => {
+				const progress = (audio.currentTime / audio.duration) * 100;
+				progressBar.style.width = `${progress}%`;
+		
+				const minutes = Math.floor(audio.currentTime / 60);
+				const seconds = Math.floor(audio.currentTime % 60);
+				durationLabel.textContent = `${minutes}:${seconds.toString().padStart(2, '0')}`;
+			});
+		
+			// Reset on End
+			audio.addEventListener("ended", () => {
+				isPlaying = false;
+				playIcon.classList.replace("ri-pause-fill", "ri-play-large-fill");
+				waveBars.forEach(bar => (bar.style.animationPlayState = "paused"));
+				progressBar.style.width = "0%";
+				durationLabel.textContent = "00:00";
+			});
+		});
+
+	}
+
+	// Menu Left Right Slide JS
+	const geMenuLeftRightSlideId = document.getElementById('menu');
+	if (geMenuLeftRightSlideId) {
+
+		document.addEventListener("DOMContentLoaded", () => {
+			const menuItems = document.querySelectorAll("#menu > li");
+			const prevBtn = document.getElementById("prev-btn");
+			const nextBtn = document.getElementById("next-btn");
+			let itemsPerPage = 8; // Default value
+			let currentIndex = 0;
+		
+			// Function to update menu visibility
+			function updateMenu() {
+				menuItems.forEach((item, index) => {
+					item.style.display =
+						index >= currentIndex && index < currentIndex + itemsPerPage
+							? "block"
+							: "none";
+				});
+		
+				prevBtn.disabled = currentIndex === 0;
+				nextBtn.disabled = currentIndex + itemsPerPage >= menuItems.length;
+			}
+		
+			// Function to update itemsPerPage based on screen size
+			function updateItemsPerPage() {
+				if (window.matchMedia("(max-width: 992px)").matches) {
+					itemsPerPage = 7; // Show 1 item for small screens
+				} else if (window.matchMedia("(max-width: 1024px)").matches) {
+					itemsPerPage = 7; // Show 2 items for medium screens
+				} else {
+					itemsPerPage = 8; // Show 3 items for large screens
+				}
+				currentIndex = 0; // Reset index when itemsPerPage changes
+				updateMenu();
+			}
+		
+			// Event listeners for buttons
+			prevBtn.addEventListener("click", () => {
+				if (currentIndex > 0) {
+					currentIndex -= 1; // Move back by one item
+					updateMenu();
+				}
+			});
+		
+			nextBtn.addEventListener("click", () => {
+				if (currentIndex + itemsPerPage < menuItems.length) {
+					currentIndex += 1; // Move forward by one item
+					updateMenu();
+				}
+			});
+		
+			// Add event listener for screen size changes
+			window.addEventListener("resize", updateItemsPerPage);
+		
+			// Initial setup
+			updateItemsPerPage();
+		});
+		
+		// document.addEventListener("DOMContentLoaded", () => {
+        //     const menuItems = document.querySelectorAll("#menu > li");
+        //     const prevBtn = document.getElementById("prev-btn");
+        //     const nextBtn = document.getElementById("next-btn");
+        //     const itemsPerPage = 7;
+        //     let currentIndex = 0;
+        
+        //     // Function to update menu visibility
+        //     function updateMenu() {
+        //         menuItems.forEach((item, index) => {
+        //             item.style.display =
+        //                 index >= currentIndex && index < currentIndex + itemsPerPage
+        //                     ? "block"
+        //                     : "none";
+        //         });
+        
+        //         prevBtn.disabled = currentIndex === 0;
+        //         nextBtn.disabled = currentIndex + itemsPerPage >= menuItems.length;
+        //     }
+        
+        //     // Add fade effect
+        //     function fadeEffect(callback) {
+        //         const menu = document.getElementById("menu");
+        //         menu.style.opacity = 0;
+        //         setTimeout(() => {
+        //             callback();
+        //             menu.style.opacity = 1;
+        //         }, 500);
+        //     }
+        
+        //     // Event listeners for buttons
+        //     prevBtn.addEventListener("click", () => {
+        //         if (currentIndex > 0) {
+        //             fadeEffect(() => {
+        //                 currentIndex -= itemsPerPage;
+        //                 updateMenu();
+        //             });
+        //         }
+        //     });
+        
+        //     nextBtn.addEventListener("click", () => {
+        //         if (currentIndex + itemsPerPage < menuItems.length) {
+        //             fadeEffect(() => {
+        //                 currentIndex += itemsPerPage;
+        //                 updateMenu();
+        //             });
+        //         }
+        //     });
+        
+        //     // Initial display
+        //     updateMenu();
+        // });
+	}
+
+	// Wait until the DOM is fully loaded
+	const getWaitUntilTheDomIsFullyLoadedId = document.getElementById('wait_until_the_dom_is_fully_loaded');
+	if (getWaitUntilTheDomIsFullyLoadedId) {
+		document.addEventListener("DOMContentLoaded", function() {
+			// Get the calendar body
+			const calendarBody = document.getElementById("calendarBody");
+	
+			// Add click event listener to the calendar body
+			calendarBody.addEventListener("click", function(event) {
+				// Check if a table cell (td) was clicked
+				if (event.target.tagName === "TD") {
+					// Remove active class from any previously selected cell
+					const activeCell = calendarBody.querySelector(".active");
+					if (activeCell) {
+						activeCell.classList.remove("active");
+					}
+	
+					// Add active class to the clicked cell
+					event.target.classList.add("active");
+				}
+			});
+		});
+	}
+	
+	// Dtae Pikar
+	const getDatePikarPopId = document.getElementById('date_pikar_pop');
+	if (getDatePikarPopId) {
+
+		document.addEventListener("DOMContentLoaded", function () {
+			const dateInput = document.getElementById("date-input");
+			const datepicker = document.getElementById("datepicker");
+	  
+			let selectedDate = null;
+	  
+			function generateCalendar(year, month) {
+			  const firstDay = new Date(year, month, 1).getDay();
+			  const daysInMonth = new Date(year, month + 1, 0).getDate();
+			  let html = "<table>";
+			  html += "<tr><th>Su</th><th>Mo</th><th>Tu</th><th>We</th><th>Th</th><th>Fr</th><th>Sa</th></tr><tr>";
+	  
+			  for (let i = 0; i < firstDay; i++) {
+				html += "<td></td>";
+			  }
+	  
+			  for (let day = 1; day <= daysInMonth; day++) {
+				if ((firstDay + day - 1) % 7 === 0 && day !== 1) {
+				  html += "</tr><tr>";
+				}
+				html += `<td data-day="${day}">${day}</td>`;
+			  }
+	  
+			  html += "</tr></table>";
+			  datepicker.innerHTML = html;
+	  
+			  const days = datepicker.querySelectorAll("td[data-day]");
+			  days.forEach((day) => {
+				day.addEventListener("click", function () {
+				  selectedDate = new Date(year, month, this.dataset.day);
+				  dateInput.value = selectedDate.toLocaleDateString();
+	  
+				  // Highlight selected date
+				  days.forEach((d) => d.classList.remove("selected"));
+				  this.classList.add("selected");
+	  
+				  // Close datepicker
+				  datepicker.classList.remove("active");
+				});
+			  });
+			}
+	  
+			dateInput.addEventListener("click", function () {
+			  datepicker.classList.toggle("active");
+			  const today = new Date();
+			  generateCalendar(today.getFullYear(), today.getMonth());
+			});
+	  
+			document.addEventListener("click", function (e) {
+			  if (!e.target.closest(".datepicker-container")) {
+				datepicker.classList.remove("active");
+			  }
+			});
+		});
+
+	}
+
+	// Send Private Massage
+	const getSendPrivateMassageId = document.getElementById('send_private_massage');
+	if (getSendPrivateMassageId) {
+
+		document.addEventListener('DOMContentLoaded', () => {
+			const closeBtn = document.querySelector('.close-btn');
+			const searchBtn = document.querySelector('.search-btn');
+			const searchOverlay = document.querySelector('.search-overlay');
+		
+			closeBtn.addEventListener('click', () => {
+				searchOverlay.style.display = 'none';
+				searchBtn.style.display = 'block';
+				closeBtn.classList.remove('active');
+			});
+		
+			searchBtn.addEventListener('click', () => {
+				searchBtn.style.display = 'none';
+				searchOverlay.style.display = 'block';
+				closeBtn.classList.add('active');
+			});
+		});
+
+	}
 
 })();
 

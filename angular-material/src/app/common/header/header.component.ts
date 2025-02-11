@@ -9,7 +9,6 @@ import { filter } from 'rxjs/operators';
 
 @Component({
     selector: 'app-header',
-    standalone: true,
     imports: [RouterLink, MatButtonModule, MatMenuModule, NgClass],
     templateUrl: './header.component.html',
     styleUrl: './header.component.scss'
@@ -31,9 +30,6 @@ export class HeaderComponent {
         this.toggleService.isSidebarToggled$.subscribe(isSidebarToggled => {
             this.isSidebarToggled = isSidebarToggled;
         });
-        this.themeService.isToggled$.subscribe(isToggled => {
-            this.isToggled = isToggled;
-        });
         // Subscribe to router events to toggle the sidebar on navigation
         this.router.events.pipe(
             filter(event => event instanceof NavigationEnd)
@@ -42,6 +38,9 @@ export class HeaderComponent {
             if (this.isSidebarToggled) {
                 this.toggleService.toggle(); // Close the sidebar if it's open
             }
+        });
+        this.themeService.isToggled$.subscribe(isToggled => {
+            this.isToggled = isToggled;
         });
     }
 

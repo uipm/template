@@ -5,23 +5,15 @@ import { NgIf } from '@angular/common';
 
 @Component({
     selector: 'app-transactions-history',
-    standalone: true,
     imports: [RouterLink, NgIf],
     templateUrl: './transactions-history.component.html',
     styleUrl: './transactions-history.component.scss'
 })
 export class TransactionsHistoryComponent {
 
-    // isToggled
-    isToggled = false;
-
     constructor(
         public themeService: CustomizerSettingsService
-    ) {
-        this.themeService.isToggled$.subscribe(isToggled => {
-            this.isToggled = isToggled;
-        });
-    }
+    ) {}
 
     // Card Header Menu
     isCardHeaderOpen = false;

@@ -22,7 +22,6 @@ export class MyErrorStateMatcher implements ErrorStateMatcher {
 
 @Component({
     selector: 'app-swac-errorstatematcher',
-    standalone: true,
     imports: [MatFormFieldModule, MatSelectModule, FormsModule, ReactiveFormsModule, MatInputModule],
     templateUrl: './swac-errorstatematcher.component.html',
     styleUrl: './swac-errorstatematcher.component.scss'

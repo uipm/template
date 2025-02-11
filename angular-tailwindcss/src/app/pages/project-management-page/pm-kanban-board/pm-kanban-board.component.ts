@@ -3,7 +3,6 @@ import { RouterLink } from '@angular/router';
 
 @Component({
     selector: 'app-pm-kanban-board',
-    standalone: true,
     imports: [RouterLink],
     templateUrl: './pm-kanban-board.component.html',
     styleUrl: './pm-kanban-board.component.scss'

@@ -1,4 +1,4 @@
-import { NgFor, NgIf } from '@angular/common';
+import { NgIf } from '@angular/common';
 import { Component, ViewChild } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
@@ -7,12 +7,10 @@ import { MatPaginatorModule, MatPaginator } from '@angular/material/paginator';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatTableModule, MatTableDataSource } from '@angular/material/table';
 import { MatTooltipModule } from '@angular/material/tooltip';
-import { RouterLink } from '@angular/router';
 
 @Component({
     selector: 'app-pd-manage-reviews',
-    standalone: true,
-    imports: [RouterLink, MatCardModule, MatButtonModule, MatMenuModule, MatProgressBarModule, MatTableModule, MatPaginatorModule, NgIf, NgFor, MatTooltipModule],
+    imports: [MatCardModule, MatButtonModule, MatMenuModule, MatProgressBarModule, MatTableModule, MatPaginatorModule, NgIf, MatTooltipModule],
     templateUrl: './pd-manage-reviews.component.html',
     styleUrl: './pd-manage-reviews.component.scss'
 })

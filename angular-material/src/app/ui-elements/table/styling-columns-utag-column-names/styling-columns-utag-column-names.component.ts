@@ -24,7 +24,6 @@ const ELEMENT_DATA: PeriodicElement[] = [
 
 @Component({
     selector: 'app-styling-columns-utag-column-names',
-    standalone: true,
     imports: [MatTableModule],
     templateUrl: './styling-columns-utag-column-names.component.html',
     styleUrl: './styling-columns-utag-column-names.component.scss'
@@ -34,15 +33,8 @@ export class StylingColumnsUtagColumnNamesComponent {
     displayedColumns: string[] = ['demo-position', 'demo-name', 'demo-weight', 'demo-symbol'];
     dataSource = ELEMENT_DATA;
 
-    // isToggled
-    isToggled = false;
-
     constructor(
         public themeService: CustomizerSettingsService
-    ) {
-        this.themeService.isToggled$.subscribe(isToggled => {
-            this.isToggled = isToggled;
-        });
-    }
+    ) {}
 
 }

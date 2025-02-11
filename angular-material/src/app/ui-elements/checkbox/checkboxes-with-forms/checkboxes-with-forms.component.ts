@@ -5,7 +5,6 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
 
 @Component({
     selector: 'app-checkboxes-with-forms',
-    standalone: true,
     imports: [FormsModule, ReactiveFormsModule, MatCheckboxModule, JsonPipe],
     templateUrl: './checkboxes-with-forms.component.html',
     styleUrl: './checkboxes-with-forms.component.scss'

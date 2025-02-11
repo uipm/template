@@ -68,7 +68,9 @@
                         .mat-calendar-previous-button, .mat-calendar-next-button {
                             background-color: var(--borderColor);
                             color: var(--blackColor);
-                            display: inline-block;
+                            justify-content: center;
+                            align-items: center;
+                            display: flex;
                             height: 30px;
                             width: 30px;
                             padding: 0;

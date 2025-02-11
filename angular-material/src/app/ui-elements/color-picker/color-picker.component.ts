@@ -5,7 +5,6 @@ import { ColorPickerModule } from 'ngx-color-picker';
 
 @Component({
     selector: 'app-color-picker',
-    standalone: true,
     imports: [RouterLink, MatCardModule, ColorPickerModule],
     templateUrl: './color-picker.component.html',
     styleUrl: './color-picker.component.scss'

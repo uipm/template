@@ -8,7 +8,6 @@ import { MatAutocompleteModule } from '@angular/material/autocomplete';
 
 @Component({
     selector: 'app-plain-input',
-    standalone: true,
     imports: [MatCardModule, FormsModule, MatAutocompleteModule, ReactiveFormsModule, AsyncPipe],
     templateUrl: './plain-input.component.html',
     styleUrl: './plain-input.component.scss'

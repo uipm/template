@@ -5,7 +5,6 @@ import { NgxEditorModule, Editor, Toolbar } from 'ngx-editor';
 
 @Component({
     selector: 'app-editors',
-    standalone: true,
     imports: [RouterLink, NgxEditorModule, NgIf],
     templateUrl: './editors.component.html',
     styleUrl: './editors.component.scss'

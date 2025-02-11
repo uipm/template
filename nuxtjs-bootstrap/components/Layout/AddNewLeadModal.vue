@@ -88,7 +88,7 @@
             class="btn btn-primary text-white fw-semibold py-2 px-2 px-sm-3"
           >
             <span class="py-sm-1 d-block">
-              <i class="ri-add-line text-white"></i>
+              <i class="ri-add-line text-white me-1"></i>
               <span>Create New Lead</span>
             </span>
           </button>

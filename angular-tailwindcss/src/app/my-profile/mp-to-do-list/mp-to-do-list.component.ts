@@ -2,7 +2,6 @@ import { Component } from '@angular/core';
 
 @Component({
     selector: 'app-mp-to-do-list',
-    standalone: true,
     imports: [],
     templateUrl: './mp-to-do-list.component.html',
     styleUrl: './mp-to-do-list.component.scss'

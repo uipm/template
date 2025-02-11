@@ -7,7 +7,6 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 
 @Component({
     selector: 'app-drp-forms-integration',
-    standalone: true,
     imports: [MatCardModule, MatFormFieldModule, MatDatepickerModule, FormsModule, ReactiveFormsModule, JsonPipe],
     templateUrl: './drp-forms-integration.component.html',
     styleUrl: './drp-forms-integration.component.scss'

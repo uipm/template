@@ -5,15 +5,11 @@ import { CustomizerSettingsService } from '../../../customizer-settings/customiz
 
 @Component({
     selector: 'app-realtime-active-users',
-    standalone: true,
     imports: [RouterLink],
     templateUrl: './realtime-active-users.component.html',
     styleUrl: './realtime-active-users.component.scss'
 })
 export class RealtimeActiveUsersComponent {
-
-    // isToggled
-    isToggled = false;
 
     constructor(
         public themeService: CustomizerSettingsService,

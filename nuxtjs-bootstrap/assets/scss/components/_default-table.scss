@@ -60,6 +60,12 @@
           }
         }
       }
+      .form-check {
+        .form-check-input {
+          position: relative;
+          top: -2px;
+        }
+      }
     }
   }
   &.top-selling-products {
@@ -488,6 +494,344 @@
       }
     }
   }
+  /* Marketing Dashboard CSS */
+  &.campaigns-table {
+    &.style-two {
+      .table-responsive {
+        .table {
+          thead {
+            tr {
+              th {
+                &:first-child {
+                  padding-left: 0 !important;
+                }
+                &:last-child {
+                  padding-right: 0 !important;
+                }
+              }
+            }
+          }
+          tbody {
+            tr {
+              td {
+                padding-top: 10px;
+                padding-bottom: 10px;
+                &:first-child {
+                  padding-left: 0 !important;
+                }
+                &:last-child {
+                  padding-right: 0 !important;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  /* NFT Dashboard CSS */
+  &.top-nfts-table {
+    &.style-two {
+      .table-responsive {
+        .table {
+          thead {
+            tr {
+              th {
+                &:first-child {
+                  padding-left: 0 !important;
+                }
+                &:last-child {
+                  padding-right: 0 !important;
+                }
+              }
+            }
+          }
+          tbody {
+            tr {
+              td {
+                padding-top: 10px;
+                padding-bottom: 10px;
+                &:first-child {
+                  padding-left: 0 !important;
+                }
+                &:last-child {
+                  padding-right: 0 !important;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  /* NFT Dashboard CSS */
+  &.history-of-bids {
+    &.style-two {
+      .table-responsive {
+        height: 438px;
+        .table {
+          tbody {
+            tr {
+              td {
+                padding-top: 10px;
+                padding-bottom: 10px;
+                &:first-child {
+                  padding-left: 0 !important;
+                }
+                &:last-child {
+                  padding-right: 0 !important;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  /* Finance Dashboard CSS */
+  &.transaction-history {
+    &.style-two {
+      .table-responsive {
+        .table {
+          tbody {
+            tr {
+              td {
+                padding-top: 23.5px;
+                padding-bottom: 23.5px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  &.transaction-history-large {
+    &.style-two {
+      .table-responsive {
+        .table {
+          tbody {
+            tr {
+              td {
+                padding-top: 23.5px;
+                padding-bottom: 23.5px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  &.shipment-list {
+    &.style-two {
+      .table-responsive {
+        .table {
+          tbody {
+            tr {
+              td {
+                padding-top: 19px;
+                padding-bottom: 19px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  &.style-three {
+    .table-responsive {
+      .table {
+        thead {
+          tr {
+            th {
+              font-size: 14px;
+              color: $body-color;
+              &:first-child {
+                padding-left: 30px !important;
+              }
+              &:last-child {
+                padding-right: 30px;
+              }
+            }
+          }
+        }
+        tbody {
+          tr {
+            td {
+              padding-top: 10px;
+              padding-bottom: 10px;
+              border-left: none;
+              border-right: none;
+              &:first-child {
+                padding-left: 30px !important;
+              }
+              &:last-child {
+                padding-right: 30px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  &.agents-performance-overview {
+    &.style-three {
+      .table-responsive {
+        border-radius: 0 !important;
+        .table {
+          border-spacing: 10px;
+          tbody {
+            tr {
+              td {
+                padding: 10px !important;
+                border-left: none;
+                border-right: none;
+                border: 0;
+                background-color: #f6f7f9;
+                border-radius: 0 !important;
+                &:first-child {
+                  border-radius: 7px 0 0 7px !important;
+                }
+                &:last-child {
+                  border-radius: 0 7px 7px 0 !important;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  &.for-data-table {
+    .table-responsive {
+      .table {
+        thead {
+          tr {
+            th {
+              background-color: transparent !important;
+              position: relative;
+              &::after {
+                content: "\f326";
+                font-family: remixicon !important;
+                margin-left: 4px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .tablesorter-header {
+      background-color: transparent !important;
+      position: relative;
+      &::after {
+        content: "\f326";
+        font-family: remixicon !important;
+        margin-left: 4px;
+      }
+    }
+    .Selc {
+      display: none;
+    }
+    .tablesorter-header {
+      font-weight: 400 !important;
+      font-size: 14px !important;
+    }
+  }
+  &.popular-hosts {
+    .table-responsive {
+      .table {
+        tbody {
+          tr {
+            td {
+              border-color: #f6f7f9;
+              padding-left: 12px;
+              padding-right: 12px;
+            }
+            &:last-child {
+              td {
+                border: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  &.recently-played {
+    .table-responsive {
+      .table {
+        tbody {
+          tr {
+            td {
+              border-color: #f6f7f9;
+              padding: 12px 12px;
+            }
+            &:last-child {
+              td {
+                border: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  &.top-podcasts {
+    .table-responsive {
+      .table {
+        thead {
+          tr {
+            th {
+              padding-left: 18px;
+              padding-right: 18px;
+            }
+          }
+        }
+        tbody {
+          tr {
+            td {
+              border-color: #f6f7f9;
+              padding-left: 18px;
+              padding-right: 18px;
+            }
+            &:last-child {
+              td {
+                border: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  &.type-prescription {
+    &.style-three {
+      .table-responsive {
+        .table {
+          tbody {
+            tr {
+              td {
+                padding-top: 24px;
+                padding-bottom: 24px;
+                border: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  &.teachers-table {
+    &.style-three {
+      .table-responsive .table tbody tr {
+        &:last-child {
+          td {
+            border: none;
+            padding-bottom: 0;
+          }
+        }
+      }
+    }
+  }
 }
 .table-src-form {
   margin-right: 20px;
@@ -523,7 +867,6 @@
         width: 1100px;
       }
     }
-    /* Analytics Dashboard CSS */
     &.browser-leads {
       &.style-two {
         .table-responsive {
@@ -531,6 +874,61 @@
             &.for-mobile-width {
               width: 713px !important;
             }
+          }
+        }
+      }
+    }
+    &.latest-transaction {
+      .table {
+        width: 967px;
+      }
+    }
+    &.transaction-history {
+      &.tracking-order {
+        &.style-two {
+          .table-responsive {
+            .table {
+              width: 742px;
+            }
+          }
+        }
+      }
+    }
+    &.style-three {
+      .table-responsive {
+        .table {
+          thead {
+            tr {
+              th {
+                &:first-child {
+                  padding-left: 15px !important;
+                }
+                &:last-child {
+                  padding-right: 15px !important;
+                }
+              }
+            }
+          }
+          tbody {
+            tr {
+              td {
+                &:first-child {
+                  padding-left: 15px !important;
+                }
+                &:last-child {
+                  padding-right: 15px !important;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    &.recent-calls {
+      &.style-three {
+        .table-responsive {
+          .table {
+            width: 741px !important;
           }
         }
       }
@@ -551,6 +949,56 @@
         .table-responsive {
           .table {
             width: 357.33px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Max width 418px */
+@media only screen and (max-width: 418px) {
+  .default-table-area {
+    &.browser-leads {
+      &.by-keywords {
+        &.style-two {
+          .table-responsive {
+            .table {
+              &.for-mobile-width {
+                width: 364px !important;
+              }
+            }
+          }
+        }
+      }
+    }
+    &.popular-hosts {
+      .table-responsive {
+        .table {
+          width: 392px !important;
+        }
+      }
+    }
+  }
+}
+
+/* Max width 490px */
+@media only screen and (max-width: 490px) {
+  .default-table-area {
+    &.top-nfts-table {
+      &.style-two {
+        .table-responsive {
+          .table {
+            width: 436px !important;
+          }
+        }
+      }
+    }
+    &.agents-performance-overview {
+      &.style-three {
+        .table-responsive {
+          .table {
+            width: 420px;
           }
         }
       }
@@ -600,11 +1048,70 @@
         width: 522px;
       }
     }
+    &.top-podcasts {
+      .table {
+        width: 550px;
+      }
+    }
+    &.type-prescription {
+      .table {
+        width: 552px;
+      }
+    }
   }
   .table-src-form {
     margin-right: 10px;
     .form-control {
       width: 140px;
+    }
+  }
+}
+
+/* Max width 650px */
+@media only screen and (max-width: 650px) {
+  .default-table-area {
+    &.browser-leads {
+      &.pages-today {
+        &.style-two {
+          .table-responsive {
+            .table {
+              &.for-mobile-width {
+                width: 596px !important;
+              }
+            }
+          }
+        }
+      }
+    }
+    &.browser-used {
+      &.style-two {
+        .table-responsive {
+          .table {
+            &.for-mobile-width {
+              width: 582px !important;
+            }
+          }
+        }
+      }
+    }
+    /* Marketing Dashboard CSS */
+    &.campaigns-table {
+      &.style-two {
+        .table-responsive {
+          .table {
+            width: 596px !important;
+          }
+        }
+      }
+    }
+    &.employee-leave-request {
+      &.style-three {
+        .table-responsive {
+          .table {
+            width: 626px !important;
+          }
+        }
+      }
     }
   }
 }
@@ -624,6 +1131,87 @@
     &.email-list {
       .table {
         width: 680px;
+      }
+    }
+    &.transaction-history {
+      &.style-two {
+        .table-responsive {
+          .table {
+            width: 685px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .only-for-responsive-table {
+    table {
+      width: 704px !important;
+    }
+  }
+  .recently-played {
+    table {
+      width: 742px !important;
+    }
+  }
+}
+
+/* Max width 860px */
+@media only screen and (max-width: 860px) {
+  .default-table-area {
+    &.rankings-table {
+      &.style-two {
+        .table-responsive {
+          .table {
+            width: 798px !important;
+          }
+        }
+      }
+    }
+    &.transaction-table {
+      &.style-two {
+        .table-responsive {
+          .table {
+            width: 798px !important;
+          }
+        }
+      }
+    }
+    &.transaction-history-large {
+      &.style-two {
+        .table-responsive {
+          .table {
+            width: 836px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .default-table-area {
+    &.campaigns-table {
+      &.style-two {
+        &.top-customers-table {
+          .table {
+            width: 836px !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1405px) {
+  .default-table-area {
+    &.style-three {
+      &.recently-played {
+        .table {
+          width: 730px;
+        }
       }
     }
   }
@@ -706,6 +1294,51 @@
   }
 }
 
+@media only screen and (min-width: 992px) and (max-width: 1405px) {
+  .default-table-area {
+    &.style-three {
+      &.recently-played {
+        .table {
+          width: 730px;
+        }
+      }
+    }
+  }
+}
+
+/* Max width 1340px */
+@media only screen and (max-width: 1340px) {
+  .default-table-area {
+    &.patient-table {
+      &.style-two {
+        .table-responsive {
+          .table {
+            width: 927px !important;
+          }
+        }
+      }
+    }
+    &.shipment-list {
+      &.style-two {
+        .table-responsive {
+          .table {
+            width: 1003px;
+          }
+        }
+      }
+    }
+    &.employee-list {
+      &.style-three {
+        .table-responsive {
+          .table {
+            width: 1042px;
+          }
+        }
+      }
+    }
+  }
+}
+
 /* Min width 1200px to Max width 1399px */
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
   .default-table-area {
@@ -754,6 +1387,36 @@
         width: 525px;
       }
     }
+    &.style-three {
+      .table-responsive {
+        .table {
+          thead {
+            tr {
+              th {
+                &:first-child {
+                  padding-left: 20px !important;
+                }
+                &:last-child {
+                  padding-right: 20px !important;
+                }
+              }
+            }
+          }
+          tbody {
+            tr {
+              td {
+                &:first-child {
+                  padding-left: 20px !important;
+                }
+                &:last-child {
+                  padding-right: 20px !important;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }
 
@@ -797,6 +1460,24 @@
     &.all-carts {
       .table {
         width: 926px;
+      }
+    }
+    &.campaigns-table {
+      &.latest-transaction-table {
+        .table-responsive {
+          .table {
+            width: 927px !important;
+          }
+        }
+      }
+    }
+    &.real-estate-customers {
+      &.style-two {
+        .table-responsive {
+          .table {
+            width: 1252px;
+          }
+        }
       }
     }
   }

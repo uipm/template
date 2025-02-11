@@ -1,0 +1,472 @@
+.creator-details-card {
+    .mat-mdc-card-content {
+        .text-xs {
+            font-size: 12px;
+        }
+        .author {
+            margin-bottom: 25px;
+            gap: 17px;
+
+            img {
+                width: 65px;
+            }
+            h3 {
+                font-size: 24px;
+                margin-bottom: 8px;
+            }
+        }
+        .author-info {
+            .date {
+                gap: 15px;
+
+                img {
+                    margin-bottom: -3px;
+                }
+                div {
+                    span {
+                        &:nth-child(1) {
+                            margin-bottom: 4px;
+                        }
+                    }
+                }
+            }
+            .mat-mdc-button {
+                padding: 8px 17px;
+                display: inline-block;
+                color: var(--whiteColor);
+                background-color: var(--primaryColor);
+                font: {
+                    size: 16px;
+                    weight: 500;
+                };
+                &.mat-warn {
+                    background-color: #8695aa;
+                }
+            }
+        }
+        .item-info {
+            margin-top: 25px;
+            padding: 25px 30px;
+            background-color: #f6f7f9;
+            
+            .item {
+                span {
+                    &:nth-child(2) {
+                        margin-top: 4px;
+                    }
+                }
+            }
+        }
+        h5 {
+            margin: {
+                top: 25px;
+                bottom: 12px;
+            };
+        }
+    }
+    &.component-dark-theme {
+        .mat-mdc-card-content {
+            .item-info {
+                background-color: #0a0e19;
+            }
+        }
+    }
+}
+.creator-nfts-card {
+    .mat-mdc-card-content {
+        .nfts-tabs {
+            margin: {
+                bottom: 22px;
+                top: 27px;
+            };
+            li {
+                margin-right: 35px;
+
+                .mat-mdc-button {
+                    text-transform: uppercase;
+                    color: var(--bodyColor);
+                    display: inline-block;
+                    letter-spacing: 2px;
+                    padding: 0;
+                    font: {
+                        size: 12px;
+                        weight: 600;
+                    };
+                    &:hover, &.active {
+                        color: var(--primaryColor);
+                    }
+                }
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+    &.component-rtl-enabled {
+        .mat-mdc-card-content {
+            .nfts-tabs {
+                li {
+                    margin: {
+                        right: 0;
+                        left: 35px;
+                    };
+                    &:last-child {
+                        margin-left: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+::ng-deep {
+    .creator-nfts-card {
+        .mat-mdc-card-content {
+            .mat-mdc-table {
+                &.mdc-data-table__table {
+                    .mat-mdc-header-row {
+                        .mat-mdc-header-cell {
+                            letter-spacing: 1px;
+                            color: var(--bodyColor);
+                            text-transform: uppercase;
+                            background-color: transparent;
+                            font: {
+                                size: 10px;
+                                weight: 700;
+                            };
+                            padding: {
+                                bottom: 9px;
+                                top: 0;
+                            };
+                            &:first-child {
+                                padding-left: 0;
+                            }
+                            &:last-child {
+                                padding-right: 0;
+                            }
+                        }
+                    }
+                    .mdc-data-table__content {
+                        .mat-mdc-row {
+                            .mat-mdc-cell {
+                                font-size: 12px;
+                                padding: {
+                                    top: 10px;
+                                    bottom: 10px;
+                                };
+                                border: {
+                                    left-width: 0;
+                                    right-width: 0;
+                                };
+                                .employee-info {
+                                    .img {
+                                        width: 48px;
+                                    }
+                                    span {
+                                        &:nth-child(1) {
+                                            font-size: var(--fontSize);
+                                        }
+                                    }
+                                }
+                                &:first-child {
+                                    padding-left: 0;
+                                }
+                                &:last-child {
+                                    padding-right: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &.component-rtl-enabled {
+            .mat-mdc-card-content {
+                .mat-mdc-table {
+                    &.mdc-data-table__table {
+                        .mat-mdc-header-row {
+                            .mat-mdc-header-cell {
+                                &:first-child {
+                                    padding: {
+                                        left: 20px;
+                                        right: 0;
+                                    };
+                                }
+                                &:last-child {
+                                    padding: {
+                                        right: 20px;
+                                        left: 0;
+                                    };
+                                }
+                            }
+                        }
+                        .mdc-data-table__content {
+                            .mat-mdc-row {
+                                .mat-mdc-cell {
+                                    &:first-child {
+                                        padding: {
+                                            left: 20px;
+                                            right: 0;
+                                        };
+                                    }
+                                    &:last-child {
+                                        padding: {
+                                            right: 20px;
+                                            left: 0;
+                                        };
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    .creator-details-card {
+        .mat-mdc-card-content {
+            .author {
+                margin-bottom: 17px;
+    
+                img {
+                    width: 55px;
+                }
+                h3 {
+                    font-size: 18px;
+                }
+            }
+            .author-info {
+                .date {
+                    gap: 12px;
+                    margin-bottom: 17px;
+                }
+                .mat-mdc-button {
+                    font-size: 14px;
+                }
+            }
+            .item-info {
+                margin-top: 17px;
+                padding: 20px 17px;
+
+                .item {
+                    margin-bottom: 17px;
+
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+            h5 {
+                margin: {
+                    top: 20px;
+                    bottom: 10px;
+                };
+            }
+        }
+    }
+    .creator-nfts-card {
+        .mat-mdc-card-content {
+            .nfts-tabs {
+                li {
+                    margin-right: 15px;
+    
+                    .mat-mdc-button {
+                        letter-spacing: .3px;
+                    }
+                }
+            }
+        }
+        &.component-rtl-enabled {
+            .mat-mdc-card-content {
+                .nfts-tabs {
+                    li {
+                        margin-left: 15px;
+                    }
+                }
+            }
+        }
+    }
+    ::ng-deep {
+        .creator-nfts-card {
+            &.component-rtl-enabled {
+                .mat-mdc-card-content {
+                    .mat-mdc-tab-group {
+                        .mat-mdc-tab-header {
+                            .mat-mdc-tab {
+                                margin: {
+                                    right: 0;
+                                    left: 15px;
+                                };
+                            }
+                        }
+                    }
+                    .mat-mdc-table {
+                        &.mdc-data-table__table {
+                            .mat-mdc-header-row {
+                                .mat-mdc-header-cell {
+                                    &:first-child {
+                                        padding: {
+                                            left: 17px;
+                                            right: 0;
+                                        };
+                                    }
+                                    &:last-child {
+                                        padding: {
+                                            right: 17px;
+                                            left: 0;
+                                        };
+                                    }
+                                }
+                            }
+                            .mdc-data-table__content {
+                                .mat-mdc-row {
+                                    .mat-mdc-cell {
+                                        &:first-child {
+                                            padding: {
+                                                left: 17px;
+                                                right: 0;
+                                            };
+                                        }
+                                        &:last-child {
+                                            padding: {
+                                                right: 17px;
+                                                left: 0;
+                                            };
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width : 576px) and (max-width : 767px) {
+
+    .creator-details-card {
+        .mat-mdc-card-content {
+            .author {
+                margin-bottom: 20px;
+            }
+            .author-info {
+                .date {
+                    margin-bottom: 0;
+                }
+            }
+            .item-info {
+                margin-top: 20px;
+                padding: 25px 20px;
+
+                .item {
+                    margin-bottom: 0;
+                }
+            }
+            h5 {
+                margin: {
+                    top: 25px;
+                };
+            }
+        }
+    }
+    ::ng-deep {
+        .creator-nfts-card {
+            &.component-rtl-enabled {
+                .mat-mdc-card-content {
+                    .mat-mdc-table {
+                        &.mdc-data-table__table {
+                            .mat-mdc-header-row {
+                                .mat-mdc-header-cell {
+                                    &:first-child {
+                                        padding: {
+                                            left: 20px;
+                                            right: 0;
+                                        };
+                                    }
+                                    &:last-child {
+                                        padding: {
+                                            right: 20px;
+                                            left: 0;
+                                        };
+                                    }
+                                }
+                            }
+                            .mdc-data-table__content {
+                                .mat-mdc-row {
+                                    .mat-mdc-cell {
+                                        &:first-child {
+                                            padding: {
+                                                left: 20px;
+                                                right: 0;
+                                            };
+                                        }
+                                        &:last-child {
+                                            padding: {
+                                                right: 20px;
+                                                left: 0;
+                                            };
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    .creator-details-card {
+        .mat-mdc-card-content {
+            .author {
+    
+                img {
+                    width: 60px;
+                }
+                h3 {
+                    font-size: 20px;
+                }
+            }
+            .author-info {
+                .mat-mdc-button {
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width : 992px) and (max-width : 1199px) {
+
+    .creator-details-card {
+        .mat-mdc-card-content {
+            .author {
+                h3 {
+                    font-size: 22px;
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {}
+
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {}

@@ -1,11 +1,9 @@
 import { Component } from '@angular/core';
-import { RouterLink } from '@angular/router';
 import { TicketsNewOpenService } from './tickets-new-open.service';
 
 @Component({
     selector: 'app-tickets-new-open:not(1)',
-    standalone: true,
-    imports: [RouterLink],
+    imports: [],
     templateUrl: './tickets-new-open.component.html',
     styleUrl: './tickets-new-open.component.scss'
 })

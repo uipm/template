@@ -7,32 +7,21 @@ import { isPlatformBrowser } from '@angular/common';
 export class TotalSalesService {
 
     private isBrowser: boolean;
+    private chartInstance: any;
 
     constructor(@Inject(PLATFORM_ID) private platformId: any) {
         this.isBrowser = isPlatformBrowser(this.platformId);
     }
 
-    async loadChart(): Promise<void> {
+    async loadChart(series: { name: string; data: number[] }[], categories: string[]): Promise<void> {
         if (this.isBrowser) {
             try {
-                // Dynamically import ApexCharts
                 const ApexCharts = (await import('apexcharts')).default;
-
-                // Define chart options
                 const options = {
-                    series: [
-                        {
-                            name: "Current Sale",
-                            data: [35, 50, 55, 60, 50, 60, 55, 60, 78, 40, 95, 80]
-                        },
-                        {
-                            name: "Last Year Sale",
-                            data: [70, 50, 40, 40, 62, 52, 80, 40, 60, 53, 70, 70]
-                        }
-                    ],
+                    series,
                     chart: {
                         type: "area",
-                        height: 363,
+                        height: 365,
                         zoom: {
                             enabled: false
                         }
@@ -62,20 +51,7 @@ export class TotalSalesService {
                         }
                     },
                     xaxis: {
-                        categories: [
-                            "Jan",
-                            "Feb",
-                            "Mar",
-                            "Apr",
-                            "May",
-                            "Jun",
-                            "Jul",
-                            "Aug",
-                            "Sep",
-                            "Oct",
-                            "Nov",
-                            "Dec"
-                        ],
+                        categories,
                         axisTicks: {
                             show: false,
                             color: '#ECEEF2'
@@ -93,8 +69,8 @@ export class TotalSalesService {
                         }
                     },
                     yaxis: {
-                        tickAmount: 5,
-                        max: 100,
+                        // tickAmount: 5,
+                        // max: 100,
                         min: 0,
                         labels: {
                             formatter: (val:any) => {
@@ -127,10 +103,10 @@ export class TotalSalesService {
                             colors: '#64748B'
                         },
                         markers: {
-                            size: 7,
+                            size: 6,
                             offsetX: -2,
                             offsetY: -.5,
-                            shape: 'diamond'
+                            shape: 'circle'
                         }
                     },
                     tooltip: {
@@ -141,13 +117,17 @@ export class TotalSalesService {
                         }
                     }
                 };
-
-                // Initialize and render the chart
-                const chart = new ApexCharts(document.querySelector('#ecommerce_total_sales_chart'), options);
-                chart.render();
+                this.chartInstance = new ApexCharts(document.querySelector('#ecommerce_total_sales_chart'), options);
+                this.chartInstance.render();
             } catch (error) {
                 console.error('Error loading ApexCharts:', error);
             }
+        }
+    }
+
+    updateChart(series: { name: string; data: number[] }[], categories: string[]): void {
+        if (this.chartInstance) {
+            this.chartInstance.updateOptions({ series, xaxis: { categories } });
         }
     }
 

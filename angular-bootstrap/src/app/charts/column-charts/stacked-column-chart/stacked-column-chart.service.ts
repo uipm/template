@@ -60,12 +60,12 @@ export class StackedColumnChartService {
                     xaxis: {
                         type: "category",
                         categories: [
-                            "01/2024",
-                            "02/2024",
-                            "03/2024",
-                            "04/2024",
-                            "05/2024",
-                            "06/2024"
+                            "01/2025",
+                            "02/2025",
+                            "03/2025",
+                            "04/2025",
+                            "05/2025",
+                            "06/2025"
                         ],
                         axisTicks: {
                             show: false,

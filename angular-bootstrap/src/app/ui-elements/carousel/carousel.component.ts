@@ -4,7 +4,6 @@ import { CarouselModule, OwlOptions } from 'ngx-owl-carousel-o';
 
 @Component({
     selector: 'app-carousel',
-    standalone: true,
     imports: [RouterLink, CarouselModule],
     templateUrl: './carousel.component.html',
     styleUrl: './carousel.component.scss'

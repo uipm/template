@@ -5,22 +5,14 @@ import { CustomizerSettingsService } from '../../customizer-settings/customizer-
 
 @Component({
     selector: 'app-confirm-email',
-    standalone: true,
     imports: [RouterLink, MatButtonModule],
     templateUrl: './confirm-email.component.html',
     styleUrl: './confirm-email.component.scss'
 })
 export class ConfirmEmailComponent {
 
-    // isToggled
-    isToggled = false;
-
     constructor(
         public themeService: CustomizerSettingsService
-    ) {
-        this.themeService.isToggled$.subscribe(isToggled => {
-            this.isToggled = isToggled;
-        });
-    }
+    ) {}
 
 }

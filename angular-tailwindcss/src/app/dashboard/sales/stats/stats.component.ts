@@ -6,7 +6,6 @@ import { TotalRevenueComponent } from './total-revenue/total-revenue.component';
 
 @Component({
     selector: 'app-stats',
-    standalone: true,
     imports: [TotalSalesComponent, TotalOrdersComponent, TotalProfitComponent, TotalRevenueComponent],
     templateUrl: './stats.component.html',
     styleUrl: './stats.component.scss'

@@ -10,7 +10,6 @@ import {
 
 @Component({
     selector: 'app-dd-disabled-sorting',
-    standalone: true,
     imports: [CdkDropListGroup, CdkDropList, CdkDrag],
     templateUrl: './dd-disabled-sorting.component.html',
     styleUrl: './dd-disabled-sorting.component.scss'

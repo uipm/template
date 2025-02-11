@@ -253,89 +253,37 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1, .display-6, .display-5, .d
                 @apply opacity-100 visible;
             }
         }
-        .chat-sidebar-navs {
-            .nav-item {
-                .nav-link {
-                    &::before {
-                        content: '';
-                        @apply absolute ltr:left-0 rtl:right-0 w-[0] bottom-0 h-[2px] transition-all bg-primary-500;
-                    }
-                    &:hover {
-                        @apply text-primary-500;
-
-                        &::before {
-                            @apply w-full;
-                        }
-                    }
-                }
-                &.active {
-                    .nav-link {
-                        @apply text-primary-500;
-
-                        &::before {
-                            @apply w-full;
-                        }
-                    }
-                }
-            }
-        }
-        .chat-sidebar-tab-content {
-            .tab-pane {
-                .chat-users-list {
-                    &::-webkit-scrollbar {
-                        @apply w-[2px] h-[2px];
-                    }
-                    &::-webkit-scrollbar-track {
-                        @apply bg-white rounded-[50px] dark:bg-[#0C1427];
-                    }
-                    &::-webkit-scrollbar-thumb {
-                        @apply bg-[#B5C3D7] rounded-[50px] dark:bg-[#ffffff1a];
-                    }
-                }
-            }
-        }
-        .chat-body {
-            direction: rtl;
-
-            &::-webkit-scrollbar {
-                @apply w-[2px] h-[2px];
-            }
-            &::-webkit-scrollbar-track {
-                @apply bg-white rounded-[50px] dark:bg-[#0C1427];
-            }
-            &::-webkit-scrollbar-thumb {
-                @apply bg-[#B5C3D7] rounded-[50px] dark:bg-[#ffffff1a];
-            }
-            ul {
-                li {
-                    direction: ltr;
-                }
-            }
-        }
         abbr {
             @apply cursor-help;
         }
     }
-    .products-list-navs {
-        .nav-item {
-            .nav-link {
-                &:hover {
-                    @apply bg-primary-500 text-white;
+    &.working-schedule-card {
+        .trezo-card-content {
+            .owl-theme {
+                .owl-nav {
+                    &.disabled + .owl-dots {
+                        @apply mt-0;
+                    }
                 }
-            }
-            &.active {
-                .nav-link {
-                    @apply bg-primary-500 text-white;
+                .owl-dots {
+                    @apply absolute ltr:right-0 rtl:left-0 -top-[35px];
+
+                    .owl-dot {
+                        span {
+                            @apply w-[7px] h-[7px] mt-0 mb-0 ml-0 mr-[4px] rounded-full bg-gray-100 transition-all;
+                        }
+                        &:last-child {
+                            span {
+                                @apply mr-0;
+                            }
+                        }
+                        &:hover, &.active {
+                            span {
+                                @apply bg-primary-500;
+                            }
+                        }
+                    }
                 }
-            }
-        }
-    }
-    .products-tab-content {
-        .tab-pane {
-            @apply hidden;
-            
-            &.active {
-                @apply block;
             }
         }
     }
@@ -377,56 +325,96 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1, .display-6, .display-5, .d
             }
         }
     }
-    &.welcome-card {
-        background: linear-gradient(81deg, #605DFF 3.39%, #9747FF 93.3%);
-    }
-    &.working-schedule-card {
-        .trezo-card-content {
-            .owl-theme {
-                .owl-nav {
-                    &.disabled + .owl-dots {
-                        @apply mt-0;
-                    }
+    #schoolUpcomingEventsSlides {
+        .owl-theme {
+            .owl-nav {
+                &.disabled + .owl-dots {
+                    @apply mt-0;
                 }
-                .owl-dots {
-                    @apply absolute ltr:right-0 rtl:left-0 -top-[35px];
+            }
+            .owl-dots {
+                @apply ltr:right-0 rtl:left-0 -top-[35px] md:-top-[38px] absolute;
 
-                    .owl-dot {
+                .owl-dot {
+                    span {
+                        @apply w-[5px] h-[5px] mt-0 mb-0 ml-0 mr-[5px] rounded-full bg-primary-100 transition-all;
+                    }
+                    &:hover, &.active {
                         span {
-                            @apply w-[7px] h-[7px] mt-0 mb-0 ml-0 mr-[4px] rounded-full bg-gray-100 transition-all;
+                            @apply bg-primary-500 w-[24px];
                         }
-                        &:last-child {
-                            span {
-                                @apply mr-0;
-                            }
-                        }
-                        &:hover, &.active {
-                            span {
-                                @apply bg-primary-500;
-                            }
+                    }
+                    &:last-child {
+                        span {
+                            margin-right: 0;
                         }
                     }
                 }
             }
         }
     }
-}
-.toc-accordion {
-    .toc-accordion-item {
-        .toc-accordion-button {
-            &.open {
-                i {
-                    &::before {
-                        content: "\ea78";
+    #topCollectionsSlides {
+        .owl-theme {
+            .owl-dots {
+                @apply gap-[5px] flex items-center mt-[20px] md:mt-[25px];
+
+                .owl-dot {
+                    span {
+                        @apply m-0 w-[9px] h-[9px] bg-gray-200 dark:bg-gray-800 transition-all;
+                    }
+                    &.active, &:hover {
+                        span {
+                            @apply bg-orange-300;
+                        }
                     }
                 }
             }
         }
-        .toc-accordion-collapse {
-            @apply hidden;
+    }
+    #featuredNftArtworksSlides {
+        .owl-theme {
+            .owl-nav {
+                @apply flex mt-0 items-center gap-[10px] absolute -top-[45px] md:-top-[50px] ltr:right-0 rtl:left-0;
 
-            &.open {
-                @apply block;
+                [class*=owl-] {
+                    @apply m-0 p-0 w-[30px] h-[30px] rounded-full border border-gray-500 dark:border-[#172036] text-gray-500 dark:text-gray-400 leading-[28px] transition-all bg-[transparent] text-lg hover:bg-dark hover:text-white hover:border-dark;
+                }
+            }
+        }
+    }
+    #customerReviewsSlides {
+        .owl-theme {
+            .owl-dots {
+                @apply gap-[5px] flex items-center mt-[20px] md:mt-[25px];
+
+                .owl-dot {
+                    span {
+                        @apply m-0 w-[9px] h-[9px] bg-gray-200 dark:bg-gray-800 transition-all;
+                    }
+                    &.active, &:hover {
+                        span {
+                            @apply bg-primary-500;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #recentPropertySlides {
+        .owl-theme {
+            .owl-dots {
+                @apply gap-[5px] flex items-center mt-[20px];
+
+                .owl-dot {
+                    span {
+                        @apply m-0 w-[9px] h-[9px] bg-gray-200 dark:bg-gray-800 transition-all;
+                    }
+                    &.active, &:hover {
+                        span {
+                            @apply bg-primary-500;
+                        }
+                    }
+                }
             }
         }
     }
@@ -570,7 +558,7 @@ html[dir="rtl"] {
         }
     }
     .apexcharts-tooltip-text-y-label, .apexcharts-tooltip-text-goals-value, .apexcharts-tooltip-text-y-value, .apexcharts-tooltip-text-z-value {
-        @apply text-black dark:text-white ml-0;
+        @apply ml-0;
     }
     .apexcharts-tooltip-marker {
         @apply w-[10px] h-[10px] mr-[6px];
@@ -648,6 +636,11 @@ html[dir="rtl"] {
             @apply dark:fill-white;
         }
         &.apexcharts-point-annotation-label {
+            @apply dark:fill-white;
+        }
+    }
+    .apexcharts-pie {
+        .apexcharts-text {
             @apply dark:fill-white;
         }
     }
@@ -891,38 +884,6 @@ html[dir="rtl"] {
     }
 }
 
-/** Product Details Tabs */
-.product-details-tabs {
-    .navs {
-        .nav-item {
-            .nav-link {
-                &::before {
-                    content: '';
-                    @apply left-0 right-0 bottom-0 h-[1px] absolute transition-all bg-primary-500 opacity-0;
-                }
-            }
-            &.active {
-                .nav-link {
-                    @apply bg-white text-black dark:text-white dark:bg-[#15203c];
-
-                    &::before {
-                        @apply opacity-100;
-                    }
-                }
-            }
-        }
-    }
-    .tab-content {
-        .tab-pane {
-            @apply hidden;
-            
-            &.active {
-                @apply block;
-            }
-        }
-    }
-}
-
 /** Radio */
 .form-radio {
     input {
@@ -998,6 +959,89 @@ html[dir="rtl"] {
 
         .upload-text, .file-info, .file-buttons {
             @apply dark:text-white;
+        }
+    }
+}
+
+/** Price Range Slider */
+.range-slider {
+    .number-group {
+		.number-input {
+			&::-webkit-outer-spin-button,
+			&::-webkit-inner-spin-button {
+                @apply appearance-none;
+			}
+		}
+	}
+	.range-group {
+		.range-input {
+            @apply w-full absolute ltr:left-0 rtl:right-0 bottom-0 appearance-none focus:outline-0;
+
+			&::-webkit-slider-runnable-track {
+				animation: .2s; 
+                @apply bg-gray-100 dark:bg-[#0a0e19] w-full h-[3px] cursor-pointer shadow-none border-0;
+			}
+			&::-webkit-slider-thumb {
+                @apply w-[18px] h-[18px] relative z-[2] rounded-full cursor-pointer -mt-[8px] bg-primary-500 appearance-none;
+			}
+			&::-moz-range-track {
+				animation: .2s; 
+                @apply w-full h-[3px] cursor-pointer bg-gray-100 dark:bg-[#0a0e19] shadow-none border-0;
+			}
+			&::-moz-range-thumb {
+                @apply w-[18px] h-[18px] relative z-[2] rounded-full cursor-pointer -mt-[8px] bg-primary-500 appearance-none border border-primary-500;
+			}
+			&::-ms-track {
+				animation: .2s;
+				color: transparent;
+				background: transparent;
+				border-color: transparent;
+                @apply w-full h-[5px] cursor-pointer;
+			}
+			&::-ms-fill-lower, &::-ms-fill-upper {
+                @apply bg-primary-500 border-0 shadow-none;
+			}
+			&::-ms-thumb {
+                @apply cursor-pointer bg-primary-500 rounded-full w-[18px] h-[18px] relative z-[2];
+			}
+		}
+	}
+}
+
+/** Custom Tooltip */
+.tooltip-text {
+    @apply w-auto bg-black text-white text-center rounded-sm py-[5px] px-[10px] absolute z-[1] bottom-[127%] ltr:left-1/2 rtl:right-1/2 ltr:-translate-x-1/2 rtl:translate-x-1/2 text-sm font-medium whitespace-nowrap;
+
+    &::after {
+        content: "";
+        border-color: #3A4252 transparent transparent transparent;
+        @apply absolute top-full left-1/2 ltr:-ml-[5px] rtl:-mr-[5px] border-[5px];
+    }
+    &.bottom-tooltip {
+        @apply top-[127%] bottom-auto;
+
+        &::after {
+            border-color: transparent transparent #3A4252 transparent;
+            @apply top-auto bottom-full;
+        }
+    }
+}
+
+/** Custom Popover */
+.popover-text {
+    @apply w-auto bg-black text-white text-center rounded-sm py-[5px] px-[10px] absolute z-[1] bottom-[127%] ltr:left-1/2 rtl:right-1/2 ltr:-translate-x-1/2 rtl:translate-x-1/2 text-sm font-medium whitespace-nowrap;
+
+    &::after {
+        content: "";
+        border-color: #3A4252 transparent transparent transparent;
+        @apply absolute top-full left-1/2 ltr:-ml-[5px] rtl:-mr-[5px] border-[5px];
+    }
+    &.bottom-popover {
+        @apply top-[127%] bottom-auto;
+
+        &::after {
+            border-color: transparent transparent #3A4252 transparent;
+            @apply top-auto bottom-full;
         }
     }
 }

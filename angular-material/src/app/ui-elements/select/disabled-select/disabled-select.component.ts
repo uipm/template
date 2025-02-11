@@ -7,7 +7,6 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
 
 @Component({
     selector: 'app-disabled-select',
-    standalone: true,
     imports: [
         MatCheckboxModule,
         FormsModule,

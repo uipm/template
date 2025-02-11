@@ -228,9 +228,15 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from "vue";
+import { defineComponent, onMounted } from "vue";
+import feather from "feather-icons";
 
 export default defineComponent({
   name: "HistoryOfBids",
+  setup() {
+    onMounted(() => {
+      feather.replace();
+    });
+  },
 });
 </script>

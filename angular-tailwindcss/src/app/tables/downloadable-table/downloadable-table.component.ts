@@ -5,7 +5,6 @@ import * as XLSX from 'xlsx';
 
 @Component({
     selector: 'app-downloadable-table',
-    standalone: true,
     imports: [],
     templateUrl: './downloadable-table.component.html',
     styleUrl: './downloadable-table.component.scss'

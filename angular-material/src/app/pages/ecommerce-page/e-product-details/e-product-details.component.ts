@@ -7,13 +7,12 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { PdManageReviewsComponent } from './pd-manage-reviews/pd-manage-reviews.component';
 import { CarouselModule } from 'ngx-owl-carousel-o';
-import { NgClass, NgFor } from '@angular/common';
+import { NgFor } from '@angular/common';
 import { CustomizerSettingsService } from '../../../customizer-settings/customizer-settings.service';
 
 @Component({
     selector: 'app-e-product-details',
-    standalone: true,
-    imports: [RouterLink, MatCardModule, MatButtonModule, QuantityCounterComponent, MatTabsModule, MatProgressBarModule, CarouselModule, NgFor, NgClass, PdManageReviewsComponent],
+    imports: [RouterLink, MatCardModule, MatButtonModule, QuantityCounterComponent, MatTabsModule, MatProgressBarModule, CarouselModule, NgFor, PdManageReviewsComponent],
     templateUrl: './e-product-details.component.html',
     styleUrl: './e-product-details.component.scss'
 })
@@ -72,15 +71,8 @@ export class EProductDetailsComponent {
         this.colorActiveButton = 'second';
     }
 
-    // isToggled
-    isToggled = false;
-
     constructor(
         public themeService: CustomizerSettingsService
-    ) {
-        this.themeService.isToggled$.subscribe(isToggled => {
-            this.isToggled = isToggled;
-        });
-    }
+    ) {}
 
 }

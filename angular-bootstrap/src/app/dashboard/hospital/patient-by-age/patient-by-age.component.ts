@@ -1,32 +1,39 @@
 import { Component, HostListener } from '@angular/core';
-import { RouterLink } from '@angular/router';
 import { PatientByAgeService } from './patient-by-age.service';
 import { CustomizerSettingsService } from '../../../customizer-settings/customizer-settings.service';
 import { NgIf } from '@angular/common';
 
 @Component({
     selector: 'app-patient-by-age',
-    standalone: true,
-    imports: [RouterLink, NgIf],
+    imports: [NgIf],
     templateUrl: './patient-by-age.component.html',
     styleUrl: './patient-by-age.component.scss'
 })
 export class PatientByAgeComponent {
 
-    // isToggled
-    isToggled = false;
+    selectedTimeframe: string = 'Last Week'; // Default dropdown text
+    dataMap: { [key: string]: number[] } = {
+        'Last Day': [20, 30, 25, 25],
+        'Last Week': [30, 40, 20, 10],
+        'Last Month': [25, 35, 25, 15],
+        'Last Year': [35, 30, 20, 15]
+    };
 
     constructor(
         public themeService: CustomizerSettingsService,
         private patientByAgeService: PatientByAgeService
-    ) {
-        this.themeService.isToggled$.subscribe(isToggled => {
-            this.isToggled = isToggled;
-        });
-    }
+    ) {}
 
     ngOnInit(): void {
-        this.patientByAgeService.loadChart();
+        // Load the default chart data
+        const defaultData = this.dataMap[this.selectedTimeframe];
+        this.patientByAgeService.loadChart(defaultData);
+    }
+
+    onTimeframeChange(timeframe: string): void {
+        this.selectedTimeframe = timeframe; // Update dropdown text
+        const updatedData = this.dataMap[timeframe];
+        this.patientByAgeService.updateChartData(updatedData);
     }
 
     // Card Header Menu

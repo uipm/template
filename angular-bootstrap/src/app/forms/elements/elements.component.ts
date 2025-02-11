@@ -5,7 +5,6 @@ import { AdvancedComponent } from './advanced/advanced.component';
 
 @Component({
     selector: 'app-elements',
-    standalone: true,
     imports: [RouterLink, BasicComponent, AdvancedComponent],
     templateUrl: './elements.component.html',
     styleUrl: './elements.component.scss'

@@ -4,7 +4,6 @@ import { WebsiteVisitsService } from './website-visits.service';
 
 @Component({
     selector: 'app-stats',
-    standalone: true,
     imports: [],
     templateUrl: './stats.component.html',
     styleUrl: './stats.component.scss'

@@ -7,29 +7,20 @@ import { isPlatformBrowser } from '@angular/common';
 export class BalanceOverviewService {
 
     private isBrowser: boolean;
+    private chartInstance: any;
 
     constructor(@Inject(PLATFORM_ID) private platformId: any) {
         this.isBrowser = isPlatformBrowser(this.platformId);
     }
 
-    async loadChart(): Promise<void> {
+    async loadChart(series: any[], categories: string[]): Promise<void> {
         if (this.isBrowser) {
             try {
-                // Dynamically import ApexCharts
                 const ApexCharts = (await import('apexcharts')).default;
 
                 // Define chart options
                 const options = {
-                    series: [
-                        {
-                            name: "Revenue",
-                            data: [5, 12, 20, 23, 25, 30, 40, 45, 50, 70, 65, 80 ]
-                        },
-                        {
-                            name: "Expenses",
-                            data: [15, 20, 30, 30, 35, 45, 60, 70, 80, 85, 95, 120 ]
-                        }
-                    ],
+                    series,
                     chart: {
                         type: "area",
                         height: 350,
@@ -55,20 +46,7 @@ export class BalanceOverviewService {
                         width: 2
                     },
                     xaxis: {
-                        categories: [
-                            "Jan",
-                            "Feb",
-                            "Mar",
-                            "Apr",
-                            "May",
-                            "Jun",
-                            "Jul",
-                            "Aug",
-                            "Sep",
-                            "Oct",
-                            "Nov",
-                            "Dec"
-                        ],
+                        categories,
                         axisTicks: {
                             show: false,
                             color: '#ECEEF2'
@@ -86,8 +64,8 @@ export class BalanceOverviewService {
                         }
                     },
                     yaxis: {
-                        tickAmount: 6,
-                        max: 150,
+                        // tickAmount: 6,
+                        // max: 150,
                         min: 0,
                         labels: {
                             formatter: (val:any) => {
@@ -127,13 +105,20 @@ export class BalanceOverviewService {
                         }
                     }
                 };
-
-                // Initialize and render the chart
-                const chart = new ApexCharts(document.querySelector('#crm_balance_overview_chart'), options);
-                chart.render();
+                this.chartInstance = new ApexCharts(document.querySelector('#crm_balance_overview_chart'), options);
+                this.chartInstance.render();
             } catch (error) {
                 console.error('Error loading ApexCharts:', error);
             }
+        }
+    }
+
+    updateChart(series: any[], categories: string[]): void {
+        if (this.chartInstance) {
+            this.chartInstance.updateOptions({
+                series,
+                xaxis: { categories }
+            });
         }
     }
 

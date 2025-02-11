@@ -6,7 +6,6 @@ import { StWithFormsComponent } from './st-with-forms/st-with-forms.component';
 
 @Component({
     selector: 'app-slide-toggle',
-    standalone: true,
     imports: [RouterLink, MatCardModule, MatSlideToggleModule, StWithFormsComponent],
     templateUrl: './slide-toggle.component.html',
     styleUrl: './slide-toggle.component.scss'

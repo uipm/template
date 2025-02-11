@@ -12,7 +12,7 @@
           aria-controls="offcanvasRight"
         >
           <span class="py-sm-1 d-block">
-            <i class="ri-add-line d-none d-sm-inline-block"></i>
+            <i class="ri-add-line d-none d-sm-inline-block me-1"></i>
             <span>Add New Ticket</span>
           </span>
         </button>

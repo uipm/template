@@ -5,8 +5,7 @@ import { SyncingLineChartService } from './syncing-line-chart.service';
 
 @Component({
     selector: 'app-syncing-line-chart',
-    standalone: true,
-    imports: [RouterLink, MatCardModule],
+    imports: [MatCardModule],
     templateUrl: './syncing-line-chart.component.html',
     styleUrl: './syncing-line-chart.component.scss'
 })

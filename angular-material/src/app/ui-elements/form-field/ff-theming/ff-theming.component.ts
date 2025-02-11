@@ -7,7 +7,6 @@ import { MatCardModule } from '@angular/material/card';
 
 @Component({
     selector: 'app-ff-theming',
-    standalone: true,
     imports: [MatFormFieldModule, MatSelectModule, FormsModule, ReactiveFormsModule, MatCardModule],
     templateUrl: './ff-theming.component.html',
     styleUrl: './ff-theming.component.scss'

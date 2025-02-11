@@ -3,7 +3,6 @@ import { PatientsLast7DaysService } from './patients-last-7-days.service';
 
 @Component({
     selector: 'app-patients-last-7-days',
-    standalone: true,
     imports: [],
     templateUrl: './patients-last-7-days.component.html',
     styleUrl: './patients-last-7-days.component.scss'

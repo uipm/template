@@ -3,7 +3,6 @@ import { CdkDragDrop, CdkDrag, CdkDropList, moveItemInArray } from '@angular/cdk
 
 @Component({
     selector: 'app-dd-disabled',
-    standalone: true,
     imports: [CdkDropList, CdkDrag],
     templateUrl: './dd-disabled.component.html',
     styleUrl: './dd-disabled.component.scss'

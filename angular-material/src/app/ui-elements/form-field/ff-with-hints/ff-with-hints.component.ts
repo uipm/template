@@ -6,7 +6,6 @@ import { MatCardModule } from '@angular/material/card';
 
 @Component({
     selector: 'app-ff-with-hints',
-    standalone: true,
     imports: [MatFormFieldModule, MatInputModule, MatSelectModule, MatCardModule],
     templateUrl: './ff-with-hints.component.html',
     styleUrl: './ff-with-hints.component.scss'

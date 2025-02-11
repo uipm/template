@@ -24,7 +24,6 @@ const ELEMENT_DATA: PeriodicElement[] = [
 
 @Component({
     selector: 'app-adding-removing-data-wuaab-datasource',
-    standalone: true,
     imports: [MatButtonModule, MatTableModule],
     templateUrl: './adding-removing-data-wuaab-datasource.component.html',
     styleUrl: './adding-removing-data-wuaab-datasource.component.scss'

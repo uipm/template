@@ -1,0 +1,472 @@
+.nft-details-images-card {
+    padding: 13px;
+    margin-bottom: 15px;
+}
+.place-bid-btn {
+    background-color: var(--primaryColor);
+    color: var(--whiteColor);
+    padding: 10px 25px;
+    margin-top: 15px;
+    display: block;
+    width: 100%;
+    font: {
+        size: 16px;
+        weight: 500;
+    };
+}
+.nft-details-card {
+    .mat-mdc-card-content {
+        .text-xs {
+            font-size: 12px;
+        }
+        h2 {
+            font-size: 24px;
+            margin-top: 5px;
+        }
+        .author-info {
+            gap: 40px;
+            margin-top: 14px;
+            padding-top: 15px;
+            border-top: 1px solid var(--borderColor);
+
+            .author {
+                gap: 10px;
+
+                .img {
+                    padding-right: 7px;
+
+                    img {
+                        margin-bottom: -3px;
+                    }
+                    .verified {
+                        right: 0;
+                        bottom: 0;
+                        margin-bottom: 0;
+                        position: absolute;
+                    }
+                }
+                div {
+                    span {
+                        &:nth-child(1) {
+                            margin-bottom: 4px;
+                        }
+                    }
+                }
+            }
+            .date {
+                gap: 10px;
+
+                img {
+                    margin-bottom: -3px;
+                }
+                div {
+                    span {
+                        &:nth-child(1) {
+                            margin-bottom: 4px;
+                        }
+                    }
+                }
+            }
+        }
+        .item-info {
+            margin-top: 22px;
+            padding: 20px 25px;
+            background-color: #f6f7f9;
+
+            .item {
+                span {
+                    &:nth-child(2) {
+                        margin-top: 4px;
+                    }
+                }
+            }
+        }
+        h3 {
+            font-size: 18px;
+            margin: {
+                top: 45px;
+                bottom: 12px;
+            };
+        }
+    }
+    &.component-dark-theme {
+        .mat-mdc-card-content {
+            .item-info {
+                background-color: #0a0e19;
+            }
+        }
+    }
+    &.component-rtl-enabled {
+        .mat-mdc-card-content {
+            .author-info {
+                .author {
+                    .img {
+                        padding: {
+                            right: 0;
+                            left: 7px;
+                        };
+                        .verified {
+                            right: auto;
+                            left: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+::ng-deep {
+    .nft-details-card {
+        .mat-mdc-card-content {
+            .mat-mdc-tab-group {
+                margin-top: 22px;
+
+                .mat-mdc-tab-header {
+                    margin-bottom: 20px;
+
+                    .mat-mdc-tab-label-container {
+                        border-bottom-width: 0;
+                    }
+                    .mat-mdc-tab-labels {
+                        display: block;
+                    }
+                    .mat-mdc-tab {
+                        padding: 0;
+                        height: auto;
+                        min-width: auto;
+                        margin-right: 35px;
+                        letter-spacing: 2px;
+                        display: inline-block;
+                        text-transform: uppercase;
+                        font: {
+                            size: 12px;
+                            weight: 600;
+                        };
+                        .mdc-tab__text-label {
+                            color: var(--bodyColor);
+                            transition: var(--transition);
+                        }
+                        .mdc-tab-indicator, .mdc-tab__ripple {
+                            display: none;
+                        }
+                        &.mdc-tab--active, &:hover {
+                            .mdc-tab__text-label {
+                                color: var(--primaryColor);
+                            }
+                        }
+                        &:last-child {
+                            margin-right: 0;
+                        }
+                    }
+                }
+            }
+            .additional-information-list {
+                border: 1px solid var(--borderColor);
+
+                li {
+                    padding: 12px 20px;
+                    border-bottom: 1px solid var(--borderColor);
+
+                    &:last-child {
+                        border-bottom-width: 0;
+                    }
+                }
+            }
+            .details-info {
+                border: 1px solid var(--borderColor);
+                padding: 15px;
+            }
+            .mat-mdc-table {
+                &.mdc-data-table__table {
+                    .mat-mdc-header-row {
+                        .mat-mdc-header-cell {
+                            letter-spacing: 1px;
+                            color: var(--bodyColor);
+                            text-transform: uppercase;
+                            background-color: transparent;
+                            font: {
+                                size: 10px;
+                                weight: 700;
+                            };
+                            padding: {
+                                bottom: 9px;
+                                top: 0;
+                            };
+                            &:first-child {
+                                padding-left: 0;
+                            }
+                            &:last-child {
+                                padding-right: 0;
+                            }
+                        }
+                    }
+                    .mdc-data-table__content {
+                        .mat-mdc-row {
+                            .mat-mdc-cell {
+                                font-size: 12px;
+                                padding: {
+                                    top: 10px;
+                                    bottom: 10px;
+                                };
+                                border: {
+                                    left-width: 0;
+                                    right-width: 0;
+                                };
+                                .employee-info {
+                                    .img {
+                                        width: 48px;
+                                    }
+                                    span {
+                                        &:nth-child(1) {
+                                            font-size: var(--fontSize);
+                                        }
+                                    }
+                                }
+                                &:first-child {
+                                    padding-left: 0;
+                                }
+                                &:last-child {
+                                    padding-right: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &.component-rtl-enabled {
+            .mat-mdc-card-content {
+                .mat-mdc-tab-group {
+                    .mat-mdc-tab-header {
+                        .mat-mdc-tab {
+                            margin: {
+                                right: 0;
+                                left: 35px;
+                            };
+                            &:last-child {
+                                margin-left: 0;
+                            }
+                        }
+                    }
+                }
+                .mat-mdc-table {
+                    &.mdc-data-table__table {
+                        .mat-mdc-header-row {
+                            .mat-mdc-header-cell {
+                                &:first-child {
+                                    padding: {
+                                        left: 20px;
+                                        right: 0;
+                                    };
+                                }
+                                &:last-child {
+                                    padding: {
+                                        right: 20px;
+                                        left: 0;
+                                    };
+                                }
+                            }
+                        }
+                        .mdc-data-table__content {
+                            .mat-mdc-row {
+                                .mat-mdc-cell {
+                                    &:first-child {
+                                        padding: {
+                                            left: 20px;
+                                            right: 0;
+                                        };
+                                    }
+                                    &:last-child {
+                                        padding: {
+                                            right: 20px;
+                                            left: 0;
+                                        };
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    .place-bid-btn {
+        font-size: 14px;
+    }
+    .nft-details-card {
+        .mat-mdc-card-content {
+            h2 {
+                font-size: 20px;
+            }
+            .author-info {
+                margin-top: 13px;
+                padding-top: 13px;
+    
+                .author {
+                    margin-bottom: 15px;
+                }
+            }
+            .item-info {
+                margin-top: 17px;
+                padding: 17px;
+
+                .item {
+                    margin-top: 17px;
+                }
+            }
+            h3 {
+                font-size: 16px;
+                margin: {
+                    top: 20px;
+                    bottom: 10px;
+                };
+            }
+    
+        }
+    }
+    ::ng-deep {
+        .nft-details-card {
+            .mat-mdc-card-content {
+                .mat-mdc-tab-group {
+                    margin-top: 17px;
+    
+                    .mat-mdc-tab-header {
+                        margin-bottom: 15px;
+    
+                        .mat-mdc-tab {
+                            margin-right: 15px;
+                            letter-spacing: normal;
+                        }
+                    }
+                }
+                .additional-information-list {
+                    li {
+                        padding: 10px 15px;
+                    }
+                }
+            }
+            &.component-rtl-enabled {
+                .mat-mdc-card-content {
+                    .mat-mdc-tab-group {
+                        .mat-mdc-tab-header {
+                            .mat-mdc-tab {
+                                margin: {
+                                    right: 0;
+                                    left: 15px;
+                                };
+                            }
+                        }
+                    }
+                    .mat-mdc-table {
+                        &.mdc-data-table__table {
+                            .mat-mdc-header-row {
+                                .mat-mdc-header-cell {
+                                    &:first-child {
+                                        padding: {
+                                            left: 17px;
+                                            right: 0;
+                                        };
+                                    }
+                                    &:last-child {
+                                        padding: {
+                                            right: 17px;
+                                            left: 0;
+                                        };
+                                    }
+                                }
+                            }
+                            .mdc-data-table__content {
+                                .mat-mdc-row {
+                                    .mat-mdc-cell {
+                                        &:first-child {
+                                            padding: {
+                                                left: 17px;
+                                                right: 0;
+                                            };
+                                        }
+                                        &:last-child {
+                                            padding: {
+                                                right: 17px;
+                                                left: 0;
+                                            };
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width : 576px) and (max-width : 767px) {
+
+    ::ng-deep {
+        .nft-details-card {
+            &.component-rtl-enabled {
+                .mat-mdc-card-content {
+                    .mat-mdc-table {
+                        &.mdc-data-table__table {
+                            .mat-mdc-header-row {
+                                .mat-mdc-header-cell {
+                                    &:first-child {
+                                        padding: {
+                                            left: 20px;
+                                            right: 0;
+                                        };
+                                    }
+                                    &:last-child {
+                                        padding: {
+                                            right: 20px;
+                                            left: 0;
+                                        };
+                                    }
+                                }
+                            }
+                            .mdc-data-table__content {
+                                .mat-mdc-row {
+                                    .mat-mdc-cell {
+                                        &:first-child {
+                                            padding: {
+                                                left: 20px;
+                                                right: 0;
+                                            };
+                                        }
+                                        &:last-child {
+                                            padding: {
+                                                right: 20px;
+                                                left: 0;
+                                            };
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width : 992px) and (max-width : 1199px) {}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {}
+
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {}

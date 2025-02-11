@@ -3,7 +3,6 @@ import { DistributedColumnChartService } from './distributed-column-chart.servic
 
 @Component({
     selector: 'app-distributed-column-chart',
-    standalone: true,
     imports: [],
     templateUrl: './distributed-column-chart.component.html',
     styleUrl: './distributed-column-chart.component.scss'

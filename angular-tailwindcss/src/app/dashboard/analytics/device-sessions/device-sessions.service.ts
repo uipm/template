@@ -7,29 +7,25 @@ import { isPlatformBrowser } from '@angular/common';
 export class DeviceSessionsService {
 
     private isBrowser: boolean;
+    private chartInstance: any;
 
     constructor(@Inject(PLATFORM_ID) private platformId: any) {
         this.isBrowser = isPlatformBrowser(this.platformId);
     }
 
-    async loadChart(): Promise<void> {
+    async initializeChart(initialData: { series: number[]; labels: string[] }): Promise<void> {
         if (this.isBrowser) {
             try {
-                // Dynamically import ApexCharts
                 const ApexCharts = (await import('apexcharts')).default;
 
                 // Define chart options
                 const options = {
-                    series: [
-                        55, 44, 30, 12
-                    ],
+                    series: initialData.series,
                     chart: {
                         height: 170,
                         type: "pie"
                     },
-                    labels: [
-                        "Desktop", "Mobile", "Tablet", "Others"
-                    ],
+                    labels: initialData.labels,
                     colors: [
                         "#37D80A", "#605DFF", "#BF85FB", "#FE7A36"
                     ],
@@ -73,13 +69,20 @@ export class DeviceSessionsService {
                         }
                     }
                 };
-
-                // Initialize and render the chart
-                const chart = new ApexCharts(document.querySelector('#device_sessions_chart'), options);
-                chart.render();
+                this.chartInstance = new ApexCharts(document.querySelector('#device_sessions_chart'), options);
+                this.chartInstance.render();
             } catch (error) {
-                console.error('Error loading ApexCharts:', error);
+                console.error('Error initializing ApexCharts:', error);
             }
+        }
+    }
+
+    updateChartData(series: number[], labels: string[]): void {
+        if (this.chartInstance) {
+            this.chartInstance.updateOptions({
+                series: series,
+                labels: labels
+            });
         }
     }
 

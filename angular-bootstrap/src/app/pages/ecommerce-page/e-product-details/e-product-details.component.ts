@@ -8,7 +8,6 @@ import { CustomizerSettingsService } from '../../../customizer-settings/customiz
 
 @Component({
     selector: 'app-e-product-details',
-    standalone: true,
     imports: [RouterLink, QuantityCounterComponent, CarouselModule, NgIf, NgFor, NgClass, PdManageReviewsComponent],
     templateUrl: './e-product-details.component.html',
     styleUrl: './e-product-details.component.scss'
@@ -68,16 +67,9 @@ export class EProductDetailsComponent {
         this.colorActiveButton = 'second';
     }
 
-    // isToggled
-    isToggled = false;
-
     constructor(
         public themeService: CustomizerSettingsService
-    ) {
-        this.themeService.isToggled$.subscribe(isToggled => {
-            this.isToggled = isToggled;
-        });
-    }
+    ) {}
 
     // Tabs
     currentTab = 'tab1';

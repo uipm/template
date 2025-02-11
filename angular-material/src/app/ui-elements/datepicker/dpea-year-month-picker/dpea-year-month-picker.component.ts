@@ -32,7 +32,6 @@ export const MY_FORMATS = {
 
 @Component({
     selector: 'app-dpea-year-month-picker',
-    standalone: true,
     imports: [
         MatFormFieldModule,
         MatInputModule,
@@ -45,9 +44,9 @@ export const MY_FORMATS = {
     templateUrl: './dpea-year-month-picker.component.html',
     styleUrl: './dpea-year-month-picker.component.scss',
     providers: [
-        // Moment can be provided globally to your app by adding `provideMomentDateAdapter`
-        // to your app config. We provide it at the component level here, due to limitations
-        // of our example generation script.
+    // Moment can be provided globally to your app by adding `provideMomentDateAdapter`
+    // to your app config. We provide it at the component level here, due to limitations
+    // of our example generation script.
     ]
 })
 export class DpeaYearMonthPickerComponent {

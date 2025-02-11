@@ -6,7 +6,6 @@ import { isPlatformBrowser, NgIf } from '@angular/common';
 
 @Component({
     selector: 'app-editors',
-    standalone: true,
     imports: [RouterLink, MatCardModule, NgxEditorModule, NgIf],
     templateUrl: './editors.component.html',
     styleUrl: './editors.component.scss'

@@ -13,7 +13,6 @@ import { MatButtonModule } from '@angular/material/button';
 
 @Component({
     selector: 'app-l-create-course',
-    standalone: true,
     imports: [RouterLink, MatCardModule, MatButtonModule, MatFormFieldModule, MatInputModule, MatSelectModule, MatDatepickerModule, FileUploadModule, NgxEditorModule, MatNativeDateModule, NgIf],
     templateUrl: './l-create-course.component.html',
     styleUrl: './l-create-course.component.scss'

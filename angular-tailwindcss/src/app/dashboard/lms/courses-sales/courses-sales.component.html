@@ -2,7 +2,7 @@
     <div class="trezo-card-header mb-[20px] md:mb-[25px] flex items-center justify-between">
         <div class="trezo-card-title">
             <h5 class="mb-0">
-                Courses Sales
+                {{ selectedTimeframe }}
             </h5>
         </div>
         <div class="trezo-card-subtitle">
@@ -15,22 +15,22 @@
                 </button>
                 <ul class="trezo-card-dropdown-menu transition-all bg-white shadow-3xl rounded-md top-full py-[15px] absolute ltr:right-0 rtl:left-0 w-[195px] z-[5] dark:bg-dark dark:shadow-none" *ngIf="isCardHeaderOpen">
                     <li>
-                        <button type="button" class="block w-full transition-all text-black ltr:text-left rtl:text-right relative py-[8px] px-[20px] hover:bg-gray-50 dark:text-white dark:hover:bg-black">
+                        <button type="button" class="block w-full transition-all text-black ltr:text-left rtl:text-right relative py-[8px] px-[20px] hover:bg-gray-50 dark:text-white dark:hover:bg-black" (click)="onTimeframeChange('This Day')">
                             This Day
                         </button>
                     </li>
                     <li>
-                        <button type="button" class="block w-full transition-all text-black ltr:text-left rtl:text-right relative py-[8px] px-[20px] hover:bg-gray-50 dark:text-white dark:hover:bg-black">
+                        <button type="button" class="block w-full transition-all text-black ltr:text-left rtl:text-right relative py-[8px] px-[20px] hover:bg-gray-50 dark:text-white dark:hover:bg-black" (click)="onTimeframeChange('This Week')">
                             This Week
                         </button>
                     </li>
                     <li>
-                        <button type="button" class="block w-full transition-all text-black ltr:text-left rtl:text-right relative py-[8px] px-[20px] hover:bg-gray-50 dark:text-white dark:hover:bg-black">
+                        <button type="button" class="block w-full transition-all text-black ltr:text-left rtl:text-right relative py-[8px] px-[20px] hover:bg-gray-50 dark:text-white dark:hover:bg-black" (click)="onTimeframeChange('This Month')">
                             This Month
                         </button>
                     </li>
                     <li>
-                        <button type="button" class="block w-full transition-all text-black ltr:text-left rtl:text-right relative py-[8px] px-[20px] hover:bg-gray-50 dark:text-white dark:hover:bg-black">
+                        <button type="button" class="block w-full transition-all text-black ltr:text-left rtl:text-right relative py-[8px] px-[20px] hover:bg-gray-50 dark:text-white dark:hover:bg-black" (click)="onTimeframeChange('This Year')">
                             This Year
                         </button>
                     </li>
@@ -47,7 +47,7 @@
                 +10%
             </span>
         </div>
-        <div class="absolute left-0 right-0 -bottom-[61px] -ml-[37px] -mr-[35px]">
+        <div class="absolute left-0 right-0 -bottom-[54px] -ml-[37px] -mr-[35px]">
             <div id="lms_courses_sales_chart"></div>
         </div>
     </div>

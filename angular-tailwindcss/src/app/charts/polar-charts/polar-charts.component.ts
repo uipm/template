@@ -5,7 +5,6 @@ import { MonochromePolarChartComponent } from './monochrome-polar-chart/monochro
 
 @Component({
     selector: 'app-polar-charts',
-    standalone: true,
     imports: [RouterLink, BasicPolarChartComponent, MonochromePolarChartComponent],
     templateUrl: './polar-charts.component.html',
     styleUrl: './polar-charts.component.scss'

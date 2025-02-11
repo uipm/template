@@ -10,7 +10,6 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 
 @Component({
     selector: 'app-highlight-first-option',
-    standalone: true,
     imports: [
         MatCardModule,
         FormsModule,

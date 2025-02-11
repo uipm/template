@@ -13,7 +13,6 @@ import { MatButtonModule } from '@angular/material/button';
 
 @Component({
     selector: 'app-edit-an-event',
-    standalone: true,
     imports: [RouterLink, MatCardModule, MatButtonModule, MatFormFieldModule, MatInputModule, MatSelectModule, MatDatepickerModule, FileUploadModule, NgxEditorModule, MatNativeDateModule, NgIf],
     templateUrl: './edit-an-event.component.html',
     styleUrl: './edit-an-event.component.scss'

@@ -3,7 +3,6 @@ import { BasicBoxplotChartService } from './basic-boxplot-chart.service';
 
 @Component({
     selector: 'app-basic-boxplot-chart',
-    standalone: true,
     imports: [],
     templateUrl: './basic-boxplot-chart.component.html',
     styleUrl: './basic-boxplot-chart.component.scss'

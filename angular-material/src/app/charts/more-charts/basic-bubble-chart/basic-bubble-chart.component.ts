@@ -1,12 +1,10 @@
 import { Component } from '@angular/core';
 import { MatCardModule } from '@angular/material/card';
-import { RouterLink } from '@angular/router';
 import { BasicBubbleChartService } from './basic-bubble-chart.service';
 
 @Component({
     selector: 'app-basic-bubble-chart',
-    standalone: true,
-    imports: [RouterLink, MatCardModule],
+    imports: [MatCardModule],
     templateUrl: './basic-bubble-chart.component.html',
     styleUrl: './basic-bubble-chart.component.scss'
 })
