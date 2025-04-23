@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
 :root {
   --fontFamily: "Inter", serif;
@@ -7,6 +7,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html {
+  overflow-y: scroll !important;
+  padding: 0 !important;
+}
 
 /** Body */
 body {
@@ -466,6 +471,32 @@ h1,
       }
     }
   }
+  .podcast-featured-slides {
+    .swiper-pagination {
+      @apply flex items-center gap-[5px] w-auto bottom-auto -top-[0px] ltr:left-auto ltr:right-0 rtl:right-auto rtl:left-0;
+
+      .swiper-pagination-bullet {
+        @apply w-[10px] h-[3px] transition-all rounded-[30px] bg-gray-400 m-0 opacity-100;
+
+        &.swiper-pagination-bullet-active {
+          @apply bg-gray-100 w-[29px];
+        }
+      }
+    }
+  }
+  .top-selling-products-slides {
+    .swiper-button-next,
+    .swiper-button-prev {
+      @apply flex items-center justify-center w-[30px] h-[30px] rounded-full transition-all text-white bg-primary-500 hover:bg-primary-400;
+
+      &::after {
+        @apply text-[17px];
+      }
+      &.swiper-button-disabled {
+        @apply pointer-events-auto;
+      }
+    } 
+  }
 }
 .toc-accordion {
   .toc-accordion-item {
@@ -580,7 +611,7 @@ html[dir="rtl"] {
 }
 .apexcharts-canvas {
   .apexcharts-legend-text,
-  .apexcharts-title-text { 
+  .apexcharts-title-text {
     font-family: var(--fontFamily) !important;
   }
   .apexcharts-tooltip-series-group {
@@ -605,7 +636,7 @@ html[dir="rtl"] {
       }
     }
     &.apexcharts-theme-dark {
-      .apexcharts-tooltip-series-group { 
+      .apexcharts-tooltip-series-group {
         background-color: #fff !important;
       }
     }
@@ -629,14 +660,14 @@ html[dir="rtl"] {
   .apexcharts-xaxistooltip {
     @apply border-0 -mt-[1px] text-black bg-white shadow-3xl dark:text-white dark:bg-[#15203c] dark:shadow-none;
 
-    .apexcharts-xaxistooltip-text { 
+    .apexcharts-xaxistooltip-text {
       font-family: var(--fontFamily) !important;
       font-weight: 600 !important;
       font-size: 13px !important;
     }
     &::before,
     &::after {
-      @apply hidden; 
+      @apply hidden;
     }
   }
   .apexcharts-toolbar {
@@ -685,7 +716,7 @@ html[dir="rtl"] {
         }
       }
     }
-  } 
+  }
   .apexcharts-text {
     @apply dark:fill-gray-400;
 
@@ -743,11 +774,11 @@ html[dir="rtl"] {
   .apexcharts-canvas {
     .apexcharts-legend-text,
     .apexcharts-title-text {
-      color: #9CA3AF !important;
+      color: #9ca3af !important;
     }
     .apexcharts-tooltip {
       &.apexcharts-theme-dark {
-        .apexcharts-tooltip-series-group { 
+        .apexcharts-tooltip-series-group {
           background-color: #000000 !important;
         }
       }
@@ -1223,6 +1254,41 @@ html[dir="rtl"] {
       }
     }
   }
+  .categories-navs {
+    .nav-item {
+      .nav-link {
+        span {
+          &:nth-child(2) {
+            @apply opacity-0 invisible;
+          }
+        }
+        &:hover,
+        &.active {
+          @apply border-primary-600 bg-white dark:bg-[#0c1427];
+        }
+        &.active {
+          span {
+            &:nth-child(1) {
+              @apply opacity-0 invisible;
+            }
+            &:nth-child(2) {
+              @apply opacity-100 visible;
+            }
+          }
+        }
+      }
+    }
+  }
+  .most-popular-navs {
+    .nav-item {
+      .nav-link {
+        &.active,
+        &:hover {
+          @apply text-white bg-primary-500;
+        }
+      }
+    }
+  }
 }
 
 /** Radio */
@@ -1266,7 +1332,7 @@ html[dir="rtl"] {
     }
   }
 }
-  
+
 /** Click to See/Hide Code */
 .click-to-show-hide-code {
   @apply hidden;
@@ -1384,7 +1450,6 @@ html[dir="rtl"] {
 // dark
 // .dark {
 .rsw-editor {
- 
   .rsw-toolbar {
     @apply dark:bg-black;
 
