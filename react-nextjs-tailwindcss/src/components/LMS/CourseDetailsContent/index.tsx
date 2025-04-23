@@ -112,8 +112,6 @@ const CourseDetailsContent: React.FC = () => {
                     <button
                       type="button"
                       className="text-gray-500 dark:text-gray-400 leading-none custom-tooltip"
-                      id="customTooltip"
-                      data-text="Edit"
                     >
                       <i className="material-symbols-outlined !text-md">edit</i>
                     </button>

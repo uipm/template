@@ -1,7 +1,6 @@
 "use client";
 
-import React from "react";
-import { Menu, MenuButton, MenuItems } from "@headlessui/react";
+import React, { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 
 type Notification = {
@@ -19,7 +18,8 @@ const notifications: Notification[] = [
     id: "1",
     icon: "sms",
     color: "text-primary-500",
-    message: 'You have requested to <strong className="font-semibold">withdrawal</strong>',
+    message:
+      'You have requested to <strong className="font-semibold">withdrawal</strong>',
     time: "2 hrs ago",
     link: "/notifications",
   },
@@ -27,7 +27,8 @@ const notifications: Notification[] = [
     id: "2",
     icon: "person",
     color: "text-[#39b2de]",
-    message: '<strong className="font-semibold">A new user</strong> added in Trezo',
+    message:
+      '<strong className="font-semibold">A new user</strong> added in Trezo',
     time: "3 hrs ago",
     link: "/notifications",
     isNew: true,
@@ -36,7 +37,8 @@ const notifications: Notification[] = [
     id: "3",
     icon: "mark_email_unread",
     color: "text-[#00b69b]",
-    message: 'You have requested to <strong className="font-semibold">withdrawal</strong>',
+    message:
+      'You have requested to <strong className="font-semibold">withdrawal</strong>',
     time: "1 day ago",
     link: "/notifications",
   },
@@ -48,26 +50,65 @@ const Notifications: React.FC = () => {
     // Add logic to clear notifications
   };
 
-  return (
-    <div className="relative notifications-menu mx-[8px] md:mx-[10px] lg:mx-[12px] ltr:first:ml-0 ltr:last:mr-0 rtl:first:mr-0 rtl:last:ml-0">
-      <Menu as="div" className="relative inline-block text-left">
-        <MenuButton className="leading-none inline-block transition-all relative top-[2px] hover:text-primary-500">
-          <i className="material-symbols-outlined !text-[22px] md:!text-[24px]">notifications</i>
-          <span className="top-[3px] ltr:right-[4px] rtl:left-[4px] w-[6px] h-[6px] rounded-full absolute bg-orange-500"></span>
-        </MenuButton>
+  const [active, setActive] = useState<boolean>(false);
+  const dropdownRef = useRef<HTMLDivElement>(null); // Ref for the dropdown container
 
-        <MenuItems
-          transition
-          className="bg-white dark:bg-[#0c1427] transition-all shadow-3xl dark:shadow-none py-[17px] absolute mt-[17px] md:mt-[20px] w-[290px] md:w-[350px] z-[1] top-full ltr:-right-[120px] ltr:md:right-0 rtl:-left-[120px] rtl:md:left-0 rounded-md data-[closed]:scale-95 data-[closed]:transform data-[closed]:opacity-0 data-[enter]:duration-100 data-[leave]:duration-75 data-[enter]:ease-out data-[leave]:ease-in"
-        >
+  const handleDropdownToggle = () => {
+    setActive((prevState) => !prevState);
+  };
+
+  // Handle clicks outside the dropdown
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (
+        dropdownRef.current &&
+        !dropdownRef.current.contains(event.target as Node)
+      ) {
+        setActive(false); // Close the dropdown if clicked outside
+      }
+    };
+
+    // Attach the event listener
+    document.addEventListener("mousedown", handleClickOutside);
+
+    // Cleanup the event listener
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+
+  return (
+    <div
+      className="relative notifications-menu mx-[8px] md:mx-[10px] lg:mx-[12px] ltr:first:ml-0 ltr:last:mr-0 rtl:first:mr-0 rtl:last:ml-0"
+      ref={dropdownRef}
+    >
+      <button
+        type="button"
+        onClick={handleDropdownToggle}
+        className={`leading-none inline-block transition-all relative top-[2px] hover:text-primary-500 ${
+          active ? "active" : ""
+        }`}
+      >
+        <i className="material-symbols-outlined !text-[22px] md:!text-[24px]">
+          notifications
+        </i>
+        <span className="top-[3px] ltr:right-[4px] rtl:left-[4px] w-[6px] h-[6px] rounded-full absolute bg-orange-500"></span>
+      </button>
+
+      {active && (
+        <div className="notifications-menu-dropdown bg-white dark:bg-[#0c1427] transition-all shadow-3xl dark:shadow-none py-[17px] absolute mt-[17px] md:mt-[20px] w-[290px] md:w-[350px] z-[1] top-full ltr:-right-[120px] ltr:md:right-0 rtl:-left-[120px] rtl:md:left-0 rounded-md">
           <div className="flex items-center justify-between px-[20px] pb-[17px]">
             <span className="font-semibold text-black dark:text-white text-[15px]">
-              Notifications {' '}
+              Notifications{" "}
               <span className="text-gray-500 dark:text-gray-400 font-normal text-base">
                 ({notifications.length})
               </span>
             </span>
-            <button type="button" className="text-primary-500" onClick={handleClearAll}>
+            <button
+              type="button"
+              className="text-primary-500"
+              onClick={handleClearAll}
+            >
               Clear All
             </button>
           </div>
@@ -81,13 +122,17 @@ const Notifications: React.FC = () => {
                 <div
                   className={`rounded-full flex items-center justify-center absolute text-center transition-all top-1/2 -translate-y-1/2 ltr:left-[20px] rtl:right-[20px] w-[44px] h-[44px] ${notification.color} bg-[#4936f50d]`}
                 >
-                  <i className="material-symbols-outlined !text-[22px]">{notification.icon}</i>
+                  <i className="material-symbols-outlined !text-[22px]">
+                    {notification.icon}
+                  </i>
                 </div>
                 <span
                   className="block mb-[3px] text-black dark:text-white"
                   dangerouslySetInnerHTML={{ __html: notification.message }}
                 />
-                <span className="block text-gray-500 dark:text-gray-400">{notification.time}</span>
+                <span className="block text-gray-500 dark:text-gray-400">
+                  {notification.time}
+                </span>
                 <Link
                   href={notification.link}
                   className="block left-0 top-0 right-0 bottom-0 z-[1] absolute"
@@ -107,8 +152,8 @@ const Notifications: React.FC = () => {
               See All Notifications
             </Link>
           </div>
-        </MenuItems>
-      </Menu>
+        </div>
+      )}
     </div>
   );
 };

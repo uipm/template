@@ -23,7 +23,10 @@ const SidebarMenu: React.FC<SidebarMenuProps> = ({ toggleActive }) => {
     <>
       <div className="sidebar-area bg-white dark:bg-[#0c1427] fixed z-[7] top-0 h-screen transition-all rounded-r-md">
         <div className="logo bg-white dark:bg-[#0c1427] border-b border-gray-100 dark:border-[#172036] px-[25px] pt-[19px] pb-[15px] absolute z-[2] right-0 top-0 left-0">
-          <Link href="/dashboard/ecommerce/" className="transition-none relative flex items-center">
+          <Link
+            href="/dashboard/ecommerce/"
+            className="transition-none relative flex items-center outline-none"
+          >
             <Image
               src="/images/logo-icon.svg"
               alt="logo-icon"
@@ -63,7 +66,7 @@ const SidebarMenu: React.FC<SidebarMenuProps> = ({ toggleActive }) => {
                 </i>
                 <span className="title leading-none">Dashboard</span>
                 <span className="rounded-full font-medium inline-block text-center w-[20px] h-[20px] text-[11px] leading-[20px] text-orange-500 bg-orange-50 dark:bg-[#ffffff14] ltr:ml-auto rtl:mr-auto">
-                  18
+                  25
                 </span>
               </button>
 
@@ -93,9 +96,6 @@ const SidebarMenu: React.FC<SidebarMenuProps> = ({ toggleActive }) => {
                         }`}
                       >
                         CRM
-                        <span className="text-[10px] font-medium py-[1px] px-[8px] ltr:ml-[8px] rtl:mr-[8px] text-success-500 bg-success-100 dark:bg-[#ffffff14] inline-block rounded-sm">
-                          Hot
-                        </span>
                       </Link>
                     </li>
 
@@ -130,7 +130,10 @@ const SidebarMenu: React.FC<SidebarMenuProps> = ({ toggleActive }) => {
                           pathname === "/dashboard/helpdesk/" ? "active" : ""
                         }`}
                       >
-                        HelpDesk
+                        HelpDesk{" "}
+                        <span className="text-[10px] font-medium py-[1px] px-[8px] ltr:ml-[8px] rtl:mr-[8px] text-danger-500 bg-danger-100 dark:bg-[#ffffff14] inline-block rounded-sm">
+                          Hot
+                        </span>
                       </Link>
                     </li>
 
@@ -207,7 +210,10 @@ const SidebarMenu: React.FC<SidebarMenuProps> = ({ toggleActive }) => {
                           pathname === "/dashboard/call-center/" ? "active" : ""
                         }`}
                       >
-                        Call Center
+                        Call Center{" "}
+                        <span className="text-[10px] font-medium py-[1px] px-[8px] ltr:ml-[8px] rtl:mr-[8px] text-success-600 bg-success-100 dark:bg-[#ffffff14] inline-block rounded-sm">
+                          Popular
+                        </span>
                       </Link>
                     </li>
 
@@ -251,7 +257,10 @@ const SidebarMenu: React.FC<SidebarMenuProps> = ({ toggleActive }) => {
                           pathname === "/dashboard/real-estate/" ? "active" : ""
                         }`}
                       >
-                        Real Estate
+                        Real Estate{" "}
+                        <span className="text-[10px] font-medium py-[1px] px-[8px] ltr:ml-[8px] rtl:mr-[8px] text-purple-500 bg-purple-100 dark:bg-[#ffffff14] inline-block rounded-sm">
+                          Top
+                        </span>
                       </Link>
                     </li>
 
@@ -274,6 +283,104 @@ const SidebarMenu: React.FC<SidebarMenuProps> = ({ toggleActive }) => {
                         }`}
                       >
                         Finance
+                      </Link>
+                    </li>
+
+                    <li className="sidemenu-item mb-[4px] last:mb-0">
+                      <Link
+                        href="/dashboard/pos-system/"
+                        className={`sidemenu-link rounded-md flex items-center relative transition-all font-medium text-gray-500 dark:text-gray-400 py-[9px] ltr:pl-[38px] ltr:pr-[30px] rtl:pr-[38px] rtl:pl-[30px] hover:text-primary-500 hover:bg-primary-50 w-full text-left dark:hover:bg-[#15203c] ${
+                          pathname === "/dashboard/pos-system/" ? "active" : ""
+                        }`}
+                      >
+                        POS System
+                      </Link>
+                    </li>
+
+                    <li className="sidemenu-item mb-[4px] last:mb-0">
+                      <Link
+                        href="/dashboard/podcast/"
+                        className={`sidemenu-link rounded-md flex items-center relative transition-all font-medium text-gray-500 dark:text-gray-400 py-[9px] ltr:pl-[38px] ltr:pr-[30px] rtl:pr-[38px] rtl:pl-[30px] hover:text-primary-500 hover:bg-primary-50 w-full text-left dark:hover:bg-[#15203c] ${
+                          pathname === "/dashboard/podcast/" ? "active" : ""
+                        }`}
+                      >
+                        Podcast
+                      </Link>
+                    </li>
+
+                    <li className="sidemenu-item mb-[4px] last:mb-0">
+                      <Link
+                        href="/dashboard/social-media/"
+                        className={`sidemenu-link rounded-md flex items-center relative transition-all font-medium text-gray-500 dark:text-gray-400 py-[9px] ltr:pl-[38px] ltr:pr-[30px] rtl:pr-[38px] rtl:pl-[30px] hover:text-primary-500 hover:bg-primary-50 w-full text-left dark:hover:bg-[#15203c] ${
+                          pathname === "/dashboard/social-media/"
+                            ? "active"
+                            : ""
+                        }`}
+                      >
+                        Social Media{" "}
+                        <span className="text-[10px] font-medium py-[1px] px-[8px] ltr:ml-[8px] rtl:mr-[8px] text-orange-500 bg-orange-100 dark:bg-[#ffffff14] inline-block rounded-sm">
+                          New
+                        </span>
+                      </Link>
+                    </li>
+
+                    <li className="sidemenu-item mb-[4px] last:mb-0">
+                      <Link
+                        href="/dashboard/doctor/"
+                        className={`sidemenu-link rounded-md flex items-center relative transition-all font-medium text-gray-500 dark:text-gray-400 py-[9px] ltr:pl-[38px] ltr:pr-[30px] rtl:pr-[38px] rtl:pl-[30px] hover:text-primary-500 hover:bg-primary-50 w-full text-left dark:hover:bg-[#15203c] ${
+                          pathname === "/dashboard/doctor/" ? "active" : ""
+                        }`}
+                      >
+                        Doctor{" "}
+                        <span className="text-[10px] font-medium py-[1px] px-[8px] ltr:ml-[8px] rtl:mr-[8px] text-orange-500 bg-orange-100 dark:bg-[#ffffff14] inline-block rounded-sm">
+                          New
+                        </span>
+                      </Link>
+                    </li>
+
+                    <li className="sidemenu-item mb-[4px] last:mb-0">
+                      <Link
+                        href="/dashboard/beauty-salon/"
+                        className={`sidemenu-link rounded-md flex items-center relative transition-all font-medium text-gray-500 dark:text-gray-400 py-[9px] ltr:pl-[38px] ltr:pr-[30px] rtl:pr-[38px] rtl:pl-[30px] hover:text-primary-500 hover:bg-primary-50 w-full text-left dark:hover:bg-[#15203c] ${
+                          pathname === "/dashboard/beauty-salon/"
+                            ? "active"
+                            : ""
+                        }`}
+                      >
+                        Beauty Salon{" "}
+                        <span className="text-[10px] font-medium py-[1px] px-[8px] ltr:ml-[8px] rtl:mr-[8px] text-orange-500 bg-orange-100 dark:bg-[#ffffff14] inline-block rounded-sm">
+                          New
+                        </span>
+                      </Link>
+                    </li>
+
+                    <li className="sidemenu-item mb-[4px] last:mb-0">
+                      <Link
+                        href="/dashboard/store-analysis/"
+                        className={`sidemenu-link rounded-md flex items-center relative transition-all font-medium text-gray-500 dark:text-gray-400 py-[9px] ltr:pl-[38px] ltr:pr-[30px] rtl:pr-[38px] rtl:pl-[30px] hover:text-primary-500 hover:bg-primary-50 w-full text-left dark:hover:bg-[#15203c] ${
+                          pathname === "/dashboard/store-analysis/"
+                            ? "active"
+                            : ""
+                        }`}
+                      >
+                        Store Analysis{" "}
+                        <span className="text-[10px] font-medium py-[1px] px-[8px] ltr:ml-[8px] rtl:mr-[8px] text-orange-500 bg-orange-100 dark:bg-[#ffffff14] inline-block rounded-sm">
+                          New
+                        </span>
+                      </Link>
+                    </li>
+
+                    <li className="sidemenu-item mb-[4px] last:mb-0">
+                      <Link
+                        href="/dashboard/restaurant/"
+                        className={`sidemenu-link rounded-md flex items-center relative transition-all font-medium text-gray-500 dark:text-gray-400 py-[9px] ltr:pl-[38px] ltr:pr-[30px] rtl:pr-[38px] rtl:pl-[30px] hover:text-primary-500 hover:bg-primary-50 w-full text-left dark:hover:bg-[#15203c] ${
+                          pathname === "/dashboard/restaurant/" ? "active" : ""
+                        }`}
+                      >
+                        Restaurant{" "}
+                        <span className="text-[10px] font-medium py-[1px] px-[8px] ltr:ml-[8px] rtl:mr-[8px] text-orange-500 bg-orange-100 dark:bg-[#ffffff14] inline-block rounded-sm">
+                          New
+                        </span>
                       </Link>
                     </li>
                   </ul>
@@ -524,7 +631,9 @@ const SidebarMenu: React.FC<SidebarMenuProps> = ({ toggleActive }) => {
                       <Link
                         href="/apps/file-manager/my-drive/"
                         className={`sidemenu-link rounded-md flex items-center relative transition-all font-medium text-gray-500 dark:text-gray-400 py-[9px] ltr:pl-[38px] ltr:pr-[30px] rtl:pr-[38px] rtl:pl-[30px] hover:text-primary-500 hover:bg-primary-50 w-full text-left dark:hover:bg-[#15203c] ${
-                          pathname === "/apps/file-manager/my-drive/" ? "active" : ""
+                          pathname === "/apps/file-manager/my-drive/"
+                            ? "active"
+                            : ""
                         }`}
                       >
                         My Drive
@@ -535,7 +644,9 @@ const SidebarMenu: React.FC<SidebarMenuProps> = ({ toggleActive }) => {
                       <Link
                         href="/apps/file-manager/assets/"
                         className={`sidemenu-link rounded-md flex items-center relative transition-all font-medium text-gray-500 dark:text-gray-400 py-[9px] ltr:pl-[38px] ltr:pr-[30px] rtl:pr-[38px] rtl:pl-[30px] hover:text-primary-500 hover:bg-primary-50 w-full text-left dark:hover:bg-[#15203c] ${
-                          pathname === "/apps/file-manager/assets/" ? "active" : ""
+                          pathname === "/apps/file-manager/assets/"
+                            ? "active"
+                            : ""
                         }`}
                       >
                         Assets
@@ -546,7 +657,9 @@ const SidebarMenu: React.FC<SidebarMenuProps> = ({ toggleActive }) => {
                       <Link
                         href="/apps/file-manager/projects/"
                         className={`sidemenu-link rounded-md flex items-center relative transition-all font-medium text-gray-500 dark:text-gray-400 py-[9px] ltr:pl-[38px] ltr:pr-[30px] rtl:pr-[38px] rtl:pl-[30px] hover:text-primary-500 hover:bg-primary-50 w-full text-left dark:hover:bg-[#15203c] ${
-                          pathname === "/apps/file-manager/projects/" ? "active" : ""
+                          pathname === "/apps/file-manager/projects/"
+                            ? "active"
+                            : ""
                         }`}
                       >
                         Projects
@@ -557,7 +670,9 @@ const SidebarMenu: React.FC<SidebarMenuProps> = ({ toggleActive }) => {
                       <Link
                         href="/apps/file-manager/personal/"
                         className={`sidemenu-link rounded-md flex items-center relative transition-all font-medium text-gray-500 dark:text-gray-400 py-[9px] ltr:pl-[38px] ltr:pr-[30px] rtl:pr-[38px] rtl:pl-[30px] hover:text-primary-500 hover:bg-primary-50 w-full text-left dark:hover:bg-[#15203c] ${
-                          pathname === "/apps/file-manager/personal/" ? "active" : ""
+                          pathname === "/apps/file-manager/personal/"
+                            ? "active"
+                            : ""
                         }`}
                       >
                         Personal
@@ -594,7 +709,9 @@ const SidebarMenu: React.FC<SidebarMenuProps> = ({ toggleActive }) => {
                       <Link
                         href="/apps/file-manager/media/"
                         className={`sidemenu-link rounded-md flex items-center relative transition-all font-medium text-gray-500 dark:text-gray-400 py-[9px] ltr:pl-[38px] ltr:pr-[30px] rtl:pr-[38px] rtl:pl-[30px] hover:text-primary-500 hover:bg-primary-50 w-full text-left dark:hover:bg-[#15203c] ${
-                          pathname === "/apps/file-manager/media/" ? "active" : ""
+                          pathname === "/apps/file-manager/media/"
+                            ? "active"
+                            : ""
                         }`}
                       >
                         Media
@@ -1491,6 +1608,149 @@ const SidebarMenu: React.FC<SidebarMenuProps> = ({ toggleActive }) => {
                 onClick={() => toggleAccordion(12)}
               >
                 <i className="material-symbols-outlined transition-all text-gray-500 dark:text-gray-400 ltr:mr-[7px] rtl:ml-[7px] !text-[22px] leading-none relative -top-px">
+                  badge
+                </i>
+                <span className="title leading-none">Doctor</span>
+              </button>
+
+              <div
+                className={`accordion-collapse ${
+                  openIndex === 12 ? "open" : "hidden"
+                }`}
+              >
+                <div className="pt-[4px]">
+                  <ul className="sidebar-sub-menu">
+                    <li className="sidemenu-item mb-[4px] last:mb-0">
+                      <Link
+                        href="/doctor/patients-list/"
+                        className={`sidemenu-link rounded-md flex items-center relative transition-all font-medium text-gray-500 dark:text-gray-400 py-[9px] ltr:pl-[38px] ltr:pr-[30px] rtl:pr-[38px] rtl:pl-[30px] hover:text-primary-500 hover:bg-primary-50 w-full text-left dark:hover:bg-[#15203c] ${
+                          pathname === "/doctor/patients-list/" ? "active" : ""
+                        }`}
+                      >
+                        Patients List
+                      </Link>
+                    </li>
+
+                    <li className="sidemenu-item mb-[4px] last:mb-0">
+                      <Link
+                        href="/doctor/add-patient/"
+                        className={`sidemenu-link rounded-md flex items-center relative transition-all font-medium text-gray-500 dark:text-gray-400 py-[9px] ltr:pl-[38px] ltr:pr-[30px] rtl:pr-[38px] rtl:pl-[30px] hover:text-primary-500 hover:bg-primary-50 w-full text-left dark:hover:bg-[#15203c] ${
+                          pathname === "/doctor/add-patient/" ? "active" : ""
+                        }`}
+                      >
+                        Add Patient
+                      </Link>
+                    </li>
+
+                    <li className="sidemenu-item mb-[4px] last:mb-0">
+                      <Link
+                        href="/doctor/patient-details/"
+                        className={`sidemenu-link rounded-md flex items-center relative transition-all font-medium text-gray-500 dark:text-gray-400 py-[9px] ltr:pl-[38px] ltr:pr-[30px] rtl:pr-[38px] rtl:pl-[30px] hover:text-primary-500 hover:bg-primary-50 w-full text-left dark:hover:bg-[#15203c] ${
+                          pathname === "/doctor/patient-details/" ? "active" : ""
+                        }`}
+                      >
+                        Patient Details
+                      </Link>
+                    </li>
+
+                    <li className="sidemenu-item mb-[4px] last:mb-0">
+                      <Link
+                        href="/doctor/appointments/"
+                        className={`sidemenu-link rounded-md flex items-center relative transition-all font-medium text-gray-500 dark:text-gray-400 py-[9px] ltr:pl-[38px] ltr:pr-[30px] rtl:pr-[38px] rtl:pl-[30px] hover:text-primary-500 hover:bg-primary-50 w-full text-left dark:hover:bg-[#15203c] ${
+                          pathname === "/doctor/appointments/" ? "active" : ""
+                        }`}
+                      >
+                        Appointments
+                      </Link>
+                    </li>
+
+                    <li className="sidemenu-item mb-[4px] last:mb-0">
+                      <Link
+                        href="/doctor/prescriptions/"
+                        className={`sidemenu-link rounded-md flex items-center relative transition-all font-medium text-gray-500 dark:text-gray-400 py-[9px] ltr:pl-[38px] ltr:pr-[30px] rtl:pr-[38px] rtl:pl-[30px] hover:text-primary-500 hover:bg-primary-50 w-full text-left dark:hover:bg-[#15203c] ${
+                          pathname === "/doctor/prescriptions/" ? "active" : ""
+                        }`}
+                      >
+                        Prescriptions
+                      </Link>
+                    </li>
+
+                    <li className="sidemenu-item mb-[4px] last:mb-0">
+                      <Link
+                        href="/doctor/write-prescription/"
+                        className={`sidemenu-link rounded-md flex items-center relative transition-all font-medium text-gray-500 dark:text-gray-400 py-[9px] ltr:pl-[38px] ltr:pr-[30px] rtl:pr-[38px] rtl:pl-[30px] hover:text-primary-500 hover:bg-primary-50 w-full text-left dark:hover:bg-[#15203c] ${
+                          pathname === "/doctor/write-prescription/" ? "active" : ""
+                        }`}
+                      >
+                        Write a Prescription
+                      </Link>
+                    </li> 
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div className="accordion-item rounded-md text-black dark:text-white mb-[5px] whitespace-nowrap">
+              <button
+                className={`accordion-button toggle flex items-center transition-all py-[9px] ltr:pl-[14px] ltr:pr-[30px] rtl:pr-[14px] rtl:pl-[30px] rounded-md font-medium w-full relative hover:bg-gray-50 text-left dark:hover:bg-[#15203c] ${
+                  openIndex === 13 ? "open" : ""
+                }`}
+                type="button"
+                onClick={() => toggleAccordion(13)}
+              >
+                <i className="material-symbols-outlined transition-all text-gray-500 dark:text-gray-400 ltr:mr-[7px] rtl:ml-[7px] !text-[22px] leading-none relative -top-px">
+                  lunch_dining
+                </i>
+                <span className="title leading-none">Restaurant</span>
+              </button>
+
+              <div
+                className={`accordion-collapse ${
+                  openIndex === 13 ? "open" : "hidden"
+                }`}
+              >
+                <div className="pt-[4px]">
+                  <ul className="sidebar-sub-menu">
+                    <li className="sidemenu-item mb-[4px] last:mb-0">
+                      <Link
+                        href="/restaurant/menus/"
+                        className={`sidemenu-link rounded-md flex items-center relative transition-all font-medium text-gray-500 dark:text-gray-400 py-[9px] ltr:pl-[38px] ltr:pr-[30px] rtl:pr-[38px] rtl:pl-[30px] hover:text-primary-500 hover:bg-primary-50 w-full text-left dark:hover:bg-[#15203c] ${
+                          pathname === "/restaurant/menus/" ? "active" : ""
+                        }`}
+                      >
+                        Menus
+                      </Link>
+                    </li>
+
+                    <li className="sidemenu-item mb-[4px] last:mb-0">
+                      <Link
+                        href="/restaurant/dish-details/"
+                        className={`sidemenu-link rounded-md flex items-center relative transition-all font-medium text-gray-500 dark:text-gray-400 py-[9px] ltr:pl-[38px] ltr:pr-[30px] rtl:pr-[38px] rtl:pl-[30px] hover:text-primary-500 hover:bg-primary-50 w-full text-left dark:hover:bg-[#15203c] ${
+                          pathname === "/restaurant/dish-details/" ? "active" : ""
+                        }`}
+                      >
+                        Dish Details
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+
+
+
+
+
+            <div className="accordion-item rounded-md text-black dark:text-white mb-[5px] whitespace-nowrap">
+              <button
+                className={`accordion-button toggle flex items-center transition-all py-[9px] ltr:pl-[14px] ltr:pr-[30px] rtl:pr-[14px] rtl:pl-[30px] rounded-md font-medium w-full relative hover:bg-gray-50 text-left dark:hover:bg-[#15203c] ${
+                  openIndex === 14 ? "open" : ""
+                }`}
+                type="button"
+                onClick={() => toggleAccordion(14)}
+              >
+                <i className="material-symbols-outlined transition-all text-gray-500 dark:text-gray-400 ltr:mr-[7px] rtl:ml-[7px] !text-[22px] leading-none relative -top-px">
                   local_activity
                 </i>
                 <span className="title leading-none">Events</span>
@@ -1498,7 +1758,7 @@ const SidebarMenu: React.FC<SidebarMenuProps> = ({ toggleActive }) => {
 
               <div
                 className={`accordion-collapse ${
-                  openIndex === 12 ? "open" : "hidden"
+                  openIndex === 14 ? "open" : "hidden"
                 }`}
               >
                 <div className="pt-[4px]">
@@ -1567,10 +1827,10 @@ const SidebarMenu: React.FC<SidebarMenuProps> = ({ toggleActive }) => {
             <div className="accordion-item rounded-md text-black dark:text-white mb-[5px] whitespace-nowrap">
               <button
                 className={`accordion-button toggle flex items-center transition-all py-[9px] ltr:pl-[14px] ltr:pr-[30px] rtl:pr-[14px] rtl:pl-[30px] rounded-md font-medium w-full relative hover:bg-gray-50 text-left dark:hover:bg-[#15203c] ${
-                  openIndex === 13 ? "open" : ""
+                  openIndex === 15 ? "open" : ""
                 }`}
                 type="button"
-                onClick={() => toggleAccordion(13)}
+                onClick={() => toggleAccordion(15)}
               >
                 <i className="material-symbols-outlined transition-all text-gray-500 dark:text-gray-400 ltr:mr-[7px] rtl:ml-[7px] !text-[22px] leading-none relative -top-px">
                   share
@@ -1580,7 +1840,7 @@ const SidebarMenu: React.FC<SidebarMenuProps> = ({ toggleActive }) => {
 
               <div
                 className={`accordion-collapse ${
-                  openIndex === 13 ? "open" : "hidden"
+                  openIndex === 15 ? "open" : "hidden"
                 }`}
               >
                 <div className="pt-[4px]">
@@ -1614,10 +1874,10 @@ const SidebarMenu: React.FC<SidebarMenuProps> = ({ toggleActive }) => {
             <div className="accordion-item rounded-md text-black dark:text-white mb-[5px] whitespace-nowrap">
               <button
                 className={`accordion-button toggle flex items-center transition-all py-[9px] ltr:pl-[14px] ltr:pr-[30px] rtl:pr-[14px] rtl:pl-[30px] rounded-md font-medium w-full relative hover:bg-gray-50 text-left dark:hover:bg-[#15203c] ${
-                  openIndex === 14 ? "open" : ""
+                  openIndex === 16 ? "open" : ""
                 }`}
                 type="button"
-                onClick={() => toggleAccordion(14)}
+                onClick={() => toggleAccordion(16)}
               >
                 <i className="material-symbols-outlined transition-all text-gray-500 dark:text-gray-400 ltr:mr-[7px] rtl:ml-[7px] !text-[22px] leading-none relative -top-px">
                   content_paste
@@ -1627,7 +1887,7 @@ const SidebarMenu: React.FC<SidebarMenuProps> = ({ toggleActive }) => {
 
               <div
                 className={`accordion-collapse ${
-                  openIndex === 14 ? "open" : "hidden"
+                  openIndex === 16 ? "open" : "hidden"
                 }`}
               >
                 <div className="pt-[4px]">
@@ -1687,10 +1947,10 @@ const SidebarMenu: React.FC<SidebarMenuProps> = ({ toggleActive }) => {
             <div className="accordion-item rounded-md text-black dark:text-white mb-[5px] whitespace-nowrap">
               <button
                 className={`accordion-button toggle flex items-center transition-all py-[9px] ltr:pl-[14px] ltr:pr-[30px] rtl:pr-[14px] rtl:pl-[30px] rounded-md font-medium w-full relative hover:bg-gray-50 text-left dark:hover:bg-[#15203c] ${
-                  openIndex === 15 ? "open" : ""
+                  openIndex === 17 ? "open" : ""
                 }`}
                 type="button"
-                onClick={() => toggleAccordion(15)}
+                onClick={() => toggleAccordion(17)}
               >
                 <i className="material-symbols-outlined transition-all text-gray-500 dark:text-gray-400 ltr:mr-[7px] rtl:ml-[7px] !text-[22px] leading-none relative -top-px">
                   person
@@ -1700,7 +1960,7 @@ const SidebarMenu: React.FC<SidebarMenuProps> = ({ toggleActive }) => {
 
               <div
                 className={`accordion-collapse ${
-                  openIndex === 15 ? "open" : "hidden"
+                  openIndex === 17 ? "open" : "hidden"
                 }`}
               >
                 <div className="pt-[4px]">
@@ -1745,10 +2005,10 @@ const SidebarMenu: React.FC<SidebarMenuProps> = ({ toggleActive }) => {
             <div className="accordion-item rounded-md text-black dark:text-white mb-[5px] whitespace-nowrap">
               <button
                 className={`accordion-button toggle flex items-center transition-all py-[9px] ltr:pl-[14px] ltr:pr-[30px] rtl:pr-[14px] rtl:pl-[30px] rounded-md font-medium w-full relative hover:bg-gray-50 text-left dark:hover:bg-[#15203c] ${
-                  openIndex === 16 ? "open" : ""
+                  openIndex === 18 ? "open" : ""
                 }`}
                 type="button"
-                onClick={() => toggleAccordion(16)}
+                onClick={() => toggleAccordion(18)}
               >
                 <i className="material-symbols-outlined transition-all text-gray-500 dark:text-gray-400 ltr:mr-[7px] rtl:ml-[7px] !text-[22px] leading-none relative -top-px">
                   account_box
@@ -1758,7 +2018,7 @@ const SidebarMenu: React.FC<SidebarMenuProps> = ({ toggleActive }) => {
 
               <div
                 className={`accordion-collapse ${
-                  openIndex === 16 ? "open" : "hidden"
+                  openIndex === 18 ? "open" : "hidden"
                 }`}
               >
                 <div className="pt-[4px]">
@@ -1821,10 +2081,10 @@ const SidebarMenu: React.FC<SidebarMenuProps> = ({ toggleActive }) => {
             <div className="accordion-item rounded-md text-black dark:text-white mb-[5px] whitespace-nowrap">
               <button
                 className={`accordion-button toggle flex items-center transition-all py-[9px] ltr:pl-[14px] ltr:pr-[30px] rtl:pr-[14px] rtl:pl-[30px] rounded-md font-medium w-full relative hover:bg-gray-50 text-left dark:hover:bg-[#15203c] ${
-                  openIndex === 17 ? "open" : ""
+                  openIndex === 19 ? "open" : ""
                 }`}
                 type="button"
-                onClick={() => toggleAccordion(17)}
+                onClick={() => toggleAccordion(19)}
               >
                 <i className="material-symbols-outlined transition-all text-gray-500 dark:text-gray-400 ltr:mr-[7px] rtl:ml-[7px] !text-[22px] leading-none relative -top-px">
                   emoji_emotions
@@ -1834,7 +2094,7 @@ const SidebarMenu: React.FC<SidebarMenuProps> = ({ toggleActive }) => {
 
               <div
                 className={`accordion-collapse ${
-                  openIndex === 17 ? "open" : "hidden"
+                  openIndex === 19 ? "open" : "hidden"
                 }`}
               >
                 <div className="pt-[4px]">
@@ -1870,10 +2130,10 @@ const SidebarMenu: React.FC<SidebarMenuProps> = ({ toggleActive }) => {
             <div className="accordion-item rounded-md text-black dark:text-white mb-[5px] whitespace-nowrap">
               <button
                 className={`accordion-button toggle flex items-center transition-all py-[9px] ltr:pl-[14px] ltr:pr-[30px] rtl:pr-[14px] rtl:pl-[30px] rounded-md font-medium w-full relative hover:bg-gray-50 text-left dark:hover:bg-[#15203c] ${
-                  openIndex === 18 ? "open" : ""
+                  openIndex === 20 ? "open" : ""
                 }`}
                 type="button"
-                onClick={() => toggleAccordion(18)}
+                onClick={() => toggleAccordion(20)}
               >
                 <i className="material-symbols-outlined transition-all text-gray-500 dark:text-gray-400 ltr:mr-[7px] rtl:ml-[7px] !text-[22px] leading-none relative -top-px">
                   qr_code_scanner
@@ -1883,7 +2143,7 @@ const SidebarMenu: React.FC<SidebarMenuProps> = ({ toggleActive }) => {
 
               <div
                 className={`accordion-collapse ${
-                  openIndex === 18 ? "open" : "hidden"
+                  openIndex === 20 ? "open" : "hidden"
                 }`}
               >
                 <div className="pt-[4px]">
@@ -1955,7 +2215,7 @@ const SidebarMenu: React.FC<SidebarMenuProps> = ({ toggleActive }) => {
                         Breadcrumb
                       </Link>
                     </li>
-  
+
                     <li className="sidemenu-item mb-[4px] last:mb-0">
                       <Link
                         href="/ui-elements/dropdowns/"
@@ -2001,7 +2261,7 @@ const SidebarMenu: React.FC<SidebarMenuProps> = ({ toggleActive }) => {
                         Pagination
                       </Link>
                     </li>
-                    
+
                     <li className="sidemenu-item mb-[4px] last:mb-0">
                       <Link
                         href="/ui-elements/progress/"
@@ -2080,10 +2340,10 @@ const SidebarMenu: React.FC<SidebarMenuProps> = ({ toggleActive }) => {
             <div className="accordion-item rounded-md text-black dark:text-white mb-[5px] whitespace-nowrap">
               <button
                 className={`accordion-button toggle flex items-center transition-all py-[9px] ltr:pl-[14px] ltr:pr-[30px] rtl:pr-[14px] rtl:pl-[30px] rounded-md font-medium w-full relative hover:bg-gray-50 text-left dark:hover:bg-[#15203c] ${
-                  openIndex === 19 ? "open" : ""
+                  openIndex === 21 ? "open" : ""
                 }`}
                 type="button"
-                onClick={() => toggleAccordion(19)}
+                onClick={() => toggleAccordion(21)}
               >
                 <i className="material-symbols-outlined transition-all text-gray-500 dark:text-gray-400 ltr:mr-[7px] rtl:ml-[7px] !text-[22px] leading-none relative -top-px">
                   forum
@@ -2093,7 +2353,7 @@ const SidebarMenu: React.FC<SidebarMenuProps> = ({ toggleActive }) => {
 
               <div
                 className={`accordion-collapse ${
-                  openIndex === 19 ? "open" : "hidden"
+                  openIndex === 21 ? "open" : "hidden"
                 }`}
               >
                 <div className="pt-[4px]">
@@ -2153,10 +2413,10 @@ const SidebarMenu: React.FC<SidebarMenuProps> = ({ toggleActive }) => {
             <div className="accordion-item rounded-md text-black dark:text-white mb-[5px] whitespace-nowrap">
               <button
                 className={`accordion-button toggle flex items-center transition-all py-[9px] ltr:pl-[14px] ltr:pr-[30px] rtl:pr-[14px] rtl:pl-[30px] rounded-md font-medium w-full relative hover:bg-gray-50 text-left dark:hover:bg-[#15203c] ${
-                  openIndex === 20 ? "open" : ""
+                  openIndex === 22 ? "open" : ""
                 }`}
                 type="button"
-                onClick={() => toggleAccordion(20)}
+                onClick={() => toggleAccordion(22)}
               >
                 <i className="material-symbols-outlined transition-all text-gray-500 dark:text-gray-400 ltr:mr-[7px] rtl:ml-[7px] !text-[22px] leading-none relative -top-px">
                   pie_chart
@@ -2166,7 +2426,7 @@ const SidebarMenu: React.FC<SidebarMenuProps> = ({ toggleActive }) => {
 
               <div
                 className={`accordion-collapse ${
-                  openIndex === 20 ? "open" : "hidden"
+                  openIndex === 22 ? "open" : "hidden"
                 }`}
               >
                 <div className="pt-[4px]">
@@ -2277,10 +2537,10 @@ const SidebarMenu: React.FC<SidebarMenuProps> = ({ toggleActive }) => {
             <div className="accordion-item rounded-md text-black dark:text-white mb-[5px] whitespace-nowrap">
               <button
                 className={`accordion-button toggle flex items-center transition-all py-[9px] ltr:pl-[14px] ltr:pr-[30px] rtl:pr-[14px] rtl:pl-[30px] rounded-md font-medium w-full relative hover:bg-gray-50 text-left dark:hover:bg-[#15203c] ${
-                  openIndex === 21 ? "open" : ""
+                  openIndex === 23 ? "open" : ""
                 }`}
                 type="button"
-                onClick={() => toggleAccordion(21)}
+                onClick={() => toggleAccordion(23)}
               >
                 <i className="material-symbols-outlined transition-all text-gray-500 dark:text-gray-400 ltr:mr-[7px] rtl:ml-[7px] !text-[22px] leading-none relative -top-px">
                   lock_open
@@ -2290,7 +2550,7 @@ const SidebarMenu: React.FC<SidebarMenuProps> = ({ toggleActive }) => {
 
               <div
                 className={`accordion-collapse ${
-                  openIndex === 21 ? "open" : "hidden"
+                  openIndex === 23 ? "open" : "hidden"
                 }`}
               >
                 <div className="pt-[4px]">
@@ -2391,10 +2651,10 @@ const SidebarMenu: React.FC<SidebarMenuProps> = ({ toggleActive }) => {
             <div className="accordion-item rounded-md text-black dark:text-white mb-[5px] whitespace-nowrap">
               <button
                 className={`accordion-button toggle flex items-center transition-all py-[9px] ltr:pl-[14px] ltr:pr-[30px] rtl:pr-[14px] rtl:pl-[30px] rounded-md font-medium w-full relative hover:bg-gray-50 text-left dark:hover:bg-[#15203c] ${
-                  openIndex === 22 ? "open" : ""
+                  openIndex === 24 ? "open" : ""
                 }`}
                 type="button"
-                onClick={() => toggleAccordion(22)}
+                onClick={() => toggleAccordion(24)}
               >
                 <i className="material-symbols-outlined transition-all text-gray-500 dark:text-gray-400 ltr:mr-[7px] rtl:ml-[7px] !text-[22px] leading-none relative -top-px">
                   content_copy
@@ -2404,7 +2664,7 @@ const SidebarMenu: React.FC<SidebarMenuProps> = ({ toggleActive }) => {
 
               <div
                 className={`accordion-collapse ${
-                  openIndex === 22 ? "open" : "hidden"
+                  openIndex === 24 ? "open" : "hidden"
                 }`}
               >
                 <div className="pt-[4px]">
@@ -2504,10 +2764,10 @@ const SidebarMenu: React.FC<SidebarMenuProps> = ({ toggleActive }) => {
             <div className="accordion-item rounded-md text-black dark:text-white mb-[5px] whitespace-nowrap">
               <button
                 className={`accordion-button toggle flex items-center transition-all py-[9px] ltr:pl-[14px] ltr:pr-[30px] rtl:pr-[14px] rtl:pl-[30px] rounded-md font-medium w-full relative hover:bg-gray-50 text-left dark:hover:bg-[#15203c] ${
-                  openIndex === 23 ? "open" : ""
+                  openIndex === 25 ? "open" : ""
                 }`}
                 type="button"
-                onClick={() => toggleAccordion(23)}
+                onClick={() => toggleAccordion(25)}
               >
                 <i className="material-symbols-outlined transition-all text-gray-500 dark:text-gray-400 ltr:mr-[7px] rtl:ml-[7px] !text-[22px] leading-none relative -top-px">
                   error
@@ -2517,7 +2777,7 @@ const SidebarMenu: React.FC<SidebarMenuProps> = ({ toggleActive }) => {
 
               <div
                 className={`accordion-collapse ${
-                  openIndex === 23 ? "open" : "hidden"
+                  openIndex === 25 ? "open" : "hidden"
                 }`}
               >
                 <div className="pt-[4px]">
@@ -2625,10 +2885,10 @@ const SidebarMenu: React.FC<SidebarMenuProps> = ({ toggleActive }) => {
             <div className="accordion-item rounded-md text-black dark:text-white mb-[5px] whitespace-nowrap">
               <button
                 className={`accordion-button toggle flex items-center transition-all py-[9px] ltr:pl-[14px] ltr:pr-[30px] rtl:pr-[14px] rtl:pl-[30px] rounded-md font-medium w-full relative hover:bg-gray-50 text-left dark:hover:bg-[#15203c] ${
-                  openIndex === 24 ? "open" : ""
+                  openIndex === 26 ? "open" : ""
                 }`}
                 type="button"
-                onClick={() => toggleAccordion(24)}
+                onClick={() => toggleAccordion(26)}
               >
                 <i className="material-symbols-outlined transition-all text-gray-500 dark:text-gray-400 ltr:mr-[7px] rtl:ml-[7px] !text-[22px] leading-none relative -top-px">
                   settings
@@ -2638,7 +2898,7 @@ const SidebarMenu: React.FC<SidebarMenuProps> = ({ toggleActive }) => {
 
               <div
                 className={`accordion-collapse ${
-                  openIndex === 24 ? "open" : "hidden"
+                  openIndex === 26 ? "open" : "hidden"
                 }`}
               >
                 <div className="pt-[4px]">

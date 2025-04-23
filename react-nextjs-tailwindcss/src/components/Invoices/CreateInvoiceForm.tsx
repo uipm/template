@@ -160,8 +160,6 @@ const CreateInvoiceForm: React.FC = () => {
                         <button
                           type="button"
                           className="text-danger-500 leading-none custom-tooltip"
-                          id="customTooltip"
-                          data-text="Delete"
                         >
                           <i className="material-symbols-outlined !text-md">
                             delete

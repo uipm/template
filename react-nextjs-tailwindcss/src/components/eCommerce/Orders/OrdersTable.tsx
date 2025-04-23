@@ -359,8 +359,6 @@ const OrdersTable: React.FC = () => {
                         <Link
                           href={order.viewLink}
                           className="text-primary-500 leading-none custom-tooltip"
-                          id="customTooltip"
-                          data-text="View"
                         >
                           <i className="material-symbols-outlined !text-md">
                             visibility
